@@ -15,47 +15,57 @@
       "cited": "Soma Dero (I.L.R. 45 Cal. 450: P.C.)",
       "verification": {
         "status": "VERIFIED",
-        "match_score": 0.75,
+        "match_score": 1.0,
         "matched_cited_doc_id": "1024853",
-        "matched_cited_text": "Abdul Hussein Khan v. Soma Dero"
-      }
+        "matched_cited_text": "Abdul Hussein Khan v. Soma Dero",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "Krishna (I.L.R. 31 Bom. 495)",
       "verification": {
         "status": "VERIFIED",
-        "match_score": 0.75,
-        "matched_cited_doc_id": "1929275",
-        "matched_cited_text": "Subbaratna Mudali v. Balakrishnaswami Naidu"
-      }
+        "match_score": 1.0,
+        "matched_cited_doc_id": "386045",
+        "matched_cited_text": "Vide Tara v. Krishna",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "the 1st defendant's case",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
     },
     {
       "cited": "the decision of the High Court",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "the custom that a dasi daughter was a preferential heir and excluded her married sisters",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "the requirements of section 32 of the Evidence Act",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
     }
-  ]
+  ],
+  "decade": "1950",
+  "n_real_edges": 4
 }

@@ -14,43 +14,52 @@
       "cited": "s. 5(2) of the Act",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
     },
     {
       "cited": "s. 53 Of the Act",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
     },
     {
       "cited": "the expression \" any person interested in a waqf \"",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "Basanta Mal Devi Dayal & Ors., 1947) 49 P.L.R. 246",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "Section 15",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "2 Mad. 490",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
     }
-  ]
+  ],
+  "decade": "1950",
+  "n_real_edges": 5
 }

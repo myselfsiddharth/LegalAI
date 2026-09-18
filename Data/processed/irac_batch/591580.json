@@ -14,52 +14,61 @@
       "cited": "the Resolution of 1932",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "the Resolution of 1891",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "Hormusji Maneklal (74 I.A. 03)",
       "verification": {
         "status": "UNVERIFIED",
-        "match_score": 0.41,
+        "match_score": 0.67,
         "reason": "no matching outbound edge in citation metadata for this document"
-      }
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "2 (I.L.R. 1948 Bom. 809)",
       "verification": {
         "status": "UNVERIFIED",
-        "match_score": 0.22,
+        "match_score": 0.0,
         "reason": "no matching outbound edge in citation metadata for this document"
-      }
+      },
+      "in_judgment_text": null
     },
     {
       "cited": "Government",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "the same way as the shares of the other two brothers",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "Other Saranjams in the Political Department",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
     }
-  ]
+  ],
+  "decade": "1950",
+  "n_real_edges": 5
 }

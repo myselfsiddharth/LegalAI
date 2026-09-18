@@ -15,52 +15,63 @@
       "cited": "the widow",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
     },
     {
       "cited": "Baidyanath (A.I.R. 1935 Pat. 175)",
       "verification": {
-        "status": "UNVERIFIED",
-        "match_score": 0.5,
-        "reason": "no matching outbound edge in citation metadata for this document"
-      }
+        "status": "VERIFIED",
+        "match_score": 0.86,
+        "matched_cited_doc_id": "499345",
+        "matched_cited_text": "Vaidyanatha v. Savithri",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "Babu Singh (A.I.R. 1952 All. 875)",
       "verification": {
         "status": "UNVERIFIED",
-        "match_score": 0.32,
+        "match_score": 0.0,
         "reason": "no matching outbound edge in citation metadata for this document"
-      }
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "the decision of the Civil Judge, Senior Division, at Broach, in Special Suit No. 9 of 1941",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "the minor",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
     },
     {
       "cited": "the appellants",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "the plaintiffs",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
     }
-  ]
+  ],
+  "decade": "1950",
+  "n_real_edges": 8
 }

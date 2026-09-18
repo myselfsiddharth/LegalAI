@@ -14,37 +14,44 @@
       "cited": "arts. 25 and 26",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
     },
     {
       "cited": "Mathadhipati",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "Crystal Dairy Ltd. ([1933] A.C. 168)",
       "verification": {
         "status": "UNVERIFIED",
-        "match_score": 0.25,
+        "match_score": 0.0,
         "reason": "no matching outbound edge in citation metadata for this document"
-      }
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "Madras Act 11 of 1927",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "Lakshminarayans Rao",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
     }
-  ]
+  ],
+  "decade": "1950",
+  "n_real_edges": 5
 }

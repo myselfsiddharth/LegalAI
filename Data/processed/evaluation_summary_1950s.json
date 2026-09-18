@@ -1,0 +1,373 @@
+{
+  "selection": {
+    "mode": "first_n",
+    "n": 50,
+    "offset": 0
+  },
+  "model": "llama4-scout-17b",
+  "per_case_limit": 30,
+  "failed_cases": [],
+  "concept_totals": {
+    "Party": 256,
+    "Claim": 505,
+    "Holding": 470,
+    "Outcome": 66,
+    "AuthorityCited": 274
+  },
+  "authority_metrics": {
+    "cases": 50,
+    "cases_with_any_authority": 50,
+    "authority_outputs": 274,
+    "status_counts": {
+      "VERIFIED": 48,
+      "UNVERIFIED": 39,
+      "SELF_REFERENCE": 1,
+      "REJECTED_NOT_A_CASE": 186
+    },
+    "case_shaped_citations": 87,
+    "verified_rate": 0.552,
+    "verified_ambiguous_party_match": 8,
+    "unverified_named_in_judgment": 30,
+    "unverified_not_in_judgment": 0,
+    "unverified_name_too_short_to_check": 9,
+    "real_edges_total": 344,
+    "real_edges_recovered": 45,
+    "edge_recall": 0.131
+  },
+  "authority_metrics_by_decade": {
+    "1950s": {
+      "cases": 50,
+      "cases_with_any_authority": 50,
+      "authority_outputs": 274,
+      "status_counts": {
+        "VERIFIED": 48,
+        "UNVERIFIED": 39,
+        "SELF_REFERENCE": 1,
+        "REJECTED_NOT_A_CASE": 186
+      },
+      "case_shaped_citations": 87,
+      "verified_rate": 0.552,
+      "verified_ambiguous_party_match": 8,
+      "unverified_named_in_judgment": 30,
+      "unverified_not_in_judgment": 0,
+      "unverified_name_too_short_to_check": 9,
+      "real_edges_total": 344,
+      "real_edges_recovered": 45,
+      "edge_recall": 0.131
+    }
+  },
+  "samples": {
+    "REJECTED_NOT_A_CASE": [
+      {
+        "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
+        "cited": "S. 2(1) of the Indian Income-tax Act",
+        "in_judgment_text": null,
+        "source_sentence": null
+      },
+      {
+        "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
+        "cited": "s. 66A(2) of the Indian Income-tax Act (XI of 1922)",
+        "in_judgment_text": null,
+        "source_sentence": null
+      },
+      {
+        "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
+        "cited": "s. 66(1) of the Act",
+        "in_judgment_text": null,
+        "source_sentence": null
+      },
+      {
+        "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
+        "cited": "the Indian Income-tax Act",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
+        "cited": "s. 4 (3) (viii) of the Act",
+        "in_judgment_text": null,
+        "source_sentence": null
+      },
+      {
+        "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
+        "cited": "s. 2(1)",
+        "in_judgment_text": null,
+        "source_sentence": null
+      },
+      {
+        "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
+        "cited": "the definition of agricultural income given in the Indian Income-tax Act",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
+        "cited": "the Indian Income-tax Act",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
+        "cited": "the entries in the lists of the Seventh Schedule to the Constitution",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
+        "cited": "heads of legislation",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "S_M_Jakati_Another_vs_S_M_Borkar_Others_on_24_September_1958_1.PDF",
+        "cited": "the pious obligation of the sons",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "Namdeo_Lokman_Lodhi_vs_Narmadabai_And_Others_on_27_February_1953_1.PDF",
+        "cited": "forfeiture",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "Nagendra_Nath_Bora_Another_vs_The_Commissioner_Of_Hills_Divisionand_on_7_February_1958_1.PDF",
+        "cited": "Ad. 23 Of 1955, s. 9, Rule 343",
+        "in_judgment_text": null,
+        "source_sentence": null
+      },
+      {
+        "case": "Nagendra_Nath_Bora_Another_vs_The_Commissioner_Of_Hills_Divisionand_on_7_February_1958_1.PDF",
+        "cited": "the statute",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "Nagendra_Nath_Bora_Another_vs_The_Commissioner_Of_Hills_Divisionand_on_7_February_1958_1.PDF",
+        "cited": "an appellate Authority",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "Shrinivas_Krishnarao_Kango_vs_Narayan_Devji_Kango_And_Others_on_23_March_1954_1.PDF",
+        "cited": "a posthumous son",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "Shrinivas_Krishnarao_Kango_vs_Narayan_Devji_Kango_And_Others_on_23_March_1954_1.PDF",
+        "cited": "one branch of a Kulkarni family",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "Province_Of_Bombay_vs_Kusaldas_S_Advani_And_Others_on_15_September_1950_1.PDF",
+        "cited": "well recognised principles of approach",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "Province_Of_Bombay_vs_Kusaldas_S_Advani_And_Others_on_15_September_1950_1.PDF",
+        "cited": "the order of requisition",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "The_State_Of_Bihar_vs_Maharajadhiraja_Sir_Kameshwar_Singh_Of_on_2_May_1952_1.PDF",
+        "cited": "articles 31-A and 31-B",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "The_State_Of_Bihar_vs_Maharajadhiraja_Sir_Kameshwar_Singh_Of_on_2_May_1952_1.PDF",
+        "cited": "article 31-A",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "The_State_Of_Bihar_vs_Maharajadhiraja_Sir_Kameshwar_Singh_Of_on_2_May_1952_1.PDF",
+        "cited": "article 246(3)",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "The_State_Of_Bihar_vs_Maharajadhiraja_Sir_Kameshwar_Singh_Of_on_2_May_1952_1.PDF",
+        "cited": "legislation",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "The_State_Of_Bihar_vs_Maharajadhiraja_Sir_Kameshwar_Singh_Of_on_2_May_1952_1.PDF",
+        "cited": "Constitution",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "The_State_Of_Bihar_vs_Maharajadhiraja_Sir_Kameshwar_Singh_Of_on_2_May_1952_1.PDF",
+        "cited": "certain American decisions and text books",
+        "in_judgment_text": true,
+        "source_sentence": null
+      }
+    ],
+    "UNVERIFIED": [
+      {
+        "case": "S_M_Jakati_Another_vs_S_M_Borkar_Others_on_24_September_1958_1.PDF",
+        "cited": "Das, (1936) L.R. 63 I.A. 384",
+        "in_judgment_text": null,
+        "source_sentence": null
+      },
+      {
+        "case": "Namdeo_Lokman_Lodhi_vs_Narmadabai_And_Others_on_27_February_1953_1.PDF",
+        "cited": "Davey (110 E.R. 606)",
+        "in_judgment_text": null,
+        "source_sentence": null
+      },
+      {
+        "case": "Nagendra_Nath_Bora_Another_vs_The_Commissioner_Of_Hills_Divisionand_on_7_February_1958_1.PDF",
+        "cited": "Northumberland Compensation Appeal Tribunal, (1952) 1 K.B. 338",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "Nagendra_Nath_Bora_Another_vs_The_Commissioner_Of_Hills_Divisionand_on_7_February_1958_1.PDF",
+        "cited": "Ltd., [1957] S.C.R. 98",
+        "in_judgment_text": null,
+        "source_sentence": null
+      },
+      {
+        "case": "Shrinivas_Krishnarao_Kango_vs_Narayan_Devji_Kango_And_Others_on_23_March_1954_1.PDF",
+        "cited": "Krishnachandra Das (2 B.L.R. 103 F.B.)",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "Province_Of_Bombay_vs_Kusaldas_S_Advani_And_Others_on_15_September_1950_1.PDF",
+        "cited": "Bradford ([1908] 1 K.B. 865)",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "Natvarlal_Punjabhai_And_Another_vs_Dadubhai_Manubhai_And_Others_on_18_November_1953_1.PDF",
+        "cited": "Babu Singh (A.I.R. 1952 All. 875)",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "The_State_Of_Bihar_Others_vs_Sm_Charusila_Dasi_on_15_April_1959_1.PDF",
+        "cited": "In re Charusila Dasi, I.L.R. [1946] I Cal. 473",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "The_State_Of_Bihar_Others_vs_Sm_Charusila_Dasi_on_15_April_1959_1.PDF",
+        "cited": "Sahi, [1959] SUPP. 2 S.C.R. 583",
+        "in_judgment_text": null,
+        "source_sentence": null
+      },
+      {
+        "case": "Mohanlal_Goenka_vs_Benoy_Krishna_Mukherjeeand_Others_on_9_December_1952_1.PDF",
+        "cited": "Madho Rao ([1930] I.L.R. 52 All. 868)",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "Mohanlal_Goenka_vs_Benoy_Krishna_Mukherjeeand_Others_on_9_December_1952_1.PDF",
+        "cited": "Edappakath Ayissa Bi and Others (A.I.R. 1949 P.C. 302)",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "Saraswathi_Ammal_And_Another_vs_Rajagopal_Ammal_on_20_October_1953_1.PDF",
+        "cited": "Dandapani ([1946] 1 M.L.J. 354)",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "Saraswathi_Ammal_And_Another_vs_Rajagopal_Ammal_on_20_October_1953_1.PDF",
+        "cited": "Tiruvengada Pillai and Others (I.L.R. 30 Mad. 340)",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "Gurunath_Alias_Bhimaji_vs_Kamalabai_Kom_Kenchangaudanadgaudar_on_10_December_1954_1.PDF",
+        "cited": "Harihar Bakhsh Singh ([1945] I.L.R. 21 Lucknow 1)",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "Thakur_Amar_Singhji_vs_State_Of_Rajasthan_And_Other_on_15_April_1955_1.PDF",
+        "cited": "Sardar Bustam Khan [(1941) L.R. 68 I.A. 109]",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "Pannalal_And_Another_vs_Mst_Naraini_And_Others_on_7_March_1952_1.PDF",
+        "cited": "Durga Prosad (I.L.R. 53 All. 868 F.B.)",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "Pannalal_And_Another_vs_Mst_Naraini_And_Others_on_7_March_1952_1.PDF",
+        "cited": "Lala Nandanji (I.L.R. 14 Pat. 732)",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "Shrimant_Sardar_Bhujangaraodaulatrao_vs_Shrimant_Malojirao_Daulatraoghorpade_on_30_January_1952_1.PDF",
+        "cited": "Hormusji Maneklal (74 I.A. 03)",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "Shrimant_Sardar_Bhujangaraodaulatrao_vs_Shrimant_Malojirao_Daulatraoghorpade_on_30_January_1952_1.PDF",
+        "cited": "2 (I.L.R. 1948 Bom. 809)",
+        "in_judgment_text": null,
+        "source_sentence": null
+      },
+      {
+        "case": "Kalipada_Chakraborti_And_Another_vs_Palani_Bala_Devi_And_Others_on_16_January_1953_1.PDF",
+        "cited": "Velu ([1900] 27 I.A. 69)",
+        "in_judgment_text": null,
+        "source_sentence": null
+      },
+      {
+        "case": "Kalipada_Chakraborti_And_Another_vs_Palani_Bala_Devi_And_Others_on_16_January_1953_1.PDF",
+        "cited": "Shivagunga ([1925] 52 I.A. 332)",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "Kiran_Singh_And_Others_vs_Chaman_Paswan_And_Others_on_14_April_1954_1.PDF",
+        "cited": "Bam Kishan (I.L.R. 55 All. 315)",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "Kiran_Singh_And_Others_vs_Chaman_Paswan_And_Others_on_14_April_1954_1.PDF",
+        "cited": "Ramdeo Singh v.",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "The_Commissioner_Hindu_Religious_vs_Sri_Lakshmindra_Thirtha_Swamiar_Of_Sri_on_16_April_1954_1.PDF",
+        "cited": "Crystal Dairy Ltd. ([1933] A.C. 168)",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "Bishan_Singh_Others_vs_Khazan_Singh_Another_on_20_May_1958_1.PDF",
+        "cited": "Inayatullah, (1885) I.L.R. 7 All. 775",
+        "in_judgment_text": true,
+        "source_sentence": null
+      }
+    ],
+    "SELF_REFERENCE": [
+      {
+        "case": "The_State_Of_West_Bengal_vs_Subodh_Gopal_Bose_And_Others_on_17_December_1953_1.PDF",
+        "cited": "The State Of West Bengal vs Subodh Gopal Bose And Others",
+        "in_judgment_text": true,
+        "source_sentence": null
+      }
+    ]
+  }
+}

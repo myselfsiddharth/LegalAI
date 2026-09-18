@@ -15,29 +15,42 @@
       "cited": "the pious obligation of the sons",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "Bhubneshwar Prasad Narain Singh, [1954] S.C.R. 177",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "status": "VERIFIED",
+        "match_score": 0.98,
+        "matched_cited_doc_id": "94289",
+        "matched_cited_text": "Naraini (1) and Sidheshwar Mukherji v. Bubneshwar Prasad Narain Singh",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "Das, (1936) L.R. 63 I.A. 384",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
     },
     {
       "cited": "Shidlingappa Ishwa- rappa, A.I.R. 1941 Bom. 381",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "860374",
+        "matched_cited_text": "Mulgund Co-operative Credit Society v. Shidlingappa Ishwarappa",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
     }
-  ]
+  ],
+  "decade": "1950",
+  "n_real_edges": 14
 }

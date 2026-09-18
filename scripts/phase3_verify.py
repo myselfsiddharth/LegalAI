@@ -33,8 +33,6 @@ SAMPLE_PATH = ROOT / "Data" / "processed" / "sample_cases.csv"
 CITATIONS_PATH = ROOT / "Data" / "processed" / "citations_classified.jsonl"
 PDF_DIR = ROOT / "Data" / "raw_pdfs"
 
-MATCH_THRESHOLD = 0.6  # same threshold used in build_signed_graph.py for consistency
-
 
 def find_pdf_for_doc_id(doc_id: str) -> Path:
     with SAMPLE_PATH.open() as f:
@@ -77,43 +75,149 @@ def candidate_sentences(text: str, ontology: dict) -> list[str]:
 # grounding sometimes drops the first party's name and the "v." connector, emitting just
 # "Gilbert Pinto (I.L.R. 42 Mad. 654)" instead of "Krishna Shetti v. Gilbert Pinto (...)".
 # That's still clearly a case reference (it has a reporter citation), just missing "v.",
-# so the filter accepts either signal -- a v./vs. pattern, OR a citation-reporter-style
-# parenthetical (multiple capital letters, with or without periods, e.g. "I.L.R.", "SCC").
-CASE_NAME_OR_CITATION_PATTERN = re.compile(
-    r"\bv\.?\s|\bvs\.?\s|\bversus\b|\([^)]*(?:(?:[A-Z]\.){2,}|[A-Z]{2,})[^)]*\)",
-    re.IGNORECASE,
-)
+# so the filter accepts either signal -- a v./vs. connector, OR a law-reporter citation.
+#
+# Two further bugs found auditing the first 50-case batch (all 1950s):
+#  - Indian reporter citations usually sit OUTSIDE parentheses -- "Ayyappa Reddy, (1913)
+#    I.L.R. 38 Mad. 738", "[1954] S.C.R. 177" -- so a parenthetical-only check rejected
+#    ~25 genuine case citations as REJECTED_NOT_A_CASE. Search the whole string instead.
+#  - The old pattern ran under IGNORECASE, which turned "[A-Z]{2,}" into "any two
+#    letters" and accepted any parenthetical: "clause (iv)", "(Act XVIII of 1937)". Those
+#    statute fragments then landed in UNVERIFIED and inflated the unverified count.
+#    Reporter abbreviations are matched case-sensitively now.
+CASE_CONNECTOR = re.compile(r"(?:\bv\.?|\bV\.|\b[Vv][Ss]\.?|\bversus)(?=\s|$)")
+# Dotted capitals ("I.L.R.", "S.C.R.", "L.R. ... I.A.", "K.B.") or a known undotted modern
+# reporter ("(2005) 3 SCC 123", "AIR 1950 SC 27"). The undotted list is explicit rather
+# than "any capitals + digit", which would also accept "Section 302 IPC".
+REPORTER = re.compile(r"(?:\b[A-Z]\.\s?){2,}|\b(?:SCC|SCR|AIR|SCALE|JT|ITR|MLJ|SCJ|KB|QB|AC|WLR)\b")
 
 
 def looks_like_case_name(text: str) -> bool:
-    return bool(CASE_NAME_OR_CITATION_PATTERN.search(text)) and len(text) >= 8
+    if len(text) < 8:
+        return False
+    return bool(CASE_CONNECTOR.search(text)) or (
+        bool(REPORTER.search(text)) and bool(re.search(r"\d", text)))
 
 
-def verify_authority(cited_text: str, real_edges: list[dict]) -> dict:
-    """Check a proposed AuthorityCited against this document's real outbound edges."""
+# Minimum normalized length for a party name to count as evidence. Shorter fragments
+# ("Das", "Velu", "Davey") match too many unrelated parties to verify anything.
+MIN_PARTY_CHARS = 6
+PARTY_MATCH_THRESHOLD = 0.8  # per-token; "kisho"/"kesho" = 0.8, "bam"/"ram" = 0.67
+
+_PARTY_SPLIT = re.compile(r"\s(?:v|vs|versus)\.?(?:\s|$)")
+_NOISE_SUFFIX = re.compile(r"\s(?:and|&)\s(?:others?|anr|another|ors)$|\s(?:ors|anr)$")
+# Reporter/abbreviation tokens left dangling after cutting at the first volume number:
+# "Ayyappa Reddy, I.L.R." / "Charusila Dasi, I.L.R. I Cal." / "Sahi, SUPP."
+_TRAILING_REPORTER = re.compile(
+    r"(?:[,\s&]*\b(?:[A-Z]\.|[A-Z][a-z]{1,4}\.|[IVX]+\b|SUPP\.?|SCC\b|SCR\b|AIR\b|SC\b))+[,\s]*$")
+
+
+def normalize_parties(text: str) -> list[str]:
+    """Reduce a citation string to its party names, e.g.
+    "Ayyappa Reddy, (1913) I.L.R. 38 Mad. 738" -> ["ayyappa reddy"],
+    "1) and Amarendra Mansingh v. Sanatan Singh" -> ["amarendra mansingh", "sanatan singh"].
+    Both extracted fillers and metadata edge texts go through this, so they're compared
+    like-for-like -- the metadata has its own noise (footnote markers, "Vide", OCR)."""
+    t = re.sub(r"^\s*(?:\d+\)\s*,?\s*)+(?:and\s+)?", "", text)   # "1) and ...", "2), (2) ..."
+    t = re.sub(r"[\(\[][^)\]]*[\)\]]|[\(\[][^)\]]*$", " ", t)    # (1913), [1954], unclosed "(Civil..."
+    t = re.split(r"\s\d", " " + t, maxsplit=1)[0]                # cut at reporter volume/page
+    t = _TRAILING_REPORTER.sub("", t)
+    t = re.sub(r"^\s*(?:(?:vide|in re|the)\s+)+", "", t.lower())
+    parties = []
+    for p in _PARTY_SPLIT.split(t):
+        p = " ".join(re.sub(r"[^a-z0-9 ]", " ", p).split())
+        p = re.sub(r"^the\s+", "", _NOISE_SUFFIX.sub("", p)).strip()
+        if p:
+            parties.append(p)
+    return parties
+
+
+# Connectives plus honorifics, which pad one side's party name but not the other's
+# ("Tendolkar" vs "Shri Justice S. R. Tendolkar").
+_STOPWORDS = {"of", "and", "the", "in", "re", "vide",
+              "shri", "sri", "smt", "mst", "justice", "maharaja", "raja", "rajah"}
+# Matched tokens must cover at least this share of the longer party's characters. Without
+# it a one-word party is "contained" in any longer name sharing a word: "Pannalal v.
+# Naraini" verified "Bhubneshwar Prasad Narain Singh" via naraini~narain alone.
+MIN_COVERAGE = 0.5
+JOINED_THRESHOLD = 0.9  # whole-string fallback for spacing variants ("Horilal"/"Hori Lal")
+
+
+def _content_tokens(party: str) -> list[str]:
+    return [t for t in party.split() if len(t) > 1 and t not in _STOPWORDS]  # drops initials
+
+
+def _token_sim(a: str, b: str) -> float:
+    if a == b:
+        return 1.0
+    # Line-break truncation on either side: "Mukho-" vs "Mukhopadhya", "Hori" vs "Horilal"
+    if min(len(a), len(b)) >= 4 and (a.startswith(b) or b.startswith(a)):
+        return 1.0
+    return SequenceMatcher(None, a, b).ratio()  # OCR variants: "Kisho"/"Kesho", "Bhusan"/"Bhu8an"
+
+
+def _party_sim(p: str, q: str) -> float:
+    """Every content token of the shorter party must have a close match in the longer one.
+    Token-level (not a character ratio over the whole string) so that a shared generic
+    prefix can't carry a mismatch: "Commissioner of Income-tax, Madras" must NOT match
+    "Commissioner of Income-tax, Bihar and Orissa"."""
+    short, long_ = sorted((_content_tokens(p), _content_tokens(q)), key=lambda t: len("".join(t)))
+    if len("".join(short)) < MIN_PARTY_CHARS or not long_:
+        return 0.0
+    joined = SequenceMatcher(None, "".join(short), "".join(long_)).ratio()
+    covered = sum(len(t) for t in long_
+                  if max(_token_sim(s, t) for s in short) >= PARTY_MATCH_THRESHOLD)
+    if covered / len("".join(long_)) < MIN_COVERAGE:
+        return joined if joined >= JOINED_THRESHOLD else 0.0
+    return max(min(max(_token_sim(s, t) for t in long_) for s in short),
+               joined if joined >= JOINED_THRESHOLD else 0.0)
+
+
+def party_match_score(cited_parties: list[str], edge_parties: list[str]) -> float:
+    """Every usable cited party must match some edge party; score is the weakest link."""
+    usable = [p for p in cited_parties if len("".join(_content_tokens(p))) >= MIN_PARTY_CHARS]
+    if not usable or not edge_parties:
+        return 0.0
+    return min(max(_party_sim(p, e) for e in edge_parties) for p in usable)
+
+
+def title_from_filename(filename: str) -> str:
+    """"The_State_Of_X_vs_Y_on_17_December_1953_1.PDF" -> "The State Of X vs Y"."""
+    return re.split(r"_on_\d", filename.replace(".PDF", "").replace(".pdf", ""))[0].replace("_", " ")
+
+
+def verify_authority(cited_text: str, real_edges: list[dict], own_title: str | None = None) -> dict:
+    """Check a proposed AuthorityCited against this document's real outbound edges.
+
+    Matching is party-name based: the extracted string often has only one party (the
+    multi-citation-list truncation above) or an OCR variant, and the metadata carries
+    party names but no reporter citations. A match means "this judgment really does cite
+    a case with this party", which is necessary but not sufficient for the specific case
+    being the right one -- hence `n_matching_edges` so ambiguous matches are visible."""
     if not looks_like_case_name(cited_text):
         return {"status": "REJECTED_NOT_A_CASE",
-                "reason": "filler doesn't look like a case name (no v./vs.) -- likely a "
+                "reason": "no v./vs. connector or law-reporter citation -- likely a "
                           "grounding false positive, not a genuine citation candidate"}
 
-    # Strip a trailing citation parenthetical for substring comparison, so a truncated
-    # extraction like "Gilbert Pinto (I.L.R. 42 Mad. 654)" -- missing "Krishna Shetti v."
-    # from the multi-citation-list bug -- still matches "Krishna Shetti v. Gilbert Pinto"
-    # in the ground truth via plain containment, not just fuzzy ratio.
-    core = re.sub(r"\([^)]*\)", "", cited_text).strip().lower()
-
-    best_edge, best_score = None, 0.0
-    for edge in real_edges:
-        edge_text = edge["cited_text"].lower()
-        score = SequenceMatcher(None, cited_text.lower(), edge_text).ratio()
-        if core and len(core) >= 6 and (core in edge_text or edge_text in cited_text.lower()):
-            score = max(score, 0.75)
-        if score > best_score:
-            best_edge, best_score = edge, score
-    if best_edge and best_score >= MATCH_THRESHOLD:
+    cited_parties = normalize_parties(cited_text)
+    scored = sorted(((party_match_score(cited_parties, normalize_parties(e["cited_text"])), e)
+                     for e in real_edges), key=lambda x: -x[0])
+    matches = [(s, e) for s, e in scored if s >= PARTY_MATCH_THRESHOLD]
+    if matches:
+        best_score, best_edge = matches[0]
         return {"status": "VERIFIED", "match_score": round(best_score, 2),
                 "matched_cited_doc_id": best_edge["cited_doc_id"],
-                "matched_cited_text": best_edge["cited_text"]}
+                "matched_cited_text": best_edge["cited_text"],
+                "n_matching_edges": len({e["cited_doc_id"] for _, e in matches})}
+
+    # The judgment's own title (usually from a page header) is not a citation of it. Needs
+    # both parties: a lone "State of Bombay" could just as well be an unmatched citation.
+    if (own_title and len(cited_parties) >= 2 and
+            party_match_score(cited_parties, normalize_parties(own_title)) >= PARTY_MATCH_THRESHOLD):
+        return {"status": "SELF_REFERENCE",
+                "reason": "matches the citing judgment's own title, not an outbound citation"}
+
+    best_score = scored[0][0] if scored else 0.0
     return {"status": "UNVERIFIED", "match_score": round(best_score, 2),
             "reason": "no matching outbound edge in citation metadata for this document"}
 
@@ -150,7 +254,8 @@ def main():
 
     # Verify every AuthorityCited object against the real citation graph
     for obj in objects_by_concept.get("AuthorityCited", []):
-        obj["verification"] = verify_authority(obj["filler"], real_edges)
+        obj["verification"] = verify_authority(obj["filler"], real_edges,
+                                               own_title=title_from_filename(pdf_path.name))
 
     report = {
         "case": pdf_path.name,

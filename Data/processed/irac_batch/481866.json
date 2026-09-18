@@ -14,47 +14,56 @@
       "cited": "Art. 124 of the Limitation Act",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
     },
     {
       "cited": "Velu ([1900] 27 I.A. 69)",
       "verification": {
         "status": "UNVERIFIED",
-        "match_score": 0.22,
+        "match_score": 0.0,
         "reason": "no matching outbound edge in citation metadata for this document"
-      }
+      },
+      "in_judgment_text": null
     },
     {
       "cited": "Utsava ([1929] 56 I.A. 267)",
       "verification": {
         "status": "VERIFIED",
-        "match_score": 0.75,
+        "match_score": 1.0,
         "matched_cited_doc_id": "1853262",
-        "matched_cited_text": "Jaggo v. Utsava"
-      }
+        "matched_cited_text": "Jaggo v. Utsava",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "Shivagunga ([1925] 52 I.A. 332)",
       "verification": {
         "status": "UNVERIFIED",
-        "match_score": 0.32,
+        "match_score": 0.0,
         "reason": "no matching outbound edge in citation metadata for this document"
-      }
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "Satish",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "Ram Rakhal",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
     }
-  ]
+  ],
+  "decade": "1950",
+  "n_real_edges": 5
 }

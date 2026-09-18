@@ -15,84 +15,103 @@
       "cited": "finally published record of rights",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "the mortgagees in possession by a lease for a term",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "the presumptions under ss. 103-B and 120(2) of the Bihar Tenancy Act",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "s. -103-B of the Act",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "s. 120 of the Bihar Tenancy Act",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
     },
     {
       "cited": "Kisho Prasad Singh ([1926] L.R. 53 I.A. 164)",
       "verification": {
-        "status": "UNVERIFIED",
-        "match_score": 0.41,
-        "reason": "no matching outbound edge in citation metadata for this document"
-      }
+        "status": "VERIFIED",
+        "match_score": 0.94,
+        "matched_cited_doc_id": "1706834",
+        "matched_cited_text": "Bindeshwari Prasad Singh v. Maharaja Kesho Prasad Singh",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "the Bihar Tenancy Act",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "Kalu Pramanik ([1893] I.L.R. 20 Cal. 708)",
       "verification": {
         "status": "VERIFIED",
-        "match_score": 0.75,
+        "match_score": 1.0,
         "matched_cited_doc_id": "1127283",
-        "matched_cited_text": "Binad Lal Pakrashi v. Kalu Pramanik"
-      }
+        "matched_cited_text": "Binad Lal Pakrashi v. Kalu Pramanik",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "Sashi Bhusan (A.I.R. 1937 Cal. 763)",
       "verification": {
-        "status": "UNVERIFIED",
-        "match_score": 0.31,
-        "reason": "no matching outbound edge in citation metadata for this document"
-      }
+        "status": "VERIFIED",
+        "match_score": 0.91,
+        "matched_cited_doc_id": "1427778",
+        "matched_cited_text": "2) and Pramatha Nath v. Sashi Bhu8an",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "Brijraj ([1935] L.R. 62 I.A. 180)",
       "verification": {
         "status": "VERIFIED",
-        "match_score": 0.75,
+        "match_score": 1.0,
         "matched_cited_doc_id": "1211669",
-        "matched_cited_text": "Basant v. Brijraj"
-      }
+        "matched_cited_text": "Basant v. Brijraj",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "Babunath Prasad and Babu Misri Lal",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
     }
-  ]
+  ],
+  "decade": "1950",
+  "n_real_edges": 8
 }

@@ -15,43 +15,56 @@
       "cited": "Part III of the Constitution",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "In re Charusila Dasi, I.L.R. [1946] I Cal. 473",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "Sahi, [1959] SUPP. 2 S.C.R. 583",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
     },
     {
       "cited": "Chamaybaugwala, (1957] S.C.R. 874",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "status": "VERIFIED",
+        "match_score": 0.93,
+        "matched_cited_doc_id": "212098",
+        "matched_cited_text": "The State of Bombay v. R. M. D. Chamarbaugwala",
+        "n_matching_edges": 2
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "the trust deed",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "the Act",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
     }
-  ]
+  ],
+  "decade": "1950",
+  "n_real_edges": 8
 }

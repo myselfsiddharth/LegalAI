@@ -13,16 +13,26 @@
     {
       "cited": "Jagarnath Kuari, (1932) L.R. 53 I.A. 130",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "340907",
+        "matched_cited_text": "Bageshwari Charan Singh v. Jagarnath Kuari",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "Hem Chandra Chakravarthy and Others, A.I.R. 1947 Cal. 93",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "status": "VERIFIED",
+        "match_score": 0.96,
+        "matched_cited_doc_id": "1899467",
+        "matched_cited_text": "Abani Bhusan Chakravarty & Ors. v. Hem Chandra Chakravarty & Or8",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
     }
-  ]
+  ],
+  "decade": "1950",
+  "n_real_edges": 7
 }

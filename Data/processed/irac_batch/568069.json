@@ -14,57 +14,78 @@
       "cited": "Ad. 23 Of 1955, s. 9, Rule 343",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
     },
     {
       "cited": "Syed Ahmed Ishaque and others, [1955] I S.C.R. 1104",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "status": "VERIFIED",
+        "match_score": 0.94,
+        "matched_cited_doc_id": "1450722",
+        "matched_cited_text": "Hari Vishnu Kamath v. Syed Ahmad Ishaque and others",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "Northumberland Compensation Appeal Tribunal, (1952) 1 K.B. 338",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "the statute",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "Amarnath and another, [1954] S.C.R. 565",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1740954",
+        "matched_cited_text": "Waryam Singh and another v. Amarnath",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "an appellate Authority",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "The State of Madyas, [1956] S.C.R. 256",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "status": "VERIFIED",
+        "match_score": 0.91,
+        "matched_cited_doc_id": "1510323",
+        "matched_cited_text": "Raman1601260and Raman Ltd. v. The State of Madras",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "Ltd., [1957] S.C.R. 98",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
     }
-  ]
+  ],
+  "decade": "1950",
+  "n_real_edges": 11
 }

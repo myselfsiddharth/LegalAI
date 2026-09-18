@@ -15,24 +15,30 @@
       "cited": "Sen ([19511 55 C.W.N. 719)",
       "verification": {
         "status": "UNVERIFIED",
-        "match_score": 0.16,
+        "match_score": 0.0,
         "reason": "no matching outbound edge in citation metadata for this document"
-      }
+      },
+      "in_judgment_text": null
     },
     {
       "cited": "Ltd. ([1933] 60 I.A. 13)",
       "verification": {
         "status": "UNVERIFIED",
-        "match_score": 0.18,
+        "match_score": 0.0,
         "reason": "no matching outbound edge in citation metadata for this document"
-      }
+      },
+      "in_judgment_text": null
     },
     {
       "cited": "Rai Bahadur Atulya Dhan Banerjee v.",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
     }
-  ]
+  ],
+  "decade": "1950",
+  "n_real_edges": 4
 }

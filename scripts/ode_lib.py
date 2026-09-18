@@ -30,7 +30,9 @@ def get_client():
         sys.exit("VOYAGER_API_KEY not set (export it, or put it in .env at the project root).")
     from openai import OpenAI
     base_url = os.environ.get("VOYAGER_BASE_URL", "https://openai.rc.asu.edu/v1")
-    return OpenAI(base_url=base_url, api_key=api_key)
+    # The client default (600s read timeout x 3 attempts) let one dead connection stall the
+    # 50-case batch for 30+ minutes with no output; a grounding call normally takes ~2s.
+    return OpenAI(base_url=base_url, api_key=api_key, timeout=90, max_retries=3)
 
 
 def load_ontology() -> dict:

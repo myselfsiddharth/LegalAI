@@ -14,16 +14,26 @@
     {
       "cited": "The Commissioner of Income Tax (1943) L.R. 70 I.A. 180",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "322427",
+        "matched_cited_text": "Commissioner of Income Tax v. Shaw Wallace & Co.",
+        "n_matching_edges": 6
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "Manavikramato Rajah, I.L.R. 1945 Mad. 837",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "status": "VERIFIED",
+        "match_score": 0.88,
+        "matched_cited_doc_id": "1085773",
+        "matched_cited_text": "Commissioner of Income Tax v. K. C. Manavikraman Rajah",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
     }
-  ]
+  ],
+  "decade": "1950",
+  "n_real_edges": 10
 }

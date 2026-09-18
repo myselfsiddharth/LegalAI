@@ -14,23 +14,37 @@
     {
       "cited": "The Commissioner of I come-tax, A.I.R. 1959 S.C. 359",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "status": "VERIFIED",
+        "match_score": 0.95,
+        "matched_cited_doc_id": "616263",
+        "matched_cited_text": "G. Venkataswami Naidu and Co. v. The Commissioner of Income-tax",
+        "n_matching_edges": 5
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "The Commissioner of I come-tax, A.I.R. 1959 S.C. 359",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "status": "VERIFIED",
+        "match_score": 0.95,
+        "matched_cited_doc_id": "616263",
+        "matched_cited_text": "G. Venkataswami Naidu and Co. v. The Commissioner of Income-tax",
+        "n_matching_edges": 5
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "The Commissioner of Income-tax, [1955] i S.C.R. 94I",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "616263",
+        "matched_cited_text": "G. Venkataswami Naidu and Co. v. The Commissioner of Income-tax",
+        "n_matching_edges": 5
+      },
+      "in_judgment_text": false
     }
-  ]
+  ],
+  "decade": "1950",
+  "n_real_edges": 5
 }

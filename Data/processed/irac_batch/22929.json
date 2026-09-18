@@ -14,29 +14,41 @@
       "cited": "suspicious circumstances",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "Jahnavi Charan Mukherji, (1928) I.L.R 56 Cal. 390",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "status": "VERIFIED",
+        "match_score": 0.95,
+        "matched_cited_doc_id": "1221972",
+        "matched_cited_text": "Surendra Nath Chatterji v. Jahnavi Charn Mukerji",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": false
     },
     {
       "cited": "Jahnavi Charan Mukherji, (1928) I.L.R 56 Cal. 390",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "status": "VERIFIED",
+        "match_score": 0.95,
+        "matched_cited_doc_id": "1221972",
+        "matched_cited_text": "Surendra Nath Chatterji v. Jahnavi Charn Mukerji",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": false
     },
     {
       "cited": "Lakshmamma and Sadagopalachar",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
     }
-  ]
+  ],
+  "decade": "1950",
+  "n_real_edges": 5
 }

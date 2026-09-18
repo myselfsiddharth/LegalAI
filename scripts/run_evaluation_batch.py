@@ -6,119 +6,126 @@ Cost control: each case grounds up to --per-case-limit candidate sentences (alre
 keyword-pre-filtered, see phase3_verify.candidate_sentences), so total LLM calls scale
 as roughly N cases x per-case-limit, not full document length.
 
+Verification is re-run over every case's saved AuthorityCited fillers on each run, so a
+verifier fix never needs new LLM calls: --rescore-only re-scores existing outputs.
+
 Usage:
-  python3 scripts/run_evaluation_batch.py --n 50              # first 50 sample cases
-  python3 scripts/run_evaluation_batch.py --n 50 --per-case-limit 30
+  python3 scripts/run_evaluation_batch.py --n 50                   # first 50 rows (all 1950s!)
+  python3 scripts/run_evaluation_batch.py --per-decade 6 --resume  # 6 per decade, skip done cases
+  python3 scripts/run_evaluation_batch.py --n 50 --rescore-only --summary Data/processed/evaluation_summary_1950s.json
 """
 
 import argparse
-import csv
 import json
 from collections import Counter, defaultdict
 from pathlib import Path
 
-from pypdf import PdfReader
-
 from ode_lib import ROOT, get_client, load_ontology, load_rules, extract_concepts
-from phase3_verify import (
-    load_real_outbound_edges,
-    candidate_sentences,
-    verify_authority,
-    PDF_DIR,
-)
+from phase3_verify import load_real_outbound_edges, candidate_sentences
+from eval_lib import (add_selection_args, select_cases, selection_description, judgment_text,
+                      score_authorities, authority_metrics, metrics_by_decade)
 
-SAMPLE_PATH = ROOT / "Data" / "processed" / "sample_cases.csv"
 OUT_DIR = ROOT / "Data" / "processed" / "irac_batch"
 SUMMARY_PATH = ROOT / "Data" / "processed" / "evaluation_summary.json"
 
 
+def run_case(row, text, client, model, ontology, rule_lookup, per_case_limit) -> dict:
+    candidates = candidate_sentences(text, ontology)[:per_case_limit]
+    objects_by_concept = defaultdict(list)
+    for sentence in candidates:
+        for obj in extract_concepts(client, model, sentence, ontology, rule_lookup):
+            objects_by_concept[obj["concept"]].append(obj)
+    return {
+        "doc_id": row["doc_id"], "filename": row["filename"], "year": row["year"],
+        "candidate_sentences": len(candidates),
+        "objects_by_concept": {k: len(v) for k, v in objects_by_concept.items()},
+        "authority_results": [{"cited": o["filler"], "source_sentence": o["source_sentence"]}
+                              for o in objects_by_concept.get("AuthorityCited", [])],
+    }
+
+
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--n", type=int, default=50, help="number of cases to process")
+    add_selection_args(parser)
     parser.add_argument("--per-case-limit", type=int, default=30, help="max candidate sentences per case")
     parser.add_argument("--model", default="llama4-scout-17b")
-    parser.add_argument("--seed-offset", type=int, default=0, help="skip this many rows first (for a different slice)")
+    parser.add_argument("--resume", action="store_true",
+                        help="reuse existing per-case outputs instead of re-extracting them")
+    parser.add_argument("--rescore-only", action="store_true",
+                        help="no LLM calls: re-verify existing per-case outputs, skip cases without one")
+    parser.add_argument("--summary", type=Path, default=SUMMARY_PATH)
     args = parser.parse_args()
 
-    with SAMPLE_PATH.open() as f:
-        rows = list(csv.DictReader(f))
-    rows = rows[args.seed_offset: args.seed_offset + args.n]
-
-    ontology = load_ontology()
-    rule_lookup = load_rules()
-    client = get_client()
+    rows = select_cases(args)
     OUT_DIR.mkdir(parents=True, exist_ok=True)
+    client = ontology = rule_lookup = None
+    if not args.rescore_only:
+        ontology, rule_lookup, client = load_ontology(), load_rules(), get_client()
 
     concept_totals = Counter()
-    authority_status_totals = Counter()
-    per_case_summaries = []
-    unverified_samples = []  # keep a few for manual spot-check
-    rejected_samples = []
-
+    per_case, failed = [], []
     for i, row in enumerate(rows):
-        doc_id, filename, year = row["doc_id"], row["filename"], row["year"]
-        pdf_path = PDF_DIR / year / filename
-        if not pdf_path.exists():
+        doc_id, filename = row["doc_id"], row["filename"]
+        out_path = OUT_DIR / f"{doc_id}.json"
+        text = judgment_text(row)
+        if text is None:
             print(f"[{i+1}/{len(rows)}] SKIP (no PDF) {filename}")
             continue
 
+        if out_path.exists() and (args.resume or args.rescore_only):
+            case, how = json.loads(out_path.read_text()), "cached"
+        elif args.rescore_only:
+            print(f"[{i+1}/{len(rows)}] SKIP (not run yet) {filename}")
+            continue
+        else:
+            try:
+                case, how = run_case(row, text, client, args.model, ontology, rule_lookup,
+                                     args.per_case_limit), "extracted"
+            except Exception as e:  # one hung/failed request shouldn't cost the whole batch
+                print(f"[{i+1}/{len(rows)}] FAILED {filename}: {e!r} -- re-run with --resume to retry")
+                failed.append(filename)
+                continue
+
         real_edges = load_real_outbound_edges(doc_id)
-        text = "\n".join((p.extract_text() or "") for p in PdfReader(str(pdf_path)).pages)
-        candidates = candidate_sentences(text, ontology)[: args.per_case_limit]
+        case["decade"] = row["decade"]
+        case["n_real_edges"] = len(real_edges)
+        case["authority_results"] = score_authorities(case["authority_results"], row, text, real_edges)
+        out_path.write_text(json.dumps(case, indent=2))
+        per_case.append(case)
+        concept_totals.update(case["objects_by_concept"])
 
-        objects_by_concept = defaultdict(list)
-        for sentence in candidates:
-            for obj in extract_concepts(client, args.model, sentence, ontology, rule_lookup):
-                objects_by_concept[obj["concept"]].append(obj)
+        n_verified = sum(a["verification"]["status"] == "VERIFIED" for a in case["authority_results"])
+        print(f"[{i+1}/{len(rows)}] {how:9s} {filename[:50]:50s} "
+              f"authorities={len(case['authority_results']):2d} verified={n_verified}", flush=True)
 
-        for concept, objs in objects_by_concept.items():
-            concept_totals[concept] += len(objs)
+    samples = defaultdict(list)  # a few of each non-verified status, for manual spot-checks
+    for case in per_case:
+        for a in case["authority_results"]:
+            status = a["verification"]["status"]
+            if status != "VERIFIED" and len(samples[status]) < 25:
+                samples[status].append({"case": case["filename"], "cited": a["cited"],
+                                        "in_judgment_text": a.get("in_judgment_text"),
+                                        "source_sentence": a.get("source_sentence")})
 
-        case_authority_results = []
-        for obj in objects_by_concept.get("AuthorityCited", []):
-            verification = verify_authority(obj["filler"], real_edges)
-            authority_status_totals[verification["status"]] += 1
-            case_authority_results.append({"cited": obj["filler"], "verification": verification})
-            if verification["status"] == "UNVERIFIED" and len(unverified_samples) < 15:
-                unverified_samples.append({"case": filename, "cited": obj["filler"],
-                                            "source_sentence": obj["source_sentence"]})
-            if verification["status"] == "REJECTED_NOT_A_CASE" and len(rejected_samples) < 15:
-                rejected_samples.append({"case": filename, "cited": obj["filler"]})
-
-        case_summary = {
-            "doc_id": doc_id, "filename": filename, "year": year,
-            "candidate_sentences": len(candidates),
-            "objects_by_concept": {k: len(v) for k, v in objects_by_concept.items()},
-            "authority_results": case_authority_results,
-        }
-        per_case_summaries.append(case_summary)
-        (OUT_DIR / f"{doc_id}.json").write_text(json.dumps(case_summary, indent=2))
-
-        n_verified = sum(1 for a in case_authority_results if a["verification"]["status"] == "VERIFIED")
-        print(f"[{i+1}/{len(rows)}] {filename[:50]:50s} "
-              f"candidates={len(candidates):3d} authorities={len(case_authority_results):2d} verified={n_verified}")
-
-    total_authorities = sum(authority_status_totals.values())
     summary = {
-        "cases_processed": len(per_case_summaries),
+        "selection": selection_description(args),
+        "model": args.model,
+        "per_case_limit": args.per_case_limit,
+        "failed_cases": failed,
         "concept_totals": dict(concept_totals),
-        "authority_status_totals": dict(authority_status_totals),
-        "authority_verification_rate_among_plausible_case_names": (
-            round(authority_status_totals["VERIFIED"] /
-                  max(1, authority_status_totals["VERIFIED"] + authority_status_totals["UNVERIFIED"]), 3)
-        ),
-        "unverified_samples": unverified_samples,
-        "rejected_not_a_case_samples": rejected_samples,
+        "authority_metrics": authority_metrics(per_case),
+        "authority_metrics_by_decade": metrics_by_decade(per_case),
+        "samples": dict(samples),
     }
-    SUMMARY_PATH.write_text(json.dumps(summary, indent=2))
+    args.summary.write_text(json.dumps(summary, indent=2))
 
-    print(f"\n=== SUMMARY ({len(per_case_summaries)} cases) ===")
+    m = summary["authority_metrics"]
+    print(f"\n=== SUMMARY ({m['cases']} cases{', ' + str(len(failed)) + ' FAILED' if failed else ''}) ===")
     print("Objects extracted by concept:", dict(concept_totals))
-    print("Authority verification status:", dict(authority_status_totals))
-    print(f"Verification rate among plausible case-name candidates: "
-          f"{summary['authority_verification_rate_among_plausible_case_names']:.1%}")
-    print(f"\nWrote {SUMMARY_PATH}")
-    print(f"Wrote {len(per_case_summaries)} per-case reports to {OUT_DIR}/")
+    print("Authority status:", m["status_counts"])
+    print(f"Verified rate among case-shaped citations: {m['verified_rate']}  "
+          f"edge recall: {m['edge_recall']}")
+    print(f"\nWrote {args.summary}")
 
 
 if __name__ == "__main__":

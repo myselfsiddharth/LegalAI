@@ -15,33 +15,42 @@
       "cited": "Narayan Devji Kango ([1955] 1 S.C.R. 1)",
       "verification": {
         "status": "VERIFIED",
-        "match_score": 0.75,
+        "match_score": 1.0,
         "matched_cited_doc_id": "1089401",
-        "matched_cited_text": "Shrinivas Krishnarao Kango v. Narayan Devji Kango"
-      }
+        "matched_cited_text": "Shrinivas Krishnarao Kango v. Narayan Devji Kango",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "Shankar Ramchandra `Patil ([1943] L.R. 70 I.A. 232)",
       "verification": {
-        "status": "UNVERIFIED",
-        "match_score": 0.48,
-        "reason": "no matching outbound edge in citation metadata for this document"
-      }
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "213257",
+        "matched_cited_text": "Anant Bhikappa Patil v. Shankar Ramchandra Patil",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "Harihar Bakhsh Singh ([1945] I.L.R. 21 Lucknow 1)",
       "verification": {
         "status": "UNVERIFIED",
-        "match_score": 0.36,
+        "match_score": 0.0,
         "reason": "no matching outbound edge in citation metadata for this document"
-      }
+      },
+      "in_judgment_text": true
     },
     {
       "cited": "Hindu Shastric Law",
       "verification": {
         "status": "REJECTED_NOT_A_CASE",
-        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
-      }
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
     }
-  ]
+  ],
+  "decade": "1950",
+  "n_real_edges": 6
 }
