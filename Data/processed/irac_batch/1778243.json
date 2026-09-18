@@ -1,0 +1,28 @@
+{
+  "doc_id": "1778243",
+  "filename": "Ct_A_Ct_Nachiappa_Chettiar_And_Others_vs_Ct_A_Ct_Subramaniam_Chettiar_on_13_November_1959_1.PDF",
+  "year": "1959",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Claim": 11,
+    "Holding": 3,
+    "AuthorityCited": 2,
+    "Party": 1
+  },
+  "authority_results": [
+    {
+      "cited": "Jagarnath Kuari, (1932) L.R. 53 I.A. 130",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "Hem Chandra Chakravarthy and Others, A.I.R. 1947 Cal. 93",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    }
+  ]
+}

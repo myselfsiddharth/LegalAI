@@ -1,0 +1,57 @@
+{
+  "doc_id": "76789",
+  "filename": "In_The_Supreme_Court_Of_India_vs_Kadar_Unnisa_Begum_And_Others_on_12_October_1950_1.PDF",
+  "year": "1950",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 5,
+    "AuthorityCited": 6,
+    "Holding": 8,
+    "Claim": 9,
+    "Outcome": 2
+  },
+  "authority_results": [
+    {
+      "cited": "Dower",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "him",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "him",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "a text in Sur-ai-Nissa",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "a decision of the Hyderabad High Court",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "some other High Courts in India",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    }
+  ]
+}

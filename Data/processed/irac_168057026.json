@@ -1,0 +1,100 @@
+{
+  "case": "Kedar_Nath_Yadav_vs_State_Of_West_Bengal_Ors_on_31_August_2016_1.PDF",
+  "doc_id": "168057026",
+  "Issue": [],
+  "Rule": [],
+  "Authority": [
+    {
+      "cited": "TML",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.16,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "source_sentence": "Air compressors, standby generators and LPG storage yard, etc. and lease it to the TML at an annual lease rental of Rs. 90 lakhs per annum for 30 years renewable at the option of TML for further blocks of 30 years."
+    },
+    {
+      "cited": "Rs. 90 lakhs per annum",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.35,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "source_sentence": "Air compressors, standby generators and LPG storage yard, etc. and lease it to the TML at an annual lease rental of Rs. 90 lakhs per annum for 30 years renewable at the option of TML for further blocks of 30 years."
+    },
+    {
+      "cited": "the Cabinet",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.36,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "source_sentence": "Cabinet may kindly approve the proposed acquisition of 1253 (1053+200) acres of land as proposed at para 3 and 4 above.\u201a (emphasis laid by this Court) Pursuant to the approval of the said decision of the Cabinet by the Chief Minister dated 05.06.2006, the notification under Section 4 (1) of the Land Acquisition Act, 1894 (hereinafter referred to as the \u25a1L.A."
+    },
+    {
+      "cited": "Cabinet Memo",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.3,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "source_sentence": "Proposal numbers 3 and 4 of Cabinet Memo, referred to supra, approved by the Chief Minister make it clear that acquisition of land comprising of 1053 acres is needed for the Small Car Project of TML and 200 acres of land is needed to cater to the housing and social infrastructure needs of the project."
+    },
+    {
+      "cited": "the Chief Minister",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.38,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "source_sentence": "Proposal numbers 3 and 4 of Cabinet Memo, referred to supra, approved by the Chief Minister make it clear that acquisition of land comprising of 1053 acres is needed for the Small Car Project of TML and 200 acres of land is needed to cater to the housing and social infrastructure needs of the project."
+    },
+    {
+      "cited": "cold storage, factory and fisheries",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.41,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "source_sentence": "Another applied for exemption of the land from acquisition on the ground that they are running a number of agro-based industries like cold storage, factory and fisheries covering a large area of land providing employment to a considerable number of persons."
+    }
+  ],
+  "Application": {
+    "Facts": [],
+    "Claims": [
+      "automobile industries",
+      "the needs of the people",
+      "the problem of unemployment",
+      "400 acres",
+      "200 acres",
+      "100 acres",
+      "land measuring 1053 acres for small car project of Tata Motors at Singur, Hooghly and 200 acres in Telipukur in Singur P.S.",
+      "1253 (1053+200) acres of land",
+      "1053 acres",
+      "a number of agro-based industries",
+      "the land",
+      "a factory for the \u0192Small Car Project\u2026 of TML at Singur",
+      "their objections",
+      "lands",
+      "the acquisition proceedings"
+    ]
+  },
+  "Conclusion": {
+    "Holdings": [
+      "lease rental",
+      "1053 acres",
+      "200 acres of land",
+      "WBIDC intends to acquire the land for generating employment and for socio-economic development of the area by setting up a factory for the \u0192Small Car Project\u2026 of TML at Singur",
+      "the acquisition of the land in question was indeed for public purpose",
+      "those objections may be ignored in the greater interest of the public and the State",
+      "the same to be in the interest of the public and for public purpose"
+    ],
+    "Outcome": [
+      "Singur, District Hooghly",
+      "the proposed acquisition of 1253 (1053+200) acres of land",
+      "the land from acquisition",
+      "the Writ Petitions",
+      "the acquisition of land"
+    ]
+  }
+}

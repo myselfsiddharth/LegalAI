@@ -1,0 +1,38 @@
+{
+  "doc_id": "1305829",
+  "filename": "Saraswathi_Ammal_And_Another_vs_Rajagopal_Ammal_on_20_October_1953_1.PDF",
+  "year": "1953",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 4,
+    "Claim": 7,
+    "AuthorityCited": 3,
+    "Holding": 3
+  },
+  "authority_results": [
+    {
+      "cited": "Dandapani ([1946] 1 M.L.J. 354)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.28,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      }
+    },
+    {
+      "cited": "Pidugu Narasimham and Others ([1939] 1 M.L.J. 134)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.46,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      }
+    },
+    {
+      "cited": "Tiruvengada Pillai and Others (I.L.R. 30 Mad. 340)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.41,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      }
+    }
+  ]
+}

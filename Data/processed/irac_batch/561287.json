@@ -1,0 +1,71 @@
+{
+  "doc_id": "561287",
+  "filename": "Collector_Of_Bombay_vs_Municipal_Corporation_Of_The_City_Of_on_5_October_1951_1.PDF",
+  "year": "1951",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 3,
+    "AuthorityCited": 8,
+    "Holding": 4,
+    "Claim": 4,
+    "Outcome": 1
+  },
+  "authority_results": [
+    {
+      "cited": "the objection of the Corporation",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "the Resolution",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "the doctrine of estoppel",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "s. 115 of the Indian Evidence Act",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "the Crown's prerogative",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "the Government",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "section 8 of the Bombay City Land Revenue Act II of 1876",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "Kamalavahooji Maharaj v.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "doc_id": "1652416",
+  "filename": "Angurbala_Mullick_vs_Debabrata_Mullick_on_3_May_1951_1.PDF",
+  "year": "1951",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Holding": 20,
+    "Claim": 13,
+    "AuthorityCited": 6,
+    "Party": 9,
+    "Outcome": 1
+  },
+  "authority_results": [
+    {
+      "cited": "Mrityunjoy and his mother",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "the construction of the indenture which created the endowment as well as of the provisions of the Hindu Women's Rights to Property Act (Act XVIII of 1937 as amended by Act XI of 1938)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.16,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      }
+    },
+    {
+      "cited": "Umayal Achi v.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "the ordinary rule of succession under the Hindu law",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "the provisions of sections 3 and 5 of the Act",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "the deed",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    }
+  ]
+}

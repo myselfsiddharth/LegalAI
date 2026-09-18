@@ -1,0 +1,65 @@
+{
+  "doc_id": "591580",
+  "filename": "Shrimant_Sardar_Bhujangaraodaulatrao_vs_Shrimant_Malojirao_Daulatraoghorpade_on_30_January_1952_1.PDF",
+  "year": "1952",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 8,
+    "Holding": 15,
+    "Claim": 10,
+    "AuthorityCited": 7
+  },
+  "authority_results": [
+    {
+      "cited": "the Resolution of 1932",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "the Resolution of 1891",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "Hormusji Maneklal (74 I.A. 03)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.41,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      }
+    },
+    {
+      "cited": "2 (I.L.R. 1948 Bom. 809)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.22,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      }
+    },
+    {
+      "cited": "Government",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "the same way as the shares of the other two brothers",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "Other Saranjams in the Political Department",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "doc_id": "1870386",
+  "filename": "Mummareddi_Nagi_Reddi_And_Others_vs_Pitti_Durairaja_Naidu_And_Others_on_8_May_1951_1.PDF",
+  "year": "1951",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 2,
+    "Holding": 12,
+    "AuthorityCited": 7,
+    "Claim": 14,
+    "Outcome": 2
+  },
+  "authority_results": [
+    {
+      "cited": "Gaya (A.I.R. 1933 All. 856)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.28,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      }
+    },
+    {
+      "cited": "Gola Bhagat (I.L.R. 40 Cal. 721)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.31,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      }
+    },
+    {
+      "cited": "Harinarain Singh (L.R. 59 I.A. 147)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.27,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      }
+    },
+    {
+      "cited": "Mahesh (I.L.R. 41 All. 63)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.31,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      }
+    },
+    {
+      "cited": "Chanchamma",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "Narayanappa",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "the daughter and son-in-law",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    }
+  ]
+}

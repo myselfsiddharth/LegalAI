@@ -1,0 +1,47 @@
+{
+  "doc_id": "661850",
+  "filename": "Gurunath_Alias_Bhimaji_vs_Kamalabai_Kom_Kenchangaudanadgaudar_on_10_December_1954_1.PDF",
+  "year": "1954",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 5,
+    "AuthorityCited": 4,
+    "Claim": 11,
+    "Holding": 12,
+    "Outcome": 2
+  },
+  "authority_results": [
+    {
+      "cited": "Narayan Devji Kango ([1955] 1 S.C.R. 1)",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 0.75,
+        "matched_cited_doc_id": "1089401",
+        "matched_cited_text": "Shrinivas Krishnarao Kango v. Narayan Devji Kango"
+      }
+    },
+    {
+      "cited": "Shankar Ramchandra `Patil ([1943] L.R. 70 I.A. 232)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.48,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      }
+    },
+    {
+      "cited": "Harihar Bakhsh Singh ([1945] I.L.R. 21 Lucknow 1)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.36,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      }
+    },
+    {
+      "cited": "Hindu Shastric Law",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    }
+  ]
+}

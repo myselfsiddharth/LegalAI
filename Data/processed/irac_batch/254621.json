@@ -1,0 +1,43 @@
+{
+  "doc_id": "254621",
+  "filename": "Mahant_Moti_Das_vs_S_P_Sahi_The_Special_Officer_In_on_15_April_1959_1.PDF",
+  "year": "1959",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 3,
+    "Claim": 18,
+    "Holding": 2,
+    "AuthorityCited": 4,
+    "Outcome": 1
+  },
+  "authority_results": [
+    {
+      "cited": "Tcndollkar, [1959] S.C.R. 279",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "The State of Orissa, [1954] S.C.R. 1046",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "Art. 133",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "appeals to the Supreme Court",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    }
+  ]
+}

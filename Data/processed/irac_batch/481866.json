@@ -1,0 +1,60 @@
+{
+  "doc_id": "481866",
+  "filename": "Kalipada_Chakraborti_And_Another_vs_Palani_Bala_Devi_And_Others_on_16_January_1953_1.PDF",
+  "year": "1953",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 12,
+    "AuthorityCited": 6,
+    "Holding": 9,
+    "Claim": 10
+  },
+  "authority_results": [
+    {
+      "cited": "Art. 124 of the Limitation Act",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "Velu ([1900] 27 I.A. 69)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.22,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      }
+    },
+    {
+      "cited": "Utsava ([1929] 56 I.A. 267)",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 0.75,
+        "matched_cited_doc_id": "1853262",
+        "matched_cited_text": "Jaggo v. Utsava"
+      }
+    },
+    {
+      "cited": "Shivagunga ([1925] 52 I.A. 332)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.32,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      }
+    },
+    {
+      "cited": "Satish",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "Ram Rakhal",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    }
+  ]
+}

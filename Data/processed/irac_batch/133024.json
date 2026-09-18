@@ -1,0 +1,22 @@
+{
+  "doc_id": "133024",
+  "filename": "Kidar_Lall_Seal_And_Another_vs_Hari_Lall_Seal_on_18_December_1951_1.PDF",
+  "year": "1951",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 9,
+    "Holding": 2,
+    "Outcome": 2,
+    "AuthorityCited": 1,
+    "Claim": 7
+  },
+  "authority_results": [
+    {
+      "cited": "the mortgagors",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    }
+  ]
+}

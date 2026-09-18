@@ -1,0 +1,36 @@
+{
+  "doc_id": "1604881",
+  "filename": "Saroj_Kumar_Mazumdar_vs_The_Commissioner_Of_Income_Tax_on_4_May_1959_1.PDF",
+  "year": "1959",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 7,
+    "Claim": 6,
+    "Holding": 7,
+    "Outcome": 3,
+    "AuthorityCited": 3
+  },
+  "authority_results": [
+    {
+      "cited": "The Commissioner of I come-tax, A.I.R. 1959 S.C. 359",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "The Commissioner of I come-tax, A.I.R. 1959 S.C. 359",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "The Commissioner of Income-tax, [1955] i S.C.R. 94I",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    }
+  ]
+}

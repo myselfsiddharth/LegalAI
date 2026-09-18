@@ -1,0 +1,38 @@
+{
+  "doc_id": "553711",
+  "filename": "Nalinakhya_Bysack_vs_Shyam_Sunder_Haldar_And_Others_on_29_January_1953_1.PDF",
+  "year": "1953",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 9,
+    "AuthorityCited": 3,
+    "Claim": 4,
+    "Outcome": 2,
+    "Holding": 2
+  },
+  "authority_results": [
+    {
+      "cited": "Sen ([19511 55 C.W.N. 719)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.16,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      }
+    },
+    {
+      "cited": "Ltd. ([1933] 60 I.A. 13)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.18,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      }
+    },
+    {
+      "cited": "Rai Bahadur Atulya Dhan Banerjee v.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "doc_id": "236012",
+  "filename": "Namdeo_Lokman_Lodhi_vs_Narmadabai_And_Others_on_27_February_1953_1.PDF",
+  "year": "1953",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 9,
+    "Holding": 10,
+    "AuthorityCited": 3,
+    "Claim": 21
+  },
+  "authority_results": [
+    {
+      "cited": "Gilbert Pinto (I.L.R. 42 Mad. 654)",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 0.75,
+        "matched_cited_doc_id": "46774",
+        "matched_cited_text": "Krishna Shetti v. Gilbert Pinto"
+      }
+    },
+    {
+      "cited": "Davey (110 E.R. 606)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.26,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      }
+    },
+    {
+      "cited": "forfeiture",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "doc_id": "22929",
+  "filename": "H_Venkatachala_Iyengar_vs_B_N_Thimmajamma_Others_on_13_November_1958_1.PDF",
+  "year": "1958",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Claim": 13,
+    "AuthorityCited": 4,
+    "Holding": 7,
+    "Party": 4
+  },
+  "authority_results": [
+    {
+      "cited": "suspicious circumstances",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "Jahnavi Charan Mukherji, (1928) I.L.R 56 Cal. 390",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "Jahnavi Charan Mukherji, (1928) I.L.R 56 Cal. 390",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "Lakshmamma and Sadagopalachar",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    }
+  ]
+}

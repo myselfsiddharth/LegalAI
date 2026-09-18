@@ -1,0 +1,70 @@
+{
+  "doc_id": "568069",
+  "filename": "Nagendra_Nath_Bora_Another_vs_The_Commissioner_Of_Hills_Divisionand_on_7_February_1958_1.PDF",
+  "year": "1958",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 7,
+    "AuthorityCited": 8,
+    "Holding": 11,
+    "Claim": 2
+  },
+  "authority_results": [
+    {
+      "cited": "Ad. 23 Of 1955, s. 9, Rule 343",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "Syed Ahmed Ishaque and others, [1955] I S.C.R. 1104",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "Northumberland Compensation Appeal Tribunal, (1952) 1 K.B. 338",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "the statute",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "Amarnath and another, [1954] S.C.R. 565",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "an appellate Authority",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "The State of Madyas, [1956] S.C.R. 256",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "Ltd., [1957] S.C.R. 98",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    }
+  ]
+}

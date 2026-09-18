@@ -1,0 +1,42 @@
+{
+  "doc_id": "476355",
+  "filename": "Bishan_Singh_Others_vs_Khazan_Singh_Another_on_20_May_1958_1.PDF",
+  "year": "1958",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Holding": 6,
+    "Claim": 16,
+    "Party": 1,
+    "AuthorityCited": 4
+  },
+  "authority_results": [
+    {
+      "cited": "Inayatullah, (1885) I.L.R. 7 All. 775",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "a preexisting and subsisting right",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "Zahir Ahmad Khan, A.I.R. 1949 East Punj. 193",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "Amar Singh, A.I.R. 1927 All. 664",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    }
+  ]
+}

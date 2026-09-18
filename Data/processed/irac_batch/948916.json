@@ -1,0 +1,51 @@
+{
+  "doc_id": "948916",
+  "filename": "Keshardeo_Chamria_vs_Radha_Kissen_Chamria_And_Othersradha_on_30_October_1952_1.PDF",
+  "year": "1952",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 5,
+    "Claim": 8,
+    "AuthorityCited": 5,
+    "Holding": 17,
+    "Outcome": 5
+  },
+  "authority_results": [
+    {
+      "cited": "Sheshrao Vithoba (I.L.R. 1948] Nag. 16)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.21,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      }
+    },
+    {
+      "cited": "interest at 6 1/2 per cent.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "yearly rests from the date fixed for payment till realization",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "the 20th February, 1945",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "section 151, Civil Procedure Code",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    }
+  ]
+}

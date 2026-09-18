@@ -1,0 +1,36 @@
+{
+  "doc_id": "41868",
+  "filename": "The_State_Of_Bihar_vs_Maharajadhiraja_Sir_Kameshwar_Singhof_on_27_May_1952_1.PDF",
+  "year": "1952",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 9,
+    "Holding": 10,
+    "AuthorityCited": 3,
+    "Claim": 3,
+    "Outcome": 1
+  },
+  "authority_results": [
+    {
+      "cited": "the impugned Act",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "the spirit of the times",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "articles 31-A and 31-B",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    }
+  ]
+}

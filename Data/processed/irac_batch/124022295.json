@@ -1,0 +1,21 @@
+{
+  "doc_id": "124022295",
+  "filename": "Shrimant_Sardar_Bhujangarao_Daulatrao_vs_Shrimant_Malojirao_Daulatrao_Ghorpade_on_30_January_1952_1.PDF",
+  "year": "1952",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Claim": 13,
+    "Party": 2,
+    "Holding": 21,
+    "AuthorityCited": 1
+  },
+  "authority_results": [
+    {
+      "cited": "the Legal Remembrancer to the Bombay Government",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    }
+  ]
+}

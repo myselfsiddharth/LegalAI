@@ -1,0 +1,101 @@
+{
+  "doc_id": "858834",
+  "filename": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
+  "year": "1957",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 4,
+    "Claim": 6,
+    "Holding": 20,
+    "Outcome": 1,
+    "AuthorityCited": 12
+  },
+  "authority_results": [
+    {
+      "cited": "Ayyappa Reddy, (1913) I.L.R. 38 Mad. 738",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "Sundara Mudaliar, (1950) 18 I.T.R. 259",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "S. 2(1) of the Indian Income-tax Act",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "s. 66A(2) of the Indian Income-tax Act (XI of 1922)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.39,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      }
+    },
+    {
+      "cited": "s. 66(1) of the Act",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "the Indian Income-tax Act",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "s. 4 (3) (viii) of the Act",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.32,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      }
+    },
+    {
+      "cited": "s. 2(1)",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "the definition of agricultural income given in the Indian Income-tax Act",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "the Indian Income-tax Act",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "the entries in the lists of the Seventh Schedule to the Constitution",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "heads of legislation",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    }
+  ]
+}

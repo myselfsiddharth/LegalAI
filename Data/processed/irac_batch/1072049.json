@@ -1,0 +1,80 @@
+{
+  "doc_id": "1072049",
+  "filename": "The_New_Piecegoods_Bazar_Co_vs_The_Commissioner_Of_Income_Tax_Bombay_on_26_May_1950_1.PDF",
+  "year": "1950",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 1,
+    "AuthorityCited": 9,
+    "Claim": 2,
+    "Outcome": 2,
+    "Holding": 9
+  },
+  "authority_results": [
+    {
+      "cited": "the Bombay Finance Act, 1939",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "the language employed in sub-clause (iv) of sub-section (1) of section 9 of the Act",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.19,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      }
+    },
+    {
+      "cited": "clause (iv)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.19,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      }
+    },
+    {
+      "cited": "Mahomedbhoy Rowji (1)",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "the judgment under appeal",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "the Bombay case",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "the case above",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "Section 156",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "sections",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    }
+  ]
+}

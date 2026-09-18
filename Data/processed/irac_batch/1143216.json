@@ -1,0 +1,56 @@
+{
+  "doc_id": "1143216",
+  "filename": "Sirajul_Haq_Khan_Others_vs_The_Sunni_Central_Board_Of_Waqf_U_P_on_16_September_1958_1.PDF",
+  "year": "1958",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 1,
+    "Claim": 13,
+    "AuthorityCited": 6,
+    "Holding": 7
+  },
+  "authority_results": [
+    {
+      "cited": "s. 5(2) of the Act",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "s. 53 Of the Act",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "the expression \" any person interested in a waqf \"",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "Basanta Mal Devi Dayal & Ors., 1947) 49 P.L.R. 246",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "Section 15",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "2 Mad. 490",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    }
+  ]
+}

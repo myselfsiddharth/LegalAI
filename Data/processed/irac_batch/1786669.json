@@ -1,0 +1,66 @@
+{
+  "doc_id": "1786669",
+  "filename": "Natvarlal_Punjabhai_And_Another_vs_Dadubhai_Manubhai_And_Others_on_18_November_1953_1.PDF",
+  "year": "1953",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 6,
+    "Claim": 15,
+    "Holding": 6,
+    "AuthorityCited": 7,
+    "Outcome": 3
+  },
+  "authority_results": [
+    {
+      "cited": "the widow",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "Baidyanath (A.I.R. 1935 Pat. 175)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.5,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      }
+    },
+    {
+      "cited": "Babu Singh (A.I.R. 1952 All. 875)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.32,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      }
+    },
+    {
+      "cited": "the decision of the Civil Judge, Senior Division, at Broach, in Special Suit No. 9 of 1941",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "the minor",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "the appellants",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "the plaintiffs",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    }
+  ]
+}

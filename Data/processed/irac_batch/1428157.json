@@ -1,0 +1,61 @@
+{
+  "doc_id": "1428157",
+  "filename": "Saraswathi_Ammal_vs_Jagadambal_And_Another_on_27_February_1953_1.PDF",
+  "year": "1953",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 8,
+    "AuthorityCited": 6,
+    "Holding": 13,
+    "Claim": 12,
+    "Outcome": 1
+  },
+  "authority_results": [
+    {
+      "cited": "Soma Dero (I.L.R. 45 Cal. 450: P.C.)",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 0.75,
+        "matched_cited_doc_id": "1024853",
+        "matched_cited_text": "Abdul Hussein Khan v. Soma Dero"
+      }
+    },
+    {
+      "cited": "Krishna (I.L.R. 31 Bom. 495)",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 0.75,
+        "matched_cited_doc_id": "1929275",
+        "matched_cited_text": "Subbaratna Mudali v. Balakrishnaswami Naidu"
+      }
+    },
+    {
+      "cited": "the 1st defendant's case",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "the decision of the High Court",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "the custom that a dasi daughter was a preferential heir and excluded her married sisters",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "the requirements of section 32 of the Evidence Act",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    }
+  ]
+}

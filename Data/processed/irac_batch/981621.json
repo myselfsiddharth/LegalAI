@@ -1,0 +1,43 @@
+{
+  "doc_id": "981621",
+  "filename": "S_M_Jakati_Another_vs_S_M_Borkar_Others_on_24_September_1958_1.PDF",
+  "year": "1958",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 4,
+    "Claim": 8,
+    "Holding": 12,
+    "AuthorityCited": 4,
+    "Outcome": 1
+  },
+  "authority_results": [
+    {
+      "cited": "the pious obligation of the sons",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "Bhubneshwar Prasad Narain Singh, [1954] S.C.R. 177",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "Das, (1936) L.R. 63 I.A. 384",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "Shidlingappa Ishwa- rappa, A.I.R. 1941 Bom. 381",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    }
+  ]
+}

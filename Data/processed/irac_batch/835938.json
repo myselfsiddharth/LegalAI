@@ -1,0 +1,60 @@
+{
+  "doc_id": "835938",
+  "filename": "Mohanlal_Goenka_vs_Benoy_Krishna_Mukherjeeand_Others_on_9_December_1952_1.PDF",
+  "year": "1952",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 5,
+    "Claim": 6,
+    "Holding": 4,
+    "Outcome": 5,
+    "AuthorityCited": 6
+  },
+  "authority_results": [
+    {
+      "cited": "Madho Rao ([1930] I.L.R. 52 All. 868)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.27,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      }
+    },
+    {
+      "cited": "Horilal and Another ([1931] I.L.R. 53 All. 560)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.38,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      }
+    },
+    {
+      "cited": "Edappakath Ayissa Bi and Others (A.I.R. 1949 P.C. 302)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.37,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      }
+    },
+    {
+      "cited": "his conclusion",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "an affidavit",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "affidavit of service",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    }
+  ]
+}

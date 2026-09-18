@@ -1,0 +1,36 @@
+{
+  "doc_id": "1954356",
+  "filename": "Province_Of_Bombay_vs_Kusaldas_S_Advani_And_Others_on_15_September_1950_1.PDF",
+  "year": "1950",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 3,
+    "Holding": 12,
+    "AuthorityCited": 3,
+    "Claim": 2
+  },
+  "authority_results": [
+    {
+      "cited": "well recognised principles of approach",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "the order of requisition",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "Bradford ([1908] 1 K.B. 865)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.23,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      }
+    }
+  ]
+}

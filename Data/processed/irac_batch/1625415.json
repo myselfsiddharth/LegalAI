@@ -1,0 +1,44 @@
+{
+  "doc_id": "1625415",
+  "filename": "Kiran_Singh_And_Others_vs_Chaman_Paswan_And_Others_on_14_April_1954_1.PDF",
+  "year": "1954",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 4,
+    "Holding": 6,
+    "AuthorityCited": 4,
+    "Claim": 15,
+    "Outcome": 3
+  },
+  "authority_results": [
+    {
+      "cited": "Bam Kishan (I.L.R. 55 All. 315)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.31,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      }
+    },
+    {
+      "cited": "certain receipts marked as Exhibits A to A-114",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "trial Court",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "Ramdeo Singh v.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    }
+  ]
+}

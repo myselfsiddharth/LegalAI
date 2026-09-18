@@ -1,0 +1,50 @@
+{
+  "doc_id": "946004",
+  "filename": "Sahu_Madho_Das_And_Others_vs_Pandit_Mukand_Ram_And_Another_And_on_22_March_1955_1.PDF",
+  "year": "1955",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 4,
+    "Claim": 13,
+    "Holding": 8,
+    "AuthorityCited": 5
+  },
+  "authority_results": [
+    {
+      "cited": "him",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "the title derived from A",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "A",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "Nachiappa Gouinden ( [1918] L.R. 46 I.A. 72 at 86 & 87)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.36,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      }
+    },
+    {
+      "cited": "Sahu Bitthal Das",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "doc_id": "1089401",
+  "filename": "Shrinivas_Krishnarao_Kango_vs_Narayan_Devji_Kango_And_Others_on_23_March_1954_1.PDF",
+  "year": "1954",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 7,
+    "Holding": 9,
+    "AuthorityCited": 4,
+    "Claim": 10
+  },
+  "authority_results": [
+    {
+      "cited": "a posthumous son",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "Krishnachandra Das (2 B.L.R. 103 F.B.)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.34,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      }
+    },
+    {
+      "cited": "Hanmant Ramchandra (I.L.R. 1950 Bombay 510)",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 0.75,
+        "matched_cited_doc_id": "238807",
+        "matched_cited_text": "Jivaji Annaji v. Hanmant Ramchandra"
+      }
+    },
+    {
+      "cited": "one branch of a Kulkarni family",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    }
+  ]
+}

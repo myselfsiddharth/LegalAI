@@ -1,0 +1,43 @@
+{
+  "doc_id": "776356",
+  "filename": "Narayan_Bhagwantrao_Gosavibalajiwale_vs_Gopal_Vinayak_Gosavi_And_Others_on_22_September_1959_1.PDF",
+  "year": "1959",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 4,
+    "Holding": 14,
+    "Claim": 4,
+    "Outcome": 2,
+    "AuthorityCited": 4
+  },
+  "authority_results": [
+    {
+      "cited": "earlier sanads",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "Act 11 of 1852",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "Venkatachalapathi Guru Swamigal, (1919) L.R. 46 I.A. 204",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "Hindu Religious Endowments Board, A.I.R. 1938 Mad. 209",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    }
+  ]
+}

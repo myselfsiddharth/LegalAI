@@ -1,0 +1,155 @@
+{
+  "cases_processed": 50,
+  "concept_totals": {
+    "Party": 256,
+    "Claim": 505,
+    "Holding": 470,
+    "Outcome": 66,
+    "AuthorityCited": 274
+  },
+  "authority_status_totals": {
+    "REJECTED_NOT_A_CASE": 221,
+    "UNVERIFIED": 44,
+    "VERIFIED": 9
+  },
+  "authority_verification_rate_among_plausible_case_names": 0.17,
+  "unverified_samples": [
+    {
+      "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
+      "cited": "s. 66A(2) of the Indian Income-tax Act (XI of 1922)",
+      "source_sentence": "The Judgment of the Court was delivered by BHAGWATI, J.-This appeal with certificate of fitness under s. 66A(2) of the Indian Income-tax Act (XI of 1922) is directed against the Judgment and order of the High Court of Judicature at Calcutta on a reference under s. 66(1) of the Act."
+    },
+    {
+      "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
+      "cited": "s. 4 (3) (viii) of the Act",
+      "source_sentence": "Even though \"agricultural income\" which is exempted under s. 4 (3) (viii) of the Act is defined in s. 2(1) as above, there is no definition of \"agriculture\" or \"agricultural purpose\" to be found in the Act and it therefore falls to be determined what is the connotation of these terms."
+    },
+    {
+      "case": "Namdeo_Lokman_Lodhi_vs_Narmadabai_And_Others_on_27_February_1953_1.PDF",
+      "cited": "Davey (110 E.R. 606)",
+      "source_sentence": "Davey (110 E.R. 606) distinguished."
+    },
+    {
+      "case": "Shrinivas_Krishnarao_Kango_vs_Narayan_Devji_Kango_And_Others_on_23_March_1954_1.PDF",
+      "cited": "Krishnachandra Das (2 B.L.R. 103 F.B.)",
+      "source_sentence": "Krishnachandra Das (2 B.L.R. 103 F.B.) referred to."
+    },
+    {
+      "case": "Province_Of_Bombay_vs_Kusaldas_S_Advani_And_Others_on_15_September_1950_1.PDF",
+      "cited": "Bradford ([1908] 1 K.B. 865)",
+      "source_sentence": "Bradford ([1908] 1 K.B. 865), and other cases referred to."
+    },
+    {
+      "case": "Kumar_Pashupatinath_Malia_Another_vs_Deba_Prosanna_Mukherjee_on_4_May_1951_1.PDF",
+      "cited": "Nikhil Bhusan Mukhopadhya (L.R. 76 I.A. 74)",
+      "source_sentence": "Nikhil Bhusan Mukhopadhya (L.R. 76 I.A. 74) referred to."
+    },
+    {
+      "case": "Natvarlal_Punjabhai_And_Another_vs_Dadubhai_Manubhai_And_Others_on_18_November_1953_1.PDF",
+      "cited": "Baidyanath (A.I.R. 1935 Pat. 175)",
+      "source_sentence": "Baidyanath (A.I.R. 1935 Pat. 175) disapproved."
+    },
+    {
+      "case": "Natvarlal_Punjabhai_And_Another_vs_Dadubhai_Manubhai_And_Others_on_18_November_1953_1.PDF",
+      "cited": "Babu Singh (A.I.R. 1952 All. 875)",
+      "source_sentence": "Babu Singh (A.I.R. 1952 All. 875) approved."
+    },
+    {
+      "case": "Harihar_Prasad_Singh_And_Another_vs_Must_Of_Munshi_Nath_Prasadand_Others_on_16_January_1956_1.PDF",
+      "cited": "Kisho Prasad Singh ([1926] L.R. 53 I.A. 164)",
+      "source_sentence": "Kisho Prasad Singh ([1926] L.R. 53 I.A. 164), relied on."
+    },
+    {
+      "case": "Harihar_Prasad_Singh_And_Another_vs_Must_Of_Munshi_Nath_Prasadand_Others_on_16_January_1956_1.PDF",
+      "cited": "Sashi Bhusan (A.I.R. 1937 Cal. 763)",
+      "source_sentence": "Sashi Bhusan (A.I.R. 1937 Cal. 763), distinguished."
+    },
+    {
+      "case": "The_State_Of_West_Bengal_vs_Subodh_Gopal_Bose_And_Others_on_17_December_1953_1.PDF",
+      "cited": "The State Of West Bengal vs Subodh Gopal Bose And Others",
+      "source_sentence": "The State Of West Bengal vs Subodh Gopal Bose And Others on 17 December, 1953 Indian Kanoon - http://indiankanoon.org/doc/973363/ 8 516), referred to.."
+    },
+    {
+      "case": "Mohanlal_Goenka_vs_Benoy_Krishna_Mukherjeeand_Others_on_9_December_1952_1.PDF",
+      "cited": "Madho Rao ([1930] I.L.R. 52 All. 868)",
+      "source_sentence": "Madho Rao ([1930] I.L.R. 52 All. 868)distinguished."
+    },
+    {
+      "case": "Mohanlal_Goenka_vs_Benoy_Krishna_Mukherjeeand_Others_on_9_December_1952_1.PDF",
+      "cited": "Horilal and Another ([1931] I.L.R. 53 All. 560)",
+      "source_sentence": "Horilal and Another ([1931] I.L.R. 53 All. 560) overruled."
+    },
+    {
+      "case": "Mohanlal_Goenka_vs_Benoy_Krishna_Mukherjeeand_Others_on_9_December_1952_1.PDF",
+      "cited": "Edappakath Ayissa Bi and Others (A.I.R. 1949 P.C. 302)",
+      "source_sentence": "Edappakath Ayissa Bi and Others (A.I.R. 1949 P.C. 302) referred to."
+    },
+    {
+      "case": "Saraswathi_Ammal_And_Another_vs_Rajagopal_Ammal_on_20_October_1953_1.PDF",
+      "cited": "Dandapani ([1946] 1 M.L.J. 354)",
+      "source_sentence": "Dandapani ([1946] 1 M.L.J. 354) approved."
+    }
+  ],
+  "rejected_not_a_case_samples": [
+    {
+      "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
+      "cited": "Ayyappa Reddy, (1913) I.L.R. 38 Mad. 738"
+    },
+    {
+      "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
+      "cited": "Sundara Mudaliar, (1950) 18 I.T.R. 259"
+    },
+    {
+      "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
+      "cited": "S. 2(1) of the Indian Income-tax Act"
+    },
+    {
+      "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
+      "cited": "s. 66(1) of the Act"
+    },
+    {
+      "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
+      "cited": "the Indian Income-tax Act"
+    },
+    {
+      "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
+      "cited": "s. 2(1)"
+    },
+    {
+      "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
+      "cited": "the definition of agricultural income given in the Indian Income-tax Act"
+    },
+    {
+      "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
+      "cited": "the Indian Income-tax Act"
+    },
+    {
+      "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
+      "cited": "the entries in the lists of the Seventh Schedule to the Constitution"
+    },
+    {
+      "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
+      "cited": "heads of legislation"
+    },
+    {
+      "case": "S_M_Jakati_Another_vs_S_M_Borkar_Others_on_24_September_1958_1.PDF",
+      "cited": "the pious obligation of the sons"
+    },
+    {
+      "case": "S_M_Jakati_Another_vs_S_M_Borkar_Others_on_24_September_1958_1.PDF",
+      "cited": "Bhubneshwar Prasad Narain Singh, [1954] S.C.R. 177"
+    },
+    {
+      "case": "S_M_Jakati_Another_vs_S_M_Borkar_Others_on_24_September_1958_1.PDF",
+      "cited": "Das, (1936) L.R. 63 I.A. 384"
+    },
+    {
+      "case": "S_M_Jakati_Another_vs_S_M_Borkar_Others_on_24_September_1958_1.PDF",
+      "cited": "Shidlingappa Ishwa- rappa, A.I.R. 1941 Bom. 381"
+    },
+    {
+      "case": "Namdeo_Lokman_Lodhi_vs_Narmadabai_And_Others_on_27_February_1953_1.PDF",
+      "cited": "forfeiture"
+    }
+  ]
+}

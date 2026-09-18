@@ -1,0 +1,57 @@
+{
+  "doc_id": "973363",
+  "filename": "The_State_Of_West_Bengal_vs_Subodh_Gopal_Bose_And_Others_on_17_December_1953_1.PDF",
+  "year": "1953",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 4,
+    "AuthorityCited": 6,
+    "Claim": 12,
+    "Holding": 8
+  },
+  "authority_results": [
+    {
+      "cited": "a revenue sale held on 9th January, 1942",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "s. 37 of the Bengal Revenue Sales Act, 1859",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "s. 37",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "the statement of objects and reasons",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "executive fiat",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "The State Of West Bengal vs Subodh Gopal Bose And Others",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.41,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      }
+    }
+  ]
+}

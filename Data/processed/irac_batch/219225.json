@@ -1,0 +1,57 @@
+{
+  "doc_id": "219225",
+  "filename": "Maharajadhiraj_Sir_Kameshwar_Singh_vs_The_State_Of_Bihar_on_15_May_1959_1.PDF",
+  "year": "1959",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 3,
+    "Claim": 11,
+    "Holding": 9,
+    "AuthorityCited": 6,
+    "Outcome": 1
+  },
+  "authority_results": [
+    {
+      "cited": "S. 26 of the Bihar Agricultural Income-tax Act, 1938",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "Commissioner of Income-tax, Bihar and Orissa, [1955] 2 S.C.R. 290",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "agricultural in character",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "Gaya Zarpeshgi Lease",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "the Agricultural Income-tax Officer",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "the latter section",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    }
+  ]
+}

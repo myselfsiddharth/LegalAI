@@ -1,0 +1,98 @@
+{
+  "doc_id": "1606165",
+  "filename": "Harihar_Prasad_Singh_And_Another_vs_Must_Of_Munshi_Nath_Prasadand_Others_on_16_January_1956_1.PDF",
+  "year": "1956",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 6,
+    "AuthorityCited": 11,
+    "Holding": 8,
+    "Outcome": 1,
+    "Claim": 4
+  },
+  "authority_results": [
+    {
+      "cited": "finally published record of rights",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "the mortgagees in possession by a lease for a term",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "the presumptions under ss. 103-B and 120(2) of the Bihar Tenancy Act",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "s. -103-B of the Act",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "s. 120 of the Bihar Tenancy Act",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "Kisho Prasad Singh ([1926] L.R. 53 I.A. 164)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.41,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      }
+    },
+    {
+      "cited": "the Bihar Tenancy Act",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "Kalu Pramanik ([1893] I.L.R. 20 Cal. 708)",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 0.75,
+        "matched_cited_doc_id": "1127283",
+        "matched_cited_text": "Binad Lal Pakrashi v. Kalu Pramanik"
+      }
+    },
+    {
+      "cited": "Sashi Bhusan (A.I.R. 1937 Cal. 763)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.31,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      }
+    },
+    {
+      "cited": "Brijraj ([1935] L.R. 62 I.A. 180)",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 0.75,
+        "matched_cited_doc_id": "1211669",
+        "matched_cited_text": "Basant v. Brijraj"
+      }
+    },
+    {
+      "cited": "Babunath Prasad and Babu Misri Lal",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    }
+  ]
+}

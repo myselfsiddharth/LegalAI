@@ -1,0 +1,21 @@
+{
+  "doc_id": "378583",
+  "filename": "Dhiyan_Singh_And_Another_vs_Jugal_Kishore_And_Another_on_22_February_1950_1.PDF",
+  "year": "1950",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 10,
+    "Claim": 26,
+    "Holding": 5,
+    "AuthorityCited": 1
+  },
+  "authority_results": [
+    {
+      "cited": "the passages",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "doc_id": "1713186",
+  "filename": "The_Member_For_The_Board_Of_Agricultural_vs_Smt_Sindhurani_Chaudhurani_With_on_24_April_1957_1.PDF",
+  "year": "1957",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 4,
+    "AuthorityCited": 2,
+    "Holding": 8,
+    "Outcome": 2,
+    "Claim": 2
+  },
+  "authority_results": [
+    {
+      "cited": "The Commissioner of Income Tax (1943) L.R. 70 I.A. 180",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    },
+    {
+      "cited": "Manavikramato Rajah, I.L.R. 1945 Mad. 837",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "filler doesn't look like a case name (no v./vs.) -- likely a grounding false positive, not a genuine citation candidate"
+      }
+    }
+  ]
+}
