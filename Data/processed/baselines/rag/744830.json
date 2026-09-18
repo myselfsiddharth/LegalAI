@@ -1,0 +1,264 @@
+{
+  "doc_id": "744830",
+  "filename": "Maharaj_Singh_vs_State_Of_Uttar_Pradesh_Others_on_2_November_1976_1.PDF",
+  "year": "1976",
+  "system": "rag",
+  "irac": {
+    "issue": "Whether the conceptualisation of 'area appurtenant to buildings' in s. 9 of the Act is sound, and if the rules can be made retrospectively.",
+    "rule": "The rules of interpretation of statutes, particularly with regards to the conceptualisation of 'area appurtenant to buildings' in s. 9 of the Act and the power to make rules retrospectively.",
+    "application": "The court applied the principles of statutory interpretation to determine the scope of 'area appurtenant to buildings' in s. 9 of the Act and whether rules can be made retrospectively.",
+    "conclusion": "The court partially allowed the appeal, setting aside the High Court's decree."
+  },
+  "authority_results": [
+    {
+      "cited": "Special Land Acquisition Officer City Improvement Trust Board, Mysore v. P. Govindan",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Government of Andhra Pradesh and Ors. v. Sri D. Janardhana Rao and Anr.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "P.C. Patel and Ors. v. Smt. T.H. Pathak and Ors.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1316600",
+        "matched_cited_text": "P.C. Patel and Ors. v. Smt. T.H. Pathak and Ors.",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Y.B. Patel and Ors. v. Y. L. patil",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "State of Kerala v. The General Manager, Southern Railway Madras",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "151134",
+        "matched_cited_text": "State of Kerala v. The General Manager, Southern Railway Madras",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "M/s Mechelec Engineers & Manufacturers v. M/s Basic Equipment Corporation",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Union of India v. Sita Ram Jaiswal",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1661027",
+        "matched_cited_text": "Union of India v. Sita Ram Jaiswal",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Andhra Pradesh State Road Transport Corporation Hyderabad v. Venkateswara Rao etc.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "412700",
+        "matched_cited_text": "Andhra Pradesh State Road Transport Corporation Hyderabad v. Venkateswara Rao",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Bindeshwari Prasad Singh v. Kali Singh",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1052178",
+        "matched_cited_text": "Bindeshwari Prasad Singh v. Kali Singh",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Nawn Estates (P) Ltd. v. C.I.T., West Bengal",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1247367",
+        "matched_cited_text": "Nawn Estates (P) Ltd. v. C.I.T., West Bengal",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "State of Maharashtra v. The Central Provinces Manganese Ore Co. Ltd.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "258225",
+        "matched_cited_text": "-State of Maharashtra v. The Central Provinces Manganese Ore Co. Ltd.",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Tata Engineering & Locomotive Company Ltd. v. Gram Panchayat Pimpri Waghere",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1114841",
+        "matched_cited_text": "Tata Engineering & Locomotive Company Ltd. v. Gram Panchay-",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "K. Eapen Chacko v. The Provident Investment Co. P. Ltd.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1461370",
+        "matched_cited_text": "K. Eapen Chacko v. The Provident Investment Co. P. Ltd.",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "State of Kerala v. philomina etc. & Ors.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "928175",
+        "matched_cited_text": "State of Kerala and Ors. v. Philomina",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Sarjoo prasad Singh v. The State of Bihar and Ors.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "560500",
+        "matched_cited_text": "Sarjoo Prasad Singh v. The State of Bihar and Ors.",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Jangbir v. Mahavir Prasad Gupta",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "764222",
+        "matched_cited_text": "Jangbir v. Mahavir Prasad Gupta",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "State of U.P. v. Ram Chandrs Trivedi",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 0.94,
+        "matched_cited_doc_id": "1343955",
+        "matched_cited_text": "State of U. P. v. Ram Chandra Trivedi",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Union of India and Anr. v. K.S. Subramanian",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "478730",
+        "matched_cited_text": "Union of India and Anr. v. K. S. Subramanian",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Patel Jethabhai Chatur v. State of Gujarat",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "448126",
+        "matched_cited_text": "Patel Jethabhai Chatur v. State of Gujarat",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Shankar Gopinath Apte v. Gangabai Hariharrao Patwardhan",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1719909",
+        "matched_cited_text": "Shankar Gopinath Apte v. Gangabai Hariharrao Patwardhan",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": [
+    {
+      "chunk_index": 9,
+      "text": "Act 1 of 1951) (for short, the Act) ?; and (b) Is it sound to conceptualise 'area appurtenant to buildings' in s. 9 of the Act so nar- rowly as has been' done by the High Court ? There were two plaintiffs--the State of Uttar Pradesh and the Gaon Sabha of Bedpura claiming common but alternative reliefs. The suit was for injunction or ejectment, on title, of the sole defendant who was Maharaj Singh vs State Of Uttar Pradesh & Others on 2 November, 1976 Indian Kanoon - http://indiankanoon.org/doc/744830/ 4 the quondam zamindar of the 'estate' which is the 'subject matter of the suit. The trial Court dis- missed the suit whereupon the 2nd plaintiff dropped out of the litigation, as it were, and the State alone pursued the matter by way of appeal against the decree. The High Court partially allowed the appeal and the aggrieved defendant is the appellant before us. An expose of the facts may now be given to the extent necessary for explaining the setting of the contention between the parties."
+    },
+    {
+      "chunk_index": 48,
+      "text": "Special Land Acquisition Officer City Improvement Trust Board, Mysore v.P. Govindan. .. 549 CIVIL SERVICE 1. Powers of relaxation--Whether rules can be made retro- spectively --Andhra Pradesh State and Subordinate Serv- ices Rules 1962--Rule 47--Andhra Pradesh Civil' Services (Co-operation Branch) Maharaj Singh vs State Of Uttar Pradesh & Others on 2 November, 1976 Indian Kanoon - http://indiankanoon.org/doc/744830/ 17 Government of Andhra Pradesh and Ors. v. Sri D. Janardhana Rao and Anr. .. 702 2. Seniority--Irregular recruitment-Regularisation- Appointments through Public Service Commission--Recruitment through centralised recruitment scheme. P.C. Patel and Ors. v. Smt. T.H. Pathak and Ors. .. 677 CODE OF CIVIL PROCEDURE 1. S.I 1 Res Judicata, whether invocable in subsequent stage of same proceedings. Y.B. Patel and Ors. v. Y. L. patil .. 320 2. Ss. 79 and 80, suit for compensation against railway administration whether impleading Union of India as a party necessary. State of Kerala v. The General Manager, Southern Railway Madras. .. 419 3. S.80 Whether applicable to suits filed under s.9(1) of the (M.P.) Public Trusts Act, 1951. State of Maharashtra & Anr. v."
+    },
+    {
+      "chunk_index": 49,
+      "text": "Shri Chartder Kant .. 993 4. S.115--Jurisdiction of High Court to interfere with the Trial Court's discretionary order, when exercisable. M/s Mechelec Engineers & Manu facturers v. M/s Basic Equipment Corporation. .. 1060 5. (Act 5 of 1908) Order VI r/w Order, XIV, rule 1(5)--Courts should not allow parties to go to trial in the absence of proper pleadings. Union of India v. Sita Ram Jaiswal .. 979 6. (Act v of 1908) Order V], Rule 17. [See Pleadings] .. 728 7. Act V of 1908-- Section 11 Principle of res judicata--Applicability when gratuity was awarded in a previous proceedings under the Payment of Wages Act i.n the teeth of the clear provision of Rule 8.01--Scope of Rule 8.01. Andhra Pradesh State Road Transport Corporation Hyderabad v. Venkateswara Rao etc. ..... 248 CODE OF CRIMINAL PROCEDURE 1908 1. Whether Magistrate has jurisdiction to recall dismissal order made u/s 203--Application for recalling dismissal order, whether amounts to fresh complaint. Bindeshwari Prasad Singh v. Kali Singh .. 125 Maharaj Singh vs State Of Uttar Pradesh & Others on 2 November, 1976 Indian Kanoon - http://indiankanoon.org/doc/744830/ 18 2."
+    },
+    {
+      "chunk_index": 65,
+      "text": "Shri Kantilal Trikam- lal Expressions not being terms of art whether to be construed in technical sense or ordinary popular sense as used by businessmen --Legislative history as guide to construction--Genesis and development of law as key Maharaj Singh vs State Of Uttar Pradesh & Others on 2 November, 1976 Indian Kanoon - http://indiankanoon.org/doc/744830/ 25 to interpretation-Whether English decisions useful guides or construction of analogous provisions, fundamental concepts and general principles. Nawn Estates (P) Ltd. v.C.I.T., West Bengal .. 798 Provision in Act substituted by another--Amending provision avoid- -Effect. -State of Maharashtra v. The Central Provinces Manganese Ore Co. Ltd. .. 1002 Rules as an aid--Use of Statement of objects and reasons. Tata Engineering & Locomotive Company Ltd. v. Gram Panchayat Pimpri Waghere. .. 306 6. Statute when retrospective. K. Eapen Chacko v. The Provident Investment Co. P. Ltd. .. 7. When a statute could be read retrospectively. State of Kerala v. philomina etc. & Ors. .."
+    },
+    {
+      "chunk_index": 71,
+      "text": "Sec. 68D--Scope of 'Whether there should be a finding on each and every separate objection raised. Sarjoo prasad Singh v. The State of Bihar and Ors. .. Maharaj Singh vs State Of Uttar Pradesh & Others on 2 November, 1976 Indian Kanoon - http://indiankanoon.org/doc/744830/ 28 MURDER: --Distinction between S.299 and 300 I.P.C. [See Penal Code] .. 601 NECESSARY PARTY: [See Civil Procedure Code] .. 419 NEW CASE ---Courts' Whether can make a [See Partnership Act] .. 583 NEW DELHI HOUSE RENT CONTROL ORDER 1939---C1. Standard rent of house fixed in 1944--Rateable value enhanced on the basis of rent received in 1966-Whether rating should be correlated to actual income. New Delhi Municipal Committee v.M.N. Soi and Anr. . .731 NEW PLEA [See Adoni Cotton Mills v. Andhra Pradesh State Elec- tricity Board] .. 133 NOLLES PROSEQUE: --Principle to be followed by court (See Criminal Procedure Code Act 2 of 1974) . .335 OTHER RIGHTS in Explanation 2 to s. 2(15) meaning of. Controller of Estate Duty, Gujarat v."
+    },
+    {
+      "chunk_index": 73,
+      "text": "State of Punjab .. 280 PLEADINGS 1. Amendments to--Amendment to the pleadings to introduce an entirely different case, under the guise of permisible inconsistent pleas which is likely to cause prejudice to the other side cannot be allowed--Civil Procedure Code (Act V of 1908)--Order VI Rule 17. Maharaj Singh vs State Of Uttar Pradesh & Others on 2 November, 1976 Indian Kanoon - http://indiankanoon.org/doc/744830/ 29 M/s Modi Spinning and Weaving Mills Co. Ltd. and Anr. v. M/s Ladha Ram and Col . .728 2. Under section 70 of the Contract (Act 9) of 1872--Ingre- dients necessary to be pleaded. Union of India v. Sita Ram Jaiswal. .. 979 POSSESSION \"Possession\" to attract criminal liability must be \"conscious possession\". Patel Jethabhai Chatur v. State of Gujarat .. 872 POWERS OF OFFICER to rectify an order passed u/s 23A [See Income Tax Act] .. 512 POWER TO AUCTION --exclusive privilege to vend liquor [See Bihar and Orissa Excise Act. . .811 PRACTICE 1. Costs in tax matters when there is conflict among High Courts Controller of Estate Duty, Gujrart v. Shri Kantilal Trikamalal ... 2."
+    },
+    {
+      "chunk_index": 74,
+      "text": "Duty of High Court when there is conflict between deci- sions the Supreme Court--Upsetting concurrent findings of fact second appeal-Propriety. State of U.P . v. Ram Chandrs Trivedi .. 46: 3. Duty of High Court where there, is conflict between the view expressed by Divisional bench and larger benches of the Supreme Court. Union of India and Anr. K.S. Subramanian. 4. Non-suiting for want of proper pleadings at the appellate stage by the Supreme Court when parties went to trial and issues were raised and the litigation went through the course of trial and appeal is not desirable. Union of India v. Sita .Ram Jaiswal .. 979 5. Supreme Court will not entertain a complaint on facts and interfere with a finding of facts by the appellate Court under Article 136 of the Constitution of India. Patel Jethabhai Chatur v. State of Gujarat .. 872 PRACTICE AND PROCEDURE 1. Further plea taken in the affidavit rejoinder to the writ petition shall not be allowed to be agitate Sarjoo Prasad Singh v. The State of Bihar and Ors. .. 861 2. High Court's duty to give reasons even in cases of sum- mary dismissal. Shankar Gopinath Apte v. Gangabai Hariharrao Patwardhan .. 3."
+    },
+    {
+      "chunk_index": 83,
+      "text": "SECOND APPEAL 1 Disturbance of concurrent finding of fact without consid- ering the objects of the notification or discussing any principle of construction of documents which could indicate that a point of law had really arisen for a decision is patently exceeding the jurisdiction of the High Court--Civil Procedure Code (Act V) 1908, S. 100. Jangbir v. Mahavir Prasad Gupta .. 670 2. -- Propriety of upsetting concurrent findings in (See Practice) - .. 462 SENIORITY 1. -- Direct recruits of Promotees. (See Constitution of India) ..1037 2. When recruitment irregular. (See Civil Service) .. 677 SENIORITY SCHEME -- Right of State to lay down principles of seniority (See Constitution of India) .. 377 SENTENCE Judicial Jurisdiction to soften the sentence in economic crimes and food offences. (See Prevention of Food Adulteration Act, 1954) .. SICKNESS BENEFIT (See Employees' State Insurance Act, 1948) ..80 SOLE WITNESS --conviction based on (See Prevention of Corruption Act) . . .439 SPECIAL RULES 1962--Rule 4. Government of A.P. and Ors. v. Shri D."
+    }
+  ],
+  "raw_response": "```\n{\n  \"issue\": \"Whether the conceptualisation of 'area appurtenant to buildings' in s. 9 of the Act is sound, and if the rules can be made retrospectively.\",\n  \"rule\": \"The rules of interpretation of statutes, particularly with regards to the conceptualisation of 'area appurtenant to buildings' in s. 9 of the Act and the power to make rules retrospectively.\",\n  \"application\": \"The court applied the principles of statutory interpretation to determine the scope of 'area appurtenant to buildings' in s. 9 of the Act and whether rules can be made retrospectively.\",\n  \"conclusion\": \"The court partially allowed the appeal, setting aside the High Court's decree.\",\n  \"authorities\": [\n    \"Special Land Acquisition Officer City Improvement Trust Board, Mysore v. P. Govindan\",\n    \"Government of Andhra Pradesh and Ors. v. Sri D. Janardhana Rao and Anr.\",\n    \"P.C. Patel and Ors. v. Smt. T.H. Pathak and Ors.\",\n    \"Y.B. Patel and Ors. v. Y. L. patil\",\n    \"State of Kerala v. The General Manager, Southern Railway Madras\",\n    \"M/s Mechelec Engineers & Manufacturers v. M/s Basic Equipment Corporation\",\n    \"Union of India v. Sita Ram Jaiswal\",\n    \"Andhra Pradesh State Road Transport Corporation Hyderabad v. Venkateswara Rao etc.\",\n    \"Bindeshwari Prasad Singh v. Kali Singh\",\n    \"Nawn Estates (P) Ltd. v. C.I.T., West Bengal\",\n    \"State of Maharashtra v. The Central Provinces Manganese Ore Co. Ltd.\",\n    \"Tata Engineering & Locomotive Company Ltd. v. Gram Panchayat Pimpri Waghere\",\n    \"K. Eapen Chacko v. The Provident Investment Co. P. Ltd.\",\n    \"State of Kerala v. philomina etc. & Ors.\",\n    \"Sarjoo prasad Singh v. The State of Bihar and Ors.\",\n    \"Jangbir v. Mahavir Prasad Gupta\",\n    \"State of U.P. v. Ram Chandrs Trivedi\",\n    \"Union of India and Anr. v. K.S. Subramanian\",\n    \"Patel Jethabhai Chatur v. State of Gujarat\",\n    \"Shankar Gopinath Apte v. Gangabai Hariharrao Patwardhan\"\n  ]\n}\n```",
+  "decade": "1970",
+  "n_real_edges": 88
+}

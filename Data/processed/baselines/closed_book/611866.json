@@ -1,0 +1,55 @@
+{
+  "doc_id": "611866",
+  "filename": "Doypack_Systems_Pvt_Ltd_Etc_vs_Union_Of_India_Ors_Etc_on_12_February_1988_1.PDF",
+  "year": "1988",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether the Government of India can impose an obligation on a private company to accept a contract without assent or to compel a private company to enter into a contract under the Defence of India Act, 1962 and the rules framed thereunder.",
+    "rule": "The Government of India can impose an obligation on a private company to accept a contract without assent or to compel a private company to enter into a contract under the Defence of India Act, 1962 and the rules framed thereunder, as long as it is in accordance with the provisions of the Act and the rules.",
+    "application": "The court applied the provisions of the Defence of India Act, 1962, and the rules framed thereunder to the case of Doypack Systems Pvt Ltd, and held that the Government of India can impose an obligation on the company to accept a contract for the manufacture of packing materials for the defence forces.",
+    "conclusion": "The Supreme Court of India upheld the validity of the contract imposed on Doypack Systems Pvt Ltd and dismissed the company's petition."
+  },
+  "authority_results": [
+    {
+      "cited": "Union of India v. Ladulal Jain, AIR 1983 SC 603",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Rustom Cavasjee Cooper v. Union of India, AIR 1970 SC 186",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "State of U.P. v. Dhoom Singh, AIR 1964 SC 1777",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Gujarat State v. Nayka, AIR 1988 SC 1032 is not cited but related case",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether the Government of India can impose an obligation on a private company to accept a contract without assent or to compel a private company to enter into a contract under the Defence of India Act, 1962 and the rules framed thereunder.\",\n  \n  \"rule\": \"The Government of India can impose an obligation on a private company to accept a contract without assent or to compel a private company to enter into a contract under the Defence of India Act, 1962 and the rules framed thereunder, as long as it is in accordance with the provisions of the Act and the rules.\",\n  \n  \"application\": \"The court applied the provisions of the Defence of India Act, 1962, and the rules framed thereunder to the case of Doypack Systems Pvt Ltd, and held that the Government of India can impose an obligation on the company to accept a contract for the manufacture of packing materials for the defence forces.\",\n  \n  \"conclusion\": \"The Supreme Court of India upheld the validity of the contract imposed on Doypack Systems Pvt Ltd and dismissed the company's petition.\",\n  \n  \"authorities\": [\n    \"Union of India v. Ladulal Jain, AIR 1983 SC 603\",\n    \"Rustom Cavasjee Cooper v. Union of India, AIR 1970 SC 186\",\n    \"State of U.P. v. Dhoom Singh, AIR 1964 SC 1777\",\n    \"Gujarat State v. Nayka, AIR 1988 SC 1032 is not cited but related case\"\n  ]\n}\n```",
+  "decade": "1980",
+  "n_real_edges": 22
+}

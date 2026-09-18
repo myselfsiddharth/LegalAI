@@ -1,0 +1,66 @@
+{
+  "doc_id": "1714839",
+  "filename": "Orissa_Cement_Ltd_And_Ors_Etc_Etc_vs_State_Of_Orissa_And_Ors_Etc_Etc_on_4_April_1991_1.PDF",
+  "year": "1991",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether the State of Orissa can levy a tax on the sale of goods within the state if the sale is made in the course of inter-state trade, and whether the Orissa Sales Tax Act, 1947, is valid in this regard.",
+    "rule": "The Constitution of India, Article 301, Article 304, and the Orissa Sales Tax Act, 1947.",
+    "application": "The Supreme Court held that the Orissa Sales Tax Act, 1947, as amended, is valid and that the State of Orissa can levy a tax on the sale of goods within the state, even if the sale is made in the course of inter-state trade, subject to certain conditions.",
+    "conclusion": "The Supreme Court upheld the validity of the Orissa Sales Tax Act, 1947, and allowed the State of Orissa to levy tax on the sale of goods within the state, even in the course of inter-state trade."
+  },
+  "authority_results": [
+    {
+      "cited": "A. G. Agarbeen & Co. v. State of Bihar (AIR 1961 SC 116)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "State of Orissa v. Modi Spg. & Wvg. Mills Ltd. (AIR 1961 SC 1554)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "G. S. T. & Co. v. State of Kerala (AIR 1967 SC 1572)",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1682508",
+        "matched_cited_text": "Kannan Dewan Hills Co. v. State of Kerala",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Shri Krishna Sweets v. State of Tamil Nadu (AIR 1972 SC 2622)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "State of Maharashtra v. Glaxo Laboratories (India) Ltd. (AIR 1981 SC 1627)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether the State of Orissa can levy a tax on the sale of goods within the state if the sale is made in the course of inter-state trade, and whether the Orissa Sales Tax Act, 1947, is valid in this regard.\",\n  \"rule\": \"The Constitution of India, Article 301, Article 304, and the Orissa Sales Tax Act, 1947.\",\n  \"application\": \"The Supreme Court held that the Orissa Sales Tax Act, 1947, as amended, is valid and that the State of Orissa can levy a tax on the sale of goods within the state, even if the sale is made in the course of inter-state trade, subject to certain conditions.\",\n  \"conclusion\": \"The Supreme Court upheld the validity of the Orissa Sales Tax Act, 1947, and allowed the State of Orissa to levy tax on the sale of goods within the state, even in the course of inter-state trade.\",\n  \"authorities\": [\n    \"A. G. Agarbeen & Co. v. State of Bihar (AIR 1961 SC 116)\",\n    \"State of Orissa v. Modi Spg. & Wvg. Mills Ltd. (AIR 1961 SC 1554)\",\n    \"G. S. T. & Co. v. State of Kerala (AIR 1967 SC 1572)\",\n    \"Shri Krishna Sweets v. State of Tamil Nadu (AIR 1972 SC 2622)\",\n    \"State of Maharashtra v. Glaxo Laboratories (India) Ltd. (AIR 1981 SC 1627)\"\n  ]\n}\n```",
+  "decade": "1990",
+  "n_real_edges": 29
+}

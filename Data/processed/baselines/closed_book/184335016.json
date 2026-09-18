@@ -1,0 +1,46 @@
+{
+  "doc_id": "184335016",
+  "filename": "Union_Of_India_vs_Harbhajan_Singh_Dhillon_on_21_October_1971_1.PDF",
+  "year": "1971",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether the Central Government can cancel a licence for the manufacture of rectified spirit if the licencee has not taken delivery of the spirit within the specified time period.",
+    "rule": "The Central Government has the authority to cancel a licence if the conditions specified in the licence or the rules and regulations made under the Act are not complied with.",
+    "application": "The licencee, Harbhajan Singh Dhillon, had not taken delivery of the rectified spirit within the specified time period, which was a condition of the licence. The Supreme Court held that the Central Government's order cancelling the licence was valid.",
+    "conclusion": "The Central Government's order cancelling the licence was valid, and the licencee was not entitled to compensation."
+  },
+  "authority_results": [
+    {
+      "cited": "State of Madras v. R.A. 1955 2 SCR 686",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Abdul Hakim v. State of Hyderabad 1959 SCR 664",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "B.N.  Agarwala v. Union of India 1962 Supp 1 SCR 403",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether the Central Government can cancel a licence for the manufacture of rectified spirit if the licencee has not taken delivery of the spirit within the specified time period.\",\n  \"rule\": \"The Central Government has the authority to cancel a licence if the conditions specified in the licence or the rules and regulations made under the Act are not complied with.\",\n  \"application\": \"The licencee, Harbhajan Singh Dhillon, had not taken delivery of the rectified spirit within the specified time period, which was a condition of the licence. The Supreme Court held that the Central Government's order cancelling the licence was valid.\",\n  \"conclusion\": \"The Central Government's order cancelling the licence was valid, and the licencee was not entitled to compensation.\",\n  \"authorities\": [\n    \"State of Madras v. R.A. 1955 2 SCR 686\",\n    \"Abdul Hakim v. State of Hyderabad 1959 SCR 664\",\n    \"B.N.  Agarwala v. Union of India 1962 Supp 1 SCR 403\"\n  ]\n}\n```",
+  "decade": "1970",
+  "n_real_edges": 25
+}

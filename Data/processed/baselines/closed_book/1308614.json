@@ -1,0 +1,82 @@
+{
+  "doc_id": "1308614",
+  "filename": "Goodricke_Group_Ltd_And_Ors_vs_State_Of_W_B_And_Ors_on_25_November_1994_1.PDF",
+  "year": "1994",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether the West Bengal Tax on Entry of Goods into Local Areas Act, 1970, is valid and whether the tax levied on tea is payable by the tea garden or the tea factory.",
+    "rule": "The legislative competence of the State Legislature to enact the West Bengal Tax on Entry of Goods into Local Areas Act, 1970, and the validity of the tax levied on tea under the Act.",
+    "application": "The Supreme Court applied the principles of taxation and legislative competence to determine that the State Legislature has the competence to enact the Act and that the tax levied on tea is payable by the tea factory and not the tea garden.",
+    "conclusion": "The Supreme Court held that the West Bengal Tax on Entry of Goods into Local Areas Act, 1970, is valid and that the tax levied on tea is payable by the tea factory and not the tea garden."
+  },
+  "authority_results": [
+    {
+      "cited": "A. Thangal Kunju Musaliar v. M. P. Velukutty Nair, (1961) 1 SCR 875",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "K. S. Ramanathan v. State of Kerala, (1966) 2 SCR 627",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "State of Kerala v. K. S. Ramanathan, (1966) 2 SCR 627",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "B. K. Oil Mills v. U. P. State Brassware Corpn. Ltd., (1966) 1 SCR 125",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Anirudh Singh v. State of Punjab, (1967) 1 SCR 781",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Hirachand K. Khimchand v. State of Maharashtra, (1967) 2 SCR 841",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "D. C. & A. C. Mills Ltd. v. State of Rajasthan, (1970) 1 SCR 395",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether the West Bengal Tax on Entry of Goods into Local Areas Act, 1970, is valid and whether the tax levied on tea is payable by the tea garden or the tea factory.\",\n \n  \"rule\": \"The legislative competence of the State Legislature to enact the West Bengal Tax on Entry of Goods into Local Areas Act, 1970, and the validity of the tax levied on tea under the Act.\",\n \n  \"application\": \"The Supreme Court applied the principles of taxation and legislative competence to determine that the State Legislature has the competence to enact the Act and that the tax levied on tea is payable by the tea factory and not the tea garden.\",\n \n  \"conclusion\": \"The Supreme Court held that the West Bengal Tax on Entry of Goods into Local Areas Act, 1970, is valid and that the tax levied on tea is payable by the tea factory and not the tea garden.\",\n \n  \"authorities\": [\n    \"A. Thangal Kunju Musaliar v. M. P. Velukutty Nair, (1961) 1 SCR 875\",\n    \"K. S. Ramanathan v. State of Kerala, (1966) 2 SCR 627\",\n    \"State of Kerala v. K. S. Ramanathan, (1966) 2 SCR 627\",\n    \"B. K. Oil Mills v. U. P. State Brassware Corpn. Ltd., (1966) 1 SCR 125\",\n    \"Anirudh Singh v. State of Punjab, (1967) 1 SCR 781\",\n    \"Hirachand K. Khimchand v. State of Maharashtra, (1967) 2 SCR 841\",\n    \"D. C. & A. C. Mills Ltd. v. State of Rajasthan, (1970) 1 SCR 395\"\n  ]\n}\n```",
+  "decade": "1990",
+  "n_real_edges": 24
+}

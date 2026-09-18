@@ -1,0 +1,37 @@
+{
+  "doc_id": "981621",
+  "filename": "S_M_Jakati_Another_vs_S_M_Borkar_Others_on_24_September_1958_1.PDF",
+  "year": "1958",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether a suit for recovery of possession of immovable property is barred by the Bombay District Municipal Act, 1902, and whether the defendants, who are in possession of the property, can claim protection under the Act.",
+    "rule": "The Bombay District Municipal Act, 1902, does not bar a suit for recovery of possession of immovable property. Section 299 of the Act does not affect the right of the plaintiff to recover possession of the property.",
+    "application": "The plaintiffs, who are the owners of the property, filed a suit for recovery of possession against the defendants, who had been in possession of the property. The defendants claimed protection under the Bombay District Municipal Act, 1902. The court held that the Act does not bar the suit and that the defendants cannot claim protection under the Act.",
+    "conclusion": "The court allowed the plaintiffs' appeal and set aside the orders of the lower courts, holding that the suit for recovery of possession of immovable property is not barred by the Bombay District Municipal Act, 1902."
+  },
+  "authority_results": [
+    {
+      "cited": "Syed Mohd. Salim v. Wazir Khan, AIR 1957 SC 774",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Shankar Balwant v. Arthur Road Properties, Ltd., AIR 1957 Bom 79",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether a suit for recovery of possession of immovable property is barred by the Bombay District Municipal Act, 1902, and whether the defendants, who are in possession of the property, can claim protection under the Act.\",\n  \n  \"rule\": \"The Bombay District Municipal Act, 1902, does not bar a suit for recovery of possession of immovable property. Section 299 of the Act does not affect the right of the plaintiff to recover possession of the property.\",\n  \n  \"application\": \"The plaintiffs, who are the owners of the property, filed a suit for recovery of possession against the defendants, who had been in possession of the property. The defendants claimed protection under the Bombay District Municipal Act, 1902. The court held that the Act does not bar the suit and that the defendants cannot claim protection under the Act.\",\n  \n  \"conclusion\": \"The court allowed the plaintiffs' appeal and set aside the orders of the lower courts, holding that the suit for recovery of possession of immovable property is not barred by the Bombay District Municipal Act, 1902.\",\n  \n  \"authorities\": [\n    \"Syed Mohd. Salim v. Wazir Khan, AIR 1957 SC 774\",\n    \"Shankar Balwant v. Arthur Road Properties, Ltd., AIR 1957 Bom 79\"\n  ]\n}\n```",
+  "decade": "1950",
+  "n_real_edges": 14
+}

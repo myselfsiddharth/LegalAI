@@ -1,0 +1,116 @@
+{
+  "doc_id": "49625991",
+  "filename": "Indore_Development_Authority_vs_Manoharlal_And_Ors_Etc_on_6_March_2020_1.PDF",
+  "year": "2020",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 2,
+    "AuthorityCited": 11,
+    "Holding": 3,
+    "Claim": 7,
+    "Outcome": 2
+  },
+  "authority_results": [
+    {
+      "cited": "Section 24 of the Act of 2013",
+      "source_sentence": "A three Judge Bench of this Court in Pune Municipal Corporation & Anr v Harakchand Misrimal Solanki & Ors 1, interpreted Section 24 of the Act of 2013.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Section 24 of the Right to Fair Compensation and Transparency in Land Acquisition, Rehabilitation and Resettlement Act, 2013 (Act of 2013)",
+      "source_sentence": "What is the meaning of the expression paid'/tender' in Section 24 of the Right to Fair Compensation and Transparency in Land Acquisition, Rehabilitation and Resettlement Act, 2013 (Act of 2013') and Section 31 of the Land Acquisition Act, LA (Act of 1894')?",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Section 24 of the Right to Fair Compensation and Transparency in Land Acquisition, Rehabilitation and Resettlement Act, 2013 (Act of 2013)",
+      "source_sentence": "What is the meaning of the expression paid'/tender' in Section 24 of the Right to Fair Compensation and Transparency in Land Acquisition, Rehabilitation and Resettlement Act, 2013 (Act of 2013') and Section 31 of the Land Acquisition Act, LA (Act of 1894')?",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Section 31 of the Land Acquisition Act, LA (Act of 1894)",
+      "source_sentence": "What is the meaning of the expression paid'/tender' in Section 24 of the Right to Fair Compensation and Transparency in Land Acquisition, Rehabilitation and Resettlement Act, 2013 (Act of 2013') and Section 31 of the Land Acquisition Act, LA (Act of 1894')?",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Section 31 of the Land Acquisition Act, LA (Act of 1894)",
+      "source_sentence": "What is the meaning of the expression paid'/tender' in Section 24 of the Right to Fair Compensation and Transparency in Land Acquisition, Rehabilitation and Resettlement Act, 2013 (Act of 2013') and Section 31 of the Land Acquisition Act, LA (Act of 1894')?",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the Act of 2013",
+      "source_sentence": "The Act of 2013 is prospective and saves proceedings already initiated under the Land Acquisition Act, 1894 before its repeal, subject to provisions of Section 24 of the Act of 2013, which begins with a non- obstante clause and overrides all other provisions of the Act of 2013. 8.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "Section 24 of the Act of 2013",
+      "source_sentence": "The Act of 2013 is prospective and saves proceedings already initiated under the Land Acquisition Act, 1894 before its repeal, subject to provisions of Section 24 of the Act of 2013, which begins with a non- obstante clause and overrides all other provisions of the Act of 2013. 8.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the ratio in Pune Municipal Corporation (supra) and other judgments",
+      "source_sentence": "The learned SG, arguing that this Court should overrule the ratio in Pune Municipal Corporation (supra) and other judgments which followed it, contended that the Court did not consider the various interpretations of Section 31 of the (repealed) Land Acquisition Act, (\u25a1LA Act\u201a hereafter).",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "the ratio in Pune Municipal Corporation (supra) and other judgments",
+      "source_sentence": "The learned SG, arguing that this Court should overrule the ratio in Pune Municipal Corporation (supra) and other judgments which followed it, contended that the Court did not consider the various interpretations of Section 31 of the (repealed) Land Acquisition Act, (\u25a1LA Act\u201a hereafter).",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Section 31 of the (repealed) Land Acquisition Act, (\u25a1LA Act\u201a hereafter)",
+      "source_sentence": "The learned SG, arguing that this Court should overrule the ratio in Pune Municipal Corporation (supra) and other judgments which followed it, contended that the Court did not consider the various interpretations of Section 31 of the (repealed) Land Acquisition Act, (\u25a1LA Act\u201a hereafter).",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "legislative intent",
+      "source_sentence": "He highlighted that Section 24 is a transitional provision and such provisions should be given an interpretation which accords with legislative intent, rather than so as to impose hitherto absent standards, upon past proceedings, or proceedings initiated under the previous regime, but which have not worked themselves out.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "2020",
+  "n_real_edges": 296
+}

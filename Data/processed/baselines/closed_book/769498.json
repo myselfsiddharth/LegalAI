@@ -1,0 +1,57 @@
+{
+  "doc_id": "769498",
+  "filename": "Narmada_Bachao_Andolan_vs_State_Of_M_P_Anr_on_11_May_2011_1.PDF",
+  "year": "2011",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether the construction of the Sardar Sarovar Dam can be continued without obtaining a fresh environmental clearance and carrying out rehabilitation of affected people.",
+    "rule": "The rule of sustainable development and intergenerational equity requires that the interests of future generations be taken into account while making decisions about natural resources.",
+    "application": "The court applied the principles of sustainable development and intergenerational equity to the construction of the Sardar Sarovar Dam, holding that the project authorities must take steps to mitigate the adverse impacts on the environment and rehabilitate the affected people.",
+    "conclusion": "The court directed that no further construction of the dam shall be made until the Tribunal constituted under the Water (Prevention and Control of Pollution) Act, 1974, as directed in the judgment, submits its report."
+  },
+  "authority_results": [
+    {
+      "cited": "Vishakha v. State of Rajasthan (1997) 7 SCC 756",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "S.R. Bommai v. Union of India (1994) 3 SCC 1",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Narmada Bachao Andolan v. Union of India (2005) 4 SCC 756",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1938608",
+        "matched_cited_text": "Narmada Bachao Andolan v. Union of India & Ors.",
+        "n_matching_edges": 3
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "T. Damodara Rao v. State of A.P. (1986) 2 SCC 378",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether the construction of the Sardar Sarovar Dam can be continued without obtaining a fresh environmental clearance and carrying out rehabilitation of affected people.\",\n  \"rule\": \"The rule of sustainable development and intergenerational equity requires that the interests of future generations be taken into account while making decisions about natural resources.\",\n  \"application\": \"The court applied the principles of sustainable development and intergenerational equity to the construction of the Sardar Sarovar Dam, holding that the project authorities must take steps to mitigate the adverse impacts on the environment and rehabilitate the affected people.\",\n  \"conclusion\": \"The court directed that no further construction of the dam shall be made until the Tribunal constituted under the Water (Prevention and Control of Pollution) Act, 1974, as directed in the judgment, submits its report.\",\n  \"authorities\": [\n    \"Vishakha v. State of Rajasthan (1997) 7 SCC 756\",\n    \"S.R. Bommai v. Union of India (1994) 3 SCC 1\",\n    \"Narmada Bachao Andolan v. Union of India (2005) 4 SCC 756\",\n    \"T. Damodara Rao v. State of A.P. (1986) 2 SCC 378\"\n  ]\n}\n```",
+  "decade": "2010",
+  "n_real_edges": 74
+}

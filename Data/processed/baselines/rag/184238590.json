@@ -1,0 +1,106 @@
+{
+  "doc_id": "184238590",
+  "filename": "Umaji_Keshao_Meshram_And_Ors_vs_Radhikabai_Widow_Of_Anandrao_on_14_March_1986_1.PDF",
+  "year": "1986",
+  "system": "rag",
+  "irac": {
+    "issue": "Whether a Letters Patent appeal lies against the judgment of a Single Judge in a proceeding under Article 226 of the Constitution.",
+    "rule": "The jurisdiction and powers of the existing High Courts are subject to the Constitution, and the Letters Patent provisions regarding appeals apply to proceedings under Article 226.",
+    "application": "The Supreme Court analyzed the provisions of the Letters Patent, the Constitution, and the Bombay High Court Appellate Side Rules, 1960, to conclude that a Letters Patent appeal lies against the judgment of a Single Judge in a proceeding under Article 226.",
+    "conclusion": "A Letters Patent appeal lies against the judgment of a Single Judge in a proceeding under Article 226 of the Constitution."
+  },
+  "authority_results": [
+    {
+      "cited": "Queen v. Burah (1877-78) 5 I.A. 178",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "Saroda Soonduree Dossee v. Tincowree Nundee (1884) Hyde's Reports 70",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "India Electric Works Ltd. v. Registrar of Trade Marks AIR 1947 Cal. 49",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1094537",
+        "matched_cited_text": "India Electric Works Ltd. v. Registrar of Trade Marks A.l.R.",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "National Sewing Thread Company's case",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Sheo Prasad v. State of U.P. AIR 1965 All. 106",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Budge Budge Municipality Case",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": [
+    {
+      "chunk_index": 10,
+      "text": "Prior to such amendment where a Division Bench was composed of two or more Judges and the Judges were equally divided in opinion as to the decision to be given on any point, the opinion of the senior Judge was to prevail and under Clause 15 an appeal lay from Ms judgment. After the amendment of Clause 36, if the Judges of the Division Bench are equally divided, they are to state the point upon which they differ and the case has then to be heard upon that point by one or more of the other Judges and the point is to be decided according to the opinion of the majority of the Judges who have heard the case including those who first heard it. 9."
+    },
+    {
+      "chunk_index": 21,
+      "text": "The Special Bench also held that Articles 226 and 227 of the Constitution operated in different fields and that in the exercise of its power under Article 226 the High Court exercises original jurisdiction as contrasted with its appellate or revisional Jurisdictions and that where the original proceeding under Article 226 concerned civil rights, the proceeding under Article 226 would be an original civil proceeding and, therefore, an appeal would lie under Clause 15 of the Letters Patent against the judgment of a Single Judge in such a proceeding. The Special Bench further held that the words \"heard and finally disposed of\" in Rule 18 of the Chapter XVII of the Bombay High Court Appellate Side Rules, 1960, did not imply any exclusion of a Letters Patent appeal against the judgment of a Single Judge in a proceeding under Article 226 of the Constitution. According to the Special Bench, where the facts justified a party in filing an application under either Article 226 or 227 of the Constitution and the party chooses to file his application under both these Articles, the court ought to treat the application as being one made under Article 226."
+    },
+    {
+      "chunk_index": 23,
+      "text": "The judgment of the Full Bench is based upon one major premise and two minor premises - the major premise being that on the commencement of the Constitution the High Courts then in existence became organically different High Courts as they acquired a different origin, nature and character; the minor premises being (i) that the provision for an intra-court appeal in the Letters Patent dealt with different jurisdictions under the ordinary law only and not with any jurisdiction conferred upon the High Court by the Constitution, and (11) that Rule 18 of Chapter XVII of the Bombay High Court Appellate Side Rules, 1960, negatived any right of appeal. Each of these premises is, however, vitiated by a fallacy. 16. As the High Court of Bombay was in existence Immediately prior to the commencement of the Constitution, we will first turn to the relevant provisions of the Constitution as originally enacted, pointing out where necessary the subsequent changes made therein. 17."
+    },
+    {
+      "chunk_index": 149,
+      "text": "Yet another reason given by the Full Bench for holding that the High Courts under the Constitution were organically different from the same High Courts immediately prior to the commencement of the Constitution was that unlike in the past, under the Constitution the existence of the High Courts is no more dependent upon ordinary legislation. This reasoning is erroneous for it overlooks the relevant provisions of the Constitution and the earlier Constitution Acts By Clause 44 of the Letters Patent of the three Chartered High Courts, the Letters Patent were made subject to the legislative powers of the Governor-General in Council. By further Letters Patent dated March 11, 1919, for the words \"powers of the Governor-General in Council\" the words \"powers of the Governor-General in Legislative Council and also of the Governor-General in Council\" were substituted. Further, under Section 9 of the Indian High Courts Act, 1861, read with the 3aid Clause 44, the Governor-General in Council had the power to remove any place or territory from the jurisdiction of a High Court (see Queen v. Burah) [1877-78] 5 I.A. 178."
+    },
+    {
+      "chunk_index": 165,
+      "text": "Jurisdictions other than ordinary and extra- ordinary civil jurisdictions were conferred by clauses which followed Clause 14. For this reason, it was doubted at one time whether an intra-court appeal would lie from the judgment of one Judge in the exercise of original testamentary jurisdiction but in the case of Saroda Soonduree Dossee v. Tincowree Nundee [1884] Hyde's Reports 70, a Division Bench of three Judges of the Calcutta High Court by a majority held that such an appeal would lie. The Letters Patent of 1865 followed the pattern of the Letters Patent of 1862. Clause 15 forms part of a group of clauses consisting of Clauses 11 to 18 headed \"Civil Jurisdiction of the High Court\". Clause 12 deals with original jurisdiction as to suits and Clause 13 with extra-ordinary original civil jurisdiction while Clause 14 deals with joinder of several causes of action."
+    },
+    {
+      "chunk_index": 167,
+      "text": "Not only is the wording of Clause 15 unambiguous but there is strong intrinsic evidence in that Clause itself to show that it applies to all jurisdictions mentioned in different clauses of the Letters Patent, whether preceding Clause 15 or subsequent thereto, except those expressly excluded by Clause 15 itself. Had it not been so, there would have been no need to exclude expressly a judgment from a sentence or order passed or made in any criminal trial from the purview of Clause 15. Further, under Clause 15 an appeal also lies against the judgment of one Judge of any Division Court where the Judges are equally divided in opinion. Under the unamended Clause 36, in such a case the opinion of the senior Judge was to prevail and under Clause 15 an appeal lay against his judgment. A Division Bench may hear an original matter or an appeal from a subordinate court."
+    },
+    {
+      "chunk_index": 176,
+      "text": "Mongru Mia and Ors. , took the view that the words \"Subject to\" in the opening part of Article 225 also covered enlargement of jurisdiction and these words would, therefore, import into Article 225 the enlargement of its jurisdiction, for example, by Article 226. Das Gupta, J., however, gave a dissenting judgment in that case following the line of reasoning adopted by a Division Bench of that High Court in India Electric Works Ltd. v. Registrar of Trade Marks A.l.R. 1947 Cal. 49 in which a contrary view was taken. The case of India Electric Works Ltd. v. Registrar of Trade Marks was expressly overruled by this Court in National Sewing Thread Company's case. Other High Courts, as for example, the Allahabad High Court in Sheo Prasad v. State of U.P., A.l.R. 1965 All. 106 have also taken the same view as the majority judgment in Budge Budge Municipality Case. 86. The fact that Article 225 makes the jurisdiction and powers of the existing High Courts subject to a law of the appropriate Legislature does not mean that the jurisdiction under Article 226 or 227 cannot come within the scope of Article 225."
+    },
+    {
+      "chunk_index": 208,
+      "text": "The non obstante clause in Rule 18, namely, \"Notwithstanding anything contained in Rules 1,4, and 17 of this Chapter\", makes it abundantly clear why that rule uses the words \"finally disposed of\". As seen above, under Rules 1 and 17, applications under Article 226 and 227 are required to be heard and disposed of by a Division Bench. Rule 4, however, gives power to a Single Judge to issue rule nisi in an application under Article 226 but precludes him from passing any final order on such application. It is because a Single Judge has no power under Rules 1, 4 and 17 to hear and dispose of a petition under Article 226 or 227 that the non-obstante clause has been introduced in Rule 18. The use of the words \"be heard and finally disposed of by a Single Judge\" in Rule 18 merely clarifies the position that in such cases the power of the Single Judge is not confined merely to issuing a rule nisi. These words were not intended to bar a right of appeal."
+    }
+  ],
+  "raw_response": "```\n{\n  \"issue\": \"Whether a Letters Patent appeal lies against the judgment of a Single Judge in a proceeding under Article 226 of the Constitution.\",\n  \"rule\": \"The jurisdiction and powers of the existing High Courts are subject to the Constitution, and the Letters Patent provisions regarding appeals apply to proceedings under Article 226.\",\n  \"application\": \"The Supreme Court analyzed the provisions of the Letters Patent, the Constitution, and the Bombay High Court Appellate Side Rules, 1960, to conclude that a Letters Patent appeal lies against the judgment of a Single Judge in a proceeding under Article 226.\",\n  \"conclusion\": \"A Letters Patent appeal lies against the judgment of a Single Judge in a proceeding under Article 226 of the Constitution.\",\n  \"authorities\": [\n    \"Queen v. Burah (1877-78) 5 I.A. 178\",\n    \"Saroda Soonduree Dossee v. Tincowree Nundee (1884) Hyde's Reports 70\",\n    \"India Electric Works Ltd. v. Registrar of Trade Marks AIR 1947 Cal. 49\",\n    \"National Sewing Thread Company's case\",\n    \"Sheo Prasad v. State of U.P. AIR 1965 All. 106\",\n    \"Budge Budge Municipality Case\"\n  ]\n}\n```",
+  "decade": "1980",
+  "n_real_edges": 27
+}

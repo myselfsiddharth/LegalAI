@@ -1,0 +1,130 @@
+{
+  "doc_id": "1308614",
+  "filename": "Goodricke_Group_Ltd_And_Ors_vs_State_Of_W_B_And_Ors_on_25_November_1994_1.PDF",
+  "year": "1994",
+  "system": "rag",
+  "irac": {
+    "issue": "Whether the impugned levy on tea estates is a tax on lands within the meaning of Entry 49, List II of the Seventh Schedule to the Constitution or a tax on despatches of tea, which would be within the competence of the Parliament.",
+    "rule": "The doctrine of pith and substance, which requires that the true nature and character of the impugned legislation be ascertained to determine its validity. The rule that there is no overlapping of taxes, as a tax on a manufacturer in respect of his goods and a tax on a vendor in respect of his sales are separate and distinct imposts.",
+    "application": "The impugned levy, in substance, is a levy on despatches of tea and not on tea estates. The levy was held to be violative of Article 301 of the Constitution as it did not have a reasonable nexus with the subject matter of taxation, namely, tea estates.",
+    "conclusion": "The impugned levy is a tax on despatches of tea and not a tax on lands, and as such, it is outside the competence of the State Legislature."
+  },
+  "authority_results": [
+    {
+      "cited": "Citizens Insurance Co. of Canada v. Parsons (188) 7 A.C. 97",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Russell v. the Queen (1882) 7 A.C. 829",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Union Colliery Co. of British Columbia v. Bryden 1899 A.C. 580",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Governor General in Council v. Province of Madras 1945 F.C.R. 1979",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Express Hotels Pvt. Ltd. v. State of Gujarat : [1989]178ITR151(SC)",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "868356",
+        "matched_cited_text": "Express Hotels Pvt. Ltd. v. State of Gujarat",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Twyford Ten Co. Ltd. v. State of Kerala and Anr. : [1970]3SCR383",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "219659",
+        "matched_cited_text": "Twyford Ten Co. Ltd. v. State of Kerala and Anr.",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Sanjiv Coke Mfg. Co. v. Bharat Coking Coal Ltd. and Anr. : [1983]1SCR1000",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1195357",
+        "matched_cited_text": "Sanjiv Coke Mfg. Co. v. Bharat Coking Coal Ltd. and Anr.",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Morey v. Doud (1957) 354 US 457",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": [
+    {
+      "chunk_index": 5,
+      "text": "The learned Judges rejected the argument that the mode of levy was merely a measure of the tax. They pointed out further that the quality of tea produced in all tea estates in the State was hot uniform and that the benefit of exemption of reduction in levy has no relation to the need of a particular tea estate for exemption from the levy. The learner Judges concluded \"when the provisions before us are examined in their totality, we find no such relationship or nexus between the tea estate and the varied treatment accorded in respect of despatches of different kinds of lea. It seems to us that having regard to all the relevant provision of the statute, including Section 4(2)(aa) and Section 4(4) in substance the impugned levy is a levy in respect of despatches of tea and not in respect of tea estates.\" Accordingly, the levy was held to be violative of Article 301 of the Constitution. The learned Judges then proceeded to consider the question of legislative competence and held that if the levy is, in substance, on despatches of tea, it cannot be held to be tax on lands."
+    },
+    {
+      "chunk_index": 18,
+      "text": "The 'annual value' was to \"be ascertained by estimating the gross annual rent at which such land or building with its appurtenances and any furniture that may he left for use or enjoyment with such building might reasonably be expected to let from year to year....\". The Federal Court exhaustively dealt with several English and Indian decisions on the subject and evolved the following principles: The principles deducible from these pronouncements are, (1) that where there is an apparent conflict between an Act of the Federal Legislature and an Act of the Provincial Legislature, we must try to ascertain the pith and substance or the true nature and character of the conflicting provisions, and (2) that before an Act is declared ultra vires, there should be an attempt to reconcile the two conflicting jurisdictions, and, only if such, a reconciliation should prove impossible, the impugned Act should be declared invalid. 17."
+    },
+    {
+      "chunk_index": 23,
+      "text": "Mulluswami Coundan 1940 F.C.R. 188 to the effect: It must inevitably happen from time to time that legislation, though purporting to deal with a subject in one list, touches also on a subject in another list, and the Goodricke Group Ltd. And Ors vs State Of W.B. And Ors on 25 November, 1994 Indian Kanoon - http://indiankanoon.org/doc/1308614/ 8 different provisions of the enactment may be so closely intertwined that blind adherence to a strictly verbal interpretation would result in a large number of statutes being declared invalid because the Legislature enacting them may appear to have legislated in a forbidden sphere. Hence the rule which has been evolved by the Judicial Committee whereby the impugned statute-is examined to ascertain its 'pith and substance' or its 'true nature and character', for the purpose of determining whether it is legislation with respect to matters in this list or in that: Citizens Insurance Co. of Canada v. Parsons (188) 7 A.C. 97 Russell v. the Queen (1882) 7 A.C. 829 Union Colliery Co. of British Columbia v. Bryden 1899 A.C. 580 ; Att. Gen for Canada v. Att."
+    },
+    {
+      "chunk_index": 26,
+      "text": "The decision also refers to what is known as the \"aspects\" doctrine and it is on the basis of the said doctrine that both the Expenditure Tax levied by Parliament and Luxury Tax levied by the Gujarat Legislature [subject matter of the decision in Express Hotels Pvt. Ltd. v. State of Gujarat : [1989]178ITR151(SC) ] were sustained though they appeared to relate to the same matter. It was held: Indeed, the law \"with respect to a subject might incidentally 'affect' another subject in sonic way; but that is not the same thing as the law being on the latter subject. There might be overlapping; but the overlapping must be in law. The same transaction may involve two or more taxable evens in its different aspects. But the fact that there is an overlapping does not extract from the distinctive-ness of the aspects. 27. Reference was made inter alia to the decision of the Privy Council in Governor General in Council v."
+    },
+    {
+      "chunk_index": 27,
+      "text": "Province of Madras 1945 F.C.R. 1979 where the distinction between the duties of excise and tax on sale of goods was explained in the following words: The two taxes, the one levied on a manufacturer in respect of his goods, the other on a vendor in respect of his sales, may as is there pointed out, in one sense overlap. But in law there is no overlapping. The taxes are separate and distinct imports. If in fact they overlap, that may be because the taxing authority, imposing a duty of excise, finds it convenient to impose that duty at the moment when the excisable article leaves the factory or workshop for the first time on the occasion of its sale. 28. It was further pointed out, and which is of some relevance to us in this case, that: Petitioner's reference to legislative practice as determining the scope of the present legislation does not assist them. There are two infirmities in the contention....Secondly, there is no conclusive material indicating that the appropriate legislature had limited the notion of a tax of this kind within any confines. It is relevant to recall the words of Lord Uthwatt in Wallace Broters case quoted in Slate of Madras v."
+    },
+    {
+      "chunk_index": 42,
+      "text": "Nowhere has this admonition been more felicitously expressed than in Morey v. Doud (1957) 354 US 457 where Frankfurter, J. said in his inimitable style: \"In the utilities, lax and economic relation cases, there are good reasons for judicial self-restraint if not judicial deference to legislative judgment. The legislature after all has the affirmative responsibility. The Courts have only the power to destroy, not to reconstruct. When these are added to the complexity of economic regulation, the uncertainty, the liability to error, the bewildering conflict of the experts, and the number of times the judges have been overruled by events self-limitation can be seen to be the path to judicial wisdom and, institutions prestige and stability. Goodricke Group Ltd. And Ors vs State Of W.B."
+    },
+    {
+      "chunk_index": 52,
+      "text": "The above observations in Nawn and other cases were made merely with a view to emphasise the distinction between one tax and the other. The said expression was used to point out that the particular enactment is in truth not relatable to Entry 49, List- II but to the entries in List-I. In that connection, it was pointed out that the tax in question before them was not a tax directly, upon the land and building but a tax upon the wealth of an individual or upon the transaction of gift, as the case may be. It is relevant to note that in Ajoy Kumar Mukherjee, the Constitution Bench has stressed this very aspect when it stated \"it is well-settled that the entries in the three legislative lists have to be interpreted in their widest amplitude and, therefore, if a tax can reasonably be held to be a tax on land it will come within entry 49.\" The question of direct or reasonable connection arises only where one has to find out whether a particular enactment is within the competence of the Legislature which enacted it. Applying the doctrine of pith and substance, the court has to determine and answer the question."
+    },
+    {
+      "chunk_index": 68,
+      "text": "The presumption in favour of. constitutionality obliges the court to sustain an enactment, if necessary, by relating it to an entry other than the one relied upon by the government, if that can be reasonably done, Moreover, a pointed out by his Court in Sanjiv Coke Mfg. Co. v. Bharat Coking Coal Ltd. and Anr. : [1983]1SCR1000 , it is the function and power of the court to interpret an enactment. It is equally the function and power, of the Judiciary to say to which entry does an enactment relate. The opinion of the government in this behalf is but an opinion and no more. 49. Yet another argument put forward on behalf of the petitioners is that the quality of tea produced in one tea estate may differ from the quality of tea produced in another tea estate. Prescribing an uniform method of levy on all tea estates, without regard to the quality of tea produced, it is submitting, is discriminatory. It is not possible to agree. It would be sufficient to refer to the judgment of Hidayatullah, C.J., in Twyford Ten Co. Ltd. v. State of Kerala and Anr. : [1970]3SCR383 where a similar argument was rejected in the following words: The burden is on a person complaining of discrimination."
+    }
+  ],
+  "raw_response": "```json\n{\n  \"issue\": \"Whether the impugned levy on tea estates is a tax on lands within the meaning of Entry 49, List II of the Seventh Schedule to the Constitution or a tax on despatches of tea, which would be within the competence of the Parliament.\",\n  \"rule\": \"The doctrine of pith and substance, which requires that the true nature and character of the impugned legislation be ascertained to determine its validity. The rule that there is no overlapping of taxes, as a tax on a manufacturer in respect of his goods and a tax on a vendor in respect of his sales are separate and distinct imposts.\",\n  \"application\": \"The impugned levy, in substance, is a levy on despatches of tea and not on tea estates. The levy was held to be violative of Article 301 of the Constitution as it did not have a reasonable nexus with the subject matter of taxation, namely, tea estates.\",\n  \"conclusion\": \"The impugned levy is a tax on despatches of tea and not a tax on lands, and as such, it is outside the competence of the State Legislature.\",\n  \"authorities\": [\n    \"Citizens Insurance Co. of Canada v. Parsons (188) 7 A.C. 97\",\n    \"Russell v. the Queen (1882) 7 A.C. 829\",\n    \"Union Colliery Co. of British Columbia v. Bryden 1899 A.C. 580\",\n    \"Governor General in Council v. Province of Madras 1945 F.C.R. 1979\",\n    \"Express Hotels Pvt. Ltd. v. State of Gujarat : [1989]178ITR151(SC)\",\n    \"Twyford Ten Co. Ltd. v. State of Kerala and Anr. : [1970]3SCR383\",\n    \"Sanjiv Coke Mfg. Co. v. Bharat Coking Coal Ltd. and Anr. : [1983]1SCR1000\",\n    \"Morey v. Doud (1957) 354 US 457\"\n  ]\n}\n```",
+  "decade": "1990",
+  "n_real_edges": 24
+}

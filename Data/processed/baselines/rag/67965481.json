@@ -1,0 +1,254 @@
+{
+  "doc_id": "67965481",
+  "filename": "Vineeta_Sharma_vs_Rakesh_Sharma_on_11_August_2020_1.PDF",
+  "year": "2020",
+  "system": "rag",
+  "irac": {
+    "issue": "Whether the amended Section 6 of the Hindu Succession Act, 1956, which gives equal rights to daughters in coparcenary property, has retrospective effect and applies to pending cases.",
+    "rule": "The amended Section 6 of the Hindu Succession Act, 1956, has prospective effect and applies to pending cases, as it recognizes an antecedent event (birth) for conferral of rights. The concept of retrospective and retroactive statute was discussed in Darshan Singh etc. v. Ram Pal Singh & Anr.",
+    "application": "The Court applied the amended provisions of Section 6 to pending proceedings, treating daughters equally with sons, and held that the proviso to Section 6 is not retrospective. The Court also discussed the effect of change in law during pendency of proceedings, relying on cases such as Ram Sarup v. Munshi, Mula v. Godhu, Dayawati v. Inderjit, and Amarjit Kaur v. Pritam Singh.",
+    "conclusion": "The Court overruled the views to the contrary expressed in Prakash v. Phulavati and Mangammal v. T.B. Raju & Ors. and partly overruled Danamma @ Suman Surpur & Anr. v. Amar to the extent it is contrary to this decision. The Court held that the daughters cannot be deprived of their right of equality conferred upon them by Section 6."
+  },
+  "authority_results": [
+    {
+      "cited": "Darshan Singh etc. v. Ram Pal Singh & Anr. (1992 Supp. (1) SCC 191)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Prakash v. Phulavati",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "143363828",
+        "matched_cited_text": "Prakash vs Phulavati .",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Mangammal v. T.B. Raju & Ors.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Danamma @ Suman Surpur & Anr. v. Amar",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "88759498",
+        "matched_cited_text": "Danamma @ Suman Surpur vs Amar",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Ram Sarup v. Munshi (AIR 1963 SC 553)",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "823328",
+        "matched_cited_text": "Ram Sarup vs Munshi And Others(And Connected ...",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Mula v. Godhu (1969) 2 SCC 653",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "Dayawati v. Inderjit (AIR 1966 SC 1423)",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "338690",
+        "matched_cited_text": "Smt. Dayawati And Another vs Inderjit And Others",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Amarjit Kaur v. Pritam Singh (1974) 2 SCC 363",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "889086",
+        "matched_cited_text": "Amarjit Kaur vs Pritam Singh & Others",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Kristnama Chariar v. Mangammal (ILR (1902) 26 Mad 91 (FB))",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Lachmeshwar Prasad Shukul v. Keshwar Lal Chaudhuri (AIR 1941 FC 5)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "United Bank of India, Calcutta v. Abhijit Tea Co. Pvt. Ltd. & Ors. (AIR 2000 SC 2957)",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1381203",
+        "matched_cited_text": "United Bank Of India, Calcutta vs Abhijit Tea Co.Pvt.Ltd. And Ors",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Thakur Gokulchand v. Parvin Kumari (AIR 1952 SC 231)",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 0.94,
+        "matched_cited_doc_id": "1388066",
+        "matched_cited_text": "Thakur Gokalchand vs Parvin Kumari",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Garikapatti Veeraya v. N. Subbiah Choudhury (AIR 1957 SC 540)",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "673500",
+        "matched_cited_text": "Garikapatti Veeraya vs N. Subbiah Choudhury",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Jose Da Costa v. Bascora Sadasiva Sinai Narcornim (1976) 2 SCC 917",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1427097",
+        "matched_cited_text": "Jose Da Costa And Anr. vs Bascora Sadasiva Sinai Narcornim And ...",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Govind Das v. ITO (1976) 1 SCC 906",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "762617",
+        "matched_cited_text": "Govind Das And Ors. vs The Income Tax Officer And Anr.",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Henshall v. Porter (1923) 2 KBD 193",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "United Provinces v. Mst.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Phoolchand v. Gopal Lal (AIR 1967 SC 1470)",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "634553",
+        "matched_cited_text": "Phoolchand And Anr vs Gopal Lal",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "S. Sai Reddy v. S.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Laxmi Narayan Guin & Ors. v. Niranjan Modak (1985) 1 SCC 270",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": [
+    {
+      "chunk_index": 92,
+      "text": "Characteristic or event which happened in the past or requisites which had been drawn from antecedent events. Under the amended section 6, since the right is given by birth, that is an antecedent event, and the provisions operate concerning claiming rights on and from the date of Amendment Act. 57. The concept of retrospective and retroactive statute was stated by this Court in Darshan Singh etc. v. Ram Pal Singh & Anr., (1992 Supp. (1) SCC 191, thus: \u019235. Mr Sachar relies on Thakur Gokulchand v. Parvin Kumari, AIR 1952 SC 231, Garikapatti Veeraya v. N. Subbiah Choudhury, AIR 1957 SC 540, Jose Da Costa v. Bascora Sadasiva Sinai Narcornim, (1976) 2 SCC 917, Govind Das v. ITO, (1976) 1 SCC 906, Henshall v. Porter, (1923) 2 KBD 193, United Provinces v. Mst."
+    },
+    {
+      "chunk_index": 108,
+      "text": "It is not to resurrect the past but recognising an antecedent event for conferral of rights, prospectively. There is no doubt about it that advancement brings about the enlargement of the size of the coparcenary and disabling it from treating the daughter unequally. Even otherwise, its size could be enlarged by the birth of a son also. By applying section 8, the joint possession was not repudiated by the fact that a female, whether a wife or daughter, inherited the share of coparcener under the proviso to original section 6. She was an equal member of the joint Hindu family and deemed statutory partition did not bring disruption of the coparcenary. 74. In Prakash v. Phulavati, father died in the year 1988, daughters filed a suit for partition in 1992, same was dismissed in 2007, entitlement was given to the daughters to a share on a notional partition under the proviso to section 6 in the share of the coparcener father. However, the High Court applied the amended provisions of section 6 to the pending proceedings and treated daughters equally with sons. As such, the matter travelled to this Court. It was held that the proviso is not retrospective."
+    },
+    {
+      "chunk_index": 115,
+      "text": "That too, has been taken care of in section 6, as substituted by Act of 2005, and no discrimination is made against married daughters. In the said case, Mangammal got married in 1981, and Indira got married in or about 1984, i.e., before the 1989 Amendment. Therefore, it was held that because of section 29\u25a1A(iv) of the Amendment Act, the appellant could not institute a suit for partition and separate possession as they were not coparceners. The decisions in Prakash v. Phulavati and Danamma were referred, and it was opined Vineeta Sharma vs Rakesh Sharma on 11 August, 2020 Indian Kanoon - http://indiankanoon.org/doc/67965481/ 39 that Prakash v. Phulavati would still hold the value of precedent for right of a daughter in ancestral property and only \"living daughters of living coparceners\" as on 9.9.2005 would be entitled to claim a share in the coparcenary property. In Mangammal, the Court opined thus: \u019215."
+    },
+    {
+      "chunk_index": 139,
+      "text": "If the rights of the parties to the suit change due to other reasons, the Court seized with the final decree proceedings is not only entitled but is duty-bound to take notice of such change and pass appropriate order\u20ac\u201e (emphasis supplied) It was held that if after passing of a preliminary decree in a partition suit but before passing of the final decree, there has been enlargement or diminution of the shares of the parties or their rights have been altered by statutory amendment; the Court is duty\u25a1bound to decide the matter and pass final decree keeping in view the changed scenario. In Prema (supra), the Court further opined: \u019220. In our view, neither of the aforesaid three judgments can be read as laying down a proposition of law that in a partition suit, preliminary decree cannot be varied in the final decree proceedings despite amendment of the law governing the parties by which the discrimination practiced against unmarried daughter was removed and the statute was brought in conformity with Articles 14 and 15 of the Constitution. We are further of the view that the ratio of Phoolchand v. Gopal Lal, (AIR 1967 SC 1470) (supra) and S. Sai Reddy v. S."
+    },
+    {
+      "chunk_index": 149,
+      "text": "In fact, several applications for final decree are permissible in a partition suit. A decree in a partition suit enures to the benefit of all the co-owners and therefore, it is sometimes said that there is really no judgment-debtor in a partition decree.\u201e (emphasis supplied) 94. In Laxmi Narayan Guin & Ors. v. Niranjan Modak, (1985) 1 SCC 270, it was laid down that change in law during the pendency of the appeal has to be taken into consideration thus: \u01929. That a change in the law during the pendency of an appeal has to be taken into account and will govern the rights of the parties was laid down by this Court in Ram Sarup v. Munshi, AIR 1963 SC 553 which was followed by this Court in Mula v. Godhu, (1969) 2 SCC 653. We may point out that in Dayawati v."
+    },
+    {
+      "chunk_index": 150,
+      "text": "Inderjit, AIR 1966 SC 1423 this Court observed: \u0192If the new law speaks in language, which, expressly or by clear intendment, takes in even pending matters, the Court of trial as well as the court of appeal must have regard to an intention so expressed, and the court of appeal may give effect to such a law even after the judgment of the court of first instance.\u201e Reference may also be Vineeta Sharma vs Rakesh Sharma on 11 August, 2020 Indian Kanoon - http://indiankanoon.org/doc/67965481/ 50 made to the decision of this Court in Amarjit Kaur v. Pritam Singh, (1974) 2 SCC 363 where effect was given to a change in the law during the pendency of an appeal, relying on the proposition formulated as long ago as Kristnama Chariar v. Mangammal, ILR (1902) 26 Mad 91 (FB) by Bhashyam Ayyangar, J., that the hearing of an appeal was, under the processual law of this country, in the nature of a re-hearing of the suit. In Amarjit Kaur, (1974) 2 SCC 363 this Court referred also to Lachmeshwar Prasad Shukul v."
+    },
+    {
+      "chunk_index": 151,
+      "text": "Keshwar Lal Chaudhuri, AIR 1941 FC 5 in which the Federal Court had laid down that once a decree passed by a court had been appealed against the matter became sub judice again and thereafter the appellate court acquired seisin of the whole case, except that for certain purposes, for example, execution, the decree was regarded as final and the Court below retained jurisdiction.\" 95. In United Bank of India, Calcutta v. Abhijit Tea Co. Pvt. Ltd. & Ors., AIR 2000 SC 2957, with respect to change in law during the pendency of proceedings, it was observed: \u019220. Now, it is well settled that it is the duty of a court, whether it is trying original proceedings or hearing an appeal, to take notice of the change in law affecting pending actions and to give effect to the same. (See G.P. Singh: Interpretation of Statutes, 7th Edn., p. 406). If, while a suit is pending, a law like the 1993 Act that the Civil Court shall not decide the suit, is passed, the Civil Court is bound to take judicial notice of the statute and hold that the suit \u201a even after its remand \u201a cannot be disposed of by it.\u201e 96."
+    },
+    {
+      "chunk_index": 198,
+      "text": "The daughters cannot be deprived of their right of equality conferred upon them by Section 6. Hence, we request that the pending matters be decided, as far as possible, within six months. In view of the aforesaid discussion and answer, we overrule the views to the contrary expressed in Prakash v. Phulavati and Mangammal v. T.B. Raju & Ors. The opinion expressed in Danamma @ Suman Surpur & Anr. v. Amar is partly overruled to the extent it is contrary to this decision. Let the matters be placed before appropriate Bench for decision on merits. \u20ac\u20ac\u20ac\u20ac\u20ac\u20ac\u20ac\u20ac\u20ac\u20ac\u20ac.J. (Arun Mishra) \u20ac\u20ac\u20ac\u20ac\u20ac\u20ac\u20ac\u20ac\u20ac\u20ac\u20ac.J. (S. Abdul Nazeer) \u20ac\u20ac\u20ac\u20ac\u20ac\u20ac\u20ac\u20ac\u20ac\u20ac\u20ac.J. (M.R. Shah) New Delhi: August 11, 2020. Vineeta Sharma vs Rakesh Sharma on 11 August, 2020 Indian Kanoon - http://indiankanoon.org/doc/67965481/ 65"
+    }
+  ],
+  "raw_response": "```json\n{\n  \"issue\": \"Whether the amended Section 6 of the Hindu Succession Act, 1956, which gives equal rights to daughters in coparcenary property, has retrospective effect and applies to pending cases.\",\n  \"rule\": \"The amended Section 6 of the Hindu Succession Act, 1956, has prospective effect and applies to pending cases, as it recognizes an antecedent event (birth) for conferral of rights. The concept of retrospective and retroactive statute was discussed in Darshan Singh etc. v. Ram Pal Singh & Anr.\",\n  \"application\": \"The Court applied the amended provisions of Section 6 to pending proceedings, treating daughters equally with sons, and held that the proviso to Section 6 is not retrospective. The Court also discussed the effect of change in law during pendency of proceedings, relying on cases such as Ram Sarup v. Munshi, Mula v. Godhu, Dayawati v. Inderjit, and Amarjit Kaur v. Pritam Singh.\",\n  \"conclusion\": \"The Court overruled the views to the contrary expressed in Prakash v. Phulavati and Mangammal v. T.B. Raju & Ors. and partly overruled Danamma @ Suman Surpur & Anr. v. Amar to the extent it is contrary to this decision. The Court held that the daughters cannot be deprived of their right of equality conferred upon them by Section 6.\",\n  \"authorities\": [\n    \"Darshan Singh etc. v. Ram Pal Singh & Anr. (1992 Supp. (1) SCC 191)\",\n    \"Prakash v. Phulavati\",\n    \"Mangammal v. T.B. Raju & Ors.\",\n    \"Danamma @ Suman Surpur & Anr. v. Amar\",\n    \"Ram Sarup v. Munshi (AIR 1963 SC 553)\",\n    \"Mula v. Godhu (1969) 2 SCC 653\",\n    \"Dayawati v. Inderjit (AIR 1966 SC 1423)\",\n    \"Amarjit Kaur v. Pritam Singh (1974) 2 SCC 363\",\n    \"Kristnama Chariar v. Mangammal (ILR (1902) 26 Mad 91 (FB))\",\n    \"Lachmeshwar Prasad Shukul v. Keshwar Lal Chaudhuri (AIR 1941 FC 5)\",\n    \"United Bank of India, Calcutta v. Abhijit Tea Co. Pvt. Ltd. & Ors. (AIR 2000 SC 2957)\",\n    \"Thakur Gokulchand v. Parvin Kumari (AIR 1952 SC 231)\",\n    \"Garikapatti Veeraya v. N. Subbiah Choudhury (AIR 1957 SC 540)\",\n    \"Jose Da Costa v. Bascora Sadasiva Sinai Narcornim (1976) 2 SCC 917\",\n    \"Govind Das v. ITO (1976) 1 SCC 906\",\n    \"Henshall v. Porter (1923) 2 KBD 193\",\n    \"United Provinces v. Mst.\",\n    \"Phoolchand v. Gopal Lal (AIR 1967 SC 1470)\",\n    \"S. Sai Reddy v. S.\",\n    \"Laxmi Narayan Guin & Ors. v. Niranjan Modak (1985) 1 SCC 270\"\n  ]\n}\n```",
+  "decade": "2020",
+  "n_real_edges": 90
+}

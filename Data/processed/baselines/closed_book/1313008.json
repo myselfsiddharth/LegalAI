@@ -1,0 +1,57 @@
+{
+  "doc_id": "1313008",
+  "filename": "Sooraram_Pratap_Reddy_Ors_vs_Distt_Collector_Ranga_Reddy_Dist_on_5_September_2008_1.PDF",
+  "year": "2008",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether the land acquisition proceedings can be held to have lapsed under Section 24 of the Land Acquisition Act, 1894, when possession of the land has been taken and compensation has been paid to the landowners, but the award has not been made under Section 11 of the Act.",
+    "rule": "The provisions of Section 24 of the Land Acquisition Act, 1894, and the effect of possession being taken and compensation being paid on the lapse of land acquisition proceedings.",
+    "application": "The Court applied the provisions of Section 24 of the Land Acquisition Act, 1894, to the facts of the case and held that when possession of the land has been taken and compensation has been paid to the landowners, the land acquisition proceedings cannot be held to have lapsed.",
+    "conclusion": "The Court held that the land acquisition proceedings had not lapsed and the respondents were not entitled to restitution of their lands."
+  },
+  "authority_results": [
+    {
+      "cited": "Lalji Raja & Ors v. State of Maharashtra (2003) 5 SCC 364",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "662353",
+        "matched_cited_text": "Scindia Employees' Union v. State of Maharashtra & Ors.",
+        "n_matching_edges": 3
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Pune Municipal Corporation and Anr vs Harakchand Misirmal Solanki and Ors (1994) 3 SCC 183",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "State of Maharashtra vs Sujay Shrikant Hegde (2004) 6 SCC 614",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Special Tehsildar, Land Acquisition, Nellore and Anr vs N.V. Ranga Rao and Ors (2009) 14 SCC 166 is not cited, however,  State of Maharashtra v  Sujay  Shrikant  Hegde, 2004 6  SCC  614 and  P.  Muniyappa  Reddy  v  State  of  Karnataka  2011  11  SCC  783 are related",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether the land acquisition proceedings can be held to have lapsed under Section 24 of the Land Acquisition Act, 1894, when possession of the land has been taken and compensation has been paid to the landowners, but the award has not been made under Section 11 of the Act.\",\n  \"rule\": \"The provisions of Section 24 of the Land Acquisition Act, 1894, and the effect of possession being taken and compensation being paid on the lapse of land acquisition proceedings.\",\n  \"application\": \"The Court applied the provisions of Section 24 of the Land Acquisition Act, 1894, to the facts of the case and held that when possession of the land has been taken and compensation has been paid to the landowners, the land acquisition proceedings cannot be held to have lapsed.\",\n  \"conclusion\": \"The Court held that the land acquisition proceedings had not lapsed and the respondents were not entitled to restitution of their lands.\",\n  \"authorities\": [\n    \"Lalji Raja & Ors v. State of Maharashtra (2003) 5 SCC 364\",\n    \"Pune Municipal Corporation and Anr vs Harakchand Misirmal Solanki and Ors (1994) 3 SCC 183\",\n    \"State of Maharashtra vs Sujay Shrikant Hegde (2004) 6 SCC 614\",\n    \"Special Tehsildar, Land Acquisition, Nellore and Anr vs N.V. Ranga Rao and Ors (2009) 14 SCC 166 is not cited, however,  State of Maharashtra v  Sujay  Shrikant  Hegde, 2004 6  SCC  614 and  P.  Muniyappa  Reddy  v  State  of  Karnataka  2011  11  SCC  783 are related\"\n  ]\n}\n```",
+  "decade": "2000",
+  "n_real_edges": 29
+}

@@ -1,0 +1,44 @@
+{
+  "doc_id": "184238590",
+  "filename": "Umaji_Keshao_Meshram_And_Ors_vs_Radhikabai_Widow_Of_Anandrao_on_14_March_1986_1.PDF",
+  "year": "1986",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "AuthorityCited": 3,
+    "Holding": 7,
+    "Party": 3,
+    "Outcome": 8,
+    "Claim": 4
+  },
+  "authority_results": [
+    {
+      "cited": "the conclusion of my learned brother",
+      "source_sentence": "Unfamiliar as I am with the history, tradition and the lore of the city and the High Court of Bombay, I content myself by agreeing with the conclusion of my learned brother that no appeal under Clause 15 of the Letters Patent lies to the High Court against the order of a single judge of the High Court exercising jurisdiction under Article 227 of the Constitution, no less and no more.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Section 107 of the Government of India Act, 1915",
+      "source_sentence": "I do not have any doubt that the reference to Section 107 of the Government of India Act, 1915 in Clause 15 of the Letters Patent must necessarily be read as a reference to Article 227 of the Constitution.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Article 227 of the Constitution",
+      "source_sentence": "I do not have any doubt that the reference to Section 107 of the Government of India Act, 1915 in Clause 15 of the Letters Patent must necessarily be read as a reference to Article 227 of the Constitution.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "1980",
+  "n_real_edges": 27
+}

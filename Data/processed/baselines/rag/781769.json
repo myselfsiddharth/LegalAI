@@ -1,0 +1,101 @@
+{
+  "doc_id": "781769",
+  "filename": "Guramma_Bhratar_Chanbasappa_Deshmukh_vs_Malappa_on_19_August_1963_1.PDF",
+  "year": "1963",
+  "system": "rag",
+  "irac": {
+    "issue": "Whether an adopted son of a Sudra is entitled to a share equal to that of a natural-born son in the family property, or only a fifth share of the father's estate.",
+    "rule": "The rule of Dattaka Chandrika that an adopted son shares equally with a natural-born son in the family property is not applicable in the Bombay Presidency, where the adopted son is entitled to only a fifth share of the father's estate, i.e., one-fourth of the natural-born son's share.",
+    "application": "The parties are governed by the Mitakshara law, and the custom prevalent in the Bombay Presidency is to limit the adopted son's share to one-fifth of the father's estate. The court applied the principle of stare decision and refused to depart from the long-established rule prevalent in the Bombay State.",
+    "conclusion": "The appeal filed by the plaintiff and defendant 3 is dismissed with costs, and the appeal filed by defendants 1, 2, 4, 5, and 8 is dismissed with costs, except to the extent of the 8th defendant's right to maintenance under Ex. 371, which is allowed with costs proportionate to her interest in the property."
+  },
+  "authority_results": [
+    {
+      "cited": "Gopalam v. Venkataraghavulu (1915) I.L.R. 40 Mad. 632",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Arumilli Perrazu v. Subbarayadu (1921) 48 I.A. 280",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "63331",
+        "matched_cited_text": "Arumilli Perrazu vs Arumilli Subbarayadu on 5 May, 1921",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Asita v. Nirode (1916) 20 C.W.N. 901",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Giriapa v. Hingappa (1892) I.L.R. 17 Bom. 100",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Tukaram Mahadu v. Ramachandra Mahadu (1925) I.L.R. 49 Bom. 672",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 0.95,
+        "matched_cited_doc_id": "893980",
+        "matched_cited_text": "Tukaram Mahadu Tandel vs Ramchandra Mahadu Tandel on 17 March, 1925",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": [
+    {
+      "chunk_index": 10,
+      "text": "The plaintiff and defendant 3 preferred an appeal to the High Court, being First Appeal No.341 of the 1950 against the decree of the Civil Judge insofar as it went against them. The High Court agreed with the learned Civil Judge that defendant 4 was the posthumous son of the deceased by the second defendant; it accepted the finding of the learned Civil Judge that the adoption took place; but it also held that it was valid in law. It declared that the deeds executed by the deceased on January 4 and 5, 1944 in favour of defendants 6, 7 and 8 were invalid as also the gift over in favour of defendant 5. It held that, as defendants 1 and 2 were getting a share in the property, they were not entitled to separate maintenance given to them under the deed executed by their husband and directed that property also should be brought into the hotchpot and divided between the Parties. It declared that the plaintiff and defendants 1 and 2 were each entitled to 4/27 share in the suit property, that defendant 3 was entitled to 1/9 share therein, and defendant 4 was entitled to 4/9 share therein. It also gave further directions in the matter of partition, costs and mesne profits."
+    },
+    {
+      "chunk_index": 45,
+      "text": "The Judicial Committee based its conclusion mainly on the following ground: \"........ the rule of the Dattaka Chandrika that on a partition of the joint family property of a Sudra family an adopted son is entitled to share equally with the legitimate son born to the adoptive father subsequently to the adoption had been accepted and acted upon for at least more than a century in the Presidency of Madras, as the law applicable in such cases to Sudras until the law on that subject was disturbed in 1915 by the decision of the High Court at Madras in Gopalam v. Venkataraghavulu(2).\" It will be seen that the decision rested on the fact that Dattaka Chandrika was the recognized authority in the Madras Presidency and that the rule that an adopted son and an afterborn natural son take in equal shares the family property had been followed for over a century."
+    },
+    {
+      "chunk_index": 46,
+      "text": "On this decision Sarkar Sastri commented in his valuable book on Hindu Law, 8th Edn., at p. 211, thus: \"Another novel rule enunciated for the first time by the Dattaka Chandrika is that a Sudra's adopted son should share equally with his begotten son, on the ground that a Guramma Bhratar Chanbasappa Deshmukh ... vs Malappa on 19 August, 1963 Indian Kanoon - http://indiankanoon.org/doc/781769/ 16 Sudra's illegitimate son may by the father's choice get an equal share with his legitimate sons. It is difficult to understand the cogency of this argument. This rule, however has been followed by the Calcutta and Madras High Courts, for this book is said to be of special authority in Bengal and Madras. But the Madras High Court, after consideration of the authorities on the subject, came to the conclusion, following an earlier decision of the same Court, that an adopted son of a Sudra was entitled to only a fifth share of what a natural born son gets."
+    },
+    {
+      "chunk_index": 47,
+      "text": "But in the case (1) (1921) 48 I.A. 280. (2) (1915) I.L.R. 40 Mad. 632. of Arumilli Perrazu(1) the above decision has been overruled and it has been finally settled by the Privy Council that an adopted son shares equally on partition with an after-born son of a Sudra.\" In Bengal where Dattaka Chandrika is given same importance as in the Madras Presidency, the same rule has been followed in the matter of partition between an adopted son and an after-born natural son among Sudras: see Asita v. Nirode(2). It is not necessary to pursue that matter. It may be accepted that in Bengal and Madras the said rule governs the shares between them. But in Bombay, Dattaka Chandrika is not given the place of honour as in Madras and Calcutta. As early as 18_2, a division Bench of the Bombay High Court in Giriapa v. Hingappa(3) had to consider the question of shares inter se between an adopted son and an after-born aurasa son."
+    },
+    {
+      "chunk_index": 48,
+      "text": "It held that in Western India, both in the districts governed by the Mitakshara and those specially under the authority of Vyavahara Mayukha, the right of the adopted son, where there was a legitimate son born after, the adoption, extended only to a fifth share of the father's estate. The question therein was whether the adopted son takes one-fourth of the estate or one-fourth of the natural born son's share in the property. After considering all the relevant texts the division bench came to the conclusion that he takes one-fourth of- a natural born son's share. After the decision of the Judicial Committee in Perrazu v. Subbarayadu(1) another division Bench of the Bombay High Court, in Tukaram Mahadu v. Ramachandra Mahadu(4) reviewed the law and came to the same conclusion. Adverting to the Privy Council decision, the learned Judges of the Bombay High Court observed: \"No doubt this case Perrazu v."
+    },
+    {
+      "chunk_index": 49,
+      "text": "Subbarayudu(1) is an authority for holding that in Madras and in Bengal among Sudras the rule is that for which the appellant's counsel contends.\" Then the learned judges posed the following question: \"Assuming that the parties here are Sudras ought we (1) (1921) 48 I.A. 280. (2) (1916) 20 C.W.N. 901. (3) (1892) I.L.R. 17 Bom. 100. (4) (1925) I.L.R. 49 Bom. 672, 679, 680, Guramma Bhratar Chanbasappa Deshmukh ... vs Malappa on 19 August, 1963 Indian Kanoon - http://indiankanoon.org/doc/781769/ 17 684. to apply to this Presidency the rule which their Lordships of the Privy Council have laid down as prevailing in the Madras and Bengal Presidencies?\" After citing the relevant extracts from the decision of the Judicial Committee, the learned judges proceeded to answer thus: \"In this Presidency where the rule of Dattaka Chandrika upon the question at issue has never been followed, for no case, and no kind of judicial or other pronouncement is forthcoming, (and as I have said the leading case is against it), ought we to accept the rule upon the authority of the Dattaka Chandrika alone? In my opinion we should err if we did so."
+    },
+    {
+      "chunk_index": 50,
+      "text": "The authority of the Dattaka Chandrika has never been placed so high in Western India as in Bengal and Madras...... The case is one where the principle of stare decision should be maintained.\" Coyajee J., said much to the same effect: \"We have no reason to believe that the rule propounded in paras. 29 and 32 of section V of the Dattaka Chandrika has been so accepted and acted upon in this Presidency; and there is therefore no justification for holding that the decision in Giriappa's case(1) is not applicable to the parties to this suit even if they were Sudras.\" Steele in his valuable book on Hindu Law and Customs, compiled as far back as 1868, did not find any justification for excepting the Sudras from the general rule. It is, therefore, manifest that in Bombay Presidency the rule accepted in Dattaka Chandrika has never been followed and the share of an adopted son in-competition with a natural born son among Sudras has always been 1/5th in the family property, i.e., 1/4th of the natural born son's share. Nothing has been placed before us to compel us to depart from the long established rule prevalent in the Bombay State. We, therefore, cannot accept the argument of Mr."
+    },
+    {
+      "chunk_index": 51,
+      "text": "Chatterjee in this regard. In the result, Civil Appeal No. 335 of 1960 filed by the plaintiff and defendant 3 is dismissed with costs, and Civil Appeal No. 334 of 1960 filed by defendants 1, 2, 4, (1892) I.L.R. 17 Bom. 100. 5, the legal representatives of defendant 7 and def. 8, except to the extent of the 8th defendant's right to maintenance under Ex. 371, is dismissed with costs. So far as the 8th defendant is concerned, the appeal filed by her is allowed with costs proportionate to her interest in the property throughout. Appeal No. 335 dismissed. Appeal No. 334 partly allowed. Guramma Bhratar Chanbasappa Deshmukh ... vs Malappa on 19 August, 1963 Indian Kanoon - http://indiankanoon.org/doc/781769/ 18"
+    }
+  ],
+  "raw_response": "```\n{\n  \"issue\": \"Whether an adopted son of a Sudra is entitled to a share equal to that of a natural-born son in the family property, or only a fifth share of the father's estate.\",\n  \"rule\": \"The rule of Dattaka Chandrika that an adopted son shares equally with a natural-born son in the family property is not applicable in the Bombay Presidency, where the adopted son is entitled to only a fifth share of the father's estate, i.e., one-fourth of the natural-born son's share.\",\n  \"application\": \"The parties are governed by the Mitakshara law, and the custom prevalent in the Bombay Presidency is to limit the adopted son's share to one-fifth of the father's estate. The court applied the principle of stare decision and refused to depart from the long-established rule prevalent in the Bombay State.\",\n  \"conclusion\": \"The appeal filed by the plaintiff and defendant 3 is dismissed with costs, and the appeal filed by defendants 1, 2, 4, 5, and 8 is dismissed with costs, except to the extent of the 8th defendant's right to maintenance under Ex. 371, which is allowed with costs proportionate to her interest in the property.\",\n  \"authorities\": [\n    \"Gopalam v. Venkataraghavulu (1915) I.L.R. 40 Mad. 632\",\n    \"Arumilli Perrazu v. Subbarayadu (1921) 48 I.A. 280\",\n    \"Asita v. Nirode (1916) 20 C.W.N. 901\",\n    \"Giriapa v. Hingappa (1892) I.L.R. 17 Bom. 100\",\n    \"Tukaram Mahadu v. Ramachandra Mahadu (1925) I.L.R. 49 Bom. 672\"\n  ]\n}\n```",
+  "decade": "1960",
+  "n_real_edges": 16
+}

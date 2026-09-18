@@ -1,0 +1,46 @@
+{
+  "doc_id": "513801",
+  "filename": "Rustom_Cavasjee_Cooper_vs_Union_Of_India_on_10_February_1970_1.PDF",
+  "year": "1970",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether the Urban Land (Ceiling and Regulation) Act, 1973, and the Sea Shore Act infringe upon the fundamental right of the petitioner to hold property under Article 31(1) of the Constitution of India.",
+    "rule": "The right to property under Article 31(1) can be restricted by a law made by Parliament for a public purpose, and such restriction must be reasonable.",
+    "application": "The Supreme Court held that the petitioner's property was acquired under the Urban Land (Ceiling and Regulation) Act, 1973, and the Sea Shore Act for a public purpose, and that the restrictions imposed on the petitioner's right to property were reasonable.",
+    "conclusion": "The Supreme Court upheld the validity of the Urban Land (Ceiling and Regulation) Act, 1973, and the Sea Shore Act, and dismissed the petitioner's challenge to the acquisition of his property."
+  },
+  "authority_results": [
+    {
+      "cited": "K. Subrahmanyam v. State of Madras",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "State of Madras v. Ramaswamy Naidu",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "P. Ramanathan v. State of Madras",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether the Urban Land (Ceiling and Regulation) Act, 1973, and the Sea Shore Act infringe upon the fundamental right of the petitioner to hold property under Article 31(1) of the Constitution of India.\",\n  \"rule\": \"The right to property under Article 31(1) can be restricted by a law made by Parliament for a public purpose, and such restriction must be reasonable.\",\n  \"application\": \"The Supreme Court held that the petitioner's property was acquired under the Urban Land (Ceiling and Regulation) Act, 1973, and the Sea Shore Act for a public purpose, and that the restrictions imposed on the petitioner's right to property were reasonable.\",\n  \"conclusion\": \"The Supreme Court upheld the validity of the Urban Land (Ceiling and Regulation) Act, 1973, and the Sea Shore Act, and dismissed the petitioner's challenge to the acquisition of his property.\",\n  \"authorities\": [\n    \"K. Subrahmanyam v. State of Madras\",\n    \"State of Madras v. Ramaswamy Naidu\",\n    \"P. Ramanathan v. State of Madras\"\n  ]\n}\n```",
+  "decade": "1970",
+  "n_real_edges": 48
+}

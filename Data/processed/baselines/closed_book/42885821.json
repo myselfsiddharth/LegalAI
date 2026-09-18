@@ -1,0 +1,46 @@
+{
+  "doc_id": "42885821",
+  "filename": "Assocn_Of_Vasanth_Appts_Owners_vs_V_Gopinanth_And_Ors_on_13_February_2023_1.PDF",
+  "year": "2023",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether the Tamil Nadu Buildings (Lease Control) Act, 1960 applies to buildings owned by the Government and whether the Government is a 'landlord' within the meaning of the Act.",
+    "rule": "The Tamil Nadu Buildings (Lease Control) Act, 1960 applies to buildings owned by the Government and the Government is a 'landlord' within the meaning of the Act.",
+    "application": "The court applied the principles of statutory interpretation to hold that the Government is a 'landlord' under the Act and that the Act applies to Government buildings.",
+    "conclusion": "The Supreme Court held that the Tamil Nadu Buildings (Lease Control) Act, 1960 applies to buildings owned by the Government and that the Government is a 'landlord' within the meaning of the Act."
+  },
+  "authority_results": [
+    {
+      "cited": "R.D. Saxena v. Balram Prasad Sharma, (2000) 7 SCC 264",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Gopalan v. State of Kerala, (1961) 1 SCR 809",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Registrar, Co-operative Societies v. M. Deyan, (2009) 6 SCC 517",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "{\"issue\": \"Whether the Tamil Nadu Buildings (Lease Control) Act, 1960 applies to buildings owned by the Government and whether the Government is a 'landlord' within the meaning of the Act.\",\n\"rule\": \"The Tamil Nadu Buildings (Lease Control) Act, 1960 applies to buildings owned by the Government and the Government is a 'landlord' within the meaning of the Act.\",\n\"application\": \"The court applied the principles of statutory interpretation to hold that the Government is a 'landlord' under the Act and that the Act applies to Government buildings.\",\n\"conclusion\": \"The Supreme Court held that the Tamil Nadu Buildings (Lease Control) Act, 1960 applies to buildings owned by the Government and that the Government is a 'landlord' within the meaning of the Act.\",\n\"authorities\": [\n\"R.D. Saxena v. Balram Prasad Sharma, (2000) 7 SCC 264\",\n\"Gopalan v. State of Kerala, (1961) 1 SCR 809\",\n\"Registrar, Co-operative Societies v. M. Deyan, (2009) 6 SCC 517\"\n]}",
+  "decade": "2020",
+  "n_real_edges": 57
+}

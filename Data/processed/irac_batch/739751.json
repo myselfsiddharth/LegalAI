@@ -1,0 +1,26 @@
+{
+  "doc_id": "739751",
+  "filename": "Vatticherukuru_Village_Panchayat_And_vs_Nori_Vekatrama_Deekshithulu_And_Ors_on_26_April_1991_1.PDF",
+  "year": "1991",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 3,
+    "Holding": 10,
+    "Outcome": 4,
+    "Claim": 4,
+    "AuthorityCited": 1
+  },
+  "authority_results": [
+    {
+      "cited": "article 136",
+      "source_sentence": "This court granted leave to appeal under article 136. 533 The respondents in C.A.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "1990",
+  "n_real_edges": 24
+}

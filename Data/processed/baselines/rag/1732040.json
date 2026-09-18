@@ -1,0 +1,171 @@
+{
+  "doc_id": "1732040",
+  "filename": "Accountant_And_Secretarial_Services_vs_Union_Of_India_Ors_on_20_July_1988_1.PDF",
+  "year": "1988",
+  "system": "rag",
+  "irac": {
+    "issue": "Whether the provisions of the 1971 Act prevail against the provisions of the State legislations and the scope of Entry 18 of List II and Entries 6, 7 and 13 of List III.",
+    "rule": "Article 254 of the Constitution of India provides that in the event of a conflict between a Central and State law in the concurrent field, the former prevails over the latter. The court also considered the scope of various entries in the Seventh Schedule of the Constitution.",
+    "application": "The court applied the provisions of Article 254 to the facts of the case and held that the provisions of the 1971 Act would prevail against the provisions of the State legislations. The court also analyzed the scope of Entry 18 of List II and Entries 6, 7 and 13 of List III and held that premises tenancy legislation in so far as it pertains to houses and buildings is referable not to Entry 18 of List II but to Entries 6, 7 and 13 of List III.",
+    "conclusion": "The appeal was dismissed and the order of the High Court was upheld. The court held that the provisions of the 1971 Act prevail against the provisions of the State legislations and that the premises tenancy legislation in so far as it pertains to houses and buildings is referable to Entries 6, 7 and 13 of List III."
+  },
+  "authority_results": [
+    {
+      "cited": "Zaverbhai Amaidas v. State, [1955] SCR 799",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "345466",
+        "matched_cited_text": "Zaverbhai Amaidas v. State",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Hoechst Pharmaceuticals v. State, [1983] 3 SCR 130",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "703764",
+        "matched_cited_text": "Hoechst Pharmaceuticals v. State",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Jain Ink Manufacturing Co. v. LIC, [1981] 1 SCR 498",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "6571",
+        "matched_cited_text": "Jain Ink Manufacturing Co. v. LIC",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Jaisingh Jairam Tyagi v. Maman Chand, [1980] 3 S.C.R. 224",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "V. Dhanpal Chettiar v. Yesodai Ammal, [1980] 1 S.C.R. 334",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 0.97,
+        "matched_cited_doc_id": "1188309",
+        "matched_cited_text": "V. Dhanapal Chettiar v. Yesodai Ammal",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Indu Bhushan v. State, (unreported)",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 0.92,
+        "matched_cited_doc_id": "415355",
+        "matched_cited_text": "Indu Bhusan Bose v. Rama Sundari Devi & Anr.",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "L.S. Nair v. Hindustan Steel Ltd. Bhilai, AIR 1980 MP 106",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "70031",
+        "matched_cited_text": "L.S. Nair v. Hindustan Steel Ltd. Bhilai",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Megh Raj v. Allan Rakhia, AIR 1947 PC 72",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 0.91,
+        "matched_cited_doc_id": "571954",
+        "matched_cited_text": "Megh Raj v. Allah Rakhia",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Atma Ram v. State of Punjab, [1959] Supp. 1 S.C.R. 748",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1764620",
+        "matched_cited_text": "Atma Ram v. State of Punjab",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Manaklal Chhotalal v. M.G. Makwana & Ors., [1967] 3 SCR 65",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "752712",
+        "matched_cited_text": "Manaklal Chhotalal v. M.G. Makwana & Ors.",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Union of India v. Valluri S. Chaudhary, [1979] 3 SCR 802",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1258228",
+        "matched_cited_text": "Union of India v. Valluri B. Chaudhary",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": [
+    {
+      "chunk_index": 12,
+      "text": "C.T.O [1964] 4 SCR 99; A.P. State Raod Transport Corporation v. I.T.O., [1964] 7 SCR 17; Heavy Engineering Mazdoor Union v. State, [1969] 3 S.C.R. 995; Vidarbha Housing Board v. I.T.O., [1973] 92 I.T.R. 430; Western Coalfields Ltd. v. Special Area Development Authority, [1982] 2 S.C.R. 1; Manohar v. C.G. Deasi, AIR 1951 Nag. 33; Raman Dass v. State, AIR 1954 All. 707; Darukhanawala v. Khemchand, ILR 1954 Bom, 546; M. Karuna v. State, AIR 1955 Nag 153, Kewalchand v. Dashrathlal, ILR 1956 Nag 618; Sukumar Dutta v. Gaurishankar, [1964] 69 CWN 833; Raval & Co. v. Ramachandran, AIR 1967 Mad. 57;Mangtulal v. Radhey Shyam, AIR 1953 Pat. 14; Milap Chand v. Dwarakadas, AIR 1964 Raj 252; Rama Sundari v. Indu Bhusan, AIR 1967 Cal. 355; Nawal Mal v. Nathu Mal, AIR 1962 Raj. 193; Bapalal & Co. v. Thakur Das, AIR 1982 Mad. 309; Vnited Province v. Atiga Begum, [1940J F.C.R. 110; Megh Raj v. Allan Rakhia, AIR 1947 PC 72; Atma Ram v. State of Punjab, [1959] Supp. 1 S.C.R. 748; Manaklal Chhotalal v. M.G. Makwana & Ors., [1967] 3 SCR 65; Babu Jagtanand Sri Satyanarayanji, ILR 40 Patna 625; Union of India v. Valluri S. Chaudhary, [1979] 3 SCR 802, State v."
+    },
+    {
+      "chunk_index": 13,
+      "text": "Peter, [1980] 3 SCR 290, 292; Jaisingh Jairam Tyagi v. Maman Chand, [1980] 3 S.C.R. 224; Hoechst Pharmaceuticals v. State, [1983] 3 S.C.R. 130; Dhillon's case, [1972] 2 S.C.R. Accountant And Secretarial Services ... vs Union Of India & Ors on 20 July, 1988 Indian Kanoon - http://indiankanoon.org/doc/1732040/ 5 33; Jain Ink Manufacturing Co. v. LIC, [1981] 1 S.C.R. 498 and Zaverbhai Amaidas v. State, [1955] S.C.R. 799, referred to. JUDGMENT: CIVIL APPELLATE JURISDICTION: Civil Appeal NO 900 of From the Judgment and order dated 12.2.1987 of the Calcutta High Court in Matter No. 676 of 1978. Dr. Y.S. Chitale, Anil Mitra, P.H. Parekh, D. Chandfachud, S.C. Ghosh and R.K. Dhil1on for the Appellants. K. Parasaran Attorney General for Union of India. K.N. Bhat, A. Subba Rao and Miss Madhu Moolchandani for the Respondents. The Judgment of the Court was delivered by SABYASACHI MUKHARJI, J. I had the advantage of reading in draft the judgment proposed to be delivered by my learned Brother Ranganathan, J. It is, however, necessary to add a few sentences. I was reluctant to take up this matter as it arises out of a decision of the Division Bench of the High Court of Calcutta."
+    },
+    {
+      "chunk_index": 14,
+      "text": "That decision was occasioned by a reference made by the Chief Justice of that High Court on a reference made by me to the Chief Justice sitting singly in that Court. In the High Court I had not expressed any view on the contentions urged. In those circumstances both the parties requested me to take up the matter. It was in these circumstances that I became a party to this judgment. I agree with my learned Brother that the appeal should be dismissed and the order he proposes to make as to costs. It is not necessary in view of the facts and circumstances of the case to refer in detail to the reasons. I would, however, make it clear that I prefer the view of the Division Bench of the Madhya Pradesh High Court in the case of L.S. Nair v. Hindustan Steel Ltd. Bhilai, AIR 1980 MP 106. I would prefer this view in preference to that of the F. Iearned Single Judge of the Bombay High Court in Miscellaneous Petition No. 458/79 Elliot Waud Hill (P) Ltd. v. Life Insurance Corpn."
+    },
+    {
+      "chunk_index": 63,
+      "text": "It is in this context that a reference, on admission, regarding the scope of Entry 18 finds a place in the passage. Neither was the scope of the entry in issue in the case nor can the isolated sentence, on admission, be treated as a decision by the court. We now come to Indu Bhushan's case. While the counsel for the respondents would have it that this ruling has concluded the present issue in their favour, Dr. Chitale contends that this is not so. He points out that the court has been careful to say that \"it is not expressing any final opinion\" regarding Entry 21. It has, at another place, referred to the framing of house tenancy legislation \"either under Entry 18 of List II or Entries 6, 7 and 13 of List III\" which also indicates that the Court had not made up its mind as to whether this type of legislation will fall under List II or List III. It is submitted also that an analysis of the Calcutta and Rajasthan decisions approved by it would show that they had not at all been considering any conflict between entries in Lists II and III and were concerned only with the interpretation of Entry 2 in List I and Entry 21 of List II. Dr."
+    },
+    {
+      "chunk_index": 65,
+      "text": "In our view the effect of this para cannot be explained away by trying to analyse the Calcutta and Rajasthan decisions to see what they had actually decided. The important thing is how the Supreme Court understood what the two High Courts had decided. This is set out in the two sentences of the last paragraph of the judgment, which have been underlined in the extract set out earlier. The Supreme Court then specifically affirmed this to be the correct ratio. We are, therefore, of the opinion that Indu Bhushan must be taken to have expressed a view that premises tenancy legislation in so far as it pertains to houses and buildings is referable not to entry 18 of List II but to entries 6, 7 and 13 of List III. As pointed out by the learned Attorney General, Indu Bhushun has been understood, as above, in the subsequent decision of the Supreme Court in Jaisingh Jairam Tyagi v. Maman Chand, [1980] 3 S.C.R. 224. The decision of the larger Bench of the Supreme Court in V. Dhanpal Chettiar v. Yesodai Ammal, [1980] 1 S.C.R. 334, also re-inforces the same line of thinking."
+    },
+    {
+      "chunk_index": 82,
+      "text": "However, there was some discussion before us as to whether the provisions of the 1971 Act, even if intra vires, would prevail against the provisions of the State legislations. In this context, Dr. Chitale invited our attention to Jain Ink Manufacturing Co. v. LIC, [1981] 1 SCR 498 where this Court held that the provisions of the 1971 Act will prevail against the provisions of the Delhi Rent Control Act, 1956 and the Delhi Slum Areas (Improvement & Clearance) Act, 1956 on the grounds that it was both a later Act and a special Act. He submitted that the decision in the case is the subject matter of reference to a larger Bench and that we should, therefore, defer our decision in the present case to await the result of the reference. We do not think this is called for. In our opinion, that decision has no reference to the issues before us. In that case, all the three legislations were Parliamentary legislations (Delhi being a Union Territory) and the question was regarding the inter-se overlap among the three Acts touching upon the same subject matter viz. eviction of a tenant by a landlord."
+    },
+    {
+      "chunk_index": 85,
+      "text": "It will be convenient, before applying the provisions of the article to the facts of the present case, to refer to the elucidation of the scope of its provisions by decisions of this Court. In Zaverbhai Amaidas v. State, [1955] SCR 799 the question whether a provision in Central Act XXIV if 1946 as amended by the Act LII of 1950 would prevail against a provision in Bombay Act XXXVI of 1947. Both legislations were referable to the Concurrent List and the State law had been passed after obtaining the assent of the Governor General. Referring to Art. 254(2), the Court said: \"This is, in substance, a reproduction of section 107(2) of the Government of India Act, the concluding portion thereof being incorporated in a proviso with further additions. Discussing the nature of the power of the Dominion Legislature, Canada, in relation to that of the Provincial Legislature, in a situation similar to that under section 107(2) of the Government of India Act, it was observed by Lord Watson in Attorney General for Outario v."
+    },
+    {
+      "chunk_index": 88,
+      "text": "LII of 1950.\" It is sufficient to cite certain observations from one more judgment on this aspect: Hoechst Pharmaceuticals v. State, [1983] 3 SCR 130 which had to consider an alleged conflict between a provision of a State sales tax law and a provision of an order made under the Essential Commodities Act of Parliament. The case dealt with several points with which we are not here concerned. Expatiating on the scope of Article 254, the Court observed: \"Art. 254 of the Constitution makes provision first, as to what would happen in the case of conflict between a Central and State law with regard to the subjects enumerated in the Concurrent List and secondly, for resolving such conflict. Art. 254(1) enunciates the normal rule that in the event of a conflict between a Union and a State law in the concurrent field, the former prevails over the latter. Cl. (1) lays down that if a State law relating to a concurrent subject is 'repugnant' to a Union law relating to that subject, whether the Union law is prior or later in time, the Union law will prevail and the State law shall, to the extent of such repugnancy, be void."
+    }
+  ],
+  "raw_response": "{\"issue\": \"Whether the provisions of the 1971 Act prevail against the provisions of the State legislations and the scope of Entry 18 of List II and Entries 6, 7 and 13 of List III.\", \n\"rule\": \"Article 254 of the Constitution of India provides that in the event of a conflict between a Central and State law in the concurrent field, the former prevails over the latter. The court also considered the scope of various entries in the Seventh Schedule of the Constitution.\", \n\"application\": \"The court applied the provisions of Article 254 to the facts of the case and held that the provisions of the 1971 Act would prevail against the provisions of the State legislations. The court also analyzed the scope of Entry 18 of List II and Entries 6, 7 and 13 of List III and held that premises tenancy legislation in so far as it pertains to houses and buildings is referable not to Entry 18 of List II but to Entries 6, 7 and 13 of List III.\", \n\"conclusion\": \"The appeal was dismissed and the order of the High Court was upheld. The court held that the provisions of the 1971 Act prevail against the provisions of the State legislations and that the premises tenancy legislation in so far as it pertains to houses and buildings is referable to Entries 6, 7 and 13 of List III.\",\n\"authorities\": [\n    \"Zaverbhai Amaidas v. State, [1955] SCR 799\",\n    \"Hoechst Pharmaceuticals v. State, [1983] 3 SCR 130\",\n    \"Jain Ink Manufacturing Co. v. LIC, [1981] 1 SCR 498\",\n    \"Jaisingh Jairam Tyagi v. Maman Chand, [1980] 3 S.C.R. 224\",\n    \"V. Dhanpal Chettiar v. Yesodai Ammal, [1980] 1 S.C.R. 334\",\n    \"Indu Bhushan v. State, (unreported)\",\n    \"L.S. Nair v. Hindustan Steel Ltd. Bhilai, AIR 1980 MP 106\",\n    \"Megh Raj v. Allan Rakhia, AIR 1947 PC 72\",\n    \"Atma Ram v. State of Punjab, [1959] Supp. 1 S.C.R. 748\",\n    \"Manaklal Chhotalal v. M.G. Makwana & Ors., [1967] 3 SCR 65\",\n    \"Union of India v. Valluri S. Chaudhary, [1979] 3 SCR 802\"\n  ]\n}",
+  "decade": "1980",
+  "n_real_edges": 17
+}

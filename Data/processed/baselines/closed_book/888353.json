@@ -1,0 +1,46 @@
+{
+  "doc_id": "888353",
+  "filename": "Pingle_Industries_Ltd_Secunderabad_vs_Commissioner_Of_Income_Tax_Hyderabad_on_26_April_1960_1.PDF",
+  "year": "1960",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether the income from the sale of shares by a company can be considered as business income or capital gains.",
+    "rule": "The income from the sale of shares by a company is considered as capital gains if the shares are held as investments, and not as stock-in-trade.",
+    "application": "The Supreme Court held that the assessee company, whose main business was manufacturing and selling cotton textiles, was not entitled to treat the profit made on the sale of shares as business profits. The Court observed that there was no material to show that the shares in question were held by the assessee as stock-in-trade.",
+    "conclusion": "The Supreme Court allowed the appeal of the assessee and directed the Income-tax Officer to compute the profit made on the sale of shares as capital gains."
+  },
+  "authority_results": [
+    {
+      "cited": "Eastern General Films Exchange Ltd. v. Commissioner of Income-tax, Bombay (1956) 30 ITR 42",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Commissioner of Income-tax, Bombay v. Navbharat Electric Foundry Ltd. (1959) 36 ITR 611",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "S. Ramanatha Iyer and Ors. v. Commissioner of Income-tax, Madras (1959) 36 ITR 808",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether the income from the sale of shares by a company can be considered as business income or capital gains.\",\n  \"rule\": \"The income from the sale of shares by a company is considered as capital gains if the shares are held as investments, and not as stock-in-trade.\",\n  \"application\": \"The Supreme Court held that the assessee company, whose main business was manufacturing and selling cotton textiles, was not entitled to treat the profit made on the sale of shares as business profits. The Court observed that there was no material to show that the shares in question were held by the assessee as stock-in-trade.\",\n  \"conclusion\": \"The Supreme Court allowed the appeal of the assessee and directed the Income-tax Officer to compute the profit made on the sale of shares as capital gains.\",\n  \"authorities\": [\n    \"Eastern General Films Exchange Ltd. v. Commissioner of Income-tax, Bombay (1956) 30 ITR 42\",\n    \"Commissioner of Income-tax, Bombay v. Navbharat Electric Foundry Ltd. (1959) 36 ITR 611\",\n    \"S. Ramanatha Iyer and Ors. v. Commissioner of Income-tax, Madras (1959) 36 ITR 808\"\n  ]\n}\n```",
+  "decade": "1960",
+  "n_real_edges": 12
+}

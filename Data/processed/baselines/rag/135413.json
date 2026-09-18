@@ -1,0 +1,119 @@
+{
+  "doc_id": "135413",
+  "filename": "Immani_Appa_Rao_And_Others_vs_Gollapalli_Ramalingamurthi_And_Ors_on_22_September_1961_1.PDF",
+  "year": "1961",
+  "system": "rag",
+  "irac": {
+    "issue": "Whether a party who has participated in a fraud can be allowed to plead that fraud in support of their defence to a suit based on a conveyance, and whether the maxim ex dolo malo non oritur action or ex turpi causa non oritur actio applies in such cases.",
+    "rule": "The Court will not lend its aid to a party who has participated in a fraud, and the maxim ex dolo malo non oritur action or ex turpi causa non oritur actio may be applied in cases where a party seeks to enforce a claim that arises out of a fraudulent act. However, the approach of the Court must be conditioned solely by considerations of public policy, and the Court must consider which approach would be less injurious to public interest.",
+    "application": "The appellants, who had participated in a fraud with respondent 2, sought to plead that fraud in support of their defence to a suit brought by respondent 1, who had also participated in the fraud. The Court considered the conflicting decisions on this point and the applicable maxims, and held that the approach that was less injurious to public interest was to allow the plea of fraud to be raised in defence.",
+    "conclusion": "The Court allowed the plea of fraud to be raised in defence, and set aside the decision of the High Court, which had held that the appellants were estopped from setting up the fraud against respondent 1."
+  },
+  "authority_results": [
+    {
+      "cited": "Vodiana Kamayya v. Oudisa Kamayya (1917) 32 M.J.J. 484",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.62,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Kepula Kotayyar Naidu v. Chitrapur Mahalakshmama (1933) I.L.R. 56 Mad. 646",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 0.91,
+        "matched_cited_doc_id": "471581",
+        "matched_cited_text": "Keppula Kotayyar Naidu v. Chitrapu Mahalak8hmamma",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Mutho K.B.A.R.P.L. Arunachalam Chettiar v. Rangaswamy Chettiar (1936) I.L.R. 59 Mad. 289",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Berg v. Sadler and Moore [1937] 2 K.B. 158",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "T. P. Petherperumal Chetty v. B. Muniandi Servai (1908) L.R. 35 I.A. 98",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 0.93,
+        "matched_cited_doc_id": "1656691",
+        "matched_cited_text": "T. P. Petherpermal Chetty v. R. Muntandi Servai In",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Holman v. Johnson (1775) 1 Cowper 341",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Deo, Dem. Roberts against Roberts, Widow (1819) 106 E. R. 401",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": [
+    {
+      "chunk_index": 2,
+      "text": "Since one of the parties must succeed in any event, the proper approach for the Court to adopt would be the one that was less injurious to public interest, namely, to allow the plea of fraud to be raised in defence and, if upheld, allow the properties to remain where they were, than to decree a suit based on a fraudulent claim. It could make no difference in such a case if the suit was based on a deed of conveyance and not a contract. Vodiana Kamayya v. Oudisa Kamayya, (1917) 32 M.J.J. 484, Kepula Kotayyar Naidu v. Chitrapur Mahalakshmama, (1933) I.L.R. 56 Mad. 646 and Mutho K.B.A.R.P.L. Arunachalam Chettiar v. Rangaswamy Chettiar, (1936) I.L.R. 59 Mad. 289, disapproved. Berg v. Sadler and Moore, [1937] 2 K.B. 158, T. P. Petherperumal Chetty v. B. Muniandi Servai, (1908) L.R. 35 I.A. 98 and Holman v. Johnson, (1775) 1 Cowper, 34 1, referred to. Deo, Dem. Roberts against Roberts, Widow, (1819) 106 E. R. 401, considered. Case-law reviewed. Section 84 of the Indian Trusts Act is not exhaustive in its provisions and since the present case falls outside of that section, it has to be decided on considerations of general policy."
+    },
+    {
+      "chunk_index": 7,
+      "text": "Issues 8, and 9 were in regard to the court fees payable on the claim made in the plaint and regarding the pecuniary jurisdiction of the Court. The Court found that it had jurisdiction to try the suit and it valued the subject-matter of the suit at Rs. 2,411-7-2 on which additional court fees was paid by respondent 1. Issue 5 was as to whether the sale in favour of respondent 1 bound the shares of the appellants in the family properties. The learned trial judge answered this issue in favour of the appellants purporting to follow the Full Bench decision of the Madras High Court in Ramasastrulu v. Balakrishna Rao (1). According to the said decision the right of respondent 2 as the father of the appellants and manager of the undivided Hindu family to sell the shares of his sons for purposes binding on the family did not vest in the Official Receiver on his insolvency, and so the sale effected by the Official Receiver in favour of respondent 1 did not, and could not, in law bind the shares of the appellants in the properties conveyed. After these findings were recorded respondent 1 applied for the amendment of his plaint and the said amendment was allowed."
+    },
+    {
+      "chunk_index": 14,
+      "text": "In its final judgment the High Court has observed that the argument that Act 25 of 1948 was ultra vires was not pressed before the High Court, that certain other grounds were sought to be raised by the appellants but they were not allowed to be raised; so that in the result the main argument urged before the High Court was whether having regard to the fact that the fraud contemplated by respondent 2 and respondent 1 had been effectively carried out it was open to the appellants to plead that fraud against respondent 1 in respect of his claim for possession of the suit properties in the present suit. The High Court considered the conflicting decisions on this point and adhered to the view which has prevailed in the said High Court since the decision in Vodiana Immani Appa Rao And Others vs Gollapalli Ramalingamurthi And Ors on 22 September, 1961 Indian Kanoon - http://indiankanoon.org/doc/135413/ 5 Kamayya v. Gudisa. Mamayya (1) and held that the appellants and respondent 2 were estopped from setting up the fraud against respondent 1 in his present suit."
+    },
+    {
+      "chunk_index": 17,
+      "text": "Respondent 1 sheets this challenge to his title by pleading that respondent 2 who participated in the fraud cannot be allowed to plead his own fraud in support of his refusal to part with the possession of the properties, and he urges that there is a conveyance duly executed in his favour on which the Court must act without permitting respondent 2 to challenge its validity. The High Court his upheld the plea of respondent 1 and has not allowed either respondent for the appellants to plead the fraud in support of their defence. Is this decision right? That is the question which falls to be decided in the present appeal. Reported decisions bearing on this question show that consideration of this problem often gives rise to what may be described as a battle of legal maxims. The appellants emphasised that the doctrine which is preeminently applicable to the present case is ex dolo malo non oritur action or ex turpi causa non oritur actio."
+    },
+    {
+      "chunk_index": 18,
+      "text": "In other words, they contended that the right of action cannot arise out of fraud or out of transgression of law; and according to them it is necessary in such a case that possession should rest where it lies in pari delicto potior est conditio possidenties; where each party is equally in fraud the law favors him who is actually in possession, or where both parties are equally guilty the estate will lie where it falls. On the other hand, respondent 1 argues that the proper maxim to apply is nemo allegans suam turpitudinum audiendumest, whoever has first to plead turpitudinum should fail; that party fails who first has to allege fraud in which he participated. In other words, the principle invoked by respondent 1 is that a man cannot plead his own fraud. In deciding the question as to which maxim Immani Appa Rao And Others vs Gollapalli Ramalingamurthi And Ors on 22 September, 1961 Indian Kanoon - http://indiankanoon.org/doc/135413/ 6 should govern the present case it is necessary to recall what Lord Wright, M.' R. observed about these maxims in Berg v. Sadler and Moore (1)."
+    },
+    {
+      "chunk_index": 19,
+      "text": "Referring to the maxim ex turpi causa non oritur actio Lord Wright observed that \"this maxim, though veiled in the dignity of learned language, is a statement of a principle of great importance; but like most maxims it is much too vague and much too general to admit of application without a careful consideration of the circumstances and of the various definite rules which have been laid down by the authorities\". Therefore, in deciding the question raised in the present appeal it would be necessary for us to consider carefully the true scope and effect of the maxims pressed into service by the rival parties and to enquire which of the maxims would be relevant and applicable in the circumstances of the case. It is common-ground that the approach of the Court in determining the present dispute must be conditioned solely by considerations of public policy. Which principle would be more conducive to, and more consistent with, public interest, that is the crux of the matter. To put it differently having regard to the fact that both the parties before the Court are confederates in the fraud, which approach would be less injurious to public interest."
+    },
+    {
+      "chunk_index": 24,
+      "text": "R. 31 Bom. 405. this judgment was sometimes doubted in the subsequent decisions of the said High Court [Vide : Lakshman Balvant Khisti V. Vasudev Mohoniraj Pande(1)] and finally the Full Bench of the said High Court reversed the said decision of Sir Lawrence Jenkins in Guddappa Chikkappa Kurbar v. Balaji Ramji Dange (2). Since then the decision of the Full Bench has been consistently followed in the Bombay High Court. The same view has been accepted by the Calcutta, Allahabad, Nagpur and Patna High Courts [Vida : Preomath Koer v. Kazi Mahomed Shazid(3). Emperor v. Abdul Sheikh(4), Vilayat Husain v. Misran (5), Nawab Singh v. Daljit Singh (6), Qader Baksh v. Hakim (7), Bishwanath g/o Karunashanker Shukla v. Surat Singh alias Chhuttu Singh s/o Bhabhut Singh (s), and J. C. Field Electric Supply v. K. Agarwala (9) (Case of illegal contract)]. In Madras the earlier decisions of the High Court appear to have, taken the same view [Vide: Venkataramana v. Viramma (10), Yaramati Krish. nayya v. Chundru Papayya (11) and Ragha. valu Chetty v. Adinarayana Chetty (12)]. In the case of Vodiana Kamayya v."
+    },
+    {
+      "chunk_index": 33,
+      "text": "It is upon that ground the Court goes; not for the sake of the defendant, but because they will not lend their aid to such a plaintiff\". On behalf of the respondents it was urged that the principles on which the appellants rely are applicable to contracts and not to conveyances. A conveyance, it is argued, rests on a different basis from a contract, and so the English decisions can. not be pressed into service by the appellants. We are not impressed by this argument. Even if respondent 1 has based his case on a conveyance the position still remains that as a result of the facts proved by respondent 2 and the appellants the conveyance is void ab initio. It is a document fraudulently executed and as such it conveys no title to the transferee at all. That being so we do not think that in giving effect to the considerations of (1) (1775) 1 Cowrer 341. public interest or policy it makes any difference that the deed on which the present suit is brought is one of conveyance. It is then contended that in deciding the point raised by the appellants we must look to the provisions of s. 84 of the Indian Trusts Act and nothing else."
+    }
+  ],
+  "raw_response": "{\"issue\": \"Whether a party who has participated in a fraud can be allowed to plead that fraud in support of their defence to a suit based on a conveyance, and whether the maxim ex dolo malo non oritur action or ex turpi causa non oritur actio applies in such cases.\",\n\"rule\": \"The Court will not lend its aid to a party who has participated in a fraud, and the maxim ex dolo malo non oritur action or ex turpi causa non oritur actio may be applied in cases where a party seeks to enforce a claim that arises out of a fraudulent act. However, the approach of the Court must be conditioned solely by considerations of public policy, and the Court must consider which approach would be less injurious to public interest.\",\n\"application\": \"The appellants, who had participated in a fraud with respondent 2, sought to plead that fraud in support of their defence to a suit brought by respondent 1, who had also participated in the fraud. The Court considered the conflicting decisions on this point and the applicable maxims, and held that the approach that was less injurious to public interest was to allow the plea of fraud to be raised in defence.\",\n\"conclusion\": \"The Court allowed the plea of fraud to be raised in defence, and set aside the decision of the High Court, which had held that the appellants were estopped from setting up the fraud against respondent 1.\",\n\"authorities\": [\n  \"Vodiana Kamayya v. Oudisa Kamayya (1917) 32 M.J.J. 484\",\n  \"Kepula Kotayyar Naidu v. Chitrapur Mahalakshmama (1933) I.L.R. 56 Mad. 646\",\n  \"Mutho K.B.A.R.P.L. Arunachalam Chettiar v. Rangaswamy Chettiar (1936) I.L.R. 59 Mad. 289\",\n  \"Berg v. Sadler and Moore [1937] 2 K.B. 158\",\n  \"T. P. Petherperumal Chetty v. B. Muniandi Servai (1908) L.R. 35 I.A. 98\",\n  \"Holman v. Johnson (1775) 1 Cowper 341\",\n  \"Deo, Dem. Roberts against Roberts, Widow (1819) 106 E. R. 401\"\n]}",
+  "decade": "1960",
+  "n_real_edges": 11
+}

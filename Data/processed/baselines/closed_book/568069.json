@@ -1,0 +1,46 @@
+{
+  "doc_id": "568069",
+  "filename": "Nagendra_Nath_Bora_Another_vs_The_Commissioner_Of_Hills_Divisionand_on_7_February_1958_1.PDF",
+  "year": "1958",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether the Governor's decision to modify the boundaries of the Kamakhya Hill Reserve is valid and can be made under Section 3 of the Assam Hill Reserves Act, 1936.",
+    "rule": "The Governor's decision under Section 3 of the Assam Hill Reserves Act, 1936, is not justiciable and cannot be questioned in a court of law, as long as it is made in good faith.",
+    "application": "The Supreme Court applied the rule to the facts of the case, holding that the Governor's decision to modify the boundaries of the Kamakhya Hill Reserve was not justiciable and could not be questioned by the petitioners.",
+    "conclusion": "The Supreme Court allowed the appeal and set aside the judgment of the High Court, holding that the Governor's decision was valid and could not be questioned."
+  },
+  "authority_results": [
+    {
+      "cited": "Shri Swaminarayan Satsang v. The Union of India (AIR 1956 SC 426)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "The King v. The Secy. of State for India in Council (1941) 74 L.L.J. 107",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "In re Rajabhai (1940) L.L.J. 244",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether the Governor's decision to modify the boundaries of the Kamakhya Hill Reserve is valid and can be made under Section 3 of the Assam Hill Reserves Act, 1936.\",\n  \"rule\": \"The Governor's decision under Section 3 of the Assam Hill Reserves Act, 1936, is not justiciable and cannot be questioned in a court of law, as long as it is made in good faith.\",\n  \"application\": \"The Supreme Court applied the rule to the facts of the case, holding that the Governor's decision to modify the boundaries of the Kamakhya Hill Reserve was not justiciable and could not be questioned by the petitioners.\",\n  \"conclusion\": \"The Supreme Court allowed the appeal and set aside the judgment of the High Court, holding that the Governor's decision was valid and could not be questioned.\",\n  \"authorities\": [\n    \"Shri Swaminarayan Satsang v. The Union of India (AIR 1956 SC 426)\",\n    \"The King v. The Secy. of State for India in Council (1941) 74 L.L.J. 107\",\n    \"In re Rajabhai (1940) L.L.J. 244\"\n  ]\n}\n```",
+  "decade": "1950",
+  "n_real_edges": 11
+}

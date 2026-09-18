@@ -1,0 +1,89 @@
+{
+  "doc_id": "661966",
+  "filename": "Shyam_Sunder_And_Others_vs_Ram_Kumar_And_Another_on_31_July_2001_1.PDF",
+  "year": "2001",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Holding": 17,
+    "Claim": 8,
+    "Outcome": 4,
+    "Party": 2,
+    "AuthorityCited": 8
+  },
+  "authority_results": [
+    {
+      "cited": "this Court",
+      "source_sentence": "The third contention was that in any event, the amending Act being beneficial legislation passed for general good of citizens, this Court while construing new substituted Section 15 is required to apply rule of benevolent construction and in that event amending Act would have retroactive operation.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "provisions of Order 20 rule 14 CPC",
+      "source_sentence": "It was also urged that in view of provisions of Order 20 rule 14 CPC the title to the property had already been passed on to the claimant on deposit of purchase money and, therefore, the amending Act does not affect the title acquired by the claimant.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "number of decisions rendered by Privy Council, Federal Court, this Court and various other High Courts",
+      "source_sentence": "Learned counsel for the parties in support of their arguments relied upon number of decisions rendered by Privy Council, Federal Court, this Court and various other High Courts.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "statutory enactment",
+      "source_sentence": "Second category of decisions deals with the cases where right of a preemptor was taken away after the date of decree of the first court and during pendency of the appeal by statutory enactment which had retroactive operation.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the Privy Council",
+      "source_sentence": "This decision by the Privy Council related to the right of preemption prevailing in the then Agra Province, but the same was followed and applied in the then undivided Punjab before partition of the country by the Lahore High Court in Madho Singh vs.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the Privy Council",
+      "source_sentence": "This decision by the Privy Council related to the right of preemption prevailing in the then Agra Province, but the same was followed and applied in the then undivided Punjab before partition of the country by the Lahore High Court in Madho Singh vs.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "his own act",
+      "source_sentence": "The preemptor must maintain his qualification to preempt on the date of decree of the first court only and any subsequent loss of qualification by preemptor by his own act or by an act beyond his control does not affect the maintainability of the suit.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "an act beyond his control",
+      "source_sentence": "The preemptor must maintain his qualification to preempt on the date of decree of the first court only and any subsequent loss of qualification by preemptor by his own act or by an act beyond his control does not affect the maintainability of the suit.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "2000",
+  "n_real_edges": 18
+}

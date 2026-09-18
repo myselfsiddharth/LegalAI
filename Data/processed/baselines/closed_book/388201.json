@@ -1,0 +1,46 @@
+{
+  "doc_id": "388201",
+  "filename": "Addagada_Raghavamma_And_Anr_vs_Addagada_Chenchamma_And_Anr_on_9_April_1963_1.PDF",
+  "year": "1963",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether a female Hindu can claim a share in the property as a coparcenary member under the Mitakshara school of Hindu law, and if so, whether she has the right to partition the property.",
+    "rule": "Under the Mitakshara school of Hindu law, only male members of a Hindu undivided family can be coparcenary members, and a female member does not have the right to be a coparcenary member or claim a share in the property by birth.",
+    "application": "The appellants, Addagada Raghavamma and Anr, claimed a share in the property as coparcenary members. However, the court held that as female members of the family, they were not entitled to be coparcenary members and therefore could not claim a share in the property.",
+    "conclusion": "The Supreme Court of India held that a female Hindu does not have the right to be a coparcenary member or claim a share in the property by birth under the Mitakshara school of Hindu law."
+  },
+  "authority_results": [
+    {
+      "cited": "Mulla v. Mulla, (1950) 1 SCR 591",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "Shri Swaminarayan Nidhi v. Commissioner of Income-tax, (1952) 1 SCR 833",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Venkatamamma v. Subbamma, (1957) 1 SCR 305",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether a female Hindu can claim a share in the property as a coparcenary member under the Mitakshara school of Hindu law, and if so, whether she has the right to partition the property.\",\n  \"rule\": \"Under the Mitakshara school of Hindu law, only male members of a Hindu undivided family can be coparcenary members, and a female member does not have the right to be a coparcenary member or claim a share in the property by birth.\",\n  \"application\": \"The appellants, Addagada Raghavamma and Anr, claimed a share in the property as coparcenary members. However, the court held that as female members of the family, they were not entitled to be coparcenary members and therefore could not claim a share in the property.\",\n  \"conclusion\": \"The Supreme Court of India held that a female Hindu does not have the right to be a coparcenary member or claim a share in the property by birth under the Mitakshara school of Hindu law.\",\n  \"authorities\": [\n    \"Mulla v. Mulla, (1950) 1 SCR 591\",\n    \"Shri Swaminarayan Nidhi v. Commissioner of Income-tax, (1952) 1 SCR 833\",\n    \"Venkatamamma v. Subbamma, (1957) 1 SCR 305\"\n  ]\n}\n```",
+  "decade": "1960",
+  "n_real_edges": 14
+}

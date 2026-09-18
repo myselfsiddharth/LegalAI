@@ -1,0 +1,135 @@
+{
+  "doc_id": "184335016",
+  "filename": "Union_Of_India_vs_Harbhajan_Singh_Dhillon_on_21_October_1971_1.PDF",
+  "year": "1971",
+  "system": "rag",
+  "irac": {
+    "issue": "The issue in this case is the interpretation of the Government of India Act, specifically the distribution of legislative powers between the Union and Provincial Legislatures, and whether the Gift Tax Act is within the competence of the Union Parliament.",
+    "rule": "The rule of construction is that general language in the heads of Section 92 yields to particular expressions in Section 91, where the latter are unambiguous. The principles laid down by the Judicial Committee in a long series of decisions for the interpretation of the two sections of the British North America Act may be accepted as a guide for the interpretation of similar provisions in the Government of India Act.",
+    "application": "The position of the Provincial Legislatures under the Indian Constitution Act in respect of the subjects enumerated in List II, and in relation to the subjects specified in List I is in essence the same as that above stated in regard to the powers of the Provincial Legislature under Section 92 of the British North America Act. The rules of interpretation adopted in the Canadian cases were evolved only as a matter of reasonableness and common sense and out of the necessity of satisfactorily solving conflicts arising from the inevitable overlapping of subjects in any system of distribution of legislative powers.",
+    "conclusion": "The validity of the Gift Tax Act was upheld on the ground that since none of the three lists enumerated such a tax, there was no question of Parliament having entrenched upon the State's power under entries 18 and 49 of List II."
+  },
+  "authority_results": [
+    {
+      "cited": "Great West Saddlery Co. v. The King [1921] 2 A.C. 91",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Russel v. The Queen [1882] 7A.C. 829",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Attorney-General for Ontario v. Attorney-General for the Dominion",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Gallagher v. Lynn [1937] A.C. 863",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Shannon v. Lower Mainland Dairy Products Board [1938] AC. 708",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "In re the Regulation and Control of Aeronautics in Canada [1932] A.C. 54",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Att.-Gen. for Canada v. Att.-Gen. for British Columbia [1930] A.C. 111",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Chhotabhai Jethabhai Patel v. The Union of India [1962] Supp. 2 S.C.R.I",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1404351",
+        "matched_cited_text": "Chhotabhai Jethabhai Patel v. The Union of India",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Province of Madras v. Messrs. Boddu Paidanna [1942] F.C.R. 90",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.4,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": [
+    {
+      "chunk_index": 51,
+      "text": "Palkiwala points out, that one way of reading Sections 91 and 92 of the Canadian Constitution is that Section 91 gives general powers and then gives certain specific powers by way of illustration, and that apparently was the interpretation placed on the Act by the Privy Council before Attorney-General for Ontario v. Attorney-General for the Dominion. But whatever the interpretation, the same test was applied by the Privy Council before-1896 in Russel v. The Queen [1882] 7A.C. 829 and after this case. 51. The learned Counsel referred to five cases of this Court and the Federal Court to show that the Canadian cases should not be relied on as the Canadian Constitution was different. It is true that the Canadian Constitution is different in many respects and for some purposes it would be misleading to rely on the Canadian cases. In Chhotabhai Jethabhai Patel v. The Union of India [1962] Supp. 2 S.C.R.I the question was the interpretation of entry 84 List I (Duties of excise on tobacco...) and entry 60 List. II (Taxes on professions, trades, callings and employments)."
+    },
+    {
+      "chunk_index": 52,
+      "text": "This Court held that the Canadian cases which were cited before it did not afford any assistance because in Canada analogous problems are always concerned with questions of direct and indirect taxation. We agree that in the interpretation of entry 84 (duties of excise...) it would be misleading to rely on cases dealing with direct and indirect taxation. 52. Similarly, in 1942 in Province of Madras v. Messrs. Boddu Paidanna [1942] F.C.R. 90 the Federal Court was concerned with the interpretation of entry 45 List I of the Government of India Act (duties of excise on tobacco...) and entry 48 List II (taxes on the sale of goods and on advertisements). On these matters the Canadian cases could not possibly be of any assistance or relevance. 53. In State of Bombay v."
+    },
+    {
+      "chunk_index": 55,
+      "text": "Then he referred to Sections 91 and 92 of the British North America Act and observed at page 201 : As interpreted by the Judicial Committee, the British North America act presents an exact analogy to the India Act, even to the overriding provisions in Section 100(1) of the latter : The rule of construction is that general language in the heads of Section 92 yields to particular expressions in Section 91, where the latter are unambiguous.\" per Lord Haldane in Great West Saddlery Co. v. The King [1921] 2 A.C. 91, 116. The principles laid down by the Judicial Committee in a long series of decisions for the interpretation of the two sections of the British North America Act may therefore be accepted as a guide for the interpretation of similar provisions in the Government of India Act. 58."
+    },
+    {
+      "chunk_index": 57,
+      "text": "The position of the Provincial Legislatures under the Indian Constitution Act in respect of the subjects enumerated in List II, and in relation to the subjects specified in List I is in essence the same as that above stated in regard to the powers of the Provincial Legislature under Section 92 of the British North America Act. It will be clear from the decisions that the rules of interpretation adopted in the Canadian cases were evolved only as a matter of reasonableness and common sense and out of the necessity of satisfactorily solving conflicts arising from the inevitable overlapping of subjects in any system of distribution of legislative powers. That they need not be limited to any special system of federal Constitution is made clear by the fact that in Gallagher v. Lynn [1937] A.C. 863, 869 Lord Atkin applied the \"pith and substance\" rule when dealing with a question arising under the Government of Ireland Act-which did not embody a federal system of at all-and in Shannon v. Lower Mainland Dairy Products Board [1938] AC. 708, 719 720, when dealing with a Canadian case, he embodied in the judgment the principles enumerated in the Irish case. 60."
+    },
+    {
+      "chunk_index": 104,
+      "text": "Hidayatullah, C.J., speaking for the Bench relied on Nawn's case and drew, as was done in that decision, the differentiation between a tax directly on lands and buildings and a tax, conceptually different from such a tax, viz., on the gift of property which might in some cases include lands and buildings. \"There is no tax upon lands and buildings as units of taxation\", he observed. \"Indeed, the lands and buildings are valued to find out the total amount of the gift and what is taxed is the gift. The value of the lands and buildings is only the measure of the value of the gift. A gift tax is thus not a tax on lands and buildings as such (which is a tax resting upon the general ownership of land and building) but is a levy upon a particular use, which is transmission of title by gift. The two are not the same thing and the incidence of tax is not the same\". The validity of the Gift Tax Act was upheld on the ground that since none of the three lists enumerated such a tax, there was no question of Parliament having entrenched upon the State's power under entries 18 and 49 of List II."
+    },
+    {
+      "chunk_index": 135,
+      "text": "Cas. 96, stated that whenever a question arose with regard to the respective powers of the legislatures of the Dominion and the Provinces, the first question to be determined would be whether the statute in question fell within any of the classes of subjects enumerated in Section 92. If it did, then only the further question would arise whether the subject of the Act did not fall within one of the enumerated subjects in Section 91, and so did not still belong to the Dominion Parliament. But if the Act did not fall within any of the classes of subjects assigned exclusively to the Provinces by Section 92, no further question would remain, and the Act would fall within the general words of the first part of Section 91. Since then the Privy Council have, on several occasions, while construing Sections 91 and 92, made shifts in emphasis. But amidst all the variations there emerges a code of interpretation crystallized into four propositions as summarised by Lord Tomlin in Att.-Gen. for Canada v. Att.-Gen. for British Columbia [19301 A.C. 111. These were approved in In re the Regulation and Control of Aeronautics in Canada [1932] A.C. 54, In re Silver Bros."
+    },
+    {
+      "chunk_index": 143,
+      "text": "As a matter of fact, Gwyer, C.J., had, only a year ago, uttered a warning against applying decisions on other Constitutions to the provisions of the 1935 India Act, in the following words : ...there are few subjects on which the decisions of other Courts require to be treated with greater caution than that of federal and provincial powers, for, in the last analysis the decision must depend upon the words of the Constitution which the Court is interpreting; and since no two Constitutions arc in identical terms, it is extremely unsafe to assume that a decision on one of them can be applied without qualification to another. This may be so even where the words or expressions used are the same in both cases; for a word or a phrase may take a colour from its context or bear different senses accordingly. 131. In The Province of Madras v."
+    },
+    {
+      "chunk_index": 226,
+      "text": "The Kerela case above referred to came up in appeal to this Court: the judgment there is reported in 52 I.T.R. 605 and allowing the appeals and remanding the case to the High Court this Court observed that it was not necessary to consider whether the view of the High Court on the first question relating to legislative competence was or was not correct. 180. The judgment of the Special Bench of the Allahabad High Court already referred to came up for consideration in this Court in Banarasi Das v. Taxing Officer ."
+    }
+  ],
+  "raw_response": "```json\n{\n  \"issue\": \"The issue in this case is the interpretation of the Government of India Act, specifically the distribution of legislative powers between the Union and Provincial Legislatures, and whether the Gift Tax Act is within the competence of the Union Parliament.\",\n  \"rule\": \"The rule of construction is that general language in the heads of Section 92 yields to particular expressions in Section 91, where the latter are unambiguous. The principles laid down by the Judicial Committee in a long series of decisions for the interpretation of the two sections of the British North America Act may be accepted as a guide for the interpretation of similar provisions in the Government of India Act.\",\n  \"application\": \"The position of the Provincial Legislatures under the Indian Constitution Act in respect of the subjects enumerated in List II, and in relation to the subjects specified in List I is in essence the same as that above stated in regard to the powers of the Provincial Legislature under Section 92 of the British North America Act. The rules of interpretation adopted in the Canadian cases were evolved only as a matter of reasonableness and common sense and out of the necessity of satisfactorily solving conflicts arising from the inevitable overlapping of subjects in any system of distribution of legislative powers.\",\n  \"conclusion\": \"The validity of the Gift Tax Act was upheld on the ground that since none of the three lists enumerated such a tax, there was no question of Parliament having entrenched upon the State's power under entries 18 and 49 of List II.\",\n  \"authorities\": [\n    \"Great West Saddlery Co. v. The King [1921] 2 A.C. 91\",\n    \"Russel v. The Queen [1882] 7A.C. 829\",\n    \"Attorney-General for Ontario v. Attorney-General for the Dominion\",\n    \"Gallagher v. Lynn [1937] A.C. 863\",\n    \"Shannon v. Lower Mainland Dairy Products Board [1938] AC. 708\",\n    \"In re the Regulation and Control of Aeronautics in Canada [1932] A.C. 54\",\n    \"Att.-Gen. for Canada v. Att.-Gen. for British Columbia [1930] A.C. 111\",\n    \"Chhotabhai Jethabhai Patel v. The Union of India [1962] Supp. 2 S.C.R.I\",\n    \"Province of Madras v. Messrs. Boddu Paidanna [1942] F.C.R. 90\"\n  ]\n}\n```",
+  "decade": "1970",
+  "n_real_edges": 25
+}

@@ -1,0 +1,133 @@
+{
+  "doc_id": "1703207",
+  "filename": "Satyawati_Sharma_Dead_By_Lrs_vs_Union_Of_India_Another_on_16_April_2008_1.PDF",
+  "year": "2008",
+  "system": "rag",
+  "irac": {
+    "issue": "Whether Section 14(1)(e) of the Delhi Rent Control Act, 1958, which provides an exemption from eviction for tenants of non-residential premises, is valid and does not violate Article 14 of the Constitution of India.",
+    "rule": "The classification created by a statute must have a rational relation to the object sought to be achieved by the statute. The doctrine of classification is a subsidiary rule evolved by the courts to give practical content to the doctrine of equality. A classification that was justified at its inception can become discriminatory and violative of Article 14 if it is persisted in over a long period without justification.",
+    "application": "The court applied the principles of equality and classification to hold that Section 14(1)(e) of the Delhi Rent Control Act, 1958, which exempted tenants of non-residential premises from eviction, had lost its rational basis and had become discriminatory after a lapse of 44 years. The court found that the reasons that initially justified the classification no longer existed due to changes in the housing scenario in Delhi.",
+    "conclusion": "The court struck down Section 14(1)(e) of the Delhi Rent Control Act, 1958, as being violative of Article 14 of the Constitution of India."
+  },
+  "authority_results": [
+    {
+      "cited": "Tendolkar and Ors. v. State of Bombay, AIR 1958 SC 538",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Consumer Education & Research Centre and Others v. Union of India, 1995 (5) SCC 482",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Gian Devi Anand vs. Jeevan Kumar & Ors.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1887042",
+        "matched_cited_text": "Gian Devi Anand vs. Jeevan Kumar & Ors.",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Maneka Gandhi v. Union of India, 1978 (1) SCC 248",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "43475503",
+        "matched_cited_text": "Maneka Gandhi v. Union of India",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Motor General Traders vs. State of Andhra Pradesh",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1351547",
+        "matched_cited_text": "Motor General Traders vs. State of Andhra Pradesh",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Broom's Legal Maxim (1939 Edition, page 97)",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "H.C. Sharma Vs. Life Insurance Corporation of India & Anr.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "663",
+        "matched_cited_text": "H.C. Sharma vs. Life Insurance Corporation of India & Anr. [ILR",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Amarjit Singh vs. Smt. Khatoon Quamarin",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "580380",
+        "matched_cited_text": "Amarjit Singh vs. Smt. Khatoon Quamarin",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": [
+    {
+      "chunk_index": 41,
+      "text": "Tendolkar and Ors., [AIR 1958 SC 538], this Court considered the inter-play of the doctrines of equality and classification and held:- \"It is now well established that while Article 14 forbids class legislation, it does not forbid reasonable classification for the purposes of legislation. In order, however, to pass the test of permissible classification two conditions must be fulfilled, namely (i) that the classification must be found on an intelligible differentia which distinguishes persons or things that are grouped together from others left out of the group, and (ii) that that differentia must have a rational relation to the object sought to be achieved by the statute in question. The classification may be founded on different bases, namely, geographical, or according to objects or occupations or the like. What is necessary is that there must be a nexus between the basis of classification and the object of the Act under consideration. It is also well established by the decisions of Supreme Court that article 14 condemns discrimination not only by a substantive law but also by a law of procedure.\" Speaking for the Court, Chief Justice S.R."
+    },
+    {
+      "chunk_index": 42,
+      "text": "Das enunciated some principles, which have been referred to and relied in all subsequent judgments."
+    },
+    {
+      "chunk_index": 51,
+      "text": "Consumer Education & Research Centre and Others [1995 (5) SCC 482], the Court reiterated the above noted principal in the following words:- \"The doctrine of classification is only a subsidiary rule evolved by the courts to give practical content to the doctrine of equality, overemphasis on the doctrine of classification or anxious or sustained attempt to discover some basis for classification may gradually and imperceptibly erode the profound potency of the glorious content of equality enshrined in Article 14 of the Constitution. The overemphasis on classification would inevitably result in substitution of the doctrine of classification to the doctrine of equality and the Preamble of the Constitution which is an integral part and scheme of the Constitution. Maneka Gandhi v. Union of India [1978 (1) SCC 248] ratio extricated it from this moribund and put its elasticity for egalitarian path finder lest the classification would deny equality to the larger segments of the society."
+    },
+    {
+      "chunk_index": 65,
+      "text": "For taking the aforesaid view, the Court drew support from the observations contained in the concluding portion of the judgment in Gian Devi Anand vs. Jeevan Kumar & Ors. (supra). This is evident from paragraph 17 of the judgment, which is extracted below:- \"In Gian Devi case the question for consideration before the Constitution Bench was whether under the Delhi Rent Control Act, 1958, the statutory tenancy in respect of commercial premises was heritable or not. The Bench answered the question in the affirmative. The above-quoted observations were made by the Bench keeping in view that hardship being caused to the landlords of commercial premises who cannot evict their tenants even on the ground of bona fide requirement for personal use. The observations of the Constitution Bench that \"bona fide need of the landlord will stand very much on the same footing in regard to either class of premises, residential or commercial\" fully support the view we have taken that the classification created by the amendment has no reasonable nexus with the object sought to be achieved by the Act."
+    },
+    {
+      "chunk_index": 76,
+      "text": "Insofar as the judgment under challenge is concerned, we find that the Full Bench upheld the validity of Section 14(1)(e) mainly by relying upon the judgment of the Division Bench in H.C. Sharma Vs. Life Insurance Corporation of India & Anr. (supra) and of this Court in Amarjit Singh vs. Smt. Khatoon Quamarin (supra) and by observing that legislature has the right to classify persons, things, and goods into different groups and that the Court will not sit over the judgment of the legislature. It is significant to note that the Full Bench did not, at all, advert to the question whether the reason/cause which supplied rational to the classification continued to subsist even after lapse of 44 years and whether the tenants of premises let for non-residential purposes should continue to avail the benefit of implicit exemption from eviction in the case of bona fide requirement of the landlord despite sea saw change in the housing scenario in Delhi and substantial increase in the availability of buildings and premises which could be let for non-residential or commercial purposes. 28. In our opinion, the reasons which weighed with the High Court in H.C. Sharma vs."
+    },
+    {
+      "chunk_index": 83,
+      "text": "Thereby, the very foundation of their constitutionality shall have been destroyed the foundation being that Section 119 of the State Reorganisation Act serves the significant purpose of giving reasonable time to the new units to consider the special circumstances obtaining in respect of diverse units. The decision to withdraw the application of unequal laws to equals cannot be delayed unreasonably because of the relevance of historical reasons which justify the application of unequal laws is bound to wear out with the passage of time. In Broom's Legal; Maxim (1939 Edition, page 97) can be found a useful principle \"Cessante Ratione Legis Cessat Ipsa Lex\", that is to say, \"Reason is the sour of the law, and when the reason of any particular law ceases, so does the law itself.\" 32. In Motor General Traders vs. State of Andhra Pradesh (supra), validity of Section 32(b) of the A.P. Buildings (Lease, Rent and Eviction) Control, Act, 1960 was considered. By that Section it was declared that the provisions of the main Act will not apply to the buildings constructed after 25th August, 1957."
+    },
+    {
+      "chunk_index": 84,
+      "text": "The Court noted that exemption had continued for nearly a quarter century and struck down the same despite the fact that validity thereon had been upheld by the High Court in Chintapalli Achaiah vs. P. Gopala Krishna Reddy [ AIR 1966 AP 51]. Some of the observations made in the judgment are worth noticing."
+    },
+    {
+      "chunk_index": 85,
+      "text": "These are: Satyawati Sharma (Dead) By Lrs vs Union Of India & Another on 16 April, 2008 Indian Kanoon - http://indiankanoon.org/doc/1703207/ 27 \"What may be unobjectionable as a transitional or temporary measure at an initial stage can still become discriminatory and hence violative of Article 14 of the Constitution if it is persisted in over a long period without any justification.\" \"What was justifiable during a short period has turned out to be a case of hostile discrimination by lapse of nearly a quarter of century....We are constrained to pronounce upon the validity of the impugned provision at this late stage because of grab of Constitution which it may have possessed earlier has become worn out and its unconstitutionality is now brought to a successful challenge\". \"As already observed, the landlords of the buildings constructed subsequent to August 26, 1957 are given undue preference over the landlords of buildings constructed prior to that date in that the former are free from the shackles of the Act while the latter are subjected to the restrictions imposed by it."
+    }
+  ],
+  "raw_response": "```\n{\n  \"issue\": \"Whether Section 14(1)(e) of the Delhi Rent Control Act, 1958, which provides an exemption from eviction for tenants of non-residential premises, is valid and does not violate Article 14 of the Constitution of India.\",\n  \"rule\": \"The classification created by a statute must have a rational relation to the object sought to be achieved by the statute. The doctrine of classification is a subsidiary rule evolved by the courts to give practical content to the doctrine of equality. A classification that was justified at its inception can become discriminatory and violative of Article 14 if it is persisted in over a long period without justification.\",\n  \"application\": \"The court applied the principles of equality and classification to hold that Section 14(1)(e) of the Delhi Rent Control Act, 1958, which exempted tenants of non-residential premises from eviction, had lost its rational basis and had become discriminatory after a lapse of 44 years. The court found that the reasons that initially justified the classification no longer existed due to changes in the housing scenario in Delhi.\",\n  \"conclusion\": \"The court struck down Section 14(1)(e) of the Delhi Rent Control Act, 1958, as being violative of Article 14 of the Constitution of India.\",\n  \"authorities\": [\n    \"Tendolkar and Ors. v. State of Bombay, AIR 1958 SC 538\",\n    \"Consumer Education & Research Centre and Others v. Union of India, 1995 (5) SCC 482\",\n    \"Gian Devi Anand vs. Jeevan Kumar & Ors.\",\n    \"Maneka Gandhi v. Union of India, 1978 (1) SCC 248\",\n    \"Motor General Traders vs. State of Andhra Pradesh\",\n    \"Broom's Legal Maxim (1939 Edition, page 97)\",\n    \"H.C. Sharma Vs. Life Insurance Corporation of India & Anr.\",\n    \"Amarjit Singh vs. Smt. Khatoon Quamarin\"\n  ]\n}\n```",
+  "decade": "2000",
+  "n_real_edges": 31
+}

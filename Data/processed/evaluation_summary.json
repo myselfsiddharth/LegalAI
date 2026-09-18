@@ -1,155 +1,507 @@
 {
-  "cases_processed": 50,
+  "selection": {
+    "mode": "per_decade",
+    "per_decade": 6,
+    "offset": 0
+  },
+  "model": "llama4-scout-17b",
+  "per_case_limit": 30,
+  "failed_cases": [],
   "concept_totals": {
-    "Party": 256,
-    "Claim": 505,
-    "Holding": 470,
-    "Outcome": 66,
-    "AuthorityCited": 274
+    "Party": 192,
+    "Claim": 362,
+    "Holding": 453,
+    "Outcome": 108,
+    "AuthorityCited": 235
   },
-  "authority_status_totals": {
-    "REJECTED_NOT_A_CASE": 221,
-    "UNVERIFIED": 44,
-    "VERIFIED": 9
+  "authority_metrics": {
+    "cases": 48,
+    "cases_with_any_authority": 44,
+    "authority_outputs": 235,
+    "status_counts": {
+      "VERIFIED": 30,
+      "UNVERIFIED": 20,
+      "SELF_REFERENCE": 5,
+      "REJECTED_NOT_A_CASE": 180
+    },
+    "case_shaped_citations": 50,
+    "verified_rate": 0.6,
+    "verified_ambiguous_party_match": 7,
+    "unverified_named_in_judgment": 13,
+    "unverified_not_in_judgment": 0,
+    "unverified_name_too_short_to_check": 7,
+    "real_edges_total": 2123,
+    "real_edges_recovered": 30,
+    "edge_recall": 0.014
   },
-  "authority_verification_rate_among_plausible_case_names": 0.17,
-  "unverified_samples": [
-    {
-      "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
-      "cited": "s. 66A(2) of the Indian Income-tax Act (XI of 1922)",
-      "source_sentence": "The Judgment of the Court was delivered by BHAGWATI, J.-This appeal with certificate of fitness under s. 66A(2) of the Indian Income-tax Act (XI of 1922) is directed against the Judgment and order of the High Court of Judicature at Calcutta on a reference under s. 66(1) of the Act."
+  "authority_metrics_by_decade": {
+    "1950s": {
+      "cases": 6,
+      "cases_with_any_authority": 6,
+      "authority_outputs": 33,
+      "status_counts": {
+        "VERIFIED": 11,
+        "UNVERIFIED": 5,
+        "SELF_REFERENCE": 0,
+        "REJECTED_NOT_A_CASE": 17
+      },
+      "case_shaped_citations": 16,
+      "verified_rate": 0.688,
+      "verified_ambiguous_party_match": 1,
+      "unverified_named_in_judgment": 2,
+      "unverified_not_in_judgment": 0,
+      "unverified_name_too_short_to_check": 3,
+      "real_edges_total": 86,
+      "real_edges_recovered": 11,
+      "edge_recall": 0.128
     },
-    {
-      "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
-      "cited": "s. 4 (3) (viii) of the Act",
-      "source_sentence": "Even though \"agricultural income\" which is exempted under s. 4 (3) (viii) of the Act is defined in s. 2(1) as above, there is no definition of \"agriculture\" or \"agricultural purpose\" to be found in the Act and it therefore falls to be determined what is the connotation of these terms."
+    "1960s": {
+      "cases": 6,
+      "cases_with_any_authority": 6,
+      "authority_outputs": 38,
+      "status_counts": {
+        "VERIFIED": 11,
+        "UNVERIFIED": 7,
+        "SELF_REFERENCE": 2,
+        "REJECTED_NOT_A_CASE": 18
+      },
+      "case_shaped_citations": 18,
+      "verified_rate": 0.611,
+      "verified_ambiguous_party_match": 3,
+      "unverified_named_in_judgment": 6,
+      "unverified_not_in_judgment": 0,
+      "unverified_name_too_short_to_check": 1,
+      "real_edges_total": 83,
+      "real_edges_recovered": 11,
+      "edge_recall": 0.133
     },
-    {
-      "case": "Namdeo_Lokman_Lodhi_vs_Narmadabai_And_Others_on_27_February_1953_1.PDF",
-      "cited": "Davey (110 E.R. 606)",
-      "source_sentence": "Davey (110 E.R. 606) distinguished."
+    "1970s": {
+      "cases": 6,
+      "cases_with_any_authority": 6,
+      "authority_outputs": 30,
+      "status_counts": {
+        "VERIFIED": 3,
+        "UNVERIFIED": 2,
+        "SELF_REFERENCE": 0,
+        "REJECTED_NOT_A_CASE": 25
+      },
+      "case_shaped_citations": 5,
+      "verified_rate": 0.6,
+      "verified_ambiguous_party_match": 2,
+      "unverified_named_in_judgment": 1,
+      "unverified_not_in_judgment": 0,
+      "unverified_name_too_short_to_check": 1,
+      "real_edges_total": 302,
+      "real_edges_recovered": 3,
+      "edge_recall": 0.01
     },
-    {
-      "case": "Shrinivas_Krishnarao_Kango_vs_Narayan_Devji_Kango_And_Others_on_23_March_1954_1.PDF",
-      "cited": "Krishnachandra Das (2 B.L.R. 103 F.B.)",
-      "source_sentence": "Krishnachandra Das (2 B.L.R. 103 F.B.) referred to."
+    "1980s": {
+      "cases": 6,
+      "cases_with_any_authority": 5,
+      "authority_outputs": 34,
+      "status_counts": {
+        "VERIFIED": 2,
+        "UNVERIFIED": 4,
+        "SELF_REFERENCE": 1,
+        "REJECTED_NOT_A_CASE": 27
+      },
+      "case_shaped_citations": 6,
+      "verified_rate": 0.333,
+      "verified_ambiguous_party_match": 1,
+      "unverified_named_in_judgment": 2,
+      "unverified_not_in_judgment": 0,
+      "unverified_name_too_short_to_check": 2,
+      "real_edges_total": 128,
+      "real_edges_recovered": 2,
+      "edge_recall": 0.016
     },
-    {
-      "case": "Province_Of_Bombay_vs_Kusaldas_S_Advani_And_Others_on_15_September_1950_1.PDF",
-      "cited": "Bradford ([1908] 1 K.B. 865)",
-      "source_sentence": "Bradford ([1908] 1 K.B. 865), and other cases referred to."
+    "1990s": {
+      "cases": 6,
+      "cases_with_any_authority": 6,
+      "authority_outputs": 21,
+      "status_counts": {
+        "VERIFIED": 0,
+        "UNVERIFIED": 2,
+        "SELF_REFERENCE": 1,
+        "REJECTED_NOT_A_CASE": 18
+      },
+      "case_shaped_citations": 2,
+      "verified_rate": 0.0,
+      "verified_ambiguous_party_match": 0,
+      "unverified_named_in_judgment": 2,
+      "unverified_not_in_judgment": 0,
+      "unverified_name_too_short_to_check": 0,
+      "real_edges_total": 196,
+      "real_edges_recovered": 0,
+      "edge_recall": 0.0
     },
-    {
-      "case": "Kumar_Pashupatinath_Malia_Another_vs_Deba_Prosanna_Mukherjee_on_4_May_1951_1.PDF",
-      "cited": "Nikhil Bhusan Mukhopadhya (L.R. 76 I.A. 74)",
-      "source_sentence": "Nikhil Bhusan Mukhopadhya (L.R. 76 I.A. 74) referred to."
+    "2000s": {
+      "cases": 6,
+      "cases_with_any_authority": 6,
+      "authority_outputs": 31,
+      "status_counts": {
+        "VERIFIED": 1,
+        "UNVERIFIED": 0,
+        "SELF_REFERENCE": 0,
+        "REJECTED_NOT_A_CASE": 30
+      },
+      "case_shaped_citations": 1,
+      "verified_rate": 1.0,
+      "verified_ambiguous_party_match": 0,
+      "unverified_named_in_judgment": 0,
+      "unverified_not_in_judgment": 0,
+      "unverified_name_too_short_to_check": 0,
+      "real_edges_total": 149,
+      "real_edges_recovered": 1,
+      "edge_recall": 0.007
     },
-    {
-      "case": "Natvarlal_Punjabhai_And_Another_vs_Dadubhai_Manubhai_And_Others_on_18_November_1953_1.PDF",
-      "cited": "Baidyanath (A.I.R. 1935 Pat. 175)",
-      "source_sentence": "Baidyanath (A.I.R. 1935 Pat. 175) disapproved."
+    "2010s": {
+      "cases": 6,
+      "cases_with_any_authority": 5,
+      "authority_outputs": 27,
+      "status_counts": {
+        "VERIFIED": 2,
+        "UNVERIFIED": 0,
+        "SELF_REFERENCE": 0,
+        "REJECTED_NOT_A_CASE": 25
+      },
+      "case_shaped_citations": 2,
+      "verified_rate": 1.0,
+      "verified_ambiguous_party_match": 0,
+      "unverified_named_in_judgment": 0,
+      "unverified_not_in_judgment": 0,
+      "unverified_name_too_short_to_check": 0,
+      "real_edges_total": 550,
+      "real_edges_recovered": 2,
+      "edge_recall": 0.004
     },
-    {
-      "case": "Natvarlal_Punjabhai_And_Another_vs_Dadubhai_Manubhai_And_Others_on_18_November_1953_1.PDF",
-      "cited": "Babu Singh (A.I.R. 1952 All. 875)",
-      "source_sentence": "Babu Singh (A.I.R. 1952 All. 875) approved."
-    },
-    {
-      "case": "Harihar_Prasad_Singh_And_Another_vs_Must_Of_Munshi_Nath_Prasadand_Others_on_16_January_1956_1.PDF",
-      "cited": "Kisho Prasad Singh ([1926] L.R. 53 I.A. 164)",
-      "source_sentence": "Kisho Prasad Singh ([1926] L.R. 53 I.A. 164), relied on."
-    },
-    {
-      "case": "Harihar_Prasad_Singh_And_Another_vs_Must_Of_Munshi_Nath_Prasadand_Others_on_16_January_1956_1.PDF",
-      "cited": "Sashi Bhusan (A.I.R. 1937 Cal. 763)",
-      "source_sentence": "Sashi Bhusan (A.I.R. 1937 Cal. 763), distinguished."
-    },
-    {
-      "case": "The_State_Of_West_Bengal_vs_Subodh_Gopal_Bose_And_Others_on_17_December_1953_1.PDF",
-      "cited": "The State Of West Bengal vs Subodh Gopal Bose And Others",
-      "source_sentence": "The State Of West Bengal vs Subodh Gopal Bose And Others on 17 December, 1953 Indian Kanoon - http://indiankanoon.org/doc/973363/ 8 516), referred to.."
-    },
-    {
-      "case": "Mohanlal_Goenka_vs_Benoy_Krishna_Mukherjeeand_Others_on_9_December_1952_1.PDF",
-      "cited": "Madho Rao ([1930] I.L.R. 52 All. 868)",
-      "source_sentence": "Madho Rao ([1930] I.L.R. 52 All. 868)distinguished."
-    },
-    {
-      "case": "Mohanlal_Goenka_vs_Benoy_Krishna_Mukherjeeand_Others_on_9_December_1952_1.PDF",
-      "cited": "Horilal and Another ([1931] I.L.R. 53 All. 560)",
-      "source_sentence": "Horilal and Another ([1931] I.L.R. 53 All. 560) overruled."
-    },
-    {
-      "case": "Mohanlal_Goenka_vs_Benoy_Krishna_Mukherjeeand_Others_on_9_December_1952_1.PDF",
-      "cited": "Edappakath Ayissa Bi and Others (A.I.R. 1949 P.C. 302)",
-      "source_sentence": "Edappakath Ayissa Bi and Others (A.I.R. 1949 P.C. 302) referred to."
-    },
-    {
-      "case": "Saraswathi_Ammal_And_Another_vs_Rajagopal_Ammal_on_20_October_1953_1.PDF",
-      "cited": "Dandapani ([1946] 1 M.L.J. 354)",
-      "source_sentence": "Dandapani ([1946] 1 M.L.J. 354) approved."
+    "2020s": {
+      "cases": 6,
+      "cases_with_any_authority": 4,
+      "authority_outputs": 21,
+      "status_counts": {
+        "VERIFIED": 0,
+        "UNVERIFIED": 0,
+        "SELF_REFERENCE": 1,
+        "REJECTED_NOT_A_CASE": 20
+      },
+      "case_shaped_citations": 0,
+      "verified_rate": null,
+      "verified_ambiguous_party_match": 0,
+      "unverified_named_in_judgment": 0,
+      "unverified_not_in_judgment": 0,
+      "unverified_name_too_short_to_check": 0,
+      "real_edges_total": 629,
+      "real_edges_recovered": 0,
+      "edge_recall": 0.0
     }
-  ],
-  "rejected_not_a_case_samples": [
-    {
-      "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
-      "cited": "Ayyappa Reddy, (1913) I.L.R. 38 Mad. 738"
-    },
-    {
-      "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
-      "cited": "Sundara Mudaliar, (1950) 18 I.T.R. 259"
-    },
-    {
-      "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
-      "cited": "S. 2(1) of the Indian Income-tax Act"
-    },
-    {
-      "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
-      "cited": "s. 66(1) of the Act"
-    },
-    {
-      "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
-      "cited": "the Indian Income-tax Act"
-    },
-    {
-      "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
-      "cited": "s. 2(1)"
-    },
-    {
-      "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
-      "cited": "the definition of agricultural income given in the Indian Income-tax Act"
-    },
-    {
-      "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
-      "cited": "the Indian Income-tax Act"
-    },
-    {
-      "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
-      "cited": "the entries in the lists of the Seventh Schedule to the Constitution"
-    },
-    {
-      "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
-      "cited": "heads of legislation"
-    },
-    {
-      "case": "S_M_Jakati_Another_vs_S_M_Borkar_Others_on_24_September_1958_1.PDF",
-      "cited": "the pious obligation of the sons"
-    },
-    {
-      "case": "S_M_Jakati_Another_vs_S_M_Borkar_Others_on_24_September_1958_1.PDF",
-      "cited": "Bhubneshwar Prasad Narain Singh, [1954] S.C.R. 177"
-    },
-    {
-      "case": "S_M_Jakati_Another_vs_S_M_Borkar_Others_on_24_September_1958_1.PDF",
-      "cited": "Das, (1936) L.R. 63 I.A. 384"
-    },
-    {
-      "case": "S_M_Jakati_Another_vs_S_M_Borkar_Others_on_24_September_1958_1.PDF",
-      "cited": "Shidlingappa Ishwa- rappa, A.I.R. 1941 Bom. 381"
-    },
-    {
-      "case": "Namdeo_Lokman_Lodhi_vs_Narmadabai_And_Others_on_27_February_1953_1.PDF",
-      "cited": "forfeiture"
-    }
-  ]
+  },
+  "samples": {
+    "REJECTED_NOT_A_CASE": [
+      {
+        "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
+        "cited": "S. 2(1) of the Indian Income-tax Act",
+        "in_judgment_text": null,
+        "source_sentence": null
+      },
+      {
+        "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
+        "cited": "s. 66A(2) of the Indian Income-tax Act (XI of 1922)",
+        "in_judgment_text": null,
+        "source_sentence": null
+      },
+      {
+        "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
+        "cited": "s. 66(1) of the Act",
+        "in_judgment_text": null,
+        "source_sentence": null
+      },
+      {
+        "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
+        "cited": "the Indian Income-tax Act",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
+        "cited": "s. 4 (3) (viii) of the Act",
+        "in_judgment_text": null,
+        "source_sentence": null
+      },
+      {
+        "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
+        "cited": "s. 2(1)",
+        "in_judgment_text": null,
+        "source_sentence": null
+      },
+      {
+        "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
+        "cited": "the definition of agricultural income given in the Indian Income-tax Act",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
+        "cited": "the Indian Income-tax Act",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
+        "cited": "the entries in the lists of the Seventh Schedule to the Constitution",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
+        "cited": "heads of legislation",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "S_M_Jakati_Another_vs_S_M_Borkar_Others_on_24_September_1958_1.PDF",
+        "cited": "the pious obligation of the sons",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "Namdeo_Lokman_Lodhi_vs_Narmadabai_And_Others_on_27_February_1953_1.PDF",
+        "cited": "forfeiture",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "Nagendra_Nath_Bora_Another_vs_The_Commissioner_Of_Hills_Divisionand_on_7_February_1958_1.PDF",
+        "cited": "Ad. 23 Of 1955, s. 9, Rule 343",
+        "in_judgment_text": null,
+        "source_sentence": null
+      },
+      {
+        "case": "Nagendra_Nath_Bora_Another_vs_The_Commissioner_Of_Hills_Divisionand_on_7_February_1958_1.PDF",
+        "cited": "the statute",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "Nagendra_Nath_Bora_Another_vs_The_Commissioner_Of_Hills_Divisionand_on_7_February_1958_1.PDF",
+        "cited": "an appellate Authority",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "Shrinivas_Krishnarao_Kango_vs_Narayan_Devji_Kango_And_Others_on_23_March_1954_1.PDF",
+        "cited": "a posthumous son",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "Shrinivas_Krishnarao_Kango_vs_Narayan_Devji_Kango_And_Others_on_23_March_1954_1.PDF",
+        "cited": "one branch of a Kulkarni family",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "Kavalappara_Kottarathil_Kochuni_And_vs_The_State_Of_Madras_And_Others_on_4_May_1960_1.PDF",
+        "cited": "Arts. 4, 19(1)(f) and 31",
+        "in_judgment_text": null,
+        "source_sentence": "XXII of 1933), shall Kavalappara Kottarathil Kochuni And ... vs The State Of Madras And Others on 4 May, 1960 Indian Kanoon - http://indiankanoon.org/doc/1431786/ 2 apply.\" The question for decision was whether the impugned Act infringed the fundamental rights of the petitioners guaranteed by Arts. 4, 19(1)(f) and 31 of the Constitution."
+      },
+      {
+        "case": "Kavalappara_Kottarathil_Kochuni_And_vs_The_State_Of_Madras_And_Others_on_4_May_1960_1.PDF",
+        "cited": "janmam right",
+        "in_judgment_text": true,
+        "source_sentence": "Assuming that the Sthanam properties were held in janmam right and as such were estates within the meaning of Art. 31A, the impugned Act was immune from challenge."
+      },
+      {
+        "case": "Kavalappara_Kottarathil_Kochuni_And_vs_The_State_Of_Madras_And_Others_on_4_May_1960_1.PDF",
+        "cited": "statement of objects and reasons of its amendment",
+        "in_judgment_text": true,
+        "source_sentence": "Although it may not be permissible to refer to the statement of objects and reasons of its amendment for purposes of construction, it can be referred to for the limited purpose of ascertaining the conditions prevailing at the time and purpose underlying the amendment."
+      },
+      {
+        "case": "Kavalappara_Kottarathil_Kochuni_And_vs_The_State_Of_Madras_And_Others_on_4_May_1960_1.PDF",
+        "cited": "conditions prevailing at the time and purpose underlying the amendment",
+        "in_judgment_text": true,
+        "source_sentence": "Although it may not be permissible to refer to the statement of objects and reasons of its amendment for purposes of construction, it can be referred to for the limited purpose of ascertaining the conditions prevailing at the time and purpose underlying the amendment."
+      },
+      {
+        "case": "Kavalappara_Kottarathil_Kochuni_And_vs_The_State_Of_Madras_And_Others_on_4_May_1960_1.PDF",
+        "cited": "cl. (2)(b) of Art. 31A",
+        "in_judgment_text": null,
+        "source_sentence": "There is no substance in the argument that since the impugned Act seeks to regulate the rights of the Sthanee and the junior members of the tarwad inter se it falls within by cl. (2)(b) of Art. 31A."
+      },
+      {
+        "case": "Kavalappara_Kottarathil_Kochuni_And_vs_The_State_Of_Madras_And_Others_on_4_May_1960_1.PDF",
+        "cited": "cl. (1)(a) of the Article",
+        "in_judgment_text": false,
+        "source_sentence": "That clause has to be read with cl. (1)(a) of the Article and since the impugned Act does not contemplate any agrarian reform or seek to regulate the rights inter se between landlords and tenants or modify or extinguish any of the rights appertaining janmam right, leaving all its characteristics intact, it does not come within the purview of Art. 31A of the Constitution."
+      },
+      {
+        "case": "Kavalappara_Kottarathil_Kochuni_And_vs_The_State_Of_Madras_And_Others_on_4_May_1960_1.PDF",
+        "cited": "fundamental rights",
+        "in_judgment_text": true,
+        "source_sentence": "Fundamental rights have a transcendental position in the Constitution and before an Article embodying a fundamental right can be construed to exclude another every attempt should be made to harmonize them and not until it is found impossible to do so, can one be made to yield to the other."
+      },
+      {
+        "case": "Guramma_Bhratar_Chanbasappa_Deshmukh_vs_Malappa_on_19_August_1963_1.PDF",
+        "cited": "Chimmava, (1935) I.L R. 59 Bom. 459",
+        "in_judgment_text": false,
+        "source_sentence": "Chimmava, (1935) I.L R. 59 Bom. 459, disapproved."
+      }
+    ],
+    "UNVERIFIED": [
+      {
+        "case": "S_M_Jakati_Another_vs_S_M_Borkar_Others_on_24_September_1958_1.PDF",
+        "cited": "Das, (1936) L.R. 63 I.A. 384",
+        "in_judgment_text": null,
+        "source_sentence": null
+      },
+      {
+        "case": "Namdeo_Lokman_Lodhi_vs_Narmadabai_And_Others_on_27_February_1953_1.PDF",
+        "cited": "Davey (110 E.R. 606)",
+        "in_judgment_text": null,
+        "source_sentence": null
+      },
+      {
+        "case": "Nagendra_Nath_Bora_Another_vs_The_Commissioner_Of_Hills_Divisionand_on_7_February_1958_1.PDF",
+        "cited": "Northumberland Compensation Appeal Tribunal, (1952) 1 K.B. 338",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "Nagendra_Nath_Bora_Another_vs_The_Commissioner_Of_Hills_Divisionand_on_7_February_1958_1.PDF",
+        "cited": "Ltd., [1957] S.C.R. 98",
+        "in_judgment_text": null,
+        "source_sentence": null
+      },
+      {
+        "case": "Shrinivas_Krishnarao_Kango_vs_Narayan_Devji_Kango_And_Others_on_23_March_1954_1.PDF",
+        "cited": "Krishnachandra Das (2 B.L.R. 103 F.B.)",
+        "in_judgment_text": true,
+        "source_sentence": null
+      },
+      {
+        "case": "Guramma_Bhratar_Chanbasappa_Deshmukh_vs_Malappa_on_19_August_1963_1.PDF",
+        "cited": "No. 223 of 1859 M.S.D. 1859, P. 97",
+        "in_judgment_text": null,
+        "source_sentence": "No. 223 of 1859 M.S.D. 1859, P. 97, referred to."
+      },
+      {
+        "case": "Guramma_Bhratar_Chanbasappa_Deshmukh_vs_Malappa_on_19_August_1963_1.PDF",
+        "cited": "Debichand Bogra, (1941) I.L.R. 20 Pat.727",
+        "in_judgment_text": true,
+        "source_sentence": "Debichand Bogra, (1941) I.L.R. 20 Pat.727, referred to. (4) that a gift to a stranger of joint family property by the manager of the family is void as he has not the absolute power of disposal over the joint Hindu family property."
+      },
+      {
+        "case": "Guramma_Bhratar_Chanbasappa_Deshmukh_vs_Malappa_on_19_August_1963_1.PDF",
+        "cited": "Nirode, (1916) 20 C.W.N. 901",
+        "in_judgment_text": true,
+        "source_sentence": "Nirode, (1916) 20 C.W.N. 901, referred to."
+      },
+      {
+        "case": "Tirumalachetti_Rajaram_vs_Tirumalachetti_on_27_April_1961_1.PDF",
+        "cited": "a decision of the Full Bench of that Court in Chittam Subba Rao v.",
+        "in_judgment_text": true,
+        "source_sentence": "The appellant applied for a certificate under Art. 133(1) Of the Constitution but the High Court rejected the same holding that the decree was one of affirmance and involved no substantial 453 question of law, following a decision of the Full Bench of that Court in Chittam Subba Rao v."
+      },
+      {
+        "case": "Tirumalachetti_Rajaram_vs_Tirumalachetti_on_27_April_1961_1.PDF",
+        "cited": "Manik Chand, (1902) L.R. 30 I.A. 35",
+        "in_judgment_text": true,
+        "source_sentence": "Manik Chand, (1902) L.R. 30 I.A. 35, referred to."
+      },
+      {
+        "case": "Tirumalachetti_Rajaram_vs_Tirumalachetti_on_27_April_1961_1.PDF",
+        "cited": "an earlier Full Bench decision in Chittam Subba Rao v.",
+        "in_judgment_text": true,
+        "source_sentence": "In coming to this conclusion the High Court followed an earlier Full Bench decision in Chittam Subba Rao v."
+      },
+      {
+        "case": "Immani_Appa_Rao_And_Others_vs_Gollapalli_Ramalingamurthi_And_Ors_on_22_September_1961_1.PDF",
+        "cited": "Rangaswamy Chettiar, (1936) I.L.R. 59 Mad. 289",
+        "in_judgment_text": true,
+        "source_sentence": "Rangaswamy Chettiar, (1936) I.L.R. 59 Mad. 289, disapproved."
+      },
+      {
+        "case": "Prem_Raj_vs_Ram_Charan_on_4_March_1974_1.PDF",
+        "cited": "Nachiappa Chethar & Prem Raj vs Ram Charan on 4 March, 1974 Indian Kanoon - http://indiankanoon.org/doc/349715/ 3 Ors. [1964] S.C.R. 241/252 etc.",
+        "in_judgment_text": true,
+        "source_sentence": "Nachiappa Chethar & Prem Raj vs Ram Charan on 4 March, 1974 Indian Kanoon - http://indiankanoon.org/doc/349715/ 3 Ors. [1964] S.C.R. 241/252 etc., referred to."
+      },
+      {
+        "case": "Maganlal_Chhagganlal_P_Ltd_vs_Municipal_Corporation_Of_Greater_on_11_April_1974_1.PDF",
+        "cited": "Ed. 1058; 250 U.S. 400",
+        "in_judgment_text": null,
+        "source_sentence": "Ed. 1058; 250 U.S. 400) which was concerned with a party having several rights to relief arising out of the same act, the present case is concerned with the existence of several remedies in enforcement of a single right to relief."
+      },
+      {
+        "case": "Union_Of_India_Anr_vs_Raghubir_Singh_Dead_By_Lrs_Etc_on_16_May_1989_1.PDF",
+        "cited": "another decision of Division Bench comprised of three Judges in Mohinder Singh's case (1986) 1, SCC 365",
+        "in_judgment_text": true,
+        "source_sentence": "In this way the decision in Kamalajammanniava- ru's case was overruled by this Court in Bhag Singh's case and the Court approved another decision of Division Bench comprised of three Judges in Mohinder Singh's case (1986) 1, SCC 365 which merely directed payment of enhanced solatium and interest without giving any reasons."
+      },
+      {
+        "case": "Chandavarkar_Sita_Ratna_Rao_vs_Ashalata_S_Guram_on_25_September_1986_1.PDF",
+        "cited": "a Full Bench decision of the High Court in Ratanlal Chandiprasad v.",
+        "in_judgment_text": true,
+        "source_sentence": "Relying on a Full Bench decision of the High Court in Ratanlal Chandiprasad v."
+      },
+      {
+        "case": "Inder_Mohan_Lal_vs_Ramesh_Khanna_on_4_August_1987_1.PDF",
+        "cited": "Gupta, [1986] 3 SCC 1",
+        "in_judgment_text": null,
+        "source_sentence": "Gupta, [1986] 3 SCC 1, referred to 2."
+      },
+      {
+        "case": "Accountant_And_Secretarial_Services_vs_Union_Of_India_Ors_on_20_July_1988_1.PDF",
+        "cited": "[1955] S.C.R. 799",
+        "in_judgment_text": null,
+        "source_sentence": "State, [1955] S.C.R. 799, referred to."
+      },
+      {
+        "case": "Orissa_Cement_Ltd_And_Ors_Etc_Etc_vs_State_Of_Orissa_And_Ors_Etc_Etc_on_4_April_1991_1.PDF",
+        "cited": "State of Tamil Nadu & Ors., [1990] 1 S.C.C. 12",
+        "in_judgment_text": true,
+        "source_sentence": "State of Tamil Nadu & Ors., [1990] 1 S.C.C. 12, followed. 1.2 A tax on royalties cannot be a tax on minerals and is outside the purview of Entry 50 of List II."
+      },
+      {
+        "case": "Orissa_Cement_Ltd_And_Ors_Etc_Etc_vs_State_Of_Orissa_And_Ors_Etc_Etc_on_4_April_1991_1.PDF",
+        "cited": "State of Tamil Nadu & Ors., [1990] 1 S.C.C.12",
+        "in_judgment_text": true,
+        "source_sentence": "State of Tamil Nadu & Ors., [1990] 1 S.C.C.12, followed. 108 Hingir Rampur Coal Co."
+      }
+    ],
+    "SELF_REFERENCE": [
+      {
+        "case": "Kavalappara_Kottarathil_Kochuni_And_vs_The_State_Of_Madras_And_Others_on_4_May_1960_1.PDF",
+        "cited": "Topeka Kavalappara Kottarathil Kochuni And ... vs The State Of Madras And Others",
+        "in_judgment_text": true,
+        "source_sentence": "Topeka Kavalappara Kottarathil Kochuni And ... vs The State Of Madras And Others on 4 May, 1960 Indian Kanoon - http://indiankanoon.org/doc/1431786/ 4 City, 22 Law Ed. 455, referred to."
+      },
+      {
+        "case": "Guramma_Bhratar_Chanbasappa_Deshmukh_vs_Malappa_on_19_August_1963_1.PDF",
+        "cited": "Guramma Bhratar Chanbasappa Deshmukh ... vs Malappa",
+        "in_judgment_text": true,
+        "source_sentence": "Guramma Bhratar Chanbasappa Deshmukh ... vs Malappa on 19 August, 1963 Indian Kanoon - http://indiankanoon.org/doc/781769/ 2 340, referred to. (5) that the Hindu Law texts conferred a right upon a daughter or a sister, as the case may be, to have a share in the family property at the time of partition."
+      },
+      {
+        "case": "Inder_Mohan_Lal_vs_Ramesh_Khanna_on_4_August_1987_1.PDF",
+        "cited": "view taken Inder Mohan Lal vs Ramesh Khanna on 4 August, 1987",
+        "in_judgment_text": true,
+        "source_sentence": "The view taken Inder Mohan Lal vs Ramesh Khanna on 4 August, 1987 Indian Kanoon - http://indiankanoon.org/doc/1773971/ 3 by the High Court over a number of years should normally be adhered to and not to be disturbed."
+      },
+      {
+        "case": "Samatha_vs_State_Of_Andhra_Pradesh_And_Ors_on_11_July_1997_1.PDF",
+        "cited": "Samatha vs State Of Andhra Pradesh And Ors",
+        "in_judgment_text": true,
+        "source_sentence": "Any lease to the non-tribals even of the Government land situated in scheduled area is in violation of Samatha vs State Of Andhra Pradesh And Ors on 11 July, 1997 Indian Kanoon - http://indiankanoon.org/doc/1969682/ 1 Section 3 and so is void."
+      },
+      {
+        "case": "Vineeta_Sharma_vs_Rakesh_Sharma_on_11_August_2020_1.PDF",
+        "cited": "Vineeta Sharma vs Rakesh Sharma",
+        "in_judgment_text": true,
+        "source_sentence": "The registration requirement is inapplicable to partition of property by operation of Vineeta Sharma vs Rakesh Sharma on 11 August, 2020 Indian Kanoon - http://indiankanoon.org/doc/67965481/ 2 law, which has to be given full effect."
+      }
+    ]
+  }
 }

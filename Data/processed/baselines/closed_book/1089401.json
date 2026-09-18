@@ -1,0 +1,55 @@
+{
+  "doc_id": "1089401",
+  "filename": "Shrinivas_Krishnarao_Kango_vs_Narayan_Devji_Kango_And_Others_on_23_March_1954_1.PDF",
+  "year": "1954",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether a Hindu Mitakshara family can be considered as a 'family' under the Bombay Rents, Hotel and Lodging House Rents Control Act, 1946, and if the members of such a family are required to be jointly liable for the payment of rent.",
+    "rule": "The concept of a Hindu Mitakshara family and its implications on the rights and liabilities of its members, as well as the interpretation of the term 'family' under the Bombay Rents, Hotel and Lodging House Rents Control Act, 1946.",
+    "application": "The Supreme Court applied the principles of Hindu law, specifically the Mitakshara school, to determine the nature of a Hindu joint family and its liabilities. The court held that a Hindu Mitakshara family is a collective unit and its members have a joint and collective liability for the payment of rent.",
+    "conclusion": "The Supreme Court held that a Hindu Mitakshara family is a 'family' under the Bombay Rents, Hotel and Lodging House Rents Control Act, 1946, and its members are jointly liable for the payment of rent."
+  },
+  "authority_results": [
+    {
+      "cited": "Gopal Krishna v. Mohanrao",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "BhauRam v. Baijnath Singh",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Muthuswami v. Lakshminatha",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Ramaswami v. Sithammal",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether a Hindu Mitakshara family can be considered as a 'family' under the Bombay Rents, Hotel and Lodging House Rents Control Act, 1946, and if the members of such a family are required to be jointly liable for the payment of rent.\",\n  \n  \"rule\": \"The concept of a Hindu Mitakshara family and its implications on the rights and liabilities of its members, as well as the interpretation of the term 'family' under the Bombay Rents, Hotel and Lodging House Rents Control Act, 1946.\",\n  \n  \"application\": \"The Supreme Court applied the principles of Hindu law, specifically the Mitakshara school, to determine the nature of a Hindu joint family and its liabilities. The court held that a Hindu Mitakshara family is a collective unit and its members have a joint and collective liability for the payment of rent.\",\n  \n  \"conclusion\": \"The Supreme Court held that a Hindu Mitakshara family is a 'family' under the Bombay Rents, Hotel and Lodging House Rents Control Act, 1946, and its members are jointly liable for the payment of rent.\",\n  \n  \"authorities\": [\n    \"Gopal Krishna v. Mohanrao\",\n    \"BhauRam v. Baijnath Singh\",\n    \"Muthuswami v. Lakshminatha\",\n    \"Ramaswami v. Sithammal\"\n  ]\n}\n```",
+  "decade": "1950",
+  "n_real_edges": 10
+}

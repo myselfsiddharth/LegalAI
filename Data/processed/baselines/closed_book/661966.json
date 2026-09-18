@@ -1,0 +1,46 @@
+{
+  "doc_id": "661966",
+  "filename": "Shyam_Sunder_And_Others_vs_Ram_Kumar_And_Another_on_31_July_2001_1.PDF",
+  "year": "2001",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether a suit for specific performance can be filed against a proposed transferee who has not yet completed the transfer in their favour.",
+    "rule": "A proposed transferee who has entered into an agreement to purchase a property is bound by the terms of the agreement and can be proceeded against for specific performance.",
+    "application": "The appellate court erred in dismissing the suit for specific performance against the proposed transferee (Ram Kumar) who had entered into an agreement to purchase the property.",
+    "conclusion": "The appeal is allowed and the suit for specific performance can proceed against Ram Kumar."
+  },
+  "authority_results": [
+    {
+      "cited": "Rao Hanmanth Rao v. Mahadeo Shankar Rao, AIR 1967 SC 970",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "S. Syamala v. S. Sarojini, AIR 1994 SC 1405",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "K. Suresh Babu v. K. Subrahmanyam, AIR 1997 SC 1640",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether a suit for specific performance can be filed against a proposed transferee who has not yet completed the transfer in their favour.\",\n  \"rule\": \"A proposed transferee who has entered into an agreement to purchase a property is bound by the terms of the agreement and can be proceeded against for specific performance.\",\n  \"application\": \"The appellate court erred in dismissing the suit for specific performance against the proposed transferee (Ram Kumar) who had entered into an agreement to purchase the property.\",\n  \"conclusion\": \"The appeal is allowed and the suit for specific performance can proceed against Ram Kumar.\",\n  \"authorities\": [\n    \"Rao Hanmanth Rao v. Mahadeo Shankar Rao, AIR 1967 SC 970\",\n    \"S. Syamala v. S. Sarojini, AIR 1994 SC 1405\",\n    \"K. Suresh Babu v. K. Subrahmanyam, AIR 1997 SC 1640\"\n  ]\n}\n```",
+  "decade": "2000",
+  "n_real_edges": 18
+}

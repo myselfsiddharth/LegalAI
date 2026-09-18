@@ -1,0 +1,195 @@
+{
+  "doc_id": "168057026",
+  "filename": "Kedar_Nath_Yadav_vs_State_Of_West_Bengal_Ors_on_31_August_2016_1.PDF",
+  "year": "2016",
+  "system": "rag",
+  "irac": {
+    "issue": "Whether a token contribution by the State towards the cost of acquisition is sufficient compliance with the law under Section 6 of the Land Acquisition Act.",
+    "rule": "The distinction between public purpose acquisition and Part VII acquisition lies in the fact that whether the cost of acquisition comes out of public funds wholly or partly. A token or nominal contribution by the Government is sufficient compliance with the second proviso to Section 6.",
+    "application": "The Court applied the principle of stare decisis and held that the view taken in Senja Naicken's case should not be disturbed. The Court also considered the decision in Pratibha Nema case and distinguished the same.",
+    "conclusion": "The Court agreed with the conclusion of the High Court, though not for the same reasons, and held that a token contribution by the State towards the cost of acquisition can be sufficient compliance with the law, but it depends on the facts of every case."
+  },
+  "authority_results": [
+    {
+      "cited": "Pratibha Nema v. State of M.P. (2008) 1 SCC 728",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1045847",
+        "matched_cited_text": "Pratibha Nema & Ors vs State Of M.P. & Ors",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Senja Naicken's case I.L.R. (1926) Mad. 308",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Somawanti v. State of Punjab, AIR 1963 SC 151",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "37254300",
+        "matched_cited_text": "Somawanti vs State Of Punjab & Others",
+        "n_matching_edges": 2
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Jage Ram v. State of Haryana (1971) 1 SCC 671",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "20367",
+        "matched_cited_text": "Jage Ram And Ors vs State Of Haryana And Ors",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Shyam Kedar Nath Yadav vs State Of West Bengal & Ors",
+      "verification": {
+        "status": "SELF_REFERENCE",
+        "reason": "matches the citing judgment's own title, not an outbound citation"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "WamanRao v. Union of India (1981) 2 SCC 362",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Union of India v. Raghubir Singh (1989) 2 SCC 754",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "505842",
+        "matched_cited_text": "Union Of India & Anr vs Raghubir Singh (Dead) By Lrs. Etc",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Krishena Kumar v. Union of India (1990) 4 SCC 207",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1624536",
+        "matched_cited_text": "Krishena Kumar And Anr. Etc. Etc vs Union Of India And Ors",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Mishri Lal v. Dhirendra Nath, (1999) 4 SCC 11",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "191199",
+        "matched_cited_text": "Mishri Lal (Dead) By Lrs vs Dhirendra Nath (Dead) By Lrs. & Ors",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Central Board of Dawoodi Bohra Community v. State of Maharashtra (2005) 2 SCC 673",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "708017",
+        "matched_cited_text": "Central Board Of Dawoodi Bohra ... vs State Of Maharashtra&Anr",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Shanker Raju v. Union of India (2011) 2 SCC 132",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "456890",
+        "matched_cited_text": "Shanker Raju vs Union Of India",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Fida Hussain v. Moradabad Development Authority & Anr. (2011) 12 SCC 615",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.43,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Union of India v. Paras Laminates (P) Ltd. (1990) 4 SCC 453",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1867676",
+        "matched_cited_text": "Union Of India And Anr vs Paras Laminates (P) Ltd",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Joint Commissioner of Income Tax, Surat v. Saheli Leasing and Industries Ltd. (2010) 6 SCC 384",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": [
+    {
+      "chunk_index": 67,
+      "text": "We, therefore, agree with the conclusion of the High Court, though not for the same reasons.\u201a The learned senior counsel further submits that the above position of law was reiterated by this Court more recently in the case of Pratibha Nema v. State of M.P.[17], wherein it was held as under: \u25a1Thus the distinction between public purpose acquisition and Part VII acquisition has got blurred under the impact of judicial interpretation of relevant provisions. The main and perhaps the deceive distinction lies in the fact whether cost of acquisition comes out of public funds wholly or partly. Here again, even a token or nominal contribution by the Government was held to be sufficient compliance with the second proviso to Section 6 as held in a catena of decisions. The net result is that by contributing even a trifling sum, the character and pattern of acquisition could be changed by the Government."
+    },
+    {
+      "chunk_index": 69,
+      "text": "Titles to many such properties would be unsettled if we were now to take the view that 'partly at public expense' means substantially at public expense. therefore, on the principle of stare decisis the view taken in Senja Naicken's case I.L.R. (1926) Mad. 308 should not be disturbed. We would, however, guard ourselves against being understood to say that a token contribution by the State towards the cost of acquisition will be sufficient compliance with the law in each and every case. Whether such contribution meets the requirements of the law would depend upon the facts of every case. Indeed the fact that the State's contribution is nominal may well indicate, in particular circumstances that the action of the State was a colourable exercise of power."
+    },
+    {
+      "chunk_index": 73,
+      "text": "In the matter of Government of a State, the succeeding Government is duty bound to continue and carry on the unfinished job of the previous Government, for the reason that the action is that of the \"State\", within the meaning of Article 12 of the Constitution, which continues to subsist and therefore, it is not required that the new Government can plead contrary from the State action taken by the previous Government in respect of a particular subject. The State, being a continuing body can be stopped from changing its stand in a given case, but where after holding enquiry it came to the conclusion that action was not in conformity with law, the doctrine of estoppel would not apply. Thus, unless the act done by the previous Government is found to be contrary to the statutory provisions, unreasonable or against policy, the State should not change its stand merely because the other political party has come into power. \"Political agenda of an individual or a political party should not be subversive of rule of law\"."
+    },
+    {
+      "chunk_index": 248,
+      "text": "The Court also considered the decision in Pratibha Nema case (supra) and distinguished the same by making a comment to the following effect: (Devinder Singh case (supra), SCC p. 738, para 22) \u25a122. \u20ac But we must hasten to add that the Bench did not have any occasion to consider the question as to whether the State is entitled to take recourse to the provisions of both Part II and Part VII of the Act simultaneously.\u201a The Court, however, refused to go into the nicety of the question and observed that in a case of acquisition for a public company, public purpose is not to be assumed and the point of distinction between acquisition of lands under Part II and Part VII of the Act would be the source of funds to cover the cost of acquisition. The Court also considered the judgment of this Court in Somawanti v. State of Punjab, AIR 1963 SC 151, Jage Ram v. State of Haryana (1971) 1 SCC 671 and Shyam Kedar Nath Yadav vs State Of West Bengal & Ors on 31 August, 2016 Indian Kanoon - http://indiankanoon.org/doc/168057026/ 78 Behari v. State of M.P."
+    },
+    {
+      "chunk_index": 256,
+      "text": "State of U.P. discussed hereinabove are binding on a Co-ordinate Bench and I find no reason to take a different view on merits . 28. Even otherwise I feel bound by the principle of stare decisis in view of the aforesaid consistent decisions of this Court. In WamanRao v. Union of India (1981) 2 SCC 362, it has been laid down that the rule of stare decisis requires that it is unnecessary to enquire or determine as to what was the rationale of the earlier decision which is said to operate as stare decisis. In Union of India v. Raghubir Singh (1989) 2 SCC 754, it has been laid down that the law declared by this Court should be certain, clear and consistent. The doctrine of binding precedent has the merit of promoting certainty and consistency in judicial decisions. In Krishena Kumar v. Union of India (1990) 4 SCC 207, law to the similar effect has been laid down when departure is rendered necessary to vindicate plain, obvious principles of law and remedy continued injustice. In Mishri Lal v. Dhirendra Nath, (1999) 4 SCC 11 it has been laid down that the doctrine is based on \u0192public policy\u2026 and should be adhered to subserve the ends of justice."
+    },
+    {
+      "chunk_index": 257,
+      "text": "In Central Board of Dawoodi Bohra Community v. State of Maharashtra (2005) 2 SCC 673, it has been observed that the doctrine has the merit of promoting certainty and consistency in judicial decisions, and enables an organic development of the law, besides providing assurance to the individual as to the consequence of transactions forming part of daily affairs. In Shanker Raju v. Union of India (2011) 2 SCC 132 it has been observed that a judgment, which has held the field for a long time, should not be unsettled. The view which has held the field for a long time should not be disturbed only because another view is possible. In Fida Hussain v. Moradabad Development Authority & Anr. (2011) 12 SCC 615 it has been observed that the decision of two Judges is binding on another Division Bench of two Judges. Following observations have been made by this Court in Union of India v. Raghubir Singh (1989) 2 SCC 754 : \u25a128."
+    },
+    {
+      "chunk_index": 258,
+      "text": "We are of the opinion that a pronouncement of law by a Division Bench of this Court is binding on a Division Bench of the same or a smaller number of Judges, and in order that such decision be binding, it is not necessary that it should be a decision rendered by the Full Court or a Constitution Bench of the Court.\u201a In Union of India v. Paras Laminates (P) Ltd. (1990) 4 SCC 453 it has been observed that a Co-ordinate Bench should not disturb the decision on an identical question. The rationale of this rule is the need for continuity, certainty and predictability in the administration of justice. It is necessary to inculcate confidence in the administration of justice as laid down in Joint Commissioner of Income Tax, Surat v. Saheli Leasing and Industries Ltd. (2010) 6 SCC 384. It cannot be referred to a larger Bench unless there is an error apparent on its face or that a particular earlier decision was not noticed, which has a direct bearing or has taken a contrary view. In The Keshav Mills Co. Ltd. v."
+    },
+    {
+      "chunk_index": 295,
+      "text": "Pending application(s), if any, stand(s) disposed of. (VINOD KUMAR JHA) (SUMAN JAIN) AR-CUM-PS COURT MASTER | | | | (Two Signed Reportable judgments along with Order are placed on the file) | | | | ----------------------- [1] [2] (2008) 1 SCC 728 [3] [4] (1998) 1 SCC 591 [5] [6] AIR 1962 SC 764 [7] [8] AIR 1963 SC 1890 [9] [10] (1996) 8 SCC 758 [11] [12] ( 1985) 1 SCC 591 [13] [14] (2011) 10 SCC 608 [15] [16] A.I.R. 1994 MP 74 [17] [18] 2010 Supp All. L.J. 1 [19] [20] (1961) 2 SCR 459 [21] [22] (1963) 2 SCR 774 [23] [24] (1971) 1 SCC 671 [25] [26] (1975) 4 SCC 285 [27] [28] (2012) 1 SCC 792 [29] [30] (2013) 1 SCC 403 [31] [32] (2005) 6 SCC 745 [33] [34] (2003) 10 SCC 626 [35] [36] (2014) 8 SCC 804 [37] [38] (2011) 9 SCC 286 [39] [40] (1999) 6 SCC 464 [41] [42] (1980) 3 SCC 141 [43] [44] (2013) 4 SCC 210 [45] [46] AIR 1980 SC 318 [47] [48] AIR 1964 SC 72 [49] [50](1999) 3 SCC 422 [51] [52] (1975) 4 SCC 298 [53] [54] (2009) 10 SCC 115 ----------------------- |Mouza | J.L."
+    }
+  ],
+  "raw_response": "```\n{\n  \"issue\": \"Whether a token contribution by the State towards the cost of acquisition is sufficient compliance with the law under Section 6 of the Land Acquisition Act.\",\n  \"rule\": \"The distinction between public purpose acquisition and Part VII acquisition lies in the fact that whether the cost of acquisition comes out of public funds wholly or partly. A token or nominal contribution by the Government is sufficient compliance with the second proviso to Section 6.\",\n  \"application\": \"The Court applied the principle of stare decisis and held that the view taken in Senja Naicken's case should not be disturbed. The Court also considered the decision in Pratibha Nema case and distinguished the same.\",\n  \"conclusion\": \"The Court agreed with the conclusion of the High Court, though not for the same reasons, and held that a token contribution by the State towards the cost of acquisition can be sufficient compliance with the law, but it depends on the facts of every case.\",\n  \"authorities\": [\n    \"Pratibha Nema v. State of M.P. (2008) 1 SCC 728\",\n    \"Senja Naicken's case I.L.R. (1926) Mad. 308\",\n    \"Somawanti v. State of Punjab, AIR 1963 SC 151\",\n    \"Jage Ram v. State of Haryana (1971) 1 SCC 671\",\n    \"Shyam Kedar Nath Yadav vs State Of West Bengal & Ors\",\n    \"WamanRao v. Union of India (1981) 2 SCC 362\",\n    \"Union of India v. Raghubir Singh (1989) 2 SCC 754\",\n    \"Krishena Kumar v. Union of India (1990) 4 SCC 207\",\n    \"Mishri Lal v. Dhirendra Nath, (1999) 4 SCC 11\",\n    \"Central Board of Dawoodi Bohra Community v. State of Maharashtra (2005) 2 SCC 673\",\n    \"Shanker Raju v. Union of India (2011) 2 SCC 132\",\n    \"Fida Hussain v. Moradabad Development Authority & Anr. (2011) 12 SCC 615\",\n    \"Union of India v. Paras Laminates (P) Ltd. (1990) 4 SCC 453\",\n    \"Joint Commissioner of Income Tax, Surat v. Saheli Leasing and Industries Ltd. (2010) 6 SCC 384\"\n  ]\n}\n```",
+  "decade": "2010",
+  "n_real_edges": 92
+}

@@ -1,0 +1,35 @@
+{
+  "doc_id": "1969682",
+  "filename": "Samatha_vs_State_Of_Andhra_Pradesh_And_Ors_on_11_July_1997_1.PDF",
+  "year": "1997",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 7,
+    "Holding": 6,
+    "Outcome": 1,
+    "AuthorityCited": 2,
+    "Claim": 2
+  },
+  "authority_results": [
+    {
+      "cited": "Section 3 of the Regulation",
+      "source_sentence": "The word 'person' used in Section 3 of the Regulation includes Govern-ment.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Samatha vs State Of Andhra Pradesh And Ors",
+      "source_sentence": "Any lease to the non-tribals even of the Government land situated in scheduled area is in violation of Samatha vs State Of Andhra Pradesh And Ors on 11 July, 1997 Indian Kanoon - http://indiankanoon.org/doc/1969682/ 1 Section 3 and so is void.",
+      "verification": {
+        "status": "SELF_REFERENCE",
+        "reason": "matches the citing judgment's own title, not an outbound citation"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "1990",
+  "n_real_edges": 67
+}

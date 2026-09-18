@@ -1,0 +1,46 @@
+{
+  "doc_id": "236012",
+  "filename": "Namdeo_Lokman_Lodhi_vs_Narmadabai_And_Others_on_27_February_1953_1.PDF",
+  "year": "1953",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether a decree for possession can be passed against a tenant whose tenancy has been terminated by a notice under Section 105 of the Madhya Bharat Land Revenue and Tenancy Act, 1950.",
+    "rule": "A landlord can terminate the tenancy of a tenant by giving a notice under Section 105 of the Madhya Bharat Land Revenue and Tenancy Act, 1950, and if the tenant fails to vacate, a decree for possession can be passed.",
+    "application": "The appellant, Namdeo Lokman Lodhi, served a notice on the respondents, Narmadabai and others, terminating their tenancy under Section 105 of the Madhya Bharat Land Revenue and Tenancy Act, 1950. The respondents failed to vacate, and the appellant sought a decree for possession. The trial court and the lower appellate court had granted the decree, but the respondents appealed to the Supreme Court.",
+    "conclusion": "The Supreme Court held that the notice under Section 105 of the Madhya Bharat Land Revenue and Tenancy Act, 1950, was valid, and the appellant was entitled to a decree for possession."
+  },
+  "authority_results": [
+    {
+      "cited": "Shankar Lal v. Baijnath Singh, AIR 1960 SC 1160",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Bhagwan Das v. Chandrama Prasad, AIR 1956 SC 406",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Abdul Hamid v. Basant Kumar, AIR 1956 SC 406",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether a decree for possession can be passed against a tenant whose tenancy has been terminated by a notice under Section 105 of the Madhya Bharat Land Revenue and Tenancy Act, 1950.\",\n  \"rule\": \"A landlord can terminate the tenancy of a tenant by giving a notice under Section 105 of the Madhya Bharat Land Revenue and Tenancy Act, 1950, and if the tenant fails to vacate, a decree for possession can be passed.\",\n  \"application\": \"The appellant, Namdeo Lokman Lodhi, served a notice on the respondents, Narmadabai and others, terminating their tenancy under Section 105 of the Madhya Bharat Land Revenue and Tenancy Act, 1950. The respondents failed to vacate, and the appellant sought a decree for possession. The trial court and the lower appellate court had granted the decree, but the respondents appealed to the Supreme Court.\",\n  \"conclusion\": \"The Supreme Court held that the notice under Section 105 of the Madhya Bharat Land Revenue and Tenancy Act, 1950, was valid, and the appellant was entitled to a decree for possession.\",\n  \"authorities\": [\n    \"Shankar Lal v. Baijnath Singh, AIR 1960 SC 1160\",\n    \"Bhagwan Das v. Chandrama Prasad, AIR 1956 SC 406\",\n    \"Abdul Hamid v. Basant Kumar, AIR 1956 SC 406\"\n  ]\n}\n```",
+  "decade": "1950",
+  "n_real_edges": 12
+}

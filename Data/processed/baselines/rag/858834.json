@@ -1,0 +1,156 @@
+{
+  "doc_id": "858834",
+  "filename": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
+  "year": "1957",
+  "system": "rag",
+  "irac": {
+    "issue": "Whether income derived from forestry operations, such as the sale of wood, bark, leaves, and other usufruct of trees, is agricultural income within the meaning of the Indian Income-tax Act.",
+    "rule": "The term 'agriculture' should be defined by the circumstances in which the cultivation is carried on, and not by the nature of the product cultivated. However, in the context of exemptions from income tax, the exempting provisions should be interpreted liberally in favour of the assessee, without doing violence to the language used.",
+    "application": "The court considered various cases dealing with the meaning of 'agriculture' and 'agricultural purposes', including cases related to tea cultivation, pasturage, and forestry operations. The court noted that there is a divergence of opinion among courts regarding the connotation of these terms and the nature of forestry operations that can be considered agricultural operations.",
+    "conclusion": "The court did not make a definitive ruling on the issue, but noted that the decision in the present case may rest on an undue extension of the principle laid down by the Judicial Committee in Raja Mustafa Ali Khan's Case, and that it is for the Supreme Court of India to authoritatively declare the law."
+  },
+  "authority_results": [
+    {
+      "cited": "Murugesa Chetti v. Chinnathambi Gounden (1901) I.L.R. 24 Mad. 497",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 0.95,
+        "matched_cited_doc_id": "1872897",
+        "matched_cited_text": "Murugesa Chetti v. Chinnathambi Goundan",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Emperor v. Probhat Chandra Barua (1931) I.L.R. 54 Mad. 900",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1174074",
+        "matched_cited_text": "Emperor v. Probhat Chandra Barua",
+        "n_matching_edges": 2
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Kunhaven Haji v. Mavan (1893) I.L.R. 17 Mad. 98",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "428500",
+        "matched_cited_text": "Kunhaven Haji v. Mavan",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Raja Mustafa Ali Khan's Case (1948) 16 I.T.R. 330",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "186830",
+        "matched_cited_text": "Raja Mustafa Ali Khan v. Commissioner",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Probhat Chandra Barua v. King Emperor (1949) 17 I.T.R. 426",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1174074",
+        "matched_cited_text": "Emperor v. Probhat Chandra Barua",
+        "n_matching_edges": 2
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Chief Commissioner of Income Tax v. Zamindar of Singampatti",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "61189",
+        "matched_cited_text": "The Chief Commissioner of Income Tax, Madras v. Zamindar of Singampatti",
+        "n_matching_edges": 2
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Lean and Dickinson v. Ball",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Lord Glanely v. (no full case name provided)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Manindra Chandra Nandi v. Secretary of State",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "542961",
+        "matched_cited_text": "Manindra Chandra Nandi v. Secretary of State",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Carr v. Fowle",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": [
+    {
+      "chunk_index": 24,
+      "text": "Raja Jagadish Chandra Deo Dhabal Deb (2) also expressed himself similarly: \" and the present day view seems to be that where an exemption is conferred by statute, that clause has to be interpreted liberally and in favour of the assessee but The Commissioner Of Income-Tax,West ... vs Raja Benoy Kumar Sahas Roy on 23 May, 1957 Indian Kanoon - http://indiankanoon.org/doc/858834/ 9 must always be without any violence to the language used. The rule must be construed together with the exempting provisions, which must be regarded as paramount.\" He also quoted a passage from The Upper India Chamber of Commerce v."
+    },
+    {
+      "chunk_index": 31,
+      "text": "We shall briefly discuss the various cases dealing with these different aspects and try to evolve some principle therefrom which would serve as a guide in the determination of the question before us. Kunhaven Haji v. Mavan (1) was the earliest case in which it was held that a lease of a coffee garden was not an I agricultural lease within the meaning of Transfer of Property Act, s. 117. The case however concerned itself with the situation where as far as the Court could gather from the Karar the lease was of the coffee plants only. There was no further discussion of the legal position and it may be noted that Shephard, J., who was a party to this decision stated in the later case of Murugesa The Commissioner Of Income-Tax,West ... vs Raja Benoy Kumar Sahas Roy on 23 May, 1957 Indian Kanoon - http://indiankanoon.org/doc/858834/ 11 Chetti v. Chinnathambi Gounden (2) that he was wrong in the opinion he expressed -with regard to a coffee garden in this case. Murugesa Chetti v. Chinnathambi Goundan (2) also was concerned with s. 117 of the Transfer of Property Act. The lease there was a lease of land for (1) (1893) I.L.R. 17 Mad. 98. (2) (1901) I.L."
+    },
+    {
+      "chunk_index": 39,
+      "text": "It was held that the words \" agricultural purposes \" in s. 2 (iii) of the Punjab Alienation of Land Act, 1900, included the cultivation of tea; consequently, land which was not occupied as the site of any building in a town or Village, and was occupied or let for the cultivation of tea was \" agricultural land\" within the meaning of s. 3(i) of the Punjab Pre-emption Act, 1905. Emperor v. Probhat Chandra Barua (2) was a case under the Indian Income-tax Act and the classes of income derived from permanently settled estates were \"1. Income from fisheries. 2. Income from land used for stacking timber. 3. Income from pasturage.\" The income from the first two heads was certainly not agricultural income or income derived from \"land which is used for agricultural purposes\" within the meaning of ss. 2 and 4 of the Act. But income derived from pasturage was held to be agricultural income which could not lawfully be charged with income-tax. There was a difference of opinion between Rankin, J., and Page, J., in regard to the liability of income from fisheries and income from land used for stacking timber based on the construction of the Permanent Settlement Regulations of 1793."
+    },
+    {
+      "chunk_index": 42,
+      "text": "I of 1908) and the question which the Court had to consider was whether growing Casuarina trees, i.e., trees for fuel, was an agricultural purpose so as to make the person who held the land for that purpose a \" ryot \" within the meaning of the Madras Estates Land Act. The Court held that land held for growing Casuarina trees was not land held for purposes of agriculture and the person holding the land for that purpose was not a \" ryot \" within the meaning of the Act. While delivering the judgment of the Court Reilly, J., embarked upon a consideration of what the term \" agriculture \" meant and came to the conclusion that agriculture could not be defined by the nature of the product cultivated but should be defined rather by (1) (1930) I.L.R. 54 Mad. 21 (S.B.) (2) (1931) I.L.R. 54 Mad. 900. the circumstances in which the cultivation was carried on. He observed at page 902: \" I agree with the remark of Shephard, J., in Murugesa Chetti v. Chinnathambi Goundan(l) that a man who plants or maintains trees for firewood is not in ordinary parlance an agriculturist."
+    },
+    {
+      "chunk_index": 58,
+      "text": "Roberts C.J. who delivered the opinion' of the Court observed: \"Where cattle are wholly stall-fed and not pastured upon the land at all, doubtless it is trade and no agricultural operation is being carried on; where cattle are being exclusively or mainly pastured and are none the less fed with small amounts of oil-cake or the like, it may well be that the income derived from the sale of their milk is agricultural income. But between the two extremes there must be a number of varying degrees, and the task of the Income-tax Officer is to apply his mind to the two distinctions and to decide in any particular case on which side of the fence, if I may use the term, the matter falls.\" He then referred to the case of Lean and Dickinson v. Ball (1) where Lord Cullen had said that he proceeded on the footing that the case, which was one dealing with poultry- farming, was one in which poultry derived sustenance to a material extent from the produce of the ground. This method of approach was on a par with the one adopted by Lord Wright in Lord Glanely v."
+    },
+    {
+      "chunk_index": 71,
+      "text": "The Zamindari of Pithapuram was a permanently settled estate under the Permanent Settlement Regulation (Regulation XXV of 1802) and it was contended that the imposition of income-tax in respect of income other than agricultural income derived from a permanently settled estate would not be a breach of Regulation XXV of 1802 relating to permanent settlement. Reliance was placed in support of this position on the decision in Chief Commissioner of Income Tax v. Zamindar of Singampatti (1). It was, however, held that the case was impliedly overruled by the decision of the Privy Council in Probat Chandra Barua v. King Emperor (2) and the Court proceeded to consider whether income derived from forests of spontaneous growth by the sale of wood, bark, leaves, other usufruct of trees, minor forest produce and licence fees and from trees which have grown wild in nonforest areas was agricultural income within the meaning of s. 2(1) of the Indian Income-tax Act."
+    },
+    {
+      "chunk_index": 108,
+      "text": "There was no breaking up of the soil, no sowing or planting or watering or fencing. Whether the decision is correct or not can only be authoritatively declared by the Supreme Court of India. It seems to rest on an undue extension of the principle laid down by the Judicial Committee in Raja Mustafa Ali Khan's Case(3) and goes much further than our decision in the present case.\" It appears from the above survey that there has been a divergence of opinion amongst the various (1) [1950] 18 I.T.R. 259,271. (2) [1949] 17 I.T.R. 426, 438. (3) [1948] 16 I.T.R. 330. Courts not only in regard to the connotation of the terms \"agriculture' and \"agricultural purposes\" but also in regard to the nature of forestry operations performed in the forest which can be styled agricultural operations so as to constitute the \"land used for agricultural purposes\" within the definition of agricultural income as given both in the Indian Income-tax Act and in the several Agricultural Income Tax Acts passed by the various States."
+    },
+    {
+      "chunk_index": 116,
+      "text": "Assuming that it would have been open to us to place some degree of reliance upon an interpretation settled by practice as contemporanea expositio we are in fact without any such assistance. \" Some reference was also made to what has been called a\" presumption against double taxation \". In Manindra Chandra Nandi v. Secretary of State (2), royalties from a coal mine were held liable both to cess under the Cess Act, 1880, and to income tax under the Act of 1886, but it was said that \"it may be considered that courts always look with disfavour upon double taxation, and Statute will be construed, if possible, to avoid double taxes.\" Reference was made to certain dicta of American Courts and to the English case of Carr v. Fowle (3)-But the only observation in this case was to the effect that the statute presumably did not intend that a vicar should in effect pay the same tax (land tax) twice on the same hereditament. This is plain enough. Thus the income-tax is one tax, and income assessed under one schedule cannot be assessed all over again under another."
+    }
+  ],
+  "raw_response": "{\"issue\": \"Whether income derived from forestry operations, such as the sale of wood, bark, leaves, and other usufruct of trees, is agricultural income within the meaning of the Indian Income-tax Act.\",\n\"rule\": \"The term 'agriculture' should be defined by the circumstances in which the cultivation is carried on, and not by the nature of the product cultivated. However, in the context of exemptions from income tax, the exempting provisions should be interpreted liberally in favour of the assessee, without doing violence to the language used.\",\n\"application\": \"The court considered various cases dealing with the meaning of 'agriculture' and 'agricultural purposes', including cases related to tea cultivation, pasturage, and forestry operations. The court noted that there is a divergence of opinion among courts regarding the connotation of these terms and the nature of forestry operations that can be considered agricultural operations.\",\n\"conclusion\": \"The court did not make a definitive ruling on the issue, but noted that the decision in the present case may rest on an undue extension of the principle laid down by the Judicial Committee in Raja Mustafa Ali Khan's Case, and that it is for the Supreme Court of India to authoritatively declare the law.\",\n\"authorities\": [\n  \"Murugesa Chetti v. Chinnathambi Gounden (1901) I.L.R. 24 Mad. 497\",\n  \"Emperor v. Probhat Chandra Barua (1931) I.L.R. 54 Mad. 900\",\n  \"Kunhaven Haji v. Mavan (1893) I.L.R. 17 Mad. 98\",\n  \"Raja Mustafa Ali Khan's Case (1948) 16 I.T.R. 330\",\n  \"Probhat Chandra Barua v. King Emperor (1949) 17 I.T.R. 426\",\n  \"Chief Commissioner of Income Tax v. Zamindar of Singampatti\",\n  \"Lean and Dickinson v. Ball\",\n  \"Lord Glanely v. (no full case name provided)\",\n  \"Manindra Chandra Nandi v. Secretary of State\",\n  \"Carr v. Fowle\"\n]}",
+  "decade": "1950",
+  "n_real_edges": 29
+}

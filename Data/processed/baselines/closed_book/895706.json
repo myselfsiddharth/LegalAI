@@ -1,0 +1,37 @@
+{
+  "doc_id": "895706",
+  "filename": "Chandavarkar_Sita_Ratna_Rao_vs_Ashalata_S_Guram_on_25_September_1986_1.PDF",
+  "year": "1986",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether a Hindu woman's in-laws can be held liable under Section 498A IPC for harassing her and compelling her to commit suicide, and if so, what are the essential ingredients to constitute the offence?",
+    "rule": "Section 498A IPC states that whoever, being the husband or relative of the husband of a woman, subjects her to cruelty, shall be punished. The essential ingredients to constitute the offence are: (1) the man must be the husband or relative of the husband of a woman; (2) the woman must be subjected to cruelty.",
+    "application": "The court applied the provisions of Section 498A IPC to the facts of the case and held that the expression 'husband' in Section 498A would include a person who had obtained a divorce from the woman by a decree which had attained finality. The court also held that the essential ingredients of the offence under Section 498A were present in the case.",
+    "conclusion": "The court allowed the appeal and set aside the judgment of the Bombay High Court. The court held that the appellant, who was the husband of the deceased woman, could be held liable under Section 498A IPC for harassing her and compelling her to commit suicide."
+  },
+  "authority_results": [
+    {
+      "cited": "Shyam Sunder vs P. Ram Prasad Sharma, (1980) 1 SCC 821",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "State of Punjab vs Gian Singh, (1981) 4 SCC 129",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether a Hindu woman's in-laws can be held liable under Section 498A IPC for harassing her and compelling her to commit suicide, and if so, what are the essential ingredients to constitute the offence?\",\n  \"rule\": \"Section 498A IPC states that whoever, being the husband or relative of the husband of a woman, subjects her to cruelty, shall be punished. The essential ingredients to constitute the offence are: (1) the man must be the husband or relative of the husband of a woman; (2) the woman must be subjected to cruelty.\",\n  \"application\": \"The court applied the provisions of Section 498A IPC to the facts of the case and held that the expression 'husband' in Section 498A would include a person who had obtained a divorce from the woman by a decree which had attained finality. The court also held that the essential ingredients of the offence under Section 498A were present in the case.\",\n  \"conclusion\": \"The court allowed the appeal and set aside the judgment of the Bombay High Court. The court held that the appellant, who was the husband of the deceased woman, could be held liable under Section 498A IPC for harassing her and compelling her to commit suicide.\",\n  \"authorities\": [\n    \"Shyam Sunder vs P. Ram Prasad Sharma, (1980) 1 SCC 821\",\n    \"State of Punjab vs Gian Singh, (1981) 4 SCC 129\"\n  ]\n}\n```",
+  "decade": "1980",
+  "n_real_edges": 18
+}

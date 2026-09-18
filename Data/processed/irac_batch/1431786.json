@@ -1,0 +1,149 @@
+{
+  "doc_id": "1431786",
+  "filename": "Kavalappara_Kottarathil_Kochuni_And_vs_The_State_Of_Madras_And_Others_on_4_May_1960_1.PDF",
+  "year": "1960",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 3,
+    "Claim": 12,
+    "Holding": 18,
+    "AuthorityCited": 13,
+    "Outcome": 1
+  },
+  "authority_results": [
+    {
+      "cited": "Arts. 4, 19(1)(f) and 31",
+      "source_sentence": "XXII of 1933), shall Kavalappara Kottarathil Kochuni And ... vs The State Of Madras And Others on 4 May, 1960 Indian Kanoon - http://indiankanoon.org/doc/1431786/ 2 apply.\" The question for decision was whether the impugned Act infringed the fundamental rights of the petitioners guaranteed by Arts. 4, 19(1)(f) and 31 of the Constitution.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "janmam right",
+      "source_sentence": "Assuming that the Sthanam properties were held in janmam right and as such were estates within the meaning of Art. 31A, the impugned Act was immune from challenge.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "statement of objects and reasons of its amendment",
+      "source_sentence": "Although it may not be permissible to refer to the statement of objects and reasons of its amendment for purposes of construction, it can be referred to for the limited purpose of ascertaining the conditions prevailing at the time and purpose underlying the amendment.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "conditions prevailing at the time and purpose underlying the amendment",
+      "source_sentence": "Although it may not be permissible to refer to the statement of objects and reasons of its amendment for purposes of construction, it can be referred to for the limited purpose of ascertaining the conditions prevailing at the time and purpose underlying the amendment.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "cl. (2)(b) of Art. 31A",
+      "source_sentence": "There is no substance in the argument that since the impugned Act seeks to regulate the rights of the Sthanee and the junior members of the tarwad inter se it falls within by cl. (2)(b) of Art. 31A.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "cl. (1)(a) of the Article",
+      "source_sentence": "That clause has to be read with cl. (1)(a) of the Article and since the impugned Act does not contemplate any agrarian reform or seek to regulate the rights inter se between landlords and tenants or modify or extinguish any of the rights appertaining janmam right, leaving all its characteristics intact, it does not come within the purview of Art. 31A of the Constitution.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "State of Punjab, [1959] SUPP. 1 S.C.R. 748",
+      "source_sentence": "State of Punjab, [1959] SUPP. 1 S.C.R. 748, referred to.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1764620",
+        "matched_cited_text": "Atma Ram v. State of Punjab",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "fundamental rights",
+      "source_sentence": "Fundamental rights have a transcendental position in the Constitution and before an Article embodying a fundamental right can be construed to exclude another every attempt should be made to harmonize them and not until it is found impossible to do so, can one be made to yield to the other.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Commissioner of Income-tax, Delhi, [1959] Supp. 1 S.C.R. 528",
+      "source_sentence": "Commissioner of Income-tax, Delhi, [1959] Supp. 1 S.C.R. 528, referred to.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "761967",
+        "matched_cited_text": "Basheshar Nath v. Commissioner of Income-tax, Delhi Therein Das, C. J.",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "The State of Madras, [1950] S.C.R. 88",
+      "source_sentence": "The State of Madras, [1950] S.C.R. 88, referred to.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1857950",
+        "matched_cited_text": "A. K. Gopalan v. The State of Madras",
+        "n_matching_edges": 2
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "The Union of India, [196O] 2 S.C.R. 375",
+      "source_sentence": "The Union of India, [196O] 2 S.C.R. 375, referred to.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "4354",
+        "matched_cited_text": "Chiranjit Lal Chowdhuri v. The Union of India",
+        "n_matching_edges": 2
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Topeka Kavalappara Kottarathil Kochuni And ... vs The State Of Madras And Others",
+      "source_sentence": "Topeka Kavalappara Kottarathil Kochuni And ... vs The State Of Madras And Others on 4 May, 1960 Indian Kanoon - http://indiankanoon.org/doc/1431786/ 4 City, 22 Law Ed. 455, referred to.",
+      "verification": {
+        "status": "SELF_REFERENCE",
+        "reason": "matches the citing judgment's own title, not an outbound citation"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Arabinda Bose, [1953] S.C.R. 1",
+      "source_sentence": "Arabinda Bose, [1953] S.C.R. 1 referred to.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "350457",
+        "matched_cited_text": "Aswini Kumar Ghose v. Arabinda Bose",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "1960",
+  "n_real_edges": 18
+}

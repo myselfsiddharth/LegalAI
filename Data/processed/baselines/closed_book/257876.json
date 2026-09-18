@@ -1,0 +1,66 @@
+{
+  "doc_id": "257876",
+  "filename": "Kesavananda_Bharati_Sripadagalvaru_vs_State_Of_Kerala_And_Anr_on_24_April_1973_1.PDF",
+  "year": "1973",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether Parliament's power to amend the Constitution under Article 368 is limited by the doctrine of basic structure.",
+    "rule": "The power of Parliament to amend the Constitution under Article 368 does not enable it to alter the basic structure of the Constitution.",
+    "application": "The court considered the scope of Parliament's power to amend the Constitution, particularly with reference to the amendment of the Kerala Land Reforms Act, 1963, and held that while Parliament has the power to amend the Constitution, this power is not unlimited and that it cannot be used to destroy the basic features of the Constitution.",
+    "conclusion": "The court ruled that the amendment to the Kerala Land Reforms Act, 1963, which was passed as part of a larger constitutional amendment, was valid, but also held that the doctrine of basic structure is an integral part of the Constitution and that any amendment that alters this basic structure is invalid."
+  },
+  "authority_results": [
+    {
+      "cited": "Shankari Prasad v. Union of India (1951) 1 SCR 89",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 0.93,
+        "matched_cited_doc_id": "1706770",
+        "matched_cited_text": "Sri Sankari Prasad Singh Deo v. Union of India and State of Bihar",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Gobind Kaur v. State of Punjab (1959) 1 SCR 1",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Raghavan v. State of Kerala (1965) 1 SCR 552",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Sardar Sayyed Mohammad Khan v. State of Bombay (1955) 1 SCR 284",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Union of India v. Ladulal Jain (1969) 2 SCR 1",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether Parliament's power to amend the Constitution under Article 368 is limited by the doctrine of basic structure.\",\n  \"rule\": \"The power of Parliament to amend the Constitution under Article 368 does not enable it to alter the basic structure of the Constitution.\",\n  \"application\": \"The court considered the scope of Parliament's power to amend the Constitution, particularly with reference to the amendment of the Kerala Land Reforms Act, 1963, and held that while Parliament has the power to amend the Constitution, this power is not unlimited and that it cannot be used to destroy the basic features of the Constitution.\",\n  \"conclusion\": \"The court ruled that the amendment to the Kerala Land Reforms Act, 1963, which was passed as part of a larger constitutional amendment, was valid, but also held that the doctrine of basic structure is an integral part of the Constitution and that any amendment that alters this basic structure is invalid.\",\n  \"authorities\": [\n    \"Shankari Prasad v. Union of India (1951) 1 SCR 89\",\n    \"Gobind Kaur v. State of Punjab (1959) 1 SCR 1\",\n    \"Raghavan v. State of Kerala (1965) 1 SCR 552\",\n    \"Sardar Sayyed Mohammad Khan v. State of Bombay (1955) 1 SCR 284\",\n    \"Union of India v. Ladulal Jain (1969) 2 SCR 1\"\n  ]\n}\n```",
+  "decade": "1970",
+  "n_real_edges": 92
+}

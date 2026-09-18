@@ -1,0 +1,141 @@
+{
+  "doc_id": "349715",
+  "filename": "Prem_Raj_vs_Ram_Charan_on_4_March_1974_1.PDF",
+  "year": "1974",
+  "system": "rag",
+  "irac": {
+    "issue": "Whether the appellant's second appeal in the High Court can be considered an 'application' within the meaning of clause 5 of Article 182 of the Limitation Act, and whether the previous application was pending, thereby making the subsequent application not time-barred.",
+    "rule": "The rule of liberal construction should incline the Court to prefer the interpretation that accomplishes the legislative purpose. However, where the statutory language has only one meaning, there is no room for the application of the rule of liberal construction. Article 182(5) of the Limitation Act requires a specific interpretation.",
+    "application": "The written statement of the appellant in Prakash Chandra's suit cannot be regarded as an 'application' as it made no request to the court. Similarly, the resistance to the appeal filed by Prakash Chandra cannot be held to be an 'application'. However, it may be assumed that the appellant's second appeal in the High Court is an 'application' within the meaning of clause 5 of Article 182.",
+    "conclusion": "The High Court rightly dismissed the fifth application as time-barred. The appellant's second appeal in the High Court may be considered an 'application', but it does not change the fact that the previous application was not pending, and the subsequent application was time-barred."
+  },
+  "authority_results": [
+    {
+      "cited": "V.E.A. Annamalai Chettiar v. Valliammai Achi",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1943462",
+        "matched_cited_text": "V.E.A. Annamalai Chettiar v. Valliammai Achi",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Bhawanipore Banking Corporation Ltd. v. Gouri Shanker Sharma",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 0.97,
+        "matched_cited_doc_id": "1264696",
+        "matched_cited_text": "Bhawanipore Banking Corporation Ltd. v. Gori Shanker Sharma",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Madan lal v. (not fully cited)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.5,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Govinda Bhatta v. Krishna Bhiatta",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1864797",
+        "matched_cited_text": "Govinda Bhatta v. Krishna Bhiatta",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Raghunandun Parshad and Another v. Bhuggo Lall",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1852954",
+        "matched_cited_text": "Raghunandun Parshad and Another v. Bhuggo Lall",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Joshi Laxmiram Lallubhai and another v. Mehta Balashankar Veniram",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1806797",
+        "matched_cited_text": "1) and Joshi Laxmiram Lallubhai v. Mehta Balashankar Veniram",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Nagendra Nath Dey's case",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Narayan Jivangouda Patil's case",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Somshikharswami Shidlingswami'v. Shivappa Mallappa Hosmaani and Others",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": [
+    {
+      "chunk_index": 19,
+      "text": "In our view, if the statutory language is susceptible of two cons- tructions, the rule of liberal construction should incline the Court 'to prefer the one which accomplishes the legislative purpose. But where the statutory language will bear one and only one meaning, there is no room for the application of the rule of liberal construction. Howsoever liberally one may construe the word 'application', it is not possible to regard the written statement of the appellant in Prakash Chandra's suit as an 'application', for it made no request to the court. Just as the written statement of the appellant cannot be regarded as an 'application', so also the resistance to the appeal filed by Prakash Chandra cannot be held to be an 'application'. Counsel for the appellant, however, submits that the appellant's second appeal in the High Court would be an 'application'. In V.E.A. Annamalai Chettiar v. Valliammai Achi(1) the Privy Council has held that an appeal filed by The decreeholder is an application'.It may be assumed that the appellant's second appeal in the High Court is an 'application' within the meaning of cl. 5 of Art. 182."
+    },
+    {
+      "chunk_index": 36,
+      "text": "A learned Single Judge of the Madras High Court held that on the facts and circumstances of the case, as construed by him, the previous application was really pending and that the subsequent application fell under cl.5 of Art. 182. On the facts as construed by him the case becomes distinguishable from the facts of the present case. We should, however, make it clear that we should not be understood to have given our approval to the decision. Counsel for the appellant has submitted that it is a hard cast for the decreeholder, for he is losing even half the share in the disputed house. That is so, but the blame lies squarely on him. He could have executed his decree with respect to the half share in the house after the decision of the appeal court. But he did not avail of the opportunity and waited for the decision of the High Court in the appeal and cross-objection filed by Prakash Chandra. He was not vigilant and should suffer the consequences. As a result of the foregoing discussion, we are of opinion that the High Court rightly dismissed the fifth application as time barred. So we dismiss the appeal."
+    },
+    {
+      "chunk_index": 50,
+      "text": "Court in Bhawanipore Banking Corporation Ltd. v. Gouri Shanker Sharma(1), which however, was a case under article 182(2) of the Limitation Act and referred to the following passage at page 29 of the decision:- Prem Raj vs Ram Charan on 4 March, 1974 Indian Kanoon - http://indiankanoon.org/doc/349715/ 17 \"It was also suggested by the learned counsel for the appellant that the case might be held to be covered by clause 2 of article 182 on the ground that, even though no appeal was preferred from the final mortgage decree, the words \"where there has been an appeal\" are comprehensive enough to include in this case the appeal from the order dismissing the application under order IX, Rule 9, of the Civil Procedure Code, made in connection with the 'proceedings under section 36 of the Moneylenders Act."
+    },
+    {
+      "chunk_index": 55,
+      "text": "The Limitation Act is a consolidating and amending statute relating to the limitation of suits, appeals and certain types of applications to courts and must, therefore, be regarded as an exhaustive code. It is a piece of adjective or procedural law and not of substantive law. Rules of procedures, whatever they may be, are to be applied only to matters to which they are made applicable by the legislature expressely or by necessary implication\". The learned counsel for the respondent further relies upon another decision of this Court in Sirajul Haq Khan & Others v."
+    },
+    {
+      "chunk_index": 57,
+      "text": "This Court, however, also observed in the same decision as follows.'- \"Whether the requirements of s. 15 would be satisfied by the production of an order or an injunction which by necessary implication stays the institution or the suit is open to argument. We are however, prepared to assume in the present case that s.15 would apply even to cases where the institution of a suit is stayed by necessary implication of the order passed or injunction issued in the previous litigation\". The respondent, as already mentioned, has referred to Bhawanipore Banking Corporation Ltd. v. Gouri Shankar Sharma (supra) and submits that the subsequent suit has no direct or immediate connection with the decree under execution and we will deal with this aspect at the appropriate place. The respondent relies upon a decision of the Bombay High Court in Somshikharswami Shidlingswami'v. Shivappa Mallappa Hosmaani and Others(1), which, according to the learned counsel, runs on all fours with the present case. This was, however, a case where the High Court was considering the pleas of sections 14 and 15 of the Limitation Act raised by the decreeholder to save running of time."
+    },
+    {
+      "chunk_index": 59,
+      "text": "But as we are unable to bring the case within the provisions of the Limitation Act, the plaintiff's appeal must fail\". (1) AIR 1924 Bombay 39/4041. It may at once be pointed out that there is no reference in the above decision to article 182(5) of the Limitation Act and necessarily there was no discussion of the provision in favour of the decree-holder who sought to execute the decree. This decision is, therefore,. of no avail to the respondent on the legal aspect with which we are concerned in this appeal. At the best it could be advanced as an implied authority, in the circumstances of that case, for the proposition that a written statement or defence in a suit is not to be treated as an application in aid of execution. But we find an observation of this Court in Madan lal v."
+    },
+    {
+      "chunk_index": 63,
+      "text": "The question in the present case, therefore, must rest upon the proper construction of article 182(5) without superadding anything to the law and whether the Court will be prepared to give a beneficient construction to the words \"step in aid of execution.\" The respondent's counsel relied upon Govinda Bhatta v. Krishna Bhiatta, (1) which, however, cannot come to his aid as will appear from the following extract therefrom : \"It is,therefore, not possible for us to accept the contention of the decree-holder that his right to execute the decree had been in any manner affected much less extinguished, by reason of the finding contained in Ext. A- 3 judgment\". The respondent also relied upon Raghunandun Parshad and Another v. Bhuggo Lall (2), dealing with article 179 of the old Limitation Act, 1877, corresponding to article 182(s), but the following observation at page 271 would clearly show that the case is distinguishable on facts:- \"It is clear that the decree-holders could, notwithstanding the order in the claim case, have prosecuted their application for execution against the one-third share which was not released then quite as well as they can do so now."
+    },
+    {
+      "chunk_index": 66,
+      "text": "After a survey of the various decisions on the subject, it may perhaps be possible to have two views on this aspect of the matter but it is difficult to overlook that certain reservations were made by the Privy Council both in Nagendra Nath Dey's case (supra) as well as in Narayan Jivangouda Patil's case (supra) for an appropriate occasion to consider whether the \"intelligible rule\" referred to in the former and the \"rule of implication\" hinted in the latter may not be pressed into service in favour of the decree-holder in construing certain relevant provisions of the Limitation Act-thus making the way clear for a fair and liberal interpretation of Art. 182 adverted to in several High Courts' decisions. A somewhat apposite decision on the point is available in Joshi Laxmiram Lallubhai and another v. Mehta Balashankar Veniram, (3) with regard to a 'step in aid of execution' under article 179 of the Limitation Act, 1877 and the successor article 182 of 1908 Act."
+    }
+  ],
+  "raw_response": "{\"issue\": \"Whether the appellant's second appeal in the High Court can be considered an 'application' within the meaning of clause 5 of Article 182 of the Limitation Act, and whether the previous application was pending, thereby making the subsequent application not time-barred.\", \n\"rule\": \"The rule of liberal construction should incline the Court to prefer the interpretation that accomplishes the legislative purpose. However, where the statutory language has only one meaning, there is no room for the application of the rule of liberal construction. Article 182(5) of the Limitation Act requires a specific interpretation.\", \n\"application\": \"The written statement of the appellant in Prakash Chandra's suit cannot be regarded as an 'application' as it made no request to the court. Similarly, the resistance to the appeal filed by Prakash Chandra cannot be held to be an 'application'. However, it may be assumed that the appellant's second appeal in the High Court is an 'application' within the meaning of clause 5 of Article 182.\", \n\"conclusion\": \"The High Court rightly dismissed the fifth application as time-barred. The appellant's second appeal in the High Court may be considered an 'application', but it does not change the fact that the previous application was not pending, and the subsequent application was time-barred.\", \n\"authorities\": [\n  \"V.E.A. Annamalai Chettiar v. Valliammai Achi\",\n  \"Bhawanipore Banking Corporation Ltd. v. Gouri Shanker Sharma\",\n  \"Madan lal v. (not fully cited)\",\n  \"Govinda Bhatta v. Krishna Bhiatta\",\n  \"Raghunandun Parshad and Another v. Bhuggo Lall\",\n  \"Joshi Laxmiram Lallubhai and another v. Mehta Balashankar Veniram\",\n  \"Nagendra Nath Dey's case\",\n  \"Narayan Jivangouda Patil's case\",\n  \"Somshikharswami Shidlingswami'v. Shivappa Mallappa Hosmaani and Others\"\n]}",
+  "decade": "1970",
+  "n_real_edges": 26
+}

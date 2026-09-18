@@ -1,0 +1,55 @@
+{
+  "doc_id": "1969682",
+  "filename": "Samatha_vs_State_Of_Andhra_Pradesh_And_Ors_on_11_July_1997_1.PDF",
+  "year": "1997",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether the grant of mining leases for bauxite in the scheduled areas of Andhra Pradesh to non-tribals is valid and whether the lands in question are 'forest' within the meaning of the Forest Act, 1980.",
+    "rule": "The provisions of Section 3(1) of the Andhra Pradesh Scheduled Areas (Land Transfer Restriction) Regulation, 1959, and Section 13 of the Forest (Conservation) Act, 1980, must be interpreted to protect the interests of the tribal communities and to conserve the forest lands.",
+    "application": "The Supreme Court held that the lands in question are 'forest' within the meaning of the Forest Act, 1980, and that the grant of mining leases to non-tribals in the scheduled areas was invalid. The Court also directed that the leases granted be surrendered and the areas be handed over to the tribal communities.",
+    "conclusion": "The Supreme Court allowed the appeal, set aside the judgment of the Andhra Pradesh High Court, and directed the state government to take steps to protect the interests of the tribal communities in the scheduled areas."
+  },
+  "authority_results": [
+    {
+      "cited": "Keshiat P. Malhi v. State of Orissa",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Rao V. Ramachandra Kao v. State of Orissa",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "State of Bihar v. Balram Prasad Sharma",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Smt. Indira Gandhi v. Raj Narain",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether the grant of mining leases for bauxite in the scheduled areas of Andhra Pradesh to non-tribals is valid and whether the lands in question are 'forest' within the meaning of the Forest Act, 1980.\",\n  \"rule\": \"The provisions of Section 3(1) of the Andhra Pradesh Scheduled Areas (Land Transfer Restriction) Regulation, 1959, and Section 13 of the Forest (Conservation) Act, 1980, must be interpreted to protect the interests of the tribal communities and to conserve the forest lands.\",\n  \"application\": \"The Supreme Court held that the lands in question are 'forest' within the meaning of the Forest Act, 1980, and that the grant of mining leases to non-tribals in the scheduled areas was invalid. The Court also directed that the leases granted be surrendered and the areas be handed over to the tribal communities.\",\n  \"conclusion\": \"The Supreme Court allowed the appeal, set aside the judgment of the Andhra Pradesh High Court, and directed the state government to take steps to protect the interests of the tribal communities in the scheduled areas.\",\n  \"authorities\": [\n    \"Keshiat P. Malhi v. State of Orissa\",\n    \"Rao V. Ramachandra Kao v. State of Orissa\",\n    \"State of Bihar v. Balram Prasad Sharma\",\n    \"Smt. Indira Gandhi v. Raj Narain\"\n  ]\n}\n```",
+  "decade": "1990",
+  "n_real_edges": 67
+}

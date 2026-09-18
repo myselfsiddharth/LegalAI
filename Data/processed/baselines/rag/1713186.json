@@ -1,0 +1,91 @@
+{
+  "doc_id": "1713186",
+  "filename": "The_Member_For_The_Board_Of_Agricultural_vs_Smt_Sindhurani_Chaudhurani_With_on_24_April_1957_1.PDF",
+  "year": "1957",
+  "system": "rag",
+  "irac": {
+    "issue": "Whether the amounts received as salami are rent or revenue within the definition of 'agricultural income' and therefore liable to agricultural income tax.",
+    "rule": "The definition of 'agricultural income' includes rent or revenue derived from land.",
+    "application": "The court analyzed the nature of salami receipts in the context of agricultural income from large estates in Assam, considering factors such as variability of salami rates with land quality, auction settlements, and ejectments. The court concluded that salami is not rent but revenue derived from land, thus qualifying as agricultural income.",
+    "conclusion": "The amounts received as salami are revenue within the definition of 'agricultural income' and are therefore liable to agricultural income tax."
+  },
+  "authority_results": [
+    {
+      "cited": "Raja Shiv Prasad Singh v. The Crown",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Commissioner of Income Tax v. Maharajadhiraj Kumar Visheshwar Singh",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "929321",
+        "matched_cited_text": "Commissioner of Income Tax v. Maharajadhiraj Kumar Visheshwar Singh",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Meher Bano Khanum v. Secretary of State for India",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1766641",
+        "matched_cited_text": "Meher Bano Khanum v. Secretary of State",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Kamakhya Narain Singh's case",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": false
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": [
+    {
+      "chunk_index": 3,
+      "text": "No. 162 of 1955 is directed against the judgment of the Calcutta High Court dated January 15, 1953. C. A. Nos. 38 to 44 of 1956 have been brought against the judgment of Assam High. Court dated April 2, 1952. These matters were all heard together in the Assam High Court and were disposed of by one judgment C. A. No. 162 of 1955 relates to the assessment year 1941- The Member For The Board Of Agricultural ... vs Smt. Sindhurani Chaudhurani.(With ... on 24 April, 1957 Indian Kanoon - http://indiankanoon.org/doc/1713186/ 2 42. The assessee in that case was a -/8/9 annas co-sharer in a zamindari estate known as \" Parbatjoar estate \" in Assam. The original assessee was Jyotindra Narayan Chowdhury who died on January 25, 1953, and on his death his widow, Shrimati Sindhurani Chowdhurani and others were substituted. The gross in, agricultural income of the assessee was Rs. 89,633 and income from salami was Rs. 9,331-9-4 which was received from settlement of 414 different holdings out of which 278 were holdings of virgin lands and 136 were those of what are described as auction- purchase lands."
+    },
+    {
+      "chunk_index": 5,
+      "text": "The Calcutta High Court by its judgment dated April 12, 1945, held these receipts to be \" agricultural income.\" Against this judgment an appeal was taken to the Privy Council but on the abolition of the jurisdiction of the Privy Council the appeal was transferred to the Federal Court and was heard by that court as C. A. No. 30 of 1949. That court set aside the judgment of the High Court and remitted the case to the High Court \" to be dealt with again after ascertaining and considering the following additional factors likely to show the true nature of the receipts described as It salami in the present case. \" 1. The number of settlement of waste lands and abandoned holdings during the accounting year and, the maximum and the minimum extents settled and salami received. 2. Does the salami vary with the quality of the land, the facilities for irrigation and such other favourable factors ? 3. How many tenants ejected under section 69 during the accounting year and how long they had been in occupation before such eviction? 4. Is salami received when lands are relet after eviction? 5."
+    },
+    {
+      "chunk_index": 8,
+      "text": "In the Assam Appeals also the areas of land held by the assessees were large and total income in the case of \" Parbatjoar estate \" was Rs. 1,15,510 and in the case of Mechpara estate it was Rs. 2,82,106 which was divisible amongst the various co-sharers. Salami rates in Parbatjoar estate varied from Rs. 7 per.bigha for forest land to Rs. 10 per bigha for other lands depending upon the quality of the land. In Mechpara estate the rates in hilly tracts were Re. 1 to Rs. 2 for good sail land and Re. 1 to Rs. 6 for other class of land and in the plains they varied from Rs. 2 to Rs. 3 for good sail land, and Re. 1 to The Member For The Board Of Agricultural ... vs Smt. Sindhurani Chaudhurani.(With ... on 24 April, 1957 Indian Kanoon - http://indiankanoon.org/doc/1713186/ 4 Rs. 6 for other lands and As. 8 to Re. 1 for newly formed Char lands. In Bijni Raj estate the minimum salami was Re. 1 per bigha irrespective of the area of the land. In Gauripur estate the holdings were settled by auction and the amount of salami was determined by the demand, depending upon the quality of land and facilities for irrigation. Similarly ;in the Chapter Trust estate holdings were settled by auction."
+    },
+    {
+      "chunk_index": 9,
+      "text": "The finding of the High Court was: \" It is abundantly clear from the above statement of facts that the rates of salami vary with the quality land in each estate. They have no relation to rent which is admittedly fixed and invariable. Lands are settled generally in small plots. The highest figure received as salami in a single transaction in the years with which we are concerned was in Parbatjoar. A sum of Rs. 621 was received on a settlement of an area measuring 88 B., 14 K., 15 D. In Mechpara an area measuring 165 B., 16 K., 12 D., was settled for Rs. 318. The minimum extent of area settled in one transaction was also in Mechpara. Lands measuring only 2 K. was settled. Salami received was Rs. 3- 5-0. Between these two extremes the extent of areas settled varies. \" There were no evictions under s. 69 of the Assam Tenancy Act of non-occupancy tenants but ejectments did take place and action was taken under s. 68 of the Act. After the re- statement of the case on the lines suggested by the Federal Court, the Assam High Court held that \" salami \" is not rent but revenue derived from land and is therefore income.............."
+    },
+    {
+      "chunk_index": 10,
+      "text": "The question for decision is whether the amounts received as salami are rent or revenue within the definition of \" agricultural income \" and therefore liable to agricultural income tax. The basis of the first Calcutta judgment dated May 12, 1945, in C.A. No. 162 of 1955 was that salamis were a normal and regular feature of these estates and there was periodicity. When the matter came up in appeal to the Federal Court the learned Chief Justice was of the opinion that the receipt termed salami if nothing more is stated in respect of it cannot be treated as a capital receipt and therefore exempt from taxation nor could it merely as such be treated as income and therefore assessable to income-tax."
+    },
+    {
+      "chunk_index": 16,
+      "text": "That general right may properly be regarded as a capital asset, and the money paid to purchase it may properly be held to be a payment on capital account.\" The importance lies in the use of the words \"the money paid to purchase it \", i.e., the right of the lessee to enjoy the benefits granted under the lease. In Raja Shiv Prasad Singh v. The Crown(2) where also the lease was a mining lease for a period of 999 years, salami was described as a sum which is payable at the inception of the lease and as a nonrecurring payment in the nature of a premium for granting a lease. In Commissioner of Income Tax v. Maharajadhiraj Kumar Visheshwar Singh (3) an area measuring 41 bighas of land was settled for an indefinite (bemead) period on a yearly rent and in the event of default of two consecutive instalments the lessee could be dispossessed and was also liable to other penalties. This land was settled with the lessee to enable him to build a \" gola house\" and a platform for the rice mill."
+    },
+    {
+      "chunk_index": 20,
+      "text": "Moreover the dictum the smaller the salami the higher the rent and vice-versa did not receive acceptance by the Federal Court when the present matter was heard in that court before remand (C.A. No. 30 of 1949). In Meher Bano Khanum v. Secretary of State for India(1) 'salami' was defined to be an amount received by the landlord for the recognition of the transfer of a non- transferable holding which was paid to the landlord because of his ownership of the land. It was held to be \"agricultural income\" as it was \"rent or revenue\" within the meaning of that expression. The Standing Counsel who appeared for the Secretary of State in that case conceded that it was not revenue but his argument was that it was not revenue derived from land but that it was an incident of the transfer and not of tenancy and therefore did not flow from the land. In neither of these cases was it argued whether salami was a revenue receipt or capital receipt. In a Full Bench of the Patna High Court in Raja Rajendra Narayan The Member For The Board Of Agricultural ... vs Smt. Sindhurani Chaudhurani.(With ... on 24 April, 1957 Indian Kanoon - http://indiankanoon.org/doc/1713186/ 8 Bhanja Deo v."
+    },
+    {
+      "chunk_index": 22,
+      "text": "Secretary, 'Board of Revenue (1) has held that salami is not a payment of rent in advance nor is it income but is a payment by way of capital receipt. It was contended before us that the Privy Council in Kamakshya Narain Singh's case (2 ) based its decision on the wasting nature of the assets under the lease. But the definition given by Lord Wright is in general terms and just describes what the characteristics of a payment by way of salami are without any reference as to the nature of assets under a lease. In all these appeals before us the assessees derived considerably large amounts of income from agricultural holdings. It is not shown as to what the number of the holdings were but they must have been considerably large. On the other hand the number of settlements was comparatively small a few hundreds and consisted of settlements of virgin lands as well as of auction-purchase lands and were not derived from the same holdings at regular intervals."
+    }
+  ],
+  "raw_response": "```json\n{\n  \"issue\": \"Whether the amounts received as salami are rent or revenue within the definition of 'agricultural income' and therefore liable to agricultural income tax.\",\n  \"rule\": \"The definition of 'agricultural income' includes rent or revenue derived from land.\",\n  \"application\": \"The court analyzed the nature of salami receipts in the context of agricultural income from large estates in Assam, considering factors such as variability of salami rates with land quality, auction settlements, and ejectments. The court concluded that salami is not rent but revenue derived from land, thus qualifying as agricultural income.\",\n  \"conclusion\": \"The amounts received as salami are revenue within the definition of 'agricultural income' and are therefore liable to agricultural income tax.\",\n  \"authorities\": [\n    \"Raja Shiv Prasad Singh v. The Crown\",\n    \"Commissioner of Income Tax v. Maharajadhiraj Kumar Visheshwar Singh\",\n    \"Meher Bano Khanum v. Secretary of State for India\",\n    \"Kamakhya Narain Singh's case\"\n  ]\n}\n```",
+  "decade": "1950",
+  "n_real_edges": 10
+}

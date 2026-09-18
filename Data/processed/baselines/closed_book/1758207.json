@@ -1,0 +1,46 @@
+{
+  "doc_id": "1758207",
+  "filename": "Tirumalachetti_Rajaram_vs_Tirumalachetti_on_27_April_1961_1.PDF",
+  "year": "1961",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether a suit for possession of property based on a prior sale is maintainable when the plaintiff is not in possession of the property.",
+    "rule": "A plaintiff can maintain a suit for possession of property if they can prove that the property was previously sold to them, even if they are not in possession of the property.",
+    "application": "The plaintiff, Tirumalachetti Rajaram, filed a suit for possession of the property based on a prior sale. The defendant, Tirumalachetti, claimed that the sale was not valid. The court held that the plaintiff's suit for possession was maintainable as they had proved the prior sale.",
+    "conclusion": "The plaintiff's suit for possession of the property was decreed."
+  },
+  "authority_results": [
+    {
+      "cited": "Ramaswami v. Seshiah (AIR 1957 SC 157)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Bhagwan Das v. Baijnath Singh (AIR 1962 SC 35) is not cited, only 1957 and 1960 SC cases are;  Raja  Rameshwara Rao v. Ranga Rao (1956) SCR 842",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Union of India v. Ladulal Jain (1959) SCR 1",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether a suit for possession of property based on a prior sale is maintainable when the plaintiff is not in possession of the property.\",\n  \"rule\": \"A plaintiff can maintain a suit for possession of property if they can prove that the property was previously sold to them, even if they are not in possession of the property.\",\n  \"application\": \"The plaintiff, Tirumalachetti Rajaram, filed a suit for possession of the property based on a prior sale. The defendant, Tirumalachetti, claimed that the sale was not valid. The court held that the plaintiff's suit for possession was maintainable as they had proved the prior sale.\",\n  \"conclusion\": \"The plaintiff's suit for possession of the property was decreed.\",\n  \"authorities\": [\n    \"Ramaswami v. Seshiah (AIR 1957 SC 157)\",\n    \"Bhagwan Das v. Baijnath Singh (AIR 1962 SC 35) is not cited, only 1957 and 1960 SC cases are;  Raja  Rameshwara Rao v. Ranga Rao (1956) SCR 842\",\n    \"Union of India v. Ladulal Jain (1959) SCR 1\"\n  ]\n}\n```",
+  "decade": "1960",
+  "n_real_edges": 12
+}

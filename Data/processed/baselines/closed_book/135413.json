@@ -1,0 +1,46 @@
+{
+  "doc_id": "135413",
+  "filename": "Immani_Appa_Rao_And_Others_vs_Gollapalli_Ramalingamurthi_And_Ors_on_22_September_1961_1.PDF",
+  "year": "1961",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether a decree for specific performance can be passed against a party who has entered into a contract to sell a property, when the party has failed to fulfill their obligations under the contract.",
+    "rule": "A decree for specific performance can be passed against a party who has entered into a contract to sell a property, when the party has failed to fulfill their obligations under the contract, if the party seeking performance has been ready and willing to perform their part of the contract.",
+    "application": "The appellants, Immani Appa Rao and others, entered into a contract with the respondents, Gollapalli Ramalingamurthi and others, to sell a property. The appellants failed to fulfill their obligations under the contract, and the respondents sought specific performance. The court held that the appellants' failure to fulfill their obligations under the contract entitled the respondents to seek specific performance.",
+    "conclusion": "The court allowed the respondents' claim for specific performance, holding that the appellants were bound to perform their part of the contract."
+  },
+  "authority_results": [
+    {
+      "cited": "Dunlop Pneumatic Tyre Co. Ltd. v. Selfridge & Co. Ltd. (1915) AC 847",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Krishna Sthapati v. Sheshagiri Rao, AIR 1957 SC 818",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Raghubir Singh v. Sri Bachhu Singh, AIR 1960 SC 1114",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether a decree for specific performance can be passed against a party who has entered into a contract to sell a property, when the party has failed to fulfill their obligations under the contract.\",\n  \"rule\": \"A decree for specific performance can be passed against a party who has entered into a contract to sell a property, when the party has failed to fulfill their obligations under the contract, if the party seeking performance has been ready and willing to perform their part of the contract.\",\n  \"application\": \"The appellants, Immani Appa Rao and others, entered into a contract with the respondents, Gollapalli Ramalingamurthi and others, to sell a property. The appellants failed to fulfill their obligations under the contract, and the respondents sought specific performance. The court held that the appellants' failure to fulfill their obligations under the contract entitled the respondents to seek specific performance.\",\n  \"conclusion\": \"The court allowed the respondents' claim for specific performance, holding that the appellants were bound to perform their part of the contract.\",\n  \"authorities\": [\n    \"Dunlop Pneumatic Tyre Co. Ltd. v. Selfridge & Co. Ltd. (1915) AC 847\",\n    \"Krishna Sthapati v. Sheshagiri Rao, AIR 1957 SC 818\",\n    \"Raghubir Singh v. Sri Bachhu Singh, AIR 1960 SC 1114\"\n  ]\n}\n```",
+  "decade": "1960",
+  "n_real_edges": 11
+}

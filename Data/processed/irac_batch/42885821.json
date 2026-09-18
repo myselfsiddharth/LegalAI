@@ -1,0 +1,15 @@
+{
+  "doc_id": "42885821",
+  "filename": "Assocn_Of_Vasanth_Appts_Owners_vs_V_Gopinanth_And_Ors_on_13_February_2023_1.PDF",
+  "year": "2023",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 8,
+    "Outcome": 7,
+    "Claim": 6,
+    "Holding": 7
+  },
+  "authority_results": [],
+  "decade": "2020",
+  "n_real_edges": 57
+}

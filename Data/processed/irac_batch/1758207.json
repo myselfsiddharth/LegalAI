@@ -1,0 +1,86 @@
+{
+  "doc_id": "1758207",
+  "filename": "Tirumalachetti_Rajaram_vs_Tirumalachetti_on_27_April_1961_1.PDF",
+  "year": "1961",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 2,
+    "Claim": 4,
+    "Outcome": 3,
+    "Holding": 13,
+    "AuthorityCited": 7
+  },
+  "authority_results": [
+    {
+      "cited": "a decision of the Full Bench of that Court in Chittam Subba Rao v.",
+      "source_sentence": "The appellant applied for a certificate under Art. 133(1) Of the Constitution but the High Court rejected the same holding that the decree was one of affirmance and involved no substantial 453 question of law, following a decision of the Full Bench of that Court in Chittam Subba Rao v.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Art. 133(1)(a)",
+      "source_sentence": "The case admittedly satisfied the test of valuation prescribed by Art. 133(1)(a).",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "the relevant clause of Art. 133(1) of the Constitution",
+      "source_sentence": "Held, that in construing the relevant clause of Art. 133(1) of the Constitution, which gives a constitutional right to the litigant to appeal to this Court, it would be inappropriate to adopt a technical or pendantic approach and the clause must be read as a whole and its material words given their plain grammatical meaning.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Vela Mankanni Chelamayya, I.L.R. [1953] Mad. i",
+      "source_sentence": "Vela Mankanni Chelamayya, I.L.R. [1953] Mad. i, disapproved.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 0.9,
+        "matched_cited_doc_id": "995943",
+        "matched_cited_text": "Chittam Subba Rao v. Vela Mankanni Chilamayya",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Art. 133(1)",
+      "source_sentence": "The words \"appealed from\" in the last part of Art. 133(1) are not words of limitation, and they do not refer to a part of the decree, that may be under appeal, but simply describe the decree viewed as a whole.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "Manik Chand, (1902) L.R. 30 I.A. 35",
+      "source_sentence": "Manik Chand, (1902) L.R. 30 I.A. 35, referred to.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "an earlier Full Bench decision in Chittam Subba Rao v.",
+      "source_sentence": "In coming to this conclusion the High Court followed an earlier Full Bench decision in Chittam Subba Rao v.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "1960",
+  "n_real_edges": 12
+}

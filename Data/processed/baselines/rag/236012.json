@@ -1,0 +1,112 @@
+{
+  "doc_id": "236012",
+  "filename": "Namdeo_Lokman_Lodhi_vs_Narmadabai_And_Others_on_27_February_1953_1.PDF",
+  "year": "1953",
+  "system": "rag",
+  "irac": {
+    "issue": "Whether the amendment to section 111(g) of the Transfer of Property Act, 1882, introduced in 1929, embodies a principle of justice, equity and good conscience that can be applied to a lease executed prior to 1929, and whether the institution of a suit for ejectment is sufficient indication of the landlord's intention to determine the lease, or if a notice in writing is required.",
+    "rule": "The principles of justice, equity and good conscience can be applied to transactions even if the statutory provisions of the Transfer of Property Act are not made applicable. However, the amendment to section 111(g) of the Act does not embody a principle of justice, equity and good conscience that can be applied retrospectively to leases executed prior to 1929.",
+    "application": "The court considered whether the amendment to section 111(g) of the Transfer of Property Act, 1882, which requires a notice in writing to determine a lease for non-payment of rent, can be applied to a lease executed in 1870. The court held that the amendment does not embody a principle of justice, equity and good conscience that can be applied retrospectively, and that the institution of a suit for ejectment is sufficient indication of the landlord's intention to determine the lease.",
+    "conclusion": "The court allowed the appeal and held that the High Court's decision was incorrect. The court held that the rule enunciated in sub-section (g) of section 111 prior to its amendment in 1929, which allows the institution of a suit for ejectment to be sufficient indication of the landlord's intention to determine the lease, is a rule of justice, equity and good conscience."
+  },
+  "authority_results": [
+    {
+      "cited": "Rangaswami Aiyar v. Unknown (36 M.L.J. 532)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Krishna Shetti v. Gilbert Pinto (I.L.R. 42 Mad. 654)",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "46774",
+        "matched_cited_text": "Krishna Shetti v. Gilbert Pinto",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Venkatarama Aiyar v. Ponnuswamy Padayachi (A.I.R. 1935 Mad. 918)",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 0.95,
+        "matched_cited_doc_id": "927809",
+        "matched_cited_text": "Venkatarama Aiyar v. Ponnuswami Padayachi",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Aditya Prasad v. Ram Ratanlal (57 I-A. 173)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Muhammad Raza v. Abbas Bandi Bibi (59 I.A. 236)",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1249910",
+        "matched_cited_text": "Muhammad Raza v. Abbas Bandi Bibi",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Roberts v. Davey (110 E.R. 606)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": [
+    {
+      "chunk_index": 2,
+      "text": "Rangaswami Aiyar (36 M.L.J. 532) and Krishna Shetti v. Gilbert Pinto (I.L.R. 42 Mad. 654) relied on. Venkatarama Aiyar v. Ponnuswamy Padayachi (A.I.R. 1935 Mad. 918), Aditya Prasad v. Ram Ratanlal (57 I-A. 173), Muhammad Raza v. Abbas Bandi Bibi (59 I.A. 236), Roberts v. Davey (110 E.R. 606) distinguished. JUDGMENT: CIVIL APPELLATE JURISDICTION: Civil Appeal No. 154 of 1952. Appeal from the Judgment and Decree dated the 23rd June, 1949, of the High Court of Judicature at Bombay (chagla C. J. and Gajendragadkar J.) in Second Appeal No. 557 of 1945 against the Judgment and Decree dated the 19th March, 1945, of the Court of Small Causes, Poona, in Civil Appeal No. 175 of 1943, arising from the Decree dated the 31st March, 1943, of the Court of the Extra Joint Sub-Judge of Poona in Suit No. 858 of 1941. C. K. Daphtary, Solicitor-General for India (J.B. Dadachanji, with him) for the appellant. V. M. Tarkunde for the respondents. 1953. February 27. The judgment of the Court was delivered by MAHAJAN J.-This is an appeal by defendant No."
+    },
+    {
+      "chunk_index": 13,
+      "text": "The amendment therefore made in this sub-section by Act XX of 1929 not being retrospective, cannot touch the present lease and it is also excluded from the reach of the Transfer of Property Act by the provisions of section 2. The position was not seriously disputed in the High Court or before us that the statutory provisions of section 111(g) as such cannot be made to govern the present lease which was executed in the year 1870. It was however strongly argued that the amendment made in 1929 to section 111(g) of the Act embodies a principle of justice, equity and good conscience and notwithstanding section 2 of the Act, that principle was applicable in this case and there can be no forfeiture unless notice in writing to the lessee of his intention to determine the lease by the lessor bad been given. It is axiomatic that the courts must apply the principles of justice, equity and good conscience to transactions which come up before them for determination even though the statutory provisions of the Transfer of Property Act are not made applicable to these transactions."
+    },
+    {
+      "chunk_index": 14,
+      "text": "It follows therefore that the provisions of the Act which are but a statutory recognition of the rules of justice, Namdeo Lokman Lodhi vs Narmadabai And Others on 27 February, 1953 Indian Kanoon - http://indiankanoon.org/doc/236012/ 5 equity 'and good conscience also govern those transfers. If, therefore, we are satisfied that the particular principle to which the legislature has now given effect by the amendment to section 111 (g) did in fact represent a principle of justice, equity and good conscience, undoubtedly the case will have to be decided in accordance with the rule laid down in the section, although in express terms it has not been made applicable to leases executed prior to 1929 or even prior to the Transfer of Property Act coming into force. The main point for consideration - thus is whether the particular provision introduced in sub-section (g) of section 111 of the Transfer of Property Act in 1929 is but a statutory recognition of a principle of justice, equity and good conscience, or whether it is merely a procedural and technical rule introduced in the section by the legislature and is not based on any well established principles of equity."
+    },
+    {
+      "chunk_index": 25,
+      "text": "It seems that the attention of the learned judges was not drawn to the fact that the provision as to notice for determining a lease for nonpayment of rent was not a part of the English law. It also does not seem to have been fully appreciated that the rule enunciated in sub-section (g) of section 111 prior to its amendment in 1929 and which still governs leases executed before 1st April, 1930, OD the reasoning of the decision would also be a rule of justice, equity and good conscience and according to it the institution of a suit for ejectment would be sufficient indication on the part of the landlord for determination of the lease and a notice in writing as required by the amended section would not be a prerequisite for institution of such a suit. In our judg- ment, this case was wrongly decided and we are unable to support it. As pointed out by Napier J. in Krishna Shetti v."
+    },
+    {
+      "chunk_index": 29,
+      "text": "For this contention reliance was placed on two earlier decisions of the Bombay High Court, Venkaji Krishna Nadkarni v. Lakshman Devji Kandar (1) and Vidyavardhak Sang Co. v. Avvappa (2). This contention was negatived in view of the decision of Chandrasekhara Aiyar J. above referred to, and also in view of a binding decision of a Division Bench of that court in Mahiboobkhan Muradkhan v. Ghanashyam Jamnaji(3). The learned Chief Justice in the judgment under appeal has explained the distinction between the present case and that case and has not followed his own earlier decision in arriving at his conclusions here. With respect we think that that decision did not state the law on the point correctly. Under English law the institution of a suit for ejectment has always been considered an unequivocal act on the part of the landlord for taking advantage of the default of the tenant and for enforcing the forfeiture in case of non-payment of rent, and even in other cases except where statutory provisions were made to the contrary. Reference was also made to the observations of their Lordships of the Privy Council in Aditya Prasad v. Ramratan Lal (1)."
+    },
+    {
+      "chunk_index": 32,
+      "text": "On the question whether the tenant should have been given relief against forfeiture the High Court held that the matter was one of discretion and both the lower courts had exercised their discretion against the appellant and that being so, unless they were satisfied that the discretion was not judicially exercised or was exercised without proper materials they would not ordinarily interfere with it in second appeal. It was said that the non-payment in this case seems to have (1) (1932) 59 I.A. 236. (2) 110 E.R. 606. become chronic and that this was not a case for the exercise of equitable jurisdiction. Mr. Daphtary contended that the High Court failed to appreciate the rule applicable for the exercise of the discretion in such cases and that the rule is that if at the time relief is asked for the position has been altered so that relief cannot be given without causing injury to third parties relief will be refused, but if that position is not altered so that no injustice will be done there is no real discretion and the court should make the order and give the relief. Reference was made to the decision of Page J. in Debendralal Khan v. F. M. A."
+    },
+    {
+      "chunk_index": 34,
+      "text": "Mohammad Beari (2) , and the matter was discussed at some length. We agree with the ratio of that decision. It is a maxim of equity that a person (1) (1927) I.L.R. 54 Cal. 485. Namdeo Lokman Lodhi vs Narmadabai And Others on 27 February, 1953 Indian Kanoon - http://indiankanoon.org/doc/236012/ 11 (2) (1916) I.L.R, 39 Mad. 834. who comes in equity must do equity and must come with clean hands and if the conduct of the tenant is such that it disentitles him to relief in equity, then the court's hands are not tied to exercise it in his favour. Reference in this connection may also be made to Ramakrishna Mallya v. Baburaya(1), and Ramabrahmam v. Rami Reddi (2). The argument of Mr. Daphtary that there was no real discretion in the court and relief could not be refused except in cases where third party interests intervene is completely negatived by the decision of the House of Lords in Hyman v. Rose (3). Relief was claimed in that case under the provisions of section 14(2) of the Conveyancing Act, 1881, against forfeiture for breaches of covenant in the lease."
+    },
+    {
+      "chunk_index": 36,
+      "text": "I do not doubt that the rules enunciated by the Master of the Rolls in the present case are useful maxims in general, and that in general they reflect the point of view from which judges would regard (1) (1914) 24 I.C. 139. (2) A.I.R. 1928 Mad. 250. (3) [1912] A.C. 623. an application for relief. But I think it ought to be distinctly understood that there may be cases in which any or all of them may be disregarded. If it were otherwise the free discretion given by the statute would be fettered by limitations which have nowhere been enacted. It is one thing to decide what is the true meaning of the language contained in an Act of Parliament. It is quite a different thing to place conditions upon a free discretion entrusted by statute to the court where the conditions are not based upon statutory enactment at all. It is not safe, I think, to say that the court must and will always insist upon certain things when the Act does not require them, and the facts of some unforeseen case may make the court wish it had kept a free hand.\" With great respect we think that the observations cited above contain sound principles of law. We are, therefore, unable to accede to the contention of Mr."
+    }
+  ],
+  "raw_response": "```\n{\n  \"issue\": \"Whether the amendment to section 111(g) of the Transfer of Property Act, 1882, introduced in 1929, embodies a principle of justice, equity and good conscience that can be applied to a lease executed prior to 1929, and whether the institution of a suit for ejectment is sufficient indication of the landlord's intention to determine the lease, or if a notice in writing is required.\",\n  \"rule\": \"The principles of justice, equity and good conscience can be applied to transactions even if the statutory provisions of the Transfer of Property Act are not made applicable. However, the amendment to section 111(g) of the Act does not embody a principle of justice, equity and good conscience that can be applied retrospectively to leases executed prior to 1929.\",\n  \"application\": \"The court considered whether the amendment to section 111(g) of the Transfer of Property Act, 1882, which requires a notice in writing to determine a lease for non-payment of rent, can be applied to a lease executed in 1870. The court held that the amendment does not embody a principle of justice, equity and good conscience that can be applied retrospectively, and that the institution of a suit for ejectment is sufficient indication of the landlord's intention to determine the lease.\",\n  \"conclusion\": \"The court allowed the appeal and held that the High Court's decision was incorrect. The court held that the rule enunciated in sub-section (g) of section 111 prior to its amendment in 1929, which allows the institution of a suit for ejectment to be sufficient indication of the landlord's intention to determine the lease, is a rule of justice, equity and good conscience.\",\n  \"authorities\": [\n    \"Rangaswami Aiyar v. Unknown (36 M.L.J. 532)\",\n    \"Krishna Shetti v. Gilbert Pinto (I.L.R. 42 Mad. 654)\",\n    \"Venkatarama Aiyar v. Ponnuswamy Padayachi (A.I.R. 1935 Mad. 918)\",\n    \"Aditya Prasad v. Ram Ratanlal (57 I-A. 173)\",\n    \"Muhammad Raza v. Abbas Bandi Bibi (59 I.A. 236)\",\n    \"Roberts v. Davey (110 E.R. 606)\"\n  ]\n}\n```",
+  "decade": "1950",
+  "n_real_edges": 12
+}

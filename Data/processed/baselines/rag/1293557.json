@@ -1,0 +1,91 @@
+{
+  "doc_id": "1293557",
+  "filename": "Maganlal_Chhagganlal_P_Ltd_vs_Municipal_Corporation_Of_Greater_on_11_April_1974_1.PDF",
+  "year": "1974",
+  "system": "rag",
+  "irac": {
+    "issue": "Whether the Bombay Municipal Corporation Act, 1888, as amended, violates Article 14 of the Constitution of India, and whether the view taken by the majority in Northern India Caterers case should be overruled.",
+    "rule": "The doctrine of stare decisis is not an inflexible rule of law and cannot be permitted to perpetuate errors to the detriment of the general welfare of the public or a considerable section thereof. A view which has been accepted for a long period of time should not be disturbed unless the court can say positively that it was wrong, or unreasonable, or that it was productive of public hardship or inconvenience.",
+    "application": "The court applied the principle of stare decisis and held that no sufficient ground has been shown for overruling the view expressed by the majority in Northern India Caterers case. The court also held that the Act does not discriminate unjustly between occupants of public premises and those of private property, and that the special procedure set out in the Act is not so onerous and drastic as would justify an inference of discrimination.",
+    "conclusion": "The court upheld the validity of the Bombay Municipal Corporation Act, 1888, as amended, and held that it does not violate Article 14 of the Constitution of India."
+  },
+  "authority_results": [
+    {
+      "cited": "Bengal Immunity Co. Ltd. v. The State of Bihar & Ors.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "608874",
+        "matched_cited_text": "Bengal Immunity Co. Ltd. v. The State of Bihar & Ors.",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Anwar Ali Sarkar v. State of West Bengal",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "184660633",
+        "matched_cited_text": "State of West Bengal v. Anwar Ali",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Lachmandas Kewalram Ahuja v. State of Maharashtra",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Northern India Caterers case",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": [
+    {
+      "chunk_index": 13,
+      "text": "If the appellate officer concerned acts beyond his jurisdiction his order would be liable to be assailed under Arts. 226 and 227 of the Constitution. Therefore, the procedure envisaged in the impugned provisions is not so onerous and drastic as would justify an inference of discrimination. [25 H-26 C] (2) It would thus appear that some of the infirmities from which the Punjab Act, which was struck down in the Northern India Caterer's Case 11967] 3 S.C.R. 399, suffered, are not present in the impugned enactments. Hence there are no sufficient grounds for overruling the view expressed by the majority in the Northern India Caterers Case. [25 D, 29E-F] This Court may, no doubt, in appropriate cases overrule the view previously taken by it but that should only be for compelling reasons. Necessity may sometimes be felt of ridding stare decision of its petrifying rigidity. Some new aspects may come to light and it may become essential to cover fresh grounds to meet the new situations or to overcome difficulties which did not manifest themselves or were not taken into account when the earlier view was propounded."
+    },
+    {
+      "chunk_index": 15,
+      "text": "State of Bihar, [1955] 2 S.C.R. 603 although this Court affirmed its power to overrule and depart from the view expressed in its previous judgments, it also stressed the importance of not lightly dissenting from previous pronouncements of this Court. A view which has been accepted for a long period of time should not be disturbed unless the court can say positively that it was wrong, or unreasonable, or that it was productive of public hardship or inconvenience. It has to be borne in mind that certainty and continuity are essential Maganlal Chhagganlal (P) Ltd vs Municipal Corporation Of Greater ... on 11 April, 1974 Indian Kanoon - http://indiankanoon.org/doc/1293557/ 6 ingredients of rule of law, and certainty in law would be considerably eroded and suffer a serious set back if the highest court of the land readily overrules the view expressed by it in earlier cases even though that view has held the field for a number of years. In many cases which come up before this Court two views are possible and simply because the Court considers that the view not taken by the Court in an earlier case was a better view would not justify the overruling of the view taken in the earlier case."
+    },
+    {
+      "chunk_index": 76,
+      "text": "Therefore, it would be difficult to accede to the argument that the Act violates Art. 14 of the Constitution.\" The Court pointed out that the majority decision in Anwar All Sarkar's case was based on two principal considerations that, having regard to the bald statement made in the preamble about the need of speedier trials, it was difficult to sustain the classification made by s. 5(1), and that the discretion left to the executive was unfettered and for its exercise no guidance was given by the statute. It was pointed out that in the Saurashtra case the majority took the view that the preamble to the Act gave a clear indication about the policy underlying the Act and the object which it intended to achieve, that the classification on which the impugned provisions were based was a rational classification, and that the differentia on which the classification was made had a rational nexus with the object and policy of the Act. They then referred to Lachmandas Kewalram Ahuja's case and pointed out that it merely followed Anwar Ali Sarkars' case."
+    },
+    {
+      "chunk_index": 96,
+      "text": "Certainty in law would be considerably eroded and suffer a serious set back if the highest court of the land readily overrules the view expressed by it in earlier cases, even though that view has held the field for a number of years. In quite a number of cases which come up before this Court, two views are possible, and simply because the Court considers that the view not taken by the Court in the earlier case was a better view of the matter would not justify the overruling of the view. The law laid down by this Court is binding upon all courts in the country under article 141 of the Constitution, and numerous cases all over the country are decided in accordance with the view taken by this Court. Many people arrange their affairs and large number of transactions also take place on Maganlal Chhagganlal (P) Ltd vs Municipal Corporation Of Greater ... on 11 April, 1974 Indian Kanoon - http://indiankanoon.org/doc/1293557/ 27 the faith of the correctness of the view taken by this Court."
+    },
+    {
+      "chunk_index": 97,
+      "text": "It would create uncertainty, instability and confusion if the law propounded by this Court on the basis of which numerous cases have been decided and many transactions have taken place is held to be not the correct law. This Court may, no doubt, in appropriate cases overrule the view previously taken by it but that should only be for compelling reasons. Necessity may sometimes be felt of ridding stare decision of its petrifying rigidity. As observed by Brandeis, \"stare decisis is always a desideratum, even in these constitutional cases. But in them, it is never a command\" (see The Unpublished Opinions, page 152). Some new aspects may come to light and it may become essential to cover fresh grounds to meet the new situations or to overcome difficulties which did. not manifest themselves or were not taken into account when the earlier view was propounded. Precedents have a value and the ratio decidendi of a case can no doubt be of assistance in the decision of future cases."
+    },
+    {
+      "chunk_index": 102,
+      "text": "So far as the question is concerned about the reversal of the previous view of this Court, such reversal should be resorted to only in specified contingencies. It may perhaps be laid down as a broad proposition that a view which has been accepted for a long period of time should not be disturbed unless the Court can say positively that it was wrong or unreasonable or that it is productive of public hardship or inconvenience. Question about the overruling of its previous decisions was considered by this Court in the case of Bengal Immunity Co. Ltd. v. The State of Bihar & Ors.(1) Das Acting CJ. after quoting from American, Australian and Privy Council decisions observed as under \"Reference is made to the doctrine of finality of judicial decisions and it is pressed upon us that we should not reverse our previous decision except in cases where a material pro- vision of law has been overlooked or where the decision has proceeded upon the mistaken assumption of the continuance of a repealed or expired statute and that we should not differ from a previous decision merely because a contrary view appears to us to be preferable."
+    },
+    {
+      "chunk_index": 105,
+      "text": "In any case, the doctrine of stare decision is not an inflexible rule of law and cannot be permitted to perpetuate our errors to the detriment to the general welfare of the public or a considerable section thereof.\" It would follow from the above that although this Court affirmed its, power to overrule and depart from the view expressed in its previous judgments, it also stressed the importance of not lightly dissenting from, previous pronouncements of this Court. Applying the principle enunciated above also, I am of the view that no sufficient ground has been shown for overruling the view expressed by the majority in Northern India Caterers case(1). It may be that the view expressed by the minority in that case appears to be preferable, but that by itself would not show that the decision arrived at in the Northern India Caterers case was plainly erroneous and as such requires overruling. It also cannot be said that aforesaid decision has given rise to public inconvenience and hardship."
+    },
+    {
+      "chunk_index": 127,
+      "text": "There were two grounds on which the challenge was based : one was that the Act discriminated unjustly between occupants of public premises and those of private property and the other was that even amongst occupants of public premises inter se, there was discrimination, inasmuch as the special procedure set out in the Act was more drastic and prejudicial than the ordinary procedure of a civil suit and it was left to the arbitrary and unfettered discretion of the Government to adopt the special procedure against some and not against the rest. So far as the first ground is concerned, it was clearly and in so many terms repelled by Bachawat, J., in the minority judgment, and though the majority, speaking through Shelat, J., did not finally pronounce upon the validity of this ground, they pointed out that there was great force in it as it was possible to say that there was intelligible differentia between occupiers of public premises and other occupiers and the differentia had rational nexus with the object of the legislation."
+    }
+  ],
+  "raw_response": "```json\n{\n  \"issue\": \"Whether the Bombay Municipal Corporation Act, 1888, as amended, violates Article 14 of the Constitution of India, and whether the view taken by the majority in Northern India Caterers case should be overruled.\",\n  \"rule\": \"The doctrine of stare decisis is not an inflexible rule of law and cannot be permitted to perpetuate errors to the detriment of the general welfare of the public or a considerable section thereof. A view which has been accepted for a long period of time should not be disturbed unless the court can say positively that it was wrong, or unreasonable, or that it was productive of public hardship or inconvenience.\",\n  \"application\": \"The court applied the principle of stare decisis and held that no sufficient ground has been shown for overruling the view expressed by the majority in Northern India Caterers case. The court also held that the Act does not discriminate unjustly between occupants of public premises and those of private property, and that the special procedure set out in the Act is not so onerous and drastic as would justify an inference of discrimination.\",\n  \"conclusion\": \"The court upheld the validity of the Bombay Municipal Corporation Act, 1888, as amended, and held that it does not violate Article 14 of the Constitution of India.\",\n  \"authorities\": [\n    \"Bengal Immunity Co. Ltd. v. The State of Bihar & Ors.\",\n    \"Anwar Ali Sarkar v. State of West Bengal\",\n    \"Lachmandas Kewalram Ahuja v. State of Maharashtra\",\n    \"Northern India Caterers case\"\n  ]\n}\n```",
+  "decade": "1970",
+  "n_real_edges": 23
+}

@@ -1,0 +1,55 @@
+{
+  "doc_id": "177188375",
+  "filename": "T_Ravi_Anr_vs_B_Chinna_Narasimha_Ors_Etc_on_21_March_2017_1.PDF",
+  "year": "2017",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether a suit for specific performance can be filed against a party who has entered into a contract, and whether the party can be compelled to perform the contract.",
+    "rule": "Specific performance of a contract is a discretionary remedy which the court may grant if it is satisfied that the party has been guilty of some act or omission which has caused or is likely to cause some injury to the other party, and that compensation in money would not be adequate relief.",
+    "application": "The appellants, T Ravi and another, filed a suit for specific performance against the respondents, B Chinna Narasimha and others, who were owners of a parcel of land. The appellants claimed that they had entered into an agreement with the respondents to purchase the land for a certain price, but the respondents failed to complete the sale. The trial court decreed the suit, but the High Court reversed the decree. The Supreme Court held that the High Court erred in reversing the decree of the trial court, and that the appellants were entitled to specific performance of the contract.",
+    "conclusion": "The Supreme Court allowed the appeal and restored the decree of the trial court, holding that the appellants were entitled to specific performance of the contract."
+  },
+  "authority_results": [
+    {
+      "cited": "Shri Ram Construction Co. v. Pradeep Kumar, (2006) 5 SCC 361",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Lal Chand v. Kamla Nath, (2009) 1 SCC 351",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Jai Narain v. Hasan, (2013) 4 SCC 605",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "K. Lakshminarayana v. V. Padma Sree, (2015) 10 SCC 536",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether a suit for specific performance can be filed against a party who has entered into a contract, and whether the party can be compelled to perform the contract.\",\n  \"rule\": \"Specific performance of a contract is a discretionary remedy which the court may grant if it is satisfied that the party has been guilty of some act or omission which has caused or is likely to cause some injury to the other party, and that compensation in money would not be adequate relief.\",\n  \"application\": \"The appellants, T Ravi and another, filed a suit for specific performance against the respondents, B Chinna Narasimha and others, who were owners of a parcel of land. The appellants claimed that they had entered into an agreement with the respondents to purchase the land for a certain price, but the respondents failed to complete the sale. The trial court decreed the suit, but the High Court reversed the decree. The Supreme Court held that the High Court erred in reversing the decree of the trial court, and that the appellants were entitled to specific performance of the contract.\",\n  \"conclusion\": \"The Supreme Court allowed the appeal and restored the decree of the trial court, holding that the appellants were entitled to specific performance of the contract.\",\n  \"authorities\": [\n    \"Shri Ram Construction Co. v. Pradeep Kumar, (2006) 5 SCC 361\",\n    \"Lal Chand v. Kamla Nath, (2009) 1 SCC 351\",\n    \"Jai Narain v. Hasan, (2013) 4 SCC 605\",\n    \"K. Lakshminarayana v. V. Padma Sree, (2015) 10 SCC 536\"\n  ]\n}\n```",
+  "decade": "2010",
+  "n_real_edges": 73
+}

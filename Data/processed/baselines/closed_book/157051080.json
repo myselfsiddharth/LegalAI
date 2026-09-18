@@ -1,0 +1,18 @@
+{
+  "doc_id": "157051080",
+  "filename": "The_State_Of_Himachal_Pradesh_vs_Yogendra_Mohan_Sengupta_on_11_January_2024_1.PDF",
+  "year": "2024",
+  "system": "closed_book",
+  "irac": {
+    "issue": null,
+    "rule": null,
+    "application": null,
+    "conclusion": null
+  },
+  "authority_results": [],
+  "parse_error": "invalid JSON: Expecting value: line 1 column 1 (char 0)",
+  "retrieved_chunks": null,
+  "raw_response": "{\"issue\": \"Whether the Himachal Pradesh Land Revenue Act, 1950, and the rules framed thereunder, can be applied to the land in question, which was granted to the respondent under the provisions of the Assam Land Revenue and Tenancy Act, 1950, prior to its merger with the State of Himachal Pradesh.\", \n\"rule\": \"The applicability of a statute to a particular territory or a particular class of persons or property is determined by the express or implied intention of the legislature, as well as the provisions of the statute itself and other relevant statutes.\", \n\"application\": \"The court examined the provisions of the Himachal Pradesh Land Revenue Act, 1950, and the rules framed thereunder, as well as the Assam Land Revenue and Tenancy Act, 1950, and held that the Himachal Pradesh Land Revenue Act, 1950, and the rules framed thereunder, are applicable to the land in question.\", \n\"conclusion\": \"The court upheld the decision of the High Court and allowed the appeal, holding that the Himachal Pradesh Land Revenue Act, 1950, and the rules framed thereunder, are applicable to the land in question.\", \n\"authorities\": [\"State of Punjab v. Ramsingh\", \"Union of India v. Ladulal Jain\", \"Rustom Cavasjee Cooper v. Union of India\", \"State of Himachal Pradesh v. Rajinder Singh\", \"D.C. & Co. v. State of U.P.\"]]",
+  "decade": "2020",
+  "n_real_edges": 58
+}

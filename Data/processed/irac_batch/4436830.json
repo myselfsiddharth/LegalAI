@@ -1,0 +1,53 @@
+{
+  "doc_id": "4436830",
+  "filename": "Monnet_Ispat_And_Energy_Ltd_vs_Union_Of_India_And_Ors_on_26_July_2012_1.PDF",
+  "year": "2012",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 2,
+    "Claim": 9,
+    "AuthorityCited": 4,
+    "Holding": 2,
+    "Outcome": 3
+  },
+  "authority_results": [
+    {
+      "cited": "Bihar Land Reforms Act, 1950",
+      "source_sentence": "Bihar Land Reforms Act, 1950 (for short, \u25a11950 Bihar Act\u201a) came to be enacted by the Bihar Legislature to provide for the transference to the State of the interest of proprietors and tenure holders in land of the mortgagees and lessees of such interest including interest in mines and minerals and other matters connected therewith.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Chapter II",
+      "source_sentence": "Chapter II of the 1950 Bihar Act deals with vesting of an estate or tenure in the State and its consequences.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Section 4",
+      "source_sentence": "Section 4 provides for consequences of vesting of an estate or tenure in the State.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the Central Government",
+      "source_sentence": "He further suggested that approval of the Central Government under Rule 59(2) of the 1960 Rules should be obtained by the State Government for grant of leases in this area to avoid complications. 5.4.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "2010",
+  "n_real_edges": 66
+}

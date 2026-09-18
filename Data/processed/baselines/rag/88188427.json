@@ -1,0 +1,211 @@
+{
+  "doc_id": "88188427",
+  "filename": "Indore_Development_Authority_vs_Shailendra_Dead_Through_Its_Lrs_And_on_8_February_2018_1.PDF",
+  "year": "2018",
+  "system": "rag",
+  "irac": {
+    "issue": "Whether the substituted Section 15 of the Land Acquisition Act affects the right of the parties which accrued to them on the date of suit or on the date of passing of the decree by the Court of the first instance, and whether the decision in K. Chinnathambi Gounder was rendered per incuriam.",
+    "rule": "The substituted Section 15 does not affect the right of the parties which accrued to them on the date of suit or on the date of passing of the decree by the Court of the first instance as it has been introduced prospectively. The maxim 'actus curiae neminem gravabit' does not apply in this case. A decision rendered per incuriam is not binding if it is given in ignorance of the terms of a statute or of a rule having the force of a statute.",
+    "application": "The present appeals are unaffected by change in law in so far it related to determination of the substantive rights of the parties and the same are required to be decided in light of law of preemption as it existed on the date of passing of the decree. The decision in K. Chinnathambi Gounder was rendered prior to the amendment by 1984 Act and is not per incuriam.",
+    "conclusion": "The view expressed in Narasimhaiah's case and Nanjudaiah's case is not correct and is over-ruled. The decision in Pune Municipal Corporation is not a binding precedent as it was rendered on a question which was not germane to the case."
+  },
+  "authority_results": [
+    {
+      "cited": "Hukum Chand AIR 1996 SC 3525",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "301722",
+        "matched_cited_text": "Smt. Shanti Devi & Anr vs Hukum Chand",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Dau Dayal v. I.R.C. 1966 AC 557",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1372854",
+        "matched_cited_text": "Dau Dayal vs The State Of Uttar Pradesh",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "K. Chinnathambi Gounder",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Narasimhaiah's case",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Nanjudaiah's case",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "A.S. Mamleshwar Prasad v. Kanahaiya Lal, (1975) 2 SCC 232",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "538289",
+        "matched_cited_text": "Mamleshwar Prasad & Anr vs Kanahaiya Lal (Dead) Through L.Rs",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Ex Parte Pratt 52 Q.B. 334",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Young v. Bristol Aeroplane Ltd. 1944 1KB 718",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Jaisri Sahu v. Rajdewan Dubey AIR (1962) SC 83",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "912722",
+        "matched_cited_text": "Jaisri Sahu vs Rajdewan Dubey And Others",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Municipal Corporation of Delhi v. Gurnam Kaur, (1989) 1 SCC 101",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "327169",
+        "matched_cited_text": "Municipal Corporation Of Delhi vs Gurnam Kaur",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Narmada Bachao Andolan (III) v. State of Madhya Pradesh, AIR 2011 SC 1989",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Sant Lal Gupta v. Modern Coop. Societies Ltd. 2010 13 SCC 336",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.75,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Tribhovandas Purshottamdas Thakkar v. Ratilal Motilal Patel and Ors. AIR 1968 SC 372",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 0.92,
+        "matched_cited_doc_id": "214581",
+        "matched_cited_text": "Tribhuvandas Purshottamdas Thakur vs Ratilal Motilal Patel",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Sub-Committee of Judicial Accountability v. Union of India and Ors. (1992) 4 SCC 97",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1768021",
+        "matched_cited_text": "Sub-Committee Of Judicial ... vs Union Of India & Ors",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "State of Tripura v. Tripura Bar Association and Ors. (1998) 5 SCC 637",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "233689",
+        "matched_cited_text": "State Of Tripura vs Tripura Bar Association And Ors.",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Rajasthan Public Service Commission and Anr. v. Harish Kumar Purohit and Ors. (2003) 5 SCC 480",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "210345",
+        "matched_cited_text": "Rajasthan Public Service Commission ... vs Harish Kumar Purohit And Ors",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": [
+    {
+      "chunk_index": 180,
+      "text": "Hukum Chand AIR 1996 SC 3525 this Court had occasion to interpret the substituted section 15 with which we are concerned and held that on a plain reading of section 15 it is clear that it has been introduced prospectively and there is no question of such section affecting in any manner the judgment and decree passed in the suit for pre-emption affirmed by the High Court in the second appeal. We are respectfully in agreement with the view expressed in the said decision and hold that the substituted Section 15 in the absence of anything in it to show that it is retrospective, does not affect the right of the parties which accrued to them on the date of suit or on the date of passing of the decree by the Court of the first instance. We are also of the view that present appeals are unaffected by change in law in so far it related to determination of the substantive rights of the parties and the same are required to be decided in light of law of preemption as it existed on the date of passing of the decree.\u2026 (emphasis supplied) 105(f). In Dau Dayal v."
+    },
+    {
+      "chunk_index": 193,
+      "text": "I.R.C. 1966 AC 557 where at p. 577 he also observed: \"this is not a new problem, though our standard of drafting is such that it rarely emerges\".] 16. The plea relating to applicability of the stare decisis principles is clearly unacceptable. The decision in K. Chinnathambi Gounder (supra) was rendered on 22.6.1979 i.e. much prior to the amendment by 1984 Act. If the Legislature intended to give a new lease of life in those cases where the declaration under Section 6 is quashed, there is no reason why it could not have done so by specifically providing for it. The fact that legislature specifically provided for periods covered by orders of stay or injunction clearly shows that no other period was intended to be excluded and that there is no scope for providing any other period of limitation. The maxim 'actus curiae neminem gravabit' highlighted by the Full Bench of the Madras High Court has no application to the fact situation of this case. 17. The view expressed in Narasimhaiah's case (supra) and Nanjudaiah's case (supra), is not correct and is over-ruled while that expressed in A.S."
+    },
+    {
+      "chunk_index": 281,
+      "text": "State of Punjab & Ors. (2016) 7 SCC 614, decision in Karnail Kaur (supra) has been followed. In that case, there is not much discussion. Only the fact has been mentioned that the appellant has not been dispossessed, as such protection under section 24(2) was available. PRINCIPLE OF \u201aPER INCURIAM\u0192: 146. The concept of \u201eper incuriam\u2026 signifies those decisions rendered in ignorance or forgetfulness of some inconsistent statutory provisions, or of some authority binding on the Court concerned. In order words, the concept means that a given decision is in disregard of the previous decisions of the Court itself, or that it was rendered in ignorance of the terms of an applicable statute or of a rule having the force of law. Indore Development Authority vs Shailendra (Dead) Through Its Lrs. And ... on 8 February, 2018 Indian Kanoon - http://indiankanoon.org/doc/88188427/ 91 147(a). In practice, per incuriam, is taken to mean per ignoratium, as observed by this Court in Mamleshwar Prasad v. Kanahaiya Lal, (1975) 2 SCC 232, thus: \u201e5. A litigant cannot play fast and loose with the Court."
+    },
+    {
+      "chunk_index": 282,
+      "text": "His word to the Court is as good as his bond and we must, without more ado, negative the present shift in stand by an astute discovery of a plea that the earlier judgment was rendered per incuriam. 6. The wisdom which has fallen from Bowen, L.J. in Ex Parte Pratt 52 Q.B. 334, though delivered in a different context, has wider relevance to include the present position. The learned Lord Justice observed : \u201eThere is a good old-fashioned rule that no one has a right to conduct himself before a tribunal as if he accepted its jurisdiction, and then afterwards, when he finds that it has decided against him, to turn round and say, \"You have no jurisdiction\". 7. Certainty of the law, consistency of rulings and comity of courts- all flowering from the same principle-coverage to the conclusion that a decision once rendered must later bind like cases. We do not intend to detract from the rule that, in exceptional instances, whereby obvious inadvertence or oversight a judgment fails to notice a plain statutory provision or obligatory authority running counter to the reasoning and result reached, it may not have the sway of binding precedents. It should be a glaring case, an obtrusive omission."
+    },
+    {
+      "chunk_index": 285,
+      "text": "In practice per in curium appears to mean per ignoratium.' English Courts have developed this principle in relaxation of the rule of stare decisis. The 'quotable in law' is avoided and ignored if it is rendered, in ignoratium of a statute or other binding authority'. 1944 1KB 718 Young v. Bristol Aeroplane Ltd.. Same has been accepted, approved and adopted by this Court while interpreting Article 141 of the Constitution which embodies the doctrine of precedents as a matter of law. In Jaisri Sahu v. Rajdewan Dubey AIR (1962) SC 83 this Court while pointing out the procedure to be followed when conflicting decisions are placed before a bench extracted a passed from Halsbury\u0192s Laws of England incorporating one of the exceptions when the decisions of an appellate court is not binding.\u2026 147(d). In Municipal Corporation of Delhi v. Gurnam Kaur, (1989) 1 SCC 101, it was held that decision of ignorance of rule is per incuriam,the court has observed: \u201e11. ....A decision should be treated as given per incur am when it is given in ignorance of the terms of a statute or of a rule having the force of a statute......\u2026 147(e). In Narmada Bachao Andolan (III) v."
+    },
+    {
+      "chunk_index": 286,
+      "text": "State of Madhya Pradesh, AIR 2011 SC 1989, this court has observed: \u201e61. Thus, \"per incuriam\" are those decisions given in ignorance or forgetfulness of some statutory provision or authority binding on the Court concerned, or a statement of law caused by inadvertence or conclusion that has been arrived at without application of mind or proceeded without any reason so that in such a case some part of the decision or some step in the reasoning on which it is based, is found, on that account to be demonstrably wrong.\u2026 (emphasis supplied) 148. To refer the case to larger Bench, reliance was placed by the landowners on Sant Lal Gupta v. Modern Coop. Societies Ltd. 2010 13 SCC 336 laying down thus: \u201e17. A coordinate bench cannot comment upon the discretion exercised or judgment rendered by another coordinate bench of the same court. The rule of precedent is binding for the reason that there is a desire to secure uniformity and certainty in law. Thus, in judicial administration precedents which enunciate rules of law form the foundation of the administration of justice under our system."
+    },
+    {
+      "chunk_index": 287,
+      "text": "Therefore, it has always been insisted that the decision of a coordinate bench must be followed. (Vide: Indore Development Authority vs Shailendra (Dead) Through Its Lrs. And ... on 8 February, 2018 Indian Kanoon - http://indiankanoon.org/doc/88188427/ 93 Tribhovandas Purshottamdas Thakkar v. Ratilal Motilal Patel and Ors. AIR 1968 SC 372; Sub-Committee of Judicial Accountability v. Union of India and Ors. (1992) 4 SCC 97; and State of Tripura v. Tripura Bar Association and Ors. (1998) 5 SCC 637). 18. In Rajasthan Public Service Commission and Anr. v. Harish Kumar Purohit and Ors. (2003) 5 SCC 480, this Court held that a bench must follow the decision of a coordinate bench and take the same view as has been taken earlier. The earlier decision of the coordinate bench is binding upon any latter coordinate bench deciding the same or similar issues. If the latter bench wants to take a different view than that taken by the earlier bench, the proper course is for it to refer the matter to a larger bench.\u2026 149."
+    },
+    {
+      "chunk_index": 291,
+      "text": "Thus, when the provisions of section 24 were not attracted to the fact situation of the case in Pune Municipal Corporation (supra), the decision cannot be said to be an authority on a question which, in fact, did not arise for consideration of this court. Thus, the decision rendered on a question which was not germane to the case cannot be said to be a binding precedent it is obiter dicta and thus has to be ignored. 151. When the High Court has quashed the land acquisition in Pune Municipal Corporation (supra), as we have held that period of interim stay has to be excluded once the High Court has quashed the land acquisition in case it was illegally quashed, the maxim actus curiae neminem gravabit would come to the rescue for the acquiring body and it could not have said that acquisition had lapsed, thus there was no lapse under section 24(2). There was no question of taking possession or payment of compensation once the acquisition had been quashed. This court in Pune Municipal Corporation (supra) had not dwelled upon the merit of the decision of the High Court quashing the land acquisition and has outrightly decided the case on the basis of section 24(2)."
+    }
+  ],
+  "raw_response": "{\"issue\": \"Whether the substituted Section 15 of the Land Acquisition Act affects the right of the parties which accrued to them on the date of suit or on the date of passing of the decree by the Court of the first instance, and whether the decision in K. Chinnathambi Gounder was rendered per incuriam.\", \n\"rule\": \"The substituted Section 15 does not affect the right of the parties which accrued to them on the date of suit or on the date of passing of the decree by the Court of the first instance as it has been introduced prospectively. The maxim 'actus curiae neminem gravabit' does not apply in this case. A decision rendered per incuriam is not binding if it is given in ignorance of the terms of a statute or of a rule having the force of a statute.\",\n\"application\": \"The present appeals are unaffected by change in law in so far it related to determination of the substantive rights of the parties and the same are required to be decided in light of law of preemption as it existed on the date of passing of the decree. The decision in K. Chinnathambi Gounder was rendered prior to the amendment by 1984 Act and is not per incuriam.\",\n\"conclusion\": \"The view expressed in Narasimhaiah's case and Nanjudaiah's case is not correct and is over-ruled. The decision in Pune Municipal Corporation is not a binding precedent as it was rendered on a question which was not germane to the case.\",\n\"authorities\": [\n  \"Hukum Chand AIR 1996 SC 3525\",\n  \"Dau Dayal v. I.R.C. 1966 AC 557\",\n  \"K. Chinnathambi Gounder\",\n  \"Narasimhaiah's case\",\n  \"Nanjudaiah's case\",\n  \"A.S. Mamleshwar Prasad v. Kanahaiya Lal, (1975) 2 SCC 232\",\n  \"Ex Parte Pratt 52 Q.B. 334\",\n  \"Young v. Bristol Aeroplane Ltd. 1944 1KB 718\",\n  \"Jaisri Sahu v. Rajdewan Dubey AIR (1962) SC 83\",\n  \"Municipal Corporation of Delhi v. Gurnam Kaur, (1989) 1 SCC 101\",\n  \"Narmada Bachao Andolan (III) v. State of Madhya Pradesh, AIR 2011 SC 1989\",\n  \"Sant Lal Gupta v. Modern Coop. Societies Ltd. 2010 13 SCC 336\",\n  \"Tribhovandas Purshottamdas Thakkar v. Ratilal Motilal Patel and Ors. AIR 1968 SC 372\",\n  \"Sub-Committee of Judicial Accountability v. Union of India and Ors. (1992) 4 SCC 97\",\n  \"State of Tripura v. Tripura Bar Association and Ors. (1998) 5 SCC 637\",\n  \"Rajasthan Public Service Commission and Anr. v. Harish Kumar Purohit and Ors. (2003) 5 SCC 480\"\n]}",
+  "decade": "2010",
+  "n_real_edges": 157
+}

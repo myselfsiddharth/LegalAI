@@ -1,0 +1,46 @@
+{
+  "doc_id": "739751",
+  "filename": "Vatticherukuru_Village_Panchayat_And_vs_Nori_Vekatrama_Deekshithulu_And_Ors_on_26_April_1991_1.PDF",
+  "year": "1991",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether a member of a Scheduled Caste can be a hereditary trustee of a temple and if so, whether he can perform Poojas and other religious functions.",
+    "rule": "A member of a Scheduled Caste can be a hereditary trustee of a temple but as a trustee, he does not have the right to perform Poojas and other religious functions which are restricted to a particular caste or class of people.",
+    "application": "The Supreme Court applied this rule to the case of Vatticherukuru Village Panchayat, holding that the 4th respondent, a member of a Scheduled Caste, could act as a hereditary trustee of the temple but could not perform Poojas and other religious functions.",
+    "conclusion": "The Supreme Court allowed the appeal, setting aside the High Court's judgment which had held that a member of a Scheduled Caste could not be a hereditary trustee of the temple."
+  },
+  "authority_results": [
+    {
+      "cited": "Seshachalam Pillai v. Secretary of State, AIR 1928 PC 135",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "In re The Hindu Religious Endowments Act, 1950, AIR 1951 SC 33",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Syed Saifuddin Kitchlew v. State of Punjab, AIR 1961 SC 1486",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether a member of a Scheduled Caste can be a hereditary trustee of a temple and if so, whether he can perform Poojas and other religious functions.\",\n  \"rule\": \"A member of a Scheduled Caste can be a hereditary trustee of a temple but as a trustee, he does not have the right to perform Poojas and other religious functions which are restricted to a particular caste or class of people.\",\n  \"application\": \"The Supreme Court applied this rule to the case of Vatticherukuru Village Panchayat, holding that the 4th respondent, a member of a Scheduled Caste, could act as a hereditary trustee of the temple but could not perform Poojas and other religious functions.\",\n  \"conclusion\": \"The Supreme Court allowed the appeal, setting aside the High Court's judgment which had held that a member of a Scheduled Caste could not be a hereditary trustee of the temple.\",\n  \"authorities\": [\n    \"Seshachalam Pillai v. Secretary of State, AIR 1928 PC 135\",\n    \"In re The Hindu Religious Endowments Act, 1950, AIR 1951 SC 33\",\n    \"Syed Saifuddin Kitchlew v. State of Punjab, AIR 1961 SC 1486\"\n  ]\n}\n```",
+  "decade": "1990",
+  "n_real_edges": 24
+}

@@ -1,0 +1,64 @@
+{
+  "doc_id": "858834",
+  "filename": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
+  "year": "1957",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether the income from an impartible estate is taxable as the income of the individual members of the family or as the income of the family as a whole.",
+    "rule": "The income from an impartible estate is taxable as the income of the individual members of the family, and not as the income of the family as a whole.",
+    "application": "The Supreme Court held that the income from the impartible estate of the Raja of Gobardhan is taxable as the income of the individual members of the family, and not as the income of the family as a whole. The Court also held that the previous decision in Commissioner of Income-tax v. Ram Raj Bahadur (1953) is not applicable in this case.",
+    "conclusion": "The Supreme Court allowed the appeal of the Commissioner of Income-tax and set aside the order of the Calcutta High Court."
+  },
+  "authority_results": [
+    {
+      "cited": "Commissioner of Income-tax v. Ram Raj Bahadur (1953) 23 ITR 553",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Hira Lal v. Baldeo (1882) 8 Cal 728",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Jorawar Singh v. Pratap Singh (1905) 32 IA 241",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Raja Harishchandra v. CIT (1955) 27 ITR 356",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Shivendra Singh v. Dhan Singh (1954) 1 SCR 866",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether the income from an impartible estate is taxable as the income of the individual members of the family or as the income of the family as a whole.\",\n  \"rule\": \"The income from an impartible estate is taxable as the income of the individual members of the family, and not as the income of the family as a whole.\",\n  \"application\": \"The Supreme Court held that the income from the impartible estate of the Raja of Gobardhan is taxable as the income of the individual members of the family, and not as the income of the family as a whole. The Court also held that the previous decision in Commissioner of Income-tax v. Ram Raj Bahadur (1953) is not applicable in this case.\",\n  \"conclusion\": \"The Supreme Court allowed the appeal of the Commissioner of Income-tax and set aside the order of the Calcutta High Court.\",\n  \"authorities\": [\n    \"Commissioner of Income-tax v. Ram Raj Bahadur (1953) 23 ITR 553\",\n    \"Hira Lal v. Baldeo (1882) 8 Cal 728\",\n    \"Jorawar Singh v. Pratap Singh (1905) 32 IA 241\",\n    \"Raja Harishchandra v. CIT (1955) 27 ITR 356\",\n    \"Shivendra Singh v. Dhan Singh (1954) 1 SCR 866\"\n  ]\n}\n```",
+  "decade": "1950",
+  "n_real_edges": 29
+}

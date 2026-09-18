@@ -1,0 +1,152 @@
+{
+  "doc_id": "1752395",
+  "filename": "Gauri_Shankar_vs_State_Of_U_P_on_12_August_1993_1.PDF",
+  "year": "1993",
+  "system": "rag",
+  "irac": {
+    "issue": "Whether the limitation of three years prescribed under the first proviso to Section 6 of the L.A. Act would apply to the acquisitions under Sections 28 and 32 of the Act.",
+    "rule": "The court laid down exceptions to the general rule that a statute which refers to the law of a subject generally adopts the law on the subject as of the time the law is invoked: (a) where the subsequent Act and the previous Act are supplemental to each other; (b) where the two Acts are in pari materia; (c) where the amendment in the previous Act, if not imported into the subsequent Act also, would render the subsequent Act wholly unworkable and ineffectual; and (d) where the amendment of the previous Act, either expressly or by necessary intendment, applies the said provisions to the subsequent Act.",
+    "application": "The court applied the exceptions to the Land Acquisition Act and held that the limitation of three years prescribed under the first proviso to Section 6 of the L.A. Act would apply to the acquisitions under Sections 28 and 32 of the Act.",
+    "conclusion": "The court concluded that the limitation of three years prescribed under the first proviso to Section 6 of the L.A. Act would apply to the acquisitions under Sections 28 and 32 of the Act."
+  },
+  "authority_results": [
+    {
+      "cited": "Insurance Society case",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Bajaya v. Gopikabai",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1357931",
+        "matched_cited_text": "Bajaya v. Gopikabai23",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Ujagar Prints v. Union of India",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Pratap Singh v. Director of Enforcement, FERA",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Sutherland in his book Statutory Construction",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Corpus Juris Secundum",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Western Coal fields Ltd. v. Special Area Development Authority, Korba",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "791627",
+        "matched_cited_text": "Western Coalfields Ltd. v. Special Area Development Authority, Korba26",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Secretary of State v. Hindustan Coop. Insurance Society Ltd.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1334697",
+        "matched_cited_text": "Secretary of State v. Hindustan Coop. Insurance Society Ltd.",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Narsimhan case",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Re Wood's Estate, ex parte, Works and Buildings Commrs.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Clarke v. Bradlaugh",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": [
+    {
+      "chunk_index": 7,
+      "text": "Though counsel for the appellants sought to argue other points or new contentions, to maintain comity and concomitant consistence, we restricted our consideration to the point on which this Court granted leave. It would be obvious that this Court applied its mind to the other questions canvassed by the counsel and did not consider them fit to be decided and limited itself to the general question of law of public importance as to the applicability of the first proviso to Section 6 of the L.A. Act to the proceedings under the Act in the State of U.P. to lay down the law authoritatively. When the jurisdiction of this Court was invoked under Article 32, this Court would normally deal with the points that arise for decision but writ petitions were admitted after the leave was granted and tagged to the main case. Generally, if not invariably, it is desirable to maintain uniformity at the hearing of the point on which leave was granted and any other point would not be permitted to be canvassed unless the point touches the jurisdiction or constitutional validity of the offending provisions."
+    },
+    {
+      "chunk_index": 8,
+      "text": "Exceptions should not become the rule and permitting to reopen several points which this Court did not consider fit to be canvassed, would create uncertainty and inconsistence and would become a gamble and exceptions become the rule. To maintain this concomitant comity and certainty we declined to permit counsel for the appellants or writ petitioners to raise other points for adjudication. 6. Whether limitation of three years prescribed under the first proviso to Section 6 of the L.A. Act would apply to the acquisitions under Sections 28 and 32 of the Act is the crucial question."
+    },
+    {
+      "chunk_index": 29,
+      "text": "Insurance Society case12 holding thus: (SCC p. 385, para 14) \"... their Lordships of the Privy Council made it clear that this principle would not apply where the subsequent Act is rendered unworkable or is not able to function effectively.\" On a consideration of the authorities the Court laid down the following exceptions: (SCC p. 385, para 15) \"(a) where the subsequent Act and the previous Act are supplemental to each other; (b) where the two Acts are in pari materia; (c) where the amendment in the previous Act, if not imported into the subsequent Act also, would render the subsequent Act wholly unworkable and ineffectual; and (d) where the amendment of the previous Act, either expressly or by necessary intendment, applies the said provisions to the subsequent Act.\" It was held in that case that exceptions (c) and (d) would get attracted to the facts of that case and corporation employee was a public servant and the IPC amendment by implication supplements the definition of public servant in P.C. Act. Otherwise P.C. Act becomes wholly unworkable and inefficient. Gauri Shankar vs State Of U.P on 12 August, 1993 Indian Kanoon - http://indiankanoon.org/doc/1752395/ 9 20."
+    },
+    {
+      "chunk_index": 38,
+      "text": "The emphasis laid by the counsel was that, \"the departure from the generally accepted procedure which regulates acquisition and compensation for it has to be something more explicit, express and substantial than mere date of the enactment of the Mysore Act\". The emphasis pointed out must be considered in the light of the language used in that Act. The U.P. Act expressly incorporated certain provisions in the schedule, as seen earlier, by operation of Section 55 as integral scheme. Therefore, incorporation to that extent was specific, unambiguous and explicit. 26. Bajaya v. Gopikabai23 is also a case in which Section 151 Madhya Pradesh Land Revenue Code, 1954 provided applicability of the Hindu Personal Law \"for the time being in force\" and the interest of the tenure holder shall \"on his death passed on by inheritance, survivorship or bequest, as the case may be\". Prior to the Hindu Succession Act, 1956 came into force a Hindu female under Mitakshara Law had only limited estate which right alone the female would get under personal law and the Hindu Succession Act, 1956 was inapplicable, was the contention."
+    },
+    {
+      "chunk_index": 39,
+      "text": "This Court negatived the contention and held that the code applied \"personal law\" by reference. Therefore, succession was controlled by the law in operation as on the date of the death by which date the Hindu Succession Act, 1956 had come into force. 27. In Ujagar Prints v. Union of India24 the Constitution Bench of this Court held that the facts in that case fell in the exceptions carved out in Narsimhan case\". The levy and excise duty on textiles was upheld. In Pratap Singh v. Director of Enforcement, FERA25 the question was whether the provisions of Section 165 of CrPC, were made applicable to Section 37 of the Foreign Exchange Regulation Act, 1973 by reference or by incorporation. It was contended that it was, not by reference and that there was no power under the Act to search and seize the property. Accordingly the search and seizure were invalid. Repelling that contention this Court reiterated that the language \"'as far as practicable' used in Section 37\" would indicate that it is only by reference and not by incorporation. 23 (1978) 2 SCC 542 24 (1989) 3 SCC 488 : 1989 SCC (Tax) 469 25 (1985) 3 SCC 72 : 1985 SCC (Cri) 312 : 1985 SCC (Tax) 352 28."
+    },
+    {
+      "chunk_index": 63,
+      "text": "Sutherland in his book Statutory Construction has explained it thus, \"A statute which refers to the law of a subject generally adopts the law on the subject as of the time the law is invoked. This will include all the amendments and modifications of the law subsequent to the time the reference statute was enacted.\" Gauri Shankar vs State Of U.P on 12 August, 1993 Indian Kanoon - http://indiankanoon.org/doc/1752395/ 18 Same principle is discussed in Corpus Juris Secundum as under: \"...Where the reference in an adopting statute is to the law generally which governs the particular subject, and not to any specific statute or part thereof, ... the reference will be held to include the law as it stands at the time it is sought to be applied, with all the changes made from time to time, at least as far as the changes are consistent with the purpose of the adopting statute.\" 44. On the other hand legislation by incorporation, 'is to write those sections into the new Act as if they had been actually written in it with pen or printed in it'."
+    },
+    {
+      "chunk_index": 66,
+      "text": "In other words, the incorporating Act does nothing more than borrow certain provisions of an existing Act and instead of setting out, verbatim, those provisions in its own creation, refers to them as a matter of convenience in the mode of drafting' (Western Coal fields Ltd. v. Special Area Development Authority, Korba26). Although the decision of Privy Council in Secretary of State v. Hindustan Coop. Insurance Society Ltd. 1 2 was concerned with the L.A. Act adopted by the Calcutta Improvement Act, 1911 the Court on consideration of the provisions held that the effect of extensive modifications in the local Act and schedule was, 'to enact for the purposes of the local Act a special law for the acquisition of land'. Further the decision turned on the principle that specific excludes general. The Court held that the State Act while adopting L.A. Act constituted a tribunal and accorded it, by fiction, the status of court, 'except for the purposes of Section 54 of the Act'. Therefore, in view of Gauri Shankar vs State Of U.P on 12 August, 1993 Indian Kanoon - http://indiankanoon.org/doc/1752395/ 19 this exclusion the subsequent amendment in Section 54 of L.A."
+    },
+    {
+      "chunk_index": 70,
+      "text": "Principles laid down in these decisions indicate that the determination if a legislation was by way of incorporation or reference is more a matter of construction by the courts keeping in view the language employed by the Act, the purpose of referring or incorporating provisions of an existing Act and the effect of it on the day-to-day working. Reason for it is the courts' prime duty to assume Gauri Shankar vs State Of U.P on 12 August, 1993 Indian Kanoon - http://indiankanoon.org/doc/1752395/ 20 that any law made by the Legislature is enacted to serve public interest. That is the rationale due to which the Court construed provisions in Western Coalfields Ltd.26 or Attesee16 or Bamagore Jute Factory Co. v. Inspector of Central Excise27 as legislation by reference even though on literal and conservative test enunciated by English courts in Re Wood's Estate, ex parte, Works and Buildings Commrs. 11 or Clarke v. Bradlaugh10 the provisions appear more to be illustrative of legislation by incorporation. Same principle is discernible from those cases where this Court applied amendments made subsequently in L.A. Act to proceedings for acquisition taken under the Act which adopted the L.A."
+    }
+  ],
+  "raw_response": "```\n{\n  \"issue\": \"Whether the limitation of three years prescribed under the first proviso to Section 6 of the L.A. Act would apply to the acquisitions under Sections 28 and 32 of the Act.\",\n  \"rule\": \"The court laid down exceptions to the general rule that a statute which refers to the law of a subject generally adopts the law on the subject as of the time the law is invoked: (a) where the subsequent Act and the previous Act are supplemental to each other; (b) where the two Acts are in pari materia; (c) where the amendment in the previous Act, if not imported into the subsequent Act also, would render the subsequent Act wholly unworkable and ineffectual; and (d) where the amendment of the previous Act, either expressly or by necessary intendment, applies the said provisions to the subsequent Act.\",\n  \"application\": \"The court applied the exceptions to the Land Acquisition Act and held that the limitation of three years prescribed under the first proviso to Section 6 of the L.A. Act would apply to the acquisitions under Sections 28 and 32 of the Act.\",\n  \"conclusion\": \"The court concluded that the limitation of three years prescribed under the first proviso to Section 6 of the L.A. Act would apply to the acquisitions under Sections 28 and 32 of the Act.\",\n  \"authorities\": [\n    \"Insurance Society case\",\n    \"Bajaya v. Gopikabai\",\n    \"Ujagar Prints v. Union of India\",\n    \"Pratap Singh v. Director of Enforcement, FERA\",\n    \"Sutherland in his book Statutory Construction\",\n    \"Corpus Juris Secundum\",\n    \"Western Coal fields Ltd. v. Special Area Development Authority, Korba\",\n    \"Secretary of State v. Hindustan Coop. Insurance Society Ltd.\",\n    \"Narsimhan case\",\n    \"Re Wood's Estate, ex parte, Works and Buildings Commrs.\",\n    \"Clarke v. Bradlaugh\"\n  ]\n}\n```",
+  "decade": "1990",
+  "n_real_edges": 27
+}

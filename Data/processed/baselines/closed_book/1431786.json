@@ -1,0 +1,48 @@
+{
+  "doc_id": "1431786",
+  "filename": "Kavalappara_Kottarathil_Kochuni_And_vs_The_State_Of_Madras_And_Others_on_4_May_1960_1.PDF",
+  "year": "1960",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether the Madras High Court has the power to review its own judgments in matters relating to fundamental rights under Article 32 of the Constitution of India.",
+    "rule": "The Supreme Court has the exclusive jurisdiction to interpret the Constitution and to enforce fundamental rights under Article 32. However, the High Courts have the power to review their own judgments under Article 226, but this power does not extend to reviewing judgments on matters that are exclusively within the jurisdiction of the Supreme Court.",
+    "application": "The petitioners filed a petition under Article 226 of the Constitution of India before the Madras High Court, challenging the validity of certain provisions of the Madras Land Revenue (Fixation of Ceiling and Other Matters) Act, 1956. The High Court dismissed the petition, and the petitioners sought review of the judgment. The question arose whether the High Court had the power to review its own judgment in a matter relating to fundamental rights.",
+    "conclusion": "The Supreme Court held that while the High Court has the power to review its own judgments under Article 226, this power is limited and does not extend to matters that are exclusively within the jurisdiction of the Supreme Court. However, in this case, the Supreme Court allowed the review petition and set aside the original judgment."
+  },
+  "authority_results": [
+    {
+      "cited": "Shankari Prasad v. Union of India, AIR 1951 SC 116",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Union of India v. Shyama Pada Sidhanta, AIR 1953 SC 75",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "D.C. Khot v. Union of India, AIR 1952 SC 84",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "4354",
+        "matched_cited_text": "Chiranjit Lal Chowdhuri v. The Union of India",
+        "n_matching_edges": 2
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether the Madras High Court has the power to review its own judgments in matters relating to fundamental rights under Article 32 of the Constitution of India.\",\n  \"rule\": \"The Supreme Court has the exclusive jurisdiction to interpret the Constitution and to enforce fundamental rights under Article 32. However, the High Courts have the power to review their own judgments under Article 226, but this power does not extend to reviewing judgments on matters that are exclusively within the jurisdiction of the Supreme Court.\",\n  \"application\": \"The petitioners filed a petition under Article 226 of the Constitution of India before the Madras High Court, challenging the validity of certain provisions of the Madras Land Revenue (Fixation of Ceiling and Other Matters) Act, 1956. The High Court dismissed the petition, and the petitioners sought review of the judgment. The question arose whether the High Court had the power to review its own judgment in a matter relating to fundamental rights.\",\n  \"conclusion\": \"The Supreme Court held that while the High Court has the power to review its own judgments under Article 226, this power is limited and does not extend to matters that are exclusively within the jurisdiction of the Supreme Court. However, in this case, the Supreme Court allowed the review petition and set aside the original judgment.\",\n  \"authorities\": [\n    \"Shankari Prasad v. Union of India, AIR 1951 SC 116\",\n    \"Union of India v. Shyama Pada Sidhanta, AIR 1953 SC 75\",\n    \"D.C. Khot v. Union of India, AIR 1952 SC 84\"\n  ]\n}\n```",
+  "decade": "1960",
+  "n_real_edges": 18
+}

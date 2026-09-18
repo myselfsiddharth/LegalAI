@@ -1,0 +1,116 @@
+{
+  "doc_id": "1773971",
+  "filename": "Inder_Mohan_Lal_vs_Ramesh_Khanna_on_4_August_1987_1.PDF",
+  "year": "1987",
+  "system": "rag",
+  "irac": {
+    "issue": "Whether a separate lease is required after permission is granted under section 21 of the Delhi Rent Act, and whether the High Court's view on this matter should be adhered to or disturbed.",
+    "rule": "The view taken by the High Court over a number of years should normally be adhered to and not disturbed, as changing it would introduce uncertainty and unsettle transactions entered into on the faith of those decisions. Additionally, if at the time of passing a decree, there was some material before the Court on the basis of which it could be prima facie satisfied about the existence of a statutory ground for eviction, it will be presumed that the Court was so satisfied and the decree for eviction would be valid.",
+    "application": "The High Court's view that a separate lease is required after permission is granted under section 21 of the Delhi Rent Act was disturbed, and the Court held that no separate lease is required. The Court applied the rule that a view taken by the High Court over a number of years should normally be adhered to, but found that the High Court's view was incorrect and therefore set it aside.",
+    "conclusion": "The appeal was allowed, and the order and judgment of the High Court of Delhi dated 19th of July, 1985 were set aside, and the order and judgment of Rent Control Tribunal dated 28th of August, 1980 were restored."
+  },
+  "authority_results": [
+    {
+      "cited": "Raj Narain Pandey and others v. Sant Prasad Tewari & others",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "857581",
+        "matched_cited_text": "Raj Narain Pandey and others v. Sant Prasad Tewari & others",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Kasturi Lal v. Shiv Charan Das Mathur",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1905032",
+        "matched_cited_text": "Kasturi Lal v. Shiv Charan Das Mathur",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Sant Prasad Tewari & others v. ...",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "857581",
+        "matched_cited_text": "Raj Narain Pandey and others v. Sant Prasad Tewari & others",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "I. C. Golak Nath & others v. State of Punjab and another",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "21266288",
+        "matched_cited_text": "C. Golak Nath & others v. State of Punjab and another",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Dhanna Mal and others v. Rai Bahadur Lala Moti Sagar",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Ferozi Lal Jain v. Man Mal and another",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "280457",
+        "matched_cited_text": "Ferozi Lal Jain v. Man Mal and another",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": [
+    {
+      "chunk_index": 6,
+      "text": "The view taken Inder Mohan Lal vs Ramesh Khanna on 4 August, 1987 Indian Kanoon - http://indiankanoon.org/doc/1773971/ 3 by the High Court over a number of years should normally be adhered to and not to be disturbed. A different view would not only introduce an element of uncertainty and confusion but it would also have the effect of unsettling transactions which might have been entered into on the faith of those decisions. [780A-C] Raj Narain Pandey and others v. Sant Prasad Tewari & others, [1973] 2 SCR 835 and Kasturi Lal v. Shiv Charan Das Mathur, [1976] 8 Rent Control Reporter 703, referred to. JUDGMENT: CIVIL APPELLATE JURISDICTION: Civil Appeal No. 468 of 1987. From the Judgment and Order dated 19.7. 1985 of the Delhi High Court in Second Appeal No. 374 of 1980. Madan Bhatia, N.D.B. Raju and Vineet Kumar for the Appellant. Dr. L.M. Singhvi, K.B. Rohtagi, Praveen Jain and Baldev Atreya for the Respondent. The Judgment of the Court was delivered by SABYASACHI MUKHARJI, J. This appeal by special leave is from the judgment and order of the High Court of Delhi dated 19th of July, 1985."
+    },
+    {
+      "chunk_index": 10,
+      "text": "Subsequently, when the second appeal was pending in the Delhi High Court, the appellant had filed an application for early hearing in which he had stated that when the construction of the house in question was completed the appellant's father R.B. Nanak Chand, advocate, was old and alone (the appellant's mother had died earlier and other brother and sister being away from Delhi) and in view of his father's ailing health the appellant was living with him in the rented premises at 4-Flag Staff Road, Delhi to look after his old and ailing father. It was in those circum- stances that the appellant had decided to let out the suit premises for a limited period of two years only. It may be mentioned that the appellant's father died two months after the Rent Controller had granted permission. The Rent Controller after hearing both the parties on the 4th of January, 1980 held, rejecting the contention of the respondent, that section 21 of the Rent Act was not ultra vires. Furthermore, he was satisfied that a limited tenancy had been created and as such he granted permission for eviction."
+    },
+    {
+      "chunk_index": 13,
+      "text": "The main points upon which the High Court has relied are: first- ly, on the materials put forward before the Rent Controller for sanction under section 21 of the Rent Act, no reason had been stated as to why the premises in question was not required for a limited period; secondly, it was not stated as to how the premises in question was dealt with; thirdly, the High Court was of the view that there was no writing and no lease registered after the permission was granted. So far as the second ground, namely, as to how the premises in question was dealt with prior to the letting out in the instant case the High Court was obviously and factually incorrect. It was stated in the application for permission that it was agreed to be let out 'for the first time' and secondly, it was stated that the appellant owned 'newly built house'. Therefore two facts were clearly stated name- ly, this was a 'newly built' premises and further that there was no prior letting. In the aforesaid facts and circum- stances of the case therefore, it cannot be denied that how the premises in question was dealt with before the letting out had been clearly stated."
+    },
+    {
+      "chunk_index": 23,
+      "text": "The Court observed at pages 552 to 553 of the report as follows: \"From a conspectus of the cases cited at the bar, the principle that emerges is, that if at the time of the passing of the decree, there was some material before the Court, on the basis of which, the Court could be prima facie satisfied, about the existence of a statutory ground for eviction, it will be presumed that the Court was so satisfied and the decree for eviction, though apparently passed on the basis of a compromise, would be valid. Such material may take the shape either of evidence recorded or produced in the case, or, it may partly or wholly be in the shape of an express or implied admissiOn made in the compromise agreement, itself. Admissions if true and clear are by far the best proof of the facts admitted. Admissions in pleadings or judicial admissions, admissible under s. 58 of the Evidence Act, made by the parties or their agents at or before the hearing of the case, stand on a higher footing than evidentiary admissions. The former class of admissions are fully binding on the party that makes them and constitute a waiver of proof."
+    },
+    {
+      "chunk_index": 38,
+      "text": "Sant Prasad Tewari & others, [1973] 2 S.C.R. 835, where this Court observed that in the matter of the interpretation of a local statute, the view taken by the High Court over a number of years should nor- mally be adhered to and not to be disturbed. A different view would not only introduce an element of uncertainly and confusion but it would also have the effect of unsettling transactions which might have been entered into on the faith of those decisions. In Delhi transactions have been complet- ed on the basis of permission and it was never doubted that there was any requirement of any lease or any agreement subsequent to the order and the same required registration. It must be observed that in Noronah's case there was no admission on oath nor was there any question of Inder Mohan Lal vs Ramesh Khanna on 4 August, 1987 Indian Kanoon - http://indiankanoon.org/doc/1773971/ 12 registered lease."
+    },
+    {
+      "chunk_index": 40,
+      "text": "It was urged that if it is now found that is not the correct position and the correct position in law is that there should be a lease containing the terms of the lease being for 11 months, such enunciation of law should only be made applicable prospectively. Counsel for the appellant contended that otherwise it would have disastrous conse- quences of unsettling numerous decisions and unsettling many settled transactions between the parties. He drew our atten- tion to the decision of this Court in 1. C. Golak Nath & others v. State of Punjab and another, [1967] 2 S.C.R. 762. If we had any doubt on the scope and ambit of section 21, we might have considered this submission urged on behalf of the appellant provided we were sure, factually that large number of transactions had been completed on the assumption that no further lease was required after the permission under sec- tion 21. Our attention was also drawn to the decision of the Privy Council and the observation of Lord Blanesburgh in the case of Dhanna Mal and others v. Rai Bahadur Lala Moti Sagar, A.I.R. 1927 Privy Council 102."
+    },
+    {
+      "chunk_index": 41,
+      "text": "If we were inclined to the view that section 21 was not a code by itself but re- quired separate lease to follow it up then perhaps we might have considered the effect of the aforesaid decision and observations. In aid of the submission that in order to be entitled to eviction under section 14 of the Rent Act, the court had to be satisfied itself that the statutory ground for eviction existed and that application of satisfaction of the court could not be by-passed and circumvented by a compromise decree, reliance was placed on certain observations on a decision in Ferozi Lal Jain v. Man Mal and another, [1970] 3 S.C.C. 181. In view of the facts of the particular case, we are of the opinion that it is not necessary to discuss the said decision in detail. Numerous decisions of the Delhi High Court were placed before us in support of or in respect of contentions of the parties specially in support of con- tention that the Delhi Rent Act required a separate lease. The scope and ambit of the Delhi Rent Act after the decision of Noronah's case came up for consideration before a divi- sion bench of the Delhi High Court in Vijay Kumar Bajaj v."
+    },
+    {
+      "chunk_index": 46,
+      "text": "The appeal is, therefore, allowed and the order and judgment of the High Court of Delhi dated 19th of July, 1985 are set aside and the order and judgment of Rent Control Tribunal dated 28th of August, 1980 are restored. The appellant is entitled to the costs of this appeal. P.S.S. Appeal allowed. Inder Mohan Lal vs Ramesh Khanna on 4 August, 1987 Indian Kanoon - http://indiankanoon.org/doc/1773971/ 15"
+    }
+  ],
+  "raw_response": "```\n{\n  \"issue\": \"Whether a separate lease is required after permission is granted under section 21 of the Delhi Rent Act, and whether the High Court's view on this matter should be adhered to or disturbed.\",\n  \"rule\": \"The view taken by the High Court over a number of years should normally be adhered to and not disturbed, as changing it would introduce uncertainty and unsettle transactions entered into on the faith of those decisions. Additionally, if at the time of passing a decree, there was some material before the Court on the basis of which it could be prima facie satisfied about the existence of a statutory ground for eviction, it will be presumed that the Court was so satisfied and the decree for eviction would be valid.\",\n  \"application\": \"The High Court's view that a separate lease is required after permission is granted under section 21 of the Delhi Rent Act was disturbed, and the Court held that no separate lease is required. The Court applied the rule that a view taken by the High Court over a number of years should normally be adhered to, but found that the High Court's view was incorrect and therefore set it aside.\",\n  \"conclusion\": \"The appeal was allowed, and the order and judgment of the High Court of Delhi dated 19th of July, 1985 were set aside, and the order and judgment of Rent Control Tribunal dated 28th of August, 1980 were restored.\",\n  \"authorities\": [\n    \"Raj Narain Pandey and others v. Sant Prasad Tewari & others\",\n    \"Kasturi Lal v. Shiv Charan Das Mathur\",\n    \"Sant Prasad Tewari & others v. ...\",\n    \"I. C. Golak Nath & others v. State of Punjab and another\",\n    \"Dhanna Mal and others v. Rai Bahadur Lala Moti Sagar\",\n    \"Ferozi Lal Jain v. Man Mal and another\"\n  ]\n}\n```",
+  "decade": "1980",
+  "n_real_edges": 17
+}

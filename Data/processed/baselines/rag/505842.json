@@ -1,0 +1,178 @@
+{
+  "doc_id": "505842",
+  "filename": "Union_Of_India_Anr_vs_Raghubir_Singh_Dead_By_Lrs_Etc_on_16_May_1989_1.PDF",
+  "year": "1989",
+  "system": "rag",
+  "irac": {
+    "issue": "Under what circumstances and within what limits and in what manner should the highest Court over-turn its own pronouncements.",
+    "rule": "The Supreme Court of India is not bound by its own previous decisions, but it should exercise caution and only overrule its previous decisions under certain circumstances, such as when a decision causes great uncertainty in practice, is unjust or outmoded, or is contrary to a decision of another Court which this Court is bound to follow.",
+    "application": "The Court considered various precedents and observed that the doctrine of stare decisis is not an inflexible rule and must yield where following it would result in perpetuating an error to the detriment of the general welfare of the public or a considerable section thereof.",
+    "conclusion": "The Court laid down that it should not lightly dissent from a previous pronouncement, but if the previous decision was plainly erroneous, there was a duty on the Court to say so and not perpetuate the mistake."
+  },
+  "authority_results": [
+    {
+      "cited": "Street Tramways v. London County Council, [1898] A.C. 375",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Conway v. Rimmer, [1968] A.C. 910",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "State of Washington v. Dawson & Co., 264 U.S. 646",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "David Burnel v. Coronado Oil & Gas Company, 285 U.S. 393",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "National Bank v. Whitney, 103 U.S. 99",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Bengal Immunity case",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Maganlal Chhagganlal (P) Ltd. v. Municipal Corporation of Greater Bombay & Ors., [1975] 1 SCR 1",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1293557",
+        "matched_cited_text": "Maganlal Chhagganlal (P) Ltd. v. Municipal Corporation of Greater Bombay & Ors.",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Lt. Col. Khajoor Singh v. The Union of India & Another, [1961] 2 SCR 828",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Keshav Mills Company v. Commissioner of Income Tax, [1965] 2 SCR 908",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1512520",
+        "matched_cited_text": "Keshav Mills Company v. Commissioner of Income Tax",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Sajjan Singh v. The State of Gujarat & Ors., [1975] 2 SCR 317",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Union of India & Ors. v. Godfrey Philips India Ltd., [1985] 4 SCC 369",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "53080",
+        "matched_cited_text": "Union of India & Ors. v. Godfrey Philips India Ltd.",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Jit Ram v. State of Haryana, [1980] 3 SCR 689",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1936933",
+        "matched_cited_text": "Jit Ram v. State of Haryana",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Motilal Padampat Sugar Mills v. State of U.P., [1979] 2 SCR 641",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "871220",
+        "matched_cited_text": "Motilal Padampat Sugar Mills v. State of U.P.",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": [
+    {
+      "chunk_index": 28,
+      "text": "The question then is not whether the Supreme Court is bound by its own previous decisions. It is not. The question is under what circumstances and within what limits and in what manner should the highest Court over-turn its own pronouncements. In the examination of this question it would perhaps be appropriate to refer to the response of other jurisdictions, specially those with which the judicial system in India has borne an historical relationship. The House of Lords in England provides the extreme example of a judicial body which until recently disclaimed the power to overrule it- self. It used to be said that the House of Lords did never overrule itself but only distinguished its earlier deci- sions. An erroneous decision of the House of Lords could be set right only by an Act of Parliament. (See Street Tramways v. London County Council, [1898] A.C. 375 and Radcliffe v."
+    },
+    {
+      "chunk_index": 32,
+      "text": "A decision ought to be overruled if it causes such great uncertainty in practice that the Parties' advisers are unable to give any clear indication as to what the courts will hold the law to be (the 'rectification of uncertainty' criterion) Jones, at 966; Oldendroll & Co. v. Tradex Export, S.A. 1974 479,533,535. 7. A decision ought to be overruled if .in relation to some broad issue or principle it is not considered just or in keeping with contemporary social conditions or modern conceptions of public policy (the 'unjust or outmoded' criterion) ibid Conway v. Rimmer, [1968] A.C. 910,938. Dr. Paterson noted that between the years 1966 and 1988 there were twenty nine cases in which the House of Lords was invited to overrule one of its own precedents, that the House of Lords did so in eight of them, while in a further ten cases at least one of the Law Lords was willing to overrule the previous House of Lords precedent. In a consid- erable number of other cases, however, the Law Lords seemed to prefer to distinguish the earlier decisions rather than overrule them."
+    },
+    {
+      "chunk_index": 34,
+      "text": "Etc on 16 May, 1989 Indian Kanoon - http://indiankanoon.org/doc/505842/ 12 proceeded upon the mistaken assumption of the continuance of a repealed or expired Statute, or is contrary to a decision of another Court which this Court is bound to follow; not, I think, upon a mere suggestion, that some or all of the members of the later Court might arrive at a different conclusion if the matter was res integra. Otherwise there would be grate danger of want of continuity in the interpretation of law.\" In the same case, Barton, J. observed at p. 69: \" ..... I would say that I never thought that it was not open to this Court to review its previous decisions upon good cause. The question is not whether the Court can do so, but whether it will, having due regard to the need for continuity and consistency in the judicial decision. Changes in the number of appointed Justices can, I take it, never of themselves furnish a reason for review ..... But the Court can always listen to argument as to whether it ought to review a particular decision, and the strongest reason for an overruling is that a decision is manifestly wrong and its continuance is injurious to the public interest\"."
+    },
+    {
+      "chunk_index": 35,
+      "text": "In the United States of America the Supreme Court has explicitly overruled its prior decision in a number of cases and reference will be found to them in the judgment of Brandeis, J. in State of Washington v. Dawson & Co., 264 U.S. 646; 68 L.Ed. 219 where he said: \"The doctrine of Stare decisis should not deter us from overruling that case and those which follow it. The decisions are recent ones. They have not been acquiesced in. They have not created a rule of property around which vested interests have clustered. They affect solely matters of a transitory nature. On the other hand, they affect seriously the lives of men, women and children, and the general welfare. Stare decisis is ordinarily, a wise rule of action. But it is not a univer- sal, inexorable command. The instances in which the Courts have disregarded its admonition a re many.\" Elaborating his point in his dissenting judgment in David Burnel v. Coronado Oil & Gas Company, 285 U.S. 393; 76 L.Ed. 815, Brandeis, J. observed: \"Stare decisis usually the wise policy, because in most matters it is more important that the applicable rule of law be settled right. Compare National Bank v. Whitney, 103 U.S. 99; 26 L.Ed. 443-444."
+    },
+    {
+      "chunk_index": 40,
+      "text": "Cautioned that the Court should not differ merely because a contrary view appeared preferable, the learned Judge affirmed that \"we should not lightly dissent from a previous pronouncement of this Court.\" But if the previous decision was plainly erroneous, he pointed out, there was a duty on the Court to say so and not perpetuate the mistake. The appeal to the principle of stare decisis was rejected on the ground that (a) the decision intended to be overruled was a very recent decision and it did not involve overruling a series of decisions, and (b) the doc- trine of stare decisis was not an inflexible rule, and must, in any event, yield where following it would result in perpetuating an error to the detriment of the general wel- fare of the public or a considerable section thereof. Since then the question as to when should the Supreme Union Of India & Anr vs Raghubir Singh (Dead) By Lrs. Etc on 16 May, 1989 Indian Kanoon - http://indiankanoon.org/doc/505842/ 14 Court overrule its own decision has been considered in several cases."
+    },
+    {
+      "chunk_index": 41,
+      "text": "Relying on the Bengal Immunity case, Khanna, J. remarked that certainly in the law, which was an essen- tial ingredient of the Rule of Law, would be considerably eroded if the highest court of the land lightly overruled the view expressed by it in earlier cases. One instance where such overruling could be permissible was a situation where contextual values giving birth to the earlier view had altered substantially since. In Maganlal Chhagganlal (P) Ltd. v. Municipal Corporation of Greater Bombay & Ors., [1975] 1 SCR 1 he explained: \"Some new aspects may come to light and it may become essen- tial to cover fresh grounds to meet the new situations or to overcome difficulties which did not manifest themselves or were not taken into account when the earlier view was pro- pounded. Precedents have a value and the ratio decidendi of a case can no doubt be of assistance in the decision of future cases."
+    },
+    {
+      "chunk_index": 42,
+      "text": "At the same time we have to, as observed by Cardozo, guard against the notion that because a principle has been formulated as the ratio decidendi of a given prob- lem, it is therefore to be applied as a solvent of other problems, regardless of consequences, regardless of deflect- ing factors, inflexibly. and automatically, in all its pristine generality (see Selected Writings, p. 31). As in life so in law things are not static.\" In Lt. Col. Khajoor Singh v. The Union of India & Anoth- er, [1961] 2 SCR 828 the majority of this court emphasised that the court, should not depart from an interpretation given in an earlier judgment of the court unless there was a fair amount of unanimity that the earlier decision was manifestly wrong. In Keshav Mills Company v. Commissioner of Income Tax, [1965] 2 SCR 908,921 this court observed that a revision of its earlier decision would be justified if there were compelling and substantial reasons to do so. In Sajjan Singh v."
+    },
+    {
+      "chunk_index": 51,
+      "text": "The State of Gujarat & Ors., [1975] 2 SCR 317 that even where the strength of two differing Division Benches consisted of the same number of Judges, it was not open to one Division Bench to decide the correctness or other-wise of the views of the other. The principle was reaffirmed in Union of India & Ors. v. Godfrey Philips India Ltd., [1985] 4 SCC 369 which noted that a Division Bench of two Judges of this Court in Jit Ram v. State of Haryana, [1980] 3 SCR 689 had differed from the view taken by an earlier Division Bench of two Judges in Motilal Padampat Sugar Mills v. State of U.P., [1979] 2 SCR 641 on the point whether the doctrine of promissory estoppel could be defeated by invoking the defence of executive necessity, and holding that to do so was wholly unacceptable reference was Union Of India & Anr vs Raghubir Singh (Dead) By Lrs. Etc on 16 May, 1989 Indian Kanoon - http://indiankanoon.org/doc/505842/ 17 made to the well accepted and desirable practice of the later Bench referring the case to a larger Bench when the learned Judges found that the situation called for such reference."
+    }
+  ],
+  "raw_response": "```\n{\n  \"issue\": \"Under what circumstances and within what limits and in what manner should the highest Court over-turn its own pronouncements.\",\n  \"rule\": \"The Supreme Court of India is not bound by its own previous decisions, but it should exercise caution and only overrule its previous decisions under certain circumstances, such as when a decision causes great uncertainty in practice, is unjust or outmoded, or is contrary to a decision of another Court which this Court is bound to follow.\",\n  \"application\": \"The Court considered various precedents and observed that the doctrine of stare decisis is not an inflexible rule and must yield where following it would result in perpetuating an error to the detriment of the general welfare of the public or a considerable section thereof.\",\n  \"conclusion\": \"The Court laid down that it should not lightly dissent from a previous pronouncement, but if the previous decision was plainly erroneous, there was a duty on the Court to say so and not perpetuate the mistake.\",\n  \"authorities\": [\n    \"Street Tramways v. London County Council, [1898] A.C. 375\",\n    \"Conway v. Rimmer, [1968] A.C. 910\",\n    \"State of Washington v. Dawson & Co., 264 U.S. 646\",\n    \"David Burnel v. Coronado Oil & Gas Company, 285 U.S. 393\",\n    \"National Bank v. Whitney, 103 U.S. 99\",\n    \"Bengal Immunity case\",\n    \"Maganlal Chhagganlal (P) Ltd. v. Municipal Corporation of Greater Bombay & Ors., [1975] 1 SCR 1\",\n    \"Lt. Col. Khajoor Singh v. The Union of India & Another, [1961] 2 SCR 828\",\n    \"Keshav Mills Company v. Commissioner of Income Tax, [1965] 2 SCR 908\",\n    \"Sajjan Singh v. The State of Gujarat & Ors., [1975] 2 SCR 317\",\n    \"Union of India & Ors. v. Godfrey Philips India Ltd., [1985] 4 SCC 369\",\n    \"Jit Ram v. State of Haryana, [1980] 3 SCR 689\",\n    \"Motilal Padampat Sugar Mills v. State of U.P., [1979] 2 SCR 641\"\n  ]\n}\n```",
+  "decade": "1980",
+  "n_real_edges": 27
+}

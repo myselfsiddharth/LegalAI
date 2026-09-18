@@ -1,0 +1,36 @@
+{
+  "doc_id": "895706",
+  "filename": "Chandavarkar_Sita_Ratna_Rao_vs_Ashalata_S_Guram_on_25_September_1986_1.PDF",
+  "year": "1986",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 4,
+    "Holding": 15,
+    "Claim": 10,
+    "Outcome": 3,
+    "AuthorityCited": 2
+  },
+  "authority_results": [
+    {
+      "cited": "s. 15A of the Act",
+      "source_sentence": "Therefore, it could not be said that the appellant was a licensee and had acquired protection under s. 15A of the Act.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "a Full Bench decision of the High Court in Ratanlal Chandiprasad v.",
+      "source_sentence": "Relying on a Full Bench decision of the High Court in Ratanlal Chandiprasad v.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "1980",
+  "n_real_edges": 18
+}

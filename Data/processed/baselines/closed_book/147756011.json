@@ -1,0 +1,66 @@
+{
+  "doc_id": "147756011",
+  "filename": "State_Of_A_P_vs_A_P_State_Wakf_Board_on_7_February_2022_1.PDF",
+  "year": "2022",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether the Wakf Board can be considered as an authority under Section 29-A of the Wakf Act, 1995 for the purpose of determining the Wakf properties.",
+    "rule": "The Wakf Board is an authority under Section 29-A of the Wakf Act, 1995 and is empowered to determine the Wakf properties.",
+    "application": "The court applied the principles of statutory interpretation to Section 29-A of the Wakf Act, 1995 and held that the Wakf Board has the authority to determine Wakf properties.",
+    "conclusion": "The Supreme Court held that the Wakf Board has the authority to determine Wakf properties under Section 29-A of the Wakf Act, 1995."
+  },
+  "authority_results": [
+    {
+      "cited": "Ashfaq Hussain v. State of U.P. (AIR 1967 SC 635)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Anwar v. State of U.P. (AIR 1957 SC 286)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "Rustom Cavasjee Cooper v. Union of India (AIR 1970 SC 560)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "State of A.P. v. A.P. Wakf Board (MANU/SC/0001/2022) is not a valid cite, actual cite is likely from lower courts or different case",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Islamic Wakf Board v. U.P. State (MANU/UP/0109/2003)",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1907020",
+        "matched_cited_text": "M.P. Wakf Board v. Subhan Shah (Dead) By Lrs",
+        "n_matching_edges": 3
+      },
+      "in_judgment_text": false
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "{\"issue\": \"Whether the Wakf Board can be considered as an authority under Section 29-A of the Wakf Act, 1995 for the purpose of determining the Wakf properties.\", \n\"rule\": \"The Wakf Board is an authority under Section 29-A of the Wakf Act, 1995 and is empowered to determine the Wakf properties.\",\n\"application\": \"The court applied the principles of statutory interpretation to Section 29-A of the Wakf Act, 1995 and held that the Wakf Board has the authority to determine Wakf properties.\",\n\"conclusion\": \"The Supreme Court held that the Wakf Board has the authority to determine Wakf properties under Section 29-A of the Wakf Act, 1995.\",\n\"authorities\": [\n\"Ashfaq Hussain v. State of U.P. (AIR 1967 SC 635)\",\n\"Anwar v. State of U.P. (AIR 1957 SC 286)\",\n\"Rustom Cavasjee Cooper v. Union of India (AIR 1970 SC 560)\",\n\"State of A.P. v. A.P. Wakf Board (MANU/SC/0001/2022) is not a valid cite, actual cite is likely from lower courts or different case\",\n\"Islamic Wakf Board v. U.P. State (MANU/UP/0109/2003)\"\n]}",
+  "decade": "2020",
+  "n_real_edges": 65
+}

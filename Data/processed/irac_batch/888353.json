@@ -1,0 +1,28 @@
+{
+  "doc_id": "888353",
+  "filename": "Pingle_Industries_Ltd_Secunderabad_vs_Commissioner_Of_Income_Tax_Hyderabad_on_26_April_1960_1.PDF",
+  "year": "1960",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 3,
+    "Claim": 4,
+    "Holding": 4,
+    "AuthorityCited": 1
+  },
+  "authority_results": [
+    {
+      "cited": "Commissioner of Income Tax, West Bengal, [1955] 1 S.C.R. 972",
+      "source_sentence": "Commissioner of Income Tax, West Bengal, [1955] 1 S.C.R. 972, distinguished.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1358798",
+        "matched_cited_text": "Kamakshya Narain Singh v. Commissioner of Income-tax",
+        "n_matching_edges": 8
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "1960",
+  "n_real_edges": 12
+}

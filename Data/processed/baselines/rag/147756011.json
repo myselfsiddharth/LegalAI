@@ -1,0 +1,136 @@
+{
+  "doc_id": "147756011",
+  "filename": "State_Of_A_P_vs_A_P_State_Wakf_Board_on_7_February_2022_1.PDF",
+  "year": "2022",
+  "system": "rag",
+  "irac": {
+    "issue": "Whether the High Court erred in directing all issues to be determined by the Wakf Tribunal, and whether the Wakf Tribunal has exclusive jurisdiction to deal with the question of whether the land is a wakf property or not.",
+    "rule": "The High Court can decline to exercise its jurisdiction under Article 226 of the Constitution if there is an alternative statutory remedy available to the parties. The Wakf Tribunal has been statutorily conferred with exclusive jurisdiction to deal with the question of whether the land is a wakf property or not.",
+    "application": "The appellants argued that the High Court erred in directing all issues to be determined by the Wakf Tribunal. However, the Court held that the discretion exercised by the High Court to direct all issues to be determined by the Wakf Tribunal does not require any interference by the Court.",
+    "conclusion": "The Court found no merit in the arguments raised by the appellants and upheld the order of the High Court."
+  },
+  "authority_results": [
+    {
+      "cited": "Whirlpool Corporation v. Registrar of Trade Marks, Mumbai & Ors.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Commissioner of Income Tax & Ors. v. Chhabil Dass Agarwal",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "51987756",
+        "matched_cited_text": "Commissioner of Income Tax & Ors. v. Chhabil Dass Agarwal59",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Director of Settlements, A.P. & Ors. v. M.R. Apparao & Anr.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "703650",
+        "matched_cited_text": "Director of Settlements, A.P. & Ors. v. M.R. Apparao & Anr.60",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "T.R. Varma v. State of U.P.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "Rao Shiv Bahadur Singh v. State of Vindhya Pradesh",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1786180",
+        "matched_cited_text": "Rao Shiv Bahadur Singh v. State of Vindhya Pradesh",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Deep Chand v. State of Rajasthan",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "794815",
+        "matched_cited_text": "Deep Chand v. State of Rajasthan",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "State of Uttar Pradesh v. Singhara Singh",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "407511",
+        "matched_cited_text": "State of Uttar Pradesh v. Singhara Singh",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "CIT v. Anjum M.H. Ghaswala",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1184550",
+        "matched_cited_text": "CIT v. Anjum M.H. Ghaswala75",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": false
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": [
+    {
+      "chunk_index": 141,
+      "text": "In Muntakhab No. 98 issued in the year 1958, the Nazim Atiyat has mentioned the grant of Jagir village Manikonda as crown grant. In terms of Section 13 of the Enquiries Act, the orders passed in cases relating to Atiyat Grants shall not be questioned in any Court of law. It was further argued that the Wakf Tribunal has been statutorily conferred with exclusive ju- risdiction to deal with the question as to whether the land was a wakf property or not. The final determination as whether or not the appellants have been able to make out their principal case that the land is not wakf land, the seven issues were suggested. Thus, the discretion exercised by the High Court to direct all issues to be determined by the Wakf Tribunal does not require any interference by this Court. 103. It was also argued that the judgment in Whirlpool Corpora- State Of A.P. vs A.P.State Wakf Board . on 7 February, 2022 Indian Kanoon - http://indiankanoon.org/doc/147756011/ 52 tion v. Registrar of Trade Marks, Mumbai & Ors. 58 is distin- guishable as the High Court can decline to exercise its jurisdic- tion if it is satisfied that an aggrieved party can obtain relief be- fore an alternative forum."
+    },
+    {
+      "chunk_index": 142,
+      "text": "Reference was made to judgment of this Court reported as Commissioner of Income Tax & Ors. v. Chhabil Dass Agarwal59. In Whirlpool, the High Court rel- egated the parties to the statutory forum without examining the contention but in the present case, the High Court after detailed examination, eventually declined to exercise jurisdiction under Article 226 of the Constitution in view of the alternate statutory remedy available to the parties. I. Issues to be determined in the present Appeals 104. We have heard learned counsels appearing for the parties at length over few days wherein the detailed arguments were addressed, many documents were referred to and the parties also submitted the written submissions. We find that the following questions arise for consideration by this Court, including the questions suggested by Mr."
+    },
+    {
+      "chunk_index": 148,
+      "text": "None of the judgments dealt with the invocation of the jurisdiction of the writ court. Anis Fatima Begum, is again not a judgment arising out of a writ petition filed before the High Court. It was a case of a suit filed before the Civil Court, though in para 7, there is an observation that all matters pertaining to wakf should be filed in the first instance before the Tribunal and should not be entertained by the Civil Court or by the High Court straightaway under Article 226 of the Constitution. The observation made by this Court in respect of invocation of the jurisdiction of the writ court is clearly obiter as that was not the question arising for consideration. A three judge Bench of this Court in Director of Settlements, A.P. & Ors. v. M.R. Apparao & Anr.60 held that \u20acA judgment of the Court has to be read in the context of questions which arose for consideration in the case in which the judgment was delivered. An \u20acobiter dictum\u201a as distinguished from a ratio decidendi is an observation by the Court on a legal question suggested in a case before it but not arising in such manner as to require a decision."
+    },
+    {
+      "chunk_index": 149,
+      "text": "Such an obiter may not have a binding precedent as the observation was unnecessary for the decision pronounced, but even though an obiter may not have a binding effect as a precedent, but it cannot be denied that it is of considerable weight.\u201a Thus, a judgment is a binding precedent on the question which arises for consideration and not otherwise. 109. The judgment in T.R. Varma arises out of an order of dismissal of a government servant under Article 311(2) of the Constitution. It was in these circumstances, it was held that a person who alleges that his services have been wrongfully terminated is entitled to institute any action to vindicate his rights, and in such an action, the Court would be competent to award all the reliefs to which he may be entitled to, including some which would not be admissible in the writ petition. Further, Ghaus Mohammad was a case wherein an order passed against the respondent under the Foreigners Act, 1946 60 (2002) 4 SCC 638 was set aside by the High Court. However, these judgments are not indicative of the fact that disputed questions of fact cannot be adjudicated upon in the writ petition under Article 226 of the Constitution of India. 110."
+    },
+    {
+      "chunk_index": 153,
+      "text": "There is a plethora of case-law on this point but to cut down this circle of forensic whirlpool, we would rely on some old decisions of the evolutionary era of the constitutional law as they still hold the field. xxx xxx xxx 20. Much water has since flown under the bridge, but there has been no corrosive effect on these decisions which, though old, continue to hold the field with the result that law as to the jurisdiction of the High Court in entertaining a writ petition under Article 226 of the Constitution, in spite of the alternative statutory remedies, is not affected, specially in a case where the authority against whom the writ is filed is shown to have had no jurisdiction or had purported to usurp jurisdiction without any legal foundation.\u201a State Of A.P. vs A.P.State Wakf Board . on 7 February, 2022 Indian Kanoon - http://indiankanoon.org/doc/147756011/ 56 113. We do not find any merit in the arguments raised by Mr. Dewan that the judgment in Whirlpool is distinguishable. In fact, this Court in appeal against the order of the High Court set aside the notice issued by the Registrar of the Trademarks."
+    },
+    {
+      "chunk_index": 184,
+      "text": "Since a writ of certiorari can be issued only to correct the errors of a court or a quasi-judicial body, it would follow that the real and determining test for ascertaining whether an act authorised by a statute is a quasi-judicial act or an administrative act is whether the statute has expressly or impliedly imposed upon the statutory body the duty to act judicially as required by the third condition in the definition given by Atkin, L.J. *** Relying on paras 114 and 115 of Halsbury's Laws of England, 3rd Edn., Vol. 11 at pp. 55-58 and citing the case of R. v. Manchester Legal Aid Committee [(1952) 2 QB 413 : (1952) 1 All ER 480] learned counsel for the appellants contends that where a statute requires decision to be arrived at purely from the point of view of policy or expediency the authority is under no duty to act judicially. He urges that where, on the other hand, the order has to be passed on evidence either under an express provision of the statute or by implication and determination of particular facts on which its jurisdiction to exercise its power depends or if there is a proposal and an opposition the authority is under a duty to act judicially."
+    },
+    {
+      "chunk_index": 185,
+      "text": "As stated in para 115 of Halsbury's Laws of England, Vol. 11 at p. 57 the duty to act judicially may arise in widely differing circumstances which it would be impossible to attempt to define exhaustively. The question whether or not there is a duty to act judicially must be decided in each case in the light of the circumstances of the particular case and the construction of the particular statute with the assistance of the general principles laid down in the judicial decisions. The principles deducible from the various judicial decisions considered by this Court in Khushaldas S. Advani [AIR 1950 SC 222 : 1950 SCR 621] at p. 725 (of SCR) : (at p. 260 of AIR) were thus formulated\u201a. 143. This Court in a judgment reported at Kranti Associates held as under: \u20ac47."
+    },
+    {
+      "chunk_index": 193,
+      "text": "This rule has since been approved by this Court in Rao Shiv Bahadur Singh v. State of Vindhya Pradesh, 1954 SCR 1098 and again in Deep Chand v. State of Rajasthan, (1962) 1 SCR 662. These cases were considered by a Three Judge Bench of this Court in State of Uttar Pradesh v. Singhara Singh, AIR 1964 Supreme Court 358 and the rule laid down in Nazir Ahmad's case (supra) was again upheld. The rule has since been applied to the exercise of jurisdiction by Courts and has also been recognised as a salutary principle of administrative law.\u201a 150. A Constitution Bench in a judgment reported as CIT v. Anjum M.H. Ghaswala75 reiterated that when a statute vests certain power in an authority to be exercised in a particular manner, then the said authority has to exercise the same only in the manner prescribed by the statute itself. It was held as under:- \u20ac27."
+    }
+  ],
+  "raw_response": "{\"issue\": \"Whether the High Court erred in directing all issues to be determined by the Wakf Tribunal, and whether the Wakf Tribunal has exclusive jurisdiction to deal with the question of whether the land is a wakf property or not.\", \n\"rule\": \"The High Court can decline to exercise its jurisdiction under Article 226 of the Constitution if there is an alternative statutory remedy available to the parties. The Wakf Tribunal has been statutorily conferred with exclusive jurisdiction to deal with the question of whether the land is a wakf property or not.\", \n\"application\": \"The appellants argued that the High Court erred in directing all issues to be determined by the Wakf Tribunal. However, the Court held that the discretion exercised by the High Court to direct all issues to be determined by the Wakf Tribunal does not require any interference by the Court.\", \n\"conclusion\": \"The Court found no merit in the arguments raised by the appellants and upheld the order of the High Court.\", \n\"authorities\": [\n  \"Whirlpool Corporation v. Registrar of Trade Marks, Mumbai & Ors.\",\n  \"Commissioner of Income Tax & Ors. v. Chhabil Dass Agarwal\",\n  \"Director of Settlements, A.P. & Ors. v. M.R. Apparao & Anr.\",\n  \"T.R. Varma v. State of U.P.\",\n  \"Rao Shiv Bahadur Singh v. State of Vindhya Pradesh\",\n  \"Deep Chand v. State of Rajasthan\",\n  \"State of Uttar Pradesh v. Singhara Singh\",\n  \"CIT v. Anjum M.H. Ghaswala\"\n]}",
+  "decade": "2020",
+  "n_real_edges": 65
+}

@@ -1,0 +1,182 @@
+{
+  "doc_id": "49625991",
+  "filename": "Indore_Development_Authority_vs_Manoharlal_And_Ors_Etc_on_6_March_2020_1.PDF",
+  "year": "2020",
+  "system": "rag",
+  "irac": {
+    "issue": "Whether clause (d) of the Indore Development Authority's regulations can be applied retrospectively to housing projects already approved by local authorities.",
+    "rule": "A statute is presumed not to have intended to alter the law applicable to past events and transactions in a manner which is unfair to those concerned in them, unless a contrary intention appears.",
+    "application": "The Supreme Court applied this rule to hold that clause (d) is to be treated as inextricably linked with the approval and construction of the housing project and an assessee cannot be called upon to comply with the said condition when it was not in contemplation either of the assessee or even the legislature, when the housing project was accorded approval by the local authorities.",
+    "conclusion": "The Court held that the only way to resolve the issue would be to hold that clause (d) is to be treated as inextricably linked with the approval and construction of the housing project and an assessee cannot be called upon to comply with the said condition when it was not in contemplation either of the assessee or even the legislature, when the housing project was accorded approval by the local authorities."
+  },
+  "authority_results": [
+    {
+      "cited": "Secretary of State for Social Security v Tunnicliffe",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Yamashita-Shinnihon Steamship Co. Ltd.v L'office Chefifien Des Phosphates & Anr",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "The Ydun",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "Yew Bon Tew v. Kenderaan Bas Mara",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Maxwell v. Murphy",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Gloucester Union v. Woolwich Union",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Reg v. Tipton Inhabitants",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Dorking Union v. St. Saviour\u0192s Union",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Reliance Jute and Industries Ltd. v. CIT",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1340757",
+        "matched_cited_text": "Reliance Jute & Industries Ltd vs C.I.T., West Bengal, Calcutta",
+        "n_matching_edges": 2
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Hannah Blumenthal v. The Bermuda Government",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Bermer Vulkan",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Commissioner of Income Tax, New Delhi v. M/s. East West Import and Export (P) Ltd",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "756481",
+        "matched_cited_text": "Commissioner Of Income-Tax, New ... vs East West Import & Export (P) Ltd.,(Now ...",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Mary Angel and Ors. v. State of T.N.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1262371",
+        "matched_cited_text": "Mary Angel & Ors vs State Of Tamil Nadu",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Dean v. Wiesengrund",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": [
+    {
+      "chunk_index": 19,
+      "text": "Reliance was placed on Secretary of State for Social Security v Tunnicliffe5, to the effect that: \u25a1Parliament is presumed not to have intended to alter the law applicable to past events and transactions in a manner which is unfair to those concerned in them, unless a contrary intention appears\u201a. The learned SG also referred to the later judgment of the House of Lords which dealt with the said question. It is submitted that sitting in a combination of eight judges, in Yamashita-Shinnihon Steamship Co. Ltd.v L'office Chefifien Des Phosphates & Anr 6, where it was held that retrospective application of a statute can be made only when it does not [1991] 2 All ER 712 [1994] 1 A.C. 486, where it was held that: Indore Development Authority vs Manoharlal And Ors. Etc. on 6 March, 2020 Indian Kanoon - http://indiankanoon.org/doc/49625991/ 8 \"The rule that a person should not be held liable or punished for conduct not criminal when committed is fundamental and of long standing. It is reflected in the maxim nullum crimen nulla poena sine lege. It is protected by article 7 of the European Convention for the Protection of Human Rights and Fundamental Freedoms (1953) (Cmd. 8969)."
+    },
+    {
+      "chunk_index": 83,
+      "text": "It further states that the maxim may provide some limited assistance to court in two broad types of situation: \u25a1The first is when there is some uncertainty as to the scope of a particular rule of principle, and a court has to fall back on more basic principles to resolve that uncertainty. The second is when a court is exercising an equitable discretion, and seeks to structure that exercise by referring to broader, underlying principles.\u201a Indore Development Authority vs Manoharlal And Ors. Etc. on 6 March, 2020 Indian Kanoon - http://indiankanoon.org/doc/49625991/ 26 70. Learned counsel further placed reliance on a three-judge Bench decision of this Court in The Commissioner of Sales Tax v."
+    },
+    {
+      "chunk_index": 259,
+      "text": "Rather it may well be a matter of degree \u2020 the greater the unfairness, the more it is to be expected that Parliament will make it clear if that is intended.\u201a The distinction between rights and procedure, and unfairness and fairness, may well overlap. Thus, if a limitation period is shortened but a plaintiff has time to sue before expiry of the shortened period, he is likely to be statute-barred if he does not sue within the shortened period (see The Ydun [1899] P. 236.); but if a limitation period is extended after a previous shorter limitation period has already expired, the plaintiff will be unable to take advantage of the new period because an absolute defence has by then accrued to the defendant and it would not be fair to deprive him of it: See Yew Bon Tew v. Kenderaan Bas Mara [1983] 1 A.C. 553 and Maxwell v. Murphy (1957) 96 C.L.R. 261. Further, Lord Griffiths, Lord Goff of Chieveley and Lord Slynn of Hadley, held as under: \u25a1The principle governing the proper approach to a statutory provision alleged to have retrospective effect has been stated in a number of different ways, but no difference of substance is revealed by the authorities."
+    },
+    {
+      "chunk_index": 264,
+      "text": "A retrospective alteration to the legitimate expectations of the parties as to the consequences of their conduct at the time it occurred would be contrary to the principles of legal and commercial certainty that formed part of the grounds on which the House of Lords declined in Hannah Blumenthal to depart from Bermer Vulkan: see pp. 913C, 917D, 922H.\u201a (emphasis supplied) 155. Reliance was placed on Gloucester Union v. Woolwich Union114, with respect to effect on existing rights wherein following observations have been made: \u25a1Before considering the legal effect of art. xxxi. of this Order it is necessary, we think, to bear in mind that by the common law, upon such a division of the parish of Upton St. Leonard\u0192s, any settlement already acquired in that parish would have been lost: see Reg v. Tipton Inhabitants 3; Dorking Union v. St. Saviour\u0192s Union. The purpose and effect of par. 1 of art. xxxi is to get rid of this difficulty and preserve the settlements that have been already acquired before the commencement of the Order."
+    },
+    {
+      "chunk_index": 275,
+      "text": "We, thus, find that the only way to resolve the issue would be to hold that clause (d) is to be treated as inextricably linked with the approval and construction of the housing project and an assessee cannot be called upon to comply with the said condition when it was not in contemplation either of the assessee or even the legislature, when the housing project was accorded approval by the local authorities. 26. Having regard to the above, let us take note of the special features which appear in these cases: 26.1. In the present case, the approval of the housing project, its scope, definition and conditions, are all decided by and are dependent on the provisions of the relevant DC Rules. In contrast, the judgment in Reliance Jute and Industries Ltd. v. CIT, (1980) 1 SCC 139 was concerned with income tax only. 26.2. The position of law and the rights accrued prior to enactment of the Finance Act, 2004 have to be taken into account, particularly when the position becomes irreversible. 26.3."
+    },
+    {
+      "chunk_index": 363,
+      "text": "Etc. on 6 March, 2020 Indian Kanoon - http://indiankanoon.org/doc/49625991/ 113 stultification of statutory objective the language may be modified sufficiently to avoid such disadvantage, though no further\". The Rules stated above have been quoted with approval by the Supreme Court.......\u201a (emphasis supplied) 216. The same work also notes that when two different expressions are used in the same provision of a statute, there is a presumption that they are not used in the same sense. The following passage is relevant (Principles of Statutory Interpretation by Justice G.P. Singh at page 395): \u25a1.......When in relation to the same subject matter, different words are used in the same statute, there is a presumption that they are not used in the same sense."
+    },
+    {
+      "chunk_index": 373,
+      "text": "But if A mortgages Black-acre to X and mortgages White-acre to Y, the two transactions fall under the same category, but they would certainly be distinct matters. If the intention of the legislature was that the expression \u2026distinct matters\u0192 in S. 5 should be understood not in its popular sense but narrowly as meaning different categories in the Schedule, nothing would have been easier than to say so. When two words of different import are used in a statute in two consecutive provisions, it would be difficult to maintain that they 1955 (2) SCR 842, are used in the same sense, and the conclusion must follow that the expression \u25a1distinct matters\u201a in S. 5 and \u25a1descriptions\u201a in section 6 have different connotations.\u201a (emphasis supplied) 222. In Commissioner of Income Tax, New Delhi v. M/s. East West Import and Export (P) Ltd149, it was observed as under: \u25a17. The Explanation has reference to the point of time at two places: the first one has been stated as \u25a1at the end of the previous year\u201a and the second, which is in issue, is \u25a1in the course of such previous year\u201a."
+    },
+    {
+      "chunk_index": 503,
+      "text": "There is no doubt that common law principles have to be weighed upon the statutory provision and latter has to prevail, but the statutory provision itself makes it clear that in the instant matter such period has to be excluded, thus, the principles of common law also apply with full 2013 (10) SCC 746 force. In Mary Angel and Ors. v. State of T.N.201, the maxim \"expressio unius est exclusio alterius\" came to be considered by this Court. It was held that maxim needs to be applied when its application having regard to the subject matter to which it is to be applied, leads to inconsistency or injustice. This Court observed: \u25a119. Further, for the rule of interpretation on the basis of the maxim \u25a1expressio unius est exclusio alterius,\" it has been considered in the decision rendered by the Queen's Bench in the case of Dean v. Wiesengrund, (1955) 2 QB 120."
+    }
+  ],
+  "raw_response": "```json\n{\n  \"issue\": \"Whether clause (d) of the Indore Development Authority's regulations can be applied retrospectively to housing projects already approved by local authorities.\",\n  \"rule\": \"A statute is presumed not to have intended to alter the law applicable to past events and transactions in a manner which is unfair to those concerned in them, unless a contrary intention appears.\",\n  \"application\": \"The Supreme Court applied this rule to hold that clause (d) is to be treated as inextricably linked with the approval and construction of the housing project and an assessee cannot be called upon to comply with the said condition when it was not in contemplation either of the assessee or even the legislature, when the housing project was accorded approval by the local authorities.\",\n  \"conclusion\": \"The Court held that the only way to resolve the issue would be to hold that clause (d) is to be treated as inextricably linked with the approval and construction of the housing project and an assessee cannot be called upon to comply with the said condition when it was not in contemplation either of the assessee or even the legislature, when the housing project was accorded approval by the local authorities.\",\n  \"authorities\": [\n    \"Secretary of State for Social Security v Tunnicliffe\",\n    \"Yamashita-Shinnihon Steamship Co. Ltd.v L'office Chefifien Des Phosphates & Anr\",\n    \"The Ydun\",\n    \"Yew Bon Tew v. Kenderaan Bas Mara\",\n    \"Maxwell v. Murphy\",\n    \"Gloucester Union v. Woolwich Union\",\n    \"Reg v. Tipton Inhabitants\",\n    \"Dorking Union v. St. Saviour\u0192s Union\",\n    \"Reliance Jute and Industries Ltd. v. CIT\",\n    \"Hannah Blumenthal v. The Bermuda Government\",\n    \"Bermer Vulkan\",\n    \"Commissioner of Income Tax, New Delhi v. M/s. East West Import and Export (P) Ltd\",\n    \"Mary Angel and Ors. v. State of T.N.\",\n    \"Dean v. Wiesengrund\"\n  ]\n}\n```",
+  "decade": "2020",
+  "n_real_edges": 296
+}

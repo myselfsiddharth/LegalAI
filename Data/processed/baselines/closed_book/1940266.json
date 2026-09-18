@@ -1,0 +1,64 @@
+{
+  "doc_id": "1940266",
+  "filename": "Kunhayammed_Ors_vs_State_Of_Kerala_Anr_on_19_July_2000_1.PDF",
+  "year": "2000",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether a reference to a larger bench can be made under Article 138(1) of the Constitution of India, and the implications of the Supreme Court's power to review its own judgments.",
+    "rule": "The Supreme Court's power to review its own judgments is derived from Article 137 of the Constitution of India, and a reference to a larger bench can be made under Article 138(1) if the interests of justice so require.",
+    "application": "The court analyzed the provisions of Articles 137 and 138(1) of the Constitution of India and held that a review petition can be entertained even if there is no error apparent on the face of the record, and that a reference to a larger bench can be made if the interests of justice so require.",
+    "conclusion": "The court allowed the review petition and referred the matter to a larger bench, holding that the Supreme Court has the power to review its own judgments and that a reference to a larger bench can be made under Article 138(1) of the Constitution of India."
+  },
+  "authority_results": [
+    {
+      "cited": "Union of India v. Madhu Limaye",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "R.D. Saxena v. Balram Prasad Sharma",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Wamanrao v. State of Maharashtra",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "D.C. Sharma v. Union of India",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Raja Ram Pal v. Hon'ble Speaker, Legislative Assembly",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether a reference to a larger bench can be made under Article 138(1) of the Constitution of India, and the implications of the Supreme Court's power to review its own judgments.\",\n  \"rule\": \"The Supreme Court's power to review its own judgments is derived from Article 137 of the Constitution of India, and a reference to a larger bench can be made under Article 138(1) if the interests of justice so require.\",\n  \"application\": \"The court analyzed the provisions of Articles 137 and 138(1) of the Constitution of India and held that a review petition can be entertained even if there is no error apparent on the face of the record, and that a reference to a larger bench can be made if the interests of justice so require.\",\n  \"conclusion\": \"The court allowed the review petition and referred the matter to a larger bench, holding that the Supreme Court has the power to review its own judgments and that a reference to a larger bench can be made under Article 138(1) of the Constitution of India.\",\n  \"authorities\": [\n    \"Union of India v. Madhu Limaye\",\n    \"R.D. Saxena v. Balram Prasad Sharma\",\n    \"Wamanrao v. State of Maharashtra\",\n    \"D.C. Sharma v. Union of India\",\n    \"Raja Ram Pal v. Hon'ble Speaker, Legislative Assembly\"\n  ]\n}\n```",
+  "decade": "2000",
+  "n_real_edges": 20
+}

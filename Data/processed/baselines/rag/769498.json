@@ -1,0 +1,200 @@
+{
+  "doc_id": "769498",
+  "filename": "Narmada_Bachao_Andolan_vs_State_Of_M_P_Anr_on_11_May_2011_1.PDF",
+  "year": "2011",
+  "system": "rag",
+  "irac": {
+    "issue": "Whether the NWDT Award provided for any entitlement of major sons to allotment of agricultural land, and if not, whether the judgment in Narmada Bachao Andolan -I could have been considered as a precedent in Narmada Bachao Andolan-II, and whether the High Court has rightly interpreted the terms and conditions of the R & R Policy.",
+    "rule": "A judgment may not be followed in a given case if it has some distinguishing features. The Court should not place reliance upon a judgment without discussing how the factual situation fits in with a fact-situation of the decision on which reliance is placed. A little difference in facts or additional facts may make a lot of difference to the precedential value of a decision. The Courts are not to perpetuate an illegality, rather it is the duty of the courts to rectify mistakes.",
+    "application": "The NWDT Award did not provide for allotment of agricultural land to the major sons of such oustees. The States of Gujarat and Maharashtra had given concessions/relief over and above the said Award. The High Court has wrongly interpreted the R & R Policy by adding words like 'larger land owning family' and 'bigger family'.",
+    "conclusion": "The Court should rectify the mistake and not perpetuate an illegality. The claims of the respondents, if accepted, and the High Court judgment if upheld, would lead to unwarranted results."
+  },
+  "authority_results": [
+    {
+      "cited": "Municipal Corporation of Delhi v. Gurnam Kaur, AIR 1989 SC 38",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "327169",
+        "matched_cited_text": "Municipal Corporation of Delhi v. Gurnam Kaur",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Govt. of Karnataka & Ors. v. Gowramma & Ors., AIR 2008 SC 863",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1786018",
+        "matched_cited_text": "Govt. of Karnataka & Ors. v. Gowramma & Ors.",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "State of Haryana & Anr. v. Dharam Singh & Ors. (2009) 4 SCC 340",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1619581",
+        "matched_cited_text": "State of Haryana & Anr. v. Dharam Singh & Ors.",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "India Cement Ltd. etc. etc. v. State of Tamil Nadu etc. etc., AIR 1990 SC 85",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "State of West Bengal v. Kesoram Industries Ltd. & Ors., (2004) 10 SCC 201",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1035057",
+        "matched_cited_text": "State of West Bengal v. Kesoram Industries Ltd. & Ors.",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Mamleshwar Prasad & Anr. v. Kanhaiya Lal (Dead) by Lrs., AIR 1975 SC 907",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "538289",
+        "matched_cited_text": "Mamleshwar Prasad & Anr. v. Kanhaiya Lal (Dead) by Lrs.",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "A.R. Antulay v. R.S. Nayak, AIR 1988 SC 1531",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1353689",
+        "matched_cited_text": "A.R. Antulay v. R.S. Nayak",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "State of U.P. & Anr. v. Synthetics and Chemicals Ltd. & Anr., (1991) 4 SCC 139",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1488034",
+        "matched_cited_text": "State of U.P. & Anr. v. Synthetics and Chemicals Ltd. & Anr.",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Siddharam Satlingappa Mhetre v. State of Maharashtra & Ors., (2011) 1 SCC 694",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1108032",
+        "matched_cited_text": "Siddharam Satlingappa Mhetre v. State of Maharashtra & Ors.",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Hotel Balaji & Ors. etc. etc. v. State of A.P. & Ors. etc. etc., AIR 1993 SC 1048",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Nirmal Jeet Kaur v. Collector of Central Excise, (1990) 4 SCC 680",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "S.P. Gupta & Ors. v. Union of India & Ors., AIR 1982 SC 149",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1938608",
+        "matched_cited_text": "Narmada Bachao Andolan v. Union of India & Ors.",
+        "n_matching_edges": 12
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "P.K. Unni v. Nirmala Industries & Ors., AIR 1990 SC 933",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1544426",
+        "matched_cited_text": "P.K. Unni v. Nirmala Industries & Ors.",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Commissioner of Income Tax, Kerala v. Tara Agencies, (2007) 6 SCC 429",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "329415",
+        "matched_cited_text": "Commissioner of Income Tax, Kerala v. Tara Agencies",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": [
+    {
+      "chunk_index": 64,
+      "text": "In view of the above, this Court has to consider as to whether the NWDT Award provided for any entitlement of major sons to allotment of agricultural land, and if not, whether the judgment in Narmada Bachao Andolan -I could have been considered as a precedent in Narmada Bachao Narmada Bachao Andolan vs State Of M.P. & Anr on 11 May, 2011 Indian Kanoon - http://indiankanoon.org/doc/769498/ 24 Andolan -II, and whether the High Court has rightly interpreted the terms and conditions of the R & R Policy, as the High Court has proceeded with the assumption that the R & R Policy provides that major sons of oustees i.e. the \"large land owning families\" and those who had been \"part of the bigger family\" would be entitled for allotment of agricultural land. PRECEDENCE -Doctrine: 59. The Court should not place reliance upon a judgment without discussing how the factual situation fits in with a fact-situation of the decision on which reliance is placed, as it has to be ascertained by analysing all the material facts and the issues involved in the case and argued on both sides. A judgment may not be followed in a given case if it has some distinguishing features."
+    },
+    {
+      "chunk_index": 65,
+      "text": "A little difference in facts or additional facts may make a lot of difference to the precedential value of a decision. A judgment of the Court is not to be read as a statute, as it is to be remembered that judicial utterances have been made in setting of the facts of a particular case. One additional or different fact may make a world of difference between the conclusions in two cases. Disposal of cases by blindly placing reliance upon a decision is not proper. (Vide: Municipal Corporation of Delhi v. Gurnam Kaur, AIR 1989 SC 38; Govt. of Karnataka & Ors. v. Gowramma & Ors., AIR 2008 SC 863; and State of Haryana & Anr. v. Dharam Singh & Ors. (2009) 4 SCC 340). PER INCURIAM - Doctrine: 60. Incuria\" literally means \"carelessness\". In practice per incuriam is taken to mean per ignoratium. The Courts have developed this principle in relaxation of the rule of stare decisis. Thus, the \"quotable in law\" is avoided and ignored if it is rendered, in ignorance of a Statute or other binding authority. While dealing with observations made by a seven Judges' Bench in India Cement Ltd. etc. etc. v. State of Tamil Nadu etc. etc., AIR 1990 SC 85, the five Judges' Bench in State of West Bengal v."
+    },
+    {
+      "chunk_index": 66,
+      "text": "Kesoram Industries Ltd. & Ors., (2004) 10 SCC 201, observed as under:- \"A doubtful expression occurring in a judgment, apparently by mistake or inadvertence, ought to be read by assuming that the Court had intended to say only that which is correct according to the settled position of law, and the apparent error should be ignored, far from making any capital out of it, giving way to the correct expression which ought to be implied or necessarily read in the context, .......... A statement caused by an apparent typographical or inadvertent error in a judgment of the Court should not be misunderstood as declaration of such law by the Court.\" (Emphasis added) (See also Mamleshwar Prasad & Anr. v. Kanhaiya Lal (Dead) by Lrs., AIR 1975 SC 907; A.R. Antulay v. R.S. Nayak, AIR 1988 SC 1531; State of U.P. & Anr. v. Synthetics and Chemicals Ltd. & Anr., (1991) 4 SCC 139; and Siddharam Satlingappa Mhetre v. State of Maharashtra & Ors., (2011) 1 SCC 694). 61."
+    },
+    {
+      "chunk_index": 67,
+      "text": "Thus, \"per incuriam\" are those decisions given in ignorance or forgetfulness of some statutory provision or authority binding on the Court concerned, or a statement of law caused by inadvertence Narmada Bachao Andolan vs State Of M.P. & Anr on 11 May, 2011 Indian Kanoon - http://indiankanoon.org/doc/769498/ 25 or conclusion that has been arrived at without application of mind or proceeded without any reason so that in such a case some part of the decision or some step in the reasoning on which it is based, is found, on that account to be demonstrably wrong. 62. Admittedly, the NWDT Award did not provide for allotment of agricultural land to the major sons of such oustees. The States of Gujarat and Maharashtra had given concessions/relief over and above the said Award. Thus, the Narmada Bachao Andolan-I has been decided with presumption that such a right had been conferred upon major sons by the NWDT Award and Narmada Bachao Andolan-II has been decided following the said judgment and interpreting the definition of \"family\" contained in the R & R Policy."
+    },
+    {
+      "chunk_index": 68,
+      "text": "When the two earlier cases were being considered by the Court, it had not been brought to its notice that the NWDT Award did not provide for such an entitlement. In such cases, the issue is further required to be considered as to whether, as we will consider the definition of the word \"family\" at a later stage, the mistake inadvertently committed by this Court earlier, should be perpetuated. 63. The Courts are not to perpetuate an illegality, rather it is the duty of the courts to rectify mistakes. While dealing with a similar issue, this Court in Hotel Balaji & Ors. etc. etc. v. State of A.P. & Ors. etc. etc., AIR 1993 SC 1048 observed as under: \"...To perpetuate an error is no heroism. To rectify it is the compulsion of judicial conscience. In this, we derive comfort and strength from the wise and inspiring words of Justice Bronson in Pierce v. Delameter (A.M.Y. at page 18: `a Judge ought to be wise enough to know that he is fallible and, therefore, ever ready to learn: great and honest enough to discard all mere pride of opinion and follow truth wherever it may lead: and courageous enough to acknowledge his errors\". (See also Nirmal Jeet Kaur v."
+    },
+    {
+      "chunk_index": 71,
+      "text": "Collector of Central Excise, (1990) 4 SCC 680, this Court held that when discrimination is glaring, the State cannot take recourse to inadvertence in its action resulting in discrimination. In a case where denial of equal protection is complained of and the denial flows from such action and has a direct impact on the fundamental rights of the complainant, a constructive approach to remove the discrimination by putting the complainant in the same position as others enjoying favourable treatment by inadvertence of the State authorities, is required. 69. The High Court while passing the order had given a much wider interpretation to the R & R Policy making reference to the terms as \"bigger family\" and the \"large land owning family\". The Court while interpreting the provisions of a Statute, can neither add nor subtract a word. The legal maxim \"a verbis legis non est recedendum\" means from the words of law, there must be no departure. (See: S.P. Gupta & Ors. v. Union of India & Ors., AIR 1982 SC 149; P.K. Unni v. Nirmala Industries & Ors., AIR 1990 SC 933; and Commissioner of Income Tax, Kerala v. Tara Agencies, (2007) 6 SCC 429). INTERPRETATION OF STATUTE: 70."
+    },
+    {
+      "chunk_index": 79,
+      "text": "In case, the view taken by the High Court is upheld, it would have very serious repercussions for the reason that no land had been acquired wherein a major son can independently claim compensation as a matter of right. In such an eventuality, the question of retaining 50 per cent of the compensation could not arise. If it were allowed, it would create hostile discrimination against others like landless persons who have been found to be non-suited by the High Court in the impugned judgment. The High Court has added words like \"larger land owning family\" and \"bigger family\" to justify the relief given to major sons even though such terms do not appear in the R & R Policy or either of the judgments given by this Court earlier. The charts hereinabove make it crystal clear that there was no provision for allotment of land to major sons in the NWDT Award. Obviously, it has wrongly been mentioned in the earlier judgments of this Court by inadvertence. This requires correction as such an error cannot be perpetuated. The claims of the respondents, if accepted, and the High Court judgment if upheld, would lead to unwarranted results."
+    },
+    {
+      "chunk_index": 80,
+      "text": "For some of the families having a large number of major sons, it would lead to a level of unjust enrichment that could never have been envisaged by the Government of Madhya Pradesh. The view taken by the High Court gives rise to pre-supposition (a fiction) of partition of agricultural land amongst the tenure-holder and his major sons. Such a concept would defeat the right of minor sons for partition or claiming the share in the agricultural land and also lead to uncertainty as to whether 75% of the total land of the major son, after partition stood acquired. The plea of discrimination is not available to such major sons of the families, whose land has been acquired for this project, as they cannot be put at par with the major sons of the oustees of the Sardar Sarovar Project. Even if the plea is tenable, such discrimination cannot be held to be conscious or intentional as the State is willing to rectify the mistake. The State has filed an application to rectify the mistake in the judgment of 2005, as I.A. No. 37 of 2009 for clarification/modifications of the said judgment which is pending consideration."
+    }
+  ],
+  "raw_response": "```\n{\n  \"issue\": \"Whether the NWDT Award provided for any entitlement of major sons to allotment of agricultural land, and if not, whether the judgment in Narmada Bachao Andolan -I could have been considered as a precedent in Narmada Bachao Andolan-II, and whether the High Court has rightly interpreted the terms and conditions of the R & R Policy.\",\n  \"rule\": \"A judgment may not be followed in a given case if it has some distinguishing features. The Court should not place reliance upon a judgment without discussing how the factual situation fits in with a fact-situation of the decision on which reliance is placed. A little difference in facts or additional facts may make a lot of difference to the precedential value of a decision. The Courts are not to perpetuate an illegality, rather it is the duty of the courts to rectify mistakes.\",\n  \"application\": \"The NWDT Award did not provide for allotment of agricultural land to the major sons of such oustees. The States of Gujarat and Maharashtra had given concessions/relief over and above the said Award. The High Court has wrongly interpreted the R & R Policy by adding words like 'larger land owning family' and 'bigger family'.\",\n  \"conclusion\": \"The Court should rectify the mistake and not perpetuate an illegality. The claims of the respondents, if accepted, and the High Court judgment if upheld, would lead to unwarranted results.\",\n  \"authorities\": [\n    \"Municipal Corporation of Delhi v. Gurnam Kaur, AIR 1989 SC 38\",\n    \"Govt. of Karnataka & Ors. v. Gowramma & Ors., AIR 2008 SC 863\",\n    \"State of Haryana & Anr. v. Dharam Singh & Ors. (2009) 4 SCC 340\",\n    \"India Cement Ltd. etc. etc. v. State of Tamil Nadu etc. etc., AIR 1990 SC 85\",\n    \"State of West Bengal v. Kesoram Industries Ltd. & Ors., (2004) 10 SCC 201\",\n    \"Mamleshwar Prasad & Anr. v. Kanhaiya Lal (Dead) by Lrs., AIR 1975 SC 907\",\n    \"A.R. Antulay v. R.S. Nayak, AIR 1988 SC 1531\",\n    \"State of U.P. & Anr. v. Synthetics and Chemicals Ltd. & Anr., (1991) 4 SCC 139\",\n    \"Siddharam Satlingappa Mhetre v. State of Maharashtra & Ors., (2011) 1 SCC 694\",\n    \"Hotel Balaji & Ors. etc. etc. v. State of A.P. & Ors. etc. etc., AIR 1993 SC 1048\",\n    \"Nirmal Jeet Kaur v. Collector of Central Excise, (1990) 4 SCC 680\",\n    \"S.P. Gupta & Ors. v. Union of India & Ors., AIR 1982 SC 149\",\n    \"P.K. Unni v. Nirmala Industries & Ors., AIR 1990 SC 933\",\n    \"Commissioner of Income Tax, Kerala v. Tara Agencies, (2007) 6 SCC 429\"\n  ]\n}\n```",
+  "decade": "2010",
+  "n_real_edges": 74
+}

@@ -1,0 +1,114 @@
+{
+  "doc_id": "895706",
+  "filename": "Chandavarkar_Sita_Ratna_Rao_vs_Ashalata_S_Guram_on_25_September_1986_1.PDF",
+  "year": "1986",
+  "system": "rag",
+  "irac": {
+    "issue": "Whether the High Court exceeded its jurisdiction in interfering with the finding of facts made by the appellate bench of the Court of Small Causes and whether the High Court was correct in its construction of the provisions of section 15A of the Bombay Rents, Hotel and Lodging House Rates Control Act, 1947.",
+    "rule": "The High Court's jurisdiction under Article 227 of the Constitution is limited to ensuring that the lower courts are functioning within their jurisdiction and not to re-appreciate evidence or substitute its own views for those of the lower courts. The expression 'notwithstanding' in a statute conveys a different meaning than 'subject to'.",
+    "application": "The High Court exceeded its jurisdiction in interfering with the finding of facts made by the appellate bench of the Court of Small Causes. The High Court was also incorrect in its construction of the provisions of section 15A of the Bombay Rents, Hotel and Lodging House Rates Control Act, 1947, specifically with regard to the validity of a licence created by a statutory tenant.",
+    "conclusion": "The judgment under appeal is not sustainable. The High Court exceeded its jurisdiction and was incorrect in its construction of section 15A of the Act."
+  },
+  "authority_results": [
+    {
+      "cited": "D.N. Banerji v. P.R. Mukharjee & Ors.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1785601",
+        "matched_cited_text": "D.N. Banerji v. P.R. Mukharjee & Ors.",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Babhutmal Raichand Oswal v. Laxmibai R. Tarte and another",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "R. v. Nothrumberland Compensation Appeal Tribunal, Ex. Parte Shaw",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Harbans Lal v. Jagmohan Saran",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "227988",
+        "matched_cited_text": "Harbans Lal v. Jagmohan Saran",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Trimbak Gangadhar Telang and Another v. Ram Chandra Ganesh Bhide and Others",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1205487",
+        "matched_cited_text": "Trimbak Gangadhar Telang and Another v. Ram Chandra Ganesh Bhide and Others",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Waman Shrinivas Kini v. Ratilal Bhagwandas & Co.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1613617",
+        "matched_cited_text": "Waman Shrinivas Kini v. Ratilal Bhagwandas & Co.",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": [
+    {
+      "chunk_index": 10,
+      "text": "Except to that limited extent the High Court has no jurisdiction. [883G-H; 884A] 1.3 The Courts must not use the power under Article 227 as a cloak of an appeal in disguise. The writ of Certiorari does not lie in order to bring up an order or decision for rehearing of the issues raised in the proceedings. [883D-E] In the instant case, both the trial court and the appellate court 870 after discussing the evidence had come to the conclusion that the appellant was in possession on or before 1st February, 1973. The trial court had expressed doubt about Ex. A but ultimately accepted the position. The appellate court had observed that it could not be said that it was a concocted story and concluded that there was a licence. Though there were discrepancies in the evidence of the obstructionists and there was inconsistency in the conduct of the judgment-debtor in resisting the suit, yet all these were for the Court's finding facts. The very fact that the trial court came to one conclusion and the appellate court came to another conclusion in respect of certain aspects was an indication of the position that two views were possible."
+    },
+    {
+      "chunk_index": 11,
+      "text": "In preferring one view to another of factual appreciation of evidence, the High Court transgressed its limits of jurisdiction under Article 227 of the Constitution. [884B-C] D.N. Banerji v. P.R. Mukharjee & Ors., [1953] SCR 302 at 305; Babhutmal Raichand Oswal v. Laxmibai R. Tarte and another, AIR 1975 SC 1297; R. v. Nothrumberland Compensation Appeal Tribunal, Ex. Parte Shaw, [1952] (1) All England Law Reports 122 at 128; Harbans Lal v. Jagmohan Saran, [1985] 4 SCC 333; Trimbak Gangadhar Telang and Another v. Ram Chandra Ganesh Bhide and Others, [1977] 2 SCC 437; and Smt. M.M. Amonkar and Others v. Dr. S.A."
+    },
+    {
+      "chunk_index": 24,
+      "text": "The High Court set aside the factual findings that there was a valid licence at the time of the coming into operation of Section 15A of the Bombay Rents, Hotel and Lodging House Rates Control Act, 1947 (hereinafter called the 'Act'). The Full Bench of the High Court had in the meantime considered the question whether a statutory tenant governed by the Act could have created a valid licence before 1973. The Full Bench of the High Court in Writ Petition No. 76 of 1980- Ratanlal Chandiprasad v. Raniram Darkhan etc. 18th October, 1985, had held that unless the contractual tenant had been given a specific right to create a licence, the licence created without a specific clause in their agreement of sub-lease would not be a licence entitling protection under section 15A of the Act. Relying on the said Full Bench decision, the learned single judge of the High Court in the Judgment under appeal held that since in this case as in the terms of agreement of sub- lease, there was no right to create licence in the tenant, the tenant could not have created a valid licence in favour of the appellant. The licensee being the obstructionist lost."
+    },
+    {
+      "chunk_index": 45,
+      "text": "In preferring one view to another of factual appreciation of evidence, the High Court transgressed its limits of jurisdiction under article 227 of the Constitution. On the first point, therefore, the High Court was in error. But the findings of the High Court on the factual aspect would not help the appellant to become a licensee under section 15A of the said Act. It is to that question, therefore, attention must be given. On the construction of section 15A of the said Act, the learned judge followed the decision of the Full Bench of that High Court in Writ Petition No. 76 of 1980 in Ratanlal Chandiprasad Jalan etc. v. Raniram Darkhan etc. (supra) judgment delivered on 18th October, 1985. In several cases before Bombay High Court there were several conflicting decisions on this question."
+    },
+    {
+      "chunk_index": 46,
+      "text": "Therefore, the reference was made to the full bench for its determination on the following: \"(i) Whether a statutory tenant governed by the Bombay Rent Act retains heritable interest in the premises? (ii) Whether a statutory tenant governed by the Bombay Rent Act retains transferable interest in the premises? (iii) Whether a statutory tenant governed by the Bombay Rent Act could have created a valid licence before 1973? (iv) Whether Vasant Tatoba Hargude & Others v. Dikkaya Muttaya Pujari (AIR 1980 Bom. 341) and Chandrakant Kashinath Thakur & Others v. Narayan Lakhanna Shetty & Others (First Appeal No. 754 of 1978) were correctly decided?\" In this appeal the controversy before us is concerned only on question No. 3 referred to hereinbefore. The answer given by the Full Bench on the other questions need not detain us, though we may briefly note these. The full bench after exhaustive discussion answered question No. 1 referred to hereinbefore in the affirmative and added only to the extent provided by section 5(11) (c) of the said Act. Question No. 2 was answered in the affirmative but only if he had such transferable interest as a contractual tenant."
+    },
+    {
+      "chunk_index": 49,
+      "text": "In other words, the effect of the decision of the Full Bench of the said High Court was that in cases where there was no specific agreement granting the tenant a right to transfer the terms of his contract, termination of his tenancy did not entitle him to be able to give a valid licence. Such licence would be invalid and as such could not be considered to be subsisting at the time of the coming into operation of the provisions of section 15A of the said Act, i.e., on 1st February, 1973. It is the validity of this proposition that is at issue in this appeal. In order to appreciate the historical perspective, it may not be inappropriate to refer to the decision in Waman Shrinivas Kini v. Ratilal Bhagwandas & Co., [1959] 2 Suppl. SCR 217. The appellant there was a tenant originally in the old building but after it was purchased by the respondent in the new premises. In the old premises the appellant had sub- tenant who shifted to the new premises along with the appellant when the latter occupied the said premises."
+    },
+    {
+      "chunk_index": 86,
+      "text": "Doncaster Amalgamated Collieries, Ltd., [1940] A.C. 1014 at 1022 where the grammatical construction is clear and manifest and without doubt that construction ought to prevail unless there are some strong and obvious reasons to the contrary. In this case there is none. It appears to be clear that all licensees who were there on 1st February, 1973 were to be protected and subsequent licences were made illegal as was done in the case of sub-tenancy from 1959. It was an attempt to protect very large number of legitimate persons in occupation and also to eliminate future mischief. This construction canvas- sed for the appellant is in consonance with the mischief rule enunciated in Heydon's case 76 E.R. 637 as mentioned in Maxwell `On the Interpretation of Statutes' Twelfth Ed. page 40. It is useful as was emphasised by Baron Parke in Becks v."
+    },
+    {
+      "chunk_index": 91,
+      "text": "It is well settled that the expression `notwithstanding' is in contradistinction to the phrase 'subject to', the latter conveying the idea of a provision yielding place to another provision or other provisions to which it is made subject. This will be clarified in the instant case by comparison of sub-section (1) of section 15 with sub-section (1) of section 15A. We are therefore unable to accept, with respect, the view expressed by the Full Bench of the Bombay High Court as relied on by the learned single judge in the judgment under appeal. Chandavarkar Sita Ratna Rao vs Ashalata S. Guram on 25 September, 1986 Indian Kanoon - http://indiankanoon.org/doc/895706/ 29 In the premises first the High Court exceeded its jurisdiction in interfering with the finding of facts made by the appellate bench of the Court of Small Causes for the reasons mentioned hereinbefore. Secondly, the High Court was in error on the construction of the provisions of section 15A of the said Act. In the aforesaid view of the matter, we are unable to sustain the judgment under appeal."
+    }
+  ],
+  "raw_response": "```\n{\n  \"issue\": \"Whether the High Court exceeded its jurisdiction in interfering with the finding of facts made by the appellate bench of the Court of Small Causes and whether the High Court was correct in its construction of the provisions of section 15A of the Bombay Rents, Hotel and Lodging House Rates Control Act, 1947.\",\n  \"rule\": \"The High Court's jurisdiction under Article 227 of the Constitution is limited to ensuring that the lower courts are functioning within their jurisdiction and not to re-appreciate evidence or substitute its own views for those of the lower courts. The expression 'notwithstanding' in a statute conveys a different meaning than 'subject to'.\",\n  \"application\": \"The High Court exceeded its jurisdiction in interfering with the finding of facts made by the appellate bench of the Court of Small Causes. The High Court was also incorrect in its construction of the provisions of section 15A of the Bombay Rents, Hotel and Lodging House Rates Control Act, 1947, specifically with regard to the validity of a licence created by a statutory tenant.\",\n  \"conclusion\": \"The judgment under appeal is not sustainable. The High Court exceeded its jurisdiction and was incorrect in its construction of section 15A of the Act.\",\n  \"authorities\": [\n    \"D.N. Banerji v. P.R. Mukharjee & Ors.\",\n    \"Babhutmal Raichand Oswal v. Laxmibai R. Tarte and another\",\n    \"R. v. Nothrumberland Compensation Appeal Tribunal, Ex. Parte Shaw\",\n    \"Harbans Lal v. Jagmohan Saran\",\n    \"Trimbak Gangadhar Telang and Another v. Ram Chandra Ganesh Bhide and Others\",\n    \"Waman Shrinivas Kini v. Ratilal Bhagwandas & Co.\"\n  ]\n}\n```",
+  "decade": "1980",
+  "n_real_edges": 18
+}

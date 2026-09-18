@@ -1,0 +1,111 @@
+{
+  "doc_id": "888353",
+  "filename": "Pingle_Industries_Ltd_Secunderabad_vs_Commissioner_Of_Income_Tax_Hyderabad_on_26_April_1960_1.PDF",
+  "year": "1960",
+  "system": "rag",
+  "irac": {
+    "issue": "Whether the two payments in question were of the nature of capital expenditure or revenue expenditure.",
+    "rule": "The distinction between capital and revenue expenditure is based on certain principles, but no infallible criterion of universal application emerges, and each case must turn on its own facts.",
+    "application": "The assessee acquired a right to extract stones, which is similar to cases where the right acquired is to a source from which raw materials are to be extracted. The payments made were for the price of the raw material, i.e., stones. The High Court held that since there was no manufacturing business, the money expended could not be regarded as price of raw materials or even as rent but as spent to acquire a capital asset of enduring benefit to the assessee.",
+    "conclusion": "The Supreme Court ultimately held that the payments in question were of the nature of revenue expenditure."
+  },
+  "authority_results": [
+    {
+      "cited": "Benarsidas Jagannath (1933) 18 T.C. 280, 298",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Alianza Co. Ltd. v. Bell (1910) 5 T.C. 60",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Kauri Timber Company's case",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Mohanlal Hargovind's case",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Hood-Barrs v. Commissioners of Inland Revenue",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Golden Horse Shoe case",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Stow Bardolph case",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": [
+    {
+      "chunk_index": 10,
+      "text": "Therefore, it is unnecessary to read the provisions of s. 12(2)(xv) of the Hyderabad Income-tax Act or the corresponding provisions of s. 10(2)(xv) of the Indian Income-tax Act, 1922. 1 plunge at once in medias res to a consideration of the crucial /question in this case: were the two payments in question of the nature of capital expenditure or revenue expenditure ? This distinction between capital and revenue, either on the receipt or expenditure side, is almost a perennial problem in Income-tax law. In general the distinction is well- recognised and is based on certain principles which are easy of application in some cases; but from time to time cases arise which make the distinction difficult of application. A large number of decisions were cited before us, but no infallible criterion of universal application emerges therefrom and each case must turn on its own facts, though the decisions are useful as illustrations and as affording indication of the kind of considerations which may relevantly be borne in mind in approaching the problem. I shall refer in this judgment to such decisions only as have a bearing on the real controversy between the parties."
+    },
+    {
+      "chunk_index": 22,
+      "text": "The question has all along been considered to be a question of fact to be determined by the Income-tax authorities on an application of the broad principles laid down above and the Courts of law would not ordinarily interfere with such findings of fact if they have been arrived at on a proper application of those principles. \" I do not read these observations as merely indicating an approval of certain general principles, but not necessarily an approval of the actual decision in Benarsidas Jagannath (1). In cases of this nature it is the application of the principles to the facts of a case which presents difficulties, and I do not think that this Court would have made the observations it made, unless it was approving the actual decision in Benarsidas Jagannath (1) in so far as it applied the general principles to the facts of that case. I see no significant distinction between that case and the one before us. In both cases, what was acquired was raw material-earth in one case and stone in the other-and the payments made were the price of the raw material."
+    },
+    {
+      "chunk_index": 30,
+      "text": "It is in that respect, \"apprehend, that I find myself at variance with Harman, J.\" ..................................................... \"If the facts were as the judge intimated, the General Commissioners might find, and might justifiably find, that a case such as this is not really distinguishable as a matter of law and common sense from a sale of loose objects lying on the surface of the ground, such as windfalls from apple trees, or even from cases like those I have mentioned, which are concerned with crops or leaves growing on trees. But my difficulty is that I can find no justification for that conclusion in the material before us.\" In view of these observations I have considerable hesitation, and I say this with great respect, in accepting the decision as a decision on a general question of law. The decision proceeded on the findings of the Commissioners and on the basis that there were no materials for the conclusion reached by Harman, J."
+    },
+    {
+      "chunk_index": 39,
+      "text": "The High court, on the other hand, disagreed, and held that here being no manufacturing business, the money expended could not be regarded as price of raw materials or even as rent but as spent to acquire a capital asset of enduring benefit to the assessee. The High court referred to numerous decisions in which the question whether a receipt or expenditure is on capital or revenue account has been considered in India and the United Kingdom. Before us also, many of them were again cited as illustrating, if not laying down, certain general principles. We shall refer to some of the leading cases later, but we may say at once that no conclusive tests have been laid down which can apply to all the cases. The facts of one case differ so much from those of another that the enquiry is often somewhat fruitless. If, however, the distinguishing features are not lost sight of, the decided cases do afford a guide for the solution of the problem in hand. The arguments of Mr. Palkhivala for the assessee may be shortly stated."
+    },
+    {
+      "chunk_index": 56,
+      "text": "The Judicial Committee held that these contracts were in a business sense for the purpose of securing supplies to the manufacturers of one of the raw materials of his business. They granted no interest in land or the plants or trees. The small right of cultivation and the exclusive nature of the grant were of no significance. Then, the Judicial Committee observed as follows: \" Cases relating to the purchase or leasing of mines, quarries, deposits of brick earth, land with standing- timber, etc. do not appear to their Lordships to be of assistance.\" The Board distinguished Alianza Co. Ltd. v. Bell which was said to be a case analogous to purchase or leasing of a mine and Kauri Timber Company's case (2), which was a case of acquisition of land or of standing timber which was an interest in land. In either case, it was a capital asset. Their Lordships finally observed: \" In the present case the trees were not acquired; nor were the leaves acquired until the appellants had reduced them into their own possession and ownership by picking them. The two cases can, in their Lordships' opinion, in no sense be regarded as comparable."
+    },
+    {
+      "chunk_index": 59,
+      "text": "It is the same situation; it is no more and-,.no less attached to the land.\" In dealing with this case on appeal, Lord Evershed, M. R. (then Sir Raymond Evershed), felt that the case was a little hard upon the taxpayer, and further that it might, if proper enquiry bad been made, have been possible to hold that after the price was paid, the sand and gravel become, in truth, the stock-in-trade of the taxpayer. Taking the facts, however, as found, he held that what was purchased was a part of the (1) (1933) 18 T.C. 280, 298. land itself, namely, the gravel in situ. He held that there was a distinction between the purchase of a growing crop or leaves and the purchase of gravel."
+    },
+    {
+      "chunk_index": 62,
+      "text": "Before we deal with the other cases, we wish to state the distinguishing features of the Pingle Industries Ltd., Secunderabad vs Commissioner Of Income Tax, Hyderabad on 26 April, 1960 Indian Kanoon - http://indiankanoon.org/doc/888353/ 20 cases already mentioned, and which have not often been viewed together. In the Alianza case (2), the sale was not of the caliche as such but of the right to win it from a (1) (1949) L.R. 76 I.A. 235. (2) (1910) 5 T.C. 60, deposit thereof, and it was treated as an expenditure of a capital nature. In the Stow Bardolph case(,), the finding was that sand and gravel had to be won, and it was held that they could not be treated as stock-in-trade till they were actually won. The doubt expressed by Lord Evershed was that if the taking of sand and gravel involved merely taking them up and putting them into trucks, the finding could have been otherwise. Harman, J., made this distinction, but in view of the finding, the Court of Appeal came to a different conclusion. Indeed, Harman, J., himself would have decided differently if there was, in any true sense, a question of extracting gravel."
+    },
+    {
+      "chunk_index": 63,
+      "text": "He, therefore, thought that the case resembled the Golden Horse Shoe case (2) where the \" tailings \" were bargained for and paid for, and became the stock-in-trade of the tax-payer. In Mohanlal Hargovind's case (3), there being no interest in land or trees or plants and the right of cultivation and the exclusiveness of the right to the leaves being insignificant, the contracts were treated as leading to acquisition of the raw materials. The leaves on trees were treated as equal to leaves in a shop. It was on this ground that case was distinguished from the Kauri Timber Company case (4), in which land and interest in land in the shape of standing timber were involved. The case in Hood-Barrs v. Commissioners of Inland Revenue (5) was similar to the last cited. In the present case, the assessee acquired a right to extract stones and his lease included not only the stones on the top but also those buried out of sight under Tons of other stones, which he could only reach after extracting those above. This case is thus within the rule of those cases in which the right acquired is to a source from which the raw materials are to be extracted."
+    }
+  ],
+  "raw_response": "```\n{\n  \"issue\": \"Whether the two payments in question were of the nature of capital expenditure or revenue expenditure.\",\n  \"rule\": \"The distinction between capital and revenue expenditure is based on certain principles, but no infallible criterion of universal application emerges, and each case must turn on its own facts.\",\n  \"application\": \"The assessee acquired a right to extract stones, which is similar to cases where the right acquired is to a source from which raw materials are to be extracted. The payments made were for the price of the raw material, i.e., stones. The High Court held that since there was no manufacturing business, the money expended could not be regarded as price of raw materials or even as rent but as spent to acquire a capital asset of enduring benefit to the assessee.\",\n  \"conclusion\": \"The Supreme Court ultimately held that the payments in question were of the nature of revenue expenditure.\",\n  \"authorities\": [\n    \"Benarsidas Jagannath (1933) 18 T.C. 280, 298\",\n    \"Alianza Co. Ltd. v. Bell (1910) 5 T.C. 60\",\n    \"Kauri Timber Company's case\",\n    \"Mohanlal Hargovind's case\",\n    \"Hood-Barrs v. Commissioners of Inland Revenue\",\n    \"Golden Horse Shoe case\",\n    \"Stow Bardolph case\"\n  ]\n}\n```",
+  "decade": "1960",
+  "n_real_edges": 12
+}

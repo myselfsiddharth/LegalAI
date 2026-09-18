@@ -1,0 +1,55 @@
+{
+  "doc_id": "1732040",
+  "filename": "Accountant_And_Secretarial_Services_vs_Union_Of_India_Ors_on_20_July_1988_1.PDF",
+  "year": "1988",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether the Central Government can impose a tax on the sale of goods by a non-resident within India, and whether such a tax can be levied on a non-resident company which does not have a permanent establishment in India.",
+    "rule": "The Supreme Court held that the charging section of the Central Sales Tax Act, 1956, which imposes a tax on the sale of goods, is valid and can be applied to a non-resident company which does not have a permanent establishment in India.",
+    "application": "The court applied the principles of taxation and the provisions of the Central Sales Tax Act, 1956, to hold that the tax can be levied on the appellant, Accountant And Secretarial Services, a non-resident company.",
+    "conclusion": "The Supreme Court upheld the validity of the tax imposed on the appellant, a non-resident company, under the Central Sales Tax Act, 1956."
+  },
+  "authority_results": [
+    {
+      "cited": "B.V. Narayan Swamy & Sons v. State of Mysore, (1967) 20 STC 383",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "State of Tamil Nadu v. M.G.R. Educational and Research Institute, (1982) 45 STC 645",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Cox v. Hickman, (1860) 8 HL Cas 268",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Commissioner of Income Tax, Bombay v. Haji Habib, (1963) 49 ITR 162",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether the Central Government can impose a tax on the sale of goods by a non-resident within India, and whether such a tax can be levied on a non-resident company which does not have a permanent establishment in India.\",\n  \"rule\": \"The Supreme Court held that the charging section of the Central Sales Tax Act, 1956, which imposes a tax on the sale of goods, is valid and can be applied to a non-resident company which does not have a permanent establishment in India.\",\n  \"application\": \"The court applied the principles of taxation and the provisions of the Central Sales Tax Act, 1956, to hold that the tax can be levied on the appellant, Accountant And Secretarial Services, a non-resident company.\",\n  \"conclusion\": \"The Supreme Court upheld the validity of the tax imposed on the appellant, a non-resident company, under the Central Sales Tax Act, 1956.\",\n  \"authorities\": [\n    \"B.V. Narayan Swamy & Sons v. State of Mysore, (1967) 20 STC 383\",\n    \"State of Tamil Nadu v. M.G.R. Educational and Research Institute, (1982) 45 STC 645\",\n    \"Cox v. Hickman, (1860) 8 HL Cas 268\",\n    \"Commissioner of Income Tax, Bombay v. Haji Habib, (1963) 49 ITR 162\"\n  ]\n}\n```",
+  "decade": "1980",
+  "n_real_edges": 17
+}

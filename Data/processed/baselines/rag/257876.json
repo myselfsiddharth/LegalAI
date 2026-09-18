@@ -1,0 +1,141 @@
+{
+  "doc_id": "257876",
+  "filename": "Kesavananda_Bharati_Sripadagalvaru_vs_State_Of_Kerala_And_Anr_on_24_April_1973_1.PDF",
+  "year": "1973",
+  "system": "rag",
+  "irac": {
+    "issue": "Whether the Parliament's power to amend the Constitution under Article 368 is limited by implied or inherent limitations, and whether the validity of certain constitutional amendments can be challenged.",
+    "rule": "The Supreme Court of India recognized that while there are no explicit limitations on Parliament's power to amend the Constitution, there may be implied or inherent limitations. However, the Court also applied the principle of stare decisis, upholding previous decisions that had upheld the validity of certain amendments.",
+    "application": "The Court considered various previous decisions, including those from the United States, Ireland, Canada, Australia, and the United Kingdom, in determining the scope of Parliament's power to amend the Constitution. The Court ultimately applied the principle of stare decisis, declining to disturb previous decisions that had upheld the validity of certain amendments.",
+    "conclusion": "The Supreme Court of India held that while Parliament's power to amend the Constitution is not unlimited, the Court would not disturb previous decisions upholding the validity of certain amendments, citing the principle of stare decisis and the need for stability and certainty in the law."
+  },
+  "authority_results": [
+    {
+      "cited": "Commissioner of Stamps, Straits Settlements v. Oei Tjong Swan [1933] A.C. 378",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Bank of Toronto v. Lambe [1887] 12 A.C. 575",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "The State (at the prosecution of Jeremiah Ryan) v. Captain Michael Lennon and Ors. [1935] Irish Reports 170",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Queen v. Kirby and Ors. (1956) 94, C.L.R. 295",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "In Re : The Central Provinces and Berar Act No. XIV of 1938, (1939) F.C.R. 18",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Special Reference 1 of 1964. (1965) 1 S.C.R. 413",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Ferguson v. Skrupa (1963) 372 U.S. 726",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Lesses v. Garnet (258) U.S. 130",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "McCawley v. R. [1920] A.C. 691",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Proprietary Articles Traders Association's case",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": [
+    {
+      "chunk_index": 233,
+      "text": "I admire the research undertaken but I find it of no use to me in interpreting Article 368. First the language and the setting of each Constitution is different. Apart from the decisions of the Courts in United States there are no judicial decisions to guide us as to the meaning of the amending clauses in these Constitutions. Further, if it is not helpful to argue from one Act of Parliament to another (see Commissioner of Stamps, Straits Settlements v. Oei Tjong Swan [1933] A.C. 378; 389). much less would it be helpful to argue from one Constitution to another different Constitution (see Bank of Toronto v. Lambe [1887] 12 A.C. 575-787). 374. During the course of the arguments I had drawn the attention of the Counsel to the decision of the Supreme Court of Ireland in The State (at the prosecution of Jeremiah Ryan) v. Captain Michael Lennon and Ors. [1935] Irish Reports 170, and the respondents place great reliance on it. I may mention that this case was not cited before the Bench hearing Golak Nath's case. On careful consideration of this case, however. I find that this case is distinguishable and does not afford guidance to me in interpreting Article 368 of the Constitution. 375."
+    },
+    {
+      "chunk_index": 671,
+      "text": "That provision is now protected by the principle of stare decisis. Public interest will suffer if we go back on these decisions and take away the protection given to many statutes. Now, to use the words of Lord Atkin in the Proprietary Articles Traders Association's case, the 'boundary line has been crossed' and a challenge to the very basic conceptions of the Constitution is posed. Hence the neglect or avoidance of the question in previous cases cannot be accepted as a sound argument. Kesavananda Bharati Sripadagalvaru ... vs State Of Kerala And Anr on 24 April, 1973 Indian Kanoon - http://indiankanoon.org/doc/257876/ 213 774. In Queen v. Kirby and Ors. (1956) 94, C.L.R. 295 Dixon C.J. observed: These cases, and perhaps other examples exist, do no doubt add to the weight of the general considerations arising from lapse of time, the neglect or avoidance of the question in previous cases and the very evident desirability of leaving undisturbed assumptions that have been accepted as to the validity of the provisions in question."
+    },
+    {
+      "chunk_index": 673,
+      "text": "It is clear from the majority judgment that the learned Chief Justice and the Judges who shared his opinion were heavily pressed by this consideration. It could not be otherwise. Yet they were impelled to their conclusion by the clear conviction that consistently with the Constitution the validity of the impugned provision could not be sustained. Whether the result would have been different if their validity had previously been judicially determined after full argument directed to the precise question and had not rested on judicial dicta and common assumption it is not for their Lordships to say. Upon a question of the applicability of the doctrine of stare decisis to matters of far reaching Constitutional importance they would imperatively require the assistance of the High Court itself. But here no such question arises. Whatever the reason may be, just as there was a patent invalidity in the original Act which for a number of years went unchallenged, so far a greater number of years an invalidity which to their Lordships as to the majority of the High Court has been convincingly demonstrated, has been disregarded."
+    },
+    {
+      "chunk_index": 1045,
+      "text": "The difficulty, to my mind, which foreign cases or even cases decided within the Commonwealth where the Common Law forms the basis of the legal structure of that unit, just as it is to a large extent the basis in this country, is that they are more often than not concerned with expounding and interpreting provisions of law which are not in pari materia with those we are called upon to consider. The problems which confront those Courts in the background of the State of the society, the social and economic set-up, the requirements of a people with a totally different ethics, philosophy, temperament and outlook differentiate them from the problems and outlook which confront the courts in this country. It is not a case of shutting out light where that could profitably enlighten and benefit us. The concern is rather to safeguard against the possibility of being blinded by it."
+    },
+    {
+      "chunk_index": 1046,
+      "text": "At the very inception of a Constitutional democracy with a Federal structure innovated under the Government of India Act, 1935, a note of caution was struck by the Chief Justice of India against following even cases decided on the Constitutions of the Commonwealth units, which observations apply with equal force, if not greater, to cases decided under the American Constitution. Gwyer, C.J., in In Re : The Central Provinces and Berar Act No. XIV of 1938, (1939) F.C.R. 18 which was the very first case under the 1935 Act, observed at p. 38: \"But there are few subjects on which the decisions of other Courts require to be treated with greater caution than of federal and provincial powers, for in the last analysis the decision must depend upon the words of the Constitution which the Court is interpreting; and since no two Constitutions are in identical terms, it is extremely unsafe to assume that a decision on one of them can be applied without qualification to another.\" This observation was approved and adopted by Gajendragadkar, C.J., (speaking for 7 Judges) in Special Reference 1 of 1964. (1965) 1 S.C.R. 413 at 487. 1152."
+    },
+    {
+      "chunk_index": 1623,
+      "text": "If it were a question whether I agreed with that theory, I should desire to study it further and long before making up my mind. But I do not conceive that to be my duty, because I strongly believe that my agreement or disagreement has nothing to do with the right of a majority to embody their opinions in law. The above observations were contained in the dissent of Holmes J. The above dissent has subsequently been accepted by the US Supreme Court to lay down the correct law (see Ferguson v. Skrupa (1963) 372 U.S. 726 wherein it has been observed by the court: In the face of our abandonment of the use of the 'vague contours' of the Due Process Clause to nullify laws which a majority of the Court believed to be economically unwise, reliance on Adams v. Tanner is as mistaken as would be adherence to Adkins v. Children's Hospital, overruled by West Coast Hotel Co. v. Parrish AIR 1330 (1937)...."
+    },
+    {
+      "chunk_index": 1760,
+      "text": "In these circumstances, it would in my opinion be wrong to hold now that the decision upholding the First Amendment was not correct, and thus disturb all that has been done during these years and create chaos into the lives of millions of our countrymen who have benefited by these laws relating to agrarian reforms. I would, therefore, hold that this is one of the fittest cases in which the principle of stare decisis should be applied. The ground which sustained the validity of Clause (1) of Article 31A, would equally sustain the validity of the first part of Article 31C. I may in this context refer to the observations of Brandeis J. in Lesses v. Garnet (258) U.S. 130 while upholding the validity of the 19th Amendment, according to which the right of citizens of the United States to vote shall not be denied or abridged by the United States or by States on account of sex. This case negatived the contention that a vast addition to the electorate destroyed the social compact and the residuary rights of the States. Justice Brandeis observed: This amendment is in character and phraseology precisely similar to the 15th. For each the same method of adoption was pursued."
+    },
+    {
+      "chunk_index": 2377,
+      "text": "In that case, after tracing the history of the doctrine since its enunciation by Chief Justice Marshall, Dixon J. says : \"I think that the abandonment by the Supreme Court of the United States of the old doctrine may be fairly said to be now complete. 2194. A large number of cases bearing on inherent or implied limitations were cited to us from U.S.A. Canada, Australia, South-Africa and Ceylon. Having considered those cases carefully, I find it difficult to say that the theory of implied or inherent limitations has received a wide recognition. In McCawley v. R. [1920] A.C. 691, 28 C.L.R. 106 the dissenting judgment of Isaacs and Rich JJ. in the Australian High Court was upheld by the Privy Council, except in regard to a matter which is here not relevant. The judgment of the two learned Judges which received high praise from the Privy Council (p. 112 of Commonwealth Law Reports), shows that implications in limitation of power ought not to be imported from general concepts but only from express or necessarily implied limitations."
+    }
+  ],
+  "raw_response": "{\"issue\": \"Whether the Parliament's power to amend the Constitution under Article 368 is limited by implied or inherent limitations, and whether the validity of certain constitutional amendments can be challenged.\", \n\"rule\": \"The Supreme Court of India recognized that while there are no explicit limitations on Parliament's power to amend the Constitution, there may be implied or inherent limitations. However, the Court also applied the principle of stare decisis, upholding previous decisions that had upheld the validity of certain amendments.\", \n\"application\": \"The Court considered various previous decisions, including those from the United States, Ireland, Canada, Australia, and the United Kingdom, in determining the scope of Parliament's power to amend the Constitution. The Court ultimately applied the principle of stare decisis, declining to disturb previous decisions that had upheld the validity of certain amendments.\", \n\"conclusion\": \"The Supreme Court of India held that while Parliament's power to amend the Constitution is not unlimited, the Court would not disturb previous decisions upholding the validity of certain amendments, citing the principle of stare decisis and the need for stability and certainty in the law.\", \n\"authorities\": [\n  \"Commissioner of Stamps, Straits Settlements v. Oei Tjong Swan [1933] A.C. 378\",\n  \"Bank of Toronto v. Lambe [1887] 12 A.C. 575\",\n  \"The State (at the prosecution of Jeremiah Ryan) v. Captain Michael Lennon and Ors. [1935] Irish Reports 170\",\n  \"Queen v. Kirby and Ors. (1956) 94, C.L.R. 295\",\n  \"In Re : The Central Provinces and Berar Act No. XIV of 1938, (1939) F.C.R. 18\",\n  \"Special Reference 1 of 1964. (1965) 1 S.C.R. 413\",\n  \"Ferguson v. Skrupa (1963) 372 U.S. 726\",\n  \"Lesses v. Garnet (258) U.S. 130\",\n  \"McCawley v. R. [1920] A.C. 691\",\n  \"Proprietary Articles Traders Association's case\"\n  ]\n}",
+  "decade": "1970",
+  "n_real_edges": 92
+}

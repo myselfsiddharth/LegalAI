@@ -1,0 +1,80 @@
+{
+  "doc_id": "67965481",
+  "filename": "Vineeta_Sharma_vs_Rakesh_Sharma_on_11_August_2020_1.PDF",
+  "year": "2020",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether Section 6 of the Hindu Succession Act, 1956, as amended in 2005, confers a right on a daughter to claim a share in the property on an equal footing with her brother, and whether the said right is available only to daughters born after the amendment or to all daughters irrespective of their birth.",
+    "rule": "Section 6 of the Hindu Succession Act, 1956, as amended in 2005, confers a right on a daughter to claim a share in the property on an equal footing with her brother. The said right is available to all daughters irrespective of their birth.",
+    "application": "The Court applied the amended Section 6 of the Hindu Succession Act, 1956, to the facts of the case and held that the daughter has a right to claim a share in the property on an equal footing with her brother, irrespective of her birth.",
+    "conclusion": "The Court upheld the amendment to Section 6 of the Hindu Succession Act, 1956, and held that a daughter has a right to claim a share in the property on an equal footing with her brother, irrespective of her birth."
+  },
+  "authority_results": [
+    {
+      "cited": "Prakash v. Ramchandra (2017) 16 SCC 381",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Raghavendra Rao v. Lakshminarayana Rao (2018) 3 SCC 374",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Anand v. Baldev (2018) 2 SCC 362",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Githa Hariharan v. RBI (1999) 4 SCC 432",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.27,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "S. Rajeswari v. State of Tamil Nadu (2005) 6 SCC 745",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Mulla - Hindu Law, 22nd Edn.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "May & Jain - Hindu Law, 22nd Edn.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": false
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether Section 6 of the Hindu Succession Act, 1956, as amended in 2005, confers a right on a daughter to claim a share in the property on an equal footing with her brother, and whether the said right is available only to daughters born after the amendment or to all daughters irrespective of their birth.\",\n  \"rule\": \"Section 6 of the Hindu Succession Act, 1956, as amended in 2005, confers a right on a daughter to claim a share in the property on an equal footing with her brother. The said right is available to all daughters irrespective of their birth.\",\n  \"application\": \"The Court applied the amended Section 6 of the Hindu Succession Act, 1956, to the facts of the case and held that the daughter has a right to claim a share in the property on an equal footing with her brother, irrespective of her birth.\",\n  \"conclusion\": \"The Court upheld the amendment to Section 6 of the Hindu Succession Act, 1956, and held that a daughter has a right to claim a share in the property on an equal footing with her brother, irrespective of her birth.\",\n  \"authorities\": [\n    \"Prakash v. Ramchandra (2017) 16 SCC 381\",\n    \"Raghavendra Rao v. Lakshminarayana Rao (2018) 3 SCC 374\",\n    \"Anand v. Baldev (2018) 2 SCC 362\",\n    \"Githa Hariharan v. RBI (1999) 4 SCC 432\",\n    \"S. Rajeswari v. State of Tamil Nadu (2005) 6 SCC 745\",\n    \"Mulla - Hindu Law, 22nd Edn.\",\n    \"May & Jain - Hindu Law, 22nd Edn.\"\n  ]\n}\n```",
+  "decade": "2020",
+  "n_real_edges": 90
+}

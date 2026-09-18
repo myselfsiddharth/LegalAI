@@ -1,0 +1,68 @@
+{
+  "doc_id": "1737583",
+  "filename": "Balco_Employees_Union_Regd_vs_Union_Of_India_Ors_on_10_December_2001_1.PDF",
+  "year": "2001",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether the disinvestment of the government shareholding in the Bharat Aluminium Company Limited (BALCO) requires the approval of the Parliament, and whether the decision to disinvest without such approval is valid.",
+    "rule": "The rule of law that emerges is that the government while dealing with the public resources, has to act in a manner that is fair, transparent, and not arbitrary.",
+    "application": "The court applied the rule to the facts of the case and held that the decision to disinvest in BALCO without Parliamentary approval was not in conformity with the constitutional scheme.",
+    "conclusion": "The court concluded that the disinvestment of government shareholding in BALCO without Parliamentary approval was not valid."
+  },
+  "authority_results": [
+    {
+      "cited": "LIC v. State of Punjab, AIR 1964 SC 111",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1563564",
+        "matched_cited_text": "State of Punjab and Others vs. Ram Lubhaya Bagga and Others",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Rustom Cavasjee Cooper v. Union of India, AIR 1970 SC 186",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "513801",
+        "matched_cited_text": "Rustom Cavasjee Cooper vs. Union of India",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Sambhaji Bhalchandra Waje v. State of Maharashtra, AIR 1967 SC 1331",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Union of India v. Hindustan Aluminium Corporation Ltd., AIR 1983 SC 20",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "P. Ramanathan v. State of Tamil Nadu, AIR 1987 SC 1295",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether the disinvestment of the government shareholding in the Bharat Aluminium Company Limited (BALCO) requires the approval of the Parliament, and whether the decision to disinvest without such approval is valid.\",\n  \"rule\": \"The rule of law that emerges is that the government while dealing with the public resources, has to act in a manner that is fair, transparent, and not arbitrary.\",\n  \"application\": \"The court applied the rule to the facts of the case and held that the decision to disinvest in BALCO without Parliamentary approval was not in conformity with the constitutional scheme.\",\n  \"conclusion\": \"The court concluded that the disinvestment of government shareholding in BALCO without Parliamentary approval was not valid.\",\n  \"authorities\": [\n    \"LIC v. State of Punjab, AIR 1964 SC 111\",\n    \"Rustom Cavasjee Cooper v. Union of India, AIR 1970 SC 186\",\n    \"Sambhaji Bhalchandra Waje v. State of Maharashtra, AIR 1967 SC 1331\",\n    \"Union of India v. Hindustan Aluminium Corporation Ltd., AIR 1983 SC 20\",\n    \"P. Ramanathan v. State of Tamil Nadu, AIR 1987 SC 1295\"\n  ]\n}\n```",
+  "decade": "2000",
+  "n_real_edges": 28
+}

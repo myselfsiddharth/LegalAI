@@ -1,0 +1,92 @@
+{
+  "doc_id": "1703207",
+  "filename": "Satyawati_Sharma_Dead_By_Lrs_vs_Union_Of_India_Another_on_16_April_2008_1.PDF",
+  "year": "2008",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 5,
+    "Holding": 15,
+    "Claim": 7,
+    "Outcome": 2,
+    "AuthorityCited": 8
+  },
+  "authority_results": [
+    {
+      "cited": "the Additional Rent Controller",
+      "source_sentence": "The Tribunal agreed with the Additional Rent Controller that an order of eviction of the tenant can be passed under Section 14(1)(e) only if the premises were let for residential purposes.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "an earlier judgment of the Division Bench in H.C.",
+      "source_sentence": "The Full Bench referred to an earlier judgment of the Division Bench in H.C.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Section 29(2)(r) of the 1995 Act",
+      "source_sentence": "Referenced to Section 29(2)(r) of the 1995 Act, in our opinion, cannot be said to have any relevance whatsoever for the purpose of determining.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the 1995 Act is yet to come into force",
+      "source_sentence": "Admittedly, the 1995 Act is yet to come into force.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "Article 14",
+      "source_sentence": "Article 14 of the Constitution would apply only to persons similarly situated.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Articles 14 and 21 of the Constitution of India",
+      "source_sentence": "In that case, an argument was advanced that unless the second limb of Section 14(1)(e) of the Act is read in such a way that it was in consonance with Articles 14 and 21 of the Constitution of India, the same would be void as being unconstitutional.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "State of Punjab & Anr. [1996 (1) SCC 1]",
+      "source_sentence": "State of Punjab & Anr. [1996 (1) SCC 1] whereby Section 13(3)(a) of the East Punjab Urban Rent Restriction Act, 1949, as amended by Punjab Act No.29 of 1956, was struck down but distinguished the same by making the following observations :- \"The objects and reasons of the said Act, thus, were considered having regard to the provisions made at the time of commencement of the said Act.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1362718",
+        "matched_cited_text": "Harbilas Rai Bansal vs. State of Punjab & Anr.",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the objects and reasons of the said Act",
+      "source_sentence": "State of Punjab & Anr. [1996 (1) SCC 1] whereby Section 13(3)(a) of the East Punjab Urban Rent Restriction Act, 1949, as amended by Punjab Act No.29 of 1956, was struck down but distinguished the same by making the following observations :- \"The objects and reasons of the said Act, thus, were considered having regard to the provisions made at the time of commencement of the said Act.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "2000",
+  "n_real_edges": 31
+}

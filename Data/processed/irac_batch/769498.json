@@ -1,0 +1,89 @@
+{
+  "doc_id": "769498",
+  "filename": "Narmada_Bachao_Andolan_vs_State_Of_M_P_Anr_on_11_May_2011_1.PDF",
+  "year": "2011",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Outcome": 5,
+    "Party": 2,
+    "Holding": 10,
+    "Claim": 9,
+    "AuthorityCited": 8
+  },
+  "authority_results": [
+    {
+      "cited": "the provisions of Electricity (Supply) Act, 1948",
+      "source_sentence": "The Central Electricity Authority accorded techno-economic clearance under the provisions of Electricity (Supply) Act, 1948 on 24.7.2001.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "The Government of India",
+      "source_sentence": "The Government of India approved and granted financial concurrence from Public Investment Board of the Planning Commission for this project on 17.5.2002.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "The Government of India",
+      "source_sentence": "The Government of India approved and granted financial concurrence from Public Investment Board of the Planning Commission for this project on 17.5.2002.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "independent families",
+      "source_sentence": "The High Court issued a large number of directions as interim measures, including the direction for allotment of land in lieu of land acquired and to treat the major sons of the family, as independent families for the purpose of allotment of agricultural land.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the purpose of allotment of agricultural land",
+      "source_sentence": "It is further submitted that the High Court erred in treating the major son of such an oustee as a separate family for the purpose of allotment of agricultural land, though he did not have any independent right to claim compensation for the land acquired.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "State Government",
+      "source_sentence": "Amendment made in the R & R Policy vide order dated 3.7.2003 is ultra vires and illegal and is liable to be ignored for the reason that the R & R Policy had been approved by the State Government, though the amendment had not undergone the same process.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "this Court",
+      "source_sentence": "This Court, while interpreting the other schemes in respect of Narmada Projects itself has given effect to the said policy and directed for allotment of land for land acquired and upheld the entitlement of the major son of an oustee to an independent allotment of agricultural land.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "this Court",
+      "source_sentence": "This Court, while interpreting the other schemes in respect of Narmada Projects itself has given effect to the said policy and directed for allotment of land for land acquired and upheld the entitlement of the major son of an oustee to an independent allotment of agricultural land.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "2010",
+  "n_real_edges": 74
+}

@@ -1,0 +1,53 @@
+{
+  "doc_id": "257876",
+  "filename": "Kesavananda_Bharati_Sripadagalvaru_vs_State_Of_Kerala_And_Anr_on_24_April_1973_1.PDF",
+  "year": "1973",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 3,
+    "Claim": 11,
+    "Holding": 4,
+    "Outcome": 1,
+    "AuthorityCited": 4
+  },
+  "authority_results": [
+    {
+      "cited": "Article 31C",
+      "source_sentence": "If Article 31C is valid, they say, hereafter Parliament and State Legislatures and not the Constitution, will determine how much freedom is good for the citizens. 13.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Article 368",
+      "source_sentence": "But however grave the issues may be, the answer must depend on the interpretation of the words in Article 368, read in accordance with the principles of interpretation which are applied to the interpretation of a Constitution given by the people to themselves. 14.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Article 368",
+      "source_sentence": "I must interpret Article 368 in the setting of our Constitution, in the background of our history and in the light of our aspirations and hopes, and other relevant circumstances.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the procedure",
+      "source_sentence": "The bill in the present case having been admittedly amended in several particulars during its passage through the House, the Amendment Act cannot be said to have been passed in conformity with the procedure prescribed in Article 368.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "1970",
+  "n_real_edges": 92
+}

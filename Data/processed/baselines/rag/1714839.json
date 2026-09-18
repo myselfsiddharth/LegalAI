@@ -1,0 +1,277 @@
+{
+  "doc_id": "1714839",
+  "filename": "Orissa_Cement_Ltd_And_Ors_Etc_Etc_vs_State_Of_Orissa_And_Ors_Etc_Etc_on_4_April_1991_1.PDF",
+  "year": "1991",
+  "system": "rag",
+  "irac": {
+    "issue": "Whether the Orissa State Act levying a cess on royalties is ultra vires and whether the doctrine of prospective overruling applies.",
+    "rule": "The Court applied the principles of legislative competence and the doctrine of prospective overruling. It held that if the legislation is in substance legislation in respect of despatches of tea, legislative authority must be found for it with reference to some other entry. The Court also considered the difference between a tax on royalties derived from land and a tax on land measured by reference to the income derived therefrom.",
+    "application": "The Court analyzed the provisions of the impugned State Act as well as the two Central Acts. It referred to its conclusion in the Hingir-Rampur case that the field covered by the impugned State Act was covered by the 1948 Act and observed that this fully applied to the State Act vis-a-vis the 1957 Act also. The Court upheld the challenge to the competence of the State legislature to levy the impugned cess.",
+    "conclusion": "The Court modified the relief given by the High Court on the basis of unreasonable delay."
+  },
+  "authority_results": [
+    {
+      "cited": "Tulloch & Co. v. State of Orissa (1964) 4 S.C.R. 461",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Indian Cement & Ors v. State of Tamil Nadu & Ors. (1990)1 S.C.C. 12",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "State of Haryana v. Chanan Mal (1976) 3 S.C.R. 688",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1201636",
+        "matched_cited_text": "State of Haryana v. Chanan Mal",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Ishwari Khatan Sugar Mills (P) Ltd v. State of U.P. (1980) 3 S.C.R. 331",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Western Coalfields Ltd. v. Special Area Development Authority (1982) 2 S.C.R.1",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "791627",
+        "matched_cited_text": "Western Coalfields Ltd. v. Special Area Development Authority",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Indian tobacco Co. Ltd. v. Union (1985) Supp. 1 S.C.R. 145",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.25,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "State of West Bengal v. Union (1964) 1. S.C.R. 371",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "603736",
+        "matched_cited_text": "State of West Bengal v. Union",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Central Coalfields v. State of M.P. (1986) M.P. 33",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.35,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "M. Karunanidhi v. Union of India (1979) 3 S.C.R. 254",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "State of Tamil Nadu v. Hind Stone etc. (1981) 2. S.C.R. 742",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "I.T.C. v. State of Karnataka (1985) Suppl S.C.R. 145",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Bharat Coking Coal v. State of Bihar (1990) 2 Scale 256",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1247047",
+        "matched_cited_text": "Bharat Coking Coal v. State of Bihar",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Kannan Dewan Hills Co. v. State of Kerala (1973) 1. S.C.R. 356",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1682508",
+        "matched_cited_text": "Kannan Dewan Hills Co. v. State of Kerala",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Baijnath Kedia v. State of Bihar (1970) 2 S.C.R. 100",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1752601",
+        "matched_cited_text": "Baijnath Kedia v. State of Bihar",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "H.R.S. Murthy v. Collection of Chittoor & Ors. (1964) 6 S.C.R.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 0.91,
+        "matched_cited_doc_id": "21773",
+        "matched_cited_text": "Murthy v. Collector of Chittoor",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Ch. Tika Ramji & Ors. v. State of U.P. (1956) S.C.R. 393",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Laxmi Narayan Agarwala v. State (1980) Ori. 210",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Bherulal v. State (1965) Raj. 161",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Sharma v. State (1969) P&H 79",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Saurashtra Cement & Chemical Industries Ltd. v. State",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Hingir-Rampur Coal Co. Ltd & Ors. v. The State of Orissa & Ors. (1961) 2.S.C.R. 537",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1464523",
+        "matched_cited_text": "Hingir-Rampur Coal Co. Ltd & Ors. v. The State of Orissa & Ors.",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Tilokchand Mothichand v. Munshi (1969) 2 S.C.R. 824",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "623976",
+        "matched_cited_text": "Tilokchand Mothichand v. Munshi",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Golaknath v. State of Punjab (1967) 2 SCR 762",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": [
+    {
+      "chunk_index": 13,
+      "text": "Tulloch & Co., [1964] 4 S.C.R., 461 and Indian Cement & Ors v. State of Tamil Nadu & Ors., [1990]1 S.C.C. 12 followed. State of Haryana v. Chanan Mal, [1976] 3 S.C.R. 688; Ishwari Khatan Sugar Mills (P) Ltd v. State of U.P. [1980] 3 S.C.R. 331 and Western Coalfields Ltd. v. Special Area Development Authority., [1982] 2 S.C.R.1,distinguished. Indian tobacco Co. Ltd. v. Union, [1985] Supp. 1 S.C.R. 145; State of West Bengal v. Union [1964] 1. S.C.R. 371; Central Coalfields v. State of M.P., A.I.R. (1986) M.P.33; M. Karunanidhi v. Union of India, [1979] 3 S.C.R. 254; State of Tamil Nadu v. Hind Stone etc., [1981] 2. S.C.R. 742; I.T.C. v. State of Karnataka, [1985] Suppl S.C.R. 145; Bharat Coking Coal v. State of Bihar, [1990] 2 Scale 256; Kannan Dewan Hills Co. v. State of Kerala, [1973] 1. S.C.R. 356; Baijnath Kedia v. State of Bihar [1970] 2 S.C.R. 100; H.R.S. Murthy v. Collection of Chittoor & Ors. [1964] 6 S.C.R.; Ch. Tika Ramji & Ors. v. State of U.P.,[1956] S.C.R. 393; Laxmi Narayan Agarwala v. State, A.I.R. 919830 Ori.210; Bherulal v. State, A.I.R. (1965) Raj. 161; Sharma v. State A.I.R. (1969) P&H 79 and Saurashtra Cement & Chemical Industries Ltd. v."
+    },
+    {
+      "chunk_index": 35,
+      "text": "The Court analysed in detail the provisions of the impugned State Act as well as the two Central Acts. It referred to its conclusion in the Hingir-Rampur case that the field covered by the impugned State Act was covered by the 1948 Act and observed that this fully applied to the State Act vis-a-vis the 1957 Act also, particularly as Ss. 18(1) and (2) of the 1957 Act were wider in scope and amplitude and conferred larger powers on the Central Government than the corresponding provisions of the 1948 Act. Counsel for the State attempted to distinguish the ambit of the 1957 Act from that of the 1948 Act. But the Court pointed out that the argument could not prevail. S. 13 of the 1957 Act contained an express provision for the levy of a fee. S. 25-though not as categorically as s. 6 of the 1948 Act-clearly implied a power to levy \"rent, royalty, tax, fee and other sums\" a nd, besides, S. 18 of the Central Act of 1957 were wider in scope and amplitude and conferred larger powers on the Central Government than the corresponding provisions of the Act of 1948. It was reiterated, referring to Hingir-Rampur and distinguishing Ch. Tika Ramji & Ors. etc. v."
+    },
+    {
+      "chunk_index": 96,
+      "text": "It was then pointed out that the question of legislative competence also turned on this issue: ``If this impugned legislation were to be regarded as a levy in respect of the estates, it would be referable to entry 49 in List II of the Seventh Schedule of the Constitution which speaks ``taxes on lands and buildings''. But if the legislation is in substance legislation in respect of despatches of tea, legislative authority must be found for it with reference to some other entry'' Pointing out that no such entry in List II or III had been brought o its notice and further that, under S.2 of the Tea Ct, 1953, control over the tea industry has been assumed by Parliament within the meaning of Entry 54 of List I, the Court upheld the challenge to the competence of the State legislature to levy the impugned cess. it is submitted that, likewise, here the levy is one in substance on royalties and not one on land. There is force in the contention urged by Sri T.S.K. Iyer that there is a difference in principle between a tax on royalties derived from land and a tax on land measured by reference to the income derived therefrom."
+    },
+    {
+      "chunk_index": 127,
+      "text": "He also pointed out that India Cement also dies not consider in detail the reasoning in Hingir-Rampur and Tulloch but only reefers to certain observations in the dissenting judgement of Wanchoo J ( as His Lordship then was) in the former case and urged. Orissa Cement Ltd And Ors. Etc. Etc vs State Of Orissa And Ors. Etc. Etc on 4 April, 1991 Indian Kanoon - http://indiankanoon.org/doc/1714839/ 44 that the entire matter requires careful consideration. He submitted that Tulloch and Western Coalfields represent two lines of cases which need reconciliation and that this task has not been attempted at all in India Cement. On the other hand, learned counsel for the respondents submitted that the authority of the Constitution Bench in Western Coalfields-which endorsed Murthy-should be considered weak after India Cement-which has overruled Murthy. The present case, it is submitted, is closer to Baijnath Kedia. It is submitted that the principles of Tulloch have been referred to with approval in a number of cases [ Karunanidhi, 1979-3SCR 254 at 277] Hind Stone, [1981] 2 SCR 742 at 746m I.T.C., [1985] Suppl. SCR 145 at 168 and are too well settled to need any reconsideration."
+    },
+    {
+      "chunk_index": 142,
+      "text": "The test which he suggested was whether, if under the power conferred by s.18(1) of the Central Act, the Central Government has made rules providing for the amenities for which provision was made by the Orissa Act and if the Central Government had imposed a fee to defray the expenses of the provision of these amenities, would such rules be held to be ultra vires of the Central Government, and this particularly when taken in conjunction with the matters for which rules could be made under s.13 to which reference has already been made. We consider there is considerable force in this submission of learned counsel for the respondent, and thus would require very detailed and careful scrutiny. We are, however, relieved from this task of detailed examination and discussion of this matter because we consider that it is concluded by a decision of the Court in the Hingir-Rampur Coal Co. Ltd & Ors. v. The State of Orissa & Ors., [1961] 2.S.C.R. 537 The above argument was accepted by the Court, vide page 476, Reference may also be made here to the recent decision of this Court in Bharat Coking Coal v. State of Bihar, [1990] 2 Scale 256."
+    },
+    {
+      "chunk_index": 161,
+      "text": "He submitted, first, that the Court there has acted on the assumption that a doctrine of prospective overruling had been enunciated in Golaknath, [1967] 2 SCR 762. Analysing the various judgments delivered in that case, he submitted that, while Subba Rao C.J. and four other judges (pp 805- 813) approved of the applicability of this doctrine in India, five other judges spoke against it (pp 890, 897, 899- 922, 921 and 952) and the eleventh judge was neutral (p.408). He therefore, submitted that the judges who decided Golaknath were equally divided on the issue and so there is no reason disdained of the Court binding on us. Second, he submitted that the doctrine of prospective overruling was evolved by the Supreme Court of the United States in the absence of any constitutional provision militating against it, vide sunburst 77 L.Ed. 310 (at page 366) and Linkletter, 14 L.Ed (2d) 601 (at page 604-8). In India, however, the application of the doctrine, particularly in the context of an issue regarding the validity of a tax levy, would run counter to specific provisions contained Articles 246 and 265 of the Constitution."
+    },
+    {
+      "chunk_index": 177,
+      "text": "Even if he files an application for refund or a suit for recovery of the taxes paid for several years, the relief will be limited only to the period in regard to which the application for refund or a suit for recovery of the taxes paid for several years, the relief will be limited only to the period in regard to which the application or suit is not barred by limitation. If even this instance is sought to be distinguished as a case where the Court's hands are tied by limitations inherent in the form of forum in which the relief is sought, let us consider a very case where a petitioner seeks relief against an illegal exaction in a writ petition filed under Article 226. In this situation, the question has often arisen whether the petitioner's prayer for refund of taxes collected over an indefinite period of years should be granted once the levy is found to be illegal. To answer the question in the affirmative would result in discrimination between persons based on their choice on the forum for relief, a classification which, prima facie is too fragile to be considered a relevant criterion for the resulting discrimination."
+    },
+    {
+      "chunk_index": 181,
+      "text": "It is not easy nor is it desirable to lay down any rules of universal application it may however be stated as a general rule that if there has been unreasonable delay, the Court ought not ordinarily to lend its aid to a party by this extraordinary remedy of mandamus.\" The Court further pointed out that the delay may be considered unreasonable even if it is less than the period of limitation prescribed for a civil action for the remedy but where the delay is more than this period, it will almost always be proper for the court to hold that it is unreasonable. The relief given by the High Court was modified on this basis. In Tilokchand Mothichand v. Munshi [1969] 2 S.C.R., 824 the petitioners had collected sales tax from their customers and paid it over to the State. The Sales Tax Authorities directed a refund but on the condition that the amounts should be passed on to the customers. Since the petitioner did not comply with the condition, the sales tax officer forfeited the sum under S.21(4) of the Bombay Sales Tax Act, 1953."
+    }
+  ],
+  "raw_response": "{\"issue\": \"Whether the Orissa State Act levying a cess on royalties is ultra vires and whether the doctrine of prospective overruling applies.\", \n\"rule\": \"The Court applied the principles of legislative competence and the doctrine of prospective overruling. It held that if the legislation is in substance legislation in respect of despatches of tea, legislative authority must be found for it with reference to some other entry. The Court also considered the difference between a tax on royalties derived from land and a tax on land measured by reference to the income derived therefrom.\", \n\"application\": \"The Court analyzed the provisions of the impugned State Act as well as the two Central Acts. It referred to its conclusion in the Hingir-Rampur case that the field covered by the impugned State Act was covered by the 1948 Act and observed that this fully applied to the State Act vis-a-vis the 1957 Act also. The Court upheld the challenge to the competence of the State legislature to levy the impugned cess.\", \n\"conclusion\": \"The Court modified the relief given by the High Court on the basis of unreasonable delay.\", \n\"authorities\": [\n  \"Tulloch & Co. v. State of Orissa (1964) 4 S.C.R. 461\",\n  \"Indian Cement & Ors v. State of Tamil Nadu & Ors. (1990)1 S.C.C. 12\",\n  \"State of Haryana v. Chanan Mal (1976) 3 S.C.R. 688\",\n  \"Ishwari Khatan Sugar Mills (P) Ltd v. State of U.P. (1980) 3 S.C.R. 331\",\n  \"Western Coalfields Ltd. v. Special Area Development Authority (1982) 2 S.C.R.1\",\n  \"Indian tobacco Co. Ltd. v. Union (1985) Supp. 1 S.C.R. 145\",\n  \"State of West Bengal v. Union (1964) 1. S.C.R. 371\",\n  \"Central Coalfields v. State of M.P. (1986) M.P. 33\",\n  \"M. Karunanidhi v. Union of India (1979) 3 S.C.R. 254\",\n  \"State of Tamil Nadu v. Hind Stone etc. (1981) 2. S.C.R. 742\",\n  \"I.T.C. v. State of Karnataka (1985) Suppl S.C.R. 145\",\n  \"Bharat Coking Coal v. State of Bihar (1990) 2 Scale 256\",\n  \"Kannan Dewan Hills Co. v. State of Kerala (1973) 1. S.C.R. 356\",\n  \"Baijnath Kedia v. State of Bihar (1970) 2 S.C.R. 100\",\n  \"H.R.S. Murthy v. Collection of Chittoor & Ors. (1964) 6 S.C.R.\",\n  \"Ch. Tika Ramji & Ors. v. State of U.P. (1956) S.C.R. 393\",\n  \"Laxmi Narayan Agarwala v. State (1980) Ori. 210\",\n  \"Bherulal v. State (1965) Raj. 161\",\n  \"Sharma v. State (1969) P&H 79\",\n  \"Saurashtra Cement & Chemical Industries Ltd. v. State\",\n  \"Hingir-Rampur Coal Co. Ltd & Ors. v. The State of Orissa & Ors. (1961) 2.S.C.R. 537\",\n  \"Tilokchand Mothichand v. Munshi (1969) 2 S.C.R. 824\",\n  \"Golaknath v. State of Punjab (1967) 2 SCR 762\"\n]}",
+  "decade": "1990",
+  "n_real_edges": 29
+}

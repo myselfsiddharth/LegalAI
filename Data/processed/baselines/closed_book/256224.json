@@ -1,0 +1,53 @@
+{
+  "doc_id": "256224",
+  "filename": "Ranganayakamma_Anr_vs_K_S_Prakash_D_By_Lrs_Ors_on_16_May_2008_1.PDF",
+  "year": "2008",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether the appellants, as daughters of the deceased, are entitled to a share in the property as co-parceners under the Hindu Mitakshara Law, despite the property being registered in the name of their father.",
+    "rule": "Under Section 10(1) of the Hindu Mitakshara Code, when a male Hindu dies after the commencement of the Act, having at the time of his death an interest in a Mitakshara coparcenary, his interest in the coparcenary shall devolve by survivorship upon the surviving members of the coparcenary and not in accordance with this Act. However, as per the amendment and interpretation of Hindu Law, daughters are now considered co-parceners with their brothers.",
+    "application": "The court applied the principles of Hindu Mitakshara Law, as amended, to hold that daughters are co-parceners and have equal rights with their brothers in the ancestral property. The court relied on the amendment to Section 5 of the Hindu Succession Act, 1956, which conferred equal status on daughters in the coparcenary.",
+    "conclusion": "The Supreme Court held that daughters are entitled to equal shares in the ancestral property as co-parceners under the Hindu Mitakshara Law."
+  },
+  "authority_results": [
+    {
+      "cited": "Anand Bihari v. Kesarwani, AIR 2005 SC 2080",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Vijay Lakshmi v. Padma Narayan, AIR 2001 SC 2180",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Mulla Hindu Law, 15th Ed., P. 268",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Halsbury's Laws of England, 4th Ed., Vol. 12, Para 713, P. 346",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": false
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether the appellants, as daughters of the deceased, are entitled to a share in the property as co-parceners under the Hindu Mitakshara Law, despite the property being registered in the name of their father.\",\n  \"rule\": \"Under Section 10(1) of the Hindu Mitakshara Code, when a male Hindu dies after the commencement of the Act, having at the time of his death an interest in a Mitakshara coparcenary, his interest in the coparcenary shall devolve by survivorship upon the surviving members of the coparcenary and not in accordance with this Act. However, as per the amendment and interpretation of Hindu Law, daughters are now considered co-parceners with their brothers.\",\n  \"application\": \"The court applied the principles of Hindu Mitakshara Law, as amended, to hold that daughters are co-parceners and have equal rights with their brothers in the ancestral property. The court relied on the amendment to Section 5 of the Hindu Succession Act, 1956, which conferred equal status on daughters in the coparcenary.\",\n  \"conclusion\": \"The Supreme Court held that daughters are entitled to equal shares in the ancestral property as co-parceners under the Hindu Mitakshara Law.\",\n  \"authorities\": [\n    \"Anand Bihari v. Kesarwani, AIR 2005 SC 2080\",\n    \"Vijay Lakshmi v. Padma Narayan, AIR 2001 SC 2180\",\n    \"Mulla Hindu Law, 15th Ed., P. 268\",\n    \"Halsbury's Laws of England, 4th Ed., Vol. 12, Para 713, P. 346\"\n  ]\n}\n```",
+  "decade": "2000",
+  "n_real_edges": 23
+}

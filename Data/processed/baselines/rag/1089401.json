@@ -1,0 +1,121 @@
+{
+  "doc_id": "1089401",
+  "filename": "Shrinivas_Krishnarao_Kango_vs_Narayan_Devji_Kango_And_Others_on_23_March_1954_1.PDF",
+  "year": "1954",
+  "system": "rag",
+  "irac": {
+    "issue": "Whether the adopted son can divest an estate that had devolved by inheritance from a collateral prior to the date of adoption.",
+    "rule": "The principle of relation back applies only when the claim of the adopted son relates to the estate of the adoptive father. Where succession to the properties of a person other than an adoptive father is involved, the principle applicable is that inheritance once vested cannot be divested.",
+    "application": "The court applied the rule that inheritance once vested cannot be divested to the case where the adopted son's claim relates to the estate of a collateral, and held that the adopted son cannot divest the estate that had devolved by inheritance from a collateral prior to the date of adoption.",
+    "conclusion": "The court overruled the decision in Anant Bhikappa Patil (Minor) v. Shankar Ramchandra Patil and held that an adopted son's right to divest an estate does not extend to estates inherited by the adoptive father from collaterals before the adoption."
+  },
+  "authority_results": [
+    {
+      "cited": "Vellanki Venkata v. Venkatarama (4 I.A. 1)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Verabhai v. Bhai Hiraba (30 I.A. 234)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Amarendra Mansingh v. Sanatan Singh (60 I.A. 242)",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1341640",
+        "matched_cited_text": "1) and Amarendra Mansingh v. Sanatan Singh",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Anant Bhikappa Patil (Minor) v. Shankar Ramchandra Patil (70 I.A. 232)",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "213257",
+        "matched_cited_text": "Anant Bhikappa Patil (Minor) v. Shankar Ramchandra Patil",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Neelangouda Limbangouda v. Ujjan Gouda (A.I.R. 1948 P.C. 165: 50 Bom.L.R. 682)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Balu Sakharam v. Lahoo Sambhaji (I.L.R. 1937 BOM. 508)",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1635124",
+        "matched_cited_text": "Balu Sakharam v. Lahoo Sambhaji",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Pratapsing Shivsing v. Agarsingii Raisingji (46 I.A. 97 at 107)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": [
+    {
+      "chunk_index": 3,
+      "text": "These principles, however, apply only when the claim of the adopted son relates to the estate of the adoptive father. But where succession to the properties of a person other than an adoptive father is involved the principle applicable is not the rule of relation back but the rule that inheritance once vested could not be divested. The decision to the contrary in Anant Bhikappa Patil (Minor) v. Shankar Ramchandra Patil (70 I.A. 232) dissented from. Appalaswami v. Suryanarayanamurti (I.L.R. 1948 Mad. 440 at 447, 448); Babubhai Girdharal v. Ujamlal Hargovandas (I.L.R. 1937 Bom. 708); Venka taramayya v. Seshamma (I.L.R. 1937 Madras 1012); Vythianatha v. Varadaraja (I.L.R 1938 Madras 696); Pratapsing Shivsing v. Agarsingii Raisingji (46 I.A. 97 at 107); Vellanki Venkata v. Venkatarama (4 I.A. 1); Verabhai v. Bhai Hiraba (30 I.A. 234)- Chandra v. Goiarbai Shrinivas Krishnarao Kango vs Narayan Devji Kango And Others on 23 March, 1954 Indian Kanoon - http://indiankanoon.org/doc/1089401/ 2 (I.L.R. 14 Bom. 463); Amarendra Mansingh v. Sanatan Singh (60 I.A. 242) ; Balu Sakharam v. Lehoo Sambhaji (I.L. R. 1937 Bom 508); Neelangouda Limbangouda v. Ujjan Gowda (A.I.R. 1948 P.C. 165; 50 Bom."
+    },
+    {
+      "chunk_index": 21,
+      "text": "On appeal, dealing with the complaint of the plaintiff that these documents had been wrongly rejected, the High, Court observed : \" Apart from the fact that these documents were produced at a very late stage of the case............ these judgments could have been admitted in evidence only if they could be shown to be relevant under any of the sections 40 to 44 of the Indian Evidence Act. None of these sections applied in this case. The trial Judge was, therefore, right in not admitting them in evidence.\" The argument of the appellant is that these judgments are admissible under section 13 of the Evidence Act as instances in which there was an assertion that the suit properties belonged to the joint family. For the respondents, it is contended that the dispute between the parties in those litigations was only about the quantum of maintenance to be awarded, that no question of title to the properties was directly involved, and that section 13 was inapplicable. We are unable to accept this contention. The amount of maintenance to be a warded would depend on the extent of the joint family properties, and an issue was actually frame d on that question."
+    },
+    {
+      "chunk_index": 31,
+      "text": "Sanatan Singh(2) that the validity of an adoption did not depend on whether the adopted son could divest an estate which had devolved by inheritance or not, a Fall Bench of the Bombay High Court held in Balu Sakharam v. Lahoo Sambhaji(3) that in such cases the adoption would be valid, but that the estate which had devolved upon the heir could not be divested. In Anant Bhikappa Patil (Minor) v. Shankar Ramchandra Patil(4), the Privy Council dissented from this view, and held that the coparcenary must be held to subsist so long as there was in existence a widow of a coparcerier capable of bringing a son into existence by adoption, and if she made an adoption, the rights of the adopted son would be the same as if he had been in existence at the time when his adoptive father died, and that his title as coparcener would prevail as against the title of any person claiming as heir of the last coparcener. In substance, the estate in the hands of such heir was treated as impressed with the character of coparcenary property so long as there was a widow alive who could make an adoption. This principle was re-affirmed in Neelangouda Limbangouda v. Ujjan Gouda(5)."
+    },
+    {
+      "chunk_index": 32,
+      "text": "Thus far, the scope of the principle of relation back is clear. It applies only when the claim made by the adopted son relates to the -estate of his adoptive father. This estate may be definite and ascertained as when he is the 'sole and absolute owner of the properties, or it may be fluctuating as when he is a member of a joint Hindu family, in which the interest of the coparceners is liable to increase by death or decrease by birth. In either case, it is the interest of the adoptive father which the adopted son is declared entitled to take as on the date of his death. The point for (1) 46 I.A. 97. (4) 70 I.A. 232. (2) 6o I.A. 242. (5) A.I.R. 1948 P.C. 165: 50 Bom.L.R. 682. (3) I.L.R. 1937 BOM. 508. determination now is whether this doctrine of relation back can be applied when the claim made by the adopted son relates not to the estate of his adoptive father but of a collateral. The theory on which this doctrine is based is that there should be no hiatus in, the continuity of the line of the adoptive father. That, by its very nature, can apply only to him and not to his collaterals."
+    },
+    {
+      "chunk_index": 39,
+      "text": "It was held by the Privy Council that the validity of an adoption did not depend on whether an estate could be divested or not, and that the point to be considered was whether the power to adopt had come -to an end by there having come into existence a son, who had attained the full legal capacity to continue the line. Applying these principles, the Judicial Committee decided that the adoption was valid, and that Amarendra took the estate as the preferential heir. It will be seen that in this case no claim of the adopted son to succeed to a collateral was involved, and no question arose as to how far the theory of relation back could be invoked in support of such a claim. The estate claimed was that of his adoptive father, Brajendra, and if the adoption was at all valid, it related back to the date of Brajendra's death, and enabled Amarendra to divest Banamalai. The point for determination actually was whether by reason of Bibhudendra having lived for about 20 years, the power of his mother to adopt to her husband had come to an end."
+    },
+    {
+      "chunk_index": 45,
+      "text": "This reasoning, however, is wholly inapplicable to property which is not held in coparcenary, such as the estate of a collateral devolving by inheritance. The judgment then refers to the decisions of the Board in Amarendra Mansingh v. Sanatan Singh(1) and Vijaysingji Chhatrasingji v. Shivsangji Bhimsangji(2), and it is observed that the impartible estates which were concerned therein were treated as separate property and not as joint family property, a conclusion which does not settle the question, because even on the footing that the estates were separate properties, no question of collateral succession was involved in them, the claim under litigation being' in respect of the estate of the adoptive father and covered by the principle already established in Vellanki Venkata v. Venkatarama (3) and Verabhai v. Bhai Hiraba (4). Then follows the conclusion already quoted that no distinction can be drawn between properties which come from the father and properties which come from others."
+    },
+    {
+      "chunk_index": 48,
+      "text": "Shankar Ramchandra Patil (1); but they were impressed by the fact that the statement of the law in Bhubaneswari Debi v. Nilkomul Lahiri (2) as to the rights of an adopted son quoad the estate of a collateral had been reaffirmed, and they accordingly held that the decision in Anant Bhikappa Patil (Minor) v. Shankar Ramchandra Patil (1) did not intend to alter the previous law that an adopted son could not divest properties which had been inherited from a collateral prior to the date of adoption. They distinguished the actual decision on the ground that as Keshav had vested in him both the ancestral properties as well as the properties inherited from Narayan, and as admittedly there was a relation back of the rights of Anant in respect of the ancestral properties, there should likewise be a relation back in respect of the separate properties. But it is difficult to follow this distinction. If under the law the rights of an adopted son differ according as they relate to the estate of his adoptive father or to property inherited from collaterals, the fact that both classes of properties are held by the same person can make no difference in the quality of those rights."
+    },
+    {
+      "chunk_index": 49,
+      "text": "The position will (1) 70 I.A. 232. (2) 12 1 A. 137. be analogous to that of a coparcener who has also self- acquisitions, in which case, the devolution by survivorship of joint family properties does not affect the devolution by inheritance of the separate properties. The fact is, as frankly conceded by the learned Judges, they were puzzled by the decision in Anant Bhikappa Patil (Minor) v. Shankar Ramchandra Patil (1), and as it was an authority binding on the Indian Courts, they could not refuse to follow it, and were obliged to discover a distinction. This Court, however, is not hampered by any such limitation, and is free to consider the question on its own merits. In deciding that an adopted son is entitled to divest the estate of a collateral, which had devolved by inheritance prior to his adoption, Anant Bhikappa Patil (Minor) v. Shankar Ramchandra Patil (1) went far beyond what had been previously understood to be the law. It is not in consonance with the principle well established in Indian jurisprudence that an inheritance could not be in abeyance, and that the relation back of the right of an adopted son is only quoad the estate of the adoptive father."
+    }
+  ],
+  "raw_response": "```\n{\n  \"issue\": \"Whether the adopted son can divest an estate that had devolved by inheritance from a collateral prior to the date of adoption.\",\n  \"rule\": \"The principle of relation back applies only when the claim of the adopted son relates to the estate of the adoptive father. Where succession to the properties of a person other than an adoptive father is involved, the principle applicable is that inheritance once vested cannot be divested.\",\n  \"application\": \"The court applied the rule that inheritance once vested cannot be divested to the case where the adopted son's claim relates to the estate of a collateral, and held that the adopted son cannot divest the estate that had devolved by inheritance from a collateral prior to the date of adoption.\",\n  \"conclusion\": \"The court overruled the decision in Anant Bhikappa Patil (Minor) v. Shankar Ramchandra Patil and held that an adopted son's right to divest an estate does not extend to estates inherited by the adoptive father from collaterals before the adoption.\",\n  \"authorities\": [\n    \"Vellanki Venkata v. Venkatarama (4 I.A. 1)\",\n    \"Verabhai v. Bhai Hiraba (30 I.A. 234)\",\n    \"Amarendra Mansingh v. Sanatan Singh (60 I.A. 242)\",\n    \"Anant Bhikappa Patil (Minor) v. Shankar Ramchandra Patil (70 I.A. 232)\",\n    \"Neelangouda Limbangouda v. Ujjan Gouda (A.I.R. 1948 P.C. 165: 50 Bom.L.R. 682)\",\n    \"Balu Sakharam v. Lahoo Sambhaji (I.L.R. 1937 BOM. 508)\",\n    \"Pratapsing Shivsing v. Agarsingii Raisingji (46 I.A. 97 at 107)\"\n  ]\n}\n```",
+  "decade": "1950",
+  "n_real_edges": 10
+}

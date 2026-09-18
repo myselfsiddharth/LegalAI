@@ -1,0 +1,272 @@
+{
+  "doc_id": "513801",
+  "filename": "Rustom_Cavasjee_Cooper_vs_Union_Of_India_on_10_February_1970_1.PDF",
+  "year": "1970",
+  "system": "rag",
+  "irac": {
+    "issue": "Whether the impugned Ordinance and subsequent Act 22 of 1969 are valid, particularly in relation to their retrospective effect and compliance with Articles 19 and 31 of the Constitution.",
+    "rule": "A classification under an Act must be founded on an intelligible differentia distinguishing persons, transactions, or things grouped together from others left out of the group, and the differentia must have a rational relation to the object sought to be achieved by the Act. Additionally, the validity of a law affecting fundamental rights under Article 19 must be judged by the requirements laid down in Article 19, and the validity of a law acquiring property must be judged by the requirements laid down in Article 31(2).",
+    "application": "The Court applied the principles of classification and the requirements for valid legislation under Articles 19 and 31 of the Constitution to the impugned Ordinance and Act 22 of 1969. The Court considered whether the classification made by the legislation was valid and whether the legislation complied with the requirements for retrospective effect.",
+    "conclusion": "The Court held that the impugned Ordinance and subsequent Act 22 of 1969 are valid, and that the question of their validity is not academic despite the Ordinance being repealed."
+  },
+  "authority_results": [
+    {
+      "cited": "Barium Chemical Ltd. and Another v. The Company Law Board and Ors.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1748256",
+        "matched_cited_text": "Barium Chemical Ltd. and Another v. The Company Law Board and Ors.",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Rohtas Industries Ltd. v. S. D. Agarwal and Anr.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "443837",
+        "matched_cited_text": "1) and Rohtas Industries Ltd. v. S. D. Agarwal and Anr",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Padfield & Others v. Minister of Agriculture, Fisheries and Food and Others",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Durayappah v. Fernando and Others",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Nakkuda Ali v. M. F. De S. Jayaratne",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Ross-Clunis v. Papadopoullos",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Bhagat Singh's case",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Benoari Lal Sarma's case",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Lakhi Narayan Das's case",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Chiranjit Lal Chowduri's case",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "The State of Bombay v. F. N. Balsara",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "334293",
+        "matched_cited_text": "The State of Bombay v. F. N. Balsara",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "The State of West Bengal v. Anwar Rustom Cavasjee Cooper",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Budhan Choudhry and Others v. The State of Bihar",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1905739",
+        "matched_cited_text": "Budhan Choudhry and Others v. The State of Bihar",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Shri Ram Kishan Dalmia v. Shri Justice S. R. Tendolkar and Others",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "685234",
+        "matched_cited_text": "Shri Ram Kishan Dalmia v. Shri Justice S. R. Tendolkar and Others",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "State of Rajasthan v. Mukandchand & Ors.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "267645",
+        "matched_cited_text": "State of Rajasthan v. Mukandchand & Ors. The Courts",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "M/s. West Ramnad Electric Distribution Company Ltd. v. State of Madras",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "82588",
+        "matched_cited_text": "West Ramnad Electric Distribution Company Ltd. v. State of Madras",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "State of Mysore v. Achiah Chetty",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "958208",
+        "matched_cited_text": "1) and State of Mysore v. Achiah Chetty",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Smt. Sitabati Devi v. State of West Bengal",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 0.92,
+        "matched_cited_doc_id": "1332919",
+        "matched_cited_text": "Smt. Sitabati Debi and Anr. v. State of West Bengal and Another",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "The State of Delhi and Anr.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Mohd. Hanif Quareshi v. State of Bihar",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "93885",
+        "matched_cited_text": "Mohd. Hanif Quareshi v. State of Bihar",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Harnam Singh and Ors. v. Regional Transport Authority, Calcutta and Ors.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Vajravelu Mudaliar's case",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Shantilal Mangaldas",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": [
+    {
+      "chunk_index": 96,
+      "text": "Counsel relied upon the judgments of this Court in Barium Chemical Ltd. and Another v. The Company Law Board and Ors.(1) and Rohtas Industries Ltd. v. S. D. Agarwal and Anr;(2) upon the decisions of the House of Lords in Padfield & Others v. Minister of Agriculture, Fisheries and Food and Others (3) and of the Judicial Committee in Durayappah v. Fernando and Others(4); Nakkuda Ali v. M. F. De S. Jayaratne(5); RossClunis v. Papadopoullos(6), and contended that the decisions of the Judicial Committee in Bhagat Singh's case (7) and. Benoari Lal Sarma's case(8) interpreted a provision which was in substance different from the provision of Art. 123, that the decision in Lakhi Narayan Das's case(9) merely followed the two judgments of the Judicial Committee and since the status of the President under the Constitution qua the Parliament is not the same as the constitutional status of the Governor-General under the Government of India Act, 1935, the decisions cited have no bearing on the interpretation of Art. 123. The Ordinance has been repealed by Act 22 of 1969, and the question of its validity is now academic. It may assume significance only if we hold that Act 22 of 1969 is valid."
+    },
+    {
+      "chunk_index": 164,
+      "text": "The test of permissible classification under an Act lies in two cumulative conditions : (i) classification under the Act must be founded on an intelligible differentia distinguishing persons, transactions or things grouped together from others left out of the group; and (ii) the differentia has a rational relation to the object sought to be achieved by the Act : there must be a nexus between the basis of classification and the object of the Act : Chiranjit Lal Chowduri's case(1); The State of Bombay v. F. N. Balsara(2); The State of West Bengal v. Anwar Rustom Cavasjee Cooper vs Union Of India on 10 February, 1970 Indian Kanoon - http://indiankanoon.org/doc/513801/ 54 Ali Sarar(3); Budhan Choudhry and Others v. The State of Bihar(1); Shri Ram Kishan Dalmia v. Shri Justice S. R. Tendolkar and Others,(2); and State of Rajasthan v. Mukandchand & Ors. The Courts recognize in the Legislature some degree of elas- ticity in the matter of making a classification between persons, objects and transactions."
+    },
+    {
+      "chunk_index": 165,
+      "text": "Provided the classification is based on some intelligible ground, the Courts will not strike down that classification, 'because in the view of the Court it should have proceeded on some other ground or should have included in the class selected for special treatment some other persons, objects or transactions which are not included by the Legislature. The Legislature is free to recognize the degree of harm and to restrict the operation of a law only to those cases where the need is the clearest. The Legislature need not extend the regulation of a law to all cases it may possibly reach, and may make a classification founded on practical grounds of convenience. Classification to be valid must, however, disclose a rational nexus with the object sought to be achieved by the law which makes the classification. Validity of a classification will be upheld only if that test is independently satisfied. The Court in examining the validity of a statute challenged as infringing the equality clause makes an assumption that there is a reasonable classification and that the classification has a rational relation to the object sought to be achieved by the statute."
+    },
+    {
+      "chunk_index": 239,
+      "text": "The Attorney General on the other hand contended that the validity of any law either prospective or retrospective affecting all or any of the fundamental rights under Article 19 has to be judged by the requirement laid down in Article 19 and the validity of a law either prospective or retrospective acquiring property has to be judged by the requirements laid down in Article 31(2). This Court dealt with retrospective legislations in the cases of M/s. West Ramnad Electric Distribution Company Ltd. v. State of Madras(1) and State of Mysore v. Achiah Chetty (2). In the case of M/s. West Ramnad Electric Distribution Company Ltd.(') this Court held that there was Rustom Cavasjee Cooper vs Union Of India on 10 February, 1970 Indian Kanoon - http://indiankanoon.org/doc/513801/ 75 difference between the provisions (1) [1963] 2 S.C.R. 747. (2) A.1.R. [1969] S.C. 477. contained in Article 20(1) and Article 31(2) of the Constitution. Article 20(1) refers to law in force at the time of the commission of the act- charged as an offence whereas Article 31(2) does not contain any such word of limitation as to law being in force at the time but speaks only of authority of a law."
+    },
+    {
+      "chunk_index": 241,
+      "text": "That contention was repelled by Gajendragadkar, J. who spoke for the Court, \"If the Act is retrospective in operation and section 24 has been enacted for the purpose of retrospectively validating actions taken under the provisions of the earlier Act, it must follow by the very retrospective operation of the relevant provisions that at the time when the impugned notification was issued, these provisions were in existence. That is the plain and obvious effect of the retrospective operation of the statute. Therefore in considering whether Article 31(1) has been complied with or not, we must assume that before the notification was issued, the relevant provisions of the Act were in existence and so, Article 3 1 (1) must be held to have been complied with in that sense\". Article 20(1) cannot by its own terms have any retrospective operation whereas Article 31(2) can and that is a vital distinction between the two Articles. That is why there cannot be a retrospective legislation with regard to creation of an offence."
+    },
+    {
+      "chunk_index": 258,
+      "text": "Thereafter Shah, J. speaking for the Court said in repelling the contention advanced that the impugned statute was unreasonable. \"This Court however held in Smt. Sitabati Devi v. State of West Bengal (1) that a law made under clause (2) of Article 31 is not liable to be challenged on the ground that it imposes unreasonable restrictions upon the (1) [1960] 3 S.C.R. 887. (3) [1955] 1 S.C.R. 777. (2) [1967] 2 S.C.R. 949. (4) [1969] 3 S.C.R. 341. right to hold or dispose of property within the meaning of Article 19(1) (f) of the Constitution. In Smt. Sitabati Devi's case(') an owner of land whose property was requisitioned under the West Bengal Land (Requisition and Acquisition) Act, 1948 questioned the validity of the Act by a writ petition filed in the High Court of Calcutta on the plea that it offended Article 19(1)(f) of the Constitution. This Court unanimously held that the validity of the Act relating to acquisition and requisition cannot be questioned on the ground that it offended Article 19(1)(f) and cannot be decided by the criterion under Article 19(5)\"."
+    },
+    {
+      "chunk_index": 319,
+      "text": "The State of Delhi and Anr. (1) the Court supported legislation on a reasonable ground that the case of Tibia College(') had exceptional features which were not found in others. In Dalmia's case(.') the legislature was said to be free to recognise the degrees of harm -and to confine its restric- tion to those cases where the need was deemed to be the greatest. It is in this sense that usefulness to society was found to form a basis of classification in the case of Mohd. Hanif Quareshi v. State of Bihar('). In the case of Harnam Singh and Ors. v. Regional Transport Authority, Calcutta and Ors.(4) Mahajan, J. said that in considering Article 14 the Court should not adopt an attitude which might well choke all beneficial legislation and legislation which was based on a rational classification was permissible. It will not be sound to suggest that there are other banks which can be acquired and these 14 banks should be spared."
+    },
+    {
+      "chunk_index": 327,
+      "text": "Another rule which was laid down in Vajravelu Mudaliar's case(') is that the law may prescribe compensation which is illusory. To illustrate, a property worth a lakh of rupees might be paid for at the sum of Rs. 100 and the question in that context would not relate to the adequacy of compensation because there was no compensation at all. Two broad propositions which were laid down in Vajravelu Mudaliar's case (2 ) are these. First, if principles are not relevant to the property acquired or not relevant to the value of the property at or about the time it is acquired, these are not relevant principles. (1) [1954] S.C.R. 558. (2) [1965] 1 S.C.R. 614. The second proposition is that if a law prescribes a compensation which is illusory the Court could question it on the ground that it is not compensation at all. In the case of Shantilal Mangaldas(1) the Bombay Town Planning Act of 1950 which was repealed by the Bombay Town Planning Act of 1955 came up for consideration. There was a challenge to the Bombay Act of 1955 on the ground of infringement of Article 31(2) of the Constitution."
+    }
+  ],
+  "raw_response": "```\n{\n  \"issue\": \"Whether the impugned Ordinance and subsequent Act 22 of 1969 are valid, particularly in relation to their retrospective effect and compliance with Articles 19 and 31 of the Constitution.\",\n  \"rule\": \"A classification under an Act must be founded on an intelligible differentia distinguishing persons, transactions, or things grouped together from others left out of the group, and the differentia must have a rational relation to the object sought to be achieved by the Act. Additionally, the validity of a law affecting fundamental rights under Article 19 must be judged by the requirements laid down in Article 19, and the validity of a law acquiring property must be judged by the requirements laid down in Article 31(2).\",\n  \"application\": \"The Court applied the principles of classification and the requirements for valid legislation under Articles 19 and 31 of the Constitution to the impugned Ordinance and Act 22 of 1969. The Court considered whether the classification made by the legislation was valid and whether the legislation complied with the requirements for retrospective effect.\",\n  \"conclusion\": \"The Court held that the impugned Ordinance and subsequent Act 22 of 1969 are valid, and that the question of their validity is not academic despite the Ordinance being repealed.\",\n  \"authorities\": [\n    \"Barium Chemical Ltd. and Another v. The Company Law Board and Ors.\",\n    \"Rohtas Industries Ltd. v. S. D. Agarwal and Anr.\",\n    \"Padfield & Others v. Minister of Agriculture, Fisheries and Food and Others\",\n    \"Durayappah v. Fernando and Others\",\n    \"Nakkuda Ali v. M. F. De S. Jayaratne\",\n    \"Ross-Clunis v. Papadopoullos\",\n    \"Bhagat Singh's case\",\n    \"Benoari Lal Sarma's case\",\n    \"Lakhi Narayan Das's case\",\n    \"Chiranjit Lal Chowduri's case\",\n    \"The State of Bombay v. F. N. Balsara\",\n    \"The State of West Bengal v. Anwar Rustom Cavasjee Cooper\",\n    \"Budhan Choudhry and Others v. The State of Bihar\",\n    \"Shri Ram Kishan Dalmia v. Shri Justice S. R. Tendolkar and Others\",\n    \"State of Rajasthan v. Mukandchand & Ors.\",\n    \"M/s. West Ramnad Electric Distribution Company Ltd. v. State of Madras\",\n    \"State of Mysore v. Achiah Chetty\",\n    \"Smt. Sitabati Devi v. State of West Bengal\",\n    \"The State of Delhi and Anr.\",\n    \"Mohd. Hanif Quareshi v. State of Bihar\",\n    \"Harnam Singh and Ors. v. Regional Transport Authority, Calcutta and Ors.\",\n    \"Vajravelu Mudaliar's case\",\n    \"Shantilal Mangaldas\"\n  ]\n}\n```",
+  "decade": "1970",
+  "n_real_edges": 48
+}

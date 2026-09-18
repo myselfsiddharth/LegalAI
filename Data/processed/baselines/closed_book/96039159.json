@@ -1,0 +1,55 @@
+{
+  "doc_id": "96039159",
+  "filename": "V_Kalyanaswamy_D_By_Lrs_vs_L_Bakthavatsalam_D_Thr_Lrs_on_17_July_2020_1.PDF",
+  "year": "2020",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether the High Court can exercise its inherent powers under Section 482 of the Code of Criminal Procedure, 1973 to quash a complaint filed under Section 138 of the Negotiable Instruments Act, 1881, when a dispute between the parties is of a civil nature and the complainant has already initiated civil proceedings.",
+    "rule": "The High Court's inherent powers under Section 482 of the Code of Criminal Procedure, 1973 can be exercised to quash a complaint filed under Section 138 of the Negotiable Instruments Act, 1881, in rare and exceptional cases, but not when a dispute is purely of a civil nature and civil proceedings are already underway.",
+    "application": "The Supreme Court held that the High Court erred in quashing the complaint filed under Section 138 of the Negotiable Instruments Act, 1881, as it failed to consider that the inherent powers under Section 482 of the Code of Criminal Procedure, 1973 should not be used to give a go-by to the proceedings in a case where a civil dispute exists and civil proceedings are pending.",
+    "conclusion": "The Supreme Court allowed the appeal and set aside the impugned order of the High Court, holding that it erred in quashing the complaint."
+  },
+  "authority_results": [
+    {
+      "cited": "R.P. Kapur v. State of Punjab, AIR 1960 SC 561",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "State of Haryana v. Bhajan Lal, 1972 SCC Cri 652",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Abraham John v. M. Incabla (D) by LRs., (2019) 11 SCC 446",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Rajinder Singh v. State of Punjab, (2019) 10 SCC 646",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether the High Court can exercise its inherent powers under Section 482 of the Code of Criminal Procedure, 1973 to quash a complaint filed under Section 138 of the Negotiable Instruments Act, 1881, when a dispute between the parties is of a civil nature and the complainant has already initiated civil proceedings.\",\n  \"rule\": \"The High Court's inherent powers under Section 482 of the Code of Criminal Procedure, 1973 can be exercised to quash a complaint filed under Section 138 of the Negotiable Instruments Act, 1881, in rare and exceptional cases, but not when a dispute is purely of a civil nature and civil proceedings are already underway.\",\n  \"application\": \"The Supreme Court held that the High Court erred in quashing the complaint filed under Section 138 of the Negotiable Instruments Act, 1881, as it failed to consider that the inherent powers under Section 482 of the Code of Criminal Procedure, 1973 should not be used to give a go-by to the proceedings in a case where a civil dispute exists and civil proceedings are pending.\",\n  \"conclusion\": \"The Supreme Court allowed the appeal and set aside the impugned order of the High Court, holding that it erred in quashing the complaint.\",\n  \"authorities\": [\n    \"R.P. Kapur v. State of Punjab, AIR 1960 SC 561\",\n    \"State of Haryana v. Bhajan Lal, 1972 SCC Cri 652\",\n    \"Abraham John v. M. Incabla (D) by LRs., (2019) 11 SCC 446\",\n    \"Rajinder Singh v. State of Punjab, (2019) 10 SCC 646\"\n  ]\n}\n```",
+  "decade": "2020",
+  "n_real_edges": 63
+}

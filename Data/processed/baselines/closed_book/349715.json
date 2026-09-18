@@ -1,0 +1,46 @@
+{
+  "doc_id": "349715",
+  "filename": "Prem_Raj_vs_Ram_Charan_on_4_March_1974_1.PDF",
+  "year": "1974",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether a decree for specific performance can be passed against a party who has entered into a contract to sell a property, when the party has failed to fulfill their obligations under the contract.",
+    "rule": "A court may grant specific performance of a contract if the party seeking performance has been ready and willing to perform their part of the contract and the party in breach has failed to do so.",
+    "application": "The appellant, Prem Raj, entered into a contract to sell a property to the respondent, Ram Charan. The appellant failed to fulfill his obligations under the contract, and the respondent sought specific performance. The trial court decreed in favor of the respondent, which was affirmed by the High Court. The Supreme Court held that the appellant's failure to fulfill his obligations under the contract justified the grant of specific performance.",
+    "conclusion": "The Supreme Court upheld the decree for specific performance passed by the lower courts, holding that the appellant's failure to fulfill his obligations under the contract justified the grant of specific performance."
+  },
+  "authority_results": [
+    {
+      "cited": "Syam Sunder v. Pyarelal",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "R.C. Davis v. Union Carbide Corporation",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Gopalakrishna v. Ramanadhan",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether a decree for specific performance can be passed against a party who has entered into a contract to sell a property, when the party has failed to fulfill their obligations under the contract.\",\n  \"rule\": \"A court may grant specific performance of a contract if the party seeking performance has been ready and willing to perform their part of the contract and the party in breach has failed to do so.\",\n  \"application\": \"The appellant, Prem Raj, entered into a contract to sell a property to the respondent, Ram Charan. The appellant failed to fulfill his obligations under the contract, and the respondent sought specific performance. The trial court decreed in favor of the respondent, which was affirmed by the High Court. The Supreme Court held that the appellant's failure to fulfill his obligations under the contract justified the grant of specific performance.\",\n  \"conclusion\": \"The Supreme Court upheld the decree for specific performance passed by the lower courts, holding that the appellant's failure to fulfill his obligations under the contract justified the grant of specific performance.\",\n  \"authorities\": [\n    \"Syam Sunder v. Pyarelal\",\n    \"R.C. Davis v. Union Carbide Corporation\",\n    \"Gopalakrishna v. Ramanadhan\"\n  ]\n}\n```",
+  "decade": "1970",
+  "n_real_edges": 26
+}

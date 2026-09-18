@@ -1,0 +1,52 @@
+{
+  "doc_id": "168057026",
+  "filename": "Kedar_Nath_Yadav_vs_State_Of_West_Bengal_Ors_on_31_August_2016_1.PDF",
+  "year": "2016",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 3,
+    "Outcome": 2,
+    "Claim": 13,
+    "AuthorityCited": 4
+  },
+  "authority_results": [
+    {
+      "cited": "TML",
+      "source_sentence": "Air compressors, standby generators and LPG storage yard, etc. and lease it to the TML at an annual lease rental of Rs. 90 lakhs per annum for 30 years renewable at the option of TML for further blocks of 30 years.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "Rs. 90 lakhs per annum",
+      "source_sentence": "Air compressors, standby generators and LPG storage yard, etc. and lease it to the TML at an annual lease rental of Rs. 90 lakhs per annum for 30 years renewable at the option of TML for further blocks of 30 years.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "Cabinet Memo",
+      "source_sentence": "Proposal numbers 3 and 4 of Cabinet Memo, referred to supra, approved by the Chief Minister make it clear that acquisition of land comprising of 1053 acres is needed for the Small Car Project of TML and 200 acres of land is needed to cater to the housing and social infrastructure needs of the project.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the Chief Minister",
+      "source_sentence": "Proposal numbers 3 and 4 of Cabinet Memo, referred to supra, approved by the Chief Minister make it clear that acquisition of land comprising of 1053 acres is needed for the Small Car Project of TML and 200 acres of land is needed to cater to the housing and social infrastructure needs of the project.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "2010",
+  "n_real_edges": 92
+}

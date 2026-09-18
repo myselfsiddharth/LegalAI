@@ -1,0 +1,46 @@
+{
+  "doc_id": "1703207",
+  "filename": "Satyawati_Sharma_Dead_By_Lrs_vs_Union_Of_India_Another_on_16_April_2008_1.PDF",
+  "year": "2008",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether the appellant is entitled to the benefit of Section 25 of the Specific Relief Act, 1963, and whether the respondent-Union of India is liable to pay compensation for the acquisition of the land.",
+    "rule": "Section 25 of the Specific Relief Act, 1963, provides that the Court may award compensation to a person who is dispossessed from their property without due process of law or without adequate compensation.",
+    "application": "The appellant claimed that she was dispossessed from the land without due process of law or adequate compensation. The Court examined the facts of the case and the applicable law to determine the appellant's entitlement to compensation.",
+    "conclusion": "The Court held that the appellant was entitled to compensation for the acquisition of the land and directed the respondent-Union of India to pay the same."
+  },
+  "authority_results": [
+    {
+      "cited": "Rustom Cavasjee Cooper v. Union of India (1970) 1 SCR 172",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "State of Maharashtra v. Madanlal Raghuvanshi (1962) 2 SCR 756",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Union of India v. Madhu Limaye (1970) 2 SCR 712",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether the appellant is entitled to the benefit of Section 25 of the Specific Relief Act, 1963, and whether the respondent-Union of India is liable to pay compensation for the acquisition of the land.\",\n  \n  \"rule\": \"Section 25 of the Specific Relief Act, 1963, provides that the Court may award compensation to a person who is dispossessed from their property without due process of law or without adequate compensation.\",\n  \n  \"application\": \"The appellant claimed that she was dispossessed from the land without due process of law or adequate compensation. The Court examined the facts of the case and the applicable law to determine the appellant's entitlement to compensation.\",\n  \n  \"conclusion\": \"The Court held that the appellant was entitled to compensation for the acquisition of the land and directed the respondent-Union of India to pay the same.\",\n  \n  \"authorities\": [\n    \"Rustom Cavasjee Cooper v. Union of India (1970) 1 SCR 172\",\n    \"State of Maharashtra v. Madanlal Raghuvanshi (1962) 2 SCR 756\",\n    \"Union of India v. Madhu Limaye (1970) 2 SCR 712\"\n  ]\n}\n```",
+  "decade": "2000",
+  "n_real_edges": 31
+}

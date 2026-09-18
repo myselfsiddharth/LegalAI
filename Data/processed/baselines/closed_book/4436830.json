@@ -1,0 +1,82 @@
+{
+  "doc_id": "4436830",
+  "filename": "Monnet_Ispat_And_Energy_Ltd_vs_Union_Of_India_And_Ors_on_26_July_2012_1.PDF",
+  "year": "2012",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether the power to review under Section 34(2) of the Arbitration and Conciliation Act, 1996 can be exercised by the Court even if there is no application for review and whether an error of law on the face of the award can be a ground for setting aside the award under Section 34(2)(a) of the Act.",
+    "rule": "The power to review under Section 34(2) of the Arbitration and Conciliation Act, 1996 can be exercised by the Court only if there is an application for review. An error of law on the face of the award can be a ground for setting aside the award under Section 34(2)(a) of the Act if it is a patent error and not a perverse finding.",
+    "application": "The Court held that in the absence of an application for review, the Court cannot exercise its power to review under Section 34(2) of the Act. The Court also held that an error of law on the face of the award can be a ground for setting aside the award under Section 34(2)(a) of the Act if it is a patent error and not a perverse finding.",
+    "conclusion": "The Court allowed the appeal and set aside the impugned order. The Court held that the High Court had exceeded its jurisdiction in setting aside the award on the ground that it was perverse or not in accordance with the law."
+  },
+  "authority_results": [
+    {
+      "cited": "Associate Cement Co. Ltd. v. K.P. Agrawal and Ors., (2003) 7 SCC 295",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "P.R. Shah, Shares and Stock Brokers Pvt. Ltd. v. B.V. Krishna Rao and Ors., (2002) 5 SCC 690",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "M. Venkatesh v. The Bangalore North Cantt. Municipality and Ors., AIR 1969 SC 1160",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Union of India and Ors. v. Shyama Pada Sidhanta and Ors., (1991) 3 SCC 467",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Nalini V. Patel v. State of Maharashtra and Ors., (2000) 8 SCC 588",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "R.D. Saxena v. Balram Prasad Sharma, (2000) 7 SCC 264",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Smt. Pushpa Meena v. Shahla Khan and Ors., (2003) 9 SCC 713",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether the power to review under Section 34(2) of the Arbitration and Conciliation Act, 1996 can be exercised by the Court even if there is no application for review and whether an error of law on the face of the award can be a ground for setting aside the award under Section 34(2)(a) of the Act.\",\n  \"rule\": \"The power to review under Section 34(2) of the Arbitration and Conciliation Act, 1996 can be exercised by the Court only if there is an application for review. An error of law on the face of the award can be a ground for setting aside the award under Section 34(2)(a) of the Act if it is a patent error and not a perverse finding.\",\n  \"application\": \"The Court held that in the absence of an application for review, the Court cannot exercise its power to review under Section 34(2) of the Act. The Court also held that an error of law on the face of the award can be a ground for setting aside the award under Section 34(2)(a) of the Act if it is a patent error and not a perverse finding.\",\n  \"conclusion\": \"The Court allowed the appeal and set aside the impugned order. The Court held that the High Court had exceeded its jurisdiction in setting aside the award on the ground that it was perverse or not in accordance with the law.\",\n  \"authorities\": [\n    \"Associate Cement Co. Ltd. v. K.P. Agrawal and Ors., (2003) 7 SCC 295\",\n    \"P.R. Shah, Shares and Stock Brokers Pvt. Ltd. v. B.V. Krishna Rao and Ors., (2002) 5 SCC 690\",\n    \"M. Venkatesh v. The Bangalore North Cantt. Municipality and Ors., AIR 1969 SC 1160\",\n    \"Union of India and Ors. v. Shyama Pada Sidhanta and Ors., (1991) 3 SCC 467\",\n    \"Nalini V. Patel v. State of Maharashtra and Ors., (2000) 8 SCC 588\",\n    \"R.D. Saxena v. Balram Prasad Sharma, (2000) 7 SCC 264\",\n    \"Smt. Pushpa Meena v. Shahla Khan and Ors., (2003) 9 SCC 713\"\n  ]\n}\n```",
+  "decade": "2010",
+  "n_real_edges": 66
+}

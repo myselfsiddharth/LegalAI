@@ -1,0 +1,15 @@
+{
+  "doc_id": "177188375",
+  "filename": "T_Ravi_Anr_vs_B_Chinna_Narasimha_Ors_Etc_on_21_March_2017_1.PDF",
+  "year": "2017",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Claim": 7,
+    "Holding": 9,
+    "Party": 4,
+    "Outcome": 5
+  },
+  "authority_results": [],
+  "decade": "2010",
+  "n_real_edges": 73
+}

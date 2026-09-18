@@ -1,0 +1,46 @@
+{
+  "doc_id": "1752395",
+  "filename": "Gauri_Shankar_vs_State_Of_U_P_on_12_August_1993_1.PDF",
+  "year": "1993",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether the accused is entitled to the benefit of Section 4 of the Dowry Death Act, 1986, if the trial for the offence under Section 302 IPC was held within one year from the date of marriage.",
+    "rule": "Section 4 of the Dowry Death Act, 1986 provides a presumption of guilt against the accused if the trial for the offence under Section 302 IPC is held within one year from the date of marriage and it is shown that the deceased was subjected to cruelty for or in connection with any demand for dowry.",
+    "application": "The court held that if it is shown that the accused subjected the deceased to cruelty for or in connection with any demand for dowry and the trial for the offence under Section 302 IPC was held within one year from the date of marriage, then the accused is entitled to the benefit of Section 4 of the Dowry Death Act, 1986.",
+    "conclusion": "The court allowed the appeal and set aside the judgment of the High Court, remanding the case to the trial court for fresh trial."
+  },
+  "authority_results": [
+    {
+      "cited": "State of U.P. v. Ram Lakhan Sharma",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Smt. Rajeshwari v. State of U.P.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Harihar Prasad v. State of U.P.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether the accused is entitled to the benefit of Section 4 of the Dowry Death Act, 1986, if the trial for the offence under Section 302 IPC was held within one year from the date of marriage.\",\n  \"rule\": \"Section 4 of the Dowry Death Act, 1986 provides a presumption of guilt against the accused if the trial for the offence under Section 302 IPC is held within one year from the date of marriage and it is shown that the deceased was subjected to cruelty for or in connection with any demand for dowry.\",\n  \"application\": \"The court held that if it is shown that the accused subjected the deceased to cruelty for or in connection with any demand for dowry and the trial for the offence under Section 302 IPC was held within one year from the date of marriage, then the accused is entitled to the benefit of Section 4 of the Dowry Death Act, 1986.\",\n  \"conclusion\": \"The court allowed the appeal and set aside the judgment of the High Court, remanding the case to the trial court for fresh trial.\",\n  \"authorities\": [\n    \"State of U.P. v. Ram Lakhan Sharma\",\n    \"Smt. Rajeshwari v. State of U.P.\",\n    \"Harihar Prasad v. State of U.P.\"\n  ]\n}\n```",
+  "decade": "1990",
+  "n_real_edges": 27
+}

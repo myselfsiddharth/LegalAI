@@ -1,0 +1,57 @@
+{
+  "doc_id": "168057026",
+  "filename": "Kedar_Nath_Yadav_vs_State_Of_West_Bengal_Ors_on_31_August_2016_1.PDF",
+  "year": "2016",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether the High Court can exercise its jurisdiction under Section 482 of the Code of Criminal Procedure to quash a charge sheet or criminal proceedings when the allegations in the FIR prima facie make out an offence.",
+    "rule": "The High Court's inherent powers under Section 482 of the Code of Criminal Procedure can be exercised to quash a charge sheet or criminal proceedings when the allegations in the FIR prima facie do not make out an offence or when the proceedings are abuse of the process of any court.",
+    "application": "The Supreme Court held that the inherent powers of the High Court under Section 482 of the Code of Criminal Procedure can be exercised in cases where the allegations in the FIR are absurd and inherently improbable. The Court observed that the allegations in the FIR must be prima facie examined to determine whether they make out an offence.",
+    "conclusion": "The Supreme Court allowed the appeal and set aside the impugned judgment of the High Court, holding that the High Court had erred in not exercising its jurisdiction under Section 482 of the Code of Criminal Procedure."
+  },
+  "authority_results": [
+    {
+      "cited": "R.P. Kapur v. State of Punjab, AIR 1960 SC 561",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "208309",
+        "matched_cited_text": "Pandit Jhandu Lal & Ors vs The State Of Punjab & Ors",
+        "n_matching_edges": 9
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "State of Haryana v. Bhajan Lal, AIR 1973 SC 2624",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "State of West Bengal v. W.I. Bhuyan, AIR 1963 SC 1440",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Nagaland Adnmi v. State of Nagaland, AIR 1964 SC 1610",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether the High Court can exercise its jurisdiction under Section 482 of the Code of Criminal Procedure to quash a charge sheet or criminal proceedings when the allegations in the FIR prima facie make out an offence.\",\n  \"rule\": \"The High Court's inherent powers under Section 482 of the Code of Criminal Procedure can be exercised to quash a charge sheet or criminal proceedings when the allegations in the FIR prima facie do not make out an offence or when the proceedings are abuse of the process of any court.\",\n  \"application\": \"The Supreme Court held that the inherent powers of the High Court under Section 482 of the Code of Criminal Procedure can be exercised in cases where the allegations in the FIR are absurd and inherently improbable. The Court observed that the allegations in the FIR must be prima facie examined to determine whether they make out an offence.\",\n  \"conclusion\": \"The Supreme Court allowed the appeal and set aside the impugned judgment of the High Court, holding that the High Court had erred in not exercising its jurisdiction under Section 482 of the Code of Criminal Procedure.\",\n  \"authorities\": [\n    \"R.P. Kapur v. State of Punjab, AIR 1960 SC 561\",\n    \"State of Haryana v. Bhajan Lal, AIR 1973 SC 2624\",\n    \"State of West Bengal v. W.I. Bhuyan, AIR 1963 SC 1440\",\n    \"Nagaland Adnmi v. State of Nagaland, AIR 1964 SC 1610\"\n  ]\n}\n```",
+  "decade": "2010",
+  "n_real_edges": 92
+}

@@ -1,0 +1,303 @@
+{
+  "doc_id": "1524072",
+  "filename": "K_T_Plantation_Pvt_Ltd_Anr_vs_State_Of_Karnataka_on_9_August_2011_1.PDF",
+  "year": "2011",
+  "system": "rag",
+  "irac": {
+    "issue": "Whether the Karnataka Land Reforms Act, 1961, and the Rules made thereunder are ultra vires and violative of Articles 14, 19(1)(f), 31 and 300A of the Constitution of India.",
+    "rule": "The Court cannot substitute its own opinion for that of the legislature or its delegate as to what principle or policy would best serve the objects and purpose of the Act or sit in judgment over the wisdom and effectiveness or otherwise of the policy laid down by the regulation making body and declare a regulation to be ultra vires merely on the ground that, in the opinion of the Court, the impugned provisions will not help to serve the object and purpose of the Act.",
+    "application": "The Court applied the principles of statutory interpretation and held that the Karnataka Land Reforms Act, 1961, and the Rules made thereunder are not ultra vires and violative of Articles 14, 19(1)(f), 31 and 300A of the Constitution of India.",
+    "conclusion": "The Court upheld the validity of the Karnataka Land Reforms Act, 1961, and the Rules made thereunder."
+  },
+  "authority_results": [
+    {
+      "cited": "Paritosh Bhupeshkumar Sheth and Others v. State of Gujarat (1984) 4 SCC 27",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Punjab Sikh Regular Motor Service, Moudhapara, Raipur v. Regional Transport Authority & Another AIR 1966 SC 1318",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1849667",
+        "matched_cited_text": "Punjab Sikh Regular Motor Service, Moudhapara, Raipur v. Regional Transport Authority & Another",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Joginder Singh & Others v. Deputy Custodian-General of Evacuee Property & Others AIR 1967 SC 145",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Bharat Hari Singhania & Others v. Commissioner of Wealth Tax (Central) & Others (1994) Supp. 3 SCC 46",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Ashok Leyland Ltd. v. State of T.N. & Another (2004) 3 SCC 1",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Printers (Mysore) Ltd. v. M. A. Rasheed & Others (2004) 4 SCC 460",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "South India Corporation (P) Ltd. v. Secretary, Board of Revenue, Trivendrum & Another AIR 1964 SC 207",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Commissioner of Wealth Tax, Andhra Pradesh, Hyderabad v. Trustees of H.E.H. Nizam's Family (Remainder Wealth Trust), Hyderabad (1977) 3 SCC 362",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Chandavarkar Sita Ratna Rao v. Ashalata S. Guram (1986) 4 SCC 447",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Deep Chand v. State of U.P. & Others AIR 1959 SC 648",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "570453",
+        "matched_cited_text": "Deep Chand v. State of U.P. & Others",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Prem Nath Kaul v. State of Jammu & Kashmir, AIR 1959 SC 749",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "816126",
+        "matched_cited_text": "Prem Nath Kaul v. State of Jammu & Kashmir",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Ukha Kolhe v. State of Maharashtra AIR 1963 SC 1531",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Bar Council of Uttar Pradesh v. State of U.P & Another (1973) 1 SCC 261",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "614153",
+        "matched_cited_text": "Bar Council of Uttar Pradesh v. State of U.P & Another",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "T. Barai v. Henry Ah Hoe & Another (1983) 1 SCC 177",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "674147",
+        "matched_cited_text": "T. Barai v. Henry Ah Hoe & Another",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Hoechst Pharmaceuticals v. State of Bihar (1983) 4 SCC 45",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "703764",
+        "matched_cited_text": "Hoechst Pharmaceuticals v. State of Bihar",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Lingappa Pochanna Appelwar v. State of Maharashtra & Another (1985) 1 SCC 479",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1145196",
+        "matched_cited_text": "Lingappa Pochanna Appelwar v. State of Maharashtra & Another",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Vijay Kumar Sharma & Others v. State of Karnataka & Others (1990) 2 SCC 562",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1506108",
+        "matched_cited_text": "Vijay Kumar Sharma & Others v. State of Karnataka & Others",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Municipal Council Palai v. T. J. Joseph (1964) 2 SCR 87",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "793142",
+        "matched_cited_text": "Municipal Council Palai v. T. J. Joseph",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Ch. Tika Ramji v. State of U.P. 1956 SCR 393",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "33396",
+        "matched_cited_text": "Ch. Tika Ramji v. State of U.P.",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "State of Karnataka v. Shri Ranganatha Reddy (1977) 4 SCC 471",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1474119",
+        "matched_cited_text": "State of Karnataka v. Shri Ranganatha Reddy",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "M. Karunanidhi v. Union of India & Another (1979) 3 SCC 431",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1716282",
+        "matched_cited_text": "M. Karunanidhi v. Union of India & Another",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Kelo v. City of New London (545 US 469 (2005))",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Shantilal Mangaldas v. State of Bombay AIR 1960 SC 178",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Union of India v. Metal Corporation of India Ltd. & Another AIR 1967 SC 637",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "I.C. Golaknath and Others v. State of Punjab, AIR 1967 SC 1643",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "120358",
+        "matched_cited_text": "I.C. Golaknath and Others v. State of Punjab",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": [
+    {
+      "chunk_index": 29,
+      "text": "Paritosh Bhupeshkumar Sheth and Others (1984) 4 SCC 27, this Court declared that while examining whether a particular piece of delegated legislation - whether in the form of a rule or regulation or any other type of statutory instrument - was in excess of the power of subordinate legislation conferred on the delegate, has to be determined with reference only to the specific provisions contained in the relevant statute conferring the power to make the rule, regulation etc. and the object and purpose of the Act as can be gathered from the various provisions of the enactment. It was held that the Court cannot substitute its own opinion for that of the legislature or its delegate as to what principle or policy would best serve the objects and purpose of the Act or sit in judgment over the wisdom and effectiveness or otherwise of the policy laid down by the regulation making body and declare a regulation to be ultra vires merely on the ground that, in the opinion of the Court, the impugned provisions will not help to serve the object and purpose of the Act."
+    },
+    {
+      "chunk_index": 34,
+      "text": "Reference may be made to the decisions of this Court in Punjab Sikh Regular Motor Service, Moudhapara, Raipur v. Regional Transport Authority & Another AIR 1966 SC 1318, Joginder Singh & Others v. Deputy Custodian-General of Evacuee Property & Others AIR 1967 SC 145 and Bharat Hari Singhania & Others v. Commissioner of Wealth Tax (Central) & Others (1994) Supp. 3 SCC 46, Ashok Leyland Ltd. v. State of T.N. & Another (2004) 3 SCC 1, Printers (Mysore) Ltd. v. M. A. Rasheed & Others (2004) 4 SCC 460, South India Corporation (P) Ltd. v. Secretary, Board of Revenue, Trivendrum & Another AIR 1964 SC 207, Commissioner of Wealth Tax, Andhra Pradesh, Hyderabad v. Trustees of H.E.H. Nizam's Family (Remainder Wealth Trust), Hyderabad (1977) 3 SCC 362 and Chandavarkar Sita Ratna Rao v. Ashalata S. Guram (1986) 4 SCC 447. 40."
+    },
+    {
+      "chunk_index": 58,
+      "text": "Repugnancy between the two statutes would arise if there is a direct conflict between the two provisions and the law made by the Parliament and the law made by the State Legislature occupies the same filed. Reference may be made to the decisions of this Court in Deep Chand v. State of U.P. & Others AIR 1959 SC 648; Prem Nath Kaul v. State of Jammu & Kashmir, AIR 1959 SC 749; (1959) Supp. (2) SCR 270, Ukha Kolhe v. State of Maharashtra AIR 1963 SC 1531; Bar Council of Uttar Pradesh v. State of U.P & Another (1973) 1 SCC 261; T. Barai v. Henry Ah Hoe & Another (1983) 1 SCC 177; Hoechst Pharmaceuticals v. State of Bihar (1983) 4 SCC 45; Lingappa Pochanna Appelwar v. State of Maharashtra & Another (1985) 1 SCC 479; and Vijay Kumar Sharma & Others v. State of Karnataka & Others (1990) 2 SCC 562. 66. When the repugnancy between the Central and State Legislations is pleaded we have to first examine whether the two legislations cover or relate to the same subject matter."
+    },
+    {
+      "chunk_index": 59,
+      "text": "The test for determining the same is to find out the dominant intention of the two legislations and if the dominant intention of the two legislations is different, they cover different subject matter then merely because the two legislations refer to some allied or cognate subjects, they do not cover the same field. A provision in one legislation to give effect to its dominant purpose may incidentally be on the same subject as covered by the provision of the other legislation, but such partial coverage of the same area in a different context and to achieve a different purpose does not bring about the repugnancy which is intended to be covered by Article 254(2). In other words, both the legislations must be substantially on the same subject to attract Article 254. In this connection, reference may be made to the decisions of this Court in Municipal Council Palai v. T. J. Joseph (1964) 2 SCR 87; Ch. Tika Ramji v. State of U.P. 1956 SCR 393; State of Karnataka v. Shri Ranganatha Reddy (1977) 4 SCC 471; M. Karunanidhi v. Union of India & Another (1979) 3 SCC 431; and Vijay Kumar Sharma& Others v. State of Karnataka & Others (1990) 2 SCC 562. 67."
+    },
+    {
+      "chunk_index": 75,
+      "text": "The US Supreme Court later revisited the question on what constitute public use in Kelo v. City of New London (545 US 469 (2005). In that case the Court held that a plan of economic development, that would primarily benefit a major pharmaceutical company, which incidentally benefited the public in the nature of increased employment opportunities and increased tax benefits was a `public use'. The Court rejected the arguments that takings of this kind, the Court should require a `reasonable certainty' that the respective public benefits will actually accrue. 90. Eminent domain is distinguishable alike from the police power, by which restriction are imposed on private property in the public interest, e.g. in connection with health, sanitation, zoning regulation, urban planning and so on from the power of taxation, by which the owner of private property is compelled to contribute a portion of it for the public purposes and from the war-power, involving the destruction of private property in the course of military operations. The police power fetters rights of property while eminent domain takes them away."
+    },
+    {
+      "chunk_index": 84,
+      "text": "If the Legislature makes a law for acquiring a property by providing for an illusory compensation or by indicating the principles for ascertaining the compensation which do not relate to the property acquired or to the value of such property at or within a reasonable proximity of the date of acquisition or the principles are so designed and so arbitrary that they do not provide for compensation at all, one can easily hold that the legislature made the law in fraud of its powers.\" Justice Subha Rao reiterated his view in Union of India v. Metal Corporation of India Ltd. & Another AIR 1967 SC 637. 100. In Shantilal Mangaldas's case (supra), the validity of Bombay Town Planning Act 1958 was challenged before this Court on the ground that the owner was to be given market value of land at date of declaration of scheme, which was not the just equivalent of the property acquired, the Court held that after the Fourth Amendment resulting in the changes to Article 31(2) the question of `adequacy of compensation' could not be entertained. Justice Hidayatullah stated that the stance taken in the previous case by Justice Subha Rao as \"obiter and not binding\"."
+    },
+    {
+      "chunk_index": 86,
+      "text": "The Court held that the Constitution guarantees a right to compensation - an equivalent in money of the property compulsorily acquired which is the basic guarantee and, therefore, the law must provide compensation, and for determining compensation relevant principles must be specified; if the principles are not relevant the ultimate value determined is not compensation. 101. The validity of Articles 19(1)(f) and (g) was also the subject matter of I.C. Golaknath and Others v. State of Punjab, AIR 1967 SC 1643. In that case, a large portion of the lands of Golak Nath family was declared surplus under the Punjab Security of Land Tenures Act 1953. They challenged the act on the grounds that it denied them their Constitutional Rights to acquire and hold property and practice any profession. Validity of Articles 19(1)(f) and (g), the 17th Amendment, the 1st Amendment and the 4th Amendment were also questioned."
+    },
+    {
+      "chunk_index": 119,
+      "text": "Rule of law can be traced back to Aristotle and has been championed by Roman jurists; medieval natural law thinkers; Enlightenment philosophers such as Hobbes, Locke, Rousseau, Montesquieu, Dicey etc. Rule of law has also been accepted as the basic principle of Canadian Constitution order. Rule of law has been considered to be as an implied limitation on Parliament's powers to legislate. In Reference Re Manitoba Language Rights (1985) 1 SCR 721, the Supreme Court of Canada described the constitutional status of the rule of law as follows: \"The Constitution Act, 1982 ... is explicit recognition that \"the rule of law is a fundamental postulate of our constitutional structure.\" The rule of law has always been understood as the very basis of the English Constitution characterising the political institutions of England from the time of the Norman Conquest."
+    }
+  ],
+  "raw_response": "```\n{\n  \"issue\": \"Whether the Karnataka Land Reforms Act, 1961, and the Rules made thereunder are ultra vires and violative of Articles 14, 19(1)(f), 31 and 300A of the Constitution of India.\",\n  \"rule\": \"The Court cannot substitute its own opinion for that of the legislature or its delegate as to what principle or policy would best serve the objects and purpose of the Act or sit in judgment over the wisdom and effectiveness or otherwise of the policy laid down by the regulation making body and declare a regulation to be ultra vires merely on the ground that, in the opinion of the Court, the impugned provisions will not help to serve the object and purpose of the Act.\",\n  \"application\": \"The Court applied the principles of statutory interpretation and held that the Karnataka Land Reforms Act, 1961, and the Rules made thereunder are not ultra vires and violative of Articles 14, 19(1)(f), 31 and 300A of the Constitution of India.\",\n  \"conclusion\": \"The Court upheld the validity of the Karnataka Land Reforms Act, 1961, and the Rules made thereunder.\",\n  \"authorities\": [\n    \"Paritosh Bhupeshkumar Sheth and Others v. State of Gujarat (1984) 4 SCC 27\",\n    \"Punjab Sikh Regular Motor Service, Moudhapara, Raipur v. Regional Transport Authority & Another AIR 1966 SC 1318\",\n    \"Joginder Singh & Others v. Deputy Custodian-General of Evacuee Property & Others AIR 1967 SC 145\",\n    \"Bharat Hari Singhania & Others v. Commissioner of Wealth Tax (Central) & Others (1994) Supp. 3 SCC 46\",\n    \"Ashok Leyland Ltd. v. State of T.N. & Another (2004) 3 SCC 1\",\n    \"Printers (Mysore) Ltd. v. M. A. Rasheed & Others (2004) 4 SCC 460\",\n    \"South India Corporation (P) Ltd. v. Secretary, Board of Revenue, Trivendrum & Another AIR 1964 SC 207\",\n    \"Commissioner of Wealth Tax, Andhra Pradesh, Hyderabad v. Trustees of H.E.H. Nizam's Family (Remainder Wealth Trust), Hyderabad (1977) 3 SCC 362\",\n    \"Chandavarkar Sita Ratna Rao v. Ashalata S. Guram (1986) 4 SCC 447\",\n    \"Deep Chand v. State of U.P. & Others AIR 1959 SC 648\",\n    \"Prem Nath Kaul v. State of Jammu & Kashmir, AIR 1959 SC 749\",\n    \"Ukha Kolhe v. State of Maharashtra AIR 1963 SC 1531\",\n    \"Bar Council of Uttar Pradesh v. State of U.P & Another (1973) 1 SCC 261\",\n    \"T. Barai v. Henry Ah Hoe & Another (1983) 1 SCC 177\",\n    \"Hoechst Pharmaceuticals v. State of Bihar (1983) 4 SCC 45\",\n    \"Lingappa Pochanna Appelwar v. State of Maharashtra & Another (1985) 1 SCC 479\",\n    \"Vijay Kumar Sharma & Others v. State of Karnataka & Others (1990) 2 SCC 562\",\n    \"Municipal Council Palai v. T. J. Joseph (1964) 2 SCR 87\",\n    \"Ch. Tika Ramji v. State of U.P. 1956 SCR 393\",\n    \"State of Karnataka v. Shri Ranganatha Reddy (1977) 4 SCC 471\",\n    \"M. Karunanidhi v. Union of India & Another (1979) 3 SCC 431\",\n    \"Kelo v. City of New London (545 US 469 (2005))\",\n    \"Shantilal Mangaldas v. State of Bombay AIR 1960 SC 178\",\n    \"Union of India v. Metal Corporation of India Ltd. & Another AIR 1967 SC 637\",\n    \"I.C. Golaknath and Others v. State of Punjab, AIR 1967 SC 1643\"\n  ]\n}\n```",
+  "decade": "2010",
+  "n_real_edges": 88
+}

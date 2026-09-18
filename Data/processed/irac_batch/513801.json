@@ -1,0 +1,83 @@
+{
+  "doc_id": "513801",
+  "filename": "Rustom_Cavasjee_Cooper_vs_Union_Of_India_on_10_February_1970_1.PDF",
+  "year": "1970",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 3,
+    "Claim": 11,
+    "Holding": 12,
+    "AuthorityCited": 7,
+    "Outcome": 1
+  },
+  "authority_results": [
+    {
+      "cited": "cl. (1) of Article 123 of the Constitution",
+      "source_sentence": "HEADNOTE: On July 19, 1964, the Acting President promulgated, in exercise of the power conferred by cl. (1) of Article 123 of the Constitution, Ordinance 8 of 1969, transferring to and vesting the undertaking of 14 named Commercial Banks, which held deposits of not less than rupees fifty crores, in the corresponding new Banks set up under the Ordinance.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Section 6",
+      "source_sentence": "Section 6 read with Schedule 11 provided for and prescribed the method of determining compensation for acquisition of the undertaking.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the Act and the Ordinance",
+      "source_sentence": "In the -present case the petitioner's claim was that by the Act and the Ordinance the rights. guaranteed to him under Articles 14, 19 and 31 of the Constitution were impaired.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Articles 14, 19 and 31 of the Constitution",
+      "source_sentence": "In the -present case the petitioner's claim was that by the Act and the Ordinance the rights. guaranteed to him under Articles 14, 19 and 31 of the Constitution were impaired.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "The Union of India\" [1950] S.C.R. 869",
+      "source_sentence": "The Union of India\" [1950] S.C.R. 869, referred to. 2. (i) Exercise of the power to promulgate an Ordinance under Article 123 is strictly conditioned.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "4354",
+        "matched_cited_text": "Chiranjit Lal Chowduri v. The Union of India",
+        "n_matching_edges": 4
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "s. 5 of the Act",
+      "source_sentence": "A law could. therefore, be enacted for compulsory acquisition of an undertaking as defined in s. 5 of the Act. [568 B-D] There was no satisfactory proof in support of the plea that the Act was not enacted in the larger interest of nation but to serve political ends.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "a law",
+      "source_sentence": "This court has the power to strike down a law on ground of want of authority, but the Court will not sit in appeal over the policy of the Parliament in enacting a law. [583 D, 584 H] Commonwealth of Australia v.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
+    }
+  ],
+  "decade": "1970",
+  "n_real_edges": 48
+}

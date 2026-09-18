@@ -1,0 +1,79 @@
+{
+  "doc_id": "157051080",
+  "filename": "The_State_Of_Himachal_Pradesh_vs_Yogendra_Mohan_Sengupta_on_11_January_2024_1.PDF",
+  "year": "2024",
+  "system": "rag",
+  "irac": {
+    "issue": "The issue seems to be related to the distinction between legislative and administrative functions, and what constitutes a binding precedent.",
+    "rule": "The distinction between legislative and administrative functions is that a legislative act creates and promulgates a general rule of conduct without reference to particular cases, while an administrative act makes and issues a specific direction or applies a general rule to a particular case. A binding precedent is the principle upon which a case is decided, and not every observation found in a judgment.",
+    "application": "The court applied the principles of distinguishing between legislative and administrative functions, and the concept of binding precedents, to the case at hand, specifically in relation to the National Green Tribunal's (NGT) powers and the interpretation of a previous judgment in Mantri Techzone Private Limited.",
+    "conclusion": "The court concluded that the observations made in a previous judgment (Mantri Techzone Private Limited) could not be construed as a precedent or a ratio decidendi, as they were based on concessions made by the appellants and not on a detailed consideration of the issues."
+  },
+  "authority_results": [
+    {
+      "cited": "Cynamide India Ltd. (supra)",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Union of India and Others v. Dhanwanti Devi and Others (1996) 6 SCC 44",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1145726",
+        "matched_cited_text": "Union of India and Others v. Dhanwanti Devi and Others26",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Director General (Road Development) National Highways Authority of India (supra)",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": false
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": [
+    {
+      "chunk_index": 44,
+      "text": "The distinction between the two has usually been expressed as \u25a1one between the general and the particular\u201a. \u25a1A legislative act is the creation and promulgation of a general rule of conduct without reference to particular cases; an administrative act is the making and issue of a specific direction or the application of a general rule to a particular case in accordance with the requirements of policy\u201a. \u25a1Legislation is the process of formulating a general rule of conduct without reference to particular cases and usually operating in future; administration is the process of performing particular acts, of issuing particular orders or of making decisions which apply general rules to particular cases.\u201a It has also been said: \u25a1Rule-making is normally directed toward the formulation of requirements having a general application to all members of a broadly identifiable class\u201a while, \u25a1an adjudication, on the other hand, applies to specific individuals or situations\u201a. But, this is only a broad distinction, not necessarily always true. \u20ac..\u201a 50."
+    },
+    {
+      "chunk_index": 45,
+      "text": "Though, this Court, in the celebrated case of Cynamide India Ltd. (supra) observed that any attempt to draw a distinct line between legislative and administrative functions is difficult in theory and impossible in practice, it attempted to draw a line between the two inasmuch as different legal rights and consequences may ensue, in exercise of such functions. It has been held that the distinction between the two has usually been expressed as \u25a1one between the general and the particular\u201a. A legislative act is the creation and promulgation of a general rule of conduct without reference to particular cases; whereas an administrative act is the making and issue of a specific direction or the application of a general rule to a particular case in accordance with the requirements of policy. It has been held that legislation is the process of formulating a general rule of conduct without reference to particular cases and usually operating in future. Whereas, administration is the process of performing particular acts of issuing particular orders or of making decisions which apply general rules to particular cases."
+    },
+    {
+      "chunk_index": 71,
+      "text": "State of Karnataka25, except the directions issued against Respondents 9 and 10. It could thus be seen that this Court, in view of the submissions recorded on behalf of the counsel for the applicants, did not find it necessary to consider the contentions urged in the other civil appeals except the appeals filed against Respondents 9 and 10. As such, the observations made in para 47 of Mantri Techzone The State Of Himachal Pradesh vs Yogendra Mohan Sengupta on 11 January, 2024 Indian Kanoon - http://indiankanoon.org/doc/157051080/ 25 Private Limited (supra) will have to be construed as restricted to the cases of respondent Nos. 9 and 10. The position is further clarified from the observations of this Court in the said case in paras 60-61. 2016 SCC OnLine NGT 1409 74. As to what could be a binding precedent has been succinctly observed by this Court in the case of Union of India and Others v. Dhanwanti Devi and Others26, which reads as under: \u25a19. \u20ac\u20acIt is not everything said by a Judge while giving judgment that constitutes a precedent."
+    },
+    {
+      "chunk_index": 72,
+      "text": "The only thing in a Judge's decision binding a party is the principle upon which the case is decided and for this reason it is important to analyse a decision and isolate from it the ratio decidendi. According to the well-settled theory of precedents, every decision contains three basic postulates\u2020(i) findings of material facts, direct and inferential. An inferential finding of facts is the inference which the Judge draws from the direct, or perceptible facts; (ii) statements of the principles of law applicable to the legal problems disclosed by the facts; and (iii) judgment based on the combined effect of the above. A decision is only an authority for what it actually decides. What is of the essence in a decision is its ratio and not every observation found therein nor what logically follows from the various observations made in the judgment. Every judgment must be read as applicable to the particular facts proved, or assumed to be proved, since the generality of the expressions which may be found there is not intended to be exposition of the whole law, but governed and qualified by the particular facts of the case in which such expressions are to be found."
+    },
+    {
+      "chunk_index": 73,
+      "text": "It would, therefore, be not profitable to extract a sentence here and there from the judgment and to build upon it because the essence of the decision is its ratio and not every observation found therein. The enunciation of the reason or principle on which a question before a court has been decided is alone binding as a precedent. The concrete decision alone (1996) 6 SCC 44 : 1996 INSC 911 is binding between the parties to it, but it is the abstract ratio decidendi, ascertained on a consideration of the judgment in relation to the subject-matter of the decision, which alone has the force of law and which, when it is clear what it was, is binding. It is only the principle laid down in the judgment that is binding law under Article 141 of the Constitution. A deliberate judicial decision arrived at after hearing an argument on a question which arises in the case or is put in issue may constitute a precedent, no matter for what reason, and the precedent by long recognition may mature into rule of stare decisis. It is the rule deductible from the application of law to the facts and circumstances of the case which constitutes its ratio decidendi.\u201a 75."
+    },
+    {
+      "chunk_index": 74,
+      "text": "This Court, in the case of Dhanwanti Devi (supra) in paragraph 9, has held that it is not profitable to extract a sentence here and there from the judgment and to build upon it. It has been held that the essence of the decision is its ratio and not every observation found therein. It has been held that a deliberate judicial decision arrived at after hearing an argument on a question which arises in the case or is put in issue would constitute a precedent. The State Of Himachal Pradesh vs Yogendra Mohan Sengupta on 11 January, 2024 Indian Kanoon - http://indiankanoon.org/doc/157051080/ 26 76. Though at a first blush, the observations made in para 47 of the judgment in the case of Mantri Techzone Private Limited (supra), would appear to support the case of the respondents, but if the entire judgment in the said case is perused, it is not so. It can clearly be seen that the learned Advocate General of the State has specifically argued that the Revised Master Plan is statutory in nature and the NGT has no power, competence or jurisdiction to consider the validity or vires of any statutory provision/regulation."
+    },
+    {
+      "chunk_index": 75,
+      "text": "It was therefore argued that the order of the NGT to that extent was liable to be set aside. It was similarly argued on behalf of the other appellant that the order of the NGT impugned therein which revised buffer zones also had the effect of amending the Revised Master Plan 2015. A perusal of para 29 of the Mantri Techzone Private Limited (supra) would clearly reveal that the counsel appearing for the applicants before the High Court has fairly conceded to the setting aside of those general directions. It could thus be seen that, though the issue was raised before the High Court with regard to the power of the NGT to issue such directions, this Court did not go into that issue on the basis of the concessions made by the appellants. We are therefore of the considered view that the observations found in para 47 of the Mantri Techzone Private Limited (supra) could not be construed to be a precedent or a ratio decidendi. 77. We may also gainfully refer to the observations made by this Court in the case of Director General (Road Development) National Highways Authority of India (supra)."
+    },
+    {
+      "chunk_index": 104,
+      "text": "Dayanand) (SCC p.57, paras 90-91).\u201a 108. It could thus be seen that this Court in unequivocal terms held that no Court or Tribunal and for that matter any other authority can ignore the law stated by this Court. It held that such obedience would also be conducive to their smooth working, otherwise there would be confusion in the administration of law and the respect for law would irretrievably suffer. It has been held that the law declared by the higher court in the State is binding on authorities and tribunals under its superintendence and they cannot ignore it. This Court expressed a caution that it had become necessary to reiterate that disrespect to the constitutional ethos and breach of discipline have a grave impact on the credibility of judicial institution and encourages chance litigation. This Court further held that predictability and certainty are important hallmarks of judicial jurisprudence developed in this country, as discipline is sine qua non for effective and efficient functioning of the judicial system. 109."
+    }
+  ],
+  "raw_response": "{\"issue\": \"The issue seems to be related to the distinction between legislative and administrative functions, and what constitutes a binding precedent.\", \n\"rule\": \"The distinction between legislative and administrative functions is that a legislative act creates and promulgates a general rule of conduct without reference to particular cases, while an administrative act makes and issues a specific direction or applies a general rule to a particular case. A binding precedent is the principle upon which a case is decided, and not every observation found in a judgment.\",\n\"application\": \"The court applied the principles of distinguishing between legislative and administrative functions, and the concept of binding precedents, to the case at hand, specifically in relation to the National Green Tribunal's (NGT) powers and the interpretation of a previous judgment in Mantri Techzone Private Limited.\",\n\"conclusion\": \"The court concluded that the observations made in a previous judgment (Mantri Techzone Private Limited) could not be construed as a precedent or a ratio decidendi, as they were based on concessions made by the appellants and not on a detailed consideration of the issues.\",\n\"authorities\": [\n  \"Cynamide India Ltd. (supra)\",\n  \"Union of India and Others v. Dhanwanti Devi and Others (1996) 6 SCC 44\",\n  \"Director General (Road Development) National Highways Authority of India (supra)\"\n]\n}",
+  "decade": "2020",
+  "n_real_edges": 58
+}

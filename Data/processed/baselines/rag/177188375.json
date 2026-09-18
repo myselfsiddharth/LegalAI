@@ -1,0 +1,190 @@
+{
+  "doc_id": "177188375",
+  "filename": "T_Ravi_Anr_vs_B_Chinna_Narasimha_Ors_Etc_on_21_March_2017_1.PDF",
+  "year": "2017",
+  "system": "rag",
+  "irac": {
+    "issue": "Whether a finding on title in a previous suit for injunction is res judicata in a subsequent suit for title",
+    "rule": "A finding on title in a previous suit is res judicata in a subsequent suit if it was directly and substantially in issue, and the decision was necessary for the adjudication of the principal issue. The test for determining this is whether the issue was necessary to be decided for adjudicating on the principal issue and was decided, and if the judgment was in fact based upon that decision.",
+    "application": "The court applied the test to the facts of the case and held that the finding on title in the earlier suit was necessary for the decision of the case, and therefore, the bar of res judicata applies.",
+    "conclusion": "The court decided point 1 accordingly, holding that the finding on title in the previous suit is res judicata in the subsequent suit."
+  },
+  "authority_results": [
+    {
+      "cited": "Mulla",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "Corpus Juris Secundum (Vol. 50, para 735, p. 229)",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Rajanga Asari AIR 1965 Madras 355",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1970592",
+        "matched_cited_text": "Vanagiri Sri Selliamman Ayyanar ... vs Rajanga Asari And Ors.",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Commissioner of Endowments & Ors. v. Vittal Rao & Ors. (2005) 4 SCC 120",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "127110",
+        "matched_cited_text": "Commissioner Of Endowments & Ors vs Vittal Rao & Ors",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Sajjadanashin Sayed Md. B.E. Edr. v. Musa Dadabhai Ummer",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Isher Singh v. Sarwan Singh AIR 1965 SC 948",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "282787",
+        "matched_cited_text": "Isher Singh vs Sarwan Singh And Ors.",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Syed Mohd. Salie Labbai v. Mohd. Hanifa (1976) 4 SCC 780",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 0.83,
+        "matched_cited_doc_id": "1651599",
+        "matched_cited_text": "Syed Mohd. Salie Labbai (Dead) By L.Rs. ... vs Mohd. Hanifs (Dead) By L.Rs. And Ors",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Radhamadhub Holder v. Monohur Mookerji (1887-88) 15 IA 97",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Nilakant Banerji v. Suresh Chunder Mullick (1884-85) 12 IA 171",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Moti Lal v. Karrab-ul-Din (1896-97) 24 IA 170",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Rajender Singh v. Santa Singh AIR 1973 SC 2537",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1802335",
+        "matched_cited_text": "Rajender Singh & Ors vs Santa Singh & Ors",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Jayaram Mudaliar v. Ayyaswami (1972) 2 SCC 200",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1690960",
+        "matched_cited_text": "Jayaram Mudaliar vs Ayyaswami And Ors.",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Imambandi & Ors. v. Mutsaddi & Ors. (1918) L.R. 45 I.A. 73",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Syed Shah Ghulam Ghouse Mohiuddin & Ors. v. Syed Shah Ahmed Mohiuddin Kamisul Quadri (died) by l.rs. & Ors. (1971) 1 SCC 597",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 0.89,
+        "matched_cited_doc_id": "1682387",
+        "matched_cited_text": "Syed Shah Ghulam Ghouse Mohiuddin And ... vs Syed Shah Ahmed Moriuddin Kamisul ...",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": [
+    {
+      "chunk_index": 22,
+      "text": "Rajanga Asari AIR 1965 Madras 355 held (see para 8 therein) that the previous suit was only for injunction relating to the crops. Maybe, the question of title was decided, though not raised in the plaint. In the latter suit on title, the finding in the earlier suit on title would not be res judicata as the earlier suit was concerned only with a possessory right. These two decisions, in our opinion, cannot be treated as being contrary to each other but should be understood in the context of the tests referred to above. Each of them can perhaps be treated as correct if they are understood in the light of the tests stated above. In the first case decided by this Court, it is to be assumed that the tests above-referred to were satisfied for holding that the finding as to possession was substantially rested on title upon which a finding was felt necessary and in the latter case decided by the Madras High Court, it must be assumed that the tests were not satisfied."
+    },
+    {
+      "chunk_index": 23,
+      "text": "As stated in Mulla, it all depends on the facts of each case and whether the finding as to title was treated as necessary for grant of an injunction in the earlier suit and was also the substantive basis for grant of injunction. In this context, we may refer to Corpus Juris Secundum (Vol. 50, para 735, p. 229) where a similar aspect in regard to findings on possession and incidental findings on title were dealt with. It is stated: \u201eWhere title to property is the basis of the right of possession, a decision on the question of possession is res judicata on the question of title to the extent that adjudication of title was essential to the judgment; but where the question of the right to possession was the only issue actually or necessarily involved, the judgment is not conclusive on the question of ownership or title.\u2026 25. We have gone into the above aspects in some detail so that when a question arises before the Courts as to whether an issue was earlier decided only incidentally or collaterally, the Courts could deal with the question as a matter of legal principle rather than on vague grounds."
+    },
+    {
+      "chunk_index": 24,
+      "text": "Point 1 is decided accordingly.\u2026 (emphasis added by us) In Commissioner of Endowments & Ors. v. Vittal Rao & Ors. (2005) 4 SCC 120, it has been held thus : T.Ravi & Anr vs B.Chinna Narasimha & Ors. Etc on 21 March, 2017 Indian Kanoon - http://indiankanoon.org/doc/177188375/ 8 \u201e28. In support of his submission, the learned counsel for Respondent 1 contended that as long as an issue arises substantially in a litigation irrespective of the fact whether or not a formal issue has been framed or a formal relief has been claimed, a finding on the said issue would operate as res judicata, strongly relied on the decision of this Court in Sajjadanashin Sayed Md. B.E. Edr. v. Musa Dadabhai Ummer (supra). Paras 18 and 19 of the said judgment read : (SCC pp.359-60) \"18. In India, Mulla has referred to similar tests (Mulla, 15th Edn., p. 104). The learned author says: a matter in respect of which relief is claimed in an earlier suit can be said to be generally a matter \u25a1directly and substantially\u201a in issue but it does not mean that if the matter is one in respect of which no relief is sought it is not directly or substantially in issue. It may or may not be."
+    },
+    {
+      "chunk_index": 25,
+      "text": "It is possible that it was \u25a1directly and substantially in issue and it may also be possible that it was only collaterally or incidentally in issue, depending upon the facts of the case. The question arises as to what is the test for deciding into which category a case falls? One test is that if the issue was \u25a1necessary\u201a to be decided for adjudicating on the principal issue and was decided, it would have to be treated as \u25a1directly and substantially\u201a in issue and if it is clear that the judgment was in fact based upon that decision, then it would be res judicata in a latter case (Mulla, p. 104). One has to examine the plaint, the written statement, the issues and the judgment to find out if the matter was directly and substantially in issue (Isher Singh v. Sarwan Singh AIR 1965 SC 948 and Syed Mohd. Salie Labbai v. Mohd. Hanifa (1976) 4 SCC 780). We are of the view that the above summary in Mulla is a correct statement of the law. 19. We have here to advert to another principle of caution referred to by Mulla (p. 105): \u25a1It is not to be assumed that matters in respect of which issues have been framed are all of them directly and substantially in issue."
+    },
+    {
+      "chunk_index": 26,
+      "text": "Nor is there any special significance to be attached to the fact that a particular issue is the first in the list of issues. Which of the matters are directly in issue and which collaterally or incidentally, must be determined on the facts of each case. A material test to be applied is whether the court considers the adjudication of the issue material and essential for its decision.\u201a \" (emphasis in original and supplied) 29. In the light of what is stated above, in the case on hand, in our view, it was necessary for the Court in the earlier round of litigation to decide the nature and scope of gift deed Ext. A-1. Accordingly, the courts decided that the gift made in favour of ancestors of Respondent 1 of the land was absolute and it was not an endowment for a public or charitable purpose. On the facts of the case, it is clear that though an issue was not formally framed, the issue was material and essential for the decision of the case in the earlier proceeding. Hence, the bar of res judicata applies to the facts of the present case.\u2026 21. Reliance has been placed by learned senior counsel for the respondents on a decision in Anathula Sudhakar v. P."
+    },
+    {
+      "chunk_index": 44,
+      "text": "This principle is well illustrated in Radhamadhub Holder v. Monohur Mookerji (1887-88) 15 IA 97 where the facts were almost similar to those in the instant case. It is true that Section 52 strictly speaking does not apply to involuntary alienations such as court sales but it is well established that the principle of lis pendens applies to such alienations. (See Nilakant Banerji v. Suresh Chunder Mullick (1884-85) 12 IA 171 and Moti Lal v. Karrab-ul-Din (1896-97) 24 IA 170)\u201a (Samarendra Nath case (supra), AIR p. 1445, para 16)\u2026 29. The aforesaid Section 52 of the Transfer of Property Act again came up for consideration before this Court in Rajender Singh v. Santa Singh AIR 1973 SC 2537 and Their Lordships with approval of the principles laid down in Jayaram Mudaliar v. Ayyaswami (1972) 2 SCC 200 reiterated: (Rajender Singh case (supra), SCC p. 711, para 15) \u201e15."
+    },
+    {
+      "chunk_index": 89,
+      "text": "Etc on 21 March, 2017 Indian Kanoon - http://indiankanoon.org/doc/177188375/ 29 and the discussion of law is with respect to various Acts on the basis of which the decisions have been referred herein. 48. When we consider the incidents of disposition of property under different laws, we have to consider the personal law and then to apply the general principles of tenancy law to the permissible non-conflict zone to personal law which holds the field for the parties to arrive at a decision. The Privy Council in the case of Imambandi & Ors. v. Mutsaddi & Ors. (1918) L.R. 45 I.A. 73 considering the distinction between the law which is applicable to Mohammedans, has held that there is a sharp distinction which has to be drawn with other laws with respect to its special nature. The Court cautioned to apply the foreign decisions which are on considerations and conditions totally differing from those applicable to or prevailing in India. The Privy Council has observed thus : \u201e45. Their Lordships cannot help deprecating the practice which seems to be growing in some of the Indian Courts of referring largely to foreign decisions."
+    },
+    {
+      "chunk_index": 90,
+      "text": "However useful in the scientific study of comparative jurisprudence, reference to judgments of foreign Courts, to which Indian practitioners cannot be expected to have access, based often on considerations and conditions totally differing from those applicable to or prevailing in India, is only likely to confuse the administration of justice.\u2026 Thus, in our opinion, courts have to be careful to apply the decision of Muslim law to a case relating to Hindu law and the foreign decisions and vice versa. There cannot be universal application of principles of law on a particular subject. Special laws by which parties are governed are also to be taken into consideration so as to arrive at a just conclusion. 49. Keeping in view aforesaid principle we proceed to consider the question further. In Syed Shah Ghulam Ghouse Mohiuddin & Ors. v. Syed Shah Ahmed Mohiuddin Kamisul Quadri (died) by l.rs. & Ors. (1971) 1 SCC 597, this Court has laid down that Muslim heirs are tenants in common and they succeed to their definite fraction of every part of estate of the deceased. The shares of the heirs are definite and known before actual partition."
+    }
+  ],
+  "raw_response": "```\n{\n  \"issue\": \"Whether a finding on title in a previous suit for injunction is res judicata in a subsequent suit for title\",\n  \"rule\": \"A finding on title in a previous suit is res judicata in a subsequent suit if it was directly and substantially in issue, and the decision was necessary for the adjudication of the principal issue. The test for determining this is whether the issue was necessary to be decided for adjudicating on the principal issue and was decided, and if the judgment was in fact based upon that decision.\",\n  \"application\": \"The court applied the test to the facts of the case and held that the finding on title in the earlier suit was necessary for the decision of the case, and therefore, the bar of res judicata applies.\",\n  \"conclusion\": \"The court decided point 1 accordingly, holding that the finding on title in the previous suit is res judicata in the subsequent suit.\",\n  \"authorities\": [\n    \"Mulla\",\n    \"Corpus Juris Secundum (Vol. 50, para 735, p. 229)\",\n    \"Rajanga Asari AIR 1965 Madras 355\",\n    \"Commissioner of Endowments & Ors. v. Vittal Rao & Ors. (2005) 4 SCC 120\",\n    \"Sajjadanashin Sayed Md. B.E. Edr. v. Musa Dadabhai Ummer\",\n    \"Isher Singh v. Sarwan Singh AIR 1965 SC 948\",\n    \"Syed Mohd. Salie Labbai v. Mohd. Hanifa (1976) 4 SCC 780\",\n    \"Radhamadhub Holder v. Monohur Mookerji (1887-88) 15 IA 97\",\n    \"Nilakant Banerji v. Suresh Chunder Mullick (1884-85) 12 IA 171\",\n    \"Moti Lal v. Karrab-ul-Din (1896-97) 24 IA 170\",\n    \"Rajender Singh v. Santa Singh AIR 1973 SC 2537\",\n    \"Jayaram Mudaliar v. Ayyaswami (1972) 2 SCC 200\",\n    \"Imambandi & Ors. v. Mutsaddi & Ors. (1918) L.R. 45 I.A. 73\",\n    \"Syed Shah Ghulam Ghouse Mohiuddin & Ors. v. Syed Shah Ahmed Mohiuddin Kamisul Quadri (died) by l.rs. & Ors. (1971) 1 SCC 597\"\n  ]\n}\n```",
+  "decade": "2010",
+  "n_real_edges": 73
+}

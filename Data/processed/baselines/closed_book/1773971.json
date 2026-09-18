@@ -1,0 +1,46 @@
+{
+  "doc_id": "1773971",
+  "filename": "Inder_Mohan_Lal_vs_Ramesh_Khanna_on_4_August_1987_1.PDF",
+  "year": "1987",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether a person can be convicted under Section 420 IPC if the essential ingredients of cheating are not established.",
+    "rule": "A person can be convicted under Section 420 IPC only if the essential ingredients of cheating, i.e., deceit and fraudulent intent, are established.",
+    "application": "The appellant was accused of cheating and dishonestly inducing the complainant to deliver property. However, the High Court found that there was no prima facie case of cheating. The court held that the essential ingredients of cheating were not established, and therefore, the appellant could not be convicted under Section 420 IPC.",
+    "conclusion": "The Supreme Court allowed the appeal and set aside the conviction and sentence passed by the lower courts."
+  },
+  "authority_results": [
+    {
+      "cited": "Dhanwant Singh v. State of Punjab",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "S. Iyaswami v. State of Madras",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Raghubir Singh v. State of Punjab",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether a person can be convicted under Section 420 IPC if the essential ingredients of cheating are not established.\",\n  \"rule\": \"A person can be convicted under Section 420 IPC only if the essential ingredients of cheating, i.e., deceit and fraudulent intent, are established.\",\n  \"application\": \"The appellant was accused of cheating and dishonestly inducing the complainant to deliver property. However, the High Court found that there was no prima facie case of cheating. The court held that the essential ingredients of cheating were not established, and therefore, the appellant could not be convicted under Section 420 IPC.\",\n  \"conclusion\": \"The Supreme Court allowed the appeal and set aside the conviction and sentence passed by the lower courts.\",\n  \"authorities\": [\n    \"Dhanwant Singh v. State of Punjab\",\n    \"S. Iyaswami v. State of Madras\",\n    \"Raghubir Singh v. State of Punjab\"\n  ]\n}\n```",
+  "decade": "1980",
+  "n_real_edges": 17
+}

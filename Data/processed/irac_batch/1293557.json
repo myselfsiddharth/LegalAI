@@ -1,0 +1,57 @@
+{
+  "doc_id": "1293557",
+  "filename": "Maganlal_Chhagganlal_P_Ltd_vs_Municipal_Corporation_Of_Greater_on_11_April_1974_1.PDF",
+  "year": "1974",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 4,
+    "Holding": 14,
+    "Claim": 13,
+    "AuthorityCited": 4,
+    "Outcome": 1
+  },
+  "authority_results": [
+    {
+      "cited": "regulations",
+      "source_sentence": "Under s. 105E the Commissioner, for the purpose of holding any inquiry under the Act. has the same powers as are vested in a civil court under the C.P.C. in respect of. (i) summoning and enforcing the attendance of any person and examining him on oath, (ii) requiring the discovery and production of documents. and (iii any other matter which may be prescribed by regulations under s.105H.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Punjab [1967] 3 S.C.R. 399",
+      "source_sentence": "Punjab [1967] 3 S.C.R. 399, overruled. (Per Khanna J) :(1) The simple fact that there are two forums with different procedures would not justify the quashing of the impugned provisions is being violative of Art. 14 especially when both procedures are fair and in con- sonance with the principles of natural justice.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "352854",
+        "matched_cited_text": "Northern India Caterers Ltd. v. State of Punjab",
+        "n_matching_edges": 2
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Ed. 1058; 250 U.S. 400",
+      "source_sentence": "Ed. 1058; 250 U.S. 400) which was concerned with a party having several rights to relief arising out of the same act, the present case is concerned with the existence of several remedies in enforcement of a single right to relief.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "the general law of the land",
+      "source_sentence": "The only right which is sought to be enforced by the Municipal Corporation and the Government is a right based on title given by the general law of the land and it is for the enforcement of this right that two alternative procedures are available to the Municipal Corporation or the Government.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "1970",
+  "n_real_edges": 23
+}

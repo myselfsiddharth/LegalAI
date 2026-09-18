@@ -1,0 +1,53 @@
+{
+  "doc_id": "1937304",
+  "filename": "M_I_Builders_Pvt_Ltd_vs_Radhey_Shyam_Sahu_And_Others_on_26_July_1999_1.PDF",
+  "year": "1999",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether a mandatory injunction can be granted against a party to demolish a structure constructed by them, and if so, under what circumstances?",
+    "rule": "A mandatory injunction can be granted to restore the status quo ante, but only in exceptional circumstances and not as a matter of course. The party seeking such an injunction must show that the defendant's act was wrongful and that the plaintiff has a clear right to have the thing restored.",
+    "application": "The appellant, M I Builders Pvt Ltd, was granted a lease to construct a shopping complex on a plot of land. However, the appellant constructed a multi-storeyed building in contravention of the sanctioned plan. The respondents, who were nearby residents, sought a mandatory injunction to demolish the structure. The High Court granted the injunction, but the Supreme Court allowed the appeal, holding that the High Court's order was not justified.",
+    "conclusion": "The Supreme Court set aside the High Court's order granting a mandatory injunction to demolish the structure constructed by the appellant. The Court held that the respondents had not shown that the appellant's act was wrongful or that they had a clear right to have the structure demolished."
+  },
+  "authority_results": [
+    {
+      "cited": "Union of India v. Ladulal Jain",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Rustom Cavas Lee v. Rustom Cavas Lee",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Halsbury's Laws of England (4th ed.), Vol. 16, para 713",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "American Jurisprudence (2nd ed.), Vol. 29, p. 104",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": false
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether a mandatory injunction can be granted against a party to demolish a structure constructed by them, and if so, under what circumstances?\",\n  \"rule\": \"A mandatory injunction can be granted to restore the status quo ante, but only in exceptional circumstances and not as a matter of course. The party seeking such an injunction must show that the defendant's act was wrongful and that the plaintiff has a clear right to have the thing restored.\",\n  \"application\": \"The appellant, M I Builders Pvt Ltd, was granted a lease to construct a shopping complex on a plot of land. However, the appellant constructed a multi-storeyed building in contravention of the sanctioned plan. The respondents, who were nearby residents, sought a mandatory injunction to demolish the structure. The High Court granted the injunction, but the Supreme Court allowed the appeal, holding that the High Court's order was not justified.\",\n  \"conclusion\": \"The Supreme Court set aside the High Court's order granting a mandatory injunction to demolish the structure constructed by the appellant. The Court held that the respondents had not shown that the appellant's act was wrongful or that they had a clear right to have the structure demolished.\",\n  \"authorities\": [\n    \"Union of India v. Ladulal Jain\",\n    \"Rustom Cavas Lee v. Rustom Cavas Lee\",\n    \"Halsbury's Laws of England (4th ed.), Vol. 16, para 713\",\n    \"American Jurisprudence (2nd ed.), Vol. 29, p. 104\"\n  ]\n}\n```",
+  "decade": "1990",
+  "n_real_edges": 25
+}

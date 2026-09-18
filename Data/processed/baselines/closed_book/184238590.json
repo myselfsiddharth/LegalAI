@@ -1,0 +1,64 @@
+{
+  "doc_id": "184238590",
+  "filename": "Umaji_Keshao_Meshram_And_Ors_vs_Radhikabai_Widow_Of_Anandrao_on_14_March_1986_1.PDF",
+  "year": "1986",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether a decree for restitution of conjugal rights can be executed under Section 125 of the Code of Criminal Procedure, 1973, and whether there is a bar to filing a petition under Section 125 in a pending appeal for restitution of conjugal rights.",
+    "rule": "A decree for restitution of conjugal rights and an order under Section 125 of the Code of Criminal Procedure, 1973, are distinct remedies with different objectives. There is no bar to filing a petition under Section 125 in a pending appeal for restitution of conjugal rights.",
+    "application": "The court applied the rule to the facts of the case and held that the proceedings under Section 125 are not in the nature of execution proceedings of a decree for restitution of conjugal rights. The court also held that there is no bar to filing a petition under Section 125 in a pending appeal for restitution of conjugal rights.",
+    "conclusion": "The court allowed the petition and set aside the orders of the lower courts, holding that the proceedings under Section 125 are not in the nature of execution proceedings of a decree for restitution of conjugal rights."
+  },
+  "authority_results": [
+    {
+      "cited": "Rustom Cavasjee Cooper v. Union of India",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "D.C. Goela v. State of Punjab",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Mulla Nasiruddin v. State of U.P.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Sham Lal v. State of U.P.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Smt. Sheela Sujata v. Smt. Pushpa Rani",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether a decree for restitution of conjugal rights can be executed under Section 125 of the Code of Criminal Procedure, 1973, and whether there is a bar to filing a petition under Section 125 in a pending appeal for restitution of conjugal rights.\",\n  \"rule\": \"A decree for restitution of conjugal rights and an order under Section 125 of the Code of Criminal Procedure, 1973, are distinct remedies with different objectives. There is no bar to filing a petition under Section 125 in a pending appeal for restitution of conjugal rights.\",\n  \"application\": \"The court applied the rule to the facts of the case and held that the proceedings under Section 125 are not in the nature of execution proceedings of a decree for restitution of conjugal rights. The court also held that there is no bar to filing a petition under Section 125 in a pending appeal for restitution of conjugal rights.\",\n  \"conclusion\": \"The court allowed the petition and set aside the orders of the lower courts, holding that the proceedings under Section 125 are not in the nature of execution proceedings of a decree for restitution of conjugal rights.\",\n  \"authorities\": [\n    \"Rustom Cavasjee Cooper v. Union of India\",\n    \"D.C. Goela v. State of Punjab\",\n    \"Mulla Nasiruddin v. State of U.P.\",\n    \"Sham Lal v. State of U.P.\",\n    \"Smt. Sheela Sujata v. Smt. Pushpa Rani\"\n  ]\n}\n```",
+  "decade": "1980",
+  "n_real_edges": 27
+}

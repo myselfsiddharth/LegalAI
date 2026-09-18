@@ -1,0 +1,46 @@
+{
+  "doc_id": "1293557",
+  "filename": "Maganlal_Chhagganlal_P_Ltd_vs_Municipal_Corporation_Of_Greater_on_11_April_1974_1.PDF",
+  "year": "1974",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether the Municipal Corporation of Greater Bombay can levy a tax on the sale of goods within the city limits, and if so, whether the levy of such tax on the appellant's sale of groundnuts is valid.",
+    "rule": "The power to tax is a legislative power and must be specifically granted by the statute. The Municipal Corporation's power to levy a tax on sales is limited to the specific grants under the Bombay Municipal Corporation Act, 1888.",
+    "application": "The Supreme Court applied the rule to the facts of the case and held that the Municipal Corporation of Greater Bombay did not have the power to levy a tax on the sale of goods within the city limits as it was not specifically granted under the Bombay Municipal Corporation Act, 1888.",
+    "conclusion": "The Supreme Court allowed the appeal and held that the levy of tax on the sale of groundnuts by the appellant was invalid."
+  },
+  "authority_results": [
+    {
+      "cited": "Municipal Corporation of City of Ahmedabad v. Hawabhai M. Desai (1968) 2 SCR 24",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "State of Gujarat v. Shantilal Ambalal Gandhi (1968) 2 SCR 621",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Corporation of Calcutta v. Bagalpur Electric Company Ltd. (1969) 1 SCR 710",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether the Municipal Corporation of Greater Bombay can levy a tax on the sale of goods within the city limits, and if so, whether the levy of such tax on the appellant's sale of groundnuts is valid.\",\n  \"rule\": \"The power to tax is a legislative power and must be specifically granted by the statute. The Municipal Corporation's power to levy a tax on sales is limited to the specific grants under the Bombay Municipal Corporation Act, 1888.\",\n  \"application\": \"The Supreme Court applied the rule to the facts of the case and held that the Municipal Corporation of Greater Bombay did not have the power to levy a tax on the sale of goods within the city limits as it was not specifically granted under the Bombay Municipal Corporation Act, 1888.\",\n  \"conclusion\": \"The Supreme Court allowed the appeal and held that the levy of tax on the sale of groundnuts by the appellant was invalid.\",\n  \"authorities\": [\n    \"Municipal Corporation of City of Ahmedabad v. Hawabhai M. Desai (1968) 2 SCR 24\",\n    \"State of Gujarat v. Shantilal Ambalal Gandhi (1968) 2 SCR 621\",\n    \"Corporation of Calcutta v. Bagalpur Electric Company Ltd. (1969) 1 SCR 710\"\n  ]\n}\n```",
+  "decade": "1970",
+  "n_real_edges": 23
+}

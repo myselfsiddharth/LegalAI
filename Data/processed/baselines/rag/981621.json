@@ -1,0 +1,145 @@
+{
+  "doc_id": "981621",
+  "filename": "S_M_Jakati_Another_vs_S_M_Borkar_Others_on_24_September_1958_1.PDF",
+  "year": "1958",
+  "system": "rag",
+  "irac": {
+    "issue": "Whether the debt of the father was avyavaharika, and if so, whether the auction sale of the joint family property was valid.",
+    "rule": "A debt is considered avyavaharika if it is not lawful or is repugnant to good morals. In a joint Hindu family, the father's power to alienate the family's property is limited, and an alienation for an antecedent debt that is not avyavaharika can bind the sons' shares.",
+    "application": "The court held that the debt in question was not avyavaharika, and therefore, the auction sale of the joint family property was valid and binding on the sons' shares. The court also held that the institution of a suit for partition does not operate as a severance of status between the members of the family, and therefore, the father's power of disposition over the son's share continues.",
+    "conclusion": "The appeal fails and is dismissed with costs."
+  },
+  "authority_results": [
+    {
+      "cited": "Bhubneshwar Prasad Narain Singh v. State of U.P. (1954) S.C.R. 177",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 0.98,
+        "matched_cited_doc_id": "94289",
+        "matched_cited_text": "Naraini (1) and Sidheshwar Mukherji v. Bubneshwar Prasad Narain Singh",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Khiarajmal v. Daim (1904) L.R. 32 I.A. 23",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Sat Narain v. Das (1936) L.R. 63 I.A. 384",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1252014",
+        "matched_cited_text": "5), Pannalal v. Naraini",
+        "n_matching_edges": 2
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Mulgund Co-operative Credit Society v. Shidlingappa Ishwarappa A.I.R. 1941 Bom. 381",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "860374",
+        "matched_cited_text": "Mulgund Co-operative Credit Society v. Shidlingappa Ishwarappa",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Hem Raj alias Babu Lal v. Khem Chand (1943) L.R. 70 I.A. 171",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Toshanpal Singh v. District Judge of Agra (1934) L.R. 61 I.A. 350",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "737050",
+        "matched_cited_text": "Toshanpal Singh v. District Judge of Agra",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Panna Lal v. Mst. Naraini (1956) S.C.R. 544",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1252014",
+        "matched_cited_text": "5), Pannalal v. Naraini",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Shambu Nath Pandey v. Golab Singh (1926) L.R. 53 I.A. 204",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Mussamat Nanomi Babuasia v. Modun Mohun (1885) L.R. 13 I.A. 1",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 0.88,
+        "matched_cited_doc_id": "1673674",
+        "matched_cited_text": "Nanomi Babuasin v. Modun Mohun",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": [
+    {
+      "chunk_index": 5,
+      "text": "Bhubneshwar Prasad Narain Singh, [1954] S.C.R. 177, followed. Khiarajmal v. Daim, (1904) L.R. 32 I.A. 23 and Sat Narain v. Das, (1936) L.R. 63 I.A. 384, distinguished. Mulgund Co-operative Credit Society v. Shidlingappa Ishwa- rappa, A.I.R. 1941 Bom. 381, approved. 1386 JUDGMENT: CIVIL APPELLATE JURISDICTION: Civil Appeal No. 233 of 1954. Appeal from the judgment and decree dated August 22, 1950, of the Bombay High Court in Appeal No. 80 of 1946 from original decree, arising out of the judgment and decree dated October 19, 1945, of the Court of Civil Judge, Senior Division, Dharwar, in Special Suit No. 64 of 1943. A. V. Viswanatha Sastri and M. S. K. Sastri, for the appellants. A. S. R. Chari, Bawa Shivcharan Singh and Govindsaran Singh, for respondents Nos. 2-4. 1958. September 24. The judgment of Imam and Kapur JJ. was delivered by Kapur J. Sinha J. agreed to the order proposed. KAPUR J.-This is an appeal against the judgment and decree of the High Court of Bombay varying the decree of the trial Court decreeing the plaintiff's suit for possession by partition of joint family property. The facts of the case lie in a narrow compass. M. B."
+    },
+    {
+      "chunk_index": 11,
+      "text": "The High Court varied the decree to this extent and the plaintiffs have come up in appeal to this Court by certificate of the High Court of Bombay. The case of the appellants is (1) that the debt was avyavaharika and therefore in an auction sale the S.C.R. SUPREME COURT REPORTS 1389 interest of the sons and other members of the joint family did not pass to the auction-purchaser; (2) that even if the debt was not avyavaharika the institution of the suit for partition operated as severance of status between the members of the family and therefore the father's power of disposition over the son's share had come to an end and consequently in the auction sale the share of the sons did not pass to the auction-purchaser; and (3) that what could legally be sold under s. 155 of the Bombay Land Revenue Code was the right, title and interest of the defaulter i. e. of the father alone which could not include the share of the other members of the joint family. The first question for decision is whether the debt of the father was avyavaharika."
+    },
+    {
+      "chunk_index": 12,
+      "text": "This term has been variously translated as being that which is not lawful or what is not just or what is not admissible under the law or under normal conditions. Colebrooke translated it as \" a debt for a cause repugnant to good morals \". There is another track of decision which has translated it as meaning \" a debt which is not supported as valid by legal arguments \". The Judicial Committee of the Privy Council in Hem Raj alias Babu Lal v. Khem Chand (1) held that the translation of the term as given by Colebrooke makes the nearest approach to the true conception of the term used in the Smrithis texts and may well be taken to represent its correct meaning and that it did not admit of a more precise definition. In Toshanpal Singh v. District Judge of Agra (2) the Judicial Committee held that drawings of monies for unauthorised purposes, which amounted to criminal breach of trust under s. 405 of the Indian Penal Code, were not binding on the sons, but a civil debt arising on account of the receipt of monies by the father which were not accounted for could not be termed avyavaharika."
+    },
+    {
+      "chunk_index": 13,
+      "text": "In the case now before us the appellants have empted to prove that the debt fell within the term avyavaharika by relying upon the payment order and (1)(1943) L.R. 70 I.A. 171, 176. (2) (1934) L.R. 61 I.A. 350. the findings given by the Deputy Registrar in thepayment order where-the liabity was inter alia based on a breach of trust. Any opinion given in the order of the Deputy Registrar as to the nature of the liability of defendant No.1, M. B. Jakati, cannot be used as evidence in the present case to S. M. Jakati & Another vs S. M. Borkar & Others on 24 September, 1958 Indian Kanoon - http://indiankanoon.org/doc/981621/ 5 determine whether the debt was avyavaharika or otherwise. The order is not admissible to prove the truth of the facts therein stated and except that it may be relevant to prove the existence of the judgment itself, it will not be admissible in evidence. Section 43 of the Indian Evidence Act, the principle of which is, that judgments excepting those upon questions of public and general interest, judgment in rem or when necessary to prove the existence of a judgment, order or decree, which may be a fact in issue, are irrelevant."
+    },
+    {
+      "chunk_index": 17,
+      "text": "Modun Mohan (6) already quoted: \" Destructive as it may be of the principle of (1) (1926) L.R. 53 I.A. 204. (2) [1952] S.C.R. 544, 552, 553, 556, 5-59. S. M. Jakati & Another vs S. M. Borkar & Others on 24 September, 1958 Indian Kanoon - http://indiankanoon.org/doc/981621/ 6 (3) (1874) L.R. 1 I.A. 321, 333. (4) (1878) L.R. 6 I.A. 88, 101. (5) (1923) L.R. 51 I.A. 129, 136. (6) (1885) L.R. 13 I.A. 1, 17, 18. independent coparcenary rights in the sons, the decisions have for sometime established the principle that the sons cannot set up their rights against their father's alienation for an antecedent debt, or against his creditor's remedies for their debts, if not tainted with immorality. On this important question of the liability of -the joint estate, their Lordships think that there is no conflict of authority \". There is no discrepancy of judicial opinion as to the pious duty of Hindu sons. In Panna Lal v. Mst. Naraini (1) this Court approved the following dictum of Suleman A. C. J. in Bankeylal v. Durga Prasad (2): The Hindu Law texts based the liability on the pious obligation itself and not on the father's power to sell the sons' share \"."
+    },
+    {
+      "chunk_index": 29,
+      "text": "He was not even mentioned as a debtor in the award on the basis of which the decree, which was executed was made. Similarly Naurez was not represented in either of the suits and therefore there was no decree against him and the sale of his property also was therefore without jurisdiction and null and void. This case cannot apply to sons in a joint Hindu family where a father represents the family and the decree is executable against the shares of the sons while the coparcenary continues and the liability of their shares continues after partition. Sat Narain v. Das (2) is equally inapplicable to the present case. There the Privy Council was dealing with the father's power of disposal of property before and after partition which power vests in the Official Assignee on his bankruptcy, the question of the right of the judgment-creditor to proceed in execution against the divided shares of sons which had been attached before partition was not a point in controversy."
+    },
+    {
+      "chunk_index": 31,
+      "text": "Narhari Bin Shivappa (1): \" Their Lordships agree with the view of the learned Chief Justice that a purchaser cannot possibly judge of such matters, even if lie knows the facts; and that if he is to be held bound to enquire into the accuracy of the Court's conduct of its own business, no purchaser at a Court sale would be safe. Strancers to a suit are justified in believing that the Court has done that which by the directions of the Court it ought to do. \" In Mussamat Nanomi Babuasia v. Modun Mohun Lord Hobhouse said at p. 18: \" But if the fact be that the purchaser has bargained and paid for the entirely, he may clearly defend his title to it upon any ground which would have justified a sale if the sons had been brought in to oppose the executing proceedings. \" The question which assumes importance in an auction sale of this kind therefore is what did the court intend to sell and did sell and what did the auction purchaser purport to buy and did buy and what did he pay for. One track of decision of which Shambu Nath Pandey v. Golab Singh(3) is an instance, shows when the father's share alone passes. In that case the father alone was made a party to the proceedings."
+    },
+    {
+      "chunk_index": 42,
+      "text": "In the result the appeal fails and is dismissed with costs. SINHA J.-I agree to the order proposed. Appeal dismissed. S. M. Jakati & Another vs S. M. Borkar & Others on 24 September, 1958 Indian Kanoon - http://indiankanoon.org/doc/981621/ 14"
+    }
+  ],
+  "raw_response": "```\n{\n  \"issue\": \"Whether the debt of the father was avyavaharika, and if so, whether the auction sale of the joint family property was valid.\",\n  \"rule\": \"A debt is considered avyavaharika if it is not lawful or is repugnant to good morals. In a joint Hindu family, the father's power to alienate the family's property is limited, and an alienation for an antecedent debt that is not avyavaharika can bind the sons' shares.\",\n  \"application\": \"The court held that the debt in question was not avyavaharika, and therefore, the auction sale of the joint family property was valid and binding on the sons' shares. The court also held that the institution of a suit for partition does not operate as a severance of status between the members of the family, and therefore, the father's power of disposition over the son's share continues.\",\n  \"conclusion\": \"The appeal fails and is dismissed with costs.\",\n  \"authorities\": [\n    \"Bhubneshwar Prasad Narain Singh v. State of U.P. (1954) S.C.R. 177\",\n    \"Khiarajmal v. Daim (1904) L.R. 32 I.A. 23\",\n    \"Sat Narain v. Das (1936) L.R. 63 I.A. 384\",\n    \"Mulgund Co-operative Credit Society v. Shidlingappa Ishwarappa A.I.R. 1941 Bom. 381\",\n    \"Hem Raj alias Babu Lal v. Khem Chand (1943) L.R. 70 I.A. 171\",\n    \"Toshanpal Singh v. District Judge of Agra (1934) L.R. 61 I.A. 350\",\n    \"Panna Lal v. Mst. Naraini (1956) S.C.R. 544\",\n    \"Shambu Nath Pandey v. Golab Singh (1926) L.R. 53 I.A. 204\",\n    \"Mussamat Nanomi Babuasia v. Modun Mohun (1885) L.R. 13 I.A. 1\"\n  ]\n}\n```",
+  "decade": "1950",
+  "n_real_edges": 14
+}

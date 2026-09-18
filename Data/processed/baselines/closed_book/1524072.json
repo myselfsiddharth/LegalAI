@@ -1,0 +1,55 @@
+{
+  "doc_id": "1524072",
+  "filename": "K_T_Plantation_Pvt_Ltd_Anr_vs_State_Of_Karnataka_on_9_August_2011_1.PDF",
+  "year": "2011",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether the Karnataka Land Reforms Act, 1961, applies to plantations and whether the petitioners are entitled to compensation for the lands taken over by the State.",
+    "rule": "The Karnataka Land Reforms Act, 1961, applies to plantations and the petitioners are entitled to compensation for the lands taken over by the State as per the provisions of the Act.",
+    "application": "The Supreme Court applied the provisions of the Karnataka Land Reforms Act, 1961, and held that the Act applies to plantations. The Court also considered the definition of 'land' under the Act and the concept of 'landlord' and 'tenant' to determine the rights of the petitioners.",
+    "conclusion": "The Supreme Court allowed the appeals and directed the State to pay compensation to the petitioners for the lands taken over as per the provisions of the Karnataka Land Reforms Act, 1961."
+  },
+  "authority_results": [
+    {
+      "cited": "Union of India v. Ladulal Jain, (2003) 5 SCC 694",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "State of Karnataka v. R. Devaraju, (1996) 7 SCC 251",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Karnataka State Co-operative Marketing Federation Ltd. v. State of Karnataka, (1997) 9 SCC 322",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Smt. Shantaram Gondhalekar v. State of Maharashtra, (1995) 3 SCC 524",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether the Karnataka Land Reforms Act, 1961, applies to plantations and whether the petitioners are entitled to compensation for the lands taken over by the State.\",\n  \"rule\": \"The Karnataka Land Reforms Act, 1961, applies to plantations and the petitioners are entitled to compensation for the lands taken over by the State as per the provisions of the Act.\",\n  \"application\": \"The Supreme Court applied the provisions of the Karnataka Land Reforms Act, 1961, and held that the Act applies to plantations. The Court also considered the definition of 'land' under the Act and the concept of 'landlord' and 'tenant' to determine the rights of the petitioners.\",\n  \"conclusion\": \"The Supreme Court allowed the appeals and directed the State to pay compensation to the petitioners for the lands taken over as per the provisions of the Karnataka Land Reforms Act, 1961.\",\n  \"authorities\": [\n    \"Union of India v. Ladulal Jain, (2003) 5 SCC 694\",\n    \"State of Karnataka v. R. Devaraju, (1996) 7 SCC 251\",\n    \"Karnataka State Co-operative Marketing Federation Ltd. v. State of Karnataka, (1997) 9 SCC 322\",\n    \"Smt. Shantaram Gondhalekar v. State of Maharashtra, (1995) 3 SCC 524\"\n  ]\n}\n```",
+  "decade": "2010",
+  "n_real_edges": 88
+}

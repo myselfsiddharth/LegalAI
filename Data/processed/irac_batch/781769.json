@@ -1,0 +1,130 @@
+{
+  "doc_id": "781769",
+  "filename": "Guramma_Bhratar_Chanbasappa_Deshmukh_vs_Malappa_on_19_August_1963_1.PDF",
+  "year": "1963",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 5,
+    "Claim": 6,
+    "Holding": 6,
+    "AuthorityCited": 11
+  },
+  "authority_results": [
+    {
+      "cited": "No. 223 of 1859 M.S.D. 1859, P. 97",
+      "source_sentence": "No. 223 of 1859 M.S.D. 1859, P. 97, referred to.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "Ram Lal, (1907) I.L.R. 29 All 310",
+      "source_sentence": "Ram Lal, (1907) I.L.R. 29 All 310, approved. (2)that the High Court was right in affirming the alienations made in favour of the plaintiff and was equally justified in setting side the alienations made in favour of defendants 1 and 2.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1943362",
+        "matched_cited_text": "Daulat Ram vs Ram Lal on 31 January, 1907",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Debichand Bogra, (1941) I.L.R. 20 Pat.727",
+      "source_sentence": "Debichand Bogra, (1941) I.L.R. 20 Pat.727, referred to. (4) that a gift to a stranger of joint family property by the manager of the family is void as he has not the absolute power of disposal over the joint Hindu family property.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Guramma Bhratar Chanbasappa Deshmukh ... vs Malappa",
+      "source_sentence": "Guramma Bhratar Chanbasappa Deshmukh ... vs Malappa on 19 August, 1963 Indian Kanoon - http://indiankanoon.org/doc/781769/ 2 340, referred to. (5) that the Hindu Law texts conferred a right upon a daughter or a sister, as the case may be, to have a share in the family property at the time of partition.",
+      "verification": {
+        "status": "SELF_REFERENCE",
+        "reason": "matches the citing judgment's own title, not an outbound citation"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Chimmava, (1935) I.L R. 59 Bom. 459",
+      "source_sentence": "Chimmava, (1935) I.L R. 59 Bom. 459, disapproved.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Gopi Sahu, (1910) I.L.R. 37 Cal. 1",
+      "source_sentence": "Gopi Sahu, (1910) I.L.R. 37 Cal. 1 approved. (5) that the Hindu Law applicable to Sudras applies to lingayats as well. (6) that in Bombay Presidency the rule accepted in Dattaka Chandrika has never been followed and the share of an adopted son in competition with a natural born son among Sudras has always been 1/5th in the family property, i.e. 1/4th of the natural born son's share.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "262749",
+        "matched_cited_text": "Churaman Sahu vs Gopi Sahu on 14 April, 1909",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Dattaka Chandrika",
+      "source_sentence": "Gopi Sahu, (1910) I.L.R. 37 Cal. 1 approved. (5) that the Hindu Law applicable to Sudras applies to lingayats as well. (6) that in Bombay Presidency the rule accepted in Dattaka Chandrika has never been followed and the share of an adopted son in competition with a natural born son among Sudras has always been 1/5th in the family property, i.e. 1/4th of the natural born son's share.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Dattaka Chandrika",
+      "source_sentence": "The rule in Dattaka Chandrika is that among Sudras an adopted son and an after born natural son take equal share in the family property and it is followed in Madras and Bengal provinces.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Nirode, (1916) 20 C.W.N. 901",
+      "source_sentence": "Nirode, (1916) 20 C.W.N. 901, referred to.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Arumilli Subbarayadu, (1921) 48 I.A. 280",
+      "source_sentence": "Arumilli Subbarayadu, (1921) 48 I.A. 280, distinguished.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "63331",
+        "matched_cited_text": "Arumilli Perrazu vs Arumilli Subbarayadu on 5 May, 1921",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Ramachandra Mahadu, (1925) I.L.R. 49 Bom. 672",
+      "source_sentence": "Ramachandra Mahadu, (1925) I.L.R. 49 Bom. 672, approved.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 0.95,
+        "matched_cited_doc_id": "893980",
+        "matched_cited_text": "Tukaram Mahadu Tandel vs Ramchandra Mahadu Tandel on 17 March, 1925",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "1960",
+  "n_real_edges": 16
+}

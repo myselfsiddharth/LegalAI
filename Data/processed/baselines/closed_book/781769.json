@@ -1,0 +1,46 @@
+{
+  "doc_id": "781769",
+  "filename": "Guramma_Bhratar_Chanbasappa_Deshmukh_vs_Malappa_on_19_August_1963_1.PDF",
+  "year": "1963",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether a widow's suit for possession of property as a limited heir under Hindu law is barred by time if filed more than 6 months after the death of her brother-in-law, where she had taken possession of the property as heir to her husband and later sought to assert her limited estate as a widow.",
+    "rule": "Under Section 2(2) of the Bombay Act, read with Section 6 of the Hindu Succession Act, 1956, and Section 30 of the latter Act, a Hindu widow's limited estate in her husband's property is governed by the provisions of the Hindu Succession Act. The Limitation Act, 1963 does not specifically prescribe a time limit for a Hindu widow to sue for possession as a limited heir. However, Article 137 of the Limitation Act, 1963 applies to suits for possession not specifically covered by other articles.",
+    "application": "The appellant, a Hindu widow, claimed a limited estate in the suit properties as the heir of her husband. The courts below had non-suited her on the ground that the suit was time-barred. The Supreme Court held that since no specific time was prescribed for such a suit under the Limitation Act, and considering that she had taken possession as heir to her husband, her suit could not be considered time-barred merely on the basis of delay without considering the application of Article 137 of the Limitation Act, 1963.",
+    "conclusion": "The Supreme Court allowed the appeal, holding that the suit was not time-barred and should be decided on merits."
+  },
+  "authority_results": [
+    {
+      "cited": "Mulla v. Muthappa (1961) 1 SCR 204",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Vidya Varuthi v. Baluswami (1961) 2 SCR 371",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Rajaram v. Narayan (1961) 1 SCR 675",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether a widow's suit for possession of property as a limited heir under Hindu law is barred by time if filed more than 6 months after the death of her brother-in-law, where she had taken possession of the property as heir to her husband and later sought to assert her limited estate as a widow.\",\n  \n  \"rule\": \"Under Section 2(2) of the Bombay Act, read with Section 6 of the Hindu Succession Act, 1956, and Section 30 of the latter Act, a Hindu widow's limited estate in her husband's property is governed by the provisions of the Hindu Succession Act. The Limitation Act, 1963 does not specifically prescribe a time limit for a Hindu widow to sue for possession as a limited heir. However, Article 137 of the Limitation Act, 1963 applies to suits for possession not specifically covered by other articles.\",\n  \n  \"application\": \"The appellant, a Hindu widow, claimed a limited estate in the suit properties as the heir of her husband. The courts below had non-suited her on the ground that the suit was time-barred. The Supreme Court held that since no specific time was prescribed for such a suit under the Limitation Act, and considering that she had taken possession as heir to her husband, her suit could not be considered time-barred merely on the basis of delay without considering the application of Article 137 of the Limitation Act, 1963.\",\n  \n  \"conclusion\": \"The Supreme Court allowed the appeal, holding that the suit was not time-barred and should be decided on merits.\",\n  \n  \"authorities\": [\n    \"Mulla v. Muthappa (1961) 1 SCR 204\",\n    \"Vidya Varuthi v. Baluswami (1961) 2 SCR 371\",\n    \"Rajaram v. Narayan (1961) 1 SCR 675\"\n  ]\n}\n```",
+  "decade": "1960",
+  "n_real_edges": 16
+}

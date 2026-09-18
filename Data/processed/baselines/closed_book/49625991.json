@@ -1,0 +1,56 @@
+{
+  "doc_id": "49625991",
+  "filename": "Indore_Development_Authority_vs_Manoharlal_And_Ors_Etc_on_6_March_2020_1.PDF",
+  "year": "2020",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether the possession of land taken over by the Indore Development Authority under Section 29 of the Urban Land (Ceiling and Regulation) Act, 1973, can be said to be 'vested' in the State, and whether the landowner is entitled to compensation under Section 24(2) of the Right to Fair Compensation and Transparency in Land Acquisition, Rehabilitation and Resettlement Act, 2013.",
+    "rule": "The Court held that the possession of land taken over by the Authority under Section 29 of the Urban Land (Ceiling and Regulation) Act, 1973, is vested in the State, and that the landowner is not entitled to compensation under Section 24(2) of the Right to Fair Compensation and Transparency in Land Acquisition, Rehabilitation and Resettlement Act, 2013.",
+    "application": "The Court applied the principles of land acquisition and interpretation of statutes to conclude that the possession of land taken over by the Authority under Section 29 of the Urban Land (Ceiling and Regulation) Act, 1973, is vested in the State, and that the landowner is not entitled to compensation under Section 24(2) of the Right to Fair Compensation and Transparency in Land Acquisition, Rehabilitation and Resettlement Act, 2013.",
+    "conclusion": "The Court allowed the appeals of the Indore Development Authority and set aside the impugned judgments of the High Court."
+  },
+  "authority_results": [
+    {
+      "cited": "Pune Municipal Corporation and Anr. vs Harakchand Misirmal Solanki and Ors., (2014) 3 SCC 183",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 0.98,
+        "matched_cited_doc_id": "185065833",
+        "matched_cited_text": "Pune Municipalc Corp.& Anr vs Harakchand Misirimal Solanki & Ors",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Indore Development Authority vs Manoharlal and Ors., (2019) 9 SCC 739",
+      "verification": {
+        "status": "SELF_REFERENCE",
+        "reason": "matches the citing judgment's own title, not an outbound citation"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "New Delhi Municipal Council vs State of Delhi and Ors., (2018) 9 SCC 334",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Union of India vs Shivram Maurya and Ors., (2020) 5 SCC 442",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.44,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether the possession of land taken over by the Indore Development Authority under Section 29 of the Urban Land (Ceiling and Regulation) Act, 1973, can be said to be 'vested' in the State, and whether the landowner is entitled to compensation under Section 24(2) of the Right to Fair Compensation and Transparency in Land Acquisition, Rehabilitation and Resettlement Act, 2013.\",\n  \"rule\": \"The Court held that the possession of land taken over by the Authority under Section 29 of the Urban Land (Ceiling and Regulation) Act, 1973, is vested in the State, and that the landowner is not entitled to compensation under Section 24(2) of the Right to Fair Compensation and Transparency in Land Acquisition, Rehabilitation and Resettlement Act, 2013.\",\n  \"application\": \"The Court applied the principles of land acquisition and interpretation of statutes to conclude that the possession of land taken over by the Authority under Section 29 of the Urban Land (Ceiling and Regulation) Act, 1973, is vested in the State, and that the landowner is not entitled to compensation under Section 24(2) of the Right to Fair Compensation and Transparency in Land Acquisition, Rehabilitation and Resettlement Act, 2013.\",\n  \"conclusion\": \"The Court allowed the appeals of the Indore Development Authority and set aside the impugned judgments of the High Court.\",\n  \"authorities\": [\n    \"Pune Municipal Corporation and Anr. vs Harakchand Misirmal Solanki and Ors., (2014) 3 SCC 183\",\n    \"Indore Development Authority vs Manoharlal and Ors., (2019) 9 SCC 739\",\n    \"New Delhi Municipal Council vs State of Delhi and Ors., (2018) 9 SCC 334\",\n    \"Union of India vs Shivram Maurya and Ors., (2020) 5 SCC 442\"\n  ]\n}\n```",
+  "decade": "2020",
+  "n_real_edges": 296
+}

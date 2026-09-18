@@ -1,0 +1,77 @@
+{
+  "doc_id": "88188427",
+  "filename": "Indore_Development_Authority_vs_Shailendra_Dead_Through_Its_Lrs_And_on_8_February_2018_1.PDF",
+  "year": "2018",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether the possession of land taken over by the Indore Development Authority under Section 24(2) of the Land Acquisition Act, 2013, can be challenged after a lapse of time, and whether the beneficiaries of the land acquisition can be dispossessed.",
+    "rule": "The Court held that under Section 24(2) of the Land Acquisition Act, 2013, if the possession of the land has been taken over by the Authority and the award has been passed, then the land acquisition cannot be challenged on the ground of non-compliance of Section 24(1)(b) of the Act. The Court also held that the possession of the land by the Authority is sufficient, even if it is not actual physical possession.",
+    "application": "The Court applied the rule to the facts of the case and held that the possession of the land taken over by the Indore Development Authority was sufficient, and the land acquisition could not be challenged. The Court also held that the beneficiaries of the land acquisition, who had already constructed houses on the land, could not be dispossessed.",
+    "conclusion": "The Court allowed the appeal of the Indore Development Authority and set aside the impugned judgment of the High Court, which had quashed the land acquisition proceedings."
+  },
+  "authority_results": [
+    {
+      "cited": "Pune Municipal Corporation and Anr. vs Harakchand Misirmal Solanki and Ors.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 0.98,
+        "matched_cited_doc_id": "185065833",
+        "matched_cited_text": "Pune Municipalc Corp.& Anr vs Harakchand Misirimal Solanki & Ors",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Pune Municipal Corporation and Anr. vs Harakchand Misirmal Solanki and Ors.(Second Appeal)",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 0.98,
+        "matched_cited_doc_id": "185065833",
+        "matched_cited_text": "Pune Municipalc Corp.& Anr vs Harakchand Misirimal Solanki & Ors",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Municipal Corporation of Greater Mumbai vs. M/s. Hind Cycles Ltd.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "The State of Maharashtra vs. Suresh Baburao Devkatte",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Special Counsel for the State of Maharashtra vs. Suresh Baburao Devkatte",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "The Indore Development Authority vs. Manoharsingh and Ors.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether the possession of land taken over by the Indore Development Authority under Section 24(2) of the Land Acquisition Act, 2013, can be challenged after a lapse of time, and whether the beneficiaries of the land acquisition can be dispossessed.\",\n  \"rule\": \"The Court held that under Section 24(2) of the Land Acquisition Act, 2013, if the possession of the land has been taken over by the Authority and the award has been passed, then the land acquisition cannot be challenged on the ground of non-compliance of Section 24(1)(b) of the Act. The Court also held that the possession of the land by the Authority is sufficient, even if it is not actual physical possession.\",\n  \"application\": \"The Court applied the rule to the facts of the case and held that the possession of the land taken over by the Indore Development Authority was sufficient, and the land acquisition could not be challenged. The Court also held that the beneficiaries of the land acquisition, who had already constructed houses on the land, could not be dispossessed.\",\n  \"conclusion\": \"The Court allowed the appeal of the Indore Development Authority and set aside the impugned judgment of the High Court, which had quashed the land acquisition proceedings.\",\n  \"authorities\": [\n    \"Pune Municipal Corporation and Anr. vs Harakchand Misirmal Solanki and Ors.\",\n    \"Pune Municipal Corporation and Anr. vs Harakchand Misirmal Solanki and Ors.(Second Appeal)\",\n    \"Municipal Corporation of Greater Mumbai vs. M/s. Hind Cycles Ltd.\",\n    \"The State of Maharashtra vs. Suresh Baburao Devkatte\",\n    \"Special Counsel for the State of Maharashtra vs. Suresh Baburao Devkatte\",\n    \"The Indore Development Authority vs. Manoharsingh and Ors.\"\n  ]\n}\n```",
+  "decade": "2010",
+  "n_real_edges": 157
+}

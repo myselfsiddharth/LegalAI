@@ -1,0 +1,97 @@
+{
+  "doc_id": "1937304",
+  "filename": "M_I_Builders_Pvt_Ltd_vs_Radhey_Shyam_Sahu_And_Others_on_26_July_1999_1.PDF",
+  "year": "1999",
+  "system": "rag",
+  "irac": {
+    "issue": "Whether the demolition of a building constructed by M.I. Builders Pvt. Ltd. should be ordered due to violations of Sections 128 and 129 of the relevant statutes, and whether the courts can mould relief to avoid injustice.",
+    "rule": "The rule of estoppel can prevent a party from changing its stand if it would be inequitable to allow them to do so. The court has discretion to mould relief in a manner that balances competing interests and promotes fairness. The concept of 'Wednesbury unreasonableness' is used to determine if a decision is lawful.",
+    "application": "The court considered the violations of Sections 128 and 129 by M.I. Builders Pvt. Ltd. and the interests of the parties involved, including the allottees of shops and flats. The court noted that ordering demolition would cause hardship to the allottees and the builder, and therefore, moulded relief to allow the builder to pay a fair price for the shops and parking lot.",
+    "conclusion": "The court allowed the builder to pay a fair price for the shops and parking lot, and directed the Mahapalika to examine the case of every prospective allottee and fix fair prices. The court refused to order demolition of the building."
+  },
+  "authority_results": [
+    {
+      "cited": "Ganges Manufacturing Co. vs. Sourujmull & Ors. (1880) 5 ILR Cal 669",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "50531",
+        "matched_cited_text": "The Ganges Manufacturing Co. vs. Sourujmull and others",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Union of India and others vs. M/s. Indo-Afghan Agencies Ltd. (1968) 2 SCR 366",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Re W. (an infant) (1971) AC 682",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "Wade on Administrative Law, 7th Edition, page 720",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "De Smith on Judicial Review of Administrative Action, 5th Edition, page 271",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": [
+    {
+      "chunk_index": 61,
+      "text": "Sorabjee said a party could not change its stand even if it was legally wrong in its earlier stand as otherwise it could be a negation of everything. In the Ganges Manufacturing Co. vs. Sourujmull & Ors. [(1880) 5 ILR Cal 669] a Division Bench of the Calcutta High Court held that \"a man may be estopped not only from giving particular evidence, but from doing any act or relying upon any particular argument or contention, which the rules of equity and good conscience prevent him from using as against his opponent\". In Union of India and others vs. M/s. Indo-Afghan Agencies Ltd. [(1968) 2 SCR 366] in a certain scheme called the Export Promotion Scheme incentives were provided to the exporters for woolen goods. M/s. Indo- Afghan Agencies Ltd. Exported woolen goods to Afghanistan of F.O.B. value of over Rs.5 crores. The Deputy Director in the office of the Textile Commissioner, Bombay, issued to them an Import Entitlement Certificate for about Rs.2 crores only. When the representations made to the Government for grant of Import Entitlement Certificate for full F.O.B. value, it produced no M.I. Builders Pvt."
+    },
+    {
+      "chunk_index": 75,
+      "text": "Discretion should be used not to invalidate the whole process even if provision of Sections 128 and 129 were violated. Some mechanism could be evolved so that fair price for the shops and use of parking lot is fixed and the case of every prospective allottee could be examined and so also perhaps the terms of the agreement between the builder and the Mahapalika. It would be an extraordinary order if demolition is ordered. Reference was made to Wade on Administrative Law, 7th Edition, page 720 and to De Smith on Judicial Review of Administrative Action, 5th Edition, page 271 to support the contention that relief could be moulded in law. In Wade's treatise the following part is relevant: - \"The freedom with which the court can use its discretion to mould its remedies to suit special situations is shown by two decisions already encountered."
+    },
+    {
+      "chunk_index": 76,
+      "text": "One was the case where the House of Lords refused mandamus to a police probationer wrongly induced to resign, although he made out a good case for that remedy, in order not to usurp the powers of the chief constable, and instead granted him an unusual form of declaration to the effect that he was entitled to the remedies of unlawful removal from office except for reinstatement. The other was the case of the Take-over Panel, where in fact no relief was granted but the Court of Appeal explained the novel way in which remedies should be employed in future cases, with the emphasis on declaration rather than certiorari and on 'historic rather than contemporaneous' relief. The same freedom to mould remedies exists in European Community law, where the European Court of Justice may declare non-retroactivity when holding some act or regulation to be void.\" In De Smith it is as under: - M.I. Builders Pvt."
+    },
+    {
+      "chunk_index": 78,
+      "text": "For example, where a series of commercial transactions have been undertaken in reliance upon the impugned decision the court may, in its discretion, fail to quash that decision in view of the administrative chaos that would result from such a remedy. Judicial discretion is employed here to balance fairness to the individual against the general public interest. The task, however, of deciding the force of a statutory provision does not involve judicial discretion. It involves the faithful construction of the objects and purposes of an act of Parliament in the context of the particular decision. Although aspects of public policy may play a part in this exercise, it would be wrong of the courts to impute any general implication that Parliament may intend administrative inconvenience to excuse in advance the violation of its statutes. Such an implication invites careless administration and assumes that the legislature would too easily excuse a breach of its statutes. It is suggested, therefore, that administrative inconvenience is not normally a proper criterion to guide the question of whether a statutory provision is \"mandatory\".\" Mr. Sorabjee and Mr."
+    },
+    {
+      "chunk_index": 81,
+      "text": "The Committee had constructed a market and allotted the shops and flats by inviting tenders in pursuance to an advertisement. On an application filed under Section 8 of the Rent Act by an allottee, an objection was raised by the Committee that there was no relationship of landlord and tenant between the parties. High Court held that there was no relationship of landlord and tenant between the parties inasmuch as there was no 'letting', there being no properly executed lease. In coming to the conclusion that there was no valid lease between the parties, High Court relied upon the provisions of Section 47 of the Punjab Municipal Act. High Court negatived the contention that the Committee was estopped from questioning the status of the applicants as tenants, having all along admittedly accepted rent from them. On an appeal against the judgment of the High Court to this Court, it was held that use of the term 'rent' cannot preclude the landlord from pleading that there was no relationship of landlord and tenant."
+    },
+    {
+      "chunk_index": 82,
+      "text": "The question must, therefore, depend upon whether or not there was a relationship of landlord and tenant in the sense that there was a transfer of interest by the landlord in favour of the tenant. This Court said that in its opinion the Rent Act applied only that species of 'letting' by which the relationship of landlord and tenant is created, that is to say, by which an interest in the property, however, limited in duration is created."
+    },
+    {
+      "chunk_index": 117,
+      "text": "This Court said that the issue presented in that case illustrated \"the classic struggle between those members of the public who would preserve our rivers, forests, parks and open lands in their pristine purity and those charged with administrative responsibilities who, under the pressures of the changing needs of an increasingly complex society, find it necessary to encroach to some extent upon open lands heretofore considered inviolate to change\". In the treatise \"Environmental Law and Policy : Nature, Law, and Society\" by Plater Abrams Goldfarb (American Casebook series - 1992) under the Chapter on Fundamental Environmental Rights, in Section 1 (The Modern Rediscovery of the Public Trust Doctrine) it has been noticed that \"long ago M.I. Builders Pvt. Ltd vs Radhey Shyam Sahu And Others on 26 July, 1999 Indian Kanoon - http://indiankanoon.org/doc/1937304/ 40 there developed in the law of the Roman Empire a legal theory known as the Doctrine of the public trust.\" In America Public Trust doctrine was applied to public properties, such as shore-lands and parks."
+    },
+    {
+      "chunk_index": 129,
+      "text": "Quoting Lord Hailsham LC in Re W. (an infant) ([1971] AC 682) where he said, \"two reasonable persons can perfectly reasonably come to opposite conclusions on the same set of facts without forfeiting their title to be regarded as reasonable\". The following passage from the treatise would be relevant:- \"This is not therefore the standard of the man on the Clapham omnibus. It is the standard indicated by a true construction of the Act which distinguishes between what the statutory authority may or may not be authorised to do. It distinguishes between proper use and improper abuse of power. It is often expressed by saying that the decision is unlawful if it is one to which no reasonable authority could have come. This is the essence of what is now commonly called 'Wednesbury unreasonableness, after the now famous case in which Lord Greene MR expounded it as follows. It is true that discretion must be exercised reasonably. Now what does that mean? Lawyers familiar with the phraseology used in relation to exercise of statutory discretions often use the word unreasonable in a rather comprehensive sense."
+    }
+  ],
+  "raw_response": "{\"issue\": \"Whether the demolition of a building constructed by M.I. Builders Pvt. Ltd. should be ordered due to violations of Sections 128 and 129 of the relevant statutes, and whether the courts can mould relief to avoid injustice.\", \n\"rule\": \"The rule of estoppel can prevent a party from changing its stand if it would be inequitable to allow them to do so. The court has discretion to mould relief in a manner that balances competing interests and promotes fairness. The concept of 'Wednesbury unreasonableness' is used to determine if a decision is lawful.\", \n\"application\": \"The court considered the violations of Sections 128 and 129 by M.I. Builders Pvt. Ltd. and the interests of the parties involved, including the allottees of shops and flats. The court noted that ordering demolition would cause hardship to the allottees and the builder, and therefore, moulded relief to allow the builder to pay a fair price for the shops and parking lot.\", \n\"conclusion\": \"The court allowed the builder to pay a fair price for the shops and parking lot, and directed the Mahapalika to examine the case of every prospective allottee and fix fair prices. The court refused to order demolition of the building.\", \n\"authorities\": [\n  \"Ganges Manufacturing Co. vs. Sourujmull & Ors. (1880) 5 ILR Cal 669\",\n  \"Union of India and others vs. M/s. Indo-Afghan Agencies Ltd. (1968) 2 SCR 366\",\n  \"Re W. (an infant) (1971) AC 682\",\n  \"Wade on Administrative Law, 7th Edition, page 720\",\n  \"De Smith on Judicial Review of Administrative Action, 5th Edition, page 271\"\n  ]\n}",
+  "decade": "1990",
+  "n_real_edges": 25
+}

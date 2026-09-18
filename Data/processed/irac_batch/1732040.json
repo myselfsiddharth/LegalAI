@@ -1,0 +1,72 @@
+{
+  "doc_id": "1732040",
+  "filename": "Accountant_And_Secretarial_Services_vs_Union_Of_India_Ors_on_20_July_1988_1.PDF",
+  "year": "1988",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 2,
+    "Claim": 8,
+    "AuthorityCited": 6,
+    "Outcome": 2,
+    "Holding": 9
+  },
+  "authority_results": [
+    {
+      "cited": "Ranganathan, J.",
+      "source_sentence": "His Lordship agreed with Ranganathan, J. that the appeal should be dismissed.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the view of the Madhya Pradesh High Court",
+      "source_sentence": "His Lordship preferred the view of the Madhya Pradesh High Court in L.S.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "some decisions of this Court",
+      "source_sentence": "A question as to the interpretation of Entry 18 (or its predecessor, Entry 21 of the Provincial List under the Government of India Act, 1935) had arisen before the Federal Court and Privy Council, and also was considered in some decisions of this Court, which, except in the case of Indu Bhusan Bose v.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Indu Bhushan",
+      "source_sentence": "Indu Bhushan must be taken to have expressed a view that premises tenancy legislation in so far as it pertains to houses and buildinYs is referable not to Entry 18 of List II but to entries 6,7 496 and 13 of List III.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the primary rule in Article 254(1) of the Constitution",
+      "source_sentence": "Accountant And Secretarial Services ... vs Union Of India & Ors on 20 July, 1988 Indian Kanoon - http://indiankanoon.org/doc/1732040/ 4 This case is clearly governed by the primary rule in Article 254(1) of the Constitution under which the law of Parliament on a subject in the concurrent List prevails over the State Law.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "[1955] S.C.R. 799",
+      "source_sentence": "State, [1955] S.C.R. 799, referred to.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
+    }
+  ],
+  "decade": "1980",
+  "n_real_edges": 17
+}

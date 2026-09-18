@@ -1,0 +1,176 @@
+{
+  "doc_id": "1758207",
+  "filename": "Tirumalachetti_Rajaram_vs_Tirumalachetti_on_27_April_1961_1.PDF",
+  "year": "1961",
+  "system": "rag",
+  "irac": {
+    "issue": "Whether a substantial question of law is required for an appeal to the Supreme Court when there is a partial affirmance of the lower court's decision, or if the decision is one of affirmance, no further right to appeal lies unless there is a substantial question of law.",
+    "rule": "The Constitution makers intended that the doctrine of affirmance should be confined only to cases where there is a complete affirmance and not to cases of partial affirmance. A variation in the result by the appellate court shows that the two courts have not entirely agreed, and it is not a case of affirmance.",
+    "application": "The court analyzed the relevant clause of the Constitution and found that it does not limit the scope of appeal to cases of complete affirmance only. The court also considered the views expressed by the majority of High Courts in India but found that there is a sharp conflict of opinion on this point.",
+    "conclusion": "The court concluded that if two courts which have judged the dispute between the parties and applied their independent minds to it agree in their conclusions, the appellate decision is one of affirmance, and unless there is a substantial question of law, no further right to appeal should lie. However, if there is a variation in the result, it tends to show that the two courts have not entirely agreed, and it is not a case of affirmance."
+  },
+  "authority_results": [
+    {
+      "cited": "Raja Sree Nath Roy v. Raja Ram Mohan Roy (1904) 8 C.W.N. 294",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Annapurnabai v. Bajirao (1924) L.R. 51 I.A. 319",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Chittam Subba Rao v. Vela Mankanni Chelamayya",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 0.95,
+        "matched_cited_doc_id": "995943",
+        "matched_cited_text": "Chittam Subba Rao v. Vela Mankanni Chilamayya",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "V. Lakshminarayana Sastry v. V. Sitaramma Sastry",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "539042",
+        "matched_cited_text": "V. Lakshminarayana Sastry v. V. Sitaramma Sastry",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Rani Fateh Kunwar v. Raja Durbijai Singh",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "795995",
+        "matched_cited_text": "Rani Fateh Kunwar v. Raja Durbijai Singh",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "G. C. Bardoloi v. Collector of Kamrup",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Kapurji Magniram v. Pannaji Debichand",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1112096",
+        "matched_cited_text": "3), Kapurji Magniram v. Pannaji Debichand",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Govind Dhondu Kulkarni v. Vishnu Keshav Kulkarni",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "622337",
+        "matched_cited_text": "4), Govind Dhondu Kulkarni v. Vishnu Keshav Kulkarni",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Kanakarathnammal v. V. S. Loganatha Mudaliar",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "94329",
+        "matched_cited_text": "5) Kanakarathnammal v. V. S. Loganatha Mudaliar",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Ramchandra v. Ganpati",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Probodh Chandra Roy v. Hara Hari Roy",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1240327",
+        "matched_cited_text": "Probodh Chandra Roy v. Hara Hari Roy",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Union of India v. Kanahaya Lal Sham Lal",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1624884",
+        "matched_cited_text": "Union of India v. Kanahaya Lal Sham Lal",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": [
+    {
+      "chunk_index": 25,
+      "text": "If two courts which have judged the dispute between the parties and applied their independent minds to it agree in their conclusions the appellate decision is one of affirmance and unless there is a substantial question of law no further right to appeal should lie. That is the basis of the provision. When, however, a variation is made by the appellate court it tends to show that the two courts have not entirely agreed and so it is not a case of affirmance. The extent of the difference does not matter so much as the fact that there is a difference in the result, and go in prescribing the doctrine of affirmance the Constitution makers may well have intended that the said doctrine should be confined only to cases where there is a complete affirmance and not to cases of partial affirmance. We do not think that the consequence of the view we are inclined to take can be reasonably charac- terised as opposed to common-sense. Besides, if on a fair and reasonable construction the words used in the relevant clause lead to the conclusion which we are inclined to draw it would be unreasonable to limit the scope of the said words on hypothetical considerations of unreasonable consequences."
+    },
+    {
+      "chunk_index": 26,
+      "text": "As we have Tirumalachetti Rajaram vs Tirumalachetti ... on 27 April, 1961 Indian Kanoon - http://indiankanoon.org/doc/1758207/ 8 already observed we are dealing with a constitutional right conferred on litigants, and, unless the limitation contended for by the respondent can be said to flow reasonably from the words used in the relevant clause, it would not be open to us to adopt that limited construction merely on such hypothetical considerations. Then it is urged that the majority of the High Courts in India have taken the same view which the Madras High Court has taken in the present case and so we should be slow to interfere with the majority decision. In support of this conclusion the principle of stare decisis is pressed into service. We are not impressed by this argument. It is perfectly true that in construing the clause we would carefully have to bear in mind the views expressed by the majority of our High Courts, but as we have already indicated there is a sharp conflict of opinion on this point and it can be stated generally that in almost all the High. Courts different views have been expressed at one time or the other."
+    },
+    {
+      "chunk_index": 27,
+      "text": "Besides, it would be singularly inappropriate to invoke the doctrine of stare decisis in a case of this kind where High Courts have differed and the matter has been brought to this Court for resolving the said difference of opinion. In such a case it is open to us, and indeed it is our duty, to construe the relevant clause and decide which of the two conflicting views should hereafter prevail. Therefore the argument based on the practice prevailing in the majority of the High Courts in this country is not of much assistance. At this stage we may deal with another argument urged by Mr. Rama Reddy who appeared for some of the respondents. He contends that in construing the relevant clause we may have regard to the fact that, the Constitution intended to restrict the right of the' appellant to come to this Court and not to widen it. In support of this argument be relies on the fact that the value of the subject-matter prescribed by Art. 133(1)(a) is now made Rs. 20,000 whereas formerly it was Rs. 10,000, and he also relies on the provisions of Art. 133(3) under which no appeal shall lie to the Supreme Court from the judgment, decree or final order of one judge of a High Court."
+    },
+    {
+      "chunk_index": 35,
+      "text": "Chief Justice Rankin took the view that the only effect of the said decision was to reverse the conclusion of the Calcutta High Court in Raja Sree Nath Roy's case (3) and nothing more. \"It appears to me\", observed the learned Chief (1) A.I.R. 1927 Cal. 543. (2) (1924) L.R. 51 I.A. 319. (3) (1904) 8 C.W.N. 294. Justice, \"that the case of Annapurnabai (1) is not in itself a sufficient authority to justify this Court in abandoning the principle which it has with other High Courts acted upon; that is to say, I do not think that it shows that it is an erroneous view that we have to look to the substance and see what is the subject matter of the appeal to His Majesty in Council\"."
+    },
+    {
+      "chunk_index": 36,
+      "text": "The learned Judge then proceeded to express his doubt as, to whether \"in the end even that principle would be found to be in accordance with the construction to be put upon s. 110\", but he added, \"this Court and other High Courts have for many years acted upon that principle and I am not prepared to accept the case of Annapurnabai a,; going further than this that where there is a dispute as to the amount of decree or as to the amount of damages the reasoning of Raja Sree Nath Roy's case (2) is not a correct application of that principle\". \"We may take it\", said the learned Chief Justice, \"that where the amount is a question in dispute the fact that the courts differ and that the higher court differs in favour of the applicant does not mean that the decision is one of affirmance, but I am not, in a case of this kind, prepared to say that because on a totally different point, namely, a point about the share, the applicant has succeeded and succeeded altogether so that he has no further grievance in that matter, he can without showing a substantial question of law have a right to litigate upon other points upon which both the courts have been in agreement\"."
+    },
+    {
+      "chunk_index": 38,
+      "text": "One feels tempted to observe with respect that if the learned Chief Justice had examined the question of construction afresh without reference to the prevailing practice or the decisions already pronounced by Indian High Courts he might have adopted the literal construction of s. 110 and in that event perhaps all controversies that subsequently arose may have 'been avoided. It now remains to indicate very briefly the position taken by different High Courts in this controversy. In Chittam Subba Rao v. Vela Mankanni Chelamayya (1) a Full Bench of the Madras High Court was constituted to deal with this point because reported decisions of the said Court showed a difference of approach and a conflict of opinion. Rajamannar, C.J., who delivered the judgment of the Full Bench, carefully examined the previous decisions of the Court and evolved three principles to govern the decision of the point."
+    },
+    {
+      "chunk_index": 42,
+      "text": "Even if these principles are assumed to be logical and consistent with each other and even if they are assumed to explain the earlier decisions of the Court it does not follow that the said principles can be legitimately assimilated within the scope of the Article because it seems to us that unless words are added in the Article and the meaning of the words used is unduly strained it would be difficult to justify the said principles as flowing from the said Article. This Madras view has been applied by the Andhra High Court in V. Lakshminarayana Sastry v. V. Sitaramma Sastry (1). The majority 'judgment of the Allahabad High Court in Rani Fateh Kunwar v. Raja Durbijai Singh(') which in fact preceded the Madras decision has adopted substantially the same approach and has come to the same conclusion. Mr. Justice Bhargava, who agreed with the majority decision, has, however, placed his conclusions on grounds similar to those which we have adopted. To the same effect are the decisions of the Assam, Bombay, Mysore and Nagpur High Courts (vide: G. C. Bardoloi v. Collector of Kamrup (3), Kapurji Magniram v. Pannaji Debichand (4), Govind Dhondu Kulkarni v."
+    },
+    {
+      "chunk_index": 43,
+      "text": "Vishnu Keshav Kulkarni(5) Kanakarathnammal v. V. S. Loganatha Mudaliar(6) Ramchandra v. Ganpati (7). The Calcutta High Court has generally adopted the view taken by v. Rankin, C. J., but as its decision in Probodh Chandra Roy v. Hara Hari Roy (8), shows the practice in the Calcutta High Court appears to be to treat the point as one of doubt and as Chief Justice Chakravarti has observed \"where there is a doubt I would resolve it by deciding in favour of the applicant and granting him leave\". On the other hand, the Full Bench decision of the Punjab High Court in Union of India v. Kanahaya Lal Sham Lal (9) and the majority decision of the Patna High Court in Kanak Sunder v. Ram Lakhan have taken the view which we have adopted."
+    }
+  ],
+  "raw_response": "```\n{\n  \"issue\": \"Whether a substantial question of law is required for an appeal to the Supreme Court when there is a partial affirmance of the lower court's decision, or if the decision is one of affirmance, no further right to appeal lies unless there is a substantial question of law.\",\n  \"rule\": \"The Constitution makers intended that the doctrine of affirmance should be confined only to cases where there is a complete affirmance and not to cases of partial affirmance. A variation in the result by the appellate court shows that the two courts have not entirely agreed, and it is not a case of affirmance.\",\n  \"application\": \"The court analyzed the relevant clause of the Constitution and found that it does not limit the scope of appeal to cases of complete affirmance only. The court also considered the views expressed by the majority of High Courts in India but found that there is a sharp conflict of opinion on this point.\",\n  \"conclusion\": \"The court concluded that if two courts which have judged the dispute between the parties and applied their independent minds to it agree in their conclusions, the appellate decision is one of affirmance, and unless there is a substantial question of law, no further right to appeal should lie. However, if there is a variation in the result, it tends to show that the two courts have not entirely agreed, and it is not a case of affirmance.\",\n  \"authorities\": [\n    \"Raja Sree Nath Roy v. Raja Ram Mohan Roy (1904) 8 C.W.N. 294\",\n    \"Annapurnabai v. Bajirao (1924) L.R. 51 I.A. 319\",\n    \"Chittam Subba Rao v. Vela Mankanni Chelamayya\",\n    \"V. Lakshminarayana Sastry v. V. Sitaramma Sastry\",\n    \"Rani Fateh Kunwar v. Raja Durbijai Singh\",\n    \"G. C. Bardoloi v. Collector of Kamrup\",\n    \"Kapurji Magniram v. Pannaji Debichand\",\n    \"Govind Dhondu Kulkarni v. Vishnu Keshav Kulkarni\",\n    \"Kanakarathnammal v. V. S. Loganatha Mudaliar\",\n    \"Ramchandra v. Ganpati\",\n    \"Probodh Chandra Roy v. Hara Hari Roy\",\n    \"Union of India v. Kanahaya Lal Sham Lal\"\n  ]\n}\n```",
+  "decade": "1960",
+  "n_real_edges": 12
+}

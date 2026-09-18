@@ -1,0 +1,46 @@
+{
+  "doc_id": "505842",
+  "filename": "Union_Of_India_Anr_vs_Raghubir_Singh_Dead_By_Lrs_Etc_on_16_May_1989_1.PDF",
+  "year": "1989",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether the respondents are entitled to compensation for the acquisition of land under the Land Acquisition Act, 1894, and if so, what is the extent of compensation",
+    "rule": "The provisions of Section 4(1) and Section 6 of the Land Acquisition Act, 1894, regarding the publication of notifications for acquisition of land are mandatory and must be strictly complied with.",
+    "application": "The Court held that the notification under Section 4(1) and the declaration under Section 6 of the Land Acquisition Act, 1894, were not published in the Official Gazette as required by law. Therefore, the subsequent proceedings for acquisition of land were invalid.",
+    "conclusion": "The Court set aside the judgments of the High Court and the lower courts and remanded the matter for fresh consideration in accordance with the law."
+  },
+  "authority_results": [
+    {
+      "cited": "State of Punjab v. Shahbaz Khan, AIR 1964 SC 353",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Balkishan v. State of Maharashtra, AIR 1965 SC 1630",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Raghubir Singh v. State of Punjab, AIR 1967 SC 1166",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether the respondents are entitled to compensation for the acquisition of land under the Land Acquisition Act, 1894, and if so, what is the extent of compensation\",\n  \"rule\": \"The provisions of Section 4(1) and Section 6 of the Land Acquisition Act, 1894, regarding the publication of notifications for acquisition of land are mandatory and must be strictly complied with.\",\n  \"application\": \"The Court held that the notification under Section 4(1) and the declaration under Section 6 of the Land Acquisition Act, 1894, were not published in the Official Gazette as required by law. Therefore, the subsequent proceedings for acquisition of land were invalid.\",\n  \"conclusion\": \"The Court set aside the judgments of the High Court and the lower courts and remanded the matter for fresh consideration in accordance with the law.\",\n  \"authorities\": [\n    \"State of Punjab v. Shahbaz Khan, AIR 1964 SC 353\",\n    \"Balkishan v. State of Maharashtra, AIR 1965 SC 1630\",\n    \"Raghubir Singh v. State of Punjab, AIR 1967 SC 1166\"\n  ]\n}\n```",
+  "decade": "1980",
+  "n_real_edges": 27
+}

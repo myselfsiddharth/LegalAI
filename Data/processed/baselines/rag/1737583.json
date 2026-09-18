@@ -1,0 +1,131 @@
+{
+  "doc_id": "1737583",
+  "filename": "Balco_Employees_Union_Regd_vs_Union_Of_India_Ors_on_10_December_2001_1.PDF",
+  "year": "2001",
+  "system": "rag",
+  "irac": {
+    "issue": "Whether the Court can interfere with the policy decision of the Government to disinvest and privatize a Public Sector Undertaking.",
+    "rule": "The Court will not interfere with a policy decision of the Government unless it is patently arbitrary, discriminatory or mala fide. The Court has a limited role in judicial review and cannot sit in appeal over the policy of the Parliament or the Government.",
+    "application": "The Court applied the principles of judicial restraint and deference to the Government's policy decisions, particularly in economic matters. The Court held that it cannot review and examine whether a particular policy should have been adopted, but can only examine whether there is any legal or constitutional bar in adopting such policy.",
+    "conclusion": "The Court cannot strike down a policy decision taken by the Government merely because it feels that another policy decision would have been fairer or wiser or more scientific or logical. The Court can interfere only if the policy decision is patently arbitrary, discriminatory or mala fide."
+  },
+  "authority_results": [
+    {
+      "cited": "Rustom Cavasjee Cooper vs. Union of India (1970) 1 SCC 248",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "513801",
+        "matched_cited_text": "Rustom Cavasjee Cooper vs. Union of India",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Fertilizer Corporation Kamgar Union (Regd.), Sindri and Others vs. Union of India and Others (1981) 1 SCC 568",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1171702",
+        "matched_cited_text": "Fertilizer Corporation Kamgar Union (Regd.), Sindri and Others vs. Union of India and Others",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Nandlal Jaiswal and Others vs. State of Madhya Pradesh and Others (1986) 4 SCC 566",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "R.K. Garg v. Union of India",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "513801",
+        "matched_cited_text": "Rustom Cavasjee Cooper vs. Union of India",
+        "n_matching_edges": 9
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Morey v. Dond",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "Metropolis Theatre Co. v. State of Chicago",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Permian Basin Area Rate cases",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "M.P. Oil Extraction and Another vs. State of M.P. and Others (1997) 7 SCC 592",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "47808634",
+        "matched_cited_text": "M.P. Oil Extraction and Another vs. State of M.P. and Others",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": [
+    {
+      "chunk_index": 32,
+      "text": "While considering the validity of the Banking Companies (Acquisition and Transfer of Undertakings) Ordinance 1969, this Court in Rustom Cavasjee Cooper vs. Union of India, (1970) 1 SCC 248 at page 294 observed as under :- \"It is again not for this Court to consider the relative merits of the different political theories or economic policies. This Court has the power to strike down a law on the ground of want of authority, but the Court will not sit in appeal over the policy of the Parliament in enacting a law...\" Applying the analogy, just as the Court does not sit over the policy of the Parliament in enacting the law, similarly, it is not for this Court to examine whether the policy of this disinvestment is desirable or not. Dealing with the powers of the Court while considering the validity of the decision taken in the sale of certain plants and equipment of the Sindri Fertilizer Factory, which was owned by a Public Sector Undertaking, to the highest tenderer, this Court in Fertilizer Corporation Kamgar Union (Regd.), Sindri and Others vs."
+    },
+    {
+      "chunk_index": 33,
+      "text": "Union of India and Others, (1981) 1 SCC 568 at page 584, while upholding the decision to sell, observed as follows :- \".We certainly agree that judicial interference with the administration cannot be meticulous in our Montesquien system of separation of powers. The Court cannot usurp or abdicate, and the parameters of judicial review must be clearly defined and never exceeded. If the Directorate of a Government company has acted fairly, even if it has faltered in its wisdom, the court cannot, as a super-auditor, take the Board of Directors to task."
+    },
+    {
+      "chunk_index": 35,
+      "text": "Nandlal Jaiswal and Others, (1986) 4 SCC 566 the change of the policy decision taken by the State of Madhya Pradesh to grant licence for construction of distilleries for manufacture and supply of country liquor to existing contractors was challenged. Dealing with the power of the Court in considering the validity of policy decision relating to economic matters, it was observed at page 605 as follows :- \"But, while considering the applicability of Article 14 in such a case, we must bear in mind that, having regard to the nature of the trade or business, the Court would be slow to interfere with the policy laid down by the State Government for grant of licences for manufacture and sale of liquor. The Court would, in view of the inherently pernicious nature of the commodity allow large measure of latitude to the State Government in determining its policy of regulating, manufacture and trade in liquor. Moreover, the grant of licences for manufacture and sale of liquor would essentially be a matter of economic policy where the Court would hesitate to intervene and strike down what the State Government has done, unless it appears to be plainly arbitrary, irrational or mala fide."
+    },
+    {
+      "chunk_index": 36,
+      "text": "We had occasion to consider the scope of interference by the Court under Article 14 while dealing with laws relating to economic activities in R.K. Garg v. Union of India. We pointed out in that case that laws relating to economic activities should be viewed with greater latitude than laws touching civil rights such as freedom of speech, religion, etc. We observed that the legislature should be allowed some play in the joints because it has to deal with complex problems which do not admit of solution through any doctrinaire or strait-jacket formula and this is particularly true in case of legislation dealing with economic matters, where, having regard to the nature of the problems required to be dealt with, greater play in the joints has to be allowed to the legislature. We quoted with approval the following admonition given by Frankfurter, J. in Morey v. Dond. In the utilities, tax and economic regulation cases, there are good reasons for judicial self-restraint if not judicial deference to legislative judgement. The legislature after all has the affirmative responsibility. The Courts have only the power to destroy, not to reconstruct."
+    },
+    {
+      "chunk_index": 37,
+      "text": "When these are added to the complexity of economic regulation, the uncertainty, the liability to error, the bewildering conflict of the experts, and the number of times the judges have been overruled by events self-limitation can be seen to be the path to judicial wisdom and institutional prestige and stability. Balco Employees Union (Regd.) vs Union Of India & Ors on 10 December, 2001 Indian Kanoon - http://indiankanoon.org/doc/1737583/ 13 What we said in that case in regard to legislation relating to economic matters must apply equally in regard to executive action in the field of economic activities, though the executive decision may not be placed on as high a pedestal as legislative judgement insofar as judicial deference is concerned. We must not forget that in complex economic matters every decision is necessarily empiric and it is based on experimentation or what one may call 'trial' and error method' and, therefore, its validity cannot be tested on any rigid 'a priori' considerations or on the application of any strait-jacket formula."
+    },
+    {
+      "chunk_index": 38,
+      "text": "The Court must while adjudging the constitutional validity of an executive decision relating to economic matters grant a certain measure of freedom or 'play in the joints' to the executive. \"The problem of government\" as pointed out by the Supreme Court of the United States in Metropolis Theatre Co. v. State of Chicago. are practical ones and may justify, if they do not require, rough accommodations, illogical, it may be, and unscientific. But even such criticism should not be hastily expressed. What is best is not discernible, the wisdom of any choice may be disputed or condemned. Mere errors of government are not subject to our judicial review. It is only its palpably arbitrary exercises which can be declared void. The Government, as was said in Permian Basin Area Rate cases, is entitled to make pragmatic adjustments which may be called for by particular circumstances. The Court cannot strike down a policy decision taken by the State Government merely because it feels that another policy decision would have been fairer or wiser or more scientific or logical. The Court can interfere only if the policy decision is patently arbitrary, discriminatory or mala fide."
+    },
+    {
+      "chunk_index": 45,
+      "text": "This Court cannot review and examine as to whether the said policy should have been adopted. Of course, whether there is any legal or constitutional bar in adopting such policy can certainly be examined by the Court\". While considering the validity of the industrial policy of the State of Madhya Pradesh relating to the agreements entered into for supply of sal seeds for extracting oil in M.P. Oil Extraction and Another vs. State of M.P. and Others, (1997) 7 SCC 592, the Court at page 610 held as follows :- \"41. After giving our careful consideration to the facts and circumstances of the case and to the submissions made by the learned counsel for the parties, it appears to us that the Industrial Policy of 1979 which was subsequently revised from time to time cannot be held to be arbitrary and based on no reason whatsoever but founded on mere ipse dixit of the State Government of M.P. The executive authority of the State must be held to be within its competence to frame a policy for the administration of the State."
+    },
+    {
+      "chunk_index": 88,
+      "text": "While we have strong reservations with regard to the correctness of the majority decision in Samatha's case, which has not only interpreted the provisions of aforesaid Section 3(1) of the A.P. Scheduled Areas Land Transfer Regulation, 1959 but has also interpreted the provisions of the Fifth Schedule of the Constitution, the said decision is not applicable in the present case because the law applicable in Madhya Pradesh is not similar or identical to the aforesaid Regulation of Andhra Pradesh. Article 145 (3) of the Constitution provides that any substantial question of law as to the interpretation of the provisions of the Constitution can only be decided by a Bench of five judges. In Samatha's case, it is a Bench of three Hon'ble judges who by majority of 2:1, interpreted the Fifth Schedule of the Constitution. However, what is important to note here is, as already observed herein above, that the provisions of the Madhya Pradesh Land Revenue Code, 1959 and Section 165, in particular, are not in pari materia with the aforesaid Section 3 of the Andhra Pradesh Regulation. Section 165 of the M.P. Revenue Code, 1959 deals with transfer of rights of Bhumiswami."
+    }
+  ],
+  "raw_response": "```json\n{\n  \"issue\": \"Whether the Court can interfere with the policy decision of the Government to disinvest and privatize a Public Sector Undertaking.\",\n  \"rule\": \"The Court will not interfere with a policy decision of the Government unless it is patently arbitrary, discriminatory or mala fide. The Court has a limited role in judicial review and cannot sit in appeal over the policy of the Parliament or the Government.\",\n  \"application\": \"The Court applied the principles of judicial restraint and deference to the Government's policy decisions, particularly in economic matters. The Court held that it cannot review and examine whether a particular policy should have been adopted, but can only examine whether there is any legal or constitutional bar in adopting such policy.\",\n  \"conclusion\": \"The Court cannot strike down a policy decision taken by the Government merely because it feels that another policy decision would have been fairer or wiser or more scientific or logical. The Court can interfere only if the policy decision is patently arbitrary, discriminatory or mala fide.\",\n  \"authorities\": [\n    \"Rustom Cavasjee Cooper vs. Union of India (1970) 1 SCC 248\",\n    \"Fertilizer Corporation Kamgar Union (Regd.), Sindri and Others vs. Union of India and Others (1981) 1 SCC 568\",\n    \"Nandlal Jaiswal and Others vs. State of Madhya Pradesh and Others (1986) 4 SCC 566\",\n    \"R.K. Garg v. Union of India\",\n    \"Morey v. Dond\",\n    \"Metropolis Theatre Co. v. State of Chicago\",\n    \"Permian Basin Area Rate cases\",\n    \"M.P. Oil Extraction and Another vs. State of M.P. and Others (1997) 7 SCC 592\"\n  ]\n}\n```",
+  "decade": "2000",
+  "n_real_edges": 28
+}

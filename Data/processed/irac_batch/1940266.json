@@ -1,0 +1,89 @@
+{
+  "doc_id": "1940266",
+  "filename": "Kunhayammed_Ors_vs_State_Of_Kerala_Anr_on_19_July_2000_1.PDF",
+  "year": "2000",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 3,
+    "AuthorityCited": 8,
+    "Holding": 8,
+    "Outcome": 6,
+    "Claim": 2
+  },
+  "authority_results": [
+    {
+      "cited": "Article 136 of the Constitution of India",
+      "source_sentence": "A question of frequent recurrence and of some significance involving the legal implications and the impact of an order rejecting a petition seeking grant of special leave to appeal under Article 136 of the Constitution of India has arisen for decision in this appeal.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Section 8A of the Act",
+      "source_sentence": "The Government or any person objecting to any decision of the Tribunal may within a period of 60 days from the date of that decision, appeal against such decision to the High Court under Section 8A of the Act.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Article 136 of the Constitution",
+      "source_sentence": "The State of Kerala filed a petition for special leave to appeal under Article 136 of the Constitution registered as SLP(C) No.8098 of 1983.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the preliminary objection",
+      "source_sentence": "The High Court has overruled the preliminary objection as to the maintainability of the petition and directed the review petition to be posted for hearing on merits.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the doctrine of merger",
+      "source_sentence": "However, in the facts and circumstances of the case this Court refused to apply the doctrine of merger.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "several provisions of the Income-tax Act",
+      "source_sentence": "While doing so this Court analysed several provisions of the Income-tax Act so as to determine the nature and scope of relevant appellate and revisional powers and held if the subject matter of the two proceedings is not identical, there can be no merger.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "an earlier decision of this court in U.J.S.",
+      "source_sentence": "Their Lordships referred to an earlier decision of this court in U.J.S.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Article 136",
+      "source_sentence": "Article 136 of the Constitution is a special jurisdiction conferred on the Supreme Court which is sweeping in its nature.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "2000",
+  "n_real_edges": 20
+}

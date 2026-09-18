@@ -1,0 +1,37 @@
+{
+  "doc_id": "744830",
+  "filename": "Maharaj_Singh_vs_State_Of_Uttar_Pradesh_Others_on_2_November_1976_1.PDF",
+  "year": "1976",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether the U.P. Zamindari Abolition and Land Reforms Act, 1950, and the rules framed thereunder are valid and constitutional.",
+    "rule": "The doctrine of implied powers and the extent of the State's legislative competence under the Constitution of India.",
+    "application": "The U.P. Zamindari Abolition and Land Reforms Act, 1950, was enacted to abolish the zamindari system and to provide for land reforms in the State of Uttar Pradesh. The Act and the rules framed thereunder were challenged on the ground that they were beyond the legislative competence of the State Legislature. The Court held that the Act and the rules were valid and constitutional, as they were enacted under the State's legislative powers and did not contravene any provisions of the Constitution.",
+    "conclusion": "The U.P. Zamindari Abolition and Land Reforms Act, 1950, and the rules framed thereunder are valid and constitutional."
+  },
+  "authority_results": [
+    {
+      "cited": "Shankari Prasad v. Union of India, AIR 1951 SC 116",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Guru Gobind Singh Sugar Mills Ltd. v. Shri Nathuram, AIR 1960 SC 334",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether the U.P. Zamindari Abolition and Land Reforms Act, 1950, and the rules framed thereunder are valid and constitutional.\",\n  \"rule\": \"The doctrine of implied powers and the extent of the State's legislative competence under the Constitution of India.\",\n  \"application\": \"The U.P. Zamindari Abolition and Land Reforms Act, 1950, was enacted to abolish the zamindari system and to provide for land reforms in the State of Uttar Pradesh. The Act and the rules framed thereunder were challenged on the ground that they were beyond the legislative competence of the State Legislature. The Court held that the Act and the rules were valid and constitutional, as they were enacted under the State's legislative powers and did not contravene any provisions of the Constitution.\",\n  \"conclusion\": \"The U.P. Zamindari Abolition and Land Reforms Act, 1950, and the rules framed thereunder are valid and constitutional.\",\n  \"authorities\": [\n    \"Shankari Prasad v. Union of India, AIR 1951 SC 116\",\n    \"Guru Gobind Singh Sugar Mills Ltd. v. Shri Nathuram, AIR 1960 SC 334\"\n  ]\n}\n```",
+  "decade": "1970",
+  "n_real_edges": 88
+}

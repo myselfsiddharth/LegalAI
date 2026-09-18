@@ -1,0 +1,103 @@
+{
+  "doc_id": "661966",
+  "filename": "Shyam_Sunder_And_Others_vs_Ram_Kumar_And_Another_on_31_July_2001_1.PDF",
+  "year": "2001",
+  "system": "rag",
+  "irac": {
+    "issue": "Whether the amendment in Section 15 of the parent Act, which takes away the right of a co-sharer to pre-empt a sale, affects the maintainability of the suit and the rights of a co-sharer during the pendency of the appeal, and whether the Amending Act has retrospective operation so as to affect the rights of parties in litigation.",
+    "rule": "A court of appeal cannot take into account a new law brought into existence after the judgment appealed from has been rendered, if it affects vested rights. However, if the new law speaks in language that expressly or by clear intendment takes in even pending matters, the court of appeal must have regard to such intention.",
+    "application": "The substituted Section 15 in the absence of anything in it to show that it is retrospective, does not affect the right of the parties which accrued to them on the date of suit or on the date of passing of the decree by the Court of first instance. The present appeals are unaffected by change in law in so far it related to determination of the substantive rights of the parties and the same are required to be decided in light of law of preemption as it existed on the date of passing of the decree.",
+    "conclusion": "The Amending Act does not have retrospective operation, and the appeal is to be decided based on the law of pre-emption as it existed on the date of passing of the decree."
+  },
+  "authority_results": [
+    {
+      "cited": "Inderjit v. State, 1966 (3) SCR 275",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "338690",
+        "matched_cited_text": "Smt. Dayawait and another vs. Inderjit and others",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Lachmeshwar Prasad Shukul v. Keshwar Lal Choudhuri",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Ram Sarup v. Munshi & ors.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "823328",
+        "matched_cited_text": "Ram Sarup Vs. Munshi",
+        "n_matching_edges": 2
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Amir Singh & Anr. v. Ram Singh & Ors.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "35558",
+        "matched_cited_text": "Amir Singh & Anr. vs. Ram Singh & Ors.",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Amiran v. Unknown",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": [
+    {
+      "chunk_index": 7,
+      "text": "On the arguments of learned counsel of the parties the questions that arise for consideration are : (i) whether the appeal being continuation of the suit, the amendment in Section 15 of the parent Act whereby the right of a co-sharer to pre-empt a sale has been taken away during the pendency of the appeal would effect the maintainability of the suit and the rights of a co-sharer and (ii) whether the Amending Act has retrospective operation so as to affect the rights of parties in litigation. Learned counsel for the parties in support of their arguments relied upon number of decisions rendered by Privy Council, Federal Court, this Court and various other High Courts. In order to have complete picture of the views expressed in these decisions and thereafter to arrive at the conclusion, it is appropriate to categorise the decisions cited at the Bar which shall hereinafter be referred as first, second and third categories of decisions."
+    },
+    {
+      "chunk_index": 26,
+      "text": "Amiran (supra) wherein the High Court of Allahabad held that a Court of Appeal was only required to see whether the trial court had wrongly dismissed the claim of pre-emptor and it is irrelevant that during the pendency of appeal land was sold in an execution proceeding in another suit. In a pre-emption case where an appeal is filed against the decree of court of first instance, the scope of appeal is confined to the question whether the decision of the trial court is correct or not. This being the legal position which held the field for over a century any subsequent event taking place during pendency of appeal cannot be allowed to be taken into consideration by the appellate court otherwise it may displace the case of a pre-emptor."
+    },
+    {
+      "chunk_index": 32,
+      "text": "Inderjit and others 1966 (3) SCR 275, it is held thus: \"Now as a general proposition, it may be admitted that ordinarily a court of appeal cannot take into account a new law, brought into existence after the judgment appealed from has been rendered, because the rights of the litigants in an appeal are determined under the law in force at the date of the suit. Even before the days of Coke whose maxim - a new law ought to be prospective, not retrospective in its operation - is off-quoted, courts have looked with dis-favour upon laws which take away vested rights or affect pending cases. Matters of procedure are, however, different and the law affecting procedure is always retrospective. But it does not mean that there is an absolute rule of inviolability of substantive rights. If the new law speaks in language, which, expressly or by clear intendment, takes in even pending matters, the court of trial as well as the court of appeal must have regard to an intention so expressed, and the court of appeal may give effect to such a law even after the judgment of the court of first instance.\" In Hitendra Vishnu Thakur & ors. vs."
+    },
+    {
+      "chunk_index": 38,
+      "text": "We are respectfully in agreement with the view expressed in the said decision and hold that the substituted Section 15 in the absence of anything in it to show that it is retrospective, does not effect the right of the parties which accrued to them on the date of suit or on the date of passing of the decree by the Shyam Sunder And Others vs Ram Kumar And Another on 31 July, 2001 Indian Kanoon - http://indiankanoon.org/doc/661966/ 11 Court of first instance. We are also of the view that present appeals are unaffected by change in law in so far it related to determination of the substantive rights of the parties and the same are required to be decided in light of law of preemption as it existed on the date of passing of the decree. Coming to decision in Lachmeshwar Prasad Shukul vs. Keshwar Lal Choudhuri (supra), which is the sheet anchor of the argument on behalf of appellants, it is necessary to notice the facts of the said case and the provisions of law which were interpreted by the Federal Court. In the said case, the plaintiff brought a suit for recovery of money by sale of mortgaged property. The suit was partly decreed. There was an appeal and cross-appeal to the High Court."
+    },
+    {
+      "chunk_index": 41,
+      "text": "In the background of the aforesaid facts, the Federal Court while interpreting Section 7 of the Act was of the view that Section 7 has in terms been made applicable to appeals in suits brought before the commencement of the Act and that the decree in appeal yet remained to be passed. The Federal Court after having found that Section 7 is retrospective held that the appellate court is required to consider and give effect to legislative changes which have taken place during pendency of the appeal as an appeal is continuation of suit. It is in this context, the decision in Lachmeshwar Prasad Shukul vs. Keshwar Lal Choudhuri has to be understood. Where a repeal of an enactment is followed by fresh legislation, having no retrospective operation, an appellate Court is not required to take into account the change in law but to dispose of the appeal on the basis of right of pre- emption on the date of adjudication of suit. In that view of the matter the decision in Lachmeshwar Prasad vs. Keshwar Lal (supra) has no application in the present case. Subsequently, the view taken in Lachmeshwar Prasad Shukul vs."
+    },
+    {
+      "chunk_index": 43,
+      "text": "The High Court applying the principles laid down in Lachmeshwar Prasad Shukul's case held that an appeal being continuation of suit, the appellate Court is to take into account the subsequent change in law which has retrospective operation. The said decision of Punjab & Haryana High Court in Ram Lal vs. Raja Ram was approved in Ram Sarup vs. Munshi & ors. (supra). In the said case, a Constitution Bench of this Court held that section 31 of Amending Act 10 of 1960 being retrospective the right to preempt a sale which has accrued before coming into force of the Amending Act stood defeated. The Constitution Bench also noted and explained that in Lachmeshwar Prasad Shukul vs. Keshwar Lal Choudhuri (supra), the Federal Court was construing Section 7 of Bihar Money-lender Act which had retrospective operation and in that context held that appeal being continuation of suit, the appellate court is required to take into account subsequent change in law."
+    },
+    {
+      "chunk_index": 44,
+      "text": "It is appropriate to reproduce the following passage from Ram Sarup's case: \"Though we agree that there is a presumption against the retrospective operation of a statute and also the related principle that a statute will not be construed to have a greater retrospective operation than its language renders necessary, we consider that in the present case the language used in section 31 is plain and comprehensive so as to require an appellate court to give effect to the substantive provisions of the Amending Act whether the appeal before it is one against a decree granting pre-emption or one refusing that relief. The decision of the Federal Court in Lachmeshwar Prasad vs. Keshwar Lal on which learned counsel for the appellant relied fully covers this case. The question there raised related to the duty of the Federal Court when an amending Act enacted after the decree appealed from was passed adversely interfered with the rights of the respondent before the Court. The learned Judges held that the provisions of the Act were clearly retrospective and should be applied to the decree which was the subject matter of appeal before it.\" (emphasis supplied) The decision in Ram Swarup vs."
+    },
+    {
+      "chunk_index": 45,
+      "text": "Munshi (supra) was followed by another Constitution Bench of this Court in Amir Singh & Anr. vs. Ram Singh & Ors. (supra). In Amir Singh's case also another Constitution Bench of this Court interpreting section 31 introduced by Punjab Amending Act 1960 reiterated that the retrospective operation of section 31 necessarily involves effect being given to the substantive provisions of amended section 15 by the appellate court whether the appeal before it is one against a decree granting pre-emption or one refusing that relief."
+    }
+  ],
+  "raw_response": "```\n{\n  \"issue\": \"Whether the amendment in Section 15 of the parent Act, which takes away the right of a co-sharer to pre-empt a sale, affects the maintainability of the suit and the rights of a co-sharer during the pendency of the appeal, and whether the Amending Act has retrospective operation so as to affect the rights of parties in litigation.\",\n  \"rule\": \"A court of appeal cannot take into account a new law brought into existence after the judgment appealed from has been rendered, if it affects vested rights. However, if the new law speaks in language that expressly or by clear intendment takes in even pending matters, the court of appeal must have regard to such intention.\",\n  \"application\": \"The substituted Section 15 in the absence of anything in it to show that it is retrospective, does not affect the right of the parties which accrued to them on the date of suit or on the date of passing of the decree by the Court of first instance. The present appeals are unaffected by change in law in so far it related to determination of the substantive rights of the parties and the same are required to be decided in light of law of preemption as it existed on the date of passing of the decree.\",\n  \"conclusion\": \"The Amending Act does not have retrospective operation, and the appeal is to be decided based on the law of pre-emption as it existed on the date of passing of the decree.\",\n  \"authorities\": [\n    \"Inderjit v. State, 1966 (3) SCR 275\",\n    \"Lachmeshwar Prasad Shukul v. Keshwar Lal Choudhuri\",\n    \"Ram Sarup v. Munshi & ors.\",\n    \"Amir Singh & Anr. v. Ram Singh & Ors.\",\n    \"Amiran v. Unknown\"\n  ]\n}\n```",
+  "decade": "2000",
+  "n_real_edges": 18
+}

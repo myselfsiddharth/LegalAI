@@ -1,0 +1,127 @@
+{
+  "doc_id": "1313008",
+  "filename": "Sooraram_Pratap_Reddy_Ors_vs_Distt_Collector_Ranga_Reddy_Dist_on_5_September_2008_1.PDF",
+  "year": "2008",
+  "system": "rag",
+  "irac": {
+    "issue": "Whether the acquisition of land for a project, which is claimed to be for public purpose, is valid when the primary beneficiary is a private company, and whether the invocation of the urgency clause under Section 17 of the Act is justified.",
+    "rule": "The concept of public purpose has evolved over time, and it is not essential that the property should be transferred to public ownership or for public user. It is sufficient that the public derives advantage from the scheme. The court will not substitute its judgment for a Legislature's judgment as to what constitutes a public use unless the use be palpably without reasonable foundation.",
+    "application": "The court applied the modern and liberal view of public purpose, which emphasizes that it is not essential that the entire community or even a considerable portion should directly enjoy or participate in an improvement in order to constitute a public use. The court also considered the fact that the acquisition was for a project that would serve the common good and was affected with public interest.",
+    "conclusion": "The court upheld the validity of the acquisition, observing that the public purpose is not limited to direct use by the public, but also includes indirect benefits to the public."
+  },
+  "authority_results": [
+    {
+      "cited": "Fallbrook Irrigation District v. Bradley (1896) 164 U.S. 112 : 41 Law Ed. 369",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Los Angles County (1923) 262 US 700 : 67 Law Ed 1186",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "New York City Housing Authority v. Muller 270 NYP 333: 105 ALR 905",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Susette Kelo v. City of New London (2005) 545 US 469 : 125 S Ct 2655 : 162 L Ed 439",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Deputy Commissioner & Collector, Kamrup & Ors. v. Durganath Sarma (1968) 1 SCR 561",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Bennett Coleman & Co. v. Union of India (1972) 2 SCC 788",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Dhampur Sugar (Kashipur) Ltd. v. State of Uttaranchal & Ors. (2007) 8 SCC 418",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "570829",
+        "matched_cited_text": "Dhampur Sugar (Kashipur) Ltd. v. State of Uttaranchal & Ors.",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "State of Madhya Pradesh & Ors v.  [2003] 10 SCC 626",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1045847",
+        "matched_cited_text": "Pratibha Nema & Ors. v. State of Madhya Pradesh & Ors",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": [
+    {
+      "chunk_index": 3,
+      "text": "A notification under Section 4 of the Act was published in the State Government Gazette on July 17, 2002. The said action was challenged and the validity of notification was questioned in a writ petition in the High Court of Andhra Pradesh. The High Court dismissed the petition following an earlier decision in Writ Petition No. 21712 of 2002 by observing that the writ petition involved similar issues. The High Court, however, directed that `urgency clause' sought to be invoked by the Government under Section 17 of the Act was illegal, unlawful and unwarranted. That part of the notification was, therefore, set aside and the Authorities were directed to proceed to hear objections of the owners/interested persons by following procedure under Section 5A of the Act. According to the appellants, the High Court was wholly wrong in dismissing the writ petition relying on the judgment in Writ Petition No. 21712 of 2002 since in that case, the Court has considered only one issue; viz. the acquisition was or was not for public purpose as the beneficiary was Andhra Pradesh Industrial Infrastructure Corporation Limited (`APIIC' for short)."
+    },
+    {
+      "chunk_index": 39,
+      "text": "The older and stricter view was that unless the property was dedicated for user by the public at large or a considerable section thereof, it would not be for public use or for public purpose. The modern and more liberal view, however, is that it is not an essential condition of public use that the property should be transferred to public ownership or for public user and it is sufficient that the public derives advantage from the scheme. 45. In Fallbrook Irrigation District v. Bradley, (1896) 164 U.S. 112 : 41 Law Ed. 369, an Act of California provided for the acquisition of lands whenever 50 land-owners or a majority of them in a particular locality required it for construction of a watercourse, the object of the legislation being to enable dry lands to be brought under wet cultivation. The validity of the Act was challenged on the ground that the acquisition would only benefit particular land owners who could take water from the channel and the public as such had no direct interest in the matter and consequently there was no public user. The contention was right if narrow view was to be accepted but was not well-founded if liberal view was to be adopted."
+    },
+    {
+      "chunk_index": 41,
+      "text": "Los Angles County, (1923) 262 US 700 : 67 Law Ed 1186, the Court observed that \"it is not essential that the entire community or even a considerable portion should directly enjoy or participate in an improvement in order to constitute a public use.\" 48. In New York City Housing Authority v. Muller, 270 NYP 333: 105 ALR 905, certain lands were acquired in pursuance of a governmental project for clearing slums and providing housing accommodation to persons with low income. The validity of the acquisition was questioned on the ground that the use was private and not public."
+    },
+    {
+      "chunk_index": 46,
+      "text": "The Court emphasized that any departure from this judicial restraint would result in courts deciding on what is and what is not a governmental function and in their invalidating legislation on the basis of their view on that question. And the Court would not substitute its judgment for a Legislature's judgment as to what constitutes a public use \"unless the use be palpably without reasonable foundation.\" Sooraram Pratap Reddy & Ors vs Distt. Collector, Ranga Reddy Dist.& ... on 5 September, 2008 Indian Kanoon - http://indiankanoon.org/doc/1313008/ 16 55. Recently, in Susette Kelo v. City of New London, (2005) 545 US 469 : 125 S Ct 2655 : 162 L Ed 439, the land owners challenged the city's exercise of eminent domain power on the ground that it was not for public use. The project in question was a community project for economic revitalization of the City of New London for which the land was acquired. 56. It was submitted by the learned counsel for the respondents that the facts in Kelo were similar to the facts of the present case. For that the counsel relied upon the Integrated Development Project."
+    },
+    {
+      "chunk_index": 50,
+      "text": "Referring to the doctrine of eminent domain in American Legal system, Mukherjea, J. (as His Lordship then was) stated; \"It is a right inherent in every sovereign to take and appropriate private property belonging to individual citizens for public use. This right, which is described as eminent domain in American law, is like the power of taxation, an offspring of political necessity, and it is supposed to be based upon an implied reservation by Government that private property acquired by its citizens under its protection may be taken or its use controlled for public benefit irrespective of the wishes of the owner\". 62. In Deputy Commissioner & Collector, Kamrup & Ors. v. Durganath Sarma, (1968) 1 SCR 561; drawing distinction between police power and power of eminent domain, this Court observed; \"In the exercise of its eminent domain power, the State may take any property from the owner and may appropriate it for public purposes. The police and eminent domain powers are essentially distinct."
+    },
+    {
+      "chunk_index": 73,
+      "text": "Normally, a writ Court will not propel into the unchartered ocean of Governmental Policy [vide Bennett Coleman & Co. v. Union of India, (1972) 2 SCC 788]. Sooraram Pratap Reddy & Ors vs Distt. Collector, Ranga Reddy Dist.& ... on 5 September, 2008 Indian Kanoon - http://indiankanoon.org/doc/1313008/ 26 100. Recently, in Dhampur Sugar (Kashipur) Ltd. v. State of Uttaranchal & Ors., (2007) 8 SCC 418, one of us (C.K. Thakker, J.) considered the issue in detail and observed; \"In our judgment, it is well-settled that public authorities must have liberty and freedom in framing policies. No doubt, the discretion is not absolute, unqualified, unfettered or uncanalised and judiciary has control over all executive actions. At the same time, however, it is well- established that courts are ill- equipped to deal with these matters. In complex social, economic and commercial matters, decisions have to be taken by governmental authorities keeping in view several factors, and it is not possible for courts to consider competing claims and conflicting interests and to conclude which way the balance tilts."
+    },
+    {
+      "chunk_index": 97,
+      "text": "The social and economic theorist may contend for an extremely wida application of this concept of public purpose and over- emphasise the element of the general interest of the public. The reactionary on the other hand may strive for stringent restraints on its shifting boundaries and oppose any shift in emphasis. The true rule of the matter would seem to lie midway. The Court will not attach too much weight to the apparent character of the activity or agency but would prefer to lean in favour of an application of the rule which has regard to the substance of the matter and embraces activities, engagements and operations which would serve the common good as being affected with public interest. The application of the rule must rest on the modem economic system of a welfare state having its own requirements and problems. The application of the rule would not be governed by right distinctions nor would the economic principle be allowed to be blurred by the blending of forms and interests\". (emphasis supplied) 127."
+    },
+    {
+      "chunk_index": 105,
+      "text": "State of Madhya Pradesh & Ors [2003] 10 SCC 626. There, a piece of dry land of the appellants and others was notified for acquisition under Section 4 of the Act for public purpose, namely, for establishment of `Diamond Park'. The acquisition was challenged on the ground that it was not for public purpose but was meant only to benefit a Company and its associates, and as such it was in colourable exercise of power and ultra vires the Act. 145. Referring to earlier decisions of this Court and drawing distinction between acquisition by State for `public purpose' covered by Part II and acquisition for a `Company' under Part VII, the Court stated; \"Thus the distinction between public purpose acquisition and Part VII acquisition has got blurred under the impact of judicial interpretation of relevant provisions. The main and perhaps the deceive distinction lies in the fact whether cost of acquisition comes out of public funds wholly or partly. Here again, even a token or nominal contribution by the Government was held to be sufficient compliance with the second proviso to Section 6 as held in a catena of decisions."
+    }
+  ],
+  "raw_response": "{\"issue\": \"Whether the acquisition of land for a project, which is claimed to be for public purpose, is valid when the primary beneficiary is a private company, and whether the invocation of the urgency clause under Section 17 of the Act is justified.\",\n\"rule\": \"The concept of public purpose has evolved over time, and it is not essential that the property should be transferred to public ownership or for public user. It is sufficient that the public derives advantage from the scheme. The court will not substitute its judgment for a Legislature's judgment as to what constitutes a public use unless the use be palpably without reasonable foundation.\",\n\"application\": \"The court applied the modern and liberal view of public purpose, which emphasizes that it is not essential that the entire community or even a considerable portion should directly enjoy or participate in an improvement in order to constitute a public use. The court also considered the fact that the acquisition was for a project that would serve the common good and was affected with public interest.\",\n\"conclusion\": \"The court upheld the validity of the acquisition, observing that the public purpose is not limited to direct use by the public, but also includes indirect benefits to the public.\",\n\"authorities\": [\n  \"Fallbrook Irrigation District v. Bradley (1896) 164 U.S. 112 : 41 Law Ed. 369\",\n  \"Los Angles County (1923) 262 US 700 : 67 Law Ed 1186\",\n  \"New York City Housing Authority v. Muller 270 NYP 333: 105 ALR 905\",\n  \"Susette Kelo v. City of New London (2005) 545 US 469 : 125 S Ct 2655 : 162 L Ed 439\",\n  \"Deputy Commissioner & Collector, Kamrup & Ors. v. Durganath Sarma (1968) 1 SCR 561\",\n  \"Bennett Coleman & Co. v. Union of India (1972) 2 SCC 788\",\n  \"Dhampur Sugar (Kashipur) Ltd. v. State of Uttaranchal & Ors. (2007) 8 SCC 418\",\n  \"State of Madhya Pradesh & Ors v.  [2003] 10 SCC 626\"\n]}",
+  "decade": "2000",
+  "n_real_edges": 29
+}

@@ -1,0 +1,103 @@
+{
+  "doc_id": "1940266",
+  "filename": "Kunhayammed_Ors_vs_State_Of_Kerala_Anr_on_19_July_2000_1.PDF",
+  "year": "2000",
+  "system": "rag",
+  "irac": {
+    "issue": "Whether the dismissal of a special leave petition by the Supreme Court in limine without a speaking order operates as a bar to the trial of identical issues in a separate proceeding, and whether such dismissal attracts the doctrine of merger or constructive res judicata.",
+    "rule": "The dismissal of a special leave petition in limine by a non-speaking order does not bar the trial of identical issues in a separate proceeding. The principle of res judicata or constructive res judicata cannot be extended to found it on mere guesswork. The doctrine of merger does not apply to a non-speaking order dismissing a special leave petition, as the jurisdiction exercised is discretionary and not appellate.",
+    "application": "The Court applied the rule to the present case, holding that the dismissal of a special leave petition in limine without a speaking order does not operate as a bar to the trial of identical issues in a separate proceeding. The Court also held that the doctrine of merger does not apply in such cases, and that the reasons stated by the Court in its order would attract the applicability of Article 141 of the Constitution.",
+    "conclusion": "The dismissal of a special leave petition in limine without a speaking order does not bar the trial of identical issues in a separate proceeding, and does not attract the doctrine of merger or constructive res judicata. However, the law declared by the Supreme Court in its order would be binding on all courts and tribunals in India under Article 141 of the Constitution."
+  },
+  "authority_results": [
+    {
+      "cited": "Union of India and others v. State of Maharashtra AIR 1989 SC 674",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Wilson Vs. Colchester Justices 1985 (2) All England Law Reports 97",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Shankar Ramchandra Abhyankar Vs. Krishnaji Dattatraya Bapat AIR 1970 SC 1",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "836690",
+        "matched_cited_text": "Shankar Ramchandra Abhyankar Vs. Krishnaji Dattatraya Bapat",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Sushil Kumar Sen Vs. State of Bihar AIR 1975 SC 1185",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1147007",
+        "matched_cited_text": "Sushil Kumar Sen Vs. State of Bihar",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Thungabhadra Industries Ltd. Vs. The Govt. of A.P. AIR 1964 SC 1372",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1536859",
+        "matched_cited_text": "Thungabhadra Industries Ltd. Vs. The Govt. of A.P.",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": [
+    {
+      "chunk_index": 22,
+      "text": "But neither on the principle of res judicata nor on any principle of public policy analogous thereto, would the order of this Court dismissing the special leave petition operate to bar the trial of identical issues in a separate proceeding namely, the writ proceeding before the High Court merely on the basis of an uncertain assumption that the issues must have been decided by this Court at least by implication. It is not correct or safe to extend the principle of res judicata or constructive res judicata to such an extent so as to found it on mere guesswork. It is not the policy of this Court to entertain special leave petitions and grant leave under Article 136 of the Constitution save in those cases where some substantial question of law of general or public importance is involved or there is manifest injustice resulting from the impugned order or judgment. The dismissal of a special leave petition in limine by a non-speaking order does not therefore justify any inference that by necessary implication the contentions raised in the special leave petition on the merits of the case have been rejected by this Court."
+    },
+    {
+      "chunk_index": 25,
+      "text": "Union of India and others AIR 1989 SC 674, the law declared by this Court is that it cannot be said that the mere rejection of special leave petition could, by itself, be construed as the imprimatur of this Court on the correctness of the decision sought to be appealed against. In Wilson Vs. Colchester Justices 1985 (2) All England Law Reports 97, the House of Lords stated; There are a multitude of reasons why, in a particular case, leave to appeal may be refused by an Appeal Committee. I shall not attempt to embark on an exhaustive list for it would be impossible to do so. One reason may be that the particular case raises no question of general principle but turns on its own facts. Another may be that the facts of the particular case are not suitable as a foundation for determining some question of general principle. . Conversely the fact that leave to appeal is given is not of itself an indication that the judgments below are thought to be wrong. It may well be that leave is given in order that the relevant law may be authoritatively restated in clearer terms. In Supreme Court Employees Welfare Association Vs."
+    },
+    {
+      "chunk_index": 30,
+      "text": "It was therefore held that no general rules could be laid down governing the exercise of wide powers conferred on this Court under Article 136; whether the jurisdiction of this Court under Article 136 should be exercised or not and if used, on what terms and conditions, is a matter depending on the facts of each case. If at the stage when special leave is granted the respondent- caveator appears and resists the grant of special leave and the ground urged in support of resisting the grant of special leave is rejected on merits resulting in grant of special leave then it would not be open to the respondent to Kunhayammed & Ors vs State Of Kerala & Anr on 19 July, 2000 Indian Kanoon - http://indiankanoon.org/doc/1940266/ 10 raise the same point over again at the time of the final hearing of the appeal. However, if the respondent/caveator does not appear, or having appeared, does not raise a point, or even if he raised a point and the Court does not decide it before grant of special leave, the same point can be raised at the time of final hearing. There would be no technical bar of res judicata."
+    },
+    {
+      "chunk_index": 33,
+      "text": "Whatever be the phraseology employed in the order of dismissal, if it is a non-speaking order, i.e. it does not assign reasons for dismissing the special leave petition, it would neither attract the doctrine of merger so as to stand substituted in place of the order put in issue before it nor would it be a declaration of law by the Supreme Court under Article 141 of the Constitution for there is no law which has been declared. If the order of dismissal be supported by reasons then also the doctrine of merger would not be attracted because the jurisdiction exercised was not an appellate jurisdiction but merely a discretionary jurisdiction refusing to grant leave to appeal. We have already dealt with this aspect earlier. Still the reasons stated by the Court would attract applicability of Article 141 of the Constitution if there is a law declared by the Supreme Court which obviously would be binding on all the courts and tribunals in India and certainly the parties thereto."
+    },
+    {
+      "chunk_index": 34,
+      "text": "The statement contained in the order other than on points of law would be binding on the parties and the court or tribunal, whose order was under challenge on the principle of judicial discipline, this Court being the apex court of the country. No court or tribunal or parties would have the liberty of taking or canvassing any view contrary to the one expressed by this Court. The order of Supreme Court would mean that it has declared the law and in that light the case was considered not fit for grant of leave. The declaration of law will be governed by Article 141 but still, the case not being one where leave was granted, the doctrine of merger does not apply. The Court sometimes Kunhayammed & Ors vs State Of Kerala & Anr on 19 July, 2000 Indian Kanoon - http://indiankanoon.org/doc/1940266/ 11 leaves the question of law open. Or it sometimes briefly lays down the principle, may be, contrary to the one laid down by the High Court and yet would dismiss the special leave petition. The reasons given are intended for purposes of Article 141."
+    },
+    {
+      "chunk_index": 35,
+      "text": "This is so done because in the event of merely dismissing the special leave petition, it is likely that an argument could be advanced in the High Court that the Supreme Court has to be understood as not to have differed in law with the High Court. Incidentally we may notice two other decisions of this Court which though not directly in point, the law laid down wherein would be of some assistance to us. In Shankar Ramchandra Abhyankar Vs. Krishnaji Dattatraya Bapat AIR 1970 SC 1, this Court vide para 7 has emphasized three pre conditions attracting applicability of doctrine of merger. They are : i) the jurisdiction exercised should be appellate or revisional jurisdiction; ii) the jurisdiction should have been exercised after issue of notice; and, iii) after a full hearing in presence of both the parties. Then the appellate or revisional order would replace the judgment of the lower court and constitute the only final judgment. In Sushil Kumar Sen Vs. State of Bihar AIR 1975 SC 1185 the doctrine of merger usually applicable to orders passed in exercise of appellate or revisional jurisdiction was held to be applicable also to orders passed in exercise of review jurisdiction."
+    },
+    {
+      "chunk_index": 43,
+      "text": "It contemplates a situation where an appeal is allowed but no appeal has been preferred. The Rule came up for consideration of this Court in Thungabhadra Industries Ltd. Vs. The Govt. of A.P. (AIR 1964 SC 1372) in the context of Article 136 of the Constitution of India. The applicant had filed an application for review of the order of the High Court refusing to grant a certificate under Article 133 of the Constitution. The applicant also filed an application for special leave to appeal in respect of the same matter under Article 136 along with an application for condonation of delay. The Supreme Court refused to condone the delay and rejected the application under Article 136. When the application for review came up for consideration before the High Court, it was dismissed on the ground that the special leave petition had been dismissed by the Supreme Court. This Court held that the crucial date for determining whether or not the terms of Order 47 Rule 1(1) CPC are satisfied is the date when the application for review is filed."
+    },
+    {
+      "chunk_index": 49,
+      "text": "Here also the doctrine of merger would not apply. But the law stated or declared by this Court in its order shall attract applicability of Article 141 of the Constitution. The reasons assigned by this Court in its order expressing its adjudication (expressly or by necessary implication) on point of fact or law shall take away the jurisdiction of any other court, tribunal or authority to express any opinion in conflict with or in departure from the view taken by this Court because permitting to do so would be subversive of judicial discipline and an affront to the order of this Court. However this would be so not by reference to the doctrine of merger. Once a special leave petition has been granted, the doors for the exercise of appellate jurisdiction of this Court have been let open. The order impugned before the Supreme Court becomes an order appealed against. Any order passed thereafter would be an appellate order and would attract the applicability of doctrine of merger. It would not make a difference whether the order is one of reversal or of modification or of dismissal affirming the order appealed against."
+    }
+  ],
+  "raw_response": "```\n{\n  \"issue\": \"Whether the dismissal of a special leave petition by the Supreme Court in limine without a speaking order operates as a bar to the trial of identical issues in a separate proceeding, and whether such dismissal attracts the doctrine of merger or constructive res judicata.\",\n  \"rule\": \"The dismissal of a special leave petition in limine by a non-speaking order does not bar the trial of identical issues in a separate proceeding. The principle of res judicata or constructive res judicata cannot be extended to found it on mere guesswork. The doctrine of merger does not apply to a non-speaking order dismissing a special leave petition, as the jurisdiction exercised is discretionary and not appellate.\",\n  \"application\": \"The Court applied the rule to the present case, holding that the dismissal of a special leave petition in limine without a speaking order does not operate as a bar to the trial of identical issues in a separate proceeding. The Court also held that the doctrine of merger does not apply in such cases, and that the reasons stated by the Court in its order would attract the applicability of Article 141 of the Constitution.\",\n  \"conclusion\": \"The dismissal of a special leave petition in limine without a speaking order does not bar the trial of identical issues in a separate proceeding, and does not attract the doctrine of merger or constructive res judicata. However, the law declared by the Supreme Court in its order would be binding on all courts and tribunals in India under Article 141 of the Constitution.\",\n  \"authorities\": [\n    \"Union of India and others v. State of Maharashtra AIR 1989 SC 674\",\n    \"Wilson Vs. Colchester Justices 1985 (2) All England Law Reports 97\",\n    \"Shankar Ramchandra Abhyankar Vs. Krishnaji Dattatraya Bapat AIR 1970 SC 1\",\n    \"Sushil Kumar Sen Vs. State of Bihar AIR 1975 SC 1185\",\n    \"Thungabhadra Industries Ltd. Vs. The Govt. of A.P. AIR 1964 SC 1372\"\n  ]\n}\n```",
+  "decade": "2000",
+  "n_real_edges": 20
+}

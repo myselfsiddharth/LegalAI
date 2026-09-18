@@ -1,0 +1,80 @@
+{
+  "doc_id": "147756011",
+  "filename": "State_Of_A_P_vs_A_P_State_Wakf_Board_on_7_February_2022_1.PDF",
+  "year": "2022",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 5,
+    "Outcome": 1,
+    "Claim": 4,
+    "AuthorityCited": 7,
+    "Holding": 13
+  },
+  "authority_results": [
+    {
+      "cited": "Andhra Pradesh Wakf Board",
+      "source_sentence": "The present appeals are directed against an order passed by the High Court of Judicature at Andhra Pradesh on 3.4.2012 1 whereby the writ petitions challenging the Errata Notification dated 13.3.2006, published in the Official Gazette of the State of Andhra Pradesh on 6.4.2006 on behalf of Andhra Pradesh Wakf Board2, were dismissed.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "the Military Governor",
+      "source_sentence": "The authority of His Exalted Highness the Nizam as the sovereign ruler to resume the jagirs and to extinguish the interests of the jagirdars being by delegation vested in the Military Governor, the legality of the action of the latter was not open to challenge on any test of legislative competence.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "legislatures whose powers are subject to constitutional restrictions",
+      "source_sentence": "The doctrine of invalidity of legislative provisions enacted in colourable exercise of authority applies to legislatures whose powers are subject to constitutional restrictions.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the Constitution",
+      "source_sentence": "When such a legislative body seeks, under the guise or pretence of complying with the restrictions, in enacting a statute, to evade or elude them, it is but a fraud on the Constitution, and the statute is liable to be declared invalid on the ground that the enactment is in colourable exercise of authority, the statute being in truth beyond the competence of the body.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the body",
+      "source_sentence": "When such a legislative body seeks, under the guise or pretence of complying with the restrictions, in enacting a statute, to evade or elude them, it is but a fraud on the Constitution, and the statute is liable to be declared invalid on the ground that the enactment is in colourable exercise of authority, the statute being in truth beyond the competence of the body.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "this Regulation",
+      "source_sentence": "This Regulation was followed a few months later by the Hyderabad jagirs (Commutation) Regulation, 1359-F which came into force on 25-1-1950.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the Sovereign",
+      "source_sentence": "It was thereafter, the Abolition and Commutation Regulations were enacted by the Military Governor and Chief Minister respectively under the authority of the Sovereign. 2.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "2020",
+  "n_real_edges": 65
+}

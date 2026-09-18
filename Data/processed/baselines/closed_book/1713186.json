@@ -1,0 +1,55 @@
+{
+  "doc_id": "1713186",
+  "filename": "The_Member_For_The_Board_Of_Agricultural_vs_Smt_Sindhurani_Chaudhurani_With_on_24_April_1957_1.PDF",
+  "year": "1957",
+  "system": "closed_book",
+  "irac": {
+    "issue": "Whether the Mysore Agricultural Debtors Relief Act, 1956, applies to a pending suit against a member of the Board of Agriculture.",
+    "rule": "The Mysore Agricultural Debtors Relief Act, 1956, does not apply to pending suits unless expressly stated; general language of the Act is not enough to imply retrospective effect.",
+    "application": "The Act does not contain express words making it retrospective; therefore, it does not apply to pending suits.",
+    "conclusion": "The Mysore Agricultural Debtors Relief Act, 1956, does not apply to the pending suit against the member of the Board of Agriculture."
+  },
+  "authority_results": [
+    {
+      "cited": "Union of India v. Bhagwandas (AIR 1956 SC 185)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Shankarlinga v. Dy. Commissioner (AIR 1956 SC 346)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "In re: The Delhi Laws Act, 1912 (AIR 1955 SC 415)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "B.S. Baliga v. The Bangalore Mahanagar Palike (AIR 1956 SC 469)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    }
+  ],
+  "parse_error": null,
+  "retrieved_chunks": null,
+  "raw_response": "```json\n{\n  \"issue\": \"Whether the Mysore Agricultural Debtors Relief Act, 1956, applies to a pending suit against a member of the Board of Agriculture.\",\n  \"rule\": \"The Mysore Agricultural Debtors Relief Act, 1956, does not apply to pending suits unless expressly stated; general language of the Act is not enough to imply retrospective effect.\",\n  \"application\": \"The Act does not contain express words making it retrospective; therefore, it does not apply to pending suits.\",\n  \"conclusion\": \"The Mysore Agricultural Debtors Relief Act, 1956, does not apply to the pending suit against the member of the Board of Agriculture.\",\n  \"authorities\": [\n    \"Union of India v. Bhagwandas (AIR 1956 SC 185)\",\n    \"Shankarlinga v. Dy. Commissioner (AIR 1956 SC 346)\",\n    \"In re: The Delhi Laws Act, 1912 (AIR 1955 SC 415)\",\n    \"B.S. Baliga v. The Bangalore Mahanagar Palike (AIR 1956 SC 469)\"\n  ]\n}\n```",
+  "decade": "1950",
+  "n_real_edges": 10
+}
