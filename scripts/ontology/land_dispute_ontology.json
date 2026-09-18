@@ -1,0 +1,98 @@
+{
+  "_comment": "Starter ontology for the ODE (Ontology-Directed Extraction) pipeline, scoped to Indian Supreme Court land/property-dispute judgments. Grounded in real text from the downloaded sample (see gold_examples.jsonl for the sentences this was built from), not designed in the abstract. Expect this to grow via the bootstrapping loop (Seed -> Lift -> Lower -> Audit -> Refine) -- residuals that don't fit an existing class are the signal for the next revision, not a reason to force-fit them.",
+
+  "classes": {
+    "Entity": {
+      "children": ["Party", "Court", "Judge", "LegalInstrument", "PriorCase", "PropertyAsset"]
+    },
+    "Action": {
+      "children": ["ProceduralAction", "DisputeAction", "TreatmentAction", "RulingAction", "DispositionAction"]
+    }
+  },
+
+  "roles": ["Agent", "Patient", "Authority", "Forum", "Time"],
+
+  "ie_concepts": {
+    "Claim": "What a party asserts is true or owed to them (e.g. ownership, possession, right to recovery).",
+    "Issue": "The question the court frames itself as deciding.",
+    "RuleCited": "A statute, section, or article invoked as governing law.",
+    "AuthorityCited": "A prior case invoked as precedent.",
+    "AuthorityTreatment": "How the citing court treated an AuthorityCited -- see TreatmentAction polarity below. This is the signed-graph edge label.",
+    "Fact": "A fact the court treats as established in the record.",
+    "Holding": "The court's determination on an Issue.",
+    "Outcome": "The disposition of the case (appeal allowed/dismissed, application admitted, etc.)."
+  },
+
+  "terminology": {
+    "_comment": "keyword/phrase -> class, lower-cased matching. This is what the LLM grounding step is seeded with; it is expected to be incomplete and grow from residuals.",
+
+    "appellant": {"isa": "Party", "attr": {"role": "appellant"}},
+    "petitioner": {"isa": "Party", "attr": {"role": "petitioner"}},
+    "plaintiff": {"isa": "Party", "attr": {"role": "plaintiff"}},
+    "respondent": {"isa": "Party", "attr": {"role": "respondent"}},
+    "defendant": {"isa": "Party", "attr": {"role": "defendant"}},
+
+    "supreme court": {"isa": "Court", "attr": {"level": "apex"}},
+    "high court": {"isa": "Court", "attr": {"level": "appellate"}},
+    "nclt": {"isa": "Court", "attr": {"level": "tribunal"}},
+    "nclat": {"isa": "Court", "attr": {"level": "tribunal"}},
+    "trial court": {"isa": "Court", "attr": {"level": "trial"}},
+
+    "act": {"isa": "LegalInstrument", "attr": {"kind": "statute"}},
+    "section": {"isa": "LegalInstrument", "attr": {"kind": "section"}},
+    "article": {"isa": "LegalInstrument", "attr": {"kind": "article"}},
+    "deed": {"isa": "LegalInstrument", "attr": {"kind": "deed"}},
+    "notice": {"isa": "LegalInstrument", "attr": {"kind": "notice"}},
+
+    "possession": {"isa": "PropertyAsset", "attr": {"aspect": "possession"}},
+    "title": {"isa": "PropertyAsset", "attr": {"aspect": "title"}},
+    "mortgage": {"isa": "PropertyAsset", "attr": {"aspect": "security_interest"}},
+    "lease": {"isa": "PropertyAsset", "attr": {"aspect": "tenancy"}},
+    "tenancy": {"isa": "PropertyAsset", "attr": {"aspect": "tenancy"}},
+    "encroachment": {"isa": "PropertyAsset", "attr": {"aspect": "encroachment"}},
+    "partition": {"isa": "PropertyAsset", "attr": {"aspect": "partition"}},
+    "adverse possession": {"isa": "PropertyAsset", "attr": {"aspect": "adverse_possession"}},
+
+    "filed": {"isa": "ProceduralAction"},
+    "appealed": {"isa": "ProceduralAction"},
+    "admitted": {"isa": "ProceduralAction"},
+    "instituted a suit": {"isa": "ProceduralAction"},
+
+    "claimed": {"isa": "DisputeAction"},
+    "alleged": {"isa": "DisputeAction"},
+    "contested": {"isa": "DisputeAction"},
+    "contended": {"isa": "DisputeAction"},
+    "submitted": {"isa": "DisputeAction"},
+    "urged": {"isa": "DisputeAction"},
+    "argued": {"isa": "DisputeAction"},
+
+    "relied on": {"isa": "TreatmentAction", "polarity": "positive"},
+    "followed": {"isa": "TreatmentAction", "polarity": "positive"},
+    "approved": {"isa": "TreatmentAction", "polarity": "positive"},
+    "distinguished": {"isa": "TreatmentAction", "polarity": "negative"},
+    "disapproved": {"isa": "TreatmentAction", "polarity": "negative"},
+    "overruled": {"isa": "TreatmentAction", "polarity": "negative"},
+    "doubted": {"isa": "TreatmentAction", "polarity": "negative"},
+    "referred to": {"isa": "TreatmentAction", "polarity": "neutral"},
+    "explained": {"isa": "TreatmentAction", "polarity": "neutral"},
+
+    "held": {"isa": "RulingAction"},
+    "we hold": {"isa": "RulingAction"},
+    "it is held": {"isa": "RulingAction"},
+    "we are of the view": {"isa": "RulingAction"},
+
+    "appeal is allowed": {"isa": "DispositionAction", "attr": {"disposition": "allowed"}},
+    "appeal is dismissed": {"isa": "DispositionAction", "attr": {"disposition": "dismissed"}},
+    "application was admitted": {"isa": "DispositionAction", "attr": {"disposition": "admitted"}},
+    "time-barred": {"isa": "DispositionAction", "attr": {"disposition": "time_barred"}},
+    "allowed": {"isa": "DispositionAction", "attr": {"disposition": "allowed"}},
+    "dismissed": {"isa": "DispositionAction", "attr": {"disposition": "dismissed"}},
+    "remanded": {"isa": "DispositionAction", "attr": {"disposition": "remanded"}}
+  },
+
+  "known_gaps": [
+    "The land-dispute filter (filtered_land_disputes.xlsx) sweeps in adjacent domains -- e.g. an income-tax case and an IBC/insolvency case turned up in the sample purely because immovable property was mortgaged as collateral. PropertyAsset needs a 'security_interest' sub-case, not just classic possession/title disputes.",
+    "AuthorityTreatment verbs (relied on/distinguished/etc.) are reliable for pre-2000 judgments via the HEADNOTE section, but post-2000 judgments don't use that convention -- the same treatment is expressed in free text ('We are of the view that the said judgment would not even remotely be applicable...' = a distinguishing, with no verb from the list at all). This is exactly the gap the modern-case sign classifier (classify_modern_signs.py) targets.",
+    "RulingAction+Patient was found (via LEARN, 2026-09-18) to be ambiguous across Holding/RuleCited/Outcome/AuthorityCited -- 'held that X' means different things depending on what X contains. Split DispositionAction out for the Outcome case (appeal allowed/dismissed/admitted). The remaining Holding-vs-RuleCited ambiguity (does X state a determination or invoke a statute?) still needs a content-based rule, not just a class split, since both use the same 'held' trigger."
+  ]
+}

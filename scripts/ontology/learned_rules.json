@@ -1,0 +1,51 @@
+[
+  {
+    "class": "RulingAction",
+    "role": "Patient",
+    "concept": "Holding",
+    "support": 4,
+    "confidence": 0.57
+  },
+  {
+    "class": "TreatmentAction",
+    "role": "Authority",
+    "concept": "AuthorityCited",
+    "support": 3,
+    "confidence": 1.0
+  },
+  {
+    "class": "Party",
+    "role": "Agent",
+    "concept": "Party",
+    "support": 2,
+    "confidence": 1.0
+  },
+  {
+    "class": "DispositionAction",
+    "role": "Patient",
+    "concept": "Outcome",
+    "support": 1,
+    "confidence": 1.0
+  },
+  {
+    "class": "DisputeAction",
+    "role": "Patient",
+    "concept": "Claim",
+    "support": 1,
+    "confidence": 1.0
+  },
+  {
+    "class": "Party",
+    "role": "Patient",
+    "concept": "Party",
+    "support": 1,
+    "confidence": 1.0
+  },
+  {
+    "class": "PropertyAsset",
+    "role": "Patient",
+    "concept": "Claim",
+    "support": 1,
+    "confidence": 1.0
+  }
+]
