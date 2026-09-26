@@ -4,22 +4,14 @@
   "year": "1987",
   "candidate_sentences": 30,
   "objects_by_concept": {
-    "Party": 5,
-    "AuthorityCited": 8,
-    "Claim": 9,
+    "Party": 2,
+    "Claim": 3,
     "Outcome": 1,
-    "Holding": 8
+    "AuthorityCited": 7,
+    "Holding": 8,
+    "RuleCited": 2
   },
   "authority_results": [
-    {
-      "cited": "View taken by the High Court over a number of years",
-      "source_sentence": "Practice & Procedure: View taken by the High Court over a number of years----Should normally be adhered to.",
-      "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
-      },
-      "in_judgment_text": true
-    },
     {
       "cited": "Gupta, [1986] 3 SCC 1",
       "source_sentence": "Gupta, [1986] 3 SCC 1, referred to 2.",
@@ -43,24 +35,6 @@
       "in_judgment_text": true
     },
     {
-      "cited": "Inder Sain Minocha, [1982] 2 Rent Control Reporter 392",
-      "source_sentence": "Inder Sain Minocha, [1982] 2 Rent Control Reporter 392, approved. 4.2 It has been consistently held by the Delhi High Court that s. 21 is a code by itself, that the order of permission is itself an authority and that no lease was necessary.",
-      "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
-      },
-      "in_judgment_text": true
-    },
-    {
-      "cited": "there was any requirement of any lease or any agreement subsequent to the order and the same required registration",
-      "source_sentence": "This view has been acted upon for long and trans- actions have been completed in the Union Territory on the basis of permission and it was never doubted that there was any requirement of any lease or any agreement subsequent to the order and the same required registration.",
-      "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
-      },
-      "in_judgment_text": true
-    },
-    {
       "cited": "view taken Inder Mohan Lal vs Ramesh Khanna on 4 August, 1987",
       "source_sentence": "The view taken Inder Mohan Lal vs Ramesh Khanna on 4 August, 1987 Indian Kanoon - http://indiankanoon.org/doc/1773971/ 3 by the High Court over a number of years should normally be adhered to and not to be disturbed.",
       "verification": {
@@ -70,20 +44,42 @@
       "in_judgment_text": true
     },
     {
-      "cited": "Shiv Charan Das Mathur, [1976] 8 Rent Control Reporter 703",
-      "source_sentence": "Shiv Charan Das Mathur, [1976] 8 Rent Control Reporter 703, referred to.",
+      "cited": "the observations of Lord Ellen borough in Smith v.",
+      "source_sentence": "The Court relied on the observations of Lord Ellen borough in Smith v.",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
       },
       "in_judgment_text": true
     },
     {
-      "cited": "respondent",
-      "source_sentence": "The Rent Controller after recording the statements of the appellant and the respondent made an order permitting creation of limited tenancy only for a period of two years for residential purposes to which the respondent had agreed upon.",
+      "cited": "certain observations on a decision in Ferozi Lal Jain v.",
+      "source_sentence": "In aid of the submission that in order to be entitled to eviction under section 14 of the Rent Act, the court had to be satisfied itself that the statutory ground for eviction existed and that application of satisfaction of the court could not be by-passed and circumvented by a compromise decree, reliance was placed on certain observations on a decision in Ferozi Lal Jain v.",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "a decision of the Delhi High Court in Jagat Taran Berry v.",
+      "source_sentence": "On the unregistered lease question, our attention was drawn to a decision of the Delhi High Court in Jagat Taran Berry v.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Fazal Ali, J. of the Jammu and Kashmir High Court in Ishwar Dutt and another v.",
+      "source_sentence": "Equally same is the decision in respect of the observations of Fazal Ali, J. of the Jammu and Kashmir High Court in Ishwar Dutt and another v.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
       },
       "in_judgment_text": true
     }

@@ -4,11 +4,24 @@
   "year": "2024",
   "candidate_sentences": 30,
   "objects_by_concept": {
-    "Party": 6,
-    "Holding": 5,
-    "Claim": 3
+    "Party": 4,
+    "Claim": 6,
+    "Holding": 11,
+    "AuthorityCited": 1,
+    "RuleCited": 2
   },
-  "authority_results": [],
+  "authority_results": [
+    {
+      "cited": "Assn. of Natural Gas Consuming Industries of Gujarat [1990 Supp SCC 397]",
+      "source_sentence": "Assn. of Natural Gas Consuming Industries of Gujarat [1990 Supp SCC 397] .) Therefore, the view adopted by the High Court does not appear to be correct.\u201a 57.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    }
+  ],
   "decade": "2020",
   "n_real_edges": 58
 }

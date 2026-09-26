@@ -1,0 +1,81 @@
+{
+  "doc_id": "1752395",
+  "filename": "Gauri_Shankar_vs_State_Of_U_P_on_12_August_1993_1.PDF",
+  "year": "1993",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 1,
+    "Holding": 7,
+    "AuthorityCited": 7,
+    "Claim": 1
+  },
+  "authority_results": [
+    {
+      "cited": "Avas Avam Vikas Parishad5",
+      "source_sentence": "Avas Avam Vikas Parishad5 came up for consideration before another Division Bench, on reference, the Full Bench considered the question in extenso and held that the first proviso to Section 6 of the L.A.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Full Bench ratio",
+      "source_sentence": "State of U.p.6 another Division Bench following the Full Bench ratio held that Section 11-A of the L.A.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Section 55 and the schedule appended to the Act",
+      "source_sentence": "The contention of the respondents is that by operation of Section 55 and the schedule appended to the Act the legislature incorporated Sections 4(i) and 6(i) L.A.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the legislature",
+      "source_sentence": "The contention of the respondents is that by operation of Section 55 and the schedule appended to the Act the legislature incorporated Sections 4(i) and 6(i) L.A.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "this Court",
+      "source_sentence": "It would be obvious that this Court applied its mind to the other questions canvassed by the counsel and did not consider them fit to be decided and limited itself to the general question of law of public importance as to the applicability of the first proviso to Section 6 of the L.A.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Section 23 of L.A.",
+      "source_sentence": "Act providing for transfer of land to Board; paragraph 5 amends Section 23 of L.A.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Sections 4 to 6 of the L.A.",
+      "source_sentence": "We have to advert, therefore, to the main question, whether the Act adapted Sections 4 to 6 of the L.A.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "1990",
+  "n_real_edges": 27
+}

@@ -1,0 +1,26 @@
+{
+  "doc_id": "96039159",
+  "filename": "V_Kalyanaswamy_D_By_Lrs_vs_L_Bakthavatsalam_D_Thr_Lrs_on_17_July_2020_1.PDF",
+  "year": "2020",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Claim": 17,
+    "Party": 7,
+    "Holding": 3,
+    "Outcome": 2,
+    "AuthorityCited": 1
+  },
+  "authority_results": [
+    {
+      "cited": "the proceedings under Section 145 of CrPC",
+      "source_sentence": "She made reference to the proceedings under Section 145 of CrPC.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "2020",
+  "n_real_edges": 63
+}

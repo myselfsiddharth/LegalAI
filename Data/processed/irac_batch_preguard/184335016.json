@@ -1,0 +1,194 @@
+{
+  "doc_id": "184335016",
+  "filename": "Union_Of_India_vs_Harbhajan_Singh_Dhillon_on_21_October_1971_1.PDF",
+  "year": "1971",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Holding": 13,
+    "Claim": 8,
+    "AuthorityCited": 19
+  },
+  "authority_results": [
+    {
+      "cited": "the Court",
+      "source_sentence": "Union of India [1970] I.S.C.R. 479, 489 Ramaswami, J., speaking on behalf of the Court, while dealing with the Gold (Control) Act (45 of 1968) observed : Before construing these entries it is useful to notice some of the well-settled rules of interpretation laid down by the Federal Court and by this Court in the matter of construing the entries.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "The Queen [1881-82] 7 AC 836",
+      "source_sentence": "The Queen [1881-82] 7 AC 836 the Privy Council was concerned with the validity of the Canada Temperance Act, 1878.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "the case of Citizens Insurance Company v.",
+      "source_sentence": "Smith, observed : The general scheme of the British North America Act with regard to the distribution of legislative powers, and the general scope and effect of sees. 91 and 92, and their relation to each other, were fully considered and commented on by this Board in the case of Citizens Insurance Company v.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the case of Citizens Insurance Company v.",
+      "source_sentence": "Smith, observed : The general scheme of the British North America Act with regard to the distribution of legislative powers, and the general scope and effect of sees. 91 and 92, and their relation to each other, were fully considered and commented on by this Board in the case of Citizens Insurance Company v.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Section 92",
+      "source_sentence": "According to the principle of construction there pointed out, the first question to be determined is, whether the Act now in question falls within any of the classes of subjects enumerated in Section Union Of India vs Harbhajan Singh Dhillon on 21 October, 1971 Indian Kanoon - http://indiankanoon.org/doc/184335016/ 15 92, and assigned exclusively to the Legislatures of the Provinces.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "In re The Regulation and Control of Aeronautics in Canada [1932] A.C. 54",
+      "source_sentence": "This statement was approved of in In re The Regulation and Control of Aeronautics in Canada [1932] A.C. 54; in In re Silver Brothers.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "In re Silver Brothers",
+      "source_sentence": "This statement was approved of in In re The Regulation and Control of Aeronautics in Canada [1932] A.C. 54; in In re Silver Brothers.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Attorney-General for Ontario v.",
+      "source_sentence": "It would be noticed that the second proposition was based on Attorney-General for Ontario v.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the Privy Council",
+      "source_sentence": "Palkiwala points out, that one way of reading Sections 91 and 92 of the Canadian Constitution is that Section 91 gives general powers and then gives certain specific powers by way of illustration, and that apparently was the interpretation placed on the Act by the Privy Council before Attorney-General for Ontario v.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "entry 45 List I of the Government of India Act",
+      "source_sentence": "Boddu Paidanna [1942] F.C.R. 90 the Federal Court was concerned with the interpretation of entry 45 List I of the Government of India Act (duties of excise on tobacco...) and entry 48 List II (taxes on the sale of goods and on advertisements).",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "entry 48 List II",
+      "source_sentence": "Boddu Paidanna [1942] F.C.R. 90 the Federal Court was concerned with the interpretation of entry 45 List I of the Government of India Act (duties of excise on tobacco...) and entry 48 List II (taxes on the sale of goods and on advertisements).",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "Muttuswami Goundan [1940] F.C.R. 188",
+      "source_sentence": "Muttuswami Goundan [1940] F.C.R. 188 while interpreting Section 100 of the Government of India Act, which corresponds to Section 246 of the Constitution, Gwyer C.J., observed at p. 200 : The British North America Act, 1867, contains analogous provisions and it can scarcely be doubted that Parliament had those provisions in mind when it enacted the later Act. 57.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Section 100 of the Government of India Act",
+      "source_sentence": "Muttuswami Goundan [1940] F.C.R. 188 while interpreting Section 100 of the Government of India Act, which corresponds to Section 246 of the Constitution, Gwyer C.J., observed at p. 200 : The British North America Act, 1867, contains analogous provisions and it can scarcely be doubted that Parliament had those provisions in mind when it enacted the later Act. 57.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Lynn [1937] A.C. 863, 869 Lord Atkin",
+      "source_sentence": "Lynn [1937] A.C. 863, 869 Lord Atkin applied the \"pith and substance\" rule when dealing with a question arising under the Government of Ireland Act-which did not embody a federal system of at all-and in Shannon v.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "both items 1 and 2 of List II of the Government of India Act, 1935",
+      "source_sentence": "Narothamdas Jethabhai [1951] SCR. 51 Patanjali Sastri and Das, JJ., as they then were, relied on both items 1 and 2 of List II of the Government of India Act, 1935, to uphold the Bombay City Civil Court Act, 1948. 85.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the Bombay City Civil Court Act, 1948",
+      "source_sentence": "Narothamdas Jethabhai [1951] SCR. 51 Patanjali Sastri and Das, JJ., as they then were, relied on both items 1 and 2 of List II of the Government of India Act, 1935, to uphold the Bombay City Civil Court Act, 1948. 85.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the words of a Constitution",
+      "source_sentence": "Brewery Employees Union [1908] 6 C.L.R. 469, 611 is that although the words of a Constitution are to be interpreted in the same way as courts interpret Other statutes, it has to be borne in mind, while doing so, that what is interpreted is a Constitution, a mechanism under which laws are to be made and not an Act which declares what that law is to be.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "courts",
+      "source_sentence": "Brewery Employees Union [1908] 6 C.L.R. 469, 611 is that although the words of a Constitution are to be interpreted in the same way as courts interpret Other statutes, it has to be borne in mind, while doing so, that what is interpreted is a Constitution, a mechanism under which laws are to be made and not an Act which declares what that law is to be.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "[1912] A.C. 571",
+      "source_sentence": "Att.-Genl. for Canada [1912] A.C. 571 cited with approval in In re the Central Provinces & Berar Act XIV of 1938 [1939] F.C.R, 18, 31 \"if the text is explicit, the text is conclusive, alike in what it directs and what it forbids\".",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
+    }
+  ],
+  "decade": "1970",
+  "n_real_edges": 25
+}

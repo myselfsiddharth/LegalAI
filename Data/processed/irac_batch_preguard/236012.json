@@ -1,0 +1,97 @@
+{
+  "doc_id": "236012",
+  "filename": "Namdeo_Lokman_Lodhi_vs_Narmadabai_And_Others_on_27_February_1953_1.PDF",
+  "year": "1953",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 7,
+    "Holding": 9,
+    "AuthorityCited": 8,
+    "Claim": 8
+  },
+  "authority_results": [
+    {
+      "cited": "Gilbert Pinto (I.L.R. 42 Mad. 654)",
+      "source_sentence": "Gilbert Pinto (I.L.R. 42 Mad. 654) relied on.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "46774",
+        "matched_cited_text": "Krishna Shetti v. Gilbert Pinto",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Davey (110 E.R. 606)",
+      "source_sentence": "Davey (110 E.R. 606) distinguished.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "Toleman v. Portbury",
+      "source_sentence": "In English law the bringing of an action which corresponds to the institution of a suit in India is itself an act which is definitely regarded as evidencing an intention on the part of the lessor to determine a lease with regard to which there has been a breach of covenant entitling the lessor to re-enter : vide Toleman v.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Padmabhaya v.",
+      "source_sentence": "The same principle is applied for actions for relief on the ground of fraud. [vide Padmabhaya v.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1415095",
+        "matched_cited_text": "Padmabhaya v. Ranga",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "principles of reason and equity",
+      "source_sentence": "In our judgment, therefore, the statement in this decision that sections 105 to 116 of the Transfer of Property Act are founded upon principles of reason and Namdeo Lokman Lodhi vs Narmadabai And Others on 27 February, 1953 Indian Kanoon - http://indiankanoon.org/doc/236012/ 9 equity cannot be accepted either as correct or precise.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "section 111 (g) of the Transfer of Property Act",
+      "source_sentence": "L.R. 909. principle embodied in section 111 (g) of the Transfer of Property Act that in the case of forfeiture by denial of landlord's title a notice in writing determining them lease must be given is a principle of justice, equity and good conscience which must be held to govern even agricultural leases.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "two earlier decisions of the Bombay High Court, Venkaji Krishna Nadkarni v.",
+      "source_sentence": "For this contention reliance was placed on two earlier decisions of the Bombay High Court, Venkaji Krishna Nadkarni v.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "some act",
+      "source_sentence": "There it was observed that it was necessary for the licensor to have done some act showing Namdeo Lokman Lodhi vs Narmadabai And Others on 27 February, 1953 Indian Kanoon - http://indiankanoon.org/doc/236012/ 10 his intention to determine the licence and until such act was shown, it continued in force.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "1950",
+  "n_real_edges": 12
+}

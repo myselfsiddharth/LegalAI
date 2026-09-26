@@ -1,0 +1,175 @@
+{
+  "doc_id": "513801",
+  "filename": "Rustom_Cavasjee_Cooper_vs_Union_Of_India_on_10_February_1970_1.PDF",
+  "year": "1970",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 2,
+    "Claim": 3,
+    "Holding": 9,
+    "AuthorityCited": 15
+  },
+  "authority_results": [
+    {
+      "cited": "The Union of India\" [1950] S.C.R. 869",
+      "source_sentence": "The Union of India\" [1950] S.C.R. 869, referred to. 2. (i) Exercise of the power to promulgate an Ordinance under Article 123 is strictly conditioned.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "4354",
+        "matched_cited_text": "Chiranjit Lal Chowduri v. The Union of India",
+        "n_matching_edges": 4
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "a law",
+      "source_sentence": "This court has the power to strike down a law on ground of want of authority, but the Court will not sit in appeal over the policy of the Parliament in enacting a law. [583 D, 584 H] Commonwealth of Australia v.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "the main limb of the Article",
+      "source_sentence": "Imposition of restric- tions which are incidental or subsidiary to the carrying on of trade by the State whether to the exclusion of the Rustom Cavasjee Cooper vs Union Of India on 10 February, 1970 Indian Kanoon - http://indiankanoon.org/doc/513801/ 9 citizen or not must however. satisfy the test of the main limb of the Article. [580 F, H; 581 H] Akadasi Padhan v.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "State of Orissa, [1963] Supp. 2 S.C.R. 691",
+      "source_sentence": "State of Orissa, [1963] Supp. 2 S.C.R. 691,. followed. 536 Early Fitzwilliam's Wentworth Estates Co. v.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1258563",
+        "matched_cited_text": "Akadasi Padhan v. State of Orissa",
+        "n_matching_edges": 2
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "State of Punjab, [1969] 3 S.C.R. 447",
+      "source_sentence": "State of Punjab, [1969] 3 S.C.R. 447, referred to.. (c) The restrictions- imposed upon the right of the named Banks to ,carry \"non-banking\" business were plainly unreasonable.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "944301",
+        "matched_cited_text": "2) and Municipal Committee, Amritsar and Others v. State of Punjab and Others",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Ltd. & Ors., [1954] S.C.R. 674",
+      "source_sentence": "Ltd. & Ors., [1954] S.C.R. 674, referred to. (iv) When, after acquiring the assets, undertaking, organisation, goodwill and the names of the named Banks they are prohibited from carrying on banking business, whereas, other banks, Indian as well as foreign, are permitted to carry on banking business, a flagrantly hostile discri- mination is practised.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "Vajravelu and Shantilal Mangaldas cases",
+      "source_sentence": "On the application of the view expressed in Vajravelu and Shantilal Mangaldas cases the Act had to be struck down as it failed to provide the expropriated Banks compensation determined according to relevant principles. [594 G, 595 C, Rustom Cavasjee Cooper vs Union Of India on 10 February, 1970 Indian Kanoon - http://indiankanoon.org/doc/513801/ 11 598 F-H] P.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "State of Bombay, [1958] S.C.R. 1122",
+      "source_sentence": "State of Bombay, [1958] S.C.R. 1122. referred to.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "41574",
+        "matched_cited_text": "State of Bombay v. Bhanji Munji & Another",
+        "n_matching_edges": 3
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Hunt, L.R. [1896] A.C. 7",
+      "source_sentence": "Hunt, L.R. [1896] A.C. 7, referred to.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "Minister of Agriculture, Fisheries and Food, [1968] 1 All E.R. 604",
+      "source_sentence": "Minister of Agriculture, Fisheries and Food, [1968] 1 All E.R. 604, referred to.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Bryden, [1899] A.C. 580",
+      "source_sentence": "Bryden, [1899] A.C. 580, referred to.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "The Commissioner of Income-tax Excess Profits Tax, Bombay [1958] S.C.R. 65",
+      "source_sentence": "The Commissioner of Income-tax Excess Profits Tax, Bombay [1958] S.C.R. 65, referred to.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Sen A.I.R. 1952 Cal. 273",
+      "source_sentence": "Sen A.I.R. 1952 Cal. 273. referred to.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "State of Orissa, [1963] Supp. 2 S.C.R, 691",
+      "source_sentence": "State of Orissa, [1963] Supp. 2 S.C.R, 691, followed, Motilal v.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1258563",
+        "matched_cited_text": "Akadasi Padhan v. State of Orissa",
+        "n_matching_edges": 2
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Achiah Chetty, A.I.R. 1969 S.C. 477.",
+      "source_sentence": "Achiah Chetty, A.I.R. 1969 S.C. 477. followed.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "958208",
+        "matched_cited_text": "1) and State of Mysore v. Achiah Chetty",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "1970",
+  "n_real_edges": 48
+}

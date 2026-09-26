@@ -1,0 +1,117 @@
+{
+  "doc_id": "568069",
+  "filename": "Nagendra_Nath_Bora_Another_vs_The_Commissioner_Of_Hills_Divisionand_on_7_February_1958_1.PDF",
+  "year": "1958",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 5,
+    "AuthorityCited": 10,
+    "Holding": 9,
+    "Claim": 4
+  },
+  "authority_results": [
+    {
+      "cited": "Ad. 23 Of 1955, s. 9, Rule 343",
+      "source_sentence": "B. & Assam Act I of 1910) as amended by Ad. 23 Of 1955, s. 9, Rule 343.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "Syed Ahmed Ishaque and others, [1955] I S.C.R. 1104",
+      "source_sentence": "Syed Ahmed Ishaque and others, [1955] I S.C.R. 1104, relied on.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 0.94,
+        "matched_cited_doc_id": "1450722",
+        "matched_cited_text": "Hari Vishnu Kamath v. Syed Ahmad Ishaque and others",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Northumberland Compensation Appeal Tribunal, (1952) 1 K.B. 338",
+      "source_sentence": "Northumberland Compensation Appeal Tribunal, (1952) 1 K.B. 338, referred to.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Amarnath and another, [1954] S.C.R. 565",
+      "source_sentence": "Amarnath and another, [1954] S.C.R. 565, referred to.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1740954",
+        "matched_cited_text": "Waryam Singh and another v. Amarnath",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "The State of Madyas, [1956] S.C.R. 256",
+      "source_sentence": "The State of Madyas, [1956] S.C.R. 256, referred to.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 0.91,
+        "matched_cited_doc_id": "1510323",
+        "matched_cited_text": "Raman1601260and Raman Ltd. v. The State of Madras",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Ltd., [1957] S.C.R. 98",
+      "source_sentence": "Ltd., [1957] S.C.R. 98, relied on.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "Bolton (supra)",
+      "source_sentence": "Bolton (supra) was approved and followed by the Privy Council in the case of the King v.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Bolton (supra)",
+      "source_sentence": "Bolton (supra) was approved and followed by the Privy Council in the case of the King v.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the statute",
+      "source_sentence": "The jurisdiction of the High Court under Art. 226 of the Constitution is limited to seeing that the judicial or quasi-judicial tribunals or administrative bodies exercising quasi-judicial powers, do not exceed their statutory jurisdiction and correctly administer the law laid down by the statute under which they act.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "an appellate Authority",
+      "source_sentence": "Held further, that where an appellate Authority, as in the instant case, is constituted the highest authority by the statute for deciding as between the claims of rival parties, its powers cannot be circumscribed nor can it be held to have acted in excess of its powers or without jurisdiction on considerations foreign to the statute or the rules.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "1950",
+  "n_real_edges": 11
+}

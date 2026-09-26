@@ -1,0 +1,67 @@
+{
+  "doc_id": "1089401",
+  "filename": "Shrinivas_Krishnarao_Kango_vs_Narayan_Devji_Kango_And_Others_on_23_March_1954_1.PDF",
+  "year": "1954",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 3,
+    "Holding": 12,
+    "AuthorityCited": 5
+  },
+  "authority_results": [
+    {
+      "cited": "Krishnachandra Das (2 B.L.R. 103 F.B.)",
+      "source_sentence": "Krishnachandra Das (2 B.L.R. 103 F.B.) referred to.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Hanmant Ramchandra (I.L.R. 1950 Bombay 510)",
+      "source_sentence": "Hanmant Ramchandra (I.L.R. 1950 Bombay 510) approved.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "238807",
+        "matched_cited_text": "Jivaji Annaji v. Hanmant Ramchandra",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Jivaji Annaji v.",
+      "source_sentence": "Shankar Ramchandra Patil(1), the High Court held following a Full Bench decision of that Court in Jivaji Annaji v.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "238807",
+        "matched_cited_text": "Jivaji Annaji v. Hanmant Ramchandra",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Nilkomul Lahiri (2)",
+      "source_sentence": "Nilkomul Lahiri (2) as to the rights of an adopted son quoad the estate of a collateral had been reaffirmed, and they accordingly held that the decision in Anant Bhikappa Patil (Minor) v.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "a posthumous son",
+      "source_sentence": "The ground on which an adopted son is held entitled to take in defeasance of the rights acquired prior to his adoption is that in 2 the eye of law his adoption relates back, by a legal fiction, to the date of the death of his adoptive father, he being put in the position of a posthumous son.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "1950",
+  "n_real_edges": 10
+}

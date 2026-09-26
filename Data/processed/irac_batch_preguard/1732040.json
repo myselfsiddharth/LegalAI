@@ -1,0 +1,129 @@
+{
+  "doc_id": "1732040",
+  "filename": "Accountant_And_Secretarial_Services_vs_Union_Of_India_Ors_on_20_July_1988_1.PDF",
+  "year": "1988",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 2,
+    "Claim": 5,
+    "AuthorityCited": 12,
+    "Holding": 5
+  },
+  "authority_results": [
+    {
+      "cited": "the Bombay High Court",
+      "source_sentence": "Bhilai, A.I.R. 1980 M.P. 106 to the view of the Bombay High Court in Miscellaneous Petition No. 458/79- Elliot Waud Hill (P) Ltd. v.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "some decisions of this Court",
+      "source_sentence": "A question as to the interpretation of Entry 18 (or its predecessor, Entry 21 of the Provincial List under the Government of India Act, 1935) had arisen before the Federal Court and Privy Council, and also was considered in some decisions of this Court, which, except in the case of Indu Bhusan Bose v.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the primary rule in Article 254(1) of the Constitution",
+      "source_sentence": "Accountant And Secretarial Services ... vs Union Of India & Ors on 20 July, 1988 Indian Kanoon - http://indiankanoon.org/doc/1732040/ 4 This case is clearly governed by the primary rule in Article 254(1) of the Constitution under which the law of Parliament on a subject in the concurrent List prevails over the State Law.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "[1955] S.C.R. 799",
+      "source_sentence": "State, [1955] S.C.R. 799, referred to.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "the Calcutta view",
+      "source_sentence": "Rama Sundari Devi & Anr., [1970] 1 SCR 443 is a decision of five learned Judges of this Court affirming the Calcutta view which held that the legislation in question in that case was to be found in Entries 6, 7 & 13 of List III of the 7th Schedule of the Constitution and neither in Entry 18 of II Schedule nor in Entry 3 of II Schedule of the Constitution.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Entry 18",
+      "source_sentence": "Since Accountant And Secretarial Services ... vs Union Of India & Ors on 20 July, 1988 Indian Kanoon - http://indiankanoon.org/doc/1732040/ 11 the entry specifically includes the relationship of landlord and tenant, there can be no doubt that tenancy legislations pertaining to land and buildings derive their authority from Entry 18.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "Accountant And Secretarial Services ... vs Union Of India & Ors",
+      "source_sentence": "The impugned Act, as already Accountant And Secretarial Services ... vs Union Of India & Ors on 20 July, 1988 Indian Kanoon - http://indiankanoon.org/doc/1732040/ 14 explained, has the main purpose of giving relief to mortgagors by enabling them to obtain restitution of the mortgaged lands on terms less onerous than the mortgage deeds require.",
+      "verification": {
+        "status": "SELF_REFERENCE",
+        "reason": "matches the citing judgment's own title, not an outbound citation"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the decisions United Provinces v.",
+      "source_sentence": "It is difficult to see why the amplitude of the words \"rights in or over land\" should be cut down in the way suggested in this argument.\" In support of its conclusion, the Court referred to the decisions United Provinces v.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Chaudhary, [1979] 3 SCR 802",
+      "source_sentence": "Chaudhary, [1979] 3 SCR 802 which dealt with the validity of the Urban Land (Ceiling & Regulation) Act, 1976.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1258228",
+        "matched_cited_text": "Union of India v. Valluri B. Chaudhary",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the learned Attorney General",
+      "source_sentence": "As pointed out by the learned Attorney General, Indu Bhushun has been understood, as above, in the subsequent decision of the Supreme Court in Jaisingh Jairam Tyagi v.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Indu Bhushun",
+      "source_sentence": "As pointed out by the learned Attorney General, Indu Bhushun has been understood, as above, in the subsequent decision of the Supreme Court in Jaisingh Jairam Tyagi v.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the Transfer of Property Act",
+      "source_sentence": "In the course of its discussion the Supreme Court observed as follows: \"Under the Transfer of Property Act the subject of \"leases of Immovable Property\" is dealt with in Chapter, V.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "1980",
+  "n_real_edges": 17
+}

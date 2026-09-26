@@ -1,0 +1,60 @@
+{
+  "doc_id": "611866",
+  "filename": "Doypack_Systems_Pvt_Ltd_Etc_vs_Union_Of_India_Ors_Etc_on_12_February_1988_1.PDF",
+  "year": "1988",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 5,
+    "Holding": 9,
+    "Claim": 7,
+    "Outcome": 2,
+    "AuthorityCited": 4
+  },
+  "authority_results": [
+    {
+      "cited": "Laird, [1983] 8 A.C. 658",
+      "source_sentence": "Laird, [1983] 8 A.C. 658 that Contemporanea expositio could have no application to a modern Act.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "section 3 of the Act",
+      "source_sentence": "It could not have been the intention of the Act to discharge these encumbrances, according to him, if they were to vest in the Central Government under section 3 of the Act and the result of which would be that the State of U.P. and the Electricity Board would not get anything towards their large dues.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the decision in Balkrishan Gupta and others v.",
+      "source_sentence": "He referred to the decision in Balkrishan Gupta and others v.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1169064",
+        "matched_cited_text": "Balkrishan Gupta and others v. Swadeshi Polytex Ltd. and others",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "National Textile Corporation v.",
+      "source_sentence": "He referred to the following decisions National Textile Corporation v.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1531491",
+        "matched_cited_text": "National Textile Corporation Ltd. v. Sitaram Mills Ltd. & others",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "1980",
+  "n_real_edges": 22
+}

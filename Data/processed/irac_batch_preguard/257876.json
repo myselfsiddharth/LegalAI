@@ -1,0 +1,126 @@
+{
+  "doc_id": "257876",
+  "filename": "Kesavananda_Bharati_Sripadagalvaru_vs_State_Of_Kerala_And_Anr_on_24_April_1973_1.PDF",
+  "year": "1973",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 3,
+    "Holding": 10,
+    "Claim": 6,
+    "AuthorityCited": 11
+  },
+  "authority_results": [
+    {
+      "cited": "the provisions contained in Article 368",
+      "source_sentence": "According to Gajendragadkar, C.J. \"that raised the question about the construction of the provisions contained in Article 368 and the relation between the substantive part of Article 368 with its proviso. 23.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Article 368 of the Constitution",
+      "source_sentence": "Subba Rao, C.J. speaking for himself and 4 other judges summarised the conclusions at page 815 as follows: The aforesaid discussion leads to the following results: (1) The power of the Parliament to amend the Constitution is derived from Articles 245, 246 and 248 of the Constitution and not from Article 368 thereof which only deals with procedure.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Sankari Prasad's [1952] S.C.R. 89 case",
+      "source_sentence": "Wanchoo, J. as he then was, also speaking on behalf of 2 other Judges held that Sankari Prasad's [1952] S.C.R. 89 case was correctly decided and the majority in Sajjan Singh's [1965] 1 S.C.R. 933 Kesavananda Bharati Sripadagalvaru ... vs State Of Kerala And Anr on 24 April, 1973 Indian Kanoon - http://indiankanoon.org/doc/257876/ 10 case was correct in following that decision. 49.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1706770",
+        "matched_cited_text": "Sri Sankari Prasad Singh Deo v. Union of India and State of Bihar",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Sankari Prasad's [1952] S.C.R. 89 case",
+      "source_sentence": "Wanchoo, J. as he then was, also speaking on behalf of 2 other Judges held that Sankari Prasad's [1952] S.C.R. 89 case was correctly decided and the majority in Sajjan Singh's [1965] 1 S.C.R. 933 Kesavananda Bharati Sripadagalvaru ... vs State Of Kerala And Anr on 24 April, 1973 Indian Kanoon - http://indiankanoon.org/doc/257876/ 10 case was correct in following that decision. 49.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1706770",
+        "matched_cited_text": "Sri Sankari Prasad Singh Deo v. Union of India and State of Bihar",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the following observations of the United States Supreme Court in Holmes v.",
+      "source_sentence": "I may rely for this principle on the following observations of the United States Supreme Court in Holmes v.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Berubari's case",
+      "source_sentence": "Punjab [1967] 2 S.C.R. 762; 838 and 914 relied on Berubari's case and said: on a parity of reasoning we are of opinion that the preamble cannot prohibit or control in any way or impose any implied prohibitions or limitations on the power to amend the Constitution contained in Article 368.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Article 368",
+      "source_sentence": "Punjab [1967] 2 S.C.R. 762; 838 and 914 relied on Berubari's case and said: on a parity of reasoning we are of opinion that the preamble cannot prohibit or control in any way or impose any implied prohibitions or limitations on the power to amend the Constitution contained in Article 368.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Prince Ernest Augustus of Hanover [1957] A.C. 436, 460",
+      "source_sentence": "Prince Ernest Augustus of Hanover [1957] A.C. 436, 460 the House of Lords considered the effect of the preamble on the interpretation of Princes Sophia Naturalization Act; 1705.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Chitty L.J.",
+      "source_sentence": "I quote the words of Chitty L.J., which were cordially approved by Lord Davey in Powell v.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Gopalan's [1950] S.C.R. 88 case",
+      "source_sentence": "The reason behind the rule was explained by one of us in Gopalan's [1950] S.C.R. 88 case thus: A speech made in the course of the debate on a bill could at best be indicative of the subjective intent of the speaker, but it could not reflect the inarticulate mental process lying behind the majority vote which carried the bill.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1857950",
+        "matched_cited_text": "A.K. Gopalan v. The State of Madras",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "certain portions of the speeches made by Pandit Nehru and Dr.",
+      "source_sentence": "In Golak Nath's [1967] 2 S.C.R. 762; 792; 922 case, Subba Rao, C.J., referred to certain portions of the speeches made by Pandit Nehru and Dr.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "1970",
+  "n_real_edges": 92
+}

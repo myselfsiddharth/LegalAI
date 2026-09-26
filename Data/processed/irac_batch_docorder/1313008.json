@@ -1,0 +1,44 @@
+{
+  "doc_id": "1313008",
+  "filename": "Sooraram_Pratap_Reddy_Ors_vs_Distt_Collector_Ranga_Reddy_Dist_on_5_September_2008_1.PDF",
+  "year": "2008",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 3,
+    "Holding": 7,
+    "Claim": 6,
+    "Outcome": 3,
+    "AuthorityCited": 3
+  },
+  "authority_results": [
+    {
+      "cited": "procedure under Section 5A of the Act",
+      "source_sentence": "That part of the notification was, therefore, set aside and the Authorities were directed to proceed to hear objections of the owners/interested persons by following procedure under Section 5A of the Act.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the judgment in Writ Petition No. 21712 of 2002",
+      "source_sentence": "According to the appellants, the High Court was wholly wrong in dismissing the writ petition relying on the judgment in Writ Petition No. 21712 of 2002 since in that case, the Court has considered only one issue; viz. the acquisition was or was not for public purpose as the beneficiary was Andhra Pradesh Industrial Infrastructure Corporation Limited (`APIIC' for short).",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "that case",
+      "source_sentence": "According to the appellants, the High Court was wholly wrong in dismissing the writ petition relying on the judgment in Writ Petition No. 21712 of 2002 since in that case, the Court has considered only one issue; viz. the acquisition was or was not for public purpose as the beneficiary was Andhra Pradesh Industrial Infrastructure Corporation Limited (`APIIC' for short).",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "2000",
+  "n_real_edges": 29
+}

@@ -1,0 +1,70 @@
+{
+  "doc_id": "634206",
+  "filename": "The_State_Of_Bihar_Others_vs_Sm_Charusila_Dasi_on_15_April_1959_1.PDF",
+  "year": "1959",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 9,
+    "Claim": 18,
+    "AuthorityCited": 6,
+    "Holding": 8,
+    "Outcome": 1
+  },
+  "authority_results": [
+    {
+      "cited": "Part III of the Constitution",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "In re Charusila Dasi, I.L.R. [1946] I Cal. 473",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Sahi, [1959] SUPP. 2 S.C.R. 583",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "Chamaybaugwala, (1957] S.C.R. 874",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 0.93,
+        "matched_cited_doc_id": "212098",
+        "matched_cited_text": "The State of Bombay v. R. M. D. Chamarbaugwala",
+        "n_matching_edges": 2
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the trust deed",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the Act",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
+    }
+  ],
+  "decade": "1950",
+  "n_real_edges": 8
+}

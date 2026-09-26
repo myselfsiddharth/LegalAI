@@ -3,8 +3,9 @@ numbers -- this is what turns "we built a verification mechanism" into an actual
 for the proposal's Evaluation Plan (fabricated/unverifiable-authority rate).
 
 Cost control: each case grounds up to --per-case-limit candidate sentences (already
-keyword-pre-filtered, see phase3_verify.candidate_sentences), so total LLM calls scale
-as roughly N cases x per-case-limit, not full document length.
+keyword-filtered, then ranked citation-shaped-first -- see
+phase3_verify.select_candidates), so total LLM calls scale as roughly N cases x
+per-case-limit, not full document length.
 
 Verification is re-run over every case's saved AuthorityCited fillers on each run, so a
 verifier fix never needs new LLM calls: --rescore-only re-scores existing outputs.
@@ -21,7 +22,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 from ode_lib import ROOT, get_client, load_ontology, load_rules, extract_concepts
-from phase3_verify import load_real_outbound_edges, candidate_sentences
+from phase3_verify import load_real_outbound_edges, select_candidates
 from eval_lib import (add_selection_args, select_cases, selection_description, judgment_text,
                       score_authorities, authority_metrics, metrics_by_decade)
 
@@ -30,7 +31,7 @@ SUMMARY_PATH = ROOT / "Data" / "processed" / "evaluation_summary.json"
 
 
 def run_case(row, text, client, model, ontology, rule_lookup, per_case_limit) -> dict:
-    candidates = candidate_sentences(text, ontology)[:per_case_limit]
+    candidates = select_candidates(text, ontology, per_case_limit)
     objects_by_concept = defaultdict(list)
     for sentence in candidates:
         for obj in extract_concepts(client, model, sentence, ontology, rule_lookup):

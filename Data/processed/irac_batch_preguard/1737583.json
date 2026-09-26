@@ -1,0 +1,44 @@
+{
+  "doc_id": "1737583",
+  "filename": "Balco_Employees_Union_Regd_vs_Union_Of_India_Ors_on_10_December_2001_1.PDF",
+  "year": "2001",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 4,
+    "Claim": 10,
+    "Holding": 7,
+    "AuthorityCited": 3,
+    "Outcome": 2
+  },
+  "authority_results": [
+    {
+      "cited": "R.K.",
+      "source_sentence": "We had occasion to consider the scope of interference by the Court under Article 14 while dealing with laws relating to economic activities in R.K.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "Supreme Court of the United States",
+      "source_sentence": "The Court must while adjudging the constitutional validity of an executive decision relating to economic matters grant a certain measure of freedom or 'play in the joints' to the executive. \"The problem of government\" as pointed out by the Supreme Court of the United States in Metropolis Theatre Co. v.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Samatha's case",
+      "source_sentence": "While we have strong reservations with regard to the correctness of the majority decision in Samatha's case, which has not only interpreted the provisions of aforesaid Section 3(1) of the A.P.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "2000",
+  "n_real_edges": 28
+}

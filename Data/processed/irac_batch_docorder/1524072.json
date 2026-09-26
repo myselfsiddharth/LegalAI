@@ -1,0 +1,44 @@
+{
+  "doc_id": "1524072",
+  "filename": "K_T_Plantation_Pvt_Ltd_Anr_vs_State_Of_Karnataka_on_9_August_2011_1.PDF",
+  "year": "2011",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Claim": 13,
+    "AuthorityCited": 3,
+    "Holding": 5,
+    "Party": 1,
+    "Outcome": 3
+  },
+  "authority_results": [
+    {
+      "cited": "for the cultivation of Linaloe",
+      "source_sentence": "When the Land Reforms Act came into force, they filed declarations under Section 66 of the Act before the Land Tribunal, Bangalore South Taluk-II stating that they had no surplus lands to surrender to the State since the entire area held by them had been used for the cultivation of Linaloe which was exempted under Section 107(1)(vi) of the Land Reforms Act.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "under Section 107(1)(vi) of the Land Reforms Act",
+      "source_sentence": "When the Land Reforms Act came into force, they filed declarations under Section 66 of the Act before the Land Tribunal, Bangalore South Taluk-II stating that they had no surplus lands to surrender to the State since the entire area held by them had been used for the cultivation of Linaloe which was exempted under Section 107(1)(vi) of the Land Reforms Act.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Section 110 of the Land Reforms Act",
+      "source_sentence": "The Cabinet accorded sanction in its meeting held on 04.03.1994 and the Government issued a notification dated 08.03.1994 in exercise of powers conferred by Section 110 of the Land Reforms Act, withdrawing the exemption granted for the lands used for cultivation of Linaloe under clause (vi) of Sub-section 1 of Section 107 of the Act.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "2010",
+  "n_real_edges": 88
+}

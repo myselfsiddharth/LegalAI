@@ -4,10 +4,10 @@
   "year": "1963",
   "candidate_sentences": 30,
   "objects_by_concept": {
-    "Party": 5,
-    "Claim": 6,
-    "Holding": 6,
-    "AuthorityCited": 11
+    "Party": 6,
+    "Claim": 8,
+    "AuthorityCited": 8,
+    "Holding": 7
   },
   "authority_results": [
     {
@@ -52,15 +52,6 @@
       "in_judgment_text": true
     },
     {
-      "cited": "Chimmava, (1935) I.L R. 59 Bom. 459",
-      "source_sentence": "Chimmava, (1935) I.L R. 59 Bom. 459, disapproved.",
-      "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
-      },
-      "in_judgment_text": false
-    },
-    {
       "cited": "Gopi Sahu, (1910) I.L.R. 37 Cal. 1",
       "source_sentence": "Gopi Sahu, (1910) I.L.R. 37 Cal. 1 approved. (5) that the Hindu Law applicable to Sudras applies to lingayats as well. (6) that in Bombay Presidency the rule accepted in Dattaka Chandrika has never been followed and the share of an adopted son in competition with a natural born son among Sudras has always been 1/5th in the family property, i.e. 1/4th of the natural born son's share.",
       "verification": {
@@ -69,24 +60,6 @@
         "matched_cited_doc_id": "262749",
         "matched_cited_text": "Churaman Sahu vs Gopi Sahu on 14 April, 1909",
         "n_matching_edges": 1
-      },
-      "in_judgment_text": true
-    },
-    {
-      "cited": "Dattaka Chandrika",
-      "source_sentence": "Gopi Sahu, (1910) I.L.R. 37 Cal. 1 approved. (5) that the Hindu Law applicable to Sudras applies to lingayats as well. (6) that in Bombay Presidency the rule accepted in Dattaka Chandrika has never been followed and the share of an adopted son in competition with a natural born son among Sudras has always been 1/5th in the family property, i.e. 1/4th of the natural born son's share.",
-      "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
-      },
-      "in_judgment_text": true
-    },
-    {
-      "cited": "Dattaka Chandrika",
-      "source_sentence": "The rule in Dattaka Chandrika is that among Sudras an adopted son and an after born natural son take equal share in the family property and it is followed in Madras and Bengal provinces.",
-      "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
       },
       "in_judgment_text": true
     },

@@ -27,7 +27,8 @@ from pathlib import Path
 
 from pypdf import PdfReader
 
-from ode_lib import ROOT, get_client, load_ontology, load_rules, extract_concepts
+from ode_lib import (ROOT, get_client, load_ontology, load_rules, extract_concepts,
+                     CASE_CONNECTOR, REPORTER, looks_like_case_name)
 
 SAMPLE_PATH = ROOT / "Data" / "processed" / "sample_cases.csv"
 CITATIONS_PATH = ROOT / "Data" / "processed" / "citations_classified.jsonl"
@@ -61,42 +62,31 @@ def candidate_sentences(text: str, ontology: dict) -> list[str]:
     return [s.strip() for s in raw_sentences if 30 < len(s) < 400 and keyword_pattern.search(s)]
 
 
-# Found via manual audit on Kedar Nath Yadav: "approved" is in the ontology as a
-# TreatmentAction trigger for judicial endorsement ("X v. Y ... approved"), but the same
-# word also means ordinary administrative sign-off ("approved by the Chief Minister").
-# Grounding doesn't disambiguate by context, so it fired on "the Cabinet", "TML", "Rs. 90
-# lakhs per annum" -- none of which are case citations. Rather than fix the grounding
-# prompt (which needs more contrastive gold examples to do properly), filter cheaply here:
-# an AuthorityCited candidate that doesn't look like a case name isn't a case citation,
-# full stop, regardless of what triggered it.
-#
-# A second, different failure showed up at batch scale: when a headnote sentence lists
-# several citations before a shared verb ("X v. Y (cite1), A v. B (cite2) relied on."),
-# grounding sometimes drops the first party's name and the "v." connector, emitting just
-# "Gilbert Pinto (I.L.R. 42 Mad. 654)" instead of "Krishna Shetti v. Gilbert Pinto (...)".
-# That's still clearly a case reference (it has a reporter citation), just missing "v.",
-# so the filter accepts either signal -- a v./vs. connector, OR a law-reporter citation.
-#
-# Two further bugs found auditing the first 50-case batch (all 1950s):
-#  - Indian reporter citations usually sit OUTSIDE parentheses -- "Ayyappa Reddy, (1913)
-#    I.L.R. 38 Mad. 738", "[1954] S.C.R. 177" -- so a parenthetical-only check rejected
-#    ~25 genuine case citations as REJECTED_NOT_A_CASE. Search the whole string instead.
-#  - The old pattern ran under IGNORECASE, which turned "[A-Z]{2,}" into "any two
-#    letters" and accepted any parenthetical: "clause (iv)", "(Act XVIII of 1937)". Those
-#    statute fragments then landed in UNVERIFIED and inflated the unverified count.
-#    Reporter abbreviations are matched case-sensitively now.
-CASE_CONNECTOR = re.compile(r"(?:\bv\.?|\bV\.|\b[Vv][Ss]\.?|\bversus)(?=\s|$)")
-# Dotted capitals ("I.L.R.", "S.C.R.", "L.R. ... I.A.", "K.B.") or a known undotted modern
-# reporter ("(2005) 3 SCC 123", "AIR 1950 SC 27"). The undotted list is explicit rather
-# than "any capitals + digit", which would also accept "Section 302 IPC".
-REPORTER = re.compile(r"(?:\b[A-Z]\.\s?){2,}|\b(?:SCC|SCR|AIR|SCALE|JT|ITR|MLJ|SCJ|KB|QB|AC|WLR)\b")
+# Candidate ORDER, not just the keyword filter, sets the recall ceiling. Judgments average
+# ~515 keyword-matched sentences and we can only afford to ground a few dozen, so taking
+# the first N in document order reaches only 6.9% of real citation edges -- it works on
+# 1950s-60s judgments, whose HEADNOTE lists citations up front, and starves on later ones
+# where citations sit deep in the reasoning. Spending the same N on citation-shaped
+# sentences instead reaches 25.5% at identical cost (measured over the 48-case stratified
+# set). A few document-order sentences are still reserved so the opening narrative, where
+# Claim/Party/Outcome triggers cluster, does not get crowded out; 5 costs ~2 points.
+RESERVED_DOC_ORDER = 5
 
 
-def looks_like_case_name(text: str) -> bool:
-    if len(text) < 8:
-        return False
-    return bool(CASE_CONNECTOR.search(text)) or (
-        bool(REPORTER.search(text)) and bool(re.search(r"\d", text)))
+def select_candidates(text: str, ontology: dict, limit: int,
+                      reserved: int = RESERVED_DOC_ORDER) -> list[str]:
+    """The `limit` sentences worth spending grounding calls on, highest-yield first."""
+    cands = candidate_sentences(text, ontology)
+    picked: list[str] = []
+    seen: set[str] = set()
+    for group in (cands[:reserved], [s for s in cands if looks_like_case_name(s)], cands):
+        for s in group:
+            if len(picked) >= limit:
+                return picked
+            if s not in seen:
+                seen.add(s)
+                picked.append(s)
+    return picked
 
 
 # Minimum normalized length for a party name to count as evidence. Shorter fragments
@@ -240,8 +230,8 @@ def main():
 
     reader = PdfReader(str(pdf_path))
     text = "\n".join((p.extract_text() or "") for p in reader.pages)
-    candidates = candidate_sentences(text, ontology)[: args.limit]
-    print(f"Candidate sentences (keyword-filtered, capped at {args.limit}): {len(candidates)}")
+    candidates = select_candidates(text, ontology, args.limit)
+    print(f"Candidate sentences (citation-ranked, capped at {args.limit}): {len(candidates)}")
 
     objects_by_concept = defaultdict(list)
     for sentence in candidates:

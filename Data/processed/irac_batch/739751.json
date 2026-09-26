@@ -6,17 +6,84 @@
   "objects_by_concept": {
     "Party": 3,
     "Holding": 10,
-    "Outcome": 4,
-    "Claim": 4,
-    "AuthorityCited": 1
+    "Outcome": 2,
+    "Claim": 1,
+    "AuthorityCited": 7
   },
   "authority_results": [
     {
-      "cited": "article 136",
-      "source_sentence": "This court granted leave to appeal under article 136. 533 The respondents in C.A.",
+      "cited": "Ramaswamy Subbaraydu & Ors., [1956] 2 A.W.R. 739",
+      "source_sentence": "Ramaswamy Subbaraydu & Ors., [1956] 2 A.W.R. 739, referred to. 536 K.V.",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+        "status": "UNVERIFIED",
+        "match_score": 0.33,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Sub-Colletor, Ongole, [1969] 1 S.C.R. 624",
+      "source_sentence": "Sub-Colletor, Ongole, [1969] 1 S.C.R. 624, followed.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 0.97,
+        "matched_cited_doc_id": "1253177",
+        "matched_cited_text": "K.V. Krishna Rao v. Sub Collector, Ongole",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Ravi Venkatappayya & Ors., [1959] 2 A.W.R. 357",
+      "source_sentence": "Ravi Venkatappayya & Ors., [1959] 2 A.W.R. 357, approved.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "780722",
+        "matched_cited_text": "Nori Venkatarama Dikshitulu & Ors. v. Ravi Venkatappayya & Ors.",
+        "n_matching_edges": 2
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "The President Taluq Board, Narsapur & Ors.; [1913] 19 1.C. 727 (Mad.) (D.B.)",
+      "source_sentence": "The President Taluq Board, Narsapur & Ors.; [1913] 19 1.C. 727 (Mad.) (D.B.), distinguished.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Annamnaidu & Ors., [1974] 2 SCR 655",
+      "source_sentence": "Annamnaidu & Ors., [1974] 2 SCR 655, distinguished.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1322950",
+        "matched_cited_text": "K. Chintamani Dora & Ors. v. G. Annamnaidu",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Rao & Anr., [1961] 2 A.W.R. 368",
+      "source_sentence": "Rao & Anr., [1961] 2 A.W.R. 368, approved.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "Delhi Improvement Trust, [1957] S.C.R. 1",
+      "source_sentence": "Delhi Improvement Trust, [1957] S.C.R. 1, referred to. 6.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
       },
       "in_judgment_text": true
     }

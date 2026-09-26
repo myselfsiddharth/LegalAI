@@ -5,20 +5,13 @@
   "candidate_sentences": 30,
   "objects_by_concept": {
     "Party": 1,
-    "Claim": 12,
-    "AuthorityCited": 4,
-    "Holding": 10
+    "Claim": 7,
+    "AuthorityCited": 3,
+    "Holding": 10,
+    "Outcome": 1,
+    "RuleCited": 1
   },
   "authority_results": [
-    {
-      "cited": "the conveyance",
-      "source_sentence": "Thereafter respondent 1 brought the present suit for declaration of title and recovery of possession against respondent 2 and the Immani Appa Rao And Others vs Gollapalli Ramalingamurthi And Ors on 22 September, 1961 Indian Kanoon - http://indiankanoon.org/doc/135413/ 1 appellants on the basis or the conveyance.",
-      "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
-      },
-      "in_judgment_text": true
-    },
     {
       "cited": "Rangaswamy Chettiar, (1936) I.L.R. 59 Mad. 289",
       "source_sentence": "Rangaswamy Chettiar, (1936) I.L.R. 59 Mad. 289, disapproved.",
@@ -30,20 +23,22 @@
       "in_judgment_text": true
     },
     {
-      "cited": "Johnson, (1775) 1 Cowper, 34 1",
-      "source_sentence": "Johnson, (1775) 1 Cowper, 34 1, referred to.",
+      "cited": "the Full Bench decision of the Madras High Court in Ramasastrulu v.",
+      "source_sentence": "The learned trial judge answered this issue in favour of the appellants purporting to follow the Full Bench decision of the Madras High Court in Ramasastrulu v.",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
       },
       "in_judgment_text": true
     },
     {
-      "cited": "respondent No. 1., 1961",
-      "source_sentence": "Satyanarayana, for the respondent No. 1., 1961.",
+      "cited": "the view which has prevailed in the said High Court since the decision in Vodiana Immani Appa Rao And Others vs Gollapalli Ramalingamurthi And Ors",
+      "source_sentence": "The High Court considered the conflicting decisions on this point and adhered to the view which has prevailed in the said High Court since the decision in Vodiana Immani Appa Rao And Others vs Gollapalli Ramalingamurthi And Ors on 22 September, 1961 Indian Kanoon - http://indiankanoon.org/doc/135413/ 5 Kamayya v.",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
       },
       "in_judgment_text": true
     }

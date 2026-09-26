@@ -1,0 +1,48 @@
+{
+  "doc_id": "349715",
+  "filename": "Prem_Raj_vs_Ram_Charan_on_4_March_1974_1.PDF",
+  "year": "1974",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 8,
+    "Claim": 7,
+    "Outcome": 7,
+    "Holding": 6,
+    "AuthorityCited": 3
+  },
+  "authority_results": [
+    {
+      "cited": "Sultan Singh Partap Singh A.I.R. 1967 Punjab 375",
+      "source_sentence": "Sultan Singh Partap Singh A.I.R. 1967 Punjab 375, distinguished.) (iv) Further, even if the suit and appeal was instituted in the proper court, the written statement filed by the appellant was not an application and therefore, he cannot take advantage of Cl. 5 of Art. 182.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1773000",
+        "matched_cited_text": "Kartar Singh v. Sultan Singh Partap Singh",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Homeshwar Singh (1921) 40 Madras Law Journal 116",
+      "source_sentence": "Homeshwar Singh (1921) 40 Madras Law Journal 116, referred to.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Nachiappa Chethar & Prem Raj vs Ram Charan on 4 March, 1974 Indian Kanoon - http://indiankanoon.org/doc/349715/ 3 Ors. [1964] S.C.R. 241/252 etc.",
+      "source_sentence": "Nachiappa Chethar & Prem Raj vs Ram Charan on 4 March, 1974 Indian Kanoon - http://indiankanoon.org/doc/349715/ 3 Ors. [1964] S.C.R. 241/252 etc., referred to.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "1970",
+  "n_real_edges": 26
+}

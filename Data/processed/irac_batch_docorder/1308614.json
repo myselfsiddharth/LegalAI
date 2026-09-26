@@ -1,0 +1,79 @@
+{
+  "doc_id": "1308614",
+  "filename": "Goodricke_Group_Ltd_And_Ors_vs_State_Of_W_B_And_Ors_on_25_November_1994_1.PDF",
+  "year": "1994",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 3,
+    "Claim": 5,
+    "AuthorityCited": 7,
+    "Holding": 12
+  },
+  "authority_results": [
+    {
+      "cited": "The West Bengal Primary Education Act, 1953",
+      "source_sentence": "The West Bengal Primary Education Act, 1953 and the West Bengal Rural Employment and Production Act, 1976 to provide for primary education throughout the State and to provide employment in rural areas respectively.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "The West Bengal Rural Employment and Production Act, 1976",
+      "source_sentence": "The West Bengal Primary Education Act, 1953 and the West Bengal Rural Employment and Production Act, 1976 to provide for primary education throughout the State and to provide employment in rural areas respectively.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the Cess Act, 1980",
+      "source_sentence": "Section (1) of the 1976 Act levies rural employment cess on all immovable properties on which road or public work cess is assessed or liable to be assessed according to the provisions, of the Cess Act, 1980.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Section 4(2)",
+      "source_sentence": "Several notifications were issued by the Government from time to time as contemplated Section 4(2). 4.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "first proviso to Section 4(2) (aa)",
+      "source_sentence": "It noted that the first proviso to Section 4(2) (aa), since delated, excluded the despatches of tea for sale made at such tea auction centers as may be recognised by the State Government by notification in the official Gazette from the levy.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Section, 4(4)",
+      "source_sentence": "Section, 4(4), it noted further, empowered the Government to exempt such categories of despatches or such Goodricke Group Ltd.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the declarations by the Parliament in Section 2 of the Tea Act, 1953",
+      "source_sentence": "The referred to the declarations by the Parliament in Section 2 of the Tea Act, 1953 to the effect that it was expedient in public interest that Union should take under its control the tea industry and observed that Parliament has thereby assumed control of the tea industry including the tea trade and has also imposed a cess on tea produced in India under Section 25.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "1990",
+  "n_real_edges": 24
+}

@@ -1,0 +1,71 @@
+{
+  "doc_id": "1752395",
+  "filename": "Gauri_Shankar_vs_State_Of_U_P_on_12_August_1993_1.PDF",
+  "year": "1993",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 1,
+    "Holding": 11,
+    "Claim": 2,
+    "AuthorityCited": 6,
+    "Outcome": 3
+  },
+  "authority_results": [
+    {
+      "cited": "Khadim Hussain case",
+      "source_sentence": "Verma, J. upheld the validity of the notification under Section 32(1), independently considered the provisions of the Act and also followed Khadim Hussain case' and reiterated the same view.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Avas Avam Vikas Parishad5",
+      "source_sentence": "Avas Avam Vikas Parishad5 came up for consideration before another Division Bench, on reference, the Full Bench considered the question in extenso and held that the first proviso to Section 6 of the L.A.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Full Bench ratio",
+      "source_sentence": "State of U.p.6 another Division Bench following the Full Bench ratio held that Section 11-A of the L.A.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the L.A.",
+      "source_sentence": "It would thus be clear that in interpreting the Act and the L.A.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "Act",
+      "source_sentence": "Act have no application to the proceedings under the Act and the bar of three years prescribed in first proviso to Section 6 too does not apply.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "the notification under Sections 32(1) and 28(1) of the Act",
+      "source_sentence": "Act would apply to the notification under Sections 32(1) and 28(1) of the Act.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "1990",
+  "n_real_edges": 27
+}

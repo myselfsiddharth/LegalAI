@@ -1,0 +1,55 @@
+{
+  "doc_id": "254621",
+  "filename": "Mahant_Moti_Das_vs_S_P_Sahi_The_Special_Officer_In_on_15_April_1959_1.PDF",
+  "year": "1959",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 3,
+    "Claim": 18,
+    "Holding": 2,
+    "AuthorityCited": 4,
+    "Outcome": 1
+  },
+  "authority_results": [
+    {
+      "cited": "Tcndollkar, [1959] S.C.R. 279",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 0.84,
+        "matched_cited_doc_id": "685234",
+        "matched_cited_text": "Shri Ram Krishna Dalmia v. Shri Justice S. R. Tendolkar",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "The State of Orissa, [1954] S.C.R. 1046",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1778510",
+        "matched_cited_text": "1) and Mahant Shri Jagannath Ramanuj Das v. The State of Orissa",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Art. 133",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "appeals to the Supreme Court",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "1950",
+  "n_real_edges": 5
+}

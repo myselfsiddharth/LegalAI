@@ -1,0 +1,35 @@
+{
+  "doc_id": "388201",
+  "filename": "Addagada_Raghavamma_And_Anr_vs_Addagada_Chenchamma_And_Anr_on_9_April_1963_1.PDF",
+  "year": "1963",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 8,
+    "Claim": 14,
+    "AuthorityCited": 2,
+    "Outcome": 3,
+    "Holding": 20
+  },
+  "authority_results": [
+    {
+      "cited": "him",
+      "source_sentence": "One of his sons Pitchayya, predeceased him in 1905 and it is alleged that sometime before his death Pitchayya took Venkayya, the son of his brother Chimpirayya, in adoption.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "him to execute a will",
+      "source_sentence": "A new pica was raised by the appellant before the High Court that the will executed by Chimpirayya contained a clear intention to divide and that this declaration constituted a severance in status enabling him to execute a will.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "1960",
+  "n_real_edges": 14
+}

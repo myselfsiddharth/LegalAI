@@ -5,45 +5,64 @@
   "candidate_sentences": 30,
   "objects_by_concept": {
     "Party": 3,
-    "Claim": 11,
-    "Holding": 4,
-    "Outcome": 1,
-    "AuthorityCited": 4
+    "Holding": 10,
+    "AuthorityCited": 5,
+    "Claim": 4
   },
   "authority_results": [
     {
-      "cited": "Article 31C",
-      "source_sentence": "If Article 31C is valid, they say, hereafter Parliament and State Legislatures and not the Constitution, will determine how much freedom is good for the citizens. 13.",
+      "cited": "Sankari Prasad's [1952] S.C.R. 89 case",
+      "source_sentence": "Wanchoo, J. as he then was, also speaking on behalf of 2 other Judges held that Sankari Prasad's [1952] S.C.R. 89 case was correctly decided and the majority in Sajjan Singh's [1965] 1 S.C.R. 933 Kesavananda Bharati Sripadagalvaru ... vs State Of Kerala And Anr on 24 April, 1973 Indian Kanoon - http://indiankanoon.org/doc/257876/ 10 case was correct in following that decision. 49.",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1706770",
+        "matched_cited_text": "Sri Sankari Prasad Singh Deo v. Union of India and State of Bihar",
+        "n_matching_edges": 1
       },
       "in_judgment_text": true
     },
     {
-      "cited": "Article 368",
-      "source_sentence": "But however grave the issues may be, the answer must depend on the interpretation of the words in Article 368, read in accordance with the principles of interpretation which are applied to the interpretation of a Constitution given by the people to themselves. 14.",
+      "cited": "Sankari Prasad's [1952] S.C.R. 89 case",
+      "source_sentence": "Wanchoo, J. as he then was, also speaking on behalf of 2 other Judges held that Sankari Prasad's [1952] S.C.R. 89 case was correctly decided and the majority in Sajjan Singh's [1965] 1 S.C.R. 933 Kesavananda Bharati Sripadagalvaru ... vs State Of Kerala And Anr on 24 April, 1973 Indian Kanoon - http://indiankanoon.org/doc/257876/ 10 case was correct in following that decision. 49.",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1706770",
+        "matched_cited_text": "Sri Sankari Prasad Singh Deo v. Union of India and State of Bihar",
+        "n_matching_edges": 1
       },
       "in_judgment_text": true
     },
     {
-      "cited": "Article 368",
-      "source_sentence": "I must interpret Article 368 in the setting of our Constitution, in the background of our history and in the light of our aspirations and hopes, and other relevant circumstances.",
+      "cited": "the following observations of the United States Supreme Court in Holmes v.",
+      "source_sentence": "I may rely for this principle on the following observations of the United States Supreme Court in Holmes v.",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
       },
       "in_judgment_text": true
     },
     {
-      "cited": "the procedure",
-      "source_sentence": "The bill in the present case having been admittedly amended in several particulars during its passage through the House, the Amendment Act cannot be said to have been passed in conformity with the procedure prescribed in Article 368.",
+      "cited": "Prince Ernest Augustus of Hanover [1957] A.C. 436, 460",
+      "source_sentence": "Prince Ernest Augustus of Hanover [1957] A.C. 436, 460 the House of Lords considered the effect of the preamble on the interpretation of Princes Sophia Naturalization Act; 1705.",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Gopalan's [1950] S.C.R. 88 case",
+      "source_sentence": "The reason behind the rule was explained by one of us in Gopalan's [1950] S.C.R. 88 case thus: A speech made in the course of the debate on a bill could at best be indicative of the subjective intent of the speaker, but it could not reflect the inarticulate mental process lying behind the majority vote which carried the bill.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1857950",
+        "matched_cited_text": "A.K. Gopalan v. The State of Madras",
+        "n_matching_edges": 1
       },
       "in_judgment_text": true
     }

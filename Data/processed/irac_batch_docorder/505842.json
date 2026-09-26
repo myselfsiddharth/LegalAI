@@ -1,0 +1,156 @@
+{
+  "doc_id": "505842",
+  "filename": "Union_Of_India_Anr_vs_Raghubir_Singh_Dead_By_Lrs_Etc_on_16_May_1989_1.PDF",
+  "year": "1989",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 1,
+    "Holding": 13,
+    "AuthorityCited": 15,
+    "Claim": 2,
+    "Outcome": 1
+  },
+  "authority_results": [
+    {
+      "cited": "a Division Bench rendered earlier in point of time",
+      "source_sentence": "Constitution of India--Articles 145, 137 and 141--Deci- sion of a Division Bench rendered earlier in point of time----Whether binding on a subsequent Division Bench comprised of equal number of Judges or of more Judges.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the Amendment Act 1984",
+      "source_sentence": "The High Court disposed of the appeal on Dec. 4, 1984 and apart from raising the quantum of compensa- tion, also awarded a solatium at 30 per cent in terms of the Amendment Act 1984.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Section 23(2)",
+      "source_sentence": "This Court (composed of.two Judges) took the view that award of 30 per cent solatium under the amended Section 23(2) by the High Court or the Supreme Court were applicable only where the award appealed against was made by the Col- lector or the Court between April 30, 1982 and Sept. 24, 1984.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the decision in Kamalajammanniava- ru's case",
+      "source_sentence": "In this way the decision in Kamalajammanniava- ru's case was overruled by this Court in Bhag Singh's case and the Court approved another decision of Division Bench comprised of three Judges in Mohinder Singh's case (1986) 1, SCC 365 which merely directed payment of enhanced solatium and interest without giving any reasons.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "another decision of Division Bench comprised of three Judges in Mohinder Singh's case (1986) 1, SCC 365",
+      "source_sentence": "In this way the decision in Kamalajammanniava- ru's case was overruled by this Court in Bhag Singh's case and the Court approved another decision of Division Bench comprised of three Judges in Mohinder Singh's case (1986) 1, SCC 365 which merely directed payment of enhanced solatium and interest without giving any reasons.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the Sub-section",
+      "source_sentence": "Before the Amendment Act was enacted, the Sub-section provided for solatium at 15 per cent of the market value.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the Amendment Act",
+      "source_sentence": "By the change introduced by the Amendment Act the amount has been raised to 30 per cent of the market value.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the word 'or'",
+      "source_sentence": "The word 'or', is used with reference to the stage at which the proceeding rests at the time when the benefit under Section 30(2) is sought to be extended.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "such award made between the aforesaid two dates",
+      "source_sentence": "If the proceeding has terminated with the award of the Collector or of the Court made between the aforesaid two dates, the benefit of Section 30(2) will be applied to such award made between the aforesaid two dates.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Section 30(2)",
+      "source_sentence": "If the proceeding has passed to the stage of appeal before the High Court or the Supreme Court, it is at that stage when the benefit of Section 30(2) will be applied.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Section 15 of the Amendment Act",
+      "source_sentence": "Section 15 of the Amendment Act amended Section 23(2) of the parent Act and substituted the words \"30 per cent\" in place of the words \"15 per cent\".",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Section 15 of the Amendment Act",
+      "source_sentence": "Section 15 of the Amendment Act amended Section 23(2) of the parent Act and substituted the words \"30 per cent\" in place of the words \"15 per cent\".",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Conn, [1968] 1, All ER 779",
+      "source_sentence": "Conn, [1968] 1, All ER 779, referred to.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "the statement of the law laid down in the cases of State of Punjab v.",
+      "source_sentence": "The Court overruled the statement of the law laid down in the cases of State of Punjab v.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "117942691",
+        "matched_cited_text": "State of Punjab v. Mohinder Singh and another",
+        "n_matching_edges": 3
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the question of law",
+      "source_sentence": "The question of law referred to us for decision in these cases is: \"Whether under the Land Acquisition Act, 1894 as amended by the Land Acquisition (Amendment) Act, 1984 the claimants are entitled to sola- tium at 30 per cent of the market value irre- spective of the dates on which the acquisition proceedings were initiated or the dates on which the award had been passed\"?",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "1980",
+  "n_real_edges": 27
+}

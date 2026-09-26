@@ -5,11 +5,35 @@
   "candidate_sentences": 30,
   "objects_by_concept": {
     "Party": 8,
-    "Outcome": 7,
-    "Claim": 6,
+    "Outcome": 1,
+    "Claim": 9,
+    "AuthorityCited": 2,
     "Holding": 7
   },
-  "authority_results": [],
+  "authority_results": [
+    {
+      "cited": "Rustom Cavasjee Cooper (Banks Nationalisation) v.",
+      "source_sentence": "Appellants rely on Rustom Cavasjee Cooper (Banks Nationalisation) v.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "513801",
+        "matched_cited_text": "Rustom Cavasjee Cooper (Banks Nationalisation) v. Union of India3",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "10 (1955) 1 SCR 613",
+      "source_sentence": "When otherwise, considering the importance of this matter, 10 (1955) 1 SCR 613 bearing in mind the interplay between the Fundamental Rights and Article 300A, this Court, despite any delay, should consider the challenge.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
+    }
+  ],
   "decade": "2020",
   "n_real_edges": 57
 }

@@ -1,0 +1,84 @@
+{
+  "doc_id": "42885821",
+  "filename": "Assocn_Of_Vasanth_Appts_Owners_vs_V_Gopinanth_And_Ors_on_13_February_2023_1.PDF",
+  "year": "2023",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 8,
+    "Outcome": 1,
+    "Claim": 12,
+    "AuthorityCited": 7,
+    "Holding": 7
+  },
+  "authority_results": [
+    {
+      "cited": "Rustom Cavasjee Cooper (Banks Nationalisation) v.",
+      "source_sentence": "Appellants rely on Rustom Cavasjee Cooper (Banks Nationalisation) v.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "513801",
+        "matched_cited_text": "Rustom Cavasjee Cooper (Banks Nationalisation) v. Union of India3",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "10 (1955) 1 SCR 613",
+      "source_sentence": "When otherwise, considering the importance of this matter, 10 (1955) 1 SCR 613 bearing in mind the interplay between the Fundamental Rights and Article 300A, this Court, despite any delay, should consider the challenge.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "the Model Town and Country Planning Bill",
+      "source_sentence": "From the 19 (2004) 10 SCC 796 20 (1995) 1 SCC 47 Statements of Objects and Reasons, it is contended that the Act was based on the Model Town and Country Planning Bill, which was prepared by the Ministry of Health and Housing of the Government of India after a comprehensive study of various Town Planning Enactments in the western countries.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Section 123(2)",
+      "source_sentence": "The terms of Section 123(2) are relied upon to contend that the Rules will come into effect even before they are placed before the 21 (1991) 4 SCC 54 Legislative Assembly and any modification made by the Assembly, will apply only from the date it is carried out.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the Report of the Court Commissioner",
+      "source_sentence": "The High Court considered the Report of the Court Commissioner and concluded that furbishing of the road served a larger public interest and provided better 25 (1986) 2 SCC 516 connectivity to a larger population.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Chet Ram Vashist",
+      "source_sentence": "Chet Ram Vashist, was followed in Chairman, Indore Vikas Pradhikaran vs.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the Parent Act",
+      "source_sentence": "State of H.P. and others31, the Parent Act conferred power on the Delegate from the Government, to make Rules for carrying out the purpose of the Act, a familiar legislative device.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "2020",
+  "n_real_edges": 57
+}

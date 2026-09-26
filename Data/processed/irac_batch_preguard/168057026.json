@@ -1,0 +1,102 @@
+{
+  "doc_id": "168057026",
+  "filename": "Kedar_Nath_Yadav_vs_State_Of_West_Bengal_Ors_on_31_August_2016_1.PDF",
+  "year": "2016",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 5,
+    "Outcome": 3,
+    "Claim": 11,
+    "AuthorityCited": 9,
+    "Holding": 7
+  },
+  "authority_results": [
+    {
+      "cited": "the Cabinet",
+      "source_sentence": "Cabinet may kindly approve the proposed acquisition of 1253 (1053+200) acres of land as proposed at para 3 and 4 above.\u201a (emphasis laid by this Court) Pursuant to the approval of the said decision of the Cabinet by the Chief Minister dated 05.06.2006, the notification under Section 4 (1) of the Land Acquisition Act, 1894 (hereinafter referred to as the \u25a1L.A.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Section 39 of the L.A.",
+      "source_sentence": "The learned senior counsel draws our attention to Section 39 of the L.A.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the Statement of Objects and Reasons of the Amendment Act 68 of 1984 to the L.A.",
+      "source_sentence": "The learned senior counsel places reliance on the Statement of Objects and Reasons of the Amendment Act 68 of 1984 to the L.A.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Section 6",
+      "source_sentence": "The learned senior counsel further draws our attention to Section 6 of the L.A.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Section 55 of the L.A.",
+      "source_sentence": "The learned counsel draws our attention to Rule 4 of the Land Acquisition (Companies) Rules, 1963 framed under Section 55 of the L.A.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Rule 4",
+      "source_sentence": "A consideration of Rule 4 also shows that its compliance precedes the notification under Section 4 as well as compliance of Section 6 of the Act.\u201a The learned counsel further places reliance on the decision of this Court in the case of Royal Orchid Hotels Ltd. v.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "Section 6 of the Act",
+      "source_sentence": "A consideration of Rule 4 also shows that its compliance precedes the notification under Section 4 as well as compliance of Section 6 of the Act.\u201a The learned counsel further places reliance on the decision of this Court in the case of Royal Orchid Hotels Ltd. v.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the decision of this Court in the case of Royal Orchid Hotels Ltd. v.",
+      "source_sentence": "A consideration of Rule 4 also shows that its compliance precedes the notification under Section 4 as well as compliance of Section 6 of the Act.\u201a The learned counsel further places reliance on the decision of this Court in the case of Royal Orchid Hotels Ltd. v.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the State of West Bengal",
+      "source_sentence": "Rakesh Dwivedi, the learned senior counsel appearing on behalf of the State of West Bengal in the appeal arising out of SLP (C) No. 13645 of 2008 submits that the acquisition of land in Singur for TML is illegal as the same has been done in complete violation of the provisions of Sections 4 and 6 of the L.A.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "2010",
+  "n_real_edges": 92
+}

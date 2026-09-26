@@ -1,0 +1,35 @@
+{
+  "doc_id": "1737583",
+  "filename": "Balco_Employees_Union_Regd_vs_Union_Of_India_Ors_on_10_December_2001_1.PDF",
+  "year": "2001",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 3,
+    "Claim": 11,
+    "Holding": 5,
+    "AuthorityCited": 2,
+    "Outcome": 2
+  },
+  "authority_results": [
+    {
+      "cited": "the Government of Madhya Pradesh",
+      "source_sentence": "Thereafter, in addition to the Government land which was transferred, the Government of Madhya Pradesh acquired land for BALCO under the provisions of the Land Acquisition Act, 1894 on payment of compensation.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the 5th Report of the Commission",
+      "source_sentence": "This letter then referred to the 5th Report of the Commission wherein it had reviewed the question of strategic sale and had suggested that the Government may keep its shareholding below the level of investment being offered by the strategic buyer and its divesting some portion of equity to other entities.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
+    }
+  ],
+  "decade": "2000",
+  "n_real_edges": 28
+}

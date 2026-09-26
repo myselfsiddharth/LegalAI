@@ -1,0 +1,84 @@
+{
+  "doc_id": "561287",
+  "filename": "Collector_Of_Bombay_vs_Municipal_Corporation_Of_The_City_Of_on_5_October_1951_1.PDF",
+  "year": "1951",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 3,
+    "AuthorityCited": 8,
+    "Holding": 4,
+    "Claim": 4,
+    "Outcome": 1
+  },
+  "authority_results": [
+    {
+      "cited": "the objection of the Corporation",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the Resolution",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the doctrine of estoppel",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "s. 115 of the Indian Evidence Act",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "the Crown's prerogative",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the Government",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "section 8 of the Bombay City Land Revenue Act II of 1876",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Kamalavahooji Maharaj v.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1536922",
+        "matched_cited_text": "Kamalavahooji Maharaj v. The Collector of Bombay",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "1950",
+  "n_real_edges": 4
+}

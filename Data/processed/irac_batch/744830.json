@@ -4,21 +4,21 @@
   "year": "1976",
   "candidate_sentences": 30,
   "objects_by_concept": {
-    "Party": 14,
-    "Holding": 12,
-    "Claim": 5,
-    "Outcome": 1,
+    "Party": 2,
+    "Holding": 5,
+    "Claim": 6,
     "AuthorityCited": 1
   },
   "authority_results": [
     {
-      "cited": "land reform",
-      "source_sentence": "This is plainly 'present legal interest' in the Government and a sort of precarium tenans in the Sabha. [1082 D; 1079 F-G] (a) The Act contemplates taking over of all zamindari rights as part of land reform.",
+      "cited": "AIR 1967 SC 427",
+      "source_sentence": "Dulhin Shanti Devi: AIR 1967 SC 427 relating to Bihar Land Reforms Act).",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
       },
-      "in_judgment_text": true
+      "in_judgment_text": null
     }
   ],
   "decade": "1970",

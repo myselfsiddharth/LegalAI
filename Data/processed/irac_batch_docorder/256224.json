@@ -1,0 +1,35 @@
+{
+  "doc_id": "256224",
+  "filename": "Ranganayakamma_Anr_vs_K_S_Prakash_D_By_Lrs_Ors_on_16_May_2008_1.PDF",
+  "year": "2008",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 5,
+    "Outcome": 4,
+    "Claim": 15,
+    "AuthorityCited": 2,
+    "Holding": 4
+  },
+  "authority_results": [
+    {
+      "cited": "income tax and wealth tax liabilities",
+      "source_sentence": "Ten items of immovable properties, however, allegedly were the subject matter of joint sale for the purpose of discharge of income tax and wealth tax liabilities.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "terms",
+      "source_sentence": "Prakash on 15th July, 1983, in terms whereof he was authorized to enter into a partition on her behalf.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
+    }
+  ],
+  "decade": "2000",
+  "n_real_edges": 23
+}

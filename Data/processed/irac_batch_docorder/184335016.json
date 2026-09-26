@@ -1,0 +1,114 @@
+{
+  "doc_id": "184335016",
+  "filename": "Union_Of_India_vs_Harbhajan_Singh_Dhillon_on_21_October_1971_1.PDF",
+  "year": "1971",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Holding": 16,
+    "AuthorityCited": 11,
+    "Claim": 7
+  },
+  "authority_results": [
+    {
+      "cited": "Finance Act, 1969",
+      "source_sentence": "The Wealth Tax Act, 1957, was amended by Finance Act, 1969, to include the capital value of agricultural land for the purposes of computing net wealth. \"Assets\" is defined in Section 2(c) to include property of every description, movable or immovable.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Finance Act, 1969",
+      "source_sentence": "The Wealth Tax Act, 1957, was amended by Finance Act, 1969, to include the capital value of agricultural land for the purposes of computing net wealth. \"Assets\" is defined in Section 2(c) to include property of every description, movable or immovable.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Section 2(c)",
+      "source_sentence": "The Wealth Tax Act, 1957, was amended by Finance Act, 1969, to include the capital value of agricultural land for the purposes of computing net wealth. \"Assets\" is defined in Section 2(c) to include property of every description, movable or immovable.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Section 4",
+      "source_sentence": "Section 4 includes certain assets as belonging to the assessee. 5.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "those decisions",
+      "source_sentence": "He urged that insofar as this test is derived from the Canadian decisions, the Canadian Constitution is very different and those decisions ought not to be followed here and applied to our Constitution. 12.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "those decisions",
+      "source_sentence": "He urged that insofar as this test is derived from the Canadian decisions, the Canadian Constitution is very different and those decisions ought not to be followed here and applied to our Constitution. 12.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "any international treaty, agreement or convention",
+      "source_sentence": "Under Article 253 Parliament has power to make any law for the whole or part of the territory of India for the purpose of implementing any international treaty, agreement or convention. 16.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Government of India Act, 1935",
+      "source_sentence": "This scheme of distribution of legislative power has been derived from the Government of India Act, 1935, but in one respect there is a great deal of difference, and it seems to us that this makes the scheme different insofar as the present controversy is concerned.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the words \"exclusive of agricultural land\" in entry 86 List I",
+      "source_sentence": "It is urged on behalf of the respondent that the words \"exclusive of agricultural land\" in entry 86 List I were words of prohibition, prohibiting Parliament from including capital value of agricultural land in any law levying tax on capital value of assets.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "entry 86 List I",
+      "source_sentence": "But if on a proper interpretation of entry 49 List II, read in the light of entry 86 List I, it is held that tax on the capital value of agricultural land is not included within entry 49 List II or that the tax imposed by the impugned statute does not fall either in entry 49 List II or entry 86 List I, it would be arbitrary to say that it does not fall within entry 97 List I.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "entry 49 List II",
+      "source_sentence": "But if on a proper interpretation of entry 49 List II, read in the light of entry 86 List I, it is held that tax on the capital value of agricultural land is not included within entry 49 List II or that the tax imposed by the impugned statute does not fall either in entry 49 List II or entry 86 List I, it would be arbitrary to say that it does not fall within entry 97 List I.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
+    }
+  ],
+  "decade": "1970",
+  "n_real_edges": 25
+}

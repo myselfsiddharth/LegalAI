@@ -1,0 +1,130 @@
+{
+  "doc_id": "4436830",
+  "filename": "Monnet_Ispat_And_Energy_Ltd_vs_Union_Of_India_And_Ors_on_26_July_2012_1.PDF",
+  "year": "2012",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 2,
+    "Claim": 5,
+    "AuthorityCited": 12,
+    "Holding": 10
+  },
+  "authority_results": [
+    {
+      "cited": "Bihar Land Reforms Act, 1950",
+      "source_sentence": "Bihar Land Reforms Act, 1950 (for short, \u25a11950 Bihar Act\u201a) came to be enacted by the Bihar Legislature to provide for the transference to the State of the interest of proprietors and tenure holders in land of the mortgagees and lessees of such interest including interest in mines and minerals and other matters connected therewith.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Chapter II",
+      "source_sentence": "Chapter II of the 1950 Bihar Act deals with vesting of an estate or tenure in the State and its consequences.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the decisions of this Court in Hingir-Rampur Coal Co.a , Baijnath Kadioc , State of Assam and others v.",
+      "source_sentence": "In support of his submissions, he Monnet Ispat And Energy Ltd vs Union Of India And Ors on 26 July, 2012 Indian Kanoon - http://indiankanoon.org/doc/4436830/ 12 referred to the decisions of this Court in Hingir-Rampur Coal Co.a , Baijnath Kadioc , State of Assam and others v.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "many provisions in 1957 Act and 1960 Monnet Ispat And Energy Ltd vs Union Of India And Ors",
+      "source_sentence": "He submitted that many provisions in 1957 Act and 1960 Monnet Ispat And Energy Ltd vs Union Of India And Ors on 26 July, 2012 Indian Kanoon - http://indiankanoon.org/doc/4436830/ 15 Rules acknowledge that all minerals vest in the State and that power to reservation is contemplated by Rule 59 of 1960 Rules. 40.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "power to reservation",
+      "source_sentence": "He submitted that many provisions in 1957 Act and 1960 Monnet Ispat And Energy Ltd vs Union Of India And Ors on 26 July, 2012 Indian Kanoon - http://indiankanoon.org/doc/4436830/ 15 Rules acknowledge that all minerals vest in the State and that power to reservation is contemplated by Rule 59 of 1960 Rules. 40.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Section 18(1)",
+      "source_sentence": "As Section 18(1) covered the entire field, there was no scope for the argument that till rules were framed under that Section, room was available.\u2026 Amritlal Nathubhai Shah Monnet Ispat And Energy Ltd vs Union Of India And Ors on 26 July, 2012 Indian Kanoon - http://indiankanoon.org/doc/4436830/ 33 82.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the provisions contained in the 1957 Act and earlier decisions of this Court in Hingir-Rampur Coal Co Ltd.a, M.A.",
+      "source_sentence": "The Bench considered extensively the provisions contained in the 1957 Act and earlier decisions of this Court in Hingir-Rampur Coal Co Ltd.a, M.A.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Section 16(1)(b) and Section 17 of the 1957 Act",
+      "source_sentence": "The Court then referred to Section 16(1)(b) and Section 17 of the 1957 Act and held as under : Monnet Ispat And Energy Ltd vs Union Of India And Ors on 26 July, 2012 Indian Kanoon - http://indiankanoon.org/doc/4436830/ 35 \u019238.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Section 15 of the Act",
+      "source_sentence": "We have no doubt that the prohibiting of leases in certain cases is part of the regulation contemplated by Section 15 of the Act.\u2026 D.K.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Monnet Ispat And Energy Ltd vs Union Of India And Ors",
+      "source_sentence": "Thus, the makers of the Constitution were not only aware of the legislative history of the topic of mines and minerals but were also aware how the Dominion legislature had interpreted Monnet Ispat And Energy Ltd vs Union Of India And Ors on 26 July, 2012 Indian Kanoon - http://indiankanoon.org/doc/4436830/ 39 Entry 36 in the Federal Legislative List in enacting the 1948 Act.",
+      "verification": {
+        "status": "SELF_REFERENCE",
+        "reason": "matches the citing judgment's own title, not an outbound citation"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Union Government of India (AIR 1973 Guj. 117)",
+      "source_sentence": "Union Government of India (AIR 1973 Guj. 117), the latter of which was approved by this Court in Amritlal Nathubhai Shah v.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "620816",
+        "matched_cited_text": "Amritlal Nathubhai Shah and Ors. v. Union Government of India and Another",
+        "n_matching_edges": 12
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "para 46; Pgs. 138-139",
+      "source_sentence": "It is. therefore, open to the S.G. to grant private leases even in respect of areas covered by a notification of the S.G. and this cannot be challenged by any instrumentality in the public sector.\u2026 The legal position post amendment in 1957 Act by Central Act 37 of 1987 was explained (para 46; Pgs. 138-139) in the following manner: \u019246.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
+    }
+  ],
+  "decade": "2010",
+  "n_real_edges": 66
+}

@@ -1,0 +1,116 @@
+{
+  "doc_id": "981621",
+  "filename": "S_M_Jakati_Another_vs_S_M_Borkar_Others_on_24_September_1958_1.PDF",
+  "year": "1958",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 1,
+    "AuthorityCited": 10,
+    "Claim": 5,
+    "Holding": 10
+  },
+  "authority_results": [
+    {
+      "cited": "Bhubneshwar Prasad Narain Singh, [1954] S.C.R. 177",
+      "source_sentence": "Bhubneshwar Prasad Narain Singh, [1954] S.C.R. 177, followed.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 0.98,
+        "matched_cited_doc_id": "94289",
+        "matched_cited_text": "Naraini (1) and Sidheshwar Mukherji v. Bubneshwar Prasad Narain Singh",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Das, (1936) L.R. 63 I.A. 384",
+      "source_sentence": "Das, (1936) L.R. 63 I.A. 384, distinguished.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "Shidlingappa Ishwa- rappa, A.I.R. 1941 Bom. 381",
+      "source_sentence": "Shidlingappa Ishwa- rappa, A.I.R. 1941 Bom. 381, approved. 1386 JUDGMENT: CIVIL APPELLATE JURISDICTION: Civil Appeal No. 233 of 1954.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "860374",
+        "matched_cited_text": "Mulgund Co-operative Credit Society v. Shidlingappa Ishwarappa",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "(1)(1943) L.R. 70 I.A. 171, 176.",
+      "source_sentence": "In the case now before us the appellants have empted to prove that the debt fell within the term avyavaharika by relying upon the payment order and (1)(1943) L.R. 70 I.A. 171, 176. (2) (1934) L.R. 61 I.A. 350. the findings given by the Deputy Registrar in thepayment order where-the liabity was inter alia based on a breach of trust.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "(2) (1934) L.R. 61 I.A. 350.",
+      "source_sentence": "In the case now before us the appellants have empted to prove that the debt fell within the term avyavaharika by relying upon the payment order and (1)(1943) L.R. 70 I.A. 171, 176. (2) (1934) L.R. 61 I.A. 350. the findings given by the Deputy Registrar in thepayment order where-the liabity was inter alia based on a breach of trust.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "a breach of trust",
+      "source_sentence": "In the case now before us the appellants have empted to prove that the debt fell within the term avyavaharika by relying upon the payment order and (1)(1943) L.R. 70 I.A. 171, 176. (2) (1934) L.R. 61 I.A. 350. the findings given by the Deputy Registrar in thepayment order where-the liabity was inter alia based on a breach of trust.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Mata Prasad (4)",
+      "source_sentence": "Mata Prasad (4) which was approved by the Privy Council in Sahu Ram Chander v.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Lord Hobhouse",
+      "source_sentence": "Markunda Nath Sahai (1) Lord Hobhouse observed as follows at p. 16 : \" It is a question of fact in each case, and in this case their Lordships think that the transactions of the 4th and 5th of January, 1875, and the description of the property in the sale certificate, are conclusive to shew that the entire corpus of the estate was sold. \" Similarly in Meenakshi Naidu v.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Shambu Nath Panday v.",
+      "source_sentence": "Counsel for the appellants relied on Shambu Nath Panday v.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the pious obligation of the sons",
+      "source_sentence": "Per Imam and Kapur jj.-(1) The liability of the sons to discharge the debts of the father which are not tainted with immorality or illegality is based on the pious obligation of the sons which continues to exist in the lifetime and after the death of the father and which does not come to an end as a result of partition of the joint family property.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "1950",
+  "n_real_edges": 14
+}

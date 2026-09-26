@@ -4,73 +4,80 @@
   "year": "2022",
   "candidate_sentences": 30,
   "objects_by_concept": {
-    "Party": 5,
-    "Outcome": 1,
-    "Claim": 4,
-    "AuthorityCited": 7,
-    "Holding": 13
+    "Party": 6,
+    "Outcome": 2,
+    "Claim": 5,
+    "AuthorityCited": 6,
+    "Holding": 7
   },
   "authority_results": [
     {
-      "cited": "Andhra Pradesh Wakf Board",
-      "source_sentence": "The present appeals are directed against an order passed by the High Court of Judicature at Andhra Pradesh on 3.4.2012 1 whereby the writ petitions challenging the Errata Notification dated 13.3.2006, published in the Official Gazette of the State of Andhra Pradesh on 6.4.2006 on behalf of Andhra Pradesh Wakf Board2, were dismissed.",
+      "cited": "Raj Kishan Pershad and Ors. v.",
+      "source_sentence": "Ramasubramanian as a Judge of the Andhra Pradesh High Court traced the history of questions relating to land disputes in a judgment Raj Kishan Pershad and Ors. v.",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
-      },
-      "in_judgment_text": false
-    },
-    {
-      "cited": "the Military Governor",
-      "source_sentence": "The authority of His Exalted Highness the Nizam as the sovereign ruler to resume the jagirs and to extinguish the interests of the jagirdars being by delegation vested in the Military Governor, the legality of the action of the latter was not open to challenge on any test of legislative competence.",
-      "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "10201928",
+        "matched_cited_text": "Raj Kishan Pershad and Ors. v. Joint Collector-I and Ors.15",
+        "n_matching_edges": 1
       },
       "in_judgment_text": true
     },
     {
-      "cited": "legislatures whose powers are subject to constitutional restrictions",
-      "source_sentence": "The doctrine of invalidity of legislative provisions enacted in colourable exercise of authority applies to legislatures whose powers are subject to constitutional restrictions.",
+      "cited": "State Of A.P. vs A.P.State Wakf Board",
+      "source_sentence": "This Act was described by some economists State Of A.P. vs A.P.State Wakf Board . on 7 February, 2022 Indian Kanoon - http://indiankanoon.org/doc/147756011/ 8 and policymakers as having taken the lead in Land Reforms in independent India\u2026\u2026\u2026\u2026\u2026.\u201a 15.",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1907020",
+        "matched_cited_text": "M.P. Wakf Board v. Subhan Shah (Dead) By Lrs",
+        "n_matching_edges": 4
       },
       "in_judgment_text": true
     },
     {
-      "cited": "the Constitution",
-      "source_sentence": "When such a legislative body seeks, under the guise or pretence of complying with the restrictions, in enacting a statute, to evade or elude them, it is but a fraud on the Constitution, and the statute is liable to be declared invalid on the ground that the enactment is in colourable exercise of authority, the statute being in truth beyond the competence of the body.",
+      "cited": "State Of A.P. vs A.P.State Wakf Board",
+      "source_sentence": "Hussain Shah Vali situated in Manikonda(V) and submitted his report along State Of A.P. vs A.P.State Wakf Board . on 7 February, 2022 Indian Kanoon - http://indiankanoon.org/doc/147756011/ 30 with copies of said revenue record.",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1907020",
+        "matched_cited_text": "M.P. Wakf Board v. Subhan Shah (Dead) By Lrs",
+        "n_matching_edges": 4
       },
       "in_judgment_text": true
     },
     {
-      "cited": "the body",
-      "source_sentence": "When such a legislative body seeks, under the guise or pretence of complying with the restrictions, in enacting a statute, to evade or elude them, it is but a fraud on the Constitution, and the statute is liable to be declared invalid on the ground that the enactment is in colourable exercise of authority, the statute being in truth beyond the competence of the body.",
+      "cited": "State Of A.P. vs A.P.State Wakf Board",
+      "source_sentence": "He had mortgaged the land to State Of A.P. vs A.P.State Wakf Board . on 7 February, 2022 Indian Kanoon - http://indiankanoon.org/doc/147756011/ 33 Hussain Bin Muqaddam Jung on 1st Rajab 1295 H (20.6.1879).",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
-      },
-      "in_judgment_text": null
-    },
-    {
-      "cited": "this Regulation",
-      "source_sentence": "This Regulation was followed a few months later by the Hyderabad jagirs (Commutation) Regulation, 1359-F which came into force on 25-1-1950.",
-      "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1907020",
+        "matched_cited_text": "M.P. Wakf Board v. Subhan Shah (Dead) By Lrs",
+        "n_matching_edges": 4
       },
       "in_judgment_text": true
     },
     {
-      "cited": "the Sovereign",
-      "source_sentence": "It was thereafter, the Abolition and Commutation Regulations were enacted by the Military Governor and Chief Minister respectively under the authority of the Sovereign. 2.",
+      "cited": "State of Karnataka, (2010) 5 SCC 203)",
+      "source_sentence": "State of Karnataka, (2010) 5 SCC 203) is not attracted.\u201a 58.",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "974701",
+        "matched_cited_text": "R. Hanumaiah v. State of Karnataka",
+        "n_matching_edges": 2
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Division Bench judgment of the High Court reported as K.S.B. 31 (1974) 1 SCC 82 Ali v.",
+      "source_sentence": "Reliance has also been placed upon Division Bench judgment of the High Court reported as K.S.B. 31 (1974) 1 SCC 82 Ali v.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
       },
       "in_judgment_text": true
     }

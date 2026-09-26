@@ -33,7 +33,8 @@ import sys
 from difflib import SequenceMatcher
 from pathlib import Path
 
-from ode_lib import get_client, ground_sentence, load_ontology, extract_concepts, ROOT
+from ode_lib import (get_client, ground_sentence, load_ontology, extract_concepts,
+                     content_guard, ROOT)
 
 GOLD_PATH = ROOT / "scripts" / "ontology" / "gold_examples.jsonl"
 RULES_PATH = ROOT / "scripts" / "ontology" / "learned_rules.json"
@@ -67,7 +68,8 @@ MIN_LEARN_MATCH_SCORE = 0.45  # below this, treat as "grounding didn't really ca
 
 def cmd_learn(args, client, ontology):
     gold_examples = [json.loads(line) for line in GOLD_PATH.read_text().splitlines() if line.strip()]
-    evidence = {}  # (class, role) -> {concept: count}
+    evidence = {}       # (class, role, guard) -> {concept: count}
+    evidence_any = {}   # (class, role)        -> {concept: count}, the unguarded fallback
     per_example_results = []
 
     for ex in gold_examples:
@@ -76,34 +78,52 @@ def cmd_learn(args, client, ontology):
         result = {"sentence": ex["sentence"][:80], "concept": ex["concept"], "gold_filler": ex["filler"][:60]}
         if match and match[2] >= MIN_LEARN_MATCH_SCORE:
             fact, role_name, score = match
-            key = (fact["class"], role_name)
-            evidence.setdefault(key, {})
-            evidence[key][ex["concept"]] = evidence[key].get(ex["concept"], 0) + 1
+            # The guard is read off the GROUNDED filler, not the gold one, so LEARN keys
+            # rules on exactly the signal EXTRACT will see at inference time.
+            guard = content_guard(fact["roles"][role_name])
+            for store, key in ((evidence, (fact["class"], role_name, guard)),
+                               (evidence_any, (fact["class"], role_name))):
+                store.setdefault(key, {})
+                store[key][ex["concept"]] = store[key].get(ex["concept"], 0) + 1
             result.update({"matched_class": fact["class"], "matched_role": role_name,
-                           "match_score": round(score, 2)})
+                           "guard": guard, "match_score": round(score, 2)})
         else:
             result["matched_class"] = None
             if match:
                 result["weak_match_discarded"] = round(match[2], 2)
         per_example_results.append(result)
         status = "OK" if result.get("matched_class") else ("WEAK" if match else "NO MATCH")
-        print(f"[{status}] {ex['concept']:20s} <- {result.get('matched_class', '?')}."
-              f"{result.get('matched_role', '?')} (score={result.get('match_score', result.get('weak_match_discarded', 0))}) "
-              f"| {ex['sentence'][:60]}")
+        print(f"[{status}] {ex['concept']:15s} <- {result.get('matched_class', '?')}."
+              f"{result.get('matched_role', '?')}[{result.get('guard', '-')}] "
+              f"(score={result.get('match_score', result.get('weak_match_discarded', 0))}) "
+              f"| {ex['sentence'][:52]}")
+
+    # An unguarded "*" rule is a safety net for content shapes LEARN never saw, but emitting
+    # one for EVERY pair defeats the point: TreatmentAction.Authority was seen only with
+    # case-shaped fillers, so a blanket default is what lets statute spans keep arriving as
+    # AuthorityCited (196 of 424 outputs last run). Emit the net only where the pair really
+    # does appear with more than one shape, and leave single-shape pairs strict.
+    guards_seen = {}
+    for cls, role, guard in evidence:
+        guards_seen.setdefault((cls, role), set()).add(guard)
 
     rules = []
-    for (cls, role), concept_counts in evidence.items():
-        best_concept = max(concept_counts, key=concept_counts.get)
-        support = concept_counts[best_concept]
-        total = sum(concept_counts.values())
-        rules.append({
-            "class": cls,
-            "role": role,
-            "concept": best_concept,
-            "support": support,
-            "confidence": round(support / total, 2),
-        })
-    rules.sort(key=lambda r: (-r["support"], r["class"]))
+    for store, guard_of in ((evidence, lambda k: k[2]), (evidence_any, lambda k: "*")):
+        for key, concept_counts in store.items():
+            if guard_of(key) == "*" and len(guards_seen.get(key, ())) < 2:
+                continue
+            best_concept = max(concept_counts, key=concept_counts.get)
+            support = concept_counts[best_concept]
+            total = sum(concept_counts.values())
+            rules.append({
+                "class": key[0],
+                "role": key[1],
+                "guard": guard_of(key),
+                "concept": best_concept,
+                "support": support,
+                "confidence": round(support / total, 2),
+            })
+    rules.sort(key=lambda r: (r["guard"] == "*", -r["support"], r["class"], r["role"]))
 
     RULES_PATH.write_text(json.dumps(rules, indent=2))
     n_matched = sum(1 for r in per_example_results if r.get("matched_class"))
@@ -111,7 +131,8 @@ def cmd_learn(args, client, ontology):
     print(f"Learned {len(rules)} rules -> {RULES_PATH}")
     for r in rules:
         flag = "" if r["support"] >= 2 else "  (single example -- low confidence, needs more gold data)"
-        print(f"  IF {r['class']}(A) AND {r['role']}(A, X) THEN {r['concept']}(X) "
+        cond = "" if r["guard"] == "*" else f" AND guard(X)={r['guard']}"
+        print(f"  IF {r['class']}(A) AND {r['role']}(A, X){cond} THEN {r['concept']}(X) "
               f"[support={r['support']}, confidence={r['confidence']}]{flag}")
 
 

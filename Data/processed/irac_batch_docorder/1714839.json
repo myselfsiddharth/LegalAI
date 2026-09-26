@@ -1,0 +1,55 @@
+{
+  "doc_id": "1714839",
+  "filename": "Orissa_Cement_Ltd_And_Ors_Etc_Etc_vs_State_Of_Orissa_And_Ors_Etc_Etc_on_4_April_1991_1.PDF",
+  "year": "1991",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 1,
+    "AuthorityCited": 4,
+    "Holding": 7,
+    "Claim": 2,
+    "Outcome": 1
+  },
+  "authority_results": [
+    {
+      "cited": "Article 277",
+      "source_sentence": "Article 277-Essential requirements of the Article- Discussed.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "State of Tamil Nadu & Ors., [1990] 1 S.C.C. 12",
+      "source_sentence": "State of Tamil Nadu & Ors., [1990] 1 S.C.C. 12, followed. 1.2 A tax on royalties cannot be a tax on minerals and is outside the purview of Entry 50 of List II.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "State of Tamil Nadu & Ors., [1990] 1 S.C.C.12",
+      "source_sentence": "State of Tamil Nadu & Ors., [1990] 1 S.C.C.12, followed. 108 Hingir Rampur Coal Co.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Justice Wanchoo's dissent",
+      "source_sentence": "State of Orissa & Ors., [1961] 2 S.C.R.537, Justice Wanchoo's dissent explained. 1.3 There is a difference in principle between a tax on royalties derived from land and a tax on land measured by reference to the income derived therefrom.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "1990",
+  "n_real_edges": 29
+}

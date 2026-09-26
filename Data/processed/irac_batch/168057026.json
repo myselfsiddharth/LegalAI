@@ -4,45 +4,51 @@
   "year": "2016",
   "candidate_sentences": 30,
   "objects_by_concept": {
-    "Party": 3,
-    "Outcome": 2,
-    "Claim": 13,
-    "AuthorityCited": 4
+    "Party": 5,
+    "Outcome": 3,
+    "Claim": 8,
+    "RuleCited": 3,
+    "AuthorityCited": 4,
+    "Holding": 4
   },
   "authority_results": [
     {
-      "cited": "TML",
-      "source_sentence": "Air compressors, standby generators and LPG storage yard, etc. and lease it to the TML at an annual lease rental of Rs. 90 lakhs per annum for 30 years renewable at the option of TML for further blocks of 30 years.",
+      "cited": "Section 39 of the L.A.",
+      "source_sentence": "The learned senior counsel draws our attention to Section 39 of the L.A.",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
-      },
-      "in_judgment_text": null
-    },
-    {
-      "cited": "Rs. 90 lakhs per annum",
-      "source_sentence": "Air compressors, standby generators and LPG storage yard, etc. and lease it to the TML at an annual lease rental of Rs. 90 lakhs per annum for 30 years renewable at the option of TML for further blocks of 30 years.",
-      "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
-      },
-      "in_judgment_text": null
-    },
-    {
-      "cited": "Cabinet Memo",
-      "source_sentence": "Proposal numbers 3 and 4 of Cabinet Memo, referred to supra, approved by the Chief Minister make it clear that acquisition of land comprising of 1053 acres is needed for the Small Car Project of TML and 200 acres of land is needed to cater to the housing and social infrastructure needs of the project.",
-      "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
       },
       "in_judgment_text": true
     },
     {
-      "cited": "the Chief Minister",
-      "source_sentence": "Proposal numbers 3 and 4 of Cabinet Memo, referred to supra, approved by the Chief Minister make it clear that acquisition of land comprising of 1053 acres is needed for the Small Car Project of TML and 200 acres of land is needed to cater to the housing and social infrastructure needs of the project.",
+      "cited": "the Statement of Objects and Reasons of the Amendment Act 68 of 1984 to the L.A.",
+      "source_sentence": "The learned senior counsel places reliance on the Statement of Objects and Reasons of the Amendment Act 68 of 1984 to the L.A.",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Section 55 of the L.A.",
+      "source_sentence": "The learned counsel draws our attention to Rule 4 of the Land Acquisition (Companies) Rules, 1963 framed under Section 55 of the L.A.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the decision of this Court in the case of Royal Orchid Hotels Ltd. v.",
+      "source_sentence": "A consideration of Rule 4 also shows that its compliance precedes the notification under Section 4 as well as compliance of Section 6 of the Act.\u201a The learned counsel further places reliance on the decision of this Court in the case of Royal Orchid Hotels Ltd. v.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
       },
       "in_judgment_text": true
     }

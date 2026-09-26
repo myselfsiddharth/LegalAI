@@ -1,0 +1,26 @@
+{
+  "doc_id": "744830",
+  "filename": "Maharaj_Singh_vs_State_Of_Uttar_Pradesh_Others_on_2_November_1976_1.PDF",
+  "year": "1976",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 14,
+    "Holding": 12,
+    "Claim": 5,
+    "Outcome": 1,
+    "AuthorityCited": 1
+  },
+  "authority_results": [
+    {
+      "cited": "land reform",
+      "source_sentence": "This is plainly 'present legal interest' in the Government and a sort of precarium tenans in the Sabha. [1082 D; 1079 F-G] (a) The Act contemplates taking over of all zamindari rights as part of land reform.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "1970",
+  "n_real_edges": 88
+}

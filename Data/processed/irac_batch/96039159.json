@@ -4,19 +4,19 @@
   "year": "2020",
   "candidate_sentences": 30,
   "objects_by_concept": {
-    "Claim": 17,
-    "Party": 7,
-    "Holding": 3,
-    "Outcome": 2,
+    "Party": 2,
+    "Claim": 6,
+    "Holding": 9,
     "AuthorityCited": 1
   },
   "authority_results": [
     {
-      "cited": "the proceedings under Section 145 of CrPC",
-      "source_sentence": "She made reference to the proceedings under Section 145 of CrPC.",
+      "cited": "the judgment of this Court in Sadhu Singh v.",
+      "source_sentence": "The High Court distinguished the judgment of this Court in Sadhu Singh v.",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
       },
       "in_judgment_text": true
     }

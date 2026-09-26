@@ -1,0 +1,26 @@
+{
+  "doc_id": "1937304",
+  "filename": "M_I_Builders_Pvt_Ltd_vs_Radhey_Shyam_Sahu_And_Others_on_26_July_1999_1.PDF",
+  "year": "1999",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 5,
+    "Holding": 9,
+    "Claim": 5,
+    "Outcome": 4,
+    "AuthorityCited": 1
+  },
+  "authority_results": [
+    {
+      "cited": "the appellant",
+      "source_sentence": "This action of the Mahapalika was subject matter of criticism by the appellant as to how a duly sanctioned plan could be revoked without any notice to the appellant.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "1990",
+  "n_real_edges": 25
+}

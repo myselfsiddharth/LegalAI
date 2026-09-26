@@ -4,22 +4,12 @@
   "year": "1974",
   "candidate_sentences": 30,
   "objects_by_concept": {
-    "Party": 4,
-    "Holding": 14,
-    "Claim": 13,
-    "AuthorityCited": 4,
-    "Outcome": 1
+    "Party": 12,
+    "Holding": 4,
+    "AuthorityCited": 11,
+    "Claim": 4
   },
   "authority_results": [
-    {
-      "cited": "regulations",
-      "source_sentence": "Under s. 105E the Commissioner, for the purpose of holding any inquiry under the Act. has the same powers as are vested in a civil court under the C.P.C. in respect of. (i) summoning and enforcing the attendance of any person and examining him on oath, (ii) requiring the discovery and production of documents. and (iii any other matter which may be prescribed by regulations under s.105H.",
-      "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
-      },
-      "in_judgment_text": true
-    },
     {
       "cited": "Punjab [1967] 3 S.C.R. 399",
       "source_sentence": "Punjab [1967] 3 S.C.R. 399, overruled. (Per Khanna J) :(1) The simple fact that there are two forums with different procedures would not justify the quashing of the impugned provisions is being violative of Art. 14 especially when both procedures are fair and in con- sonance with the principles of natural justice.",
@@ -43,11 +33,100 @@
       "in_judgment_text": null
     },
     {
-      "cited": "the general law of the land",
-      "source_sentence": "The only right which is sought to be enforced by the Municipal Corporation and the Government is a right based on title given by the general law of the land and it is for the enforcement of this right that two alternative procedures are available to the Municipal Corporation or the Government.",
+      "cited": "Ed. 1058; 250 U.S. 400",
+      "source_sentence": "Ed. 1058; 250 U.S. 400, explained.",
       "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "Venkitachalam Potti, [1955] 2 S.C.R. 1196",
+      "source_sentence": "Venkitachalam Potti, [1955] 2 S.C.R. 1196, referred to.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "State of Punjab, [1967] 3 S.C.R. 399",
+      "source_sentence": "State of Punjab, [1967] 3 S.C.R. 399, overruled. (7) It must also be constantly borne in mind, for otherwise it is likely to distort the proper perspective of Art. 14, that mere minor differences between the two procedures would not be enough to invoke the inhibition of the equality clause.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "352854",
+        "matched_cited_text": "Northern India Caterers Ltd. v. State of Punjab",
+        "n_matching_edges": 2
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "The Bombay Housing Board (1954 SCR 572)",
+      "source_sentence": "The Bombay Housing Board (1954 SCR 572) upholding the exemption of Maganlal Chhagganlal (P) Ltd vs Municipal Corporation Of Greater ... on 11 April, 1974 Indian Kanoon - http://indiankanoon.org/doc/1293557/ 13 premises belonging to the Government or a local authority from the provisions of the Bombay Rents, Hotel and Lodging House Rates Control Act, 1947; The Collector of Malabar v.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "152211",
+        "matched_cited_text": "Baburao Shantarm More v. The Bombay Housing Board and Anr.",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Collector of Jhalawar & Ors. (1961 2 SCR 962)",
+      "source_sentence": "Collector of Jhalawar & Ors. (1961 2 SCR 962) upholding the provision of the Rajasthan Public Demands Recovery Act, 1952 for recovering moneys due to a State Bank; Nav Rattanmal v.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "State of Punjab (1963 2 SCR 353)",
+      "source_sentence": "State of Punjab (1963 2 SCR 353) upholding the provisions of an Act setting up separate authorities for determination of disputes and prescribing a special procedure to be followed by them for the recovery of the dues of a State Bank; and Builders Corp. v.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "352854",
+        "matched_cited_text": "Northern India Caterers Ltd. v. State of Punjab",
+        "n_matching_edges": 2
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Union (1965 2 SCR 289)",
+      "source_sentence": "Union (1965 2 SCR 289) upholding the Doctrine of priority of Crown Debts, are all instances where special provisions applicable to the State were upheld.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "the decisions of this Court in State of West Bengal v..Anwar Ali Sarkar (1952 SCR 284), Suraj Mall Mohta v.",
+      "source_sentence": "However, they referred to the decisions of this Court in State of West Bengal v..Anwar Ali Sarkar (1952 SCR 284), Suraj Mall Mohta v.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": false
+    },
+    {
+      "cited": "Military Estate Officer (1973 1 SCR. 515)",
+      "source_sentence": "Military Estate Officer (1973 1 SCR. 515) this Court referred to the decision in Northern India Caterers' case and upheld the validity of the 1971 Act on the ground that there was only one procedure for ejectment of persons in unauthorised occupation of public premises under the 1971 Act and that there was no vice of discrimination under it.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "215754",
+        "matched_cited_text": "Hari Singh v. Military Estate Officer",
+        "n_matching_edges": 1
       },
       "in_judgment_text": true
     }

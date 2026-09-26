@@ -52,23 +52,23 @@
     },
     "lexgraph": {
       "cases": 48,
-      "cases_with_any_authority": 44,
-      "authority_outputs": 235,
+      "cases_with_any_authority": 48,
+      "authority_outputs": 424,
       "status_counts": {
-        "VERIFIED": 30,
-        "UNVERIFIED": 20,
-        "SELF_REFERENCE": 5,
-        "REJECTED_NOT_A_CASE": 180
+        "VERIFIED": 96,
+        "UNVERIFIED": 124,
+        "SELF_REFERENCE": 8,
+        "REJECTED_NOT_A_CASE": 196
       },
-      "case_shaped_citations": 50,
-      "verified_rate": 0.6,
-      "verified_ambiguous_party_match": 7,
-      "unverified_named_in_judgment": 13,
-      "unverified_not_in_judgment": 0,
-      "unverified_name_too_short_to_check": 7,
+      "case_shaped_citations": 220,
+      "verified_rate": 0.436,
+      "verified_ambiguous_party_match": 23,
+      "unverified_named_in_judgment": 85,
+      "unverified_not_in_judgment": 3,
+      "unverified_name_too_short_to_check": 36,
       "real_edges_total": 2123,
-      "real_edges_recovered": 30,
-      "edge_recall": 0.014
+      "real_edges_recovered": 83,
+      "edge_recall": 0.039
     }
   },
   "by_decade": {
@@ -400,162 +400,162 @@
       "1950s": {
         "cases": 6,
         "cases_with_any_authority": 6,
-        "authority_outputs": 33,
+        "authority_outputs": 49,
         "status_counts": {
-          "VERIFIED": 11,
-          "UNVERIFIED": 5,
+          "VERIFIED": 14,
+          "UNVERIFIED": 14,
           "SELF_REFERENCE": 0,
-          "REJECTED_NOT_A_CASE": 17
+          "REJECTED_NOT_A_CASE": 21
         },
-        "case_shaped_citations": 16,
-        "verified_rate": 0.688,
-        "verified_ambiguous_party_match": 1,
-        "unverified_named_in_judgment": 2,
+        "case_shaped_citations": 28,
+        "verified_rate": 0.5,
+        "verified_ambiguous_party_match": 2,
+        "unverified_named_in_judgment": 8,
         "unverified_not_in_judgment": 0,
-        "unverified_name_too_short_to_check": 3,
+        "unverified_name_too_short_to_check": 6,
         "real_edges_total": 86,
-        "real_edges_recovered": 11,
-        "edge_recall": 0.128
+        "real_edges_recovered": 12,
+        "edge_recall": 0.14
       },
       "1960s": {
         "cases": 6,
         "cases_with_any_authority": 6,
-        "authority_outputs": 38,
+        "authority_outputs": 54,
         "status_counts": {
-          "VERIFIED": 11,
-          "UNVERIFIED": 7,
+          "VERIFIED": 14,
+          "UNVERIFIED": 19,
           "SELF_REFERENCE": 2,
-          "REJECTED_NOT_A_CASE": 18
+          "REJECTED_NOT_A_CASE": 19
         },
-        "case_shaped_citations": 18,
-        "verified_rate": 0.611,
+        "case_shaped_citations": 33,
+        "verified_rate": 0.424,
         "verified_ambiguous_party_match": 3,
-        "unverified_named_in_judgment": 6,
+        "unverified_named_in_judgment": 12,
         "unverified_not_in_judgment": 0,
-        "unverified_name_too_short_to_check": 1,
+        "unverified_name_too_short_to_check": 7,
         "real_edges_total": 83,
-        "real_edges_recovered": 11,
-        "edge_recall": 0.133
+        "real_edges_recovered": 13,
+        "edge_recall": 0.157
       },
       "1970s": {
         "cases": 6,
         "cases_with_any_authority": 6,
-        "authority_outputs": 30,
+        "authority_outputs": 78,
         "status_counts": {
-          "VERIFIED": 3,
-          "UNVERIFIED": 2,
+          "VERIFIED": 20,
+          "UNVERIFIED": 27,
           "SELF_REFERENCE": 0,
-          "REJECTED_NOT_A_CASE": 25
+          "REJECTED_NOT_A_CASE": 31
         },
-        "case_shaped_citations": 5,
-        "verified_rate": 0.6,
-        "verified_ambiguous_party_match": 2,
-        "unverified_named_in_judgment": 1,
-        "unverified_not_in_judgment": 0,
-        "unverified_name_too_short_to_check": 1,
+        "case_shaped_citations": 47,
+        "verified_rate": 0.426,
+        "verified_ambiguous_party_match": 7,
+        "unverified_named_in_judgment": 16,
+        "unverified_not_in_judgment": 1,
+        "unverified_name_too_short_to_check": 10,
         "real_edges_total": 302,
-        "real_edges_recovered": 3,
-        "edge_recall": 0.01
+        "real_edges_recovered": 15,
+        "edge_recall": 0.05
       },
       "1980s": {
         "cases": 6,
-        "cases_with_any_authority": 5,
-        "authority_outputs": 34,
+        "cases_with_any_authority": 6,
+        "authority_outputs": 59,
         "status_counts": {
-          "VERIFIED": 2,
-          "UNVERIFIED": 4,
-          "SELF_REFERENCE": 1,
-          "REJECTED_NOT_A_CASE": 27
+          "VERIFIED": 7,
+          "UNVERIFIED": 18,
+          "SELF_REFERENCE": 2,
+          "REJECTED_NOT_A_CASE": 32
         },
-        "case_shaped_citations": 6,
-        "verified_rate": 0.333,
-        "verified_ambiguous_party_match": 1,
-        "unverified_named_in_judgment": 2,
+        "case_shaped_citations": 25,
+        "verified_rate": 0.28,
+        "verified_ambiguous_party_match": 2,
+        "unverified_named_in_judgment": 14,
         "unverified_not_in_judgment": 0,
-        "unverified_name_too_short_to_check": 2,
+        "unverified_name_too_short_to_check": 4,
         "real_edges_total": 128,
-        "real_edges_recovered": 2,
-        "edge_recall": 0.016
+        "real_edges_recovered": 6,
+        "edge_recall": 0.047
       },
       "1990s": {
         "cases": 6,
         "cases_with_any_authority": 6,
-        "authority_outputs": 21,
+        "authority_outputs": 50,
         "status_counts": {
-          "VERIFIED": 0,
-          "UNVERIFIED": 2,
-          "SELF_REFERENCE": 1,
-          "REJECTED_NOT_A_CASE": 18
+          "VERIFIED": 7,
+          "UNVERIFIED": 18,
+          "SELF_REFERENCE": 2,
+          "REJECTED_NOT_A_CASE": 23
         },
-        "case_shaped_citations": 2,
-        "verified_rate": 0.0,
-        "verified_ambiguous_party_match": 0,
-        "unverified_named_in_judgment": 2,
+        "case_shaped_citations": 25,
+        "verified_rate": 0.28,
+        "verified_ambiguous_party_match": 2,
+        "unverified_named_in_judgment": 12,
         "unverified_not_in_judgment": 0,
-        "unverified_name_too_short_to_check": 0,
+        "unverified_name_too_short_to_check": 6,
         "real_edges_total": 196,
-        "real_edges_recovered": 0,
-        "edge_recall": 0.0
+        "real_edges_recovered": 7,
+        "edge_recall": 0.036
       },
       "2000s": {
         "cases": 6,
         "cases_with_any_authority": 6,
-        "authority_outputs": 31,
+        "authority_outputs": 34,
         "status_counts": {
-          "VERIFIED": 1,
-          "UNVERIFIED": 0,
+          "VERIFIED": 6,
+          "UNVERIFIED": 5,
           "SELF_REFERENCE": 0,
-          "REJECTED_NOT_A_CASE": 30
+          "REJECTED_NOT_A_CASE": 23
         },
-        "case_shaped_citations": 1,
-        "verified_rate": 1.0,
+        "case_shaped_citations": 11,
+        "verified_rate": 0.545,
         "verified_ambiguous_party_match": 0,
-        "unverified_named_in_judgment": 0,
+        "unverified_named_in_judgment": 4,
         "unverified_not_in_judgment": 0,
-        "unverified_name_too_short_to_check": 0,
+        "unverified_name_too_short_to_check": 1,
         "real_edges_total": 149,
-        "real_edges_recovered": 1,
-        "edge_recall": 0.007
+        "real_edges_recovered": 5,
+        "edge_recall": 0.034
       },
       "2010s": {
         "cases": 6,
-        "cases_with_any_authority": 5,
-        "authority_outputs": 27,
+        "cases_with_any_authority": 6,
+        "authority_outputs": 51,
         "status_counts": {
-          "VERIFIED": 2,
-          "UNVERIFIED": 0,
-          "SELF_REFERENCE": 0,
-          "REJECTED_NOT_A_CASE": 25
+          "VERIFIED": 11,
+          "UNVERIFIED": 16,
+          "SELF_REFERENCE": 1,
+          "REJECTED_NOT_A_CASE": 23
         },
-        "case_shaped_citations": 2,
-        "verified_rate": 1.0,
-        "verified_ambiguous_party_match": 0,
-        "unverified_named_in_judgment": 0,
-        "unverified_not_in_judgment": 0,
-        "unverified_name_too_short_to_check": 0,
+        "case_shaped_citations": 27,
+        "verified_rate": 0.407,
+        "verified_ambiguous_party_match": 2,
+        "unverified_named_in_judgment": 13,
+        "unverified_not_in_judgment": 2,
+        "unverified_name_too_short_to_check": 1,
         "real_edges_total": 550,
-        "real_edges_recovered": 2,
-        "edge_recall": 0.004
+        "real_edges_recovered": 11,
+        "edge_recall": 0.02
       },
       "2020s": {
         "cases": 6,
-        "cases_with_any_authority": 4,
-        "authority_outputs": 21,
+        "cases_with_any_authority": 6,
+        "authority_outputs": 49,
         "status_counts": {
-          "VERIFIED": 0,
-          "UNVERIFIED": 0,
+          "VERIFIED": 17,
+          "UNVERIFIED": 7,
           "SELF_REFERENCE": 1,
-          "REJECTED_NOT_A_CASE": 20
+          "REJECTED_NOT_A_CASE": 24
         },
-        "case_shaped_citations": 0,
-        "verified_rate": null,
-        "verified_ambiguous_party_match": 0,
-        "unverified_named_in_judgment": 0,
+        "case_shaped_citations": 24,
+        "verified_rate": 0.708,
+        "verified_ambiguous_party_match": 5,
+        "unverified_named_in_judgment": 6,
         "unverified_not_in_judgment": 0,
-        "unverified_name_too_short_to_check": 0,
+        "unverified_name_too_short_to_check": 1,
         "real_edges_total": 629,
-        "real_edges_recovered": 0,
-        "edge_recall": 0.0
+        "real_edges_recovered": 14,
+        "edge_recall": 0.022
       }
     }
   },

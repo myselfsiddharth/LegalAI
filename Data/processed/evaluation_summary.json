@@ -8,377 +8,286 @@
   "per_case_limit": 30,
   "failed_cases": [],
   "concept_totals": {
-    "Party": 192,
-    "Claim": 362,
-    "Holding": 453,
-    "Outcome": 108,
-    "AuthorityCited": 235
+    "Party": 155,
+    "Claim": 217,
+    "Holding": 402,
+    "AuthorityCited": 228,
+    "Outcome": 41,
+    "RuleCited": 38
   },
   "authority_metrics": {
     "cases": 48,
-    "cases_with_any_authority": 44,
-    "authority_outputs": 235,
+    "cases_with_any_authority": 46,
+    "authority_outputs": 228,
     "status_counts": {
-      "VERIFIED": 30,
-      "UNVERIFIED": 20,
-      "SELF_REFERENCE": 5,
-      "REJECTED_NOT_A_CASE": 180
+      "VERIFIED": 96,
+      "UNVERIFIED": 124,
+      "SELF_REFERENCE": 8,
+      "REJECTED_NOT_A_CASE": 0
     },
-    "case_shaped_citations": 50,
-    "verified_rate": 0.6,
-    "verified_ambiguous_party_match": 7,
-    "unverified_named_in_judgment": 13,
-    "unverified_not_in_judgment": 0,
-    "unverified_name_too_short_to_check": 7,
+    "case_shaped_citations": 220,
+    "verified_rate": 0.436,
+    "verified_ambiguous_party_match": 23,
+    "unverified_named_in_judgment": 85,
+    "unverified_not_in_judgment": 3,
+    "unverified_name_too_short_to_check": 36,
     "real_edges_total": 2123,
-    "real_edges_recovered": 30,
-    "edge_recall": 0.014
+    "real_edges_recovered": 83,
+    "edge_recall": 0.039
   },
   "authority_metrics_by_decade": {
     "1950s": {
       "cases": 6,
       "cases_with_any_authority": 6,
-      "authority_outputs": 33,
+      "authority_outputs": 28,
       "status_counts": {
-        "VERIFIED": 11,
-        "UNVERIFIED": 5,
+        "VERIFIED": 14,
+        "UNVERIFIED": 14,
         "SELF_REFERENCE": 0,
-        "REJECTED_NOT_A_CASE": 17
+        "REJECTED_NOT_A_CASE": 0
       },
-      "case_shaped_citations": 16,
-      "verified_rate": 0.688,
-      "verified_ambiguous_party_match": 1,
-      "unverified_named_in_judgment": 2,
+      "case_shaped_citations": 28,
+      "verified_rate": 0.5,
+      "verified_ambiguous_party_match": 2,
+      "unverified_named_in_judgment": 8,
       "unverified_not_in_judgment": 0,
-      "unverified_name_too_short_to_check": 3,
+      "unverified_name_too_short_to_check": 6,
       "real_edges_total": 86,
-      "real_edges_recovered": 11,
-      "edge_recall": 0.128
+      "real_edges_recovered": 12,
+      "edge_recall": 0.14
     },
     "1960s": {
       "cases": 6,
       "cases_with_any_authority": 6,
-      "authority_outputs": 38,
+      "authority_outputs": 35,
       "status_counts": {
-        "VERIFIED": 11,
-        "UNVERIFIED": 7,
+        "VERIFIED": 14,
+        "UNVERIFIED": 19,
         "SELF_REFERENCE": 2,
-        "REJECTED_NOT_A_CASE": 18
+        "REJECTED_NOT_A_CASE": 0
       },
-      "case_shaped_citations": 18,
-      "verified_rate": 0.611,
+      "case_shaped_citations": 33,
+      "verified_rate": 0.424,
       "verified_ambiguous_party_match": 3,
-      "unverified_named_in_judgment": 6,
+      "unverified_named_in_judgment": 12,
       "unverified_not_in_judgment": 0,
-      "unverified_name_too_short_to_check": 1,
+      "unverified_name_too_short_to_check": 7,
       "real_edges_total": 83,
-      "real_edges_recovered": 11,
-      "edge_recall": 0.133
+      "real_edges_recovered": 13,
+      "edge_recall": 0.157
     },
     "1970s": {
       "cases": 6,
       "cases_with_any_authority": 6,
-      "authority_outputs": 30,
+      "authority_outputs": 47,
       "status_counts": {
-        "VERIFIED": 3,
-        "UNVERIFIED": 2,
+        "VERIFIED": 20,
+        "UNVERIFIED": 27,
         "SELF_REFERENCE": 0,
-        "REJECTED_NOT_A_CASE": 25
+        "REJECTED_NOT_A_CASE": 0
       },
-      "case_shaped_citations": 5,
-      "verified_rate": 0.6,
-      "verified_ambiguous_party_match": 2,
-      "unverified_named_in_judgment": 1,
-      "unverified_not_in_judgment": 0,
-      "unverified_name_too_short_to_check": 1,
+      "case_shaped_citations": 47,
+      "verified_rate": 0.426,
+      "verified_ambiguous_party_match": 7,
+      "unverified_named_in_judgment": 16,
+      "unverified_not_in_judgment": 1,
+      "unverified_name_too_short_to_check": 10,
       "real_edges_total": 302,
-      "real_edges_recovered": 3,
-      "edge_recall": 0.01
+      "real_edges_recovered": 15,
+      "edge_recall": 0.05
     },
     "1980s": {
       "cases": 6,
-      "cases_with_any_authority": 5,
-      "authority_outputs": 34,
+      "cases_with_any_authority": 6,
+      "authority_outputs": 27,
       "status_counts": {
-        "VERIFIED": 2,
-        "UNVERIFIED": 4,
-        "SELF_REFERENCE": 1,
-        "REJECTED_NOT_A_CASE": 27
+        "VERIFIED": 7,
+        "UNVERIFIED": 18,
+        "SELF_REFERENCE": 2,
+        "REJECTED_NOT_A_CASE": 0
       },
-      "case_shaped_citations": 6,
-      "verified_rate": 0.333,
-      "verified_ambiguous_party_match": 1,
-      "unverified_named_in_judgment": 2,
+      "case_shaped_citations": 25,
+      "verified_rate": 0.28,
+      "verified_ambiguous_party_match": 2,
+      "unverified_named_in_judgment": 14,
       "unverified_not_in_judgment": 0,
-      "unverified_name_too_short_to_check": 2,
+      "unverified_name_too_short_to_check": 4,
       "real_edges_total": 128,
-      "real_edges_recovered": 2,
-      "edge_recall": 0.016
+      "real_edges_recovered": 6,
+      "edge_recall": 0.047
     },
     "1990s": {
       "cases": 6,
       "cases_with_any_authority": 6,
-      "authority_outputs": 21,
+      "authority_outputs": 27,
       "status_counts": {
-        "VERIFIED": 0,
-        "UNVERIFIED": 2,
-        "SELF_REFERENCE": 1,
-        "REJECTED_NOT_A_CASE": 18
+        "VERIFIED": 7,
+        "UNVERIFIED": 18,
+        "SELF_REFERENCE": 2,
+        "REJECTED_NOT_A_CASE": 0
       },
-      "case_shaped_citations": 2,
-      "verified_rate": 0.0,
-      "verified_ambiguous_party_match": 0,
-      "unverified_named_in_judgment": 2,
+      "case_shaped_citations": 25,
+      "verified_rate": 0.28,
+      "verified_ambiguous_party_match": 2,
+      "unverified_named_in_judgment": 12,
       "unverified_not_in_judgment": 0,
-      "unverified_name_too_short_to_check": 0,
+      "unverified_name_too_short_to_check": 6,
       "real_edges_total": 196,
-      "real_edges_recovered": 0,
-      "edge_recall": 0.0
+      "real_edges_recovered": 7,
+      "edge_recall": 0.036
     },
     "2000s": {
       "cases": 6,
-      "cases_with_any_authority": 6,
-      "authority_outputs": 31,
+      "cases_with_any_authority": 4,
+      "authority_outputs": 11,
       "status_counts": {
-        "VERIFIED": 1,
-        "UNVERIFIED": 0,
+        "VERIFIED": 6,
+        "UNVERIFIED": 5,
         "SELF_REFERENCE": 0,
-        "REJECTED_NOT_A_CASE": 30
+        "REJECTED_NOT_A_CASE": 0
       },
-      "case_shaped_citations": 1,
-      "verified_rate": 1.0,
+      "case_shaped_citations": 11,
+      "verified_rate": 0.545,
       "verified_ambiguous_party_match": 0,
-      "unverified_named_in_judgment": 0,
+      "unverified_named_in_judgment": 4,
       "unverified_not_in_judgment": 0,
-      "unverified_name_too_short_to_check": 0,
+      "unverified_name_too_short_to_check": 1,
       "real_edges_total": 149,
-      "real_edges_recovered": 1,
-      "edge_recall": 0.007
+      "real_edges_recovered": 5,
+      "edge_recall": 0.034
     },
     "2010s": {
       "cases": 6,
-      "cases_with_any_authority": 5,
-      "authority_outputs": 27,
+      "cases_with_any_authority": 6,
+      "authority_outputs": 28,
       "status_counts": {
-        "VERIFIED": 2,
-        "UNVERIFIED": 0,
-        "SELF_REFERENCE": 0,
-        "REJECTED_NOT_A_CASE": 25
+        "VERIFIED": 11,
+        "UNVERIFIED": 16,
+        "SELF_REFERENCE": 1,
+        "REJECTED_NOT_A_CASE": 0
       },
-      "case_shaped_citations": 2,
-      "verified_rate": 1.0,
-      "verified_ambiguous_party_match": 0,
-      "unverified_named_in_judgment": 0,
-      "unverified_not_in_judgment": 0,
-      "unverified_name_too_short_to_check": 0,
+      "case_shaped_citations": 27,
+      "verified_rate": 0.407,
+      "verified_ambiguous_party_match": 2,
+      "unverified_named_in_judgment": 13,
+      "unverified_not_in_judgment": 2,
+      "unverified_name_too_short_to_check": 1,
       "real_edges_total": 550,
-      "real_edges_recovered": 2,
-      "edge_recall": 0.004
+      "real_edges_recovered": 11,
+      "edge_recall": 0.02
     },
     "2020s": {
       "cases": 6,
-      "cases_with_any_authority": 4,
-      "authority_outputs": 21,
+      "cases_with_any_authority": 6,
+      "authority_outputs": 25,
       "status_counts": {
-        "VERIFIED": 0,
-        "UNVERIFIED": 0,
+        "VERIFIED": 17,
+        "UNVERIFIED": 7,
         "SELF_REFERENCE": 1,
-        "REJECTED_NOT_A_CASE": 20
+        "REJECTED_NOT_A_CASE": 0
       },
-      "case_shaped_citations": 0,
-      "verified_rate": null,
-      "verified_ambiguous_party_match": 0,
-      "unverified_named_in_judgment": 0,
+      "case_shaped_citations": 24,
+      "verified_rate": 0.708,
+      "verified_ambiguous_party_match": 5,
+      "unverified_named_in_judgment": 6,
       "unverified_not_in_judgment": 0,
-      "unverified_name_too_short_to_check": 0,
+      "unverified_name_too_short_to_check": 1,
       "real_edges_total": 629,
-      "real_edges_recovered": 0,
-      "edge_recall": 0.0
+      "real_edges_recovered": 14,
+      "edge_recall": 0.022
     }
   },
   "samples": {
-    "REJECTED_NOT_A_CASE": [
-      {
-        "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
-        "cited": "S. 2(1) of the Indian Income-tax Act",
-        "in_judgment_text": null,
-        "source_sentence": null
-      },
-      {
-        "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
-        "cited": "s. 66A(2) of the Indian Income-tax Act (XI of 1922)",
-        "in_judgment_text": null,
-        "source_sentence": null
-      },
-      {
-        "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
-        "cited": "s. 66(1) of the Act",
-        "in_judgment_text": null,
-        "source_sentence": null
-      },
-      {
-        "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
-        "cited": "the Indian Income-tax Act",
-        "in_judgment_text": true,
-        "source_sentence": null
-      },
-      {
-        "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
-        "cited": "s. 4 (3) (viii) of the Act",
-        "in_judgment_text": null,
-        "source_sentence": null
-      },
-      {
-        "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
-        "cited": "s. 2(1)",
-        "in_judgment_text": null,
-        "source_sentence": null
-      },
-      {
-        "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
-        "cited": "the definition of agricultural income given in the Indian Income-tax Act",
-        "in_judgment_text": true,
-        "source_sentence": null
-      },
-      {
-        "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
-        "cited": "the Indian Income-tax Act",
-        "in_judgment_text": true,
-        "source_sentence": null
-      },
-      {
-        "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
-        "cited": "the entries in the lists of the Seventh Schedule to the Constitution",
-        "in_judgment_text": true,
-        "source_sentence": null
-      },
-      {
-        "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
-        "cited": "heads of legislation",
-        "in_judgment_text": true,
-        "source_sentence": null
-      },
-      {
-        "case": "S_M_Jakati_Another_vs_S_M_Borkar_Others_on_24_September_1958_1.PDF",
-        "cited": "the pious obligation of the sons",
-        "in_judgment_text": true,
-        "source_sentence": null
-      },
-      {
-        "case": "Namdeo_Lokman_Lodhi_vs_Narmadabai_And_Others_on_27_February_1953_1.PDF",
-        "cited": "forfeiture",
-        "in_judgment_text": true,
-        "source_sentence": null
-      },
-      {
-        "case": "Nagendra_Nath_Bora_Another_vs_The_Commissioner_Of_Hills_Divisionand_on_7_February_1958_1.PDF",
-        "cited": "Ad. 23 Of 1955, s. 9, Rule 343",
-        "in_judgment_text": null,
-        "source_sentence": null
-      },
-      {
-        "case": "Nagendra_Nath_Bora_Another_vs_The_Commissioner_Of_Hills_Divisionand_on_7_February_1958_1.PDF",
-        "cited": "the statute",
-        "in_judgment_text": true,
-        "source_sentence": null
-      },
-      {
-        "case": "Nagendra_Nath_Bora_Another_vs_The_Commissioner_Of_Hills_Divisionand_on_7_February_1958_1.PDF",
-        "cited": "an appellate Authority",
-        "in_judgment_text": true,
-        "source_sentence": null
-      },
-      {
-        "case": "Shrinivas_Krishnarao_Kango_vs_Narayan_Devji_Kango_And_Others_on_23_March_1954_1.PDF",
-        "cited": "a posthumous son",
-        "in_judgment_text": true,
-        "source_sentence": null
-      },
-      {
-        "case": "Shrinivas_Krishnarao_Kango_vs_Narayan_Devji_Kango_And_Others_on_23_March_1954_1.PDF",
-        "cited": "one branch of a Kulkarni family",
-        "in_judgment_text": true,
-        "source_sentence": null
-      },
-      {
-        "case": "Kavalappara_Kottarathil_Kochuni_And_vs_The_State_Of_Madras_And_Others_on_4_May_1960_1.PDF",
-        "cited": "Arts. 4, 19(1)(f) and 31",
-        "in_judgment_text": null,
-        "source_sentence": "XXII of 1933), shall Kavalappara Kottarathil Kochuni And ... vs The State Of Madras And Others on 4 May, 1960 Indian Kanoon - http://indiankanoon.org/doc/1431786/ 2 apply.\" The question for decision was whether the impugned Act infringed the fundamental rights of the petitioners guaranteed by Arts. 4, 19(1)(f) and 31 of the Constitution."
-      },
-      {
-        "case": "Kavalappara_Kottarathil_Kochuni_And_vs_The_State_Of_Madras_And_Others_on_4_May_1960_1.PDF",
-        "cited": "janmam right",
-        "in_judgment_text": true,
-        "source_sentence": "Assuming that the Sthanam properties were held in janmam right and as such were estates within the meaning of Art. 31A, the impugned Act was immune from challenge."
-      },
-      {
-        "case": "Kavalappara_Kottarathil_Kochuni_And_vs_The_State_Of_Madras_And_Others_on_4_May_1960_1.PDF",
-        "cited": "statement of objects and reasons of its amendment",
-        "in_judgment_text": true,
-        "source_sentence": "Although it may not be permissible to refer to the statement of objects and reasons of its amendment for purposes of construction, it can be referred to for the limited purpose of ascertaining the conditions prevailing at the time and purpose underlying the amendment."
-      },
-      {
-        "case": "Kavalappara_Kottarathil_Kochuni_And_vs_The_State_Of_Madras_And_Others_on_4_May_1960_1.PDF",
-        "cited": "conditions prevailing at the time and purpose underlying the amendment",
-        "in_judgment_text": true,
-        "source_sentence": "Although it may not be permissible to refer to the statement of objects and reasons of its amendment for purposes of construction, it can be referred to for the limited purpose of ascertaining the conditions prevailing at the time and purpose underlying the amendment."
-      },
-      {
-        "case": "Kavalappara_Kottarathil_Kochuni_And_vs_The_State_Of_Madras_And_Others_on_4_May_1960_1.PDF",
-        "cited": "cl. (2)(b) of Art. 31A",
-        "in_judgment_text": null,
-        "source_sentence": "There is no substance in the argument that since the impugned Act seeks to regulate the rights of the Sthanee and the junior members of the tarwad inter se it falls within by cl. (2)(b) of Art. 31A."
-      },
-      {
-        "case": "Kavalappara_Kottarathil_Kochuni_And_vs_The_State_Of_Madras_And_Others_on_4_May_1960_1.PDF",
-        "cited": "cl. (1)(a) of the Article",
-        "in_judgment_text": false,
-        "source_sentence": "That clause has to be read with cl. (1)(a) of the Article and since the impugned Act does not contemplate any agrarian reform or seek to regulate the rights inter se between landlords and tenants or modify or extinguish any of the rights appertaining janmam right, leaving all its characteristics intact, it does not come within the purview of Art. 31A of the Constitution."
-      },
-      {
-        "case": "Kavalappara_Kottarathil_Kochuni_And_vs_The_State_Of_Madras_And_Others_on_4_May_1960_1.PDF",
-        "cited": "fundamental rights",
-        "in_judgment_text": true,
-        "source_sentence": "Fundamental rights have a transcendental position in the Constitution and before an Article embodying a fundamental right can be construed to exclude another every attempt should be made to harmonize them and not until it is found impossible to do so, can one be made to yield to the other."
-      },
-      {
-        "case": "Guramma_Bhratar_Chanbasappa_Deshmukh_vs_Malappa_on_19_August_1963_1.PDF",
-        "cited": "Chimmava, (1935) I.L R. 59 Bom. 459",
-        "in_judgment_text": false,
-        "source_sentence": "Chimmava, (1935) I.L R. 59 Bom. 459, disapproved."
-      }
-    ],
     "UNVERIFIED": [
+      {
+        "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
+        "cited": "the case of Lean and Dickinson v.",
+        "in_judgment_text": true,
+        "source_sentence": "But between the two extremes there must be a number of varying degrees, and the task of the Income-tax Officer is to apply his mind to the two distinctions and to decide in any particular case on which side of the fence, if I may use the term, the matter falls.\" He then referred to the case of Lean and Dickinson v."
+      },
+      {
+        "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
+        "cited": "[1938] 6 I.T.R. 502, 509",
+        "in_judgment_text": null,
+        "source_sentence": "It was a forest land and it was held to (1) [1938] 6 I.T.R. 502, 509. (2) (1919) P.R."
+      },
+      {
+        "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
+        "cited": "an earlier decision given by it in the case of Maharaja of Kapurthala v.",
+        "in_judgment_text": true,
+        "source_sentence": "The Court followed an earlier decision given by it in the case of Maharaja of Kapurthala v."
+      },
+      {
+        "case": "The_Commissioner_Of_Income_Tax_West_vs_Raja_Benoy_Kumar_Sahas_Roy_on_23_May_1957_1.PDF",
+        "cited": "the following passage from the Judgment of the Federal Court in Meghraj v.",
+        "in_judgment_text": true,
+        "source_sentence": "The Court then referred to the various decisions referred to above and cited with approval the following passage from the Judgment of the Federal Court in Meghraj v."
+      },
       {
         "case": "S_M_Jakati_Another_vs_S_M_Borkar_Others_on_24_September_1958_1.PDF",
         "cited": "Das, (1936) L.R. 63 I.A. 384",
         "in_judgment_text": null,
-        "source_sentence": null
+        "source_sentence": "Das, (1936) L.R. 63 I.A. 384, distinguished."
+      },
+      {
+        "case": "S_M_Jakati_Another_vs_S_M_Borkar_Others_on_24_September_1958_1.PDF",
+        "cited": "(1)(1943) L.R. 70 I.A. 171, 176.",
+        "in_judgment_text": null,
+        "source_sentence": "In the case now before us the appellants have empted to prove that the debt fell within the term avyavaharika by relying upon the payment order and (1)(1943) L.R. 70 I.A. 171, 176. (2) (1934) L.R. 61 I.A. 350. the findings given by the Deputy Registrar in thepayment order where-the liabity was inter alia based on a breach of trust."
+      },
+      {
+        "case": "S_M_Jakati_Another_vs_S_M_Borkar_Others_on_24_September_1958_1.PDF",
+        "cited": "(2) (1934) L.R. 61 I.A. 350.",
+        "in_judgment_text": null,
+        "source_sentence": "In the case now before us the appellants have empted to prove that the debt fell within the term avyavaharika by relying upon the payment order and (1)(1943) L.R. 70 I.A. 171, 176. (2) (1934) L.R. 61 I.A. 350. the findings given by the Deputy Registrar in thepayment order where-the liabity was inter alia based on a breach of trust."
+      },
+      {
+        "case": "S_M_Jakati_Another_vs_S_M_Borkar_Others_on_24_September_1958_1.PDF",
+        "cited": "Shambu Nath Panday v.",
+        "in_judgment_text": true,
+        "source_sentence": "Counsel for the appellants relied on Shambu Nath Panday v."
       },
       {
         "case": "Namdeo_Lokman_Lodhi_vs_Narmadabai_And_Others_on_27_February_1953_1.PDF",
         "cited": "Davey (110 E.R. 606)",
         "in_judgment_text": null,
-        "source_sentence": null
+        "source_sentence": "Davey (110 E.R. 606) distinguished."
+      },
+      {
+        "case": "Namdeo_Lokman_Lodhi_vs_Narmadabai_And_Others_on_27_February_1953_1.PDF",
+        "cited": "Toleman v. Portbury",
+        "in_judgment_text": true,
+        "source_sentence": "In English law the bringing of an action which corresponds to the institution of a suit in India is itself an act which is definitely regarded as evidencing an intention on the part of the lessor to determine a lease with regard to which there has been a breach of covenant entitling the lessor to re-enter : vide Toleman v."
+      },
+      {
+        "case": "Namdeo_Lokman_Lodhi_vs_Narmadabai_And_Others_on_27_February_1953_1.PDF",
+        "cited": "two earlier decisions of the Bombay High Court, Venkaji Krishna Nadkarni v.",
+        "in_judgment_text": true,
+        "source_sentence": "For this contention reliance was placed on two earlier decisions of the Bombay High Court, Venkaji Krishna Nadkarni v."
       },
       {
         "case": "Nagendra_Nath_Bora_Another_vs_The_Commissioner_Of_Hills_Divisionand_on_7_February_1958_1.PDF",
         "cited": "Northumberland Compensation Appeal Tribunal, (1952) 1 K.B. 338",
         "in_judgment_text": true,
-        "source_sentence": null
+        "source_sentence": "Northumberland Compensation Appeal Tribunal, (1952) 1 K.B. 338, referred to."
       },
       {
         "case": "Nagendra_Nath_Bora_Another_vs_The_Commissioner_Of_Hills_Divisionand_on_7_February_1958_1.PDF",
         "cited": "Ltd., [1957] S.C.R. 98",
         "in_judgment_text": null,
-        "source_sentence": null
+        "source_sentence": "Ltd., [1957] S.C.R. 98, relied on."
       },
       {
         "case": "Shrinivas_Krishnarao_Kango_vs_Narayan_Devji_Kango_And_Others_on_23_March_1954_1.PDF",
         "cited": "Krishnachandra Das (2 B.L.R. 103 F.B.)",
         "in_judgment_text": true,
-        "source_sentence": null
+        "source_sentence": "Krishnachandra Das (2 B.L.R. 103 F.B.) referred to."
+      },
+      {
+        "case": "Kavalappara_Kottarathil_Kochuni_And_vs_The_State_Of_Madras_And_Others_on_4_May_1960_1.PDF",
+        "cited": "Piare Dusadh's case, [1944] F.C.R. 61",
+        "in_judgment_text": true,
+        "source_sentence": "Piare Dusadh's case, [1944] F.C.R. 61, referred to."
       },
       {
         "case": "Guramma_Bhratar_Chanbasappa_Deshmukh_vs_Malappa_on_19_August_1963_1.PDF",
@@ -399,76 +308,46 @@
         "source_sentence": "Nirode, (1916) 20 C.W.N. 901, referred to."
       },
       {
-        "case": "Tirumalachetti_Rajaram_vs_Tirumalachetti_on_27_April_1961_1.PDF",
-        "cited": "a decision of the Full Bench of that Court in Chittam Subba Rao v.",
-        "in_judgment_text": true,
-        "source_sentence": "The appellant applied for a certificate under Art. 133(1) Of the Constitution but the High Court rejected the same holding that the decree was one of affirmance and involved no substantial 453 question of law, following a decision of the Full Bench of that Court in Chittam Subba Rao v."
-      },
-      {
-        "case": "Tirumalachetti_Rajaram_vs_Tirumalachetti_on_27_April_1961_1.PDF",
-        "cited": "Manik Chand, (1902) L.R. 30 I.A. 35",
-        "in_judgment_text": true,
-        "source_sentence": "Manik Chand, (1902) L.R. 30 I.A. 35, referred to."
-      },
-      {
-        "case": "Tirumalachetti_Rajaram_vs_Tirumalachetti_on_27_April_1961_1.PDF",
-        "cited": "an earlier Full Bench decision in Chittam Subba Rao v.",
-        "in_judgment_text": true,
-        "source_sentence": "In coming to this conclusion the High Court followed an earlier Full Bench decision in Chittam Subba Rao v."
-      },
-      {
-        "case": "Immani_Appa_Rao_And_Others_vs_Gollapalli_Ramalingamurthi_And_Ors_on_22_September_1961_1.PDF",
-        "cited": "Rangaswamy Chettiar, (1936) I.L.R. 59 Mad. 289",
-        "in_judgment_text": true,
-        "source_sentence": "Rangaswamy Chettiar, (1936) I.L.R. 59 Mad. 289, disapproved."
-      },
-      {
-        "case": "Prem_Raj_vs_Ram_Charan_on_4_March_1974_1.PDF",
-        "cited": "Nachiappa Chethar & Prem Raj vs Ram Charan on 4 March, 1974 Indian Kanoon - http://indiankanoon.org/doc/349715/ 3 Ors. [1964] S.C.R. 241/252 etc.",
-        "in_judgment_text": true,
-        "source_sentence": "Nachiappa Chethar & Prem Raj vs Ram Charan on 4 March, 1974 Indian Kanoon - http://indiankanoon.org/doc/349715/ 3 Ors. [1964] S.C.R. 241/252 etc., referred to."
-      },
-      {
-        "case": "Maganlal_Chhagganlal_P_Ltd_vs_Municipal_Corporation_Of_Greater_on_11_April_1974_1.PDF",
-        "cited": "Ed. 1058; 250 U.S. 400",
+        "case": "Addagada_Raghavamma_And_Anr_vs_Addagada_Chenchamma_And_Anr_on_9_April_1963_1.PDF",
+        "cited": "(1) (1904) I.L R. 31 Cal. 871. (2) (1903) S.L.R. 35 Cal. 271. (3) (1914) A.I.R. 41 Cal. 972, 988.(4) (1946) 51 C.W.N 98. (5) A.I.R. 1950 S.C. 172.(6) A I R. 1951 S.",
         "in_judgment_text": null,
-        "source_sentence": "Ed. 1058; 250 U.S. 400) which was concerned with a party having several rights to relief arising out of the same act, the present case is concerned with the existence of several remedies in enforcement of a single right to relief."
+        "source_sentence": "Learned Advocate-General contends that the learned Subordinate judge as well as the High Court did not draw the appropriate presumptions arising from the fact that the transactions were old ones, (1) (1904) I.L R. 31 Cal. 871. (2) (1903) S.L.R. 35 Cal. 271. (3) (1914) A.I.R. 41 Cal. 972, 988.(4) (1946) 51 C.W.N 98. (5) A.I.R. 1950 S.C. 172.(6) A I R. 1951 S."
       },
       {
-        "case": "Union_Of_India_Anr_vs_Raghubir_Singh_Dead_By_Lrs_Etc_on_16_May_1989_1.PDF",
-        "cited": "another decision of Division Bench comprised of three Judges in Mohinder Singh's case (1986) 1, SCC 365",
+        "case": "Pingle_Industries_Ltd_Secunderabad_vs_Commissioner_Of_Income_Tax_Hyderabad_on_26_April_1960_1.PDF",
+        "cited": "Alianza Co. v.",
         "in_judgment_text": true,
-        "source_sentence": "In this way the decision in Kamalajammanniava- ru's case was overruled by this Court in Bhag Singh's case and the Court approved another decision of Division Bench comprised of three Judges in Mohinder Singh's case (1986) 1, SCC 365 which merely directed payment of enhanced solatium and interest without giving any reasons."
+        "source_sentence": "The Privy Council distinguished Alianza Co. v."
       },
       {
-        "case": "Chandavarkar_Sita_Ratna_Rao_vs_Ashalata_S_Guram_on_25_September_1986_1.PDF",
-        "cited": "a Full Bench decision of the High Court in Ratanlal Chandiprasad v.",
-        "in_judgment_text": true,
-        "source_sentence": "Relying on a Full Bench decision of the High Court in Ratanlal Chandiprasad v."
-      },
-      {
-        "case": "Inder_Mohan_Lal_vs_Ramesh_Khanna_on_4_August_1987_1.PDF",
-        "cited": "Gupta, [1986] 3 SCC 1",
+        "case": "Pingle_Industries_Ltd_Secunderabad_vs_Commissioner_Of_Income_Tax_Hyderabad_on_26_April_1960_1.PDF",
+        "cited": "[1955] 27 I.T.R. 146",
         "in_judgment_text": null,
-        "source_sentence": "Gupta, [1986] 3 SCC 1, referred to 2."
+        "source_sentence": "The decision proceeded on the footing that the leaves became part of the raw material when they were reduced into possession and ownership by picking (1) [1955] 27 I.T.R. 146. (3) [1953] 24 I.T.R. 116. (2) (1946) I.L.R. 27 Lah. 307. (4) (1949) L.R. 76 I.A. 235. 695 3 S.C.R."
       },
       {
-        "case": "Accountant_And_Secretarial_Services_vs_Union_Of_India_Ors_on_20_July_1988_1.PDF",
-        "cited": "[1955] S.C.R. 799",
+        "case": "Pingle_Industries_Ltd_Secunderabad_vs_Commissioner_Of_Income_Tax_Hyderabad_on_26_April_1960_1.PDF",
+        "cited": "[1953] 24 I.T.R. 116",
         "in_judgment_text": null,
-        "source_sentence": "State, [1955] S.C.R. 799, referred to."
+        "source_sentence": "The decision proceeded on the footing that the leaves became part of the raw material when they were reduced into possession and ownership by picking (1) [1955] 27 I.T.R. 146. (3) [1953] 24 I.T.R. 116. (2) (1946) I.L.R. 27 Lah. 307. (4) (1949) L.R. 76 I.A. 235. 695 3 S.C.R."
       },
       {
-        "case": "Orissa_Cement_Ltd_And_Ors_Etc_Etc_vs_State_Of_Orissa_And_Ors_Etc_Etc_on_4_April_1991_1.PDF",
-        "cited": "State of Tamil Nadu & Ors., [1990] 1 S.C.C. 12",
-        "in_judgment_text": true,
-        "source_sentence": "State of Tamil Nadu & Ors., [1990] 1 S.C.C. 12, followed. 1.2 A tax on royalties cannot be a tax on minerals and is outside the purview of Entry 50 of List II."
+        "case": "Pingle_Industries_Ltd_Secunderabad_vs_Commissioner_Of_Income_Tax_Hyderabad_on_26_April_1960_1.PDF",
+        "cited": "(1946) I.L.R. 27 Lah. 307",
+        "in_judgment_text": null,
+        "source_sentence": "The decision proceeded on the footing that the leaves became part of the raw material when they were reduced into possession and ownership by picking (1) [1955] 27 I.T.R. 146. (3) [1953] 24 I.T.R. 116. (2) (1946) I.L.R. 27 Lah. 307. (4) (1949) L.R. 76 I.A. 235. 695 3 S.C.R."
       },
       {
-        "case": "Orissa_Cement_Ltd_And_Ors_Etc_Etc_vs_State_Of_Orissa_And_Ors_Etc_Etc_on_4_April_1991_1.PDF",
-        "cited": "State of Tamil Nadu & Ors., [1990] 1 S.C.C.12",
-        "in_judgment_text": true,
-        "source_sentence": "State of Tamil Nadu & Ors., [1990] 1 S.C.C.12, followed. 108 Hingir Rampur Coal Co."
+        "case": "Pingle_Industries_Ltd_Secunderabad_vs_Commissioner_Of_Income_Tax_Hyderabad_on_26_April_1960_1.PDF",
+        "cited": "(1949) L.R. 76 I.A. 235",
+        "in_judgment_text": null,
+        "source_sentence": "The decision proceeded on the footing that the leaves became part of the raw material when they were reduced into possession and ownership by picking (1) [1955] 27 I.T.R. 146. (3) [1953] 24 I.T.R. 116. (2) (1946) I.L.R. 27 Lah. 307. (4) (1949) L.R. 76 I.A. 235. 695 3 S.C.R."
+      },
+      {
+        "case": "Pingle_Industries_Ltd_Secunderabad_vs_Commissioner_Of_Income_Tax_Hyderabad_on_26_April_1960_1.PDF",
+        "cited": "(2) (1994) L.R. 76 I.A. 235",
+        "in_judgment_text": null,
+        "source_sentence": "The Full Bench referred to (1) (1946) I.L.R. 27 Lah. 307. (2) (1994) L.R. 76 I.A. 235. some other leases in which the duration was longer,and observed: \" There are other agreements which are not before us and it seems that the items mentioned in the question referred relate to those agreements as well."
       }
     ],
     "SELF_REFERENCE": [
@@ -491,10 +370,28 @@
         "source_sentence": "The view taken Inder Mohan Lal vs Ramesh Khanna on 4 August, 1987 Indian Kanoon - http://indiankanoon.org/doc/1773971/ 3 by the High Court over a number of years should normally be adhered to and not to be disturbed."
       },
       {
+        "case": "Accountant_And_Secretarial_Services_vs_Union_Of_India_Ors_on_20_July_1988_1.PDF",
+        "cited": "Accountant And Secretarial Services ... vs Union Of India & Ors",
+        "in_judgment_text": true,
+        "source_sentence": "The impugned Act, as already Accountant And Secretarial Services ... vs Union Of India & Ors on 20 July, 1988 Indian Kanoon - http://indiankanoon.org/doc/1732040/ 14 explained, has the main purpose of giving relief to mortgagors by enabling them to obtain restitution of the mortgaged lands on terms less onerous than the mortgage deeds require."
+      },
+      {
         "case": "Samatha_vs_State_Of_Andhra_Pradesh_And_Ors_on_11_July_1997_1.PDF",
         "cited": "Samatha vs State Of Andhra Pradesh And Ors",
         "in_judgment_text": true,
         "source_sentence": "Any lease to the non-tribals even of the Government land situated in scheduled area is in violation of Samatha vs State Of Andhra Pradesh And Ors on 11 July, 1997 Indian Kanoon - http://indiankanoon.org/doc/1969682/ 1 Section 3 and so is void."
+      },
+      {
+        "case": "Samatha_vs_State_Of_Andhra_Pradesh_And_Ors_on_11_July_1997_1.PDF",
+        "cited": "Samatha vs State Of Andhra Pradesh And Ors",
+        "in_judgment_text": true,
+        "source_sentence": "It must be Samatha vs State Of Andhra Pradesh And Ors on 11 July, 1997 Indian Kanoon - http://indiankanoon.org/doc/1969682/ 24 construed in a broader perspectivity, unless the statute, either expressly or by necessary implication, exempts the State from the operation of the Act as against the State and would include \"State Government\"."
+      },
+      {
+        "case": "Monnet_Ispat_And_Energy_Ltd_vs_Union_Of_India_And_Ors_on_26_July_2012_1.PDF",
+        "cited": "Monnet Ispat And Energy Ltd vs Union Of India And Ors",
+        "in_judgment_text": true,
+        "source_sentence": "Thus, the makers of the Constitution were not only aware of the legislative history of the topic of mines and minerals but were also aware how the Dominion legislature had interpreted Monnet Ispat And Energy Ltd vs Union Of India And Ors on 26 July, 2012 Indian Kanoon - http://indiankanoon.org/doc/4436830/ 39 Entry 36 in the Federal Legislative List in enacting the 1948 Act."
       },
       {
         "case": "Vineeta_Sharma_vs_Rakesh_Sharma_on_11_August_2020_1.PDF",

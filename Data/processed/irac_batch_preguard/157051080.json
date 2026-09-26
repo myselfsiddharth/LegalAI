@@ -1,0 +1,35 @@
+{
+  "doc_id": "157051080",
+  "filename": "The_State_Of_Himachal_Pradesh_vs_Yogendra_Mohan_Sengupta_on_11_January_2024_1.PDF",
+  "year": "2024",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 4,
+    "Claim": 7,
+    "Holding": 13,
+    "AuthorityCited": 2
+  },
+  "authority_results": [
+    {
+      "cited": "Assn. of Natural Gas Consuming Industries of Gujarat [1990 Supp SCC 397]",
+      "source_sentence": "Assn. of Natural Gas Consuming Industries of Gujarat [1990 Supp SCC 397] .) Therefore, the view adopted by the High Court does not appear to be correct.\u201a 57.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the courts",
+      "source_sentence": "Marketing-cum-Processing Service Society Ltd. [(1999) 6 SCC 82 : 1999 SCC (L&S) 1054 : AIR 1999 SC 1351] , this Court held that the court cannot fix a period of limitation, if not fixed by the legislature, as \u25a1the courts can admittedly interpret the law and do not make laws\u201a.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "2020",
+  "n_real_edges": 58
+}

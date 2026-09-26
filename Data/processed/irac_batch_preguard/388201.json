@@ -1,0 +1,66 @@
+{
+  "doc_id": "388201",
+  "filename": "Addagada_Raghavamma_And_Anr_vs_Addagada_Chenchamma_And_Anr_on_9_April_1963_1.PDF",
+  "year": "1963",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 10,
+    "Claim": 13,
+    "AuthorityCited": 5,
+    "Holding": 11,
+    "Outcome": 3
+  },
+  "authority_results": [
+    {
+      "cited": "him",
+      "source_sentence": "One of his sons Pitchayya, predeceased him in 1905 and it is alleged that sometime before his death Pitchayya took Venkayya, the son of his brother Chimpirayya, in adoption.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "Rani v.",
+      "source_sentence": "But it has been a long standing practice of the Privy Council not to interfere with such findings based upon relevant evidence, except under extraordinary and exceptional circumstances : Vide Rani v.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "Nanalal v.",
+      "source_sentence": "Ramendra (4); The same practice has been adopted and followed by this Court since its inception : see Nanalal v.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1679542",
+        "matched_cited_text": "Nanalal Zaver And Another vs Bombay Life Assurance Co. Ltd.And ... on 4 May, 1950",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "(1) (1904) I.L R. 31 Cal. 871. (2) (1903) S.L.R. 35 Cal. 271. (3) (1914) A.I.R. 41 Cal. 972, 988.(4) (1946) 51 C.W.N 98. (5) A.I.R. 1950 S.C. 172.(6) A I R. 1951 S.",
+      "source_sentence": "Learned Advocate-General contends that the learned Subordinate judge as well as the High Court did not draw the appropriate presumptions arising from the fact that the transactions were old ones, (1) (1904) I.L R. 31 Cal. 871. (2) (1903) S.L.R. 35 Cal. 271. (3) (1914) A.I.R. 41 Cal. 972, 988.(4) (1946) 51 C.W.N 98. (5) A.I.R. 1950 S.C. 172.(6) A I R. 1951 S.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "him to execute a will",
+      "source_sentence": "A new pica was raised by the appellant before the High Court that the will executed by Chimpirayya contained a clear intention to divide and that this declaration constituted a severance in status enabling him to execute a will.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "1960",
+  "n_real_edges": 14
+}

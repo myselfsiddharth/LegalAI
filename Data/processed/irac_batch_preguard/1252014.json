@@ -1,0 +1,58 @@
+{
+  "doc_id": "1252014",
+  "filename": "Pannalal_And_Another_vs_Mst_Naraini_And_Others_on_7_March_1952_1.PDF",
+  "year": "1952",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 6,
+    "AuthorityCited": 5,
+    "Claim": 22,
+    "Holding": 4
+  },
+  "authority_results": [
+    {
+      "cited": "the plaintiff",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Durga Prosad (I.L.R. 53 All. 868 F.B.)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.36,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Lala Nandanji (I.L.R. 14 Pat. 732)",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "the full amount",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "half costs amounting to Rs. 425 annas odd",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "1950",
+  "n_real_edges": 5
+}

@@ -1,0 +1,33 @@
+{
+  "doc_id": "67965481",
+  "filename": "Vineeta_Sharma_vs_Rakesh_Sharma_on_11_August_2020_1.PDF",
+  "year": "2020",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Holding": 12,
+    "Claim": 8,
+    "AuthorityCited": 2
+  },
+  "authority_results": [
+    {
+      "cited": "Vineeta Sharma vs Rakesh Sharma",
+      "source_sentence": "The registration requirement is inapplicable to partition of property by operation of Vineeta Sharma vs Rakesh Sharma on 11 August, 2020 Indian Kanoon - http://indiankanoon.org/doc/67965481/ 2 law, which has to be given full effect.",
+      "verification": {
+        "status": "SELF_REFERENCE",
+        "reason": "matches the citing judgment's own title, not an outbound citation"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "section 6(5) of the Amendment Act",
+      "source_sentence": "Explanation to section 6(5) of the Amendment Act requires the partition to be registered, was inserted to avoid any bogus or sham transactions.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "2020",
+  "n_real_edges": 90
+}

@@ -1,0 +1,94 @@
+{
+  "doc_id": "88188427",
+  "filename": "Indore_Development_Authority_vs_Shailendra_Dead_Through_Its_Lrs_And_on_8_February_2018_1.PDF",
+  "year": "2018",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "AuthorityCited": 8,
+    "Claim": 3,
+    "Holding": 8,
+    "Outcome": 1
+  },
+  "authority_results": [
+    {
+      "cited": "Harakchand Misirimal Solanki [2014 (3) SCC 183]",
+      "source_sentence": "Harakchand Misirimal Solanki [2014 (3) SCC 183] has been doubted.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "185065833",
+        "matched_cited_text": "Pune Municipalc Corp.& Anr vs Harakchand Misirimal Solanki & Ors",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Section 24 of the Act of 2013 and section 31 of the Act of 1894",
+      "source_sentence": "What is the meaning of the expression \u201apaid'/ \u201atender' in Section 24 of the Act of 2013 and section 31 of the Act of 1894?",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Section 24 of the Act of 2013 and section 31 of the Act of 1894",
+      "source_sentence": "What is the meaning of the expression \u201apaid'/ \u201atender' in Section 24 of the Act of 2013 and section 31 of the Act of 1894?",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Indore Development Authority vs Shailendra (Dead) Through Its Lrs.",
+      "source_sentence": "Whether the principle of \u201eactus curiae neminem gravabit\u2026, namely act of the Court should not prejudice any parties would be applicable in the present case to exclude Indore Development Authority vs Shailendra (Dead) Through Its Lrs.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "179115337",
+        "matched_cited_text": "Indore Development Authority vs Shailendra (Dead) Through Its Lrs. And ...",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Section 16",
+      "source_sentence": "Section 16 deals with the power of the Collector to take possession of the land after an award has been made under section 11.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Section 17",
+      "source_sentence": "Section 17 deals with special powers in cases of urgency.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "section",
+      "source_sentence": "And ... on 8 February, 2018 Indian Kanoon - http://indiankanoon.org/doc/88188427/ 6 except the second proviso, shall apply as they apply to the payment of compensation under that section.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "section 17(3A)",
+      "source_sentence": "As required under section 17(3A) and section 17(3B), the amount paid or deposited under sub-section (3A) shall be taken into account for determining the amount of compensation to be tendered under section 31.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "2010",
+  "n_real_edges": 157
+}

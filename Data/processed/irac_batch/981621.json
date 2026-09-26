@@ -4,23 +4,15 @@
   "year": "1958",
   "candidate_sentences": 30,
   "objects_by_concept": {
-    "Party": 4,
-    "Claim": 8,
-    "Holding": 12,
-    "AuthorityCited": 4,
-    "Outcome": 1
+    "Party": 1,
+    "AuthorityCited": 6,
+    "Claim": 5,
+    "Holding": 10
   },
   "authority_results": [
     {
-      "cited": "the pious obligation of the sons",
-      "verification": {
-        "status": "REJECTED_NOT_A_CASE",
-        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
-      },
-      "in_judgment_text": true
-    },
-    {
       "cited": "Bhubneshwar Prasad Narain Singh, [1954] S.C.R. 177",
+      "source_sentence": "Bhubneshwar Prasad Narain Singh, [1954] S.C.R. 177, followed.",
       "verification": {
         "status": "VERIFIED",
         "match_score": 0.98,
@@ -32,6 +24,7 @@
     },
     {
       "cited": "Das, (1936) L.R. 63 I.A. 384",
+      "source_sentence": "Das, (1936) L.R. 63 I.A. 384, distinguished.",
       "verification": {
         "status": "UNVERIFIED",
         "match_score": 0.0,
@@ -41,12 +34,43 @@
     },
     {
       "cited": "Shidlingappa Ishwa- rappa, A.I.R. 1941 Bom. 381",
+      "source_sentence": "Shidlingappa Ishwa- rappa, A.I.R. 1941 Bom. 381, approved. 1386 JUDGMENT: CIVIL APPELLATE JURISDICTION: Civil Appeal No. 233 of 1954.",
       "verification": {
         "status": "VERIFIED",
         "match_score": 1.0,
         "matched_cited_doc_id": "860374",
         "matched_cited_text": "Mulgund Co-operative Credit Society v. Shidlingappa Ishwarappa",
         "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "(1)(1943) L.R. 70 I.A. 171, 176.",
+      "source_sentence": "In the case now before us the appellants have empted to prove that the debt fell within the term avyavaharika by relying upon the payment order and (1)(1943) L.R. 70 I.A. 171, 176. (2) (1934) L.R. 61 I.A. 350. the findings given by the Deputy Registrar in thepayment order where-the liabity was inter alia based on a breach of trust.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "(2) (1934) L.R. 61 I.A. 350.",
+      "source_sentence": "In the case now before us the appellants have empted to prove that the debt fell within the term avyavaharika by relying upon the payment order and (1)(1943) L.R. 70 I.A. 171, 176. (2) (1934) L.R. 61 I.A. 350. the findings given by the Deputy Registrar in thepayment order where-the liabity was inter alia based on a breach of trust.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "Shambu Nath Panday v.",
+      "source_sentence": "Counsel for the appellants relied on Shambu Nath Panday v.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
       },
       "in_judgment_text": true
     }

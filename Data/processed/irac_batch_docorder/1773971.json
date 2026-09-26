@@ -1,0 +1,93 @@
+{
+  "doc_id": "1773971",
+  "filename": "Inder_Mohan_Lal_vs_Ramesh_Khanna_on_4_August_1987_1.PDF",
+  "year": "1987",
+  "candidate_sentences": 30,
+  "objects_by_concept": {
+    "Party": 5,
+    "AuthorityCited": 8,
+    "Claim": 9,
+    "Outcome": 1,
+    "Holding": 8
+  },
+  "authority_results": [
+    {
+      "cited": "View taken by the High Court over a number of years",
+      "source_sentence": "Practice & Procedure: View taken by the High Court over a number of years----Should normally be adhered to.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Gupta, [1986] 3 SCC 1",
+      "source_sentence": "Gupta, [1986] 3 SCC 1, referred to 2.",
+      "verification": {
+        "status": "UNVERIFIED",
+        "match_score": 0.0,
+        "reason": "no matching outbound edge in citation metadata for this document"
+      },
+      "in_judgment_text": null
+    },
+    {
+      "cited": "Prem Kumari Khanna, [1981] 1 SCR 281",
+      "source_sentence": "Prem Kumari Khanna, [1981] 1 SCR 281, referred to.",
+      "verification": {
+        "status": "VERIFIED",
+        "match_score": 1.0,
+        "matched_cited_doc_id": "1211323",
+        "matched_cited_text": "S.B. Noronah v. Prem Kumari Khanna",
+        "n_matching_edges": 1
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Inder Sain Minocha, [1982] 2 Rent Control Reporter 392",
+      "source_sentence": "Inder Sain Minocha, [1982] 2 Rent Control Reporter 392, approved. 4.2 It has been consistently held by the Delhi High Court that s. 21 is a code by itself, that the order of permission is itself an authority and that no lease was necessary.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "there was any requirement of any lease or any agreement subsequent to the order and the same required registration",
+      "source_sentence": "This view has been acted upon for long and trans- actions have been completed in the Union Territory on the basis of permission and it was never doubted that there was any requirement of any lease or any agreement subsequent to the order and the same required registration.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "view taken Inder Mohan Lal vs Ramesh Khanna on 4 August, 1987",
+      "source_sentence": "The view taken Inder Mohan Lal vs Ramesh Khanna on 4 August, 1987 Indian Kanoon - http://indiankanoon.org/doc/1773971/ 3 by the High Court over a number of years should normally be adhered to and not to be disturbed.",
+      "verification": {
+        "status": "SELF_REFERENCE",
+        "reason": "matches the citing judgment's own title, not an outbound citation"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "Shiv Charan Das Mathur, [1976] 8 Rent Control Reporter 703",
+      "source_sentence": "Shiv Charan Das Mathur, [1976] 8 Rent Control Reporter 703, referred to.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    },
+    {
+      "cited": "respondent",
+      "source_sentence": "The Rent Controller after recording the statements of the appellant and the respondent made an order permitting creation of limited tenancy only for a period of two years for residential purposes to which the respondent had agreed upon.",
+      "verification": {
+        "status": "REJECTED_NOT_A_CASE",
+        "reason": "no v./vs. connector or law-reporter citation -- likely a grounding false positive, not a genuine citation candidate"
+      },
+      "in_judgment_text": true
+    }
+  ],
+  "decade": "1980",
+  "n_real_edges": 17
+}
