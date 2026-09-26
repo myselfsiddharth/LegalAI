@@ -1,0 +1,1610 @@
+{
+  "queries": 25,
+  "k": 20,
+  "model": "llama4-scout-17b",
+  "facts_chars": 2000,
+  "summary": {
+    "grounded": {
+      "proposed": 61,
+      "certified": 61,
+      "refused": 0,
+      "refused_but_real_case": 0,
+      "refused_resolves_to_nothing": 0,
+      "groundedness": 1.0,
+      "certified_really_cited": 8,
+      "precision_of_certified": 0.1311,
+      "fabrication_rate": 0.0
+    },
+    "closed_book": {
+      "proposed": 61,
+      "certified": 3,
+      "refused": 58,
+      "refused_but_real_case": 12,
+      "refused_resolves_to_nothing": 46,
+      "groundedness": 0.0492,
+      "certified_really_cited": 1,
+      "precision_of_certified": 0.3333,
+      "fabrication_rate": 0.7541
+    }
+  },
+  "per_case": {
+    "grounded": [
+      {
+        "doc_id": "1067714",
+        "year": 2000,
+        "n_truth": 3,
+        "authorities": [
+          {
+            "cited": "Gafoora And Anr. vs Deputy Director Of Consolidation, ...",
+            "status": "CERTIFIED",
+            "doc_id": "409520",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "1132403",
+        "year": 2000,
+        "n_truth": 4,
+        "authorities": [
+          {
+            "cited": "Power Control Appliances vs Sumeet Machines Pvt. Ltd",
+            "status": "CERTIFIED",
+            "doc_id": "1965879",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": true
+          },
+          {
+            "cited": "Colgate Palmolive (India) Ltd vs Hindustan Lever Ltd",
+            "status": "CERTIFIED",
+            "doc_id": "1722050",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": true
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "113663",
+        "year": 2000,
+        "n_truth": 13,
+        "authorities": [
+          {
+            "cited": "State Of Uttar Pradesh vs Moti Ram And Anr. Etc. Etc",
+            "status": "CERTIFIED",
+            "doc_id": "172188",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          },
+          {
+            "cited": "Regional Director, E.S.I Corpn. And Anr vs Francis De Costa And Anr",
+            "status": "CERTIFIED",
+            "doc_id": "1587160",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "140248433",
+        "year": 2000,
+        "n_truth": 3,
+        "authorities": [
+          {
+            "cited": "E. P. Royappa vs State Of Tamil Nadu & Anr",
+            "status": "CERTIFIED",
+            "doc_id": "1327287",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          },
+          {
+            "cited": "S_P_Gupta_vs_President_Of_India_And_Ors_on_30_December_1981",
+            "status": "CERTIFIED",
+            "doc_id": "1294854",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          },
+          {
+            "cited": "Union_Of_India_And_Another_vs_Tulsiram_Patel_And_Others_on_11_July_1985",
+            "status": "CERTIFIED",
+            "doc_id": "1134697",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "1463760",
+        "year": 2000,
+        "n_truth": 3,
+        "authorities": [],
+        "irac_present": []
+      },
+      {
+        "doc_id": "1543623",
+        "year": 2000,
+        "n_truth": 3,
+        "authorities": [
+          {
+            "cited": "A.P. Pollution Control Board vs Prof.M.V.Nayudu (Retd.) & Others",
+            "status": "CERTIFIED",
+            "doc_id": "764031",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": true
+          },
+          {
+            "cited": "M.C. Mehta vs Union Of India & Others",
+            "status": "CERTIFIED",
+            "doc_id": "1208005",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "166442",
+        "year": 2000,
+        "n_truth": 4,
+        "authorities": [
+          {
+            "cited": "H.M.T. House Building Co-Op. Society vs Syed Khader & Ors",
+            "status": "CERTIFIED",
+            "doc_id": "562",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": true
+          },
+          {
+            "cited": "S_Vasudeva_Etc_Etc_vs_State_Of_Karnataka_And_Ors_on_30_March_1993",
+            "status": "CERTIFIED",
+            "doc_id": "1982415",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          },
+          {
+            "cited": "M.I. Builders Pvt. Ltd vs Radhey Shyam Sahu And Others",
+            "status": "CERTIFIED",
+            "doc_id": "1937304",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "1742737",
+        "year": 2000,
+        "n_truth": 3,
+        "authorities": [
+          {
+            "cited": "Gulab_Abbas_Ors_vs_State_Of_U_P_Ors_on_3_November_1981",
+            "status": "CERTIFIED",
+            "doc_id": "1203298",
+            "match": "parties",
+            "score": 0.97,
+            "really_cited": false
+          },
+          {
+            "cited": "Mohammad Shah vs Fasihuddin Ansari And Ors.",
+            "status": "CERTIFIED",
+            "doc_id": "449676",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          },
+          {
+            "cited": "Syed_Mohd_Salie_Labbai_Dead_By_L_Rs_vs_Mohd_Hanifs_Dead_By_L_Rs_And_Ors_on_22_March_1976",
+            "status": "CERTIFIED",
+            "doc_id": "1651599",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "176261373",
+        "year": 2000,
+        "n_truth": 7,
+        "authorities": [
+          {
+            "cited": "State_Of_Kerala_vs_M_K_Krishnan_Nair_Ors_Andk",
+            "status": "CERTIFIED",
+            "doc_id": "1088007",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          },
+          {
+            "cited": "Indra_Sawhney_Etc_Etc_vs_Union_Of_India_And_Others_Etc_Etc",
+            "status": "CERTIFIED",
+            "doc_id": "1363234",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": true
+          },
+          {
+            "cited": "Ashwani Kumar & Ors vs State Of Bihar & Ors",
+            "status": "CERTIFIED",
+            "doc_id": "650618",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          },
+          {
+            "cited": "State_Of_Himachal_Pradesh_And_Anr_vs_Kailash_Chand_Mahajan_And_Ors_on_20_February_1992",
+            "status": "CERTIFIED",
+            "doc_id": "311809",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "1842039",
+        "year": 2000,
+        "n_truth": 3,
+        "authorities": [
+          {
+            "cited": "Gurunath Alias Bhimaji vs Kamalabai, Kom Kenchangaudanadgaudar",
+            "status": "CERTIFIED",
+            "doc_id": "661850",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          },
+          {
+            "cited": "Shri Kishori Lal vs Mst. Chaltibai",
+            "status": "CERTIFIED",
+            "doc_id": "1359532",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          },
+          {
+            "cited": "Bhagwan Dayal vs Mst. Reoti Devi",
+            "status": "CERTIFIED",
+            "doc_id": "1983017",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          },
+          {
+            "cited": "Angurbala Mullick vs Debabrata Mullick",
+            "status": "CERTIFIED",
+            "doc_id": "1652416",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          },
+          {
+            "cited": "Guramma_Bhratar_Chanbasappa_Deshmukh_vs_Malappa_on_19_August_1963",
+            "status": "CERTIFIED",
+            "doc_id": "781769",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "1865062",
+        "year": 2000,
+        "n_truth": 3,
+        "authorities": [],
+        "irac_present": []
+      },
+      {
+        "doc_id": "1875448",
+        "year": 2000,
+        "n_truth": 4,
+        "authorities": [
+          {
+            "cited": "Bangalore_Water_Supply_Sewerage_vs_R_Rajappa_Others_on_21_February_1978",
+            "status": "CERTIFIED",
+            "doc_id": "1149369",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "1940266",
+        "year": 2000,
+        "n_truth": 3,
+        "authorities": [
+          {
+            "cited": "L. Chandra Kumar vs Union Of India And Others on 18 March 1997",
+            "status": "CERTIFIED",
+            "doc_id": "1152518",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          },
+          {
+            "cited": "Prakash Amichand Shah vs State Of Gujarat Ors on 20 December 1985",
+            "status": "CERTIFIED",
+            "doc_id": "1440961",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "281568",
+        "year": 2000,
+        "n_truth": 10,
+        "authorities": [
+          {
+            "cited": "India Cement Ltd vs State Of Tamil Nadu Etc",
+            "status": "CERTIFIED",
+            "doc_id": "1907642",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": true
+          },
+          {
+            "cited": "B_R_Enterprises_Etc_Etc_vs_State_Of_U_P_And_Grs_Etc__Etc_on_7_May_1999",
+            "status": "CERTIFIED",
+            "doc_id": "243782",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          },
+          {
+            "cited": "State_Of_Haryana_Anr_vs_Chanan_Mal_Etc_on_18_March_1976",
+            "status": "CERTIFIED",
+            "doc_id": "1201636",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "302205",
+        "year": 2000,
+        "n_truth": 3,
+        "authorities": [
+          {
+            "cited": "S_Vasudeva_Etc_Etc_vs_State_Of_Karnataka_And_Ors_on_30_March_1993",
+            "status": "CERTIFIED",
+            "doc_id": "1982415",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          },
+          {
+            "cited": "K. Narendra vs Riviera Apartments (P) Ltd",
+            "status": "CERTIFIED",
+            "doc_id": "580446",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "462163",
+        "year": 2000,
+        "n_truth": 4,
+        "authorities": [
+          {
+            "cited": "M.I. Builders Pvt. Ltd vs Radhey Shyam Sahu And Others",
+            "status": "CERTIFIED",
+            "doc_id": "1937304",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          },
+          {
+            "cited": "Devi Singh vs Municipal Corporation, Hyderabad",
+            "status": "CERTIFIED",
+            "doc_id": "704948",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          },
+          {
+            "cited": "Fruit And Vegetable Merchants Union vs Delhi Improvement Trust",
+            "status": "CERTIFIED",
+            "doc_id": "1302911",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "53543700",
+        "year": 2000,
+        "n_truth": 3,
+        "authorities": [
+          {
+            "cited": "The_Chairman_Railway_Board_Ors_vs_Mrs_Chandrima_Das_Ors_on_28_January_2000",
+            "status": "CERTIFIED",
+            "doc_id": "113663",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          },
+          {
+            "cited": "Union Carbide Corporation Etc. Etc vs Union Of India Etc. Etc",
+            "status": "CERTIFIED",
+            "doc_id": "27098883",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "677551",
+        "year": 2000,
+        "n_truth": 3,
+        "authorities": [
+          {
+            "cited": "Shri Ram Narain vs The Simla Banking & Industrial ...",
+            "status": "CERTIFIED",
+            "doc_id": "1199724",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": true
+          },
+          {
+            "cited": "National_Textile_Workers_vs_P_R_Ramkrishnan_And_Others_on_10_December_1982",
+            "status": "CERTIFIED",
+            "doc_id": "800950",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          },
+          {
+            "cited": "J_K_Bombay_P_Ltd_vs_New_Kaiser_I_Hind_Spg_Wvg_Co_Ltd_on_22_November_1968",
+            "status": "CERTIFIED",
+            "doc_id": "960821",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          },
+          {
+            "cited": "M. K. Ranganathan And Another vs Government Of Madras And Others",
+            "status": "CERTIFIED",
+            "doc_id": "1126538",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          },
+          {
+            "cited": "State_Of_Punjab_vs_Okara_Grain_Buyers_Syndicate_Ltd_And_on_15_November_1963",
+            "status": "CERTIFIED",
+            "doc_id": "1764677",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "767586",
+        "year": 2000,
+        "n_truth": 7,
+        "authorities": [
+          {
+            "cited": "Bengal Immunity Co. Ltd vs State Of Bihar & Ors",
+            "status": "CERTIFIED",
+            "doc_id": "1629830",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          },
+          {
+            "cited": "The Automobile Transport Rajasthan vs The State Of Rajasthan And Others",
+            "status": "CERTIFIED",
+            "doc_id": "304499",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "78791",
+        "year": 2000,
+        "n_truth": 3,
+        "authorities": [
+          {
+            "cited": "M.I. Builders Pvt. Ltd vs Radhey Shyam Sahu And Others",
+            "status": "CERTIFIED",
+            "doc_id": "1937304",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          },
+          {
+            "cited": "Sudarsan Trading Co vs Govt. Of Kerala & Anr",
+            "status": "CERTIFIED",
+            "doc_id": "588099",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          },
+          {
+            "cited": "Regional Director, E.S.I Corpn. And Anr vs Francis De Costa And Anr",
+            "status": "CERTIFIED",
+            "doc_id": "1587160",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "808569",
+        "year": 2000,
+        "n_truth": 3,
+        "authorities": [
+          {
+            "cited": "Gujarat Electricity Board,Thermal ... vs Hind Mazdoor Sabha & Ors",
+            "status": "CERTIFIED",
+            "doc_id": "366376",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          },
+          {
+            "cited": "Air_India_Etc_Etc_vs_Nergesh_Meerza_Ors_Etc_Etc_on_28_August_1981",
+            "status": "CERTIFIED",
+            "doc_id": "1903603",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          },
+          {
+            "cited": "Bandhua_Mukti_Morcha_vs_Union_Of_India_Others_on_16_December_1983",
+            "status": "CERTIFIED",
+            "doc_id": "595099",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "840463",
+        "year": 2000,
+        "n_truth": 3,
+        "authorities": [
+          {
+            "cited": "S_P_Gupta_vs_Union_Of_India_Anr_on_30_December_1981",
+            "status": "CERTIFIED",
+            "doc_id": "112850760",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          },
+          {
+            "cited": "Supreme_Court_Advocates_On_Record_vs_Union_Of_India_on_6_October_1993",
+            "status": "CERTIFIED",
+            "doc_id": "753224",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "928028",
+        "year": 2000,
+        "n_truth": 4,
+        "authorities": [
+          {
+            "cited": "Machhi Singh And Others vs State Of Punjab",
+            "status": "CERTIFIED",
+            "doc_id": "545301",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          },
+          {
+            "cited": "Bheru Singh vs State Of Rajasthan",
+            "status": "CERTIFIED",
+            "doc_id": "1706300",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "1037196",
+        "year": 2001,
+        "n_truth": 3,
+        "authorities": [
+          {
+            "cited": "State_Of_Bihar_Anr_vs_Bal_Mukund_Sah_Ors_on_14_March_2000",
+            "status": "CERTIFIED",
+            "doc_id": "176261373",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          },
+          {
+            "cited": "K_V_Subba_Rao_&_Ors_Etc_vs_Government_Of_Andhra_Pradesh_&_Ors",
+            "status": "CERTIFIED",
+            "doc_id": "1999664",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": true
+          },
+          {
+            "cited": "Col_A_S_Iyer_Ors_Etc_vs_V_Balasubramanyam_Ors_on_24_October_1979",
+            "status": "CERTIFIED",
+            "doc_id": "1561899",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "1047084",
+        "year": 2001,
+        "n_truth": 3,
+        "authorities": [
+          {
+            "cited": "Municipal Council, Jodhpur vs Parekh Automobiles Ltd. And Ors",
+            "status": "CERTIFIED",
+            "doc_id": "1364929",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          },
+          {
+            "cited": "New Delhi Municipal Committee vs State Of Punjab Etc. Etc",
+            "status": "CERTIFIED",
+            "doc_id": "1367950",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          },
+          {
+            "cited": "The Municipal Corporation For City Of ... vs Bharat Forge Co. Ltd. & Ors",
+            "status": "CERTIFIED",
+            "doc_id": "90876",
+            "match": "verbatim",
+            "score": 1.0,
+            "really_cited": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      }
+    ],
+    "closed_book": [
+      {
+        "doc_id": "1067714",
+        "year": 2000,
+        "n_truth": 3,
+        "authorities": [
+          {
+            "cited": "State of Uttar Pradesh v. Madho Prasad",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          },
+          {
+            "cited": "Raghubir Singh v. State of Uttar Pradesh",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          },
+          {
+            "cited": "Smt. Krishna Kumar Singh v. State of Uttar Pradesh",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "1132403",
+        "year": 2000,
+        "n_truth": 4,
+        "authorities": [
+          {
+            "cited": "<Hiralal Parbhai v. Templeton Spice Extracts and Chemicals Ltd. 1985 SCC (5) 306>",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          },
+          {
+            "cited": "<Rustom Cavasjee Cooper v. Union of India 1962 SCR 821>",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": true,
+            "corpus_doc_id": "100291026",
+            "really_cited": false
+          },
+          {
+            "cited": "<Kerala State Trading Corporation Ltd. v. M/s. Lilly Devasia 2006 SCC (6) 524>",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "113663",
+        "year": 2000,
+        "n_truth": 13,
+        "authorities": [
+          {
+            "cited": "<Kasturirangan v. State of Tamil Nadu>",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          },
+          {
+            "cited": "<R.P. Kapur v. State of Punjab>",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": true,
+            "corpus_doc_id": "101620228",
+            "really_cited": false
+          },
+          {
+            "cited": "<State of Maharashtra v. Chandraprakash Kewalchand Jain>",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "140248433",
+        "year": 2000,
+        "n_truth": 3,
+        "authorities": [
+          {
+            "cited": "<Union of India v. Shyama Pada Sidhanta>",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          },
+          {
+            "cited": "<Jagbir Singh v. State of Haryana> (1981) 1 SCC 420",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "1463760",
+        "year": 2000,
+        "n_truth": 3,
+        "authorities": [
+          {
+            "cited": "<State of Punjab v. Prithipal Singh, (1992) 1 SCC 47>",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          },
+          {
+            "cited": "<Union of India v. Shyama Pada Sidhanta, (1991) 3 SCC 417>",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "1543623",
+        "year": 2000,
+        "n_truth": 3,
+        "authorities": [
+          {
+            "cited": "Vikas Upadhyay v. Union of India (2000(7) Scale 34)",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          },
+          {
+            "cited": "M.C. Mehta v. Union of India (1987) 1 SCC 597 - This case emphasised the need for environmental protection and the importance of considering the potential impact of industrial activities on the environment.",
+            "status": "CERTIFIED",
+            "doc_id": "507684",
+            "match": "parties",
+            "score": 1.0,
+            "really_cited": false
+          },
+          {
+            "cited": "Smt. Pushpa Meena v. Shahla Khan (2003) 7 SCC 530 - This case reiterated the importance of protecting the right to clean drinking water under Article 21 of the Constitution.",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "166442",
+        "year": 2000,
+        "n_truth": 4,
+        "authorities": [
+          {
+            "cited": "State of Maharashtra v. Manoharlal and Ors. (1969) 2 SCC 786",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          },
+          {
+            "cited": "Somavath Ammanna v. State of Mysore (1971) 2 SCC 887",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          },
+          {
+            "cited": "U.P. Jal Sansthan v. Daya Shankar Rai and Anr. (2005) 5 SCC 124",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "1742737",
+        "year": 2000,
+        "n_truth": 3,
+        "authorities": [
+          {
+            "cited": "Rustom Cavasjee Cooper v. Union of India",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": true,
+            "corpus_doc_id": "100291026",
+            "really_cited": false
+          },
+          {
+            "cited": "BhauRam v. Baijnath Singh",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": true,
+            "corpus_doc_id": "1172174",
+            "really_cited": false
+          },
+          {
+            "cited": "Smt. Pushpa Meena v. Shahla Khan",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "176261373",
+        "year": 2000,
+        "n_truth": 7,
+        "authorities": [
+          {
+            "cited": "Rajasthan State Judicial Service Association v. Union of India",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          },
+          {
+            "cited": "Supreme General Films Exchange Ltd. v. His Highness Sawai Man Singhji Maharaja of Jaipur",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "1842039",
+        "year": 2000,
+        "n_truth": 3,
+        "authorities": [
+          {
+            "cited": "<State of Punjab v. Ram Lal, (2001) 2 SCC 372>",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          },
+          {
+            "cited": "<Sheikh Sadiq v. State of U.P., (2001) 7 SCC 688>",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          },
+          {
+            "cited": "<Bhagirath v. State of M.P., (2003) 5 SCC 337>",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": true,
+            "corpus_doc_id": "1513913",
+            "really_cited": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "1865062",
+        "year": 2000,
+        "n_truth": 3,
+        "authorities": [
+          {
+            "cited": "Madhya Pradesh Electricicity Management Co. Ltd. v.  M/s. Hindustan Zinc Ltd. <(2004) 9 SCC 498>",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          },
+          {
+            "cited": "Tamil Nadu State Electricity Board v.  M/s. JSW Energy Ltd. <(2011) 11 SCC 713>",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "1875448",
+        "year": 2000,
+        "n_truth": 4,
+        "authorities": [
+          {
+            "cited": "Associated Cement Company Ltd. v. K.N. Agrawal and Ors.",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          },
+          {
+            "cited": "South India Paper Mills Ltd. v. Their Workmen",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "1940266",
+        "year": 2000,
+        "n_truth": 3,
+        "authorities": [
+          {
+            "cited": "Kunhayammed v. State of Kerala",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": true,
+            "corpus_doc_id": "1940266",
+            "really_cited": false
+          },
+          {
+            "cited": "Union of India v. Dhanesh Kumar",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "281568",
+        "year": 2000,
+        "n_truth": 10,
+        "authorities": [
+          {
+            "cited": "<State of Bihar v. Trivedi & Sons>",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          },
+          {
+            "cited": "<Mansoor Alam v. State of Bihar>",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "302205",
+        "year": 2000,
+        "n_truth": 3,
+        "authorities": [
+          {
+            "cited": "State of Maharashtra v. Narayanrao Shripatirao Desai",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          },
+          {
+            "cited": "Rameshwar Singh v. State of Bihar",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": true,
+            "corpus_doc_id": "1253855",
+            "really_cited": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "462163",
+        "year": 2000,
+        "n_truth": 4,
+        "authorities": [
+          {
+            "cited": "State of Maharashtra v. Manoharlal and Ors. (1969) 2 SCC 786",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          },
+          {
+            "cited": "Someshwar Singh v. State of Bihar and Ors. (1967) 1 SCR 771",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          },
+          {
+            "cited": "Rustom Cavasjee Cooper v. Union of India (1970) 2 SCC 519",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": true,
+            "corpus_doc_id": "100291026",
+            "really_cited": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "53543700",
+        "year": 2000,
+        "n_truth": 3,
+        "authorities": [
+          {
+            "cited": "Lakshman Balachandra v. State of Maharashtra",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          },
+          {
+            "cited": "Jacob Mathew v. State of Punjab",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          },
+          {
+            "cited": "Dr. S. S. Kant v. State of U.P.",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "677551",
+        "year": 2000,
+        "n_truth": 3,
+        "authorities": [
+          {
+            "cited": "Union of India v. Swami Saran Ramdas",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          },
+          {
+            "cited": "D.C. Agrawal v. State Bank of India",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": true,
+            "corpus_doc_id": "105925409",
+            "really_cited": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "767586",
+        "year": 2000,
+        "n_truth": 7,
+        "authorities": [
+          {
+            "cited": "A. G. T. Exports v. A. P. State Government <https://indiankanoon.org/doc/1838804/>",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          },
+          {
+            "cited": "Bharat Heavy Electricals Ltd. v. State of U.P. <https://indiankanoon.org/doc/1735332/>",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          },
+          {
+            "cited": "J. K. Synthetics Ltd. v. State of U.P. <https://indiankanoon.org/doc/1905944/>",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "78791",
+        "year": 2000,
+        "n_truth": 3,
+        "authorities": [
+          {
+            "cited": "Rustom Cavasjee Cooper v. Union of India",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": true,
+            "corpus_doc_id": "100291026",
+            "really_cited": false
+          },
+          {
+            "cited": "Smt. Pushpa Meena v. Shahla Khan",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "808569",
+        "year": 2000,
+        "n_truth": 3,
+        "authorities": [
+          {
+            "cited": "Municipal Corporation of Delhi v. Female Workers (Muster Roll) <https://indiankanoon.org/doc/1833514/>",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          },
+          {
+            "cited": "Samarendra Nath Srivastava v. State of U.P. <https://indiankanoon.org/doc/1147145/>",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          },
+          {
+            "cited": "J.K. Synthetics Ltd. v. K.P. Agrawal <https://indiankanoon.org/doc/1046354/>",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "840463",
+        "year": 2000,
+        "n_truth": 3,
+        "authorities": [
+          {
+            "cited": "<State of Punjab v. Ram Pal Singh> (1990) 1 SCC 580",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": true,
+            "corpus_doc_id": "15880",
+            "really_cited": false
+          },
+          {
+            "cited": "<Rustom Cavasjee Cooper v. Union of India> (1970) 1 SCC 186",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": true,
+            "corpus_doc_id": "100291026",
+            "really_cited": false
+          },
+          {
+            "cited": "<Associated Cement Company Ltd. v. Union of India> (1969) 2 SCC 268",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "928028",
+        "year": 2000,
+        "n_truth": 4,
+        "authorities": [
+          {
+            "cited": "Dhananjoy Chatterjee v. State of West Bengal",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          },
+          {
+            "cited": "Raghubir v. State of Rajasthan",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          },
+          {
+            "cited": "Khemu v. State of Rajasthan",
+            "status": "CERTIFIED",
+            "doc_id": "1706300",
+            "match": "parties",
+            "score": 1.0,
+            "really_cited": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "1037196",
+        "year": 2001,
+        "n_truth": 3,
+        "authorities": [
+          {
+            "cited": "Wing Commander J. Government of Andhra Pradesh and others v. Government of Andhra Pradesh and others",
+            "status": "CERTIFIED",
+            "doc_id": "1999664",
+            "match": "parties",
+            "score": 1.0,
+            "really_cited": true
+          },
+          {
+            "cited": "K. Government v. P. Charles And Ors.",
+            "status": "REFUSED",
+            "reason": "does not resolve to any retrieved candidate",
+            "score": 0.0,
+            "resolves_in_corpus": false
+          }
+        ],
+        "irac_present": [
+          "issue",
+          "rule",
+          "application",
+          "conclusion"
+        ]
+      },
+      {
+        "doc_id": "1047084",
+        "year": 2001,
+        "n_truth": 3,
+        "authorities": [],
+        "irac_present": []
+      }
+    ]
+  }
+}

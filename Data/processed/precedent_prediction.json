@@ -10,942 +10,22 @@
     "@100": 0.2368
   },
   "arms": {
-    "full": {
-      "query_chars": null,
-      "recall": {
-        "@10": 0.3102,
-        "@50": 0.515,
-        "@100": 0.6241
-      },
-      "precision": {
-        "@10": 0.165,
-        "@50": 0.0548,
-        "@100": 0.0332
-      },
-      "hits": {
-        "@10": 165,
-        "@50": 274,
-        "@100": 332
-      },
-      "per_case": [
-        {
-          "doc_id": "1067714",
-          "year": 2000,
-          "reachable_authorities": 3,
-          "all_authorities": 5,
-          "hits@10": 0,
-          "hits@50": 0,
-          "hits@100": 0
-        },
-        {
-          "doc_id": "1132403",
-          "year": 2000,
-          "reachable_authorities": 4,
-          "all_authorities": 15,
-          "hits@10": 4,
-          "hits@50": 4,
-          "hits@100": 4
-        },
-        {
-          "doc_id": "113663",
-          "year": 2000,
-          "reachable_authorities": 13,
-          "all_authorities": 35,
-          "hits@10": 2,
-          "hits@50": 8,
-          "hits@100": 8
-        },
-        {
-          "doc_id": "140248433",
-          "year": 2000,
-          "reachable_authorities": 3,
-          "all_authorities": 22,
-          "hits@10": 0,
-          "hits@50": 0,
-          "hits@100": 1
-        },
-        {
-          "doc_id": "1463760",
-          "year": 2000,
-          "reachable_authorities": 3,
-          "all_authorities": 19,
-          "hits@10": 0,
-          "hits@50": 0,
-          "hits@100": 0
-        },
-        {
-          "doc_id": "1543623",
-          "year": 2000,
-          "reachable_authorities": 3,
-          "all_authorities": 3,
-          "hits@10": 2,
-          "hits@50": 3,
-          "hits@100": 3
-        },
-        {
-          "doc_id": "166442",
-          "year": 2000,
-          "reachable_authorities": 4,
-          "all_authorities": 13,
-          "hits@10": 1,
-          "hits@50": 3,
-          "hits@100": 3
-        },
-        {
-          "doc_id": "1742737",
-          "year": 2000,
-          "reachable_authorities": 3,
-          "all_authorities": 6,
-          "hits@10": 0,
-          "hits@50": 0,
-          "hits@100": 0
-        },
-        {
-          "doc_id": "176261373",
-          "year": 2000,
-          "reachable_authorities": 7,
-          "all_authorities": 25,
-          "hits@10": 4,
-          "hits@50": 5,
-          "hits@100": 5
-        },
-        {
-          "doc_id": "1842039",
-          "year": 2000,
-          "reachable_authorities": 3,
-          "all_authorities": 5,
-          "hits@10": 1,
-          "hits@50": 2,
-          "hits@100": 3
-        },
-        {
-          "doc_id": "1865062",
-          "year": 2000,
-          "reachable_authorities": 3,
-          "all_authorities": 13,
-          "hits@10": 0,
-          "hits@50": 1,
-          "hits@100": 1
-        },
-        {
-          "doc_id": "1875448",
-          "year": 2000,
-          "reachable_authorities": 4,
-          "all_authorities": 6,
-          "hits@10": 3,
-          "hits@50": 4,
-          "hits@100": 4
-        },
-        {
-          "doc_id": "1940266",
-          "year": 2000,
-          "reachable_authorities": 3,
-          "all_authorities": 20,
-          "hits@10": 0,
-          "hits@50": 0,
-          "hits@100": 0
-        },
-        {
-          "doc_id": "281568",
-          "year": 2000,
-          "reachable_authorities": 10,
-          "all_authorities": 15,
-          "hits@10": 4,
-          "hits@50": 4,
-          "hits@100": 6
-        },
-        {
-          "doc_id": "302205",
-          "year": 2000,
-          "reachable_authorities": 3,
-          "all_authorities": 3,
-          "hits@10": 2,
-          "hits@50": 2,
-          "hits@100": 2
-        },
-        {
-          "doc_id": "462163",
-          "year": 2000,
-          "reachable_authorities": 4,
-          "all_authorities": 7,
-          "hits@10": 2,
-          "hits@50": 3,
-          "hits@100": 4
-        },
-        {
-          "doc_id": "53543700",
-          "year": 2000,
-          "reachable_authorities": 3,
-          "all_authorities": 6,
-          "hits@10": 2,
-          "hits@50": 3,
-          "hits@100": 3
-        },
-        {
-          "doc_id": "677551",
-          "year": 2000,
-          "reachable_authorities": 3,
-          "all_authorities": 12,
-          "hits@10": 0,
-          "hits@50": 2,
-          "hits@100": 2
-        },
-        {
-          "doc_id": "767586",
-          "year": 2000,
-          "reachable_authorities": 7,
-          "all_authorities": 13,
-          "hits@10": 3,
-          "hits@50": 6,
-          "hits@100": 7
-        },
-        {
-          "doc_id": "78791",
-          "year": 2000,
-          "reachable_authorities": 3,
-          "all_authorities": 9,
-          "hits@10": 3,
-          "hits@50": 3,
-          "hits@100": 3
-        },
-        {
-          "doc_id": "808569",
-          "year": 2000,
-          "reachable_authorities": 3,
-          "all_authorities": 10,
-          "hits@10": 0,
-          "hits@50": 0,
-          "hits@100": 2
-        },
-        {
-          "doc_id": "840463",
-          "year": 2000,
-          "reachable_authorities": 3,
-          "all_authorities": 4,
-          "hits@10": 1,
-          "hits@50": 1,
-          "hits@100": 1
-        },
-        {
-          "doc_id": "928028",
-          "year": 2000,
-          "reachable_authorities": 4,
-          "all_authorities": 15,
-          "hits@10": 1,
-          "hits@50": 2,
-          "hits@100": 3
-        },
-        {
-          "doc_id": "1037196",
-          "year": 2001,
-          "reachable_authorities": 3,
-          "all_authorities": 12,
-          "hits@10": 3,
-          "hits@50": 3,
-          "hits@100": 3
-        },
-        {
-          "doc_id": "1047084",
-          "year": 2001,
-          "reachable_authorities": 3,
-          "all_authorities": 6,
-          "hits@10": 1,
-          "hits@50": 2,
-          "hits@100": 2
-        },
-        {
-          "doc_id": "1072924",
-          "year": 2001,
-          "reachable_authorities": 5,
-          "all_authorities": 5,
-          "hits@10": 3,
-          "hits@50": 3,
-          "hits@100": 4
-        },
-        {
-          "doc_id": "108182",
-          "year": 2001,
-          "reachable_authorities": 11,
-          "all_authorities": 22,
-          "hits@10": 3,
-          "hits@50": 4,
-          "hits@100": 5
-        },
-        {
-          "doc_id": "1224932",
-          "year": 2001,
-          "reachable_authorities": 6,
-          "all_authorities": 10,
-          "hits@10": 2,
-          "hits@50": 2,
-          "hits@100": 2
-        },
-        {
-          "doc_id": "1242930",
-          "year": 2001,
-          "reachable_authorities": 5,
-          "all_authorities": 9,
-          "hits@10": 1,
-          "hits@50": 1,
-          "hits@100": 1
-        },
-        {
-          "doc_id": "139299795",
-          "year": 2001,
-          "reachable_authorities": 4,
-          "all_authorities": 10,
-          "hits@10": 2,
-          "hits@50": 2,
-          "hits@100": 4
-        },
-        {
-          "doc_id": "1444315",
-          "year": 2001,
-          "reachable_authorities": 11,
-          "all_authorities": 21,
-          "hits@10": 4,
-          "hits@50": 5,
-          "hits@100": 6
-        },
-        {
-          "doc_id": "1661153",
-          "year": 2001,
-          "reachable_authorities": 3,
-          "all_authorities": 8,
-          "hits@10": 0,
-          "hits@50": 2,
-          "hits@100": 3
-        },
-        {
-          "doc_id": "1701224",
-          "year": 2001,
-          "reachable_authorities": 6,
-          "all_authorities": 18,
-          "hits@10": 1,
-          "hits@50": 2,
-          "hits@100": 2
-        },
-        {
-          "doc_id": "1737583",
-          "year": 2001,
-          "reachable_authorities": 14,
-          "all_authorities": 28,
-          "hits@10": 6,
-          "hits@50": 9,
-          "hits@100": 11
-        },
-        {
-          "doc_id": "1858757",
-          "year": 2001,
-          "reachable_authorities": 3,
-          "all_authorities": 10,
-          "hits@10": 1,
-          "hits@50": 1,
-          "hits@100": 1
-        },
-        {
-          "doc_id": "1974324",
-          "year": 2001,
-          "reachable_authorities": 3,
-          "all_authorities": 13,
-          "hits@10": 0,
-          "hits@50": 2,
-          "hits@100": 3
-        },
-        {
-          "doc_id": "1998033",
-          "year": 2001,
-          "reachable_authorities": 3,
-          "all_authorities": 9,
-          "hits@10": 1,
-          "hits@50": 1,
-          "hits@100": 1
-        },
-        {
-          "doc_id": "229223",
-          "year": 2001,
-          "reachable_authorities": 5,
-          "all_authorities": 7,
-          "hits@10": 1,
-          "hits@50": 1,
-          "hits@100": 2
-        },
-        {
-          "doc_id": "246132",
-          "year": 2001,
-          "reachable_authorities": 4,
-          "all_authorities": 11,
-          "hits@10": 1,
-          "hits@50": 3,
-          "hits@100": 4
-        },
-        {
-          "doc_id": "27274070",
-          "year": 2001,
-          "reachable_authorities": 4,
-          "all_authorities": 16,
-          "hits@10": 3,
-          "hits@50": 4,
-          "hits@100": 4
-        },
-        {
-          "doc_id": "277653",
-          "year": 2001,
-          "reachable_authorities": 15,
-          "all_authorities": 37,
-          "hits@10": 5,
-          "hits@50": 8,
-          "hits@100": 9
-        },
-        {
-          "doc_id": "406616",
-          "year": 2001,
-          "reachable_authorities": 4,
-          "all_authorities": 7,
-          "hits@10": 3,
-          "hits@50": 4,
-          "hits@100": 4
-        },
-        {
-          "doc_id": "433507",
-          "year": 2001,
-          "reachable_authorities": 3,
-          "all_authorities": 7,
-          "hits@10": 1,
-          "hits@50": 2,
-          "hits@100": 3
-        },
-        {
-          "doc_id": "546691",
-          "year": 2001,
-          "reachable_authorities": 4,
-          "all_authorities": 12,
-          "hits@10": 2,
-          "hits@50": 2,
-          "hits@100": 3
-        },
-        {
-          "doc_id": "581738",
-          "year": 2001,
-          "reachable_authorities": 4,
-          "all_authorities": 16,
-          "hits@10": 2,
-          "hits@50": 3,
-          "hits@100": 3
-        },
-        {
-          "doc_id": "592428",
-          "year": 2001,
-          "reachable_authorities": 4,
-          "all_authorities": 13,
-          "hits@10": 1,
-          "hits@50": 2,
-          "hits@100": 3
-        },
-        {
-          "doc_id": "661966",
-          "year": 2001,
-          "reachable_authorities": 6,
-          "all_authorities": 18,
-          "hits@10": 1,
-          "hits@50": 2,
-          "hits@100": 2
-        },
-        {
-          "doc_id": "749233",
-          "year": 2001,
-          "reachable_authorities": 9,
-          "all_authorities": 13,
-          "hits@10": 3,
-          "hits@50": 6,
-          "hits@100": 7
-        },
-        {
-          "doc_id": "891864",
-          "year": 2001,
-          "reachable_authorities": 3,
-          "all_authorities": 11,
-          "hits@10": 2,
-          "hits@50": 3,
-          "hits@100": 3
-        },
-        {
-          "doc_id": "952963",
-          "year": 2001,
-          "reachable_authorities": 4,
-          "all_authorities": 17,
-          "hits@10": 2,
-          "hits@50": 4,
-          "hits@100": 4
-        },
-        {
-          "doc_id": "965356",
-          "year": 2001,
-          "reachable_authorities": 3,
-          "all_authorities": 5,
-          "hits@10": 1,
-          "hits@50": 2,
-          "hits@100": 2
-        },
-        {
-          "doc_id": "991695",
-          "year": 2001,
-          "reachable_authorities": 3,
-          "all_authorities": 8,
-          "hits@10": 1,
-          "hits@50": 1,
-          "hits@100": 2
-        },
-        {
-          "doc_id": "1189990",
-          "year": 2008,
-          "reachable_authorities": 5,
-          "all_authorities": 19,
-          "hits@10": 1,
-          "hits@50": 2,
-          "hits@100": 3
-        },
-        {
-          "doc_id": "1243245",
-          "year": 2008,
-          "reachable_authorities": 3,
-          "all_authorities": 10,
-          "hits@10": 3,
-          "hits@50": 3,
-          "hits@100": 3
-        },
-        {
-          "doc_id": "1313008",
-          "year": 2008,
-          "reachable_authorities": 14,
-          "all_authorities": 29,
-          "hits@10": 1,
-          "hits@50": 6,
-          "hits@100": 8
-        },
-        {
-          "doc_id": "1491184",
-          "year": 2008,
-          "reachable_authorities": 3,
-          "all_authorities": 5,
-          "hits@10": 2,
-          "hits@50": 2,
-          "hits@100": 3
-        },
-        {
-          "doc_id": "1584447",
-          "year": 2008,
-          "reachable_authorities": 3,
-          "all_authorities": 32,
-          "hits@10": 1,
-          "hits@50": 2,
-          "hits@100": 2
-        },
-        {
-          "doc_id": "1592558",
-          "year": 2008,
-          "reachable_authorities": 5,
-          "all_authorities": 27,
-          "hits@10": 2,
-          "hits@50": 3,
-          "hits@100": 3
-        },
-        {
-          "doc_id": "1673900",
-          "year": 2008,
-          "reachable_authorities": 5,
-          "all_authorities": 22,
-          "hits@10": 0,
-          "hits@50": 1,
-          "hits@100": 1
-        },
-        {
-          "doc_id": "1703207",
-          "year": 2008,
-          "reachable_authorities": 14,
-          "all_authorities": 31,
-          "hits@10": 3,
-          "hits@50": 8,
-          "hits@100": 8
-        },
-        {
-          "doc_id": "176192",
-          "year": 2008,
-          "reachable_authorities": 6,
-          "all_authorities": 16,
-          "hits@10": 1,
-          "hits@50": 4,
-          "hits@100": 4
-        },
-        {
-          "doc_id": "1778691",
-          "year": 2008,
-          "reachable_authorities": 5,
-          "all_authorities": 21,
-          "hits@10": 3,
-          "hits@50": 5,
-          "hits@100": 5
-        },
-        {
-          "doc_id": "1873931",
-          "year": 2008,
-          "reachable_authorities": 7,
-          "all_authorities": 17,
-          "hits@10": 3,
-          "hits@50": 4,
-          "hits@100": 5
-        },
-        {
-          "doc_id": "1894467",
-          "year": 2008,
-          "reachable_authorities": 4,
-          "all_authorities": 15,
-          "hits@10": 1,
-          "hits@50": 2,
-          "hits@100": 3
-        },
-        {
-          "doc_id": "240495",
-          "year": 2008,
-          "reachable_authorities": 6,
-          "all_authorities": 39,
-          "hits@10": 3,
-          "hits@50": 3,
-          "hits@100": 3
-        },
-        {
-          "doc_id": "256224",
-          "year": 2008,
-          "reachable_authorities": 6,
-          "all_authorities": 23,
-          "hits@10": 1,
-          "hits@50": 3,
-          "hits@100": 5
-        },
-        {
-          "doc_id": "28818832",
-          "year": 2008,
-          "reachable_authorities": 5,
-          "all_authorities": 21,
-          "hits@10": 3,
-          "hits@50": 5,
-          "hits@100": 5
-        },
-        {
-          "doc_id": "389917",
-          "year": 2008,
-          "reachable_authorities": 4,
-          "all_authorities": 16,
-          "hits@10": 1,
-          "hits@50": 1,
-          "hits@100": 2
-        },
-        {
-          "doc_id": "572504",
-          "year": 2008,
-          "reachable_authorities": 3,
-          "all_authorities": 6,
-          "hits@10": 2,
-          "hits@50": 2,
-          "hits@100": 2
-        },
-        {
-          "doc_id": "698472",
-          "year": 2008,
-          "reachable_authorities": 5,
-          "all_authorities": 18,
-          "hits@10": 2,
-          "hits@50": 2,
-          "hits@100": 5
-        },
-        {
-          "doc_id": "855552",
-          "year": 2008,
-          "reachable_authorities": 3,
-          "all_authorities": 7,
-          "hits@10": 1,
-          "hits@50": 1,
-          "hits@100": 2
-        },
-        {
-          "doc_id": "913087",
-          "year": 2008,
-          "reachable_authorities": 3,
-          "all_authorities": 11,
-          "hits@10": 2,
-          "hits@50": 2,
-          "hits@100": 3
-        },
-        {
-          "doc_id": "1023183",
-          "year": 2010,
-          "reachable_authorities": 3,
-          "all_authorities": 20,
-          "hits@10": 0,
-          "hits@50": 0,
-          "hits@100": 0
-        },
-        {
-          "doc_id": "1041253",
-          "year": 2010,
-          "reachable_authorities": 3,
-          "all_authorities": 16,
-          "hits@10": 0,
-          "hits@50": 1,
-          "hits@100": 1
-        },
-        {
-          "doc_id": "1049099",
-          "year": 2010,
-          "reachable_authorities": 4,
-          "all_authorities": 6,
-          "hits@10": 0,
-          "hits@50": 0,
-          "hits@100": 0
-        },
-        {
-          "doc_id": "105592",
-          "year": 2010,
-          "reachable_authorities": 7,
-          "all_authorities": 26,
-          "hits@10": 0,
-          "hits@50": 2,
-          "hits@100": 3
-        },
-        {
-          "doc_id": "1062130",
-          "year": 2010,
-          "reachable_authorities": 4,
-          "all_authorities": 12,
-          "hits@10": 1,
-          "hits@50": 1,
-          "hits@100": 1
-        },
-        {
-          "doc_id": "1070490",
-          "year": 2010,
-          "reachable_authorities": 6,
-          "all_authorities": 15,
-          "hits@10": 0,
-          "hits@50": 2,
-          "hits@100": 4
-        },
-        {
-          "doc_id": "1108032",
-          "year": 2010,
-          "reachable_authorities": 7,
-          "all_authorities": 34,
-          "hits@10": 3,
-          "hits@50": 4,
-          "hits@100": 4
-        },
-        {
-          "doc_id": "113789",
-          "year": 2010,
-          "reachable_authorities": 5,
-          "all_authorities": 19,
-          "hits@10": 2,
-          "hits@50": 2,
-          "hits@100": 4
-        },
-        {
-          "doc_id": "1220288",
-          "year": 2010,
-          "reachable_authorities": 11,
-          "all_authorities": 23,
-          "hits@10": 3,
-          "hits@50": 5,
-          "hits@100": 6
-        },
-        {
-          "doc_id": "1271827",
-          "year": 2010,
-          "reachable_authorities": 6,
-          "all_authorities": 12,
-          "hits@10": 3,
-          "hits@50": 3,
-          "hits@100": 3
-        },
-        {
-          "doc_id": "1273595",
-          "year": 2010,
-          "reachable_authorities": 8,
-          "all_authorities": 20,
-          "hits@10": 3,
-          "hits@50": 4,
-          "hits@100": 4
-        },
-        {
-          "doc_id": "1277706",
-          "year": 2010,
-          "reachable_authorities": 5,
-          "all_authorities": 27,
-          "hits@10": 2,
-          "hits@50": 3,
-          "hits@100": 4
-        },
-        {
-          "doc_id": "1329151",
-          "year": 2010,
-          "reachable_authorities": 7,
-          "all_authorities": 37,
-          "hits@10": 1,
-          "hits@50": 2,
-          "hits@100": 2
-        },
-        {
-          "doc_id": "1350793",
-          "year": 2010,
-          "reachable_authorities": 6,
-          "all_authorities": 27,
-          "hits@10": 0,
-          "hits@50": 0,
-          "hits@100": 2
-        },
-        {
-          "doc_id": "1359232",
-          "year": 2010,
-          "reachable_authorities": 3,
-          "all_authorities": 8,
-          "hits@10": 0,
-          "hits@50": 1,
-          "hits@100": 1
-        },
-        {
-          "doc_id": "1364924",
-          "year": 2010,
-          "reachable_authorities": 8,
-          "all_authorities": 21,
-          "hits@10": 2,
-          "hits@50": 5,
-          "hits@100": 5
-        },
-        {
-          "doc_id": "1497837",
-          "year": 2010,
-          "reachable_authorities": 3,
-          "all_authorities": 4,
-          "hits@10": 0,
-          "hits@50": 0,
-          "hits@100": 0
-        },
-        {
-          "doc_id": "1513913",
-          "year": 2010,
-          "reachable_authorities": 5,
-          "all_authorities": 19,
-          "hits@10": 3,
-          "hits@50": 3,
-          "hits@100": 5
-        },
-        {
-          "doc_id": "1515299",
-          "year": 2010,
-          "reachable_authorities": 6,
-          "all_authorities": 66,
-          "hits@10": 0,
-          "hits@50": 2,
-          "hits@100": 4
-        },
-        {
-          "doc_id": "15173",
-          "year": 2010,
-          "reachable_authorities": 5,
-          "all_authorities": 18,
-          "hits@10": 3,
-          "hits@50": 3,
-          "hits@100": 3
-        },
-        {
-          "doc_id": "155260",
-          "year": 2010,
-          "reachable_authorities": 3,
-          "all_authorities": 6,
-          "hits@10": 1,
-          "hits@50": 1,
-          "hits@100": 1
-        },
-        {
-          "doc_id": "1571903",
-          "year": 2010,
-          "reachable_authorities": 3,
-          "all_authorities": 7,
-          "hits@10": 0,
-          "hits@50": 1,
-          "hits@100": 2
-        },
-        {
-          "doc_id": "1613762",
-          "year": 2010,
-          "reachable_authorities": 9,
-          "all_authorities": 21,
-          "hits@10": 0,
-          "hits@50": 2,
-          "hits@100": 3
-        },
-        {
-          "doc_id": "161999",
-          "year": 2010,
-          "reachable_authorities": 16,
-          "all_authorities": 73,
-          "hits@10": 6,
-          "hits@50": 13,
-          "hits@100": 14
-        },
-        {
-          "doc_id": "1647965",
-          "year": 2010,
-          "reachable_authorities": 6,
-          "all_authorities": 15,
-          "hits@10": 1,
-          "hits@50": 3,
-          "hits@100": 3
-        },
-        {
-          "doc_id": "1668065",
-          "year": 2010,
-          "reachable_authorities": 13,
-          "all_authorities": 30,
-          "hits@10": 1,
-          "hits@50": 3,
-          "hits@100": 4
-        },
-        {
-          "doc_id": "168450156",
-          "year": 2010,
-          "reachable_authorities": 4,
-          "all_authorities": 23,
-          "hits@10": 2,
-          "hits@50": 4,
-          "hits@100": 4
-        },
-        {
-          "doc_id": "1689806",
-          "year": 2010,
-          "reachable_authorities": 3,
-          "all_authorities": 9,
-          "hits@10": 0,
-          "hits@50": 1,
-          "hits@100": 2
-        }
-      ]
-    },
     "2000c": {
       "query_chars": 2000,
       "recall": {
-        "@10": 0.156,
-        "@50": 0.3045,
-        "@100": 0.4211
+        "@10": 0.1617,
+        "@50": 0.3365,
+        "@100": 0.4135
       },
       "precision": {
-        "@10": 0.083,
-        "@50": 0.0324,
-        "@100": 0.0224
+        "@10": 0.086,
+        "@50": 0.0358,
+        "@100": 0.022
       },
       "hits": {
-        "@10": 83,
-        "@50": 162,
-        "@100": 224
+        "@10": 86,
+        "@50": 179,
+        "@100": 220
       },
       "per_case": [
         {
@@ -953,7 +33,7 @@
           "year": 2000,
           "reachable_authorities": 3,
           "all_authorities": 5,
-          "hits@10": 0,
+          "hits@10": 1,
           "hits@50": 1,
           "hits@100": 2
         },
@@ -962,7 +42,7 @@
           "year": 2000,
           "reachable_authorities": 4,
           "all_authorities": 15,
-          "hits@10": 2,
+          "hits@10": 4,
           "hits@50": 4,
           "hits@100": 4
         },
@@ -971,9 +51,9 @@
           "year": 2000,
           "reachable_authorities": 13,
           "all_authorities": 35,
-          "hits@10": 0,
-          "hits@50": 1,
-          "hits@100": 2
+          "hits@10": 1,
+          "hits@50": 3,
+          "hits@100": 5
         },
         {
           "doc_id": "140248433",
@@ -981,8 +61,8 @@
           "reachable_authorities": 3,
           "all_authorities": 22,
           "hits@10": 0,
-          "hits@50": 0,
-          "hits@100": 0
+          "hits@50": 1,
+          "hits@100": 1
         },
         {
           "doc_id": "1463760",
@@ -998,7 +78,7 @@
           "year": 2000,
           "reachable_authorities": 3,
           "all_authorities": 3,
-          "hits@10": 2,
+          "hits@10": 1,
           "hits@50": 3,
           "hits@100": 3
         },
@@ -1008,8 +88,8 @@
           "reachable_authorities": 4,
           "all_authorities": 13,
           "hits@10": 2,
-          "hits@50": 3,
-          "hits@100": 3
+          "hits@50": 2,
+          "hits@100": 2
         },
         {
           "doc_id": "1742737",
@@ -1017,17 +97,17 @@
           "reachable_authorities": 3,
           "all_authorities": 6,
           "hits@10": 0,
-          "hits@50": 0,
-          "hits@100": 0
+          "hits@50": 1,
+          "hits@100": 2
         },
         {
           "doc_id": "176261373",
           "year": 2000,
           "reachable_authorities": 7,
           "all_authorities": 25,
-          "hits@10": 2,
+          "hits@10": 0,
           "hits@50": 4,
-          "hits@100": 4
+          "hits@100": 5
         },
         {
           "doc_id": "1842039",
@@ -1035,8 +115,8 @@
           "reachable_authorities": 3,
           "all_authorities": 5,
           "hits@10": 0,
-          "hits@50": 0,
-          "hits@100": 0
+          "hits@50": 1,
+          "hits@100": 1
         },
         {
           "doc_id": "1865062",
@@ -1053,7 +133,7 @@
           "reachable_authorities": 4,
           "all_authorities": 6,
           "hits@10": 2,
-          "hits@50": 2,
+          "hits@50": 3,
           "hits@100": 3
         },
         {
@@ -1072,7 +152,7 @@
           "all_authorities": 15,
           "hits@10": 3,
           "hits@50": 4,
-          "hits@100": 7
+          "hits@100": 5
         },
         {
           "doc_id": "302205",
@@ -1090,15 +170,15 @@
           "all_authorities": 7,
           "hits@10": 0,
           "hits@50": 0,
-          "hits@100": 1
+          "hits@100": 0
         },
         {
           "doc_id": "53543700",
           "year": 2000,
           "reachable_authorities": 3,
           "all_authorities": 6,
-          "hits@10": 2,
-          "hits@50": 2,
+          "hits@10": 1,
+          "hits@50": 3,
           "hits@100": 3
         },
         {
@@ -1116,8 +196,8 @@
           "reachable_authorities": 7,
           "all_authorities": 13,
           "hits@10": 2,
-          "hits@50": 4,
-          "hits@100": 5
+          "hits@50": 7,
+          "hits@100": 7
         },
         {
           "doc_id": "78791",
@@ -1126,14 +206,14 @@
           "all_authorities": 9,
           "hits@10": 0,
           "hits@50": 1,
-          "hits@100": 1
+          "hits@100": 2
         },
         {
           "doc_id": "808569",
           "year": 2000,
           "reachable_authorities": 3,
           "all_authorities": 10,
-          "hits@10": 0,
+          "hits@10": 1,
           "hits@50": 1,
           "hits@100": 2
         },
@@ -1142,16 +222,16 @@
           "year": 2000,
           "reachable_authorities": 3,
           "all_authorities": 4,
-          "hits@10": 1,
-          "hits@50": 1,
-          "hits@100": 1
+          "hits@10": 0,
+          "hits@50": 2,
+          "hits@100": 2
         },
         {
           "doc_id": "928028",
           "year": 2000,
           "reachable_authorities": 4,
           "all_authorities": 15,
-          "hits@10": 0,
+          "hits@10": 1,
           "hits@50": 2,
           "hits@100": 2
         },
@@ -1169,36 +249,36 @@
           "year": 2001,
           "reachable_authorities": 3,
           "all_authorities": 6,
-          "hits@10": 0,
+          "hits@10": 1,
           "hits@50": 2,
-          "hits@100": 3
+          "hits@100": 2
         },
         {
           "doc_id": "1072924",
           "year": 2001,
           "reachable_authorities": 5,
           "all_authorities": 5,
-          "hits@10": 2,
-          "hits@50": 4,
-          "hits@100": 4
+          "hits@10": 1,
+          "hits@50": 1,
+          "hits@100": 1
         },
         {
           "doc_id": "108182",
           "year": 2001,
           "reachable_authorities": 11,
           "all_authorities": 22,
-          "hits@10": 3,
+          "hits@10": 2,
           "hits@50": 5,
-          "hits@100": 7
+          "hits@100": 5
         },
         {
           "doc_id": "1224932",
           "year": 2001,
           "reachable_authorities": 6,
           "all_authorities": 10,
-          "hits@10": 0,
-          "hits@50": 1,
-          "hits@100": 1
+          "hits@10": 1,
+          "hits@50": 3,
+          "hits@100": 3
         },
         {
           "doc_id": "1242930",
@@ -1214,7 +294,7 @@
           "year": 2001,
           "reachable_authorities": 4,
           "all_authorities": 10,
-          "hits@10": 1,
+          "hits@10": 0,
           "hits@50": 1,
           "hits@100": 1
         },
@@ -1224,7 +304,7 @@
           "reachable_authorities": 11,
           "all_authorities": 21,
           "hits@10": 5,
-          "hits@50": 9,
+          "hits@50": 10,
           "hits@100": 10
         },
         {
@@ -1233,7 +313,7 @@
           "reachable_authorities": 3,
           "all_authorities": 8,
           "hits@10": 0,
-          "hits@50": 0,
+          "hits@50": 1,
           "hits@100": 2
         },
         {
@@ -1243,16 +323,16 @@
           "all_authorities": 18,
           "hits@10": 2,
           "hits@50": 2,
-          "hits@100": 3
+          "hits@100": 2
         },
         {
           "doc_id": "1737583",
           "year": 2001,
           "reachable_authorities": 14,
           "all_authorities": 28,
-          "hits@10": 3,
-          "hits@50": 6,
-          "hits@100": 7
+          "hits@10": 0,
+          "hits@50": 1,
+          "hits@100": 2
         },
         {
           "doc_id": "1858757",
@@ -1268,9 +348,9 @@
           "year": 2001,
           "reachable_authorities": 3,
           "all_authorities": 13,
-          "hits@10": 1,
-          "hits@50": 2,
-          "hits@100": 3
+          "hits@10": 0,
+          "hits@50": 0,
+          "hits@100": 1
         },
         {
           "doc_id": "1998033",
@@ -1286,9 +366,9 @@
           "year": 2001,
           "reachable_authorities": 5,
           "all_authorities": 7,
-          "hits@10": 1,
-          "hits@50": 1,
-          "hits@100": 1
+          "hits@10": 2,
+          "hits@50": 2,
+          "hits@100": 2
         },
         {
           "doc_id": "246132",
@@ -1296,8 +376,8 @@
           "reachable_authorities": 4,
           "all_authorities": 11,
           "hits@10": 0,
-          "hits@50": 1,
-          "hits@100": 2
+          "hits@50": 0,
+          "hits@100": 0
         },
         {
           "doc_id": "27274070",
@@ -1306,7 +386,7 @@
           "all_authorities": 16,
           "hits@10": 0,
           "hits@50": 0,
-          "hits@100": 2
+          "hits@100": 0
         },
         {
           "doc_id": "277653",
@@ -1314,8 +394,8 @@
           "reachable_authorities": 15,
           "all_authorities": 37,
           "hits@10": 2,
-          "hits@50": 4,
-          "hits@100": 4
+          "hits@50": 6,
+          "hits@100": 9
         },
         {
           "doc_id": "406616",
@@ -1324,16 +404,16 @@
           "all_authorities": 7,
           "hits@10": 1,
           "hits@50": 2,
-          "hits@100": 2
+          "hits@100": 3
         },
         {
           "doc_id": "433507",
           "year": 2001,
           "reachable_authorities": 3,
           "all_authorities": 7,
-          "hits@10": 1,
-          "hits@50": 2,
-          "hits@100": 3
+          "hits@10": 0,
+          "hits@50": 1,
+          "hits@100": 2
         },
         {
           "doc_id": "546691",
@@ -1351,15 +431,15 @@
           "all_authorities": 16,
           "hits@10": 0,
           "hits@50": 0,
-          "hits@100": 1
+          "hits@100": 0
         },
         {
           "doc_id": "592428",
           "year": 2001,
           "reachable_authorities": 4,
           "all_authorities": 13,
-          "hits@10": 0,
-          "hits@50": 2,
+          "hits@10": 3,
+          "hits@50": 3,
           "hits@100": 3
         },
         {
@@ -1368,8 +448,8 @@
           "reachable_authorities": 6,
           "all_authorities": 18,
           "hits@10": 2,
-          "hits@50": 2,
-          "hits@100": 3
+          "hits@50": 3,
+          "hits@100": 4
         },
         {
           "doc_id": "749233",
@@ -1377,8 +457,8 @@
           "reachable_authorities": 9,
           "all_authorities": 13,
           "hits@10": 0,
-          "hits@50": 1,
-          "hits@100": 2
+          "hits@50": 0,
+          "hits@100": 0
         },
         {
           "doc_id": "891864",
@@ -1386,8 +466,8 @@
           "reachable_authorities": 3,
           "all_authorities": 11,
           "hits@10": 2,
-          "hits@50": 2,
-          "hits@100": 2
+          "hits@50": 3,
+          "hits@100": 3
         },
         {
           "doc_id": "952963",
@@ -1396,7 +476,7 @@
           "all_authorities": 17,
           "hits@10": 0,
           "hits@50": 2,
-          "hits@100": 2
+          "hits@100": 4
         },
         {
           "doc_id": "965356",
@@ -1414,14 +494,14 @@
           "all_authorities": 8,
           "hits@10": 0,
           "hits@50": 1,
-          "hits@100": 2
+          "hits@100": 1
         },
         {
           "doc_id": "1189990",
           "year": 2008,
           "reachable_authorities": 5,
           "all_authorities": 19,
-          "hits@10": 0,
+          "hits@10": 1,
           "hits@50": 2,
           "hits@100": 2
         },
@@ -1431,8 +511,8 @@
           "reachable_authorities": 3,
           "all_authorities": 10,
           "hits@10": 0,
-          "hits@50": 0,
-          "hits@100": 1
+          "hits@50": 2,
+          "hits@100": 2
         },
         {
           "doc_id": "1313008",
@@ -1441,7 +521,7 @@
           "all_authorities": 29,
           "hits@10": 1,
           "hits@50": 2,
-          "hits@100": 2
+          "hits@100": 4
         },
         {
           "doc_id": "1491184",
@@ -1459,7 +539,7 @@
           "all_authorities": 32,
           "hits@10": 0,
           "hits@50": 1,
-          "hits@100": 2
+          "hits@100": 1
         },
         {
           "doc_id": "1592558",
@@ -1468,7 +548,7 @@
           "all_authorities": 27,
           "hits@10": 0,
           "hits@50": 0,
-          "hits@100": 1
+          "hits@100": 0
         },
         {
           "doc_id": "1673900",
@@ -1484,45 +564,45 @@
           "year": 2008,
           "reachable_authorities": 14,
           "all_authorities": 31,
-          "hits@10": 0,
-          "hits@50": 3,
-          "hits@100": 6
+          "hits@10": 2,
+          "hits@50": 5,
+          "hits@100": 5
         },
         {
           "doc_id": "176192",
           "year": 2008,
           "reachable_authorities": 6,
           "all_authorities": 16,
-          "hits@10": 0,
-          "hits@50": 1,
-          "hits@100": 1
+          "hits@10": 2,
+          "hits@50": 3,
+          "hits@100": 3
         },
         {
           "doc_id": "1778691",
           "year": 2008,
           "reachable_authorities": 5,
           "all_authorities": 21,
-          "hits@10": 2,
+          "hits@10": 0,
           "hits@50": 3,
-          "hits@100": 4
+          "hits@100": 3
         },
         {
           "doc_id": "1873931",
           "year": 2008,
           "reachable_authorities": 7,
           "all_authorities": 17,
-          "hits@10": 2,
-          "hits@50": 2,
-          "hits@100": 4
+          "hits@10": 3,
+          "hits@50": 4,
+          "hits@100": 5
         },
         {
           "doc_id": "1894467",
           "year": 2008,
           "reachable_authorities": 4,
           "all_authorities": 15,
-          "hits@10": 0,
-          "hits@50": 2,
-          "hits@100": 2
+          "hits@10": 1,
+          "hits@50": 1,
+          "hits@100": 1
         },
         {
           "doc_id": "240495",
@@ -1540,16 +620,16 @@
           "all_authorities": 23,
           "hits@10": 0,
           "hits@50": 1,
-          "hits@100": 1
+          "hits@100": 2
         },
         {
           "doc_id": "28818832",
           "year": 2008,
           "reachable_authorities": 5,
           "all_authorities": 21,
-          "hits@10": 2,
+          "hits@10": 1,
           "hits@50": 3,
-          "hits@100": 4
+          "hits@100": 3
         },
         {
           "doc_id": "389917",
@@ -1558,7 +638,7 @@
           "all_authorities": 16,
           "hits@10": 0,
           "hits@50": 0,
-          "hits@100": 2
+          "hits@100": 0
         },
         {
           "doc_id": "572504",
@@ -1574,17 +654,17 @@
           "year": 2008,
           "reachable_authorities": 5,
           "all_authorities": 18,
-          "hits@10": 1,
+          "hits@10": 0,
           "hits@50": 1,
-          "hits@100": 1
+          "hits@100": 2
         },
         {
           "doc_id": "855552",
           "year": 2008,
           "reachable_authorities": 3,
           "all_authorities": 7,
-          "hits@10": 0,
-          "hits@50": 2,
+          "hits@10": 1,
+          "hits@50": 3,
           "hits@100": 3
         },
         {
@@ -1602,8 +682,8 @@
           "reachable_authorities": 3,
           "all_authorities": 20,
           "hits@10": 0,
-          "hits@50": 0,
-          "hits@100": 0
+          "hits@50": 1,
+          "hits@100": 1
         },
         {
           "doc_id": "1041253",
@@ -1611,7 +691,7 @@
           "reachable_authorities": 3,
           "all_authorities": 16,
           "hits@10": 0,
-          "hits@50": 1,
+          "hits@50": 0,
           "hits@100": 1
         },
         {
@@ -1629,7 +709,7 @@
           "reachable_authorities": 7,
           "all_authorities": 26,
           "hits@10": 0,
-          "hits@50": 2,
+          "hits@50": 3,
           "hits@100": 4
         },
         {
@@ -1637,9 +717,9 @@
           "year": 2010,
           "reachable_authorities": 4,
           "all_authorities": 12,
-          "hits@10": 2,
-          "hits@50": 3,
-          "hits@100": 3
+          "hits@10": 1,
+          "hits@50": 2,
+          "hits@100": 4
         },
         {
           "doc_id": "1070490",
@@ -1647,8 +727,8 @@
           "reachable_authorities": 6,
           "all_authorities": 15,
           "hits@10": 0,
-          "hits@50": 0,
-          "hits@100": 1
+          "hits@50": 1,
+          "hits@100": 2
         },
         {
           "doc_id": "1108032",
@@ -1656,17 +736,17 @@
           "reachable_authorities": 7,
           "all_authorities": 34,
           "hits@10": 1,
-          "hits@50": 3,
-          "hits@100": 3
+          "hits@50": 1,
+          "hits@100": 2
         },
         {
           "doc_id": "113789",
           "year": 2010,
           "reachable_authorities": 5,
           "all_authorities": 19,
-          "hits@10": 0,
-          "hits@50": 0,
-          "hits@100": 2
+          "hits@10": 1,
+          "hits@50": 2,
+          "hits@100": 3
         },
         {
           "doc_id": "1220288",
@@ -1674,34 +754,34 @@
           "reachable_authorities": 11,
           "all_authorities": 23,
           "hits@10": 2,
-          "hits@50": 4,
-          "hits@100": 6
+          "hits@50": 5,
+          "hits@100": 7
         },
         {
           "doc_id": "1271827",
           "year": 2010,
           "reachable_authorities": 6,
           "all_authorities": 12,
-          "hits@10": 2,
-          "hits@50": 3,
-          "hits@100": 3
+          "hits@10": 1,
+          "hits@50": 1,
+          "hits@100": 1
         },
         {
           "doc_id": "1273595",
           "year": 2010,
           "reachable_authorities": 8,
           "all_authorities": 20,
-          "hits@10": 3,
+          "hits@10": 2,
           "hits@50": 5,
-          "hits@100": 5
+          "hits@100": 6
         },
         {
           "doc_id": "1277706",
           "year": 2010,
           "reachable_authorities": 5,
           "all_authorities": 27,
-          "hits@10": 0,
-          "hits@50": 1,
+          "hits@10": 1,
+          "hits@50": 2,
           "hits@100": 2
         },
         {
@@ -1719,8 +799,8 @@
           "reachable_authorities": 6,
           "all_authorities": 27,
           "hits@10": 0,
-          "hits@50": 1,
-          "hits@100": 1
+          "hits@50": 0,
+          "hits@100": 0
         },
         {
           "doc_id": "1359232",
@@ -1736,9 +816,9 @@
           "year": 2010,
           "reachable_authorities": 8,
           "all_authorities": 21,
-          "hits@10": 1,
-          "hits@50": 2,
-          "hits@100": 3
+          "hits@10": 0,
+          "hits@50": 0,
+          "hits@100": 0
         },
         {
           "doc_id": "1497837",
@@ -1746,8 +826,8 @@
           "reachable_authorities": 3,
           "all_authorities": 4,
           "hits@10": 1,
-          "hits@50": 1,
-          "hits@100": 1
+          "hits@50": 2,
+          "hits@100": 2
         },
         {
           "doc_id": "1513913",
@@ -1773,8 +853,8 @@
           "reachable_authorities": 5,
           "all_authorities": 18,
           "hits@10": 1,
-          "hits@50": 1,
-          "hits@100": 3
+          "hits@50": 3,
+          "hits@100": 4
         },
         {
           "doc_id": "155260",
@@ -1790,17 +870,17 @@
           "year": 2010,
           "reachable_authorities": 3,
           "all_authorities": 7,
-          "hits@10": 0,
-          "hits@50": 0,
-          "hits@100": 1
+          "hits@10": 1,
+          "hits@50": 1,
+          "hits@100": 2
         },
         {
           "doc_id": "1613762",
           "year": 2010,
           "reachable_authorities": 9,
           "all_authorities": 21,
-          "hits@10": 0,
-          "hits@50": 0,
+          "hits@10": 1,
+          "hits@50": 1,
           "hits@100": 1
         },
         {
@@ -1809,8 +889,8 @@
           "reachable_authorities": 16,
           "all_authorities": 73,
           "hits@10": 1,
-          "hits@50": 4,
-          "hits@100": 4
+          "hits@50": 1,
+          "hits@100": 1
         },
         {
           "doc_id": "1647965",
@@ -1819,23 +899,23 @@
           "all_authorities": 15,
           "hits@10": 0,
           "hits@50": 0,
-          "hits@100": 2
+          "hits@100": 0
         },
         {
           "doc_id": "1668065",
           "year": 2010,
           "reachable_authorities": 13,
           "all_authorities": 30,
-          "hits@10": 0,
-          "hits@50": 1,
-          "hits@100": 2
+          "hits@10": 1,
+          "hits@50": 2,
+          "hits@100": 3
         },
         {
           "doc_id": "168450156",
           "year": 2010,
           "reachable_authorities": 4,
           "all_authorities": 23,
-          "hits@10": 3,
+          "hits@10": 2,
           "hits@50": 4,
           "hits@100": 4
         },
@@ -1845,7 +925,927 @@
           "reachable_authorities": 3,
           "all_authorities": 9,
           "hits@10": 0,
+          "hits@50": 1,
+          "hits@100": 1
+        }
+      ]
+    },
+    "full": {
+      "query_chars": null,
+      "recall": {
+        "@10": 0.2594,
+        "@50": 0.485,
+        "@100": 0.5865
+      },
+      "precision": {
+        "@10": 0.138,
+        "@50": 0.0516,
+        "@100": 0.0312
+      },
+      "hits": {
+        "@10": 138,
+        "@50": 258,
+        "@100": 312
+      },
+      "per_case": [
+        {
+          "doc_id": "1067714",
+          "year": 2000,
+          "reachable_authorities": 3,
+          "all_authorities": 5,
+          "hits@10": 0,
           "hits@50": 0,
+          "hits@100": 1
+        },
+        {
+          "doc_id": "1132403",
+          "year": 2000,
+          "reachable_authorities": 4,
+          "all_authorities": 15,
+          "hits@10": 4,
+          "hits@50": 4,
+          "hits@100": 4
+        },
+        {
+          "doc_id": "113663",
+          "year": 2000,
+          "reachable_authorities": 13,
+          "all_authorities": 35,
+          "hits@10": 1,
+          "hits@50": 6,
+          "hits@100": 8
+        },
+        {
+          "doc_id": "140248433",
+          "year": 2000,
+          "reachable_authorities": 3,
+          "all_authorities": 22,
+          "hits@10": 1,
+          "hits@50": 1,
+          "hits@100": 1
+        },
+        {
+          "doc_id": "1463760",
+          "year": 2000,
+          "reachable_authorities": 3,
+          "all_authorities": 19,
+          "hits@10": 0,
+          "hits@50": 0,
+          "hits@100": 0
+        },
+        {
+          "doc_id": "1543623",
+          "year": 2000,
+          "reachable_authorities": 3,
+          "all_authorities": 3,
+          "hits@10": 1,
+          "hits@50": 2,
+          "hits@100": 2
+        },
+        {
+          "doc_id": "166442",
+          "year": 2000,
+          "reachable_authorities": 4,
+          "all_authorities": 13,
+          "hits@10": 1,
+          "hits@50": 2,
+          "hits@100": 2
+        },
+        {
+          "doc_id": "1742737",
+          "year": 2000,
+          "reachable_authorities": 3,
+          "all_authorities": 6,
+          "hits@10": 0,
+          "hits@50": 2,
+          "hits@100": 2
+        },
+        {
+          "doc_id": "176261373",
+          "year": 2000,
+          "reachable_authorities": 7,
+          "all_authorities": 25,
+          "hits@10": 1,
+          "hits@50": 4,
+          "hits@100": 5
+        },
+        {
+          "doc_id": "1842039",
+          "year": 2000,
+          "reachable_authorities": 3,
+          "all_authorities": 5,
+          "hits@10": 0,
+          "hits@50": 1,
+          "hits@100": 2
+        },
+        {
+          "doc_id": "1865062",
+          "year": 2000,
+          "reachable_authorities": 3,
+          "all_authorities": 13,
+          "hits@10": 0,
+          "hits@50": 0,
+          "hits@100": 0
+        },
+        {
+          "doc_id": "1875448",
+          "year": 2000,
+          "reachable_authorities": 4,
+          "all_authorities": 6,
+          "hits@10": 3,
+          "hits@50": 3,
+          "hits@100": 4
+        },
+        {
+          "doc_id": "1940266",
+          "year": 2000,
+          "reachable_authorities": 3,
+          "all_authorities": 20,
+          "hits@10": 1,
+          "hits@50": 2,
+          "hits@100": 2
+        },
+        {
+          "doc_id": "281568",
+          "year": 2000,
+          "reachable_authorities": 10,
+          "all_authorities": 15,
+          "hits@10": 2,
+          "hits@50": 4,
+          "hits@100": 5
+        },
+        {
+          "doc_id": "302205",
+          "year": 2000,
+          "reachable_authorities": 3,
+          "all_authorities": 3,
+          "hits@10": 1,
+          "hits@50": 1,
+          "hits@100": 2
+        },
+        {
+          "doc_id": "462163",
+          "year": 2000,
+          "reachable_authorities": 4,
+          "all_authorities": 7,
+          "hits@10": 0,
+          "hits@50": 0,
+          "hits@100": 1
+        },
+        {
+          "doc_id": "53543700",
+          "year": 2000,
+          "reachable_authorities": 3,
+          "all_authorities": 6,
+          "hits@10": 1,
+          "hits@50": 3,
+          "hits@100": 3
+        },
+        {
+          "doc_id": "677551",
+          "year": 2000,
+          "reachable_authorities": 3,
+          "all_authorities": 12,
+          "hits@10": 1,
+          "hits@50": 2,
+          "hits@100": 2
+        },
+        {
+          "doc_id": "767586",
+          "year": 2000,
+          "reachable_authorities": 7,
+          "all_authorities": 13,
+          "hits@10": 5,
+          "hits@50": 7,
+          "hits@100": 7
+        },
+        {
+          "doc_id": "78791",
+          "year": 2000,
+          "reachable_authorities": 3,
+          "all_authorities": 9,
+          "hits@10": 1,
+          "hits@50": 3,
+          "hits@100": 3
+        },
+        {
+          "doc_id": "808569",
+          "year": 2000,
+          "reachable_authorities": 3,
+          "all_authorities": 10,
+          "hits@10": 1,
+          "hits@50": 1,
+          "hits@100": 2
+        },
+        {
+          "doc_id": "840463",
+          "year": 2000,
+          "reachable_authorities": 3,
+          "all_authorities": 4,
+          "hits@10": 2,
+          "hits@50": 2,
+          "hits@100": 2
+        },
+        {
+          "doc_id": "928028",
+          "year": 2000,
+          "reachable_authorities": 4,
+          "all_authorities": 15,
+          "hits@10": 1,
+          "hits@50": 2,
+          "hits@100": 3
+        },
+        {
+          "doc_id": "1037196",
+          "year": 2001,
+          "reachable_authorities": 3,
+          "all_authorities": 12,
+          "hits@10": 3,
+          "hits@50": 3,
+          "hits@100": 3
+        },
+        {
+          "doc_id": "1047084",
+          "year": 2001,
+          "reachable_authorities": 3,
+          "all_authorities": 6,
+          "hits@10": 2,
+          "hits@50": 2,
+          "hits@100": 2
+        },
+        {
+          "doc_id": "1072924",
+          "year": 2001,
+          "reachable_authorities": 5,
+          "all_authorities": 5,
+          "hits@10": 0,
+          "hits@50": 2,
+          "hits@100": 2
+        },
+        {
+          "doc_id": "108182",
+          "year": 2001,
+          "reachable_authorities": 11,
+          "all_authorities": 22,
+          "hits@10": 1,
+          "hits@50": 4,
+          "hits@100": 5
+        },
+        {
+          "doc_id": "1224932",
+          "year": 2001,
+          "reachable_authorities": 6,
+          "all_authorities": 10,
+          "hits@10": 1,
+          "hits@50": 3,
+          "hits@100": 3
+        },
+        {
+          "doc_id": "1242930",
+          "year": 2001,
+          "reachable_authorities": 5,
+          "all_authorities": 9,
+          "hits@10": 0,
+          "hits@50": 1,
+          "hits@100": 1
+        },
+        {
+          "doc_id": "139299795",
+          "year": 2001,
+          "reachable_authorities": 4,
+          "all_authorities": 10,
+          "hits@10": 1,
+          "hits@50": 2,
+          "hits@100": 2
+        },
+        {
+          "doc_id": "1444315",
+          "year": 2001,
+          "reachable_authorities": 11,
+          "all_authorities": 21,
+          "hits@10": 6,
+          "hits@50": 10,
+          "hits@100": 10
+        },
+        {
+          "doc_id": "1661153",
+          "year": 2001,
+          "reachable_authorities": 3,
+          "all_authorities": 8,
+          "hits@10": 1,
+          "hits@50": 1,
+          "hits@100": 2
+        },
+        {
+          "doc_id": "1701224",
+          "year": 2001,
+          "reachable_authorities": 6,
+          "all_authorities": 18,
+          "hits@10": 2,
+          "hits@50": 4,
+          "hits@100": 5
+        },
+        {
+          "doc_id": "1737583",
+          "year": 2001,
+          "reachable_authorities": 14,
+          "all_authorities": 28,
+          "hits@10": 0,
+          "hits@50": 2,
+          "hits@100": 5
+        },
+        {
+          "doc_id": "1858757",
+          "year": 2001,
+          "reachable_authorities": 3,
+          "all_authorities": 10,
+          "hits@10": 1,
+          "hits@50": 2,
+          "hits@100": 3
+        },
+        {
+          "doc_id": "1974324",
+          "year": 2001,
+          "reachable_authorities": 3,
+          "all_authorities": 13,
+          "hits@10": 0,
+          "hits@50": 0,
+          "hits@100": 1
+        },
+        {
+          "doc_id": "1998033",
+          "year": 2001,
+          "reachable_authorities": 3,
+          "all_authorities": 9,
+          "hits@10": 1,
+          "hits@50": 1,
+          "hits@100": 1
+        },
+        {
+          "doc_id": "229223",
+          "year": 2001,
+          "reachable_authorities": 5,
+          "all_authorities": 7,
+          "hits@10": 1,
+          "hits@50": 2,
+          "hits@100": 2
+        },
+        {
+          "doc_id": "246132",
+          "year": 2001,
+          "reachable_authorities": 4,
+          "all_authorities": 11,
+          "hits@10": 3,
+          "hits@50": 3,
+          "hits@100": 3
+        },
+        {
+          "doc_id": "27274070",
+          "year": 2001,
+          "reachable_authorities": 4,
+          "all_authorities": 16,
+          "hits@10": 1,
+          "hits@50": 3,
+          "hits@100": 4
+        },
+        {
+          "doc_id": "277653",
+          "year": 2001,
+          "reachable_authorities": 15,
+          "all_authorities": 37,
+          "hits@10": 4,
+          "hits@50": 9,
+          "hits@100": 11
+        },
+        {
+          "doc_id": "406616",
+          "year": 2001,
+          "reachable_authorities": 4,
+          "all_authorities": 7,
+          "hits@10": 1,
+          "hits@50": 2,
+          "hits@100": 3
+        },
+        {
+          "doc_id": "433507",
+          "year": 2001,
+          "reachable_authorities": 3,
+          "all_authorities": 7,
+          "hits@10": 0,
+          "hits@50": 0,
+          "hits@100": 1
+        },
+        {
+          "doc_id": "546691",
+          "year": 2001,
+          "reachable_authorities": 4,
+          "all_authorities": 12,
+          "hits@10": 1,
+          "hits@50": 1,
+          "hits@100": 1
+        },
+        {
+          "doc_id": "581738",
+          "year": 2001,
+          "reachable_authorities": 4,
+          "all_authorities": 16,
+          "hits@10": 0,
+          "hits@50": 0,
+          "hits@100": 0
+        },
+        {
+          "doc_id": "592428",
+          "year": 2001,
+          "reachable_authorities": 4,
+          "all_authorities": 13,
+          "hits@10": 3,
+          "hits@50": 3,
+          "hits@100": 4
+        },
+        {
+          "doc_id": "661966",
+          "year": 2001,
+          "reachable_authorities": 6,
+          "all_authorities": 18,
+          "hits@10": 2,
+          "hits@50": 4,
+          "hits@100": 5
+        },
+        {
+          "doc_id": "749233",
+          "year": 2001,
+          "reachable_authorities": 9,
+          "all_authorities": 13,
+          "hits@10": 3,
+          "hits@50": 5,
+          "hits@100": 5
+        },
+        {
+          "doc_id": "891864",
+          "year": 2001,
+          "reachable_authorities": 3,
+          "all_authorities": 11,
+          "hits@10": 2,
+          "hits@50": 3,
+          "hits@100": 3
+        },
+        {
+          "doc_id": "952963",
+          "year": 2001,
+          "reachable_authorities": 4,
+          "all_authorities": 17,
+          "hits@10": 0,
+          "hits@50": 1,
+          "hits@100": 3
+        },
+        {
+          "doc_id": "965356",
+          "year": 2001,
+          "reachable_authorities": 3,
+          "all_authorities": 5,
+          "hits@10": 2,
+          "hits@50": 3,
+          "hits@100": 3
+        },
+        {
+          "doc_id": "991695",
+          "year": 2001,
+          "reachable_authorities": 3,
+          "all_authorities": 8,
+          "hits@10": 0,
+          "hits@50": 0,
+          "hits@100": 1
+        },
+        {
+          "doc_id": "1189990",
+          "year": 2008,
+          "reachable_authorities": 5,
+          "all_authorities": 19,
+          "hits@10": 1,
+          "hits@50": 2,
+          "hits@100": 2
+        },
+        {
+          "doc_id": "1243245",
+          "year": 2008,
+          "reachable_authorities": 3,
+          "all_authorities": 10,
+          "hits@10": 2,
+          "hits@50": 2,
+          "hits@100": 2
+        },
+        {
+          "doc_id": "1313008",
+          "year": 2008,
+          "reachable_authorities": 14,
+          "all_authorities": 29,
+          "hits@10": 4,
+          "hits@50": 8,
+          "hits@100": 10
+        },
+        {
+          "doc_id": "1491184",
+          "year": 2008,
+          "reachable_authorities": 3,
+          "all_authorities": 5,
+          "hits@10": 2,
+          "hits@50": 2,
+          "hits@100": 2
+        },
+        {
+          "doc_id": "1584447",
+          "year": 2008,
+          "reachable_authorities": 3,
+          "all_authorities": 32,
+          "hits@10": 0,
+          "hits@50": 1,
+          "hits@100": 1
+        },
+        {
+          "doc_id": "1592558",
+          "year": 2008,
+          "reachable_authorities": 5,
+          "all_authorities": 27,
+          "hits@10": 0,
+          "hits@50": 0,
+          "hits@100": 0
+        },
+        {
+          "doc_id": "1673900",
+          "year": 2008,
+          "reachable_authorities": 5,
+          "all_authorities": 22,
+          "hits@10": 1,
+          "hits@50": 1,
+          "hits@100": 2
+        },
+        {
+          "doc_id": "1703207",
+          "year": 2008,
+          "reachable_authorities": 14,
+          "all_authorities": 31,
+          "hits@10": 3,
+          "hits@50": 5,
+          "hits@100": 7
+        },
+        {
+          "doc_id": "176192",
+          "year": 2008,
+          "reachable_authorities": 6,
+          "all_authorities": 16,
+          "hits@10": 1,
+          "hits@50": 3,
+          "hits@100": 3
+        },
+        {
+          "doc_id": "1778691",
+          "year": 2008,
+          "reachable_authorities": 5,
+          "all_authorities": 21,
+          "hits@10": 3,
+          "hits@50": 4,
+          "hits@100": 4
+        },
+        {
+          "doc_id": "1873931",
+          "year": 2008,
+          "reachable_authorities": 7,
+          "all_authorities": 17,
+          "hits@10": 4,
+          "hits@50": 6,
+          "hits@100": 6
+        },
+        {
+          "doc_id": "1894467",
+          "year": 2008,
+          "reachable_authorities": 4,
+          "all_authorities": 15,
+          "hits@10": 1,
+          "hits@50": 2,
+          "hits@100": 2
+        },
+        {
+          "doc_id": "240495",
+          "year": 2008,
+          "reachable_authorities": 6,
+          "all_authorities": 39,
+          "hits@10": 2,
+          "hits@50": 3,
+          "hits@100": 3
+        },
+        {
+          "doc_id": "256224",
+          "year": 2008,
+          "reachable_authorities": 6,
+          "all_authorities": 23,
+          "hits@10": 3,
+          "hits@50": 4,
+          "hits@100": 5
+        },
+        {
+          "doc_id": "28818832",
+          "year": 2008,
+          "reachable_authorities": 5,
+          "all_authorities": 21,
+          "hits@10": 2,
+          "hits@50": 4,
+          "hits@100": 4
+        },
+        {
+          "doc_id": "389917",
+          "year": 2008,
+          "reachable_authorities": 4,
+          "all_authorities": 16,
+          "hits@10": 0,
+          "hits@50": 0,
+          "hits@100": 0
+        },
+        {
+          "doc_id": "572504",
+          "year": 2008,
+          "reachable_authorities": 3,
+          "all_authorities": 6,
+          "hits@10": 2,
+          "hits@50": 2,
+          "hits@100": 2
+        },
+        {
+          "doc_id": "698472",
+          "year": 2008,
+          "reachable_authorities": 5,
+          "all_authorities": 18,
+          "hits@10": 0,
+          "hits@50": 3,
+          "hits@100": 3
+        },
+        {
+          "doc_id": "855552",
+          "year": 2008,
+          "reachable_authorities": 3,
+          "all_authorities": 7,
+          "hits@10": 1,
+          "hits@50": 2,
+          "hits@100": 3
+        },
+        {
+          "doc_id": "913087",
+          "year": 2008,
+          "reachable_authorities": 3,
+          "all_authorities": 11,
+          "hits@10": 0,
+          "hits@50": 1,
+          "hits@100": 1
+        },
+        {
+          "doc_id": "1023183",
+          "year": 2010,
+          "reachable_authorities": 3,
+          "all_authorities": 20,
+          "hits@10": 1,
+          "hits@50": 1,
+          "hits@100": 1
+        },
+        {
+          "doc_id": "1041253",
+          "year": 2010,
+          "reachable_authorities": 3,
+          "all_authorities": 16,
+          "hits@10": 1,
+          "hits@50": 2,
+          "hits@100": 2
+        },
+        {
+          "doc_id": "1049099",
+          "year": 2010,
+          "reachable_authorities": 4,
+          "all_authorities": 6,
+          "hits@10": 0,
+          "hits@50": 1,
+          "hits@100": 2
+        },
+        {
+          "doc_id": "105592",
+          "year": 2010,
+          "reachable_authorities": 7,
+          "all_authorities": 26,
+          "hits@10": 3,
+          "hits@50": 4,
+          "hits@100": 4
+        },
+        {
+          "doc_id": "1062130",
+          "year": 2010,
+          "reachable_authorities": 4,
+          "all_authorities": 12,
+          "hits@10": 1,
+          "hits@50": 3,
+          "hits@100": 4
+        },
+        {
+          "doc_id": "1070490",
+          "year": 2010,
+          "reachable_authorities": 6,
+          "all_authorities": 15,
+          "hits@10": 0,
+          "hits@50": 2,
+          "hits@100": 3
+        },
+        {
+          "doc_id": "1108032",
+          "year": 2010,
+          "reachable_authorities": 7,
+          "all_authorities": 34,
+          "hits@10": 1,
+          "hits@50": 3,
+          "hits@100": 4
+        },
+        {
+          "doc_id": "113789",
+          "year": 2010,
+          "reachable_authorities": 5,
+          "all_authorities": 19,
+          "hits@10": 1,
+          "hits@50": 3,
+          "hits@100": 5
+        },
+        {
+          "doc_id": "1220288",
+          "year": 2010,
+          "reachable_authorities": 11,
+          "all_authorities": 23,
+          "hits@10": 3,
+          "hits@50": 7,
+          "hits@100": 8
+        },
+        {
+          "doc_id": "1271827",
+          "year": 2010,
+          "reachable_authorities": 6,
+          "all_authorities": 12,
+          "hits@10": 2,
+          "hits@50": 3,
+          "hits@100": 4
+        },
+        {
+          "doc_id": "1273595",
+          "year": 2010,
+          "reachable_authorities": 8,
+          "all_authorities": 20,
+          "hits@10": 5,
+          "hits@50": 6,
+          "hits@100": 7
+        },
+        {
+          "doc_id": "1277706",
+          "year": 2010,
+          "reachable_authorities": 5,
+          "all_authorities": 27,
+          "hits@10": 2,
+          "hits@50": 4,
+          "hits@100": 4
+        },
+        {
+          "doc_id": "1329151",
+          "year": 2010,
+          "reachable_authorities": 7,
+          "all_authorities": 37,
+          "hits@10": 0,
+          "hits@50": 1,
+          "hits@100": 1
+        },
+        {
+          "doc_id": "1350793",
+          "year": 2010,
+          "reachable_authorities": 6,
+          "all_authorities": 27,
+          "hits@10": 0,
+          "hits@50": 1,
+          "hits@100": 2
+        },
+        {
+          "doc_id": "1359232",
+          "year": 2010,
+          "reachable_authorities": 3,
+          "all_authorities": 8,
+          "hits@10": 0,
+          "hits@50": 1,
+          "hits@100": 2
+        },
+        {
+          "doc_id": "1364924",
+          "year": 2010,
+          "reachable_authorities": 8,
+          "all_authorities": 21,
+          "hits@10": 2,
+          "hits@50": 5,
+          "hits@100": 6
+        },
+        {
+          "doc_id": "1497837",
+          "year": 2010,
+          "reachable_authorities": 3,
+          "all_authorities": 4,
+          "hits@10": 0,
+          "hits@50": 1,
+          "hits@100": 2
+        },
+        {
+          "doc_id": "1513913",
+          "year": 2010,
+          "reachable_authorities": 5,
+          "all_authorities": 19,
+          "hits@10": 2,
+          "hits@50": 3,
+          "hits@100": 3
+        },
+        {
+          "doc_id": "1515299",
+          "year": 2010,
+          "reachable_authorities": 6,
+          "all_authorities": 66,
+          "hits@10": 0,
+          "hits@50": 1,
+          "hits@100": 1
+        },
+        {
+          "doc_id": "15173",
+          "year": 2010,
+          "reachable_authorities": 5,
+          "all_authorities": 18,
+          "hits@10": 3,
+          "hits@50": 4,
+          "hits@100": 4
+        },
+        {
+          "doc_id": "155260",
+          "year": 2010,
+          "reachable_authorities": 3,
+          "all_authorities": 6,
+          "hits@10": 0,
+          "hits@50": 0,
+          "hits@100": 0
+        },
+        {
+          "doc_id": "1571903",
+          "year": 2010,
+          "reachable_authorities": 3,
+          "all_authorities": 7,
+          "hits@10": 1,
+          "hits@50": 2,
+          "hits@100": 2
+        },
+        {
+          "doc_id": "1613762",
+          "year": 2010,
+          "reachable_authorities": 9,
+          "all_authorities": 21,
+          "hits@10": 0,
+          "hits@50": 1,
+          "hits@100": 2
+        },
+        {
+          "doc_id": "161999",
+          "year": 2010,
+          "reachable_authorities": 16,
+          "all_authorities": 73,
+          "hits@10": 2,
+          "hits@50": 5,
+          "hits@100": 8
+        },
+        {
+          "doc_id": "1647965",
+          "year": 2010,
+          "reachable_authorities": 6,
+          "all_authorities": 15,
+          "hits@10": 0,
+          "hits@50": 0,
+          "hits@100": 1
+        },
+        {
+          "doc_id": "1668065",
+          "year": 2010,
+          "reachable_authorities": 13,
+          "all_authorities": 30,
+          "hits@10": 3,
+          "hits@50": 6,
+          "hits@100": 6
+        },
+        {
+          "doc_id": "168450156",
+          "year": 2010,
+          "reachable_authorities": 4,
+          "all_authorities": 23,
+          "hits@10": 2,
+          "hits@50": 4,
+          "hits@100": 4
+        },
+        {
+          "doc_id": "1689806",
+          "year": 2010,
+          "reachable_authorities": 3,
+          "all_authorities": 9,
+          "hits@10": 1,
+          "hits@50": 1,
           "hits@100": 1
         }
       ]
