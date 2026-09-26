@@ -2,3 +2,4 @@ gdown>=6.3.0
 pypdf>=5.0.0
 openai>=1.0.0
 networkx>=3.0
+numpy>=2.0

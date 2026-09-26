@@ -5,3 +5,9 @@ __pycache__/
 Data/raw_pdfs/
 Docs/
 ~$*
+.DS_Store
+supreme_court_judgments*.zip
+Data/supreme_court_judgments/
+Data/processed/corpus_text.jsonl
+Data/processed/dense_index.npy
+Data/processed/dense_index_meta.json

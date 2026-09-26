@@ -1,0 +1,570 @@
+\documentclass[10pt,conference]{IEEEtran}
+
+\usepackage{cite}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{url}
+
+\begin{document}
+
+\title{LexGraph: A Neuro-Symbolic Pipeline for Proof-Carrying\\Legal Reasoning over Indian Land-Dispute Jurisprudence}
+
+\author{
+\IEEEauthorblockN{[Member 1], [Member 2], [Member 3], [Member 4]}
+\IEEEauthorblockA{School of Computing and Augmented Intelligence\\
+Arizona State University\\
+CSE 573: Semantic Web Mining --- Fall 2026\\
+Instructor: Prof. Hasan Davulcu \quad TA: Anshul Trivedi}
+}
+
+\maketitle
+
+\begin{abstract}
+Large language models used to summarize case law or answer legal questions routinely
+fabricate citations, and are poor at recognizing their own errors. We present LexGraph,
+a small-scale pipeline that treats this as an extraction-and-verification problem rather
+than a generation problem: an ontology-constrained ``grounding'' step lifts sentences of
+a judgment into typed legal objects (claims, issues, cited authorities, holdings) instead
+of letting a model free-generate an analysis; a signed citation graph, built from two
+complementary sign-extraction sources spanning 1950--2025, records whether a later case
+relied on, distinguished, or overruled an earlier one; and a deterministic verifier checks
+every proposed authority against real outbound citation edges before an IRAC-style
+(Issue/Rule/Application/Conclusion) answer is assembled, refusing to certify what it
+cannot verify. We evaluate LexGraph against a closed-book LLM baseline and a dense
+retrieval-augmented generation (RAG) baseline on 48 Indian Supreme Court land-dispute
+judgments (six per decade, 1950s--2020s), scoring all three systems with the identical
+deterministic verifier. LexGraph achieves the highest citation precision (60\% of its
+case-shaped citations verify against ground truth, versus 52\% for RAG and 6.9\% for the
+closed-book baseline, which reproduces the legal-hallucination failure mode reported in
+prior work on our own corpus). However, LexGraph recovers only 1.4\% of the real citation
+edges present in these judgments, against 9.9\% for plain RAG, because its candidate
+sentence selection --- the first 30 keyword-matched sentences per judgment --- is a
+coverage bottleneck, not a verification failure. We report this result along with its
+diagnosis: recall concentrates almost entirely in judgments whose citations are announced
+in a HEADNOTE section, a pre-2000 convention that vanishes from the corpus after 2000.
+This paper documents the current state of the pipeline, the evaluation methodology used
+to compare it fairly against baselines, and the specific next step --- retrieval-fed
+candidate selection ahead of ontology grounding --- required to close the recall gap
+without giving up the precision advantage of verification.
+\end{abstract}
+
+\begin{IEEEkeywords}
+legal information extraction, ontology-directed extraction, citation verification, large
+language model hallucination, signed graphs, retrieval-augmented generation, legal AI
+\end{IEEEkeywords}
+
+\section{Introduction}
+
+Large language models are increasingly used to summarize case law, draft legal arguments,
+and answer legal questions, yet they remain probabilistic text generators applied to a
+domain where correctness is not optional. Dahl et al.~\cite{dahl2024} found that
+general-purpose LLMs hallucinate legal facts or authorities in the majority of tested
+queries, and that models are poor at recognizing their own errors. In a legal setting, a
+fabricated citation, or a real citation used to support a proposition it does not actually
+stand for, is not a cosmetic defect: it can misdirect a self-represented litigant,
+contaminate a filing, or make a governmental decision effectively unreviewable. A system
+that cannot show which rule it applied, which authority it relied on, and why the record
+supports that authority cannot be meaningfully contested, which undermines due process
+wherever AI-assisted legal reasoning is deployed.
+
+This project builds a small-scale, working version of a proof-carrying legal reasoning
+pipeline. Instead of asking an LLM to answer a legal question directly, we force it to
+first construct an explicit, checkable structure --- the issue, the rule, the cited
+authority, the supporting facts, and the outcome --- and we verify that structure against
+a ground-truth citation graph before any natural-language answer is produced. The target
+domain is property and land-dispute litigation before the Indian Supreme Court, using a
+corpus of judgments and citation metadata made available for this course project. This
+scope mirrors an ongoing ``contestable legal AI'' research direction in the instructor's
+lab, deliberately narrowed here to one jurisdiction, one case type, and a sampled
+evaluation set so that a complete, demonstrable pipeline is achievable within a single
+semester.
+
+The contributions of this paper are:
+\begin{enumerate}
+\item An ontology-directed extraction pipeline (GROUND/LEARN/EXTRACT) instantiated on a
+real legal corpus, with a hand-authored ontology, 24 gold examples, and rules learned
+from them rather than hand-written.
+\item A merged signed citation graph covering 1950--2025 that combines a
+free, high-precision regex extractor for a pre-2000 law-reporting convention with an
+LLM-based classifier for post-2000 judgments, where that convention does not exist.
+\item A deterministic verifier and evaluation harness that scores a closed-book LLM
+baseline, a dense RAG baseline, and our pipeline with the exact same citation-matching
+logic, making the three systems directly comparable rather than comparable in name only.
+\item An honest empirical finding, with root-cause diagnosis: plain RAG currently
+recovers more real citations than our pipeline does, because of a specific, identified,
+fixable bottleneck in candidate sentence selection --- not because verification is
+unhelpful. We report this rather than only reporting the metrics that favor our approach.
+\end{enumerate}
+
+This paper reflects the state of the project as of September 18, 2026: the data
+pipeline, signed graph, extraction pipeline, verifier, and first cross-system evaluation
+are complete; a live demo dashboard is not yet built and is discussed as future work in
+Section~\ref{sec:future}.
+
+\section{Related Work}
+
+Legal knowledge representation has a long history of separating legal concepts from the
+logic of their application. LKIF-Core~\cite{hoekstra2007} provides a modular OWL ontology
+of basic legal concepts (norms, acts, roles, time), and OASIS LegalRuleML~\cite{legalruleml}
+extends this with a machine-readable syntax for obligations, permissions, and defeasible
+rules. These frameworks show that legal text can be lifted into structured, queryable
+representations, but they were built by hand and do not scale to large modern corpora.
+
+Sunny and Sivan-Sevilla~\cite{sunny2026} address this scaling problem directly: they use
+an LLM to translate statutory eligibility rules into a formal ontology, then use
+satisfiability-based (SMT) verification to check whether real welfare-benefit
+explanations are legally adequate. Their central finding --- that formal verification
+catches statutory violations even in explanations that look reasonable to a human reader
+--- is strong evidence that neuro-symbolic verification adds something that
+formal-logic-free LLM prompting cannot. LexGraph applies the same ``neural extraction plus
+symbolic verification'' division of labor to a different artifact (judicial citation
+reasoning instead of benefits notices) and a different verification target: does a cited
+authority actually exist and get relied upon, rather than does an explanation satisfy a
+statute.
+
+Our extraction method follows an older lineage: Riloff~\cite{riloff1993} introduced
+AutoSlog, which learns symbolic extraction patterns from examples using generic syntactic
+templates (active-verb-plus-object, passive-verb-plus-subject, etc.). We replace Riloff's
+syntactic patterns with LLM-grounded semantic patterns --- the model maps a sentence onto
+a small ontology of legal roles and actions instead of a parse tree --- but keep
+AutoSlog's core idea that extraction should produce inspectable, reusable rules rather
+than one-off, black-box answers.
+
+On the graph side, citation networks between judgments are naturally a signed ecosystem: a
+later case can rely on, distinguish, or overrule an earlier one, and treating all edges as
+equivalent ``citation'' loses the information that matters most for assessing whether a
+proposition is still good law. Signed Graph Convolutional Networks~\cite{derr2018} show
+that explicitly modeling positive and negative edges improves representation quality over
+unsigned-graph baselines; we adapt this idea at a much lighter weight (a heuristic- or
+classifier-derived sign label plus a structural score) rather than a full SGCN, given the
+scope of a one-semester course project.
+
+Finally, retrieval-augmented generation~\cite{lewis2020} is the natural
+grounding-in-source-text baseline for this task, and we use it as one, rather than only
+as an ablation of our own pipeline: Section~\ref{sec:results} shows it substantially
+reduces, but does not eliminate, the fabrication problem that closed-book prompting
+exhibits.
+
+\section{Dataset}
+\label{sec:dataset}
+
+The provided corpus is an archive of 26,688 Indian Supreme Court judgments (1950--2025),
+year-organized PDF files, plus two locally available derived assets: a citation metadata
+set covering 7,493 citing cases with 144,353 total outbound citation edges, and a filtered
+index of 6,954 judgments identified as land or property disputes.
+
+The raw citation metadata mixes case-to-case citations with statute, article, and section
+references under a single undifferentiated list. A rule-based classifier splits these
+apart: of 144,353 edges, 32.5\% are genuine case citations, 54.4\% are statute or article
+references, and 13.1\% are unresolved fragments (mostly bare sub-clause numbers trailing a
+statute citation, e.g.\ ``(7)''), left for manual review rather than forced into a bucket.
+Every downstream use of a citation edge in this paper goes through this classifier first;
+treating the raw ``precedents'' field as case citations would silently double the apparent
+citation count with statute noise.
+
+Of the 6,954 land-dispute cases, only 2,503 have at least one outbound case citation of
+their own, which is required for graph construction and for verification. We sampled 500
+cases from this pool, stratified evenly across decades (roughly 62--65 per decade,
+1950s--2020s), preferring more heavily-cited cases within each decade. All 500 sampled
+judgment PDFs have been downloaded and verified to contain clean, fully digitized text,
+with no OCR step required.
+
+Inspecting the judgment PDFs surfaced a source of citation polarity we had not planned to
+rely on: pre-2000 Indian Supreme Court judgments include a HEADNOTE section that states it
+explicitly, in a recurring pattern --- a list of ``Case v. Case (Citation)'' entries
+followed by a verb such as \emph{relied on}, \emph{followed}, \emph{approved} (positive),
+\emph{distinguished}, \emph{disapproved}, \emph{overruled} (negative), or \emph{referred
+to} (neutral). This convention is a hard boundary rather than a declining trend: 0 of 190
+sampled 2000--2025 judgments contain a HEADNOTE section at all. Post-2000 sign extraction
+therefore goes through an LLM classifier that locates the sentence(s) around a citation
+mention in the judgment body and grounds the surrounding free text into the same
+treatment classes, since the same distinguishing or overruling is expressed there with no
+fixed vocabulary (e.g.\ ``We are of the view that the said judgment would not even
+remotely be applicable to the facts of the present case,'' which uses none of the HEADNOTE
+verbs). Both sources write to the same signed-edge format, so downstream graph
+construction does not need to know which era a label came from. Merging both sources over
+the full 500-case sample produced 8,467 candidate citation edges, of which 62.6\% carry a
+real sign label after the merge (33.6\% positive, 26.9\% neutral, 2.1\% negative, with the
+remainder left unsigned where neither extractor could establish a label).
+
+\section{Methodology}
+\label{sec:method}
+
+The pipeline has three phases, corresponding to the three questions a contestable legal
+answer must resolve: what does the text say (Phase I), how does the surrounding case law
+treat it (Phase II), and can the answer be trusted before it is shown to a user (Phase
+III).
+
+\subsection{Phase I: Ontology-Directed Extraction}
+
+Following the ontology-directed extraction (ODE) method taught in this course, extraction
+is not ``ask an LLM to summarize the judgment.'' A small starter ontology is defined
+first: two top-level classes, \textsc{Entity} (children: Party, Court, Judge,
+LegalInstrument, PriorCase, PropertyAsset) and \textsc{Action} (children:
+ProceduralAction, DisputeAction, TreatmentAction, RulingAction, DispositionAction); five
+semantic roles (Agent, Patient, Authority, Forum, Time); and eight target information
+extraction concepts, listed in Table~\ref{tab:concepts}, along with a terminology mapping
+from keywords to classes.
+
+\begin{table}[t]
+\caption{Target information extraction concepts}
+\label{tab:concepts}
+\centering
+\footnotesize
+\begin{tabular}{@{}p{0.2\linewidth}p{0.7\linewidth}@{}}
+\toprule
+\textbf{Concept} & \textbf{Definition} \\
+\midrule
+Claim & What a party asserts is true or owed to them (ownership, possession, right to recovery). \\
+Issue & The question the court frames itself as deciding. \\
+RuleCited & A statute, section, or article invoked as governing law. \\
+AuthorityCited & A prior case invoked as precedent. \\
+AuthorityTreatment & How the citing court treated an AuthorityCited; the signed-graph edge label (Section~\ref{sec:phase2}). \\
+Fact & A fact the court treats as established in the record. \\
+Holding & The court's determination on an Issue. \\
+Outcome & The disposition of the case (appeal allowed/dismissed, etc.). \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The LLM's role is narrow and constrained: given a sentence, ground it into ontology facts
+(which classes and roles the words instantiate) rather than freely generate an
+explanation. Given a handful of gold (sentence, concept, filler) examples --- 24 in the
+current ontology, drawn directly from the downloaded judgments --- symbolic rules are
+learned by generalizing across examples via their lowest common ancestor in the ontology
+(e.g.\ \emph{relied on}/\emph{followed}/\emph{approved} generalize to a positive
+TreatmentAction trigger). Seven rules have been learned so far; the two with the most
+supporting examples are TreatmentAction+Authority~$\rightarrow$~AuthorityCited (3
+examples, confidence 1.0) and RulingAction+Patient~$\rightarrow$~Holding (4 examples,
+confidence 0.57). The lower confidence on the latter is not noise: ``held that $X$'' maps
+to Holding, RuleCited, Issue, or AuthorityCited depending on what $X$ actually contains,
+and resolving this needs content-based disambiguation (does $X$ mention a statute or a
+case name), not more (class, role) pairs. This is documented as a known gap in the
+ontology and is discussed further in Section~\ref{sec:limitations}.
+
+Running GROUND on every sentence of a full judgment (100--300+ sentences) would be slow
+and mostly wasted, since the current rule set only fires on a handful of trigger patterns.
+Phase I therefore pre-filters to the first 30 sentences containing at least one ontology
+terminology keyword before spending an LLM call on them --- a cheap candidate-generation
+step in front of the expensive one. As Section~\ref{sec:results} shows, this specific
+choice, not the grounding step itself, is the pipeline's current recall bottleneck.
+
+\subsection{Phase II: Signed Legal Knowledge Graph}
+\label{sec:phase2}
+
+Extracted objects and the classified citation metadata are merged into a graph in which
+cases and legal propositions are nodes. Citation edges are signed using the two
+complementary sources described in Section~\ref{sec:dataset}: the HEADNOTE-based
+extractor for pre-2000 cases, and the LLM-based classifier for post-2000 cases, both
+writing into the same \{relied\_on, distinguished, overruled\_or\_disapproved,
+referred\_to, unclear\} label space. From the resulting signed graph we compute a
+structural Proof-Support Score per case --- a signed variant of PageRank/HITS, following
+the modeling intuition behind signed graph learning in Derr et al.~\cite{derr2018} --- that
+indicates whether the surrounding case law currently supports, contests, or has weakened a
+given proposition. This score has been sanity-checked against known landmark cases
+(\emph{Angurbala Mullick}, \emph{Deoki Nandan v. Murlidhar}) but is explicitly not a
+prediction of how a future court would rule.
+
+\subsection{Phase III: Deterministic Verification and IRAC Synthesis}
+
+Before any natural-language answer is produced for a judgment, a verification layer checks
+every proposed AuthorityCited object against the citation ground truth: does the cited
+case actually appear among this judgment's own outbound case-citation edges in the
+provided metadata? This is a direct, checkable proxy for the fabricated-authority failure
+mode. Matching is done on normalized party names rather than reporter citations, since the
+provided metadata does not carry reporter volumes and grounding sometimes truncates
+multi-citation list sentences (dropping the first party's name, e.g.\ ``Krishna Shetti v.
+Gilbert Pinto'' surviving only as ``Gilbert Pinto''); either party name matching is
+accepted as evidence, with a minimum length floor to avoid one-word false positives. Each
+proposed authority is classified into exactly one of four states:
+
+\begin{itemize}
+\item \textsc{Verified} --- matches a real outbound case-citation edge of the judgment.
+\item \textsc{Unverified} --- does not match any real edge. We further split this by
+whether the proposed name appears anywhere in the judgment's own text at all, since only
+the ``does not appear at all'' subset is a genuine fabrication signal; the metadata itself
+is independently scraped and incomplete (it is derived from Indian Kanoon's own outbound
+links, which systematically omit English and Privy Council authorities), so a real
+citation the extraction garbled, or a real citation the metadata simply lacks, would also
+show up as \textsc{Unverified} without this split.
+\item \textsc{Self\_reference} --- the judgment citing itself or its own lower-court
+history.
+\item \textsc{Rejected\_not\_a\_case} --- the proposed span is not a case citation at all
+(most commonly a statute section misclassified upstream; see Section~\ref{sec:results}).
+\end{itemize}
+
+Only claims that pass verification are rendered into the final IRAC-style (Issue, Rule,
+Application, Conclusion) output; authorities that fail are flagged rather than silently
+dropped or smoothed over into fluent prose. The verifier's heuristics were themselves
+tuned against a hand audit after early mistakes: Indian reporter citations can sit outside
+the parenthetical span a naive regex expects (e.g.\ ``Ayyappa Reddy, (1913) I.L.R. 38 Mad.
+738''), a case-insensitive reporter pattern can accept any parenthetical including
+statutory sub-clauses (``clause (iv)''), and whole-string fuzzy matching can let a shared
+generic prefix carry a real mismatch (``Commissioner of Income-tax, Madras'' scoring high
+against ``\ldots, Bihar and Orissa''). Fixing these on an earlier 1950s-only evaluation
+run raised its verified rate from 17\% to 55\%; we treat the verifier itself as a
+component requiring its own validation, not as ground truth by construction.
+
+\section{Experimental Setup}
+\label{sec:setup}
+
+All three systems compared in this paper use the same generator model,
+\texttt{llama4-scout-17b}, served from ASU's Voyager endpoint (an internal,
+OpenAI-API-compatible deployment of open-weight models), and the same task: produce an
+IRAC analysis of a judgment and list the prior decisions it relies on.
+
+\textbf{Closed-book LLM.} The model receives only the case title and year --- the ``ask a
+chatbot about case $X$'' setting profiled by Dahl et al.~\cite{dahl2024} --- and answers
+from parametric memory alone.
+
+\textbf{Dense RAG.} The judgment is split into approximately 1,200-character chunks,
+embedded with \texttt{qwen3-embedding-8b}, and the model answers from the top-8 chunks by
+cosine similarity to a fixed query about precedents, rule, and holding.
+
+\textbf{LexGraph (ours).} Phase I grounds the first 30 keyword-matched sentences of each
+judgment into the ontology, as described in Section~\ref{sec:method}.
+
+Every authority any system lists is then scored by the identical deterministic verifier
+described in Section~\ref{sec:method} (\texttt{eval\_lib.score\_authorities}), so
+differences between systems reflect what they surfaced, not how leniently they were
+graded. The evaluation set is 48 judgments, six drawn from each decade from the 1950s
+through the 2020s via \texttt{run\_evaluation\_batch.py --per-decade 6}, from the
+stratified 500-case sample described in Section~\ref{sec:dataset}. Sampling by decade
+rather than by row order matters: the underlying sample file is sorted by decade, so a
+naive first-$N$ selection would silently mean ``the first $N$ 1950s cases.''
+
+We report four quantities per system: \emph{case citations}, the number of listed
+authorities that are actually case references (excluding statutes, bare party names, or
+other non-citation spans); \emph{verified}, how many of those match a real outbound edge
+of the judgment; \emph{not named in judgment}, how many unverified citations have no party
+name occurring anywhere in the judgment text at all (the sharper fabrication signal, per
+Section~\ref{sec:method}); and \emph{edge recall}, the fraction of the 2,123 real outbound
+case-citation edges present across these 48 judgments that a system surfaced and verified.
+
+\section{Results}
+\label{sec:results}
+
+\subsection{Headline Comparison}
+
+Table~\ref{tab:headline} summarizes the three systems on the 48-case evaluation set.
+
+\begin{table*}[t]
+\caption{System comparison on 48 judgments (six per decade, 1950s--2020s), scored by an identical verifier}
+\label{tab:headline}
+\centering
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+\textbf{System} & \textbf{Authorities output} & \textbf{Case citations} & \textbf{Verified} & \textbf{Not named in judgment} & \textbf{Edge recall} \\
+\midrule
+Closed-book LLM & 181 & 174 & 12 (6.9\%) & 101 & 11 / 2123 (0.5\%) \\
+Dense RAG       & 464 & 417 & 216 (51.8\%) & 5 & 211 / 2123 (9.9\%) \\
+LexGraph (ours) & 235 & 50  & 30 (60.0\%) & 0 & 30 / 2123 (1.4\%) \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+Closed-book prompting fabricates: only 12 of the vanilla model's 174 case citations
+(6.9\%) match a real citation of the judgment, and 101 of its 162 unverified citations
+name no party found anywhere in the judgment's text --- fluent, correctly formatted
+citations, complete with reporter volumes, for authorities the judgment never cites. This
+reproduces the failure mode Dahl et al.~\cite{dahl2024} report, on our own corpus.
+Grounding in the source text, whether via RAG or via ontology-directed extraction, largely
+removes it: only 5 of RAG's 201 unverified citations and 0 of LexGraph's 20 unverified
+citations are absent from the judgment (Table~\ref{tab:unverified}).
+
+\subsection{Provenance of Unverified Citations}
+
+\begin{table}[t]
+\caption{Breakdown of unverified citations by whether the proposed party name appears in the judgment text}
+\label{tab:unverified}
+\centering
+\footnotesize
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+\textbf{System} & \textbf{Unverified} & \textbf{Named in text} & \textbf{Not in text} & \textbf{Name too short} \\
+\midrule
+Closed-book & 162 & 59  & 101 & 2  \\
+Dense RAG   & 201 & 185 & 5   & 11 \\
+LexGraph    & 20  & 13  & 0   & 7  \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The remaining ``name too short'' category covers party names too short or generic (e.g.\
+a single common surname) for the length floor described in Section~\ref{sec:method} to
+check safely, since short-name containment matching produced false verifications during
+the verifier's own hand audit (Section~\ref{sec:method}); these are left unresolved rather
+than guessed in either direction. This split matters because an unverified citation is not
+automatically a fabricated one.
+The citation metadata used as ground truth is itself independently scraped from Indian
+Kanoon's own outbound links, which systematically omit English and Privy Council
+authorities, and is not guaranteed complete. A citation named in the judgment's own text
+but not matched to a ground-truth edge is more likely a metadata gap, a name-matching
+miss, or (for RAG and LexGraph) a real citation the extraction produced in a slightly
+garbled form, than an invented authority. Under this reading, LexGraph's 0 not-in-text
+unverified citations and RAG's 5 both look like genuinely low fabrication rates; the
+closed-book model's 101 do not have this excuse, since nothing in a title-and-year-only
+prompt could have surfaced a name that is absent from the judgment altogether.
+
+\subsection{Per-Decade Breakdown and the Recall Bottleneck}
+
+Table~\ref{tab:decade} shows LexGraph's verified rate and edge recall by decade.
+
+\begin{table*}[t]
+\caption{LexGraph performance by decade}
+\label{tab:decade}
+\centering
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+\textbf{Decade} & \textbf{Cases} & \textbf{Authorities output} & \textbf{Case citations} & \textbf{Verified rate} & \textbf{Real edges} & \textbf{Edge recall} \\
+\midrule
+1950s & 6 & 33 & 16 & 68.8\% & 86  & 12.8\% \\
+1960s & 6 & 38 & 18 & 61.1\% & 83  & 13.3\% \\
+1970s & 6 & 30 & 5  & 60.0\% & 302 & 1.0\%  \\
+1980s & 6 & 34 & 6  & 33.3\% & 128 & 1.6\%  \\
+1990s & 6 & 21 & 2  & 0.0\%  & 196 & 0.0\%  \\
+2000s & 6 & 31 & 1  & 100.0\% & 149 & 0.7\%  \\
+2010s & 6 & 27 & 2  & 100.0\% & 550 & 0.4\%  \\
+2020s & 6 & 21 & 0  & --      & 629 & 0.0\%  \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+Edge recall is concentrated almost entirely in the 1950s and 1960s (12.8\% and 13.3\%),
+and falls to near zero from the 1970s onward, even though the number of real outbound
+edges per decade generally grows over time (from 86 in the 1950s to 629 in the 2020s,
+reflecting a more heavily cross-cited modern jurisprudence). This is consistent with the
+mechanism identified in Section~\ref{sec:method}: 1950s--60s judgments announce their
+cited authorities in a HEADNOTE section near the top of the document, which falls
+comfortably inside a first-30-keyword-sentence window; later judgments cite authorities
+throughout the reasoning, where the same fixed window captures only a small, effectively
+arbitrary fraction of them. High per-decade verified rates in some later decades (100\%
+in the 2000s and 2010s) are not evidence the pipeline works better there --- they come
+from only 1--2 case-shaped citations being proposed at all in six judgments, i.e.\ a
+precision statistic computed over almost no recall.
+
+\subsection{Extraction Volume and Precision}
+
+Across the 48 evaluated judgments, Phase I produced 192 Party, 362 Claim, 453 Holding, 108
+Outcome, and 235 AuthorityCited objects. Of those 235 AuthorityCited objects, 180 (76.6\%)
+were rejected by the verifier as not case citations at all --- almost all statute or
+section spans. This is the extraction-side counterpart of the RulingAction+Patient
+ambiguity noted in Section~\ref{sec:method}: the same syntactic pattern (``held that
+\ldots'', ``relying on \ldots'') introduces both statutory rules and case authorities, and
+the current rule set does not yet look at the content of the span (does it name a
+reported case versus a numbered section) to tell them apart.
+
+\section{Discussion and Limitations}
+\label{sec:limitations}
+
+The central, honest result of this evaluation is that \emph{plain RAG currently beats
+LexGraph on coverage}. RAG recovers and verifies 9.9\% of the real citation edges in these
+48 judgments against LexGraph's 1.4\%, at broadly comparable precision (51.8\% vs.\ 60.0\%
+of case-shaped citations verified). The bottleneck is Phase I's candidate selection, not
+Phase III's verification: LexGraph only ever grounds the first 30 keyword-matched
+sentences of a judgment, so its coverage is bounded above by how much of a judgment's
+citation content fits in that window, and Section~\ref{sec:results} shows that window
+works only for a law-reporting convention that stops appearing after 2000. Because the
+verifier is agnostic to how a candidate authority was produced, this is a solvable
+integration problem rather than a limitation of the verify-before-answer approach itself:
+feeding RAG-style retrieval into ontology grounding, instead of choosing between them,
+should let LexGraph inherit RAG's coverage while keeping typed, auditable objects and
+Phase III certification.
+
+A second limitation is Phase I precision: 76.6\% of extracted AuthorityCited objects are
+not case citations, driven by an ontology role (RulingAction+Patient) that is genuinely
+overloaded across four different target concepts. More gold examples have not resolved
+this in past iterations; it needs content-based disambiguation of the span itself.
+
+A third limitation concerns the evaluation's statistical power and the ground truth it
+verifies against. Six cases per decade is too small a sample to support strong per-decade
+conclusions, particularly for decades where only 0--2 case-shaped citations were proposed
+at all. The citation ground truth itself is Indian Kanoon's own scraped outbound-link
+data, not a hand-curated authority; it is known to omit English and Privy Council
+citations systematically, and 22 verified matches across the three systems in this
+evaluation matched more than one candidate edge (e.g.\ a bare ``State of Orissa'') and are
+flagged as ambiguous rather than confidently attributed. None of this invalidates the
+comparison between systems, since all three are scored against the same imperfect ground
+truth with the same matching logic, but it means absolute rates (e.g.\ ``60\% verified'')
+should be read as measured against available, incomplete evidence rather than as an exact
+fabrication rate.
+
+\section{Future Work}
+\label{sec:future}
+
+The immediate next step is to replace Phase I's first-30-keyword-sentence heuristic with
+retrieval-selected passages --- the same retrieval mechanism already implemented for the
+RAG baseline --- as the candidate pool fed into ontology grounding, and to re-run the
+full evaluation without reusing cached extractions. We also plan to run an explicit ``RAG
+plus verifier'' ablation (RAG's retrieved passages, scored by Phase III without any
+ontology grounding at all) to isolate how much of LexGraph's precision advantage over
+plain RAG comes from typed extraction versus from the verifier itself. On the precision
+side, disambiguating RulingAction+Patient by inspecting whether its filler names a
+reported case or a statute section is the highest-priority ontology fix. Beyond this
+project's initial scope, we intend to build a lightweight interactive dashboard so a user
+can enter a land-dispute fact pattern and see the retrieved authorities, the issue-rule
+-evidence trace, the Proof-Support Score, and any authorities the verifier flagged as
+unsupported, which is the artifact intended for the course's live demo session.
+
+\section{Conclusion}
+
+Deterministic, ground-truth-checked verification works: across all three systems in this
+evaluation, the ones that ground their answers in the judgment's own text (RAG and
+LexGraph) show a near-zero rate of citing authorities that do not appear in that text at
+all, while a closed-book LLM fabricates such citations for the majority of its unverified
+output, reproducing a known legal-hallucination failure mode on this corpus. But
+verification alone does not fix coverage: LexGraph's advantage in precision currently
+comes at the cost of an order-of-magnitude deficit in recall relative to plain retrieval,
+traced here to a specific, fixable candidate-selection bottleneck rather than to any
+weakness in the verify-before-answer principle itself. The next iteration of this
+pipeline combines retrieval for coverage with ontology-directed extraction for typed,
+auditable objects and deterministic verification for certification, so that each stage's
+contribution can be measured rather than assumed.
+
+\section*{Acknowledgment}
+
+We thank Prof.\ Hasan Davulcu for the project topic and dataset, and TA Anshul Trivedi for
+guidance during office hours. LLM inference for this project was run on ASU's Voyager
+research computing endpoint.
+
+\begin{thebibliography}{9}
+
+\bibitem{dahl2024}
+M. Dahl, V. Magesh, M. Suzgun, and D. E. Ho, ``Large Legal Fictions: Profiling Legal
+Hallucinations in Large Language Models,'' \emph{Journal of Legal Analysis}, vol. 16,
+no. 1, pp. 64--93, 2024.
+
+\bibitem{derr2018}
+T. Derr, Y. Ma, and J. Tang, ``Signed Graph Convolutional Network,'' in \emph{Proc. 2018
+IEEE International Conference on Data Mining (ICDM)}, 2018, pp. 929--934.
+
+\bibitem{hoekstra2007}
+R. Hoekstra, J. Breuker, M. Di Bello, and A. Boer, ``The LKIF Core Ontology of Basic Legal
+Concepts,'' in \emph{Proc. 2nd Workshop on Legal Ontologies and Artificial Intelligence
+Techniques (LOAIT)}, 2007.
+
+\bibitem{legalruleml}
+OASIS LegalRuleML Technical Committee, ``LegalRuleML Core Specification Version 1.0,''
+\url{https://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/}.
+
+\bibitem{lewis2020}
+P. Lewis \emph{et al.}, ``Retrieval-Augmented Generation for Knowledge-Intensive NLP
+Tasks,'' in \emph{Advances in Neural Information Processing Systems (NeurIPS)}, vol. 33,
+2020, pp. 9459--9474.
+
+\bibitem{riloff1993}
+E. Riloff, ``Automatically Constructing a Dictionary for Information Extraction Tasks,''
+in \emph{Proc. Eleventh National Conference on Artificial Intelligence (AAAI-93)}, 1993.
+
+\bibitem{sunny2026}
+A. D. Sunny and I. Sivan-Sevilla, ``A Neuro-Symbolic Framework for Legal Accountability in
+Public-Sector AI,'' in \emph{Proc. 2026 ACM Conference on Fairness, Accountability, and
+Transparency (FAccT '26)}, 2026.
+
+\end{thebibliography}
+
+\end{document}
