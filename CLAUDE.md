@@ -60,11 +60,12 @@ scripts/
   build_signed_graph.py       # merges both sign sources -> signed graph + Proof-Support Score
   ode_lib.py                  # shared GROUND (LLM) + rule-application logic
   ode_pipeline.py             # CLI: ground / learn / extract (Phase I)
-  build_doc_id_map.py         # doc_id <-> PDF join by normalized title (see gotcha #13)
+  build_doc_id_map.py         # doc_id <-> PDF join by normalized title (see gotcha #14)
   cache_corpus_text.py        # one-off: extract text for every mapped case -> corpus_text.jsonl
   retrieval_lib.py            # BM25Index + DenseIndex (one search() contract) + scrub_citations
   build_dense_index.py        # embeds the corpus with qwen3-embedding-8b -> dense_index.npy
   run_precedent_prediction.py # THE NEW EVALUATION: facts -> authorities, held-out citations
+  answer_from_facts.py        # end-to-end proof-carrying answer: facts -> IRAC, every cite certified
   phase3_verify.py            # single-case IRAC report + citation verification (Phase III)
   run_evaluation_batch.py     # Phase I+III across many cases, aggregates real metrics
   run_baselines.py            # closed-book LLM + dense RAG baselines, same verifier/metrics
@@ -123,6 +124,7 @@ python3 scripts/build_signed_graph.py
 python3 scripts/run_precedent_prediction.py --n 100 --min-year 2000 --facts-chars 0 2000
 python3 scripts/build_dense_index.py                             # ~85 min, resumable, API key
 python3 scripts/run_precedent_prediction.py --retriever dense --n 100 --min-year 2000
+python3 scripts/answer_from_facts.py --n 25 --k 20                # API key; grounded vs closed-book
 
 # LEGACY track: extraction from finished judgments (kept for the baseline comparison)
 python3 scripts/build_sample.py --target 500
@@ -216,7 +218,15 @@ fully regenerate deterministically from upstream data.
     Issue and Rule sections of every IRAC report are empty — the I and R of IRAC. Only
     Holding, Claim, AuthorityCited, Party and Outcome are ever produced. Gold examples for
     all three missing concepts already exist and are being thrown away by `cmd_learn`.
-13. **Nothing in the dataset joins doc_ids to PDFs for the full corpus**, and the obvious
+13. **Learned rules are coupled to the grounding model that produced them.** Rules key on
+    the `(class, role, guard)` triples a specific model emits, so rules learned with one
+    model silently fire on nothing under another. Measured: with glm-5-3-learned rules but
+    scout doing extraction, the Fact sentence came out as `Claim` and both Issue sentences as
+    `Holding` — every new rule dead. If you change `--model` for `learn`, you must change it
+    for `run_evaluation_batch.py` and `answer_from_facts.py` too, and re-run everything
+    downstream. Cheapest guard: keep one model for both, and treat `learned_rules.json` as
+    invalid whenever the grounding model changes.
+14. **Nothing in the dataset joins doc_ids to PDFs for the full corpus**, and the obvious
     normalizer is booby-trapped. The land-disputes spreadsheet covers only its own 6,954
     rows; `build_doc_id_map.py` joins the remainder on normalized titles. Filenames carry a
     copy marker after the year (`..._on_23_May_1957_1`) and titles do not, so stripping
@@ -224,17 +234,17 @@ fully regenerate deterministically from upstream data.
     by exactly that year — it silently produced a 0.6% join rate before being caught. The
     script now asserts its rate against the 500 verified pairs in `sample_cases.csv` (94%)
     and refuses to write a join nothing downstream could trust.
-14. **The corpus caps precedent recall at ~26%, and no method fixes that.** Of 46,904 case
+15. **The corpus caps precedent recall at ~26%, and no method fixes that.** Of 46,904 case
     citation edges only 11,991 (25.6%) point at a case that is in this corpus at all —
     it is Supreme Court only, while judgments cite High Courts, the Privy Council and
     English decisions. Report recall against *reachable* authorities with the raw figure
     beside it, or the number is meaningless. 1,206 cases have their own PDF plus >=3
     reachable authorities; 771 of those are post-2000.
-15. **Query cases must be post-2000.** Pre-2000 headnotes list the cited authorities up
+16. **Query cases must be post-2000.** Pre-2000 headnotes list the cited authorities up
     front, so a query built from such a judgment contains its own answer. This exactly
     inverts the old difficulty profile: the decades the extraction pipeline handled *best*
     are the ones precedent prediction cannot use.
-16. **Voyager needs no VPN, and `qwen3-embedding-8b` is already the best embedder it has.**
+17. **Voyager needs no VPN, and `qwen3-embedding-8b` is already the best embedder it has.**
     The endpoint resolves to public Cloudflare IPs and answers from a residential
     connection. `/v1/models` returns no capability metadata (just id/object/created/
     owned_by), so the only way to tell an embedder from a generator is to probe
@@ -341,7 +351,7 @@ fully regenerate deterministically from upstream data.
       | 50  | 51.5%         | 30.4%            | 14.8%              |
       | 100 | 62.4%         | 42.1%            | 23.7%              |
 
-      precision@10 16.5% / 8.3%. Recall is against *reachable* authorities (gotcha #14).
+      precision@10 16.5% / 8.3%. Recall is against *reachable* authorities (gotcha #15).
       Two things make this credible: it beats the popularity control 3-6x, so it is not
       just exploiting citation skew; and cutting the query from ~60k chars to 2,000 — 30x
       less text — costs only half the recall@10, meaning the FACTS carry most of the
@@ -354,9 +364,62 @@ fully regenerate deterministically from upstream data.
       same-matter appeals like `A.P. Pollution Control Board II` citing the earlier
       `A.P. Pollution Control Board` — and the detector over-flags common surnames
       ("singh") and descriptors ("transport"). The headline stands.
-- [ ] **IN FLIGHT**: dense index (`build_dense_index.py`, ~85 min, detached) for the
-      lexical-vs-dense comparison, and a grounding-model comparison across five Voyager
-      models on the 24-example LEARN gate (scout baseline: 16/24, `Fact` grounds in none).
+- [x] **Proof-carrying answers work (2026-09-26)** — `answer_from_facts.py`, 25 cases, k=20.
+      Retrieval alone cannot fabricate (every candidate is a real corpus doc_id), so the
+      verifier only earns its place one step later, when a model drafts the answer:
+
+      | arm         | proposed | CERTIFIED | refused: real, unbriefed | refused: resolves to NOTHING | groundedness |
+      |-------------|---------:|----------:|-------------------------:|-----------------------------:|-------------:|
+      | grounded    | 61       | 61        | 0                        | 0                            | 100.0%       |
+      | closed_book | 61       | 3         | 12                       | **46**                       | 4.9%         |
+
+      **46 of 61 closed-book citations resolve to nothing across all 5,462 judgments** — a
+      75% fabrication rate, driven to zero by drafting from a retrieved brief and checking
+      every cite. Use this, not the older 58% -> 1% figure; it is better instrumented.
+      **The honest limit: only 13.1% of the 61 certified authorities were really cited by
+      the court.** Groundedness is not correctness — the verifier guarantees provenance
+      (real, retrievable, pre-dating), not that the right case was picked.
+      Certification is two-stage (verbatim, then party matching) on purpose: the party
+      matcher's MIN_COVERAGE rightly refuses "State of Bombay v. Advani" for "Province Of
+      Bombay vs Kusaldas S Advani" (gotcha #9), and without the split a refusal for sloppy
+      paraphrase is indistinguishable from one for fabrication.
+- [x] **Dense vs BM25 (2026-09-26): it depends on query length.** Both retrievers share one
+      `search()` contract and one evaluation path. Recall, 100 post-2000 cases:
+
+      | k   | BM25 facts | Dense facts | BM25 full | Dense full | popularity |
+      |-----|-----------:|------------:|----------:|-----------:|-----------:|
+      | 10  | 15.6%      | **16.2%**   | **31.0%** | 25.9%      | 5.3%       |
+      | 50  | 30.4%      | **33.7%**   | **51.5%** | 48.5%      | 14.8%      |
+      | 100 | **42.1%**  | 41.3%       | **62.4%** | 58.7%      | 23.7%      |
+
+      Dense wins on short realistic fact queries, BM25 on long ones where exact overlap on
+      statute and doctrine names beats a single mean-pooled vector. The @10 gap is within
+      noise on 532 authorities; the @50 gap looks real. Hybrid fusion is the untried lever.
+- [x] **Grounding model benchmarked (2026-09-26), and it is not about size.** Five Voyager
+      models on the 24-example LEARN gate:
+
+      | model                         | matched/24 | keys | recovers `Fact` |
+      |-------------------------------|-----------:|-----:|-----------------|
+      | **glm-5-3**                   | **16**     | **9**| **yes**         |
+      | llama4-scout-17b              | 16         | 8    | no              |
+      | qwen3-235b-a22b-instruct-2507 | 15         | 7    | yes             |
+      | gpt-oss-120b                  | 11         | 6    | no (6 empty)    |
+      | qwen35-122b-a10b              | 5          | 3    | no (16 API errors) |
+
+      Two of the five larger models score *below* the 17B baseline and the 122B one is
+      effectively broken here. Grounding rewards instruction discipline (exact substrings,
+      a fixed class list, no commentary), not capability — a model that paraphrases is
+      penalised by the similarity match. **But `glm-5-3` is ~12x slower than scout
+      (~25s/call vs ~2s)**, which matters for any per-sentence batch job.
+- [x] **Swapping the grounding model does NOT fix `Fact` / `Issue` (tested 2026-09-26).**
+      `learn --model glm-5-3` does produce 11 rules including `ProceduralAction.Time[other]
+      -> Fact` and `DispositionAction.Agent[other] -> Issue`, so all 8 concepts finally have
+      a rule. But both routes are semantically accidental single-example artifacts and they
+      do not generalise: run against real sentences, the `Fact` rule fires on **nothing**
+      (even under glm-5-3, on the very sentence type it was learned from), and `Issue` fires
+      on one of two. Reverted to the committed scout rules rather than destabilise a measured
+      pipeline for a capability that does not work. The real fix is contrastive gold
+      examples, per next step #1.
 - [ ] **NOT STARTED**: dashboard (Streamlit was the plan) for the live demo
 - [ ] **NOT STARTED**: filling in real team member names/roles in the proposal
 - [ ] **NOT DONE**: checking the professor's official proposal outline once posted
@@ -369,12 +432,14 @@ Remote: `https://github.com/myselfsiddharth/LegalAI.git`, branch `main`.
 ## Suggested next steps, in likely priority order
 
 1. **`Fact` extraction — the input side of the whole pipeline is empty.** The professor's
-   Step 1 takes evidence and facts as input and we extract exactly zero `Fact` objects.
-   The failure is at GROUNDING, not at the rule step (both gold examples score 0.30 and
-   0.35 against a 0.45 floor), so content guards cannot reach it. Two cheap attacks, in
-   order: try a larger Voyager generation model (we defaulted to `llama4-scout-17b` without
-   ever checking the fleet — see gotcha #16), then add contrastive gold examples. The
-   24-example LEARN gate is the benchmark and costs 24 calls.
+   Step 1 takes evidence and facts as input and we extract exactly zero `Fact` objects. The
+   failure is at GROUNDING, not at the rule step (both gold examples score 0.30 and 0.35
+   against a 0.45 floor), so content guards cannot reach it. **The model swap was already
+   tried and does not work** (see status above and gotcha #13) — so this needs
+   **contrastive gold examples** for `Fact` and `Issue`: several each, drawn from real
+   judgment text rather than curated sentences, chosen to sit next to the Holding and Claim
+   examples they currently lose to. The 24-example LEARN gate is the benchmark and costs 24
+   calls per run, so iteration is cheap.
 2. **Fact segmentation for real queries.** `--facts-chars N` takes the first N characters
    of scrubbed text as a proxy for the fact narrative, which is crude and drags the case
    caption into the query. There are no `FACTS` section headers to lean on: sampled across
