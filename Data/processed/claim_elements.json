@@ -1,0 +1,731 @@
+{
+  "adverse possession": [
+    {
+      "element": "continuous possession",
+      "key": "continuous possession",
+      "support": 6,
+      "sources": [
+        {
+          "doc_id": "112778127",
+          "year": "2013",
+          "phrase": "continuous possession",
+          "sentence": "Possession to be adverse has to be actual, open, notorious, exclusive and continuous for the requisite frame of time as provided in law so that the possessor perfects his title by adverse possession."
+        },
+        {
+          "doc_id": "112778127",
+          "year": "2013",
+          "phrase": "continuous possession",
+          "sentence": "It is a well-settled principle that a party claiming adverse possession must prove that his possession is \u0192nec vi, nec clam, nec precario\u201e, that is, peaceful, open and continuous."
+        },
+        {
+          "doc_id": "1401884",
+          "year": "1958",
+          "phrase": "continuous possession",
+          "sentence": "Even though it may not be necessary for the purpose of establishing adverse possession over a coal mining area to carry on mining operation continuously for a period of 12 years, continuous possession of the mining area and the mine would be a necessary ingredient to establish ad"
+        },
+        {
+          "doc_id": "1571903",
+          "year": "2010",
+          "phrase": "continuous possession",
+          "sentence": "The classical requirements of acquisition of title by adverse possession are that such possession in denial of the true owner's title must be peaceful, open and continuous."
+        }
+      ]
+    },
+    {
+      "element": "open possession",
+      "key": "open possession",
+      "support": 5,
+      "sources": [
+        {
+          "doc_id": "112778127",
+          "year": "2013",
+          "phrase": "open possession",
+          "sentence": "Possession to be adverse has to be actual, open, notorious, exclusive and continuous for the requisite frame of time as provided in law so that the possessor perfects his title by adverse possession."
+        },
+        {
+          "doc_id": "112778127",
+          "year": "2013",
+          "phrase": "open possession",
+          "sentence": "It is a well-settled principle that a party claiming adverse possession must prove that his possession is \u0192nec vi, nec clam, nec precario\u201e, that is, peaceful, open and continuous."
+        },
+        {
+          "doc_id": "1571903",
+          "year": "2010",
+          "phrase": "open possession",
+          "sentence": "The classical requirements of acquisition of title by adverse possession are that such possession in denial of the true owner's title must be peaceful, open and continuous."
+        },
+        {
+          "doc_id": "1642527",
+          "year": "1993",
+          "phrase": "open possession",
+          "sentence": "Party claiming adverse possession must prove that his possession mast be \"nee vi nee clam nee precario\" i.e. peaceful, open and continuous."
+        }
+      ]
+    },
+    {
+      "element": "peaceful possession",
+      "key": "peaceful possession",
+      "support": 4,
+      "sources": [
+        {
+          "doc_id": "112778127",
+          "year": "2013",
+          "phrase": "peaceful possession",
+          "sentence": "It is a well-settled principle that a party claiming adverse possession must prove that his possession is \u0192nec vi, nec clam, nec precario\u201e, that is, peaceful, open and continuous."
+        },
+        {
+          "doc_id": "1571903",
+          "year": "2010",
+          "phrase": "peaceful possession",
+          "sentence": "The classical requirements of acquisition of title by adverse possession are that such possession in denial of the true owner's title must be peaceful, open and continuous."
+        },
+        {
+          "doc_id": "1642527",
+          "year": "1993",
+          "phrase": "peaceful possession",
+          "sentence": "Party claiming adverse possession must prove that his possession mast be \"nee vi nee clam nee precario\" i.e. peaceful, open and continuous."
+        },
+        {
+          "doc_id": "59843273",
+          "year": "2023",
+          "phrase": "peaceful possession",
+          "sentence": "Sukhi10 held that \u25a1Party claiming adverse possession must prove that his possession must be \u201enec vi, nec clam, nec precario\u0192 i.e. peaceful, open and continuous."
+        }
+      ]
+    },
+    {
+      "element": "denial of his title",
+      "key": "denial title",
+      "support": 4,
+      "sources": [
+        {
+          "doc_id": "1199737",
+          "year": "2007",
+          "phrase": "denial of his title",
+          "sentence": "The principle of law is firmly established that a person who bases his title on adverse possession must show by clear and unequivocal evidence that his possession was hostile to the real owner and amounted to denial of his title to the property claimed."
+        },
+        {
+          "doc_id": "1571903",
+          "year": "2010",
+          "phrase": "denial of title",
+          "sentence": "Adverse possession really means the hostile possession which is expressly or impliedly in denial of title of the true owner and in order to constitute adverse possession the possession proved must Chatti Konati Rao & Ors vs Palle Venkata Subba Rao on 7 December, 2010 Indian Kanoo"
+        },
+        {
+          "doc_id": "1867043",
+          "year": "1995",
+          "phrase": "denial of his title",
+          "sentence": "Special Manager, Court of Wards (AIR 1935 PC 53), it was observed: \"The principle of law is firmly established that a person, who bases his title on adverse possession, must show by clear and unequivocal evidence that his possession was hostile to the real owner and amounted to a"
+        },
+        {
+          "doc_id": "290532",
+          "year": "2011",
+          "phrase": "denial of title",
+          "sentence": "The Trial Court also observed that despite claiming adverse possession, there was no pleading qua denial of title of the defendants by the plaintiff, so much so that the specific day when the alleged possession of State allegedly became adverse against the defendants has not been"
+        }
+      ]
+    },
+    {
+      "element": "animus possidendi",
+      "key": "animus possidendi",
+      "support": 3,
+      "sources": [
+        {
+          "doc_id": "105423580",
+          "year": "2023",
+          "phrase": "animus possidendi",
+          "sentence": "A plea of adverse possession undoubtedly requires the requisite intention, viz., animus possidendi."
+        },
+        {
+          "doc_id": "1571903",
+          "year": "2010",
+          "phrase": "animus possidendi",
+          "sentence": "Animus possidendi as is well known a requisite ingredient of adverse possession."
+        },
+        {
+          "doc_id": "55625533",
+          "year": "2024",
+          "phrase": "animus possidendi",
+          "sentence": "Somnath Muljibhai Nayak [(2004) 3 SCC 376].) 30. \u25a1Animus possidendi\u201a is one of the ingredients of adverse possession."
+        }
+      ]
+    },
+    {
+      "element": "hostile to the real owner",
+      "key": "hostile real owner",
+      "support": 3,
+      "sources": [
+        {
+          "doc_id": "105423580",
+          "year": "2023",
+          "phrase": "hostile to the real owner",
+          "sentence": "In the case of adverse possession, since a requirement is that the possession must be hostile to the real owner and since the real owner is the Almighty, the Sabir Ali Khan vs Syed Mohd."
+        },
+        {
+          "doc_id": "1199737",
+          "year": "2007",
+          "phrase": "hostile to the real owner",
+          "sentence": "The principle of law is firmly established that a person who bases his title on adverse possession must show by clear and unequivocal evidence that his possession was hostile to the real owner and amounted to denial of his title to the property claimed."
+        },
+        {
+          "doc_id": "1867043",
+          "year": "1995",
+          "phrase": "hostile to the real owner",
+          "sentence": "Special Manager, Court of Wards (AIR 1935 PC 53), it was observed: \"The principle of law is firmly established that a person, who bases his title on adverse possession, must show by clear and unequivocal evidence that his possession was hostile to the real owner and amounted to a"
+        }
+      ]
+    },
+    {
+      "element": "nec vi",
+      "key": "nec vi",
+      "support": 3,
+      "sources": [
+        {
+          "doc_id": "112778127",
+          "year": "2013",
+          "phrase": "nec vi",
+          "sentence": "Debendra Lal Khan[11] that the ordinary classical requirement of adverse possession is that it should be nec vi, nec clam, nec precario 26."
+        },
+        {
+          "doc_id": "1498182",
+          "year": "1956",
+          "phrase": "nec vi",
+          "sentence": "Now, the ordinary classical requirement of adverse possession is that it should be nec vi nec clam nec precario."
+        },
+        {
+          "doc_id": "1768336",
+          "year": "2002",
+          "phrase": "nec vi",
+          "sentence": "A person claiming title by adverse possession has to prove three \"nec\" - nec vi, nec clam and nec precario."
+        }
+      ]
+    },
+    {
+      "element": "nec clam",
+      "key": "nec clam",
+      "support": 3,
+      "sources": [
+        {
+          "doc_id": "112778127",
+          "year": "2013",
+          "phrase": "nec clam",
+          "sentence": "Debendra Lal Khan[11] that the ordinary classical requirement of adverse possession is that it should be nec vi, nec clam, nec precario 26."
+        },
+        {
+          "doc_id": "1498182",
+          "year": "1956",
+          "phrase": "nec clam",
+          "sentence": "Now, the ordinary classical requirement of adverse possession is that it should be nec vi nec clam nec precario."
+        },
+        {
+          "doc_id": "1768336",
+          "year": "2002",
+          "phrase": "nec clam",
+          "sentence": "A person claiming title by adverse possession has to prove three \"nec\" - nec vi, nec clam and nec precario."
+        }
+      ]
+    },
+    {
+      "element": "nec precario",
+      "key": "nec precario",
+      "support": 3,
+      "sources": [
+        {
+          "doc_id": "112778127",
+          "year": "2013",
+          "phrase": "nec precario",
+          "sentence": "Debendra Lal Khan[11] that the ordinary classical requirement of adverse possession is that it should be nec vi, nec clam, nec precario 26."
+        },
+        {
+          "doc_id": "1498182",
+          "year": "1956",
+          "phrase": "nec precario",
+          "sentence": "Now, the ordinary classical requirement of adverse possession is that it should be nec vi nec clam nec precario."
+        },
+        {
+          "doc_id": "1768336",
+          "year": "2002",
+          "phrase": "nec precario",
+          "sentence": "A person claiming title by adverse possession has to prove three \"nec\" - nec vi, nec clam and nec precario."
+        }
+      ]
+    },
+    {
+      "element": "hostile possession",
+      "key": "hostile possession",
+      "support": 3,
+      "sources": [
+        {
+          "doc_id": "1571903",
+          "year": "2010",
+          "phrase": "hostile possession",
+          "sentence": "Adverse possession really means the hostile possession which is expressly or impliedly in denial of title of the true owner and in order to constitute adverse possession the possession proved must Chatti Konati Rao & Ors vs Palle Venkata Subba Rao on 7 December, 2010 Indian Kanoo"
+        },
+        {
+          "doc_id": "1571903",
+          "year": "2010",
+          "phrase": "hostile possession",
+          "sentence": "It means hostile possession which is expressly or impliedly in denial of the title of the Chatti Konati Rao & Ors vs Palle Venkata Subba Rao on 7 December, 2010 Indian Kanoon - http://indiankanoon.org/doc/1571903/ 5 true owner and in order to constitute adverse possession the pos"
+        },
+        {
+          "doc_id": "1742737",
+          "year": "2000",
+          "phrase": "hostile possession",
+          "sentence": "In order to substantiate such a claim of adverse possession the ingredients of open, hostile and continuous possession with the required animus, as laid down by Courts should be proved for a continuous period of 30 years."
+        },
+        {
+          "doc_id": "59843273",
+          "year": "2023",
+          "phrase": "hostile possession",
+          "sentence": "It was then held that the classic requirement of adverse possession is that possession should be open, assertive, hostile and continuous."
+        }
+      ]
+    },
+    {
+      "element": "actual possession",
+      "key": "actual possession",
+      "support": 2,
+      "sources": [
+        {
+          "doc_id": "112778127",
+          "year": "2013",
+          "phrase": "actual possession",
+          "sentence": "Possession to be adverse has to be actual, open, notorious, exclusive and continuous for the requisite frame of time as provided in law so that the possessor perfects his title by adverse possession."
+        },
+        {
+          "doc_id": "1498182",
+          "year": "1956",
+          "phrase": "actual possession",
+          "sentence": "It would follow that whatever may be the animus or intention of a person wanting to acquire title by adverse possession his adverse possession cannot commence until he obtains actual possession with the requisite animus."
+        }
+      ]
+    },
+    {
+      "element": "exclusive possession",
+      "key": "exclusive possession",
+      "support": 2,
+      "sources": [
+        {
+          "doc_id": "112778127",
+          "year": "2013",
+          "phrase": "exclusive possession",
+          "sentence": "Possession to be adverse has to be actual, open, notorious, exclusive and continuous for the requisite frame of time as provided in law so that the possessor perfects his title by adverse possession."
+        },
+        {
+          "doc_id": "1498182",
+          "year": "1956",
+          "phrase": "exclusive possession",
+          "sentence": "The possession of one co-heir is considered, in law, as possession of all the co-heirs and in order to establish adverse possession ouster of the non-possessing co-heir should be made out and as between them there-must be evidence of open assertion of hostile title, coupled with "
+        }
+      ]
+    },
+    {
+      "element": "adequate continuity",
+      "key": "adequate continuity",
+      "support": 2,
+      "sources": [
+        {
+          "doc_id": "1571903",
+          "year": "2010",
+          "phrase": "adequate continuity",
+          "sentence": "Adverse possession really means the hostile possession which is expressly or impliedly in denial of title of the true owner and in order to constitute adverse possession the possession proved must Chatti Konati Rao & Ors vs Palle Venkata Subba Rao on 7 December, 2010 Indian Kanoo"
+        },
+        {
+          "doc_id": "1768336",
+          "year": "2002",
+          "phrase": "adequate continuity",
+          "sentence": "(as he then was) observed thus : \"Adverse possession must be adequate in continuity, in publicity and extent and a plea is required at the least to show when possession becomes adverse so that the starting point of limitation against the party affected can be found.\" In that case"
+        }
+      ]
+    },
+    {
+      "element": "publicity",
+      "key": "publicity",
+      "support": 2,
+      "sources": [
+        {
+          "doc_id": "1571903",
+          "year": "2010",
+          "phrase": "publicity",
+          "sentence": "Adverse possession really means the hostile possession which is expressly or impliedly in denial of title of the true owner and in order to constitute adverse possession the possession proved must Chatti Konati Rao & Ors vs Palle Venkata Subba Rao on 7 December, 2010 Indian Kanoo"
+        },
+        {
+          "doc_id": "1768336",
+          "year": "2002",
+          "phrase": "publicity",
+          "sentence": "(as he then was) observed thus : \"Adverse possession must be adequate in continuity, in publicity and extent and a plea is required at the least to show when possession becomes adverse so that the starting point of limitation against the party affected can be found.\" In that case"
+        }
+      ]
+    },
+    {
+      "element": "extent",
+      "key": "extent",
+      "support": 2,
+      "sources": [
+        {
+          "doc_id": "1571903",
+          "year": "2010",
+          "phrase": "extent",
+          "sentence": "Adverse possession really means the hostile possession which is expressly or impliedly in denial of title of the true owner and in order to constitute adverse possession the possession proved must Chatti Konati Rao & Ors vs Palle Venkata Subba Rao on 7 December, 2010 Indian Kanoo"
+        },
+        {
+          "doc_id": "1768336",
+          "year": "2002",
+          "phrase": "extent",
+          "sentence": "(as he then was) observed thus : \"Adverse possession must be adequate in continuity, in publicity and extent and a plea is required at the least to show when possession becomes adverse so that the starting point of limitation against the party affected can be found.\" In that case"
+        }
+      ]
+    },
+    {
+      "element": "adequate in continuity",
+      "key": "adequate in continuity",
+      "support": 2,
+      "sources": [
+        {
+          "doc_id": "1571903",
+          "year": "2010",
+          "phrase": "adequate in continuity",
+          "sentence": "It means hostile possession which is expressly or impliedly in denial of the title of the Chatti Konati Rao & Ors vs Palle Venkata Subba Rao on 7 December, 2010 Indian Kanoon - http://indiankanoon.org/doc/1571903/ 5 true owner and in order to constitute adverse possession the pos"
+        },
+        {
+          "doc_id": "55625533",
+          "year": "2024",
+          "phrase": "adequate in continuity",
+          "sentence": "The adverse possession requires all the three classic requirements to co-exist at the same time, namely, nec vi i.e. adequate in continuity, nec clam i.e. adequate in publicity and nec precario i.e. adverse to a competitor, in denial of title and his knowledge."
+        }
+      ]
+    },
+    {
+      "element": "necessary ingredients",
+      "key": "necessary ingredients",
+      "support": 2,
+      "sources": [
+        {
+          "doc_id": "1571903",
+          "year": "2010",
+          "phrase": "necessary ingredients",
+          "sentence": "Thus, the appellants have not proved the necessary ingredients to establish their title by adverse possession."
+        },
+        {
+          "doc_id": "1867043",
+          "year": "1995",
+          "phrase": "necessary ingredients",
+          "sentence": "Unless, the pleadings are complete and all the necessary ingredients to constitute ouster by adverse possession are set out in the written statement, the plea relating to the title of the property in question cannot be said to have been raised and, therefore, there was no occasio"
+        }
+      ]
+    }
+  ],
+  "specific performance": [
+    {
+      "element": "readiness and willingness",
+      "key": "readiness and willingness",
+      "support": 11,
+      "sources": [
+        {
+          "doc_id": "1041253",
+          "year": "2010",
+          "phrase": "readiness and willingness",
+          "sentence": "This clause provides that the person seeking specific performance must prove that he has performed or has been ready and willing to perform the essential terms of the contract which are to be performed by him. 9) The words \"ready\" and \"willing\" imply that the person was prepared "
+        },
+        {
+          "doc_id": "1041253",
+          "year": "2010",
+          "phrase": "readiness and willingness",
+          "sentence": "Shondrilo Naidu, (2004) 6 SCC 649 paras 19 and 21, this Court observed: \"It is indisputable that in a suit for specific performance of contract the plaintiff must establish his readiness and willingness to perform his part of contract."
+        },
+        {
+          "doc_id": "132974180",
+          "year": "2024",
+          "phrase": "readiness and willingness",
+          "sentence": "The only requirement left was of execution of the sale deed and its registration, for which, according to the appellants, they had been requesting the legal heirs of late Sushila Devi but as they declined and applied for mutation of their names, the appellants instituted the suit"
+        },
+        {
+          "doc_id": "137193261",
+          "year": "2015",
+          "phrase": "readiness and willingness",
+          "sentence": "The principle which can be enunciated is that where the plaintiff brings a suit for specific performance of contract for sale, the law insists upon a condition precedent to the grant of decree for specific performance: that the plaintiff must show his continued readiness and will"
+        }
+      ]
+    },
+    {
+      "element": "legal and valid agreement",
+      "key": "legal and valid agreement",
+      "support": 2,
+      "sources": [
+        {
+          "doc_id": "137193261",
+          "year": "2015",
+          "phrase": "legal and valid agreement",
+          "sentence": "Nevertheless once an agreement to sell is legal and validly proved and further requirements for getting such a decree are established then the court has to exercise its discretion in favour of granting relief for specific performance.\u201e 26."
+        },
+        {
+          "doc_id": "94543326",
+          "year": "2014",
+          "phrase": "legal and valid agreement",
+          "sentence": "Nevertheless once an agreement to sell is legal and validly proved and further requirements for getting such a decree is established then the Court has to exercise its discretion in favour of granting relief for specific performance."
+        }
+      ]
+    },
+    {
+      "element": "other disability",
+      "key": "other disability",
+      "support": 2,
+      "sources": [
+        {
+          "doc_id": "137675",
+          "year": "2001",
+          "phrase": "other disability",
+          "sentence": "If such ingredients are satisfied, the discretionary relief of specific performance is ordinarily granted unless there is delay or latches or any other disability on the part of other party."
+        },
+        {
+          "doc_id": "64833870",
+          "year": "2022",
+          "phrase": "other disability",
+          "sentence": "Katta Sujatha Reddy vs M/S Siddamsetty Infra Projects Pvt. ... on 25 August, 2022 Indian Kanoon - http://indiankanoon.org/doc/64833870/ 21 If such ingredients are satisfied, the discretionary relief of specific performance is ordinarily granted unless there is delay or laches or "
+        }
+      ]
+    }
+  ],
+  "easement": [],
+  "injunction": [
+    {
+      "element": "prima facie case",
+      "key": "prima facie case",
+      "support": 6,
+      "sources": [
+        {
+          "doc_id": "1299452",
+          "year": "2001",
+          "phrase": "prima facie case",
+          "sentence": "The plaintiff must prove a prima facie case, availability of balance of convenience in his favour and his suffering an irreparable injury in the absence of grant of injunction."
+        },
+        {
+          "doc_id": "1514512",
+          "year": "2010",
+          "phrase": "prima facie case",
+          "sentence": "This is evinced from the following extracts of the order of the Division Bench: \"Normally once all the ingredients like prima facie case, balance of convenience, equity if not found in favour of grant of injunction, injunction in any form ought not to Skyline Education Institute "
+        },
+        {
+          "doc_id": "1722050",
+          "year": "1999",
+          "phrase": "prima facie case",
+          "sentence": "No evidence has been led as to whether there would be avoidance of `toothdecay' or `germ fighting' by reason of the user of the toothpaste and without rendering evidence on these two basic elements in our view, question of there being a prima facie case for establishment for the "
+        },
+        {
+          "doc_id": "186855368",
+          "year": "2022",
+          "phrase": "prima facie case",
+          "sentence": "These aspects must be kept in mind by the court while examining the question of grant of injunction, albeit the fundamental principles relating to law of pledge being the special law should be applied as the plaintiff has to establish a prima facie case, balance of convenience an"
+        }
+      ]
+    },
+    {
+      "element": "balance of convenience",
+      "key": "balance convenience",
+      "support": 4,
+      "sources": [
+        {
+          "doc_id": "101603760",
+          "year": "2023",
+          "phrase": "balance of convenience",
+          "sentence": "Balance of convenience or inconvenience is also another requirement but no fixed rules or notions ought to be had in the matter of grant of injunction and the relief being always flexible depending upon the facts and circumstances of each case."
+        },
+        {
+          "doc_id": "1299452",
+          "year": "2001",
+          "phrase": "balance of convenience",
+          "sentence": "The plaintiff must prove a prima facie case, availability of balance of convenience in his favour and his suffering an irreparable injury in the absence of grant of injunction."
+        },
+        {
+          "doc_id": "1514512",
+          "year": "2010",
+          "phrase": "balance of convenience",
+          "sentence": "This is evinced from the following extracts of the order of the Division Bench: \"Normally once all the ingredients like prima facie case, balance of convenience, equity if not found in favour of grant of injunction, injunction in any form ought not to Skyline Education Institute "
+        },
+        {
+          "doc_id": "186855368",
+          "year": "2022",
+          "phrase": "balance of convenience",
+          "sentence": "These aspects must be kept in mind by the court while examining the question of grant of injunction, albeit the fundamental principles relating to law of pledge being the special law should be applied as the plaintiff has to establish a prima facie case, balance of convenience an"
+        }
+      ]
+    },
+    {
+      "element": "irreparable injury",
+      "key": "irreparable injury",
+      "support": 4,
+      "sources": [
+        {
+          "doc_id": "101603760",
+          "year": "2023",
+          "phrase": "irreparable injury",
+          "sentence": "The Court further has to satisfy that non-interference by the Court would result in \u0192irreparable injury\u201e to the party seeking relief and that there is no other remedy available to the party except one to grant injunction and he needs protection from the consequences of apprehende"
+        },
+        {
+          "doc_id": "1299452",
+          "year": "2001",
+          "phrase": "irreparable injury",
+          "sentence": "The plaintiff must prove a prima facie case, availability of balance of convenience in his favour and his suffering an irreparable injury in the absence of grant of injunction."
+        },
+        {
+          "doc_id": "355919",
+          "year": "1995",
+          "phrase": "irreparable injury",
+          "sentence": "The court further has to satisfy that noninterference by the court would result in \"irreparable injury \" to the party seeking relief and that there is no other remedy available to the party except one to grant injunction and he needs protection from the consequences of apprehende"
+        },
+        {
+          "doc_id": "49480",
+          "year": "1991",
+          "phrase": "irreparable injury",
+          "sentence": "The Court further has to satisfy that non-interference by Dalpat Kumar And Anr. vs Prahlad Singh And Ors. on 16 December, 1991 Indian Kanoon - http://indiankanoon.org/doc/49480/ 2 the Court would result in \"irreparable injury\" to the party seeking relief and that there is no othe"
+        }
+      ]
+    },
+    {
+      "element": "no other remedy available",
+      "key": "no other remedy available",
+      "support": 3,
+      "sources": [
+        {
+          "doc_id": "101603760",
+          "year": "2023",
+          "phrase": "no other remedy available",
+          "sentence": "The Court further has to satisfy that non-interference by the Court would result in \u0192irreparable injury\u201e to the party seeking relief and that there is no other remedy available to the party except one to grant injunction and he needs protection from the consequences of apprehende"
+        },
+        {
+          "doc_id": "355919",
+          "year": "1995",
+          "phrase": "no other remedy available",
+          "sentence": "The court further has to satisfy that noninterference by the court would result in \"irreparable injury \" to the party seeking relief and that there is no other remedy available to the party except one to grant injunction and he needs protection from the consequences of apprehende"
+        },
+        {
+          "doc_id": "49480",
+          "year": "1991",
+          "phrase": "no other remedy available",
+          "sentence": "The Court further has to satisfy that non-interference by Dalpat Kumar And Anr. vs Prahlad Singh And Ors. on 16 December, 1991 Indian Kanoon - http://indiankanoon.org/doc/49480/ 2 the Court would result in \"irreparable injury\" to the party seeking relief and that there is no othe"
+        }
+      ]
+    }
+  ],
+  "partition": [],
+  "land acquisition": [
+    {
+      "element": "statutory requirements",
+      "key": "statutory requirements",
+      "support": 4,
+      "sources": [
+        {
+          "doc_id": "168057026",
+          "year": "2016",
+          "phrase": "statutory requirements",
+          "sentence": "In the case of acquisition of land for a private company, existence of a public purpose being not a requisite criteria, other statutory requirements call for strict compliance, being imperative in character.\u201a (emphasis laid by this Court) The decisions of this Court in the cases "
+        },
+        {
+          "doc_id": "394218",
+          "year": "1996",
+          "phrase": "statutory requirements",
+          "sentence": "The serious contention raised here and also in the High Court was that Daryao Singh, the peon of the Land Acquisition Collector's office made inconsistent statements in his affidavit filed in the year 1978 and the endorsement contained thereunder with reference to one endorsement"
+        },
+        {
+          "doc_id": "56073873",
+          "year": "2011",
+          "phrase": "statutory requirements",
+          "sentence": "In cases of acquisition of land for a private company, the existence of a public purpose is not necessary but all other statutory requirements were held to remain imperative in character, requiring strict compliance."
+        },
+        {
+          "doc_id": "99751019",
+          "year": "2025",
+          "phrase": "statutory requirements",
+          "sentence": "Having held that the notification regarding acquisition of land was invalid because it failed to meet the statutory requirements and also having found that taking possession of the land of the landowners in the aforesaid case in pursuance to the acquisition notification was not i"
+        }
+      ]
+    },
+    {
+      "element": "public purpose",
+      "key": "public purpose",
+      "support": 3,
+      "sources": [
+        {
+          "doc_id": "168057026",
+          "year": "2016",
+          "phrase": "public purpose",
+          "sentence": "It is undisputed fact that the State Government has not deposited the public money towards the cost of acquisition of land to initiate the acquisition proceedings to show that the acquisition of lands is for public purpose which is an essential requirement under the provision of "
+        },
+        {
+          "doc_id": "168057026",
+          "year": "2016",
+          "phrase": "public purpose",
+          "sentence": "In the case of acquisition of land for a private company, existence of a public purpose being not a requisite criteria, other statutory requirements call for strict compliance, being imperative in character.\u201a (emphasis laid by this Court) The decisions of this Court in the cases "
+        },
+        {
+          "doc_id": "1686005",
+          "year": "1987",
+          "phrase": "public purpose",
+          "sentence": "The State Government being satisfied that the land was required for a public purpose issued the requisite notification dated April 7, 1978 under s. 6 of the Land Acquisition Act, 1894 for acquisition of the land."
+        },
+        {
+          "doc_id": "1686005",
+          "year": "1987",
+          "phrase": "public purpose",
+          "sentence": "While keeping respondents nos. 4-7 in suspense, the Municipal Corporation had in the meanwhile on January 10, 1978 passed a Resolution that necessary steps be taken to move the State Government for acquisition of the land and thereafter actually moved the Government by their lett"
+        }
+      ]
+    },
+    {
+      "element": "inadequate compensation",
+      "key": "inadequate compensation",
+      "support": 2,
+      "sources": [
+        {
+          "doc_id": "1023183",
+          "year": "2010",
+          "phrase": "inadequate compensation",
+          "sentence": "Spl.Land Acquisition Officer vs Karigowda & Ors on 26 April, 2010 Indian Kanoon - http://indiankanoon.org/doc/1023183/ 8 \"As held by this Court in various decisions, the burden is on the claimants to establish that the amounts awarded to them by the Land Acquisition Officer are i"
+        },
+        {
+          "doc_id": "172842044",
+          "year": "2013",
+          "phrase": "inadequate compensation",
+          "sentence": "Therefore, if the claimants intend to seek higher compensation to the acquired land, the burden is on them to establish by proof that the compensation granted by the Land Acquisition Officer is inadequate and they are entitled to higher compensation."
+        }
+      ]
+    },
+    {
+      "element": "notification under Section 6",
+      "key": "notification under section 6",
+      "support": 2,
+      "sources": [
+        {
+          "doc_id": "168057026",
+          "year": "2016",
+          "phrase": "notification under Section 6",
+          "sentence": "The application of mind by the concerned Land Acquisition Collector including the State Government before issuing the notification under Section 6 of the Act, for acquisition of lands is a sine qua non."
+        },
+        {
+          "doc_id": "48431768",
+          "year": "2023",
+          "phrase": "notification under Section 6",
+          "sentence": "(60) It is, thereafter, we must notice that under the caption initial consent in Schedule 2, on behalf of the procurers, the SPV was expected to issue the notification under Section 6 of the Land Acquisition Act, obtain necessarily environmental and forest clearance for the power"
+        }
+      ]
+    },
+    {
+      "element": "strict compliance",
+      "key": "strict compliance",
+      "support": 2,
+      "sources": [
+        {
+          "doc_id": "56073873",
+          "year": "2011",
+          "phrase": "strict compliance",
+          "sentence": "In cases of acquisition of land for a private company, the existence of a public purpose is not necessary but all other statutory requirements were held to remain imperative in character, requiring strict compliance."
+        },
+        {
+          "doc_id": "618705",
+          "year": "2005",
+          "phrase": "strict compliance",
+          "sentence": "Rao that all the procedural requirements contained in the Land Acquisition Act were required to be strictly complied with having regard to the fact that at the relevant point of time, the right to property was a fundamental right, is misconceived."
+        }
+      ]
+    }
+  ]
+}
