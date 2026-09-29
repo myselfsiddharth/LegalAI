@@ -1,0 +1,872 @@
+{
+  "claim": "adverse possession",
+  "elements_tested": 10,
+  "cases": 12,
+  "status": {
+    "SATISFIED_grounded": 60,
+    "NOT_SATISFIED": 27,
+    "UNCLEAR": 30,
+    "SATISFIED_refused": 2,
+    "UNPARSED": 1
+  },
+  "per_case": [
+    {
+      "doc_id": "1049099",
+      "year": "2010",
+      "elements": [
+        {
+          "element": "continuous possession",
+          "verdict": "SATISFIED",
+          "reason": "The facts show that Tiwari has been in possession since 1954-55.",
+          "quote": "Tiwari, who was cultivating grass on the suit property since 1954-55",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "open possession",
+          "verdict": "SATISFIED",
+          "reason": "The facts show that Tiwari was openly cultivating grass on the suit property.",
+          "quote": "Tiwari, who was cultivating grass on the suit property since 1954-55",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "peaceful possession",
+          "verdict": "NOT_SATISFIED",
+          "reason": "The facts indicate that the initial possession was permissive and a Kachcha shed was provided to Tiwari to take care of the suit property, which suggests that t"
+        },
+        {
+          "element": "denial of his title",
+          "verdict": "NOT_SATISFIED",
+          "reason": "The facts do not explicitly state that the appellant denied the title of the original owner, Mr. Anant Mahadeo Tambe or his wife Leela Anant Tambe, or responden"
+        },
+        {
+          "element": "animus possidendi",
+          "verdict": "NOT_SATISFIED",
+          "reason": "The facts do not explicitly state that Budhiya Vesta Patel had the intention to possess the land as his own."
+        },
+        {
+          "element": "hostile to the real owner",
+          "verdict": "NOT_SATISFIED",
+          "reason": "The facts state that Tiwari's initial possession was permissive, which suggests that his possession was not hostile to the real owner."
+        },
+        {
+          "element": "nec vi",
+          "verdict": "NOT_SATISFIED",
+          "reason": "The facts do not explicitly state that the possession was without violence or force."
+        },
+        {
+          "element": "nec clam",
+          "verdict": "NOT_SATISFIED",
+          "reason": "The facts do not establish that the possession was without a claim of right."
+        },
+        {
+          "element": "nec precario",
+          "verdict": "NOT_SATISFIED",
+          "reason": "The facts state that the initial possession was permissive, which contradicts the requirement of nec precario for adverse possession."
+        },
+        {
+          "element": "hostile possession",
+          "verdict": "NOT_SATISFIED",
+          "reason": "The facts do not establish hostile possession as the initial possession was permissive."
+        }
+      ]
+    },
+    {
+      "doc_id": "105423580",
+      "year": "2023",
+      "elements": [
+        {
+          "element": "continuous possession",
+          "verdict": "UNCLEAR",
+          "reason": "The facts do not explicitly state continuous possession by the party claiming adverse possession."
+        },
+        {
+          "element": "open possession",
+          "verdict": "UNCLEAR",
+          "reason": "No facts mention open possession"
+        },
+        {
+          "element": "peaceful possession",
+          "verdict": "UNCLEAR",
+          "reason": "The facts do not explicitly mention peaceful possession"
+        },
+        {
+          "element": "denial of his title",
+          "verdict": "SATISFIED",
+          "reason": "The compromise agreement implies denial of the waqf's validity, which can be seen as a denial of Syed Mohammad Ali Khan's title.",
+          "quote": "the compromise proceeded on the footing that the waqf was a paper transaction. It was the further basis that the waqf was never acted upon",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "animus possidendi",
+          "verdict": "SATISFIED",
+          "reason": "The high court explicitly stated that the first respondent had perfected title by adverse possession",
+          "quote": "the High Court has affirmed the Order passed by the Tribunal, however, on the ground that the first respondent, in the Appeals, had perfected title by adverse possession.",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "hostile to the real owner",
+          "verdict": "SATISFIED",
+          "reason": "The parties treated the waqf as non-existent, indicating hostility to the real owner's rights.",
+          "quote": "the compromise proceeded on the footing that the waqf was a paper transaction. It was the further basis that the waqf was never acted upon",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "nec vi",
+          "verdict": "UNCLEAR",
+          "reason": "The facts do not explicitly mention the absence of violence or 'nec vi' in the possession of the property by the party claiming adverse possession."
+        },
+        {
+          "element": "nec clam",
+          "verdict": "NOT_SATISFIED",
+          "reason": "The facts do not explicitly state that the possession was without claim of right or openly hostile to the rights of others."
+        },
+        {
+          "element": "nec precario",
+          "verdict": "SATISFIED",
+          "reason": "The High Court's affirmation of the Tribunal's order mentions that the first respondent perfected title by adverse possession.",
+          "quote": "the first respondent, in the Appeals, had perfected title by adverse possession.",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "hostile possession",
+          "verdict": "SATISFIED",
+          "reason": "The high court has already made a finding of adverse possession",
+          "quote": "the High Court has affirmed the Order passed by the Tribunal, however, on the ground that the first respondent, in the Appeals, had perfected title by adverse possession.",
+          "grounded": true,
+          "check": "verbatim in facts"
+        }
+      ]
+    },
+    {
+      "doc_id": "112778127",
+      "year": "2013",
+      "elements": [
+        {
+          "element": "continuous possession",
+          "verdict": "SATISFIED",
+          "reason": "The facts state that the respondent was in possession for 18 to 19 years.",
+          "quote": "the respondent was in possession for 18 to 19 years and it was to the knowledge of Kishorilal and his elder brother",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "open possession",
+          "verdict": "SATISFIED",
+          "reason": "The facts state that the respondent was in possession for a long period, which suggests open possession.",
+          "quote": "the respondent was in possession for 18 to 19 years and it was to the knowledge of Kishorilal and his elder brother",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "peaceful possession",
+          "verdict": "SATISFIED",
+          "reason": "The facts explicitly state that the respondent-defendant had peaceful possession.",
+          "quote": "uninterrupted, peaceful and to the knowledge of Kishorilal",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "denial of his title",
+          "verdict": "SATISFIED",
+          "reason": "The defendant explicitly claimed ownership, denying the plaintiff's title.",
+          "quote": "it was stated in the reply that the respondent was the owner of the premises.",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "animus possidendi",
+          "verdict": "SATISFIED",
+          "reason": "The defendant's possession was to the knowledge of the true owner.",
+          "quote": "it was to the knowledge of Kishorilal and his elder brother",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "hostile to the real owner",
+          "verdict": "SATISFIED",
+          "reason": "The defendant's possession was claimed to be to the knowledge of the actual owner, implying hostility.",
+          "quote": "the possession, as put forth by the respondent, was uninterrupted, peaceful and to the knowledge of Kishorilal who was the actual owner.",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "nec vi",
+          "verdict": "SATISFIED",
+          "reason": "The facts state that the respondent-defendant had uninterrupted and peaceful possession.",
+          "quote": "uninterrupted, peaceful",
+          "grounded": false,
+          "check": "quote too short to be evidence"
+        },
+        {
+          "element": "nec clam",
+          "verdict": "SATISFIED",
+          "reason": "The facts state that the respondent was in possession for 18 to 19 years and it was to the knowledge of Kishorilal and his elder brother, which implies that the",
+          "quote": "the respondent was in possession for 18 to 19 years and it was to the knowledge of Kishorilal and his elder brother",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "nec precario",
+          "verdict": "SATISFIED",
+          "reason": "The facts state that the respondent was in possession for 18 to 19 years with Kishorilal's knowledge, implying that the possession was not precarious.",
+          "quote": "the respondent was in possession for 18 to 19 years and it was to the knowledge of Kishorilal and his elder brother",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "hostile possession",
+          "verdict": "SATISFIED",
+          "reason": "The facts indicate that the respondent had been in possession for an extended period, which was known to the original owner, suggesting hostile possession.",
+          "quote": "the respondent was in possession for 18 to 19 years and it was to the knowledge of Kishorilal and his elder brother",
+          "grounded": true,
+          "check": "verbatim in facts"
+        }
+      ]
+    },
+    {
+      "doc_id": "114018934",
+      "year": "2024",
+      "elements": [
+        {
+          "element": "continuous possession",
+          "verdict": "UNCLEAR",
+          "reason": "No information about continuous possession is provided in the facts."
+        },
+        {
+          "element": "open possession",
+          "verdict": "UNCLEAR",
+          "reason": "No mention of open possession in the provided facts"
+        },
+        {
+          "element": "peaceful possession",
+          "verdict": "UNCLEAR",
+          "reason": "No mention of peaceful possession in the facts"
+        },
+        {
+          "element": "denial of his title",
+          "verdict": "UNCLEAR",
+          "reason": "The facts do not explicitly mention denial of title."
+        },
+        {
+          "element": "animus possidendi",
+          "verdict": "UNCLEAR",
+          "reason": "The facts do not mention animus possidendi or any equivalent concept."
+        },
+        {
+          "element": "hostile to the real owner",
+          "verdict": "UNCLEAR",
+          "reason": "The facts do not mention adverse possession or any claim of hostile possession to the real owner."
+        },
+        {
+          "element": "nec vi",
+          "verdict": "UNCLEAR",
+          "reason": "The facts do not mention 'nec vi' or 'violence' in relation to the claim of adverse possession."
+        },
+        {
+          "element": "nec clam",
+          "verdict": "UNCLEAR",
+          "reason": "The facts do not mention 'nec clam' or 'adverse possession' explicitly."
+        },
+        {
+          "element": "nec precario",
+          "verdict": "UNCLEAR",
+          "reason": "The facts do not mention 'nec precario' or any equivalent phrase."
+        },
+        {
+          "element": "hostile possession",
+          "verdict": "UNCLEAR",
+          "reason": "No mention of hostile possession in the provided facts"
+        }
+      ]
+    },
+    {
+      "doc_id": "1199737",
+      "year": "2007",
+      "elements": [
+        {
+          "element": "continuous possession",
+          "verdict": "SATISFIED",
+          "reason": "The facts show continuous possession by Suprovabala from the time of purchase until her death.",
+          "quote": "Indisputably, during the life time of Dr. Ghosh, the name of Suprovabala was mutated. She had all along been in possession of the said property. Dr. Ghosh died in Rangoon in the year 1940. Suprovabala continued to reside",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "open possession",
+          "verdict": "SATISFIED",
+          "reason": "The facts show that Suprovabala was in possession of the property.",
+          "quote": "Indisputably, during the life time of Dr. Ghosh, the name of Suprovabala was mutated. She had all along been in possession of the said property.",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "peaceful possession",
+          "verdict": "SATISFIED",
+          "reason": "The facts indicate that Suprovabala was in possession of the property without any dispute.",
+          "quote": "Indisputably, during the life time of Dr. Ghosh, the name of Suprovabala was mutated. She had all along been in possession of the said property.",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "denial of his title",
+          "verdict": "NOT_SATISFIED",
+          "reason": "There is no mention of denial of title by the person claiming adverse possession."
+        },
+        {
+          "element": "animus possidendi",
+          "verdict": "SATISFIED",
+          "reason": "The facts show that Suprovabala was in possession of the property and had her name mutated, indicating an intention to possess the property.",
+          "quote": "Indisputably, during the life time of Dr. Ghosh, the name of Suprovabala was mutated. She had all along been in possession of the said property.",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "hostile to the real owner",
+          "verdict": "UNCLEAR",
+          "reason": "No clear evidence of hostile possession"
+        },
+        {
+          "element": "nec vi",
+          "verdict": "SATISFIED",
+          "reason": "The facts show that Suprovabala was in possession of the property without any dispute.",
+          "quote": "Indisputably, during the life time of Dr. Ghosh, the name of Suprovabala was mutated. She had all along been in possession of the said property.",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "nec clam",
+          "verdict": "SATISFIED",
+          "reason": "The facts show that Suprovabala was in possession of the property, and there is no indication that her possession was clandestine or secretive.",
+          "quote": "Indisputably, during the life time of Dr. Ghosh, the name of Suprovabala was mutated. She had all along been in possession of the said property.",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "nec precario",
+          "verdict": "SATISFIED",
+          "reason": "The facts show that Suprovabala was in possession of the property, not as a tenant or precario, but in her own right.",
+          "quote": "Indisputably, during the life time of Dr. Ghosh, the name of Suprovabala was mutated. She had all along been in possession of the said property.",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "hostile possession",
+          "verdict": "SATISFIED",
+          "reason": "The facts show that Suprovabala was in possession of the property, which can be considered as hostile possession.",
+          "quote": "Indisputably, during the life time of Dr. Ghosh, the name of Suprovabala was mutated. She had all along been in possession of the said property.",
+          "grounded": true,
+          "check": "verbatim in facts"
+        }
+      ]
+    },
+    {
+      "doc_id": "120996908",
+      "year": "2015",
+      "elements": [
+        {
+          "element": "continuous possession",
+          "verdict": "UNCLEAR",
+          "reason": "The facts do not explicitly state that the plaintiff had continuous possession of the property."
+        },
+        {
+          "element": "open possession",
+          "verdict": "SATISFIED",
+          "reason": "The facts state that Sumitrabai stayed in the property openly from 1932 to 1976.",
+          "quote": "Sumitrabai ... had stayed therein, after the death of her husband Mangal, with her father Shivram till his death in 1932 and till her own death in 1976.",
+          "grounded": false,
+          "check": "quote does not occur in the facts provided"
+        },
+        {
+          "element": "peaceful possession",
+          "verdict": "UNCLEAR",
+          "reason": "The facts do not explicitly state that the possession was peaceful."
+        },
+        {
+          "element": "denial of his title",
+          "verdict": "SATISFIED",
+          "reason": "The plaintiff's claim of adverse possession implies a denial of the title of others, including the defendants.",
+          "quote": "The plaintiff alleged that Sumitrabai (plaintiff's grandmother) had become the owner of the suit property by adverse possession having stayed therein, after the death of her husband Mangal, with her father Shivram till h",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "animus possidendi",
+          "verdict": "SATISFIED",
+          "reason": "The plaintiff alleged that his grandmother had adverse possession.",
+          "quote": "Sumitrabai (plaintiff's grandmother) had become the owner of the suit property by adverse possession having stayed therein, after the death of her husband Mangal, with her father Shivram till his death in 1932 and till h",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "hostile to the real owner",
+          "verdict": "SATISFIED",
+          "reason": "The plaintiff alleged that his grandmother had adverse possession, implying that her possession was hostile to the real owner's rights.",
+          "quote": "Sumitrabai (plaintiff's grandmother) had become the owner of the suit property by adverse possession having stayed therein, after the death of her husband Mangal, with her father Shivram till his death in 1932 and till h",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "nec vi",
+          "verdict": "UNCLEAR",
+          "reason": "The facts do not explicitly state that the possession was without violence."
+        },
+        {
+          "element": "nec clam",
+          "verdict": "SATISFIED",
+          "reason": "The plaintiff claimed adverse possession and stated that Sumitrabai stayed in the property openly, not secretly.",
+          "quote": "Sumitrabai (plaintiff's grandmother) had become the owner of the suit property by adverse possession having stayed therein, after the death of her husband Mangal, with her father Shivram till his death in 1932 and till h",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "nec precario",
+          "verdict": "SATISFIED",
+          "reason": "The plaintiff alleged that his grandmother had been in adverse possession, which implies that she was in possession not precario.",
+          "quote": "Sumitrabai (plaintiff's grandmother) had become the owner of the suit property by adverse possession having stayed therein, after the death of her husband Mangal, with her father Shivram till his death in 1932 and till h",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "hostile possession",
+          "verdict": "SATISFIED",
+          "reason": "The plaintiff alleged hostile possession through Sumitrabai.",
+          "quote": "Sumitrabai (plaintiff's grandmother) had become the owner of the suit property by adverse possession having stayed therein, after the death of her husband Mangal, with her father Shivram till his death in 1932 and till h",
+          "grounded": true,
+          "check": "verbatim in facts"
+        }
+      ]
+    },
+    {
+      "doc_id": "123927426",
+      "year": "2021",
+      "elements": [
+        {
+          "element": "continuous possession",
+          "verdict": "UNCLEAR",
+          "reason": "The facts do not mention possession at all."
+        },
+        {
+          "element": "open possession",
+          "verdict": "NOT_SATISFIED",
+          "reason": "There is no mention of possession, open or otherwise, in the provided facts."
+        },
+        {
+          "element": "peaceful possession",
+          "verdict": "UNCLEAR",
+          "reason": "There is no mention of possession, let alone peaceful possession, in the provided facts."
+        },
+        {
+          "element": "denial of his title",
+          "verdict": "NOT_SATISFIED",
+          "reason": "There is no mention of denial of title in the provided facts."
+        },
+        {
+          "element": "animus possidendi",
+          "verdict": "UNCLEAR",
+          "reason": "The facts do not mention possession or intent to possess."
+        },
+        {
+          "element": "hostile to the real owner",
+          "verdict": "UNCLEAR",
+          "reason": "No information about possession or ownership is provided in the facts"
+        },
+        {
+          "element": "nec vi",
+          "verdict": "UNCLEAR",
+          "reason": "No information about physical possession or force is provided"
+        },
+        {
+          "element": "nec clam",
+          "verdict": "UNCLEAR",
+          "reason": "The facts do not mention the concept of adverse possession or nec clam."
+        },
+        {
+          "element": "nec precario",
+          "verdict": "UNCLEAR",
+          "reason": "No mention of possession or occupation in the facts"
+        },
+        {
+          "element": "hostile possession",
+          "verdict": "NOT_SATISFIED",
+          "reason": "No mention of adverse possession or hostile possession in the facts"
+        }
+      ]
+    },
+    {
+      "doc_id": "1351469",
+      "year": "2003",
+      "elements": [
+        {
+          "element": "continuous possession",
+          "verdict": "SATISFIED",
+          "reason": "The facts state that Defendants 3 and 5 have been in possession for over 12 years.",
+          "quote": "Defendant Nos.3 and 5 being in possession of the property in suit for a period of more than twelve years",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "open possession",
+          "verdict": "SATISFIED",
+          "reason": "The facts show that the public was openly using the property.",
+          "quote": "the public in general, the travellers and in particular those taking part in an yearly fair known as Renuka Fair admittedly could stay therein for three days without permission",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "peaceful possession",
+          "verdict": "SATISFIED",
+          "reason": "The facts state that the public could stay in the Dharamsala for three days without permission, indicating peaceful possession.",
+          "quote": "the public in general, the travellers and in particular those taking part in an yearly fair known as Renuka Fair admittedly could stay therein for three days without permission",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "denial of his title",
+          "verdict": "SATISFIED",
+          "reason": "The defendants denied the plaintiff's title, claiming the property always remained personal to Defendant No.1 and his predecessors.",
+          "quote": "According to the defendants, the secular nature or character of the said property was never changed and it all along remained the personal property of Original Defendant No.1 and his predecessors in interest.",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "animus possidendi",
+          "verdict": "SATISFIED",
+          "reason": "The court's statement implies that Defendant Nos.3 and 5 had the intention to possess the property as their own.",
+          "quote": "The learned Single Judge further held that Defendant Nos.3 and 5 being in possession of the property in suit for a period of more than twelve years acquired title by adverse possession.",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "hostile to the real owner",
+          "verdict": "SATISFIED",
+          "reason": "The court's statement implies that the possession was hostile to the real owner.",
+          "quote": "The learned Single Judge further held that Defendant Nos.3 and 5 being in possession of the property in suit for a period of more than twelve years acquired title by adverse possession.",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "nec vi",
+          "verdict": "UNCLEAR",
+          "reason": "The facts do not explicitly mention the use of force or violence in the possession of the property."
+        },
+        {
+          "element": "nec clam",
+          "verdict": "SATISFIED",
+          "reason": "The facts do not explicitly state that the possession was without the owner's knowledge, but they imply that the public stayed there without permission for 3 da",
+          "quote": "the public in general, the travellers and in particular those taking part in an yearly fair known as Renuka Fair admittedly could stay therein for three days without permission whereafter, permission of the owner of the ",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "nec precario",
+          "verdict": "SATISFIED",
+          "reason": "The requirement of nec precario is satisfied as the occupiers of the Dharamsala required permission from the owner after three days, indicating that their occup",
+          "quote": "the public in general, the travellers and in particular those taking part in an yearly fair known as Renuka Fair admittedly could stay therein for three days without permission whereafter, permission of the owner of the ",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "hostile possession",
+          "verdict": "",
+          "reason": ""
+        }
+      ]
+    },
+    {
+      "doc_id": "137831744",
+      "year": "2025",
+      "elements": [
+        {
+          "element": "continuous possession",
+          "verdict": "SATISFIED",
+          "reason": "The defendant's possession dates back to 1974.",
+          "quote": "It appears that right from the beginning the defendant pleaded that he occupied the suit premises with permission of Ashalata Devi in the year 1974.",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "open possession",
+          "verdict": "UNCLEAR",
+          "reason": "No explicit statement about open possession"
+        },
+        {
+          "element": "peaceful possession",
+          "verdict": "NOT_SATISFIED",
+          "reason": "The facts state that the defendant's possession was 'permissive' and 'with permission', which contradicts the requirement of peaceful possession for adverse pos"
+        },
+        {
+          "element": "denial of his title",
+          "verdict": "SATISFIED",
+          "reason": "The defendant's written statement lacked a crucial detail.",
+          "quote": "In the written statement there is no plea as to when the defendant exhibited hostile animus in possessing the suit property.",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "animus possidendi",
+          "verdict": "NOT_SATISFIED",
+          "reason": "The facts state that the defendant pleaded occupation with permission, which implies a lack of hostile animus, and there is no mention of the defendant exhibiti"
+        },
+        {
+          "element": "hostile to the real owner",
+          "verdict": "NOT_SATISFIED",
+          "reason": "The facts state that the defendant pleaded occupation with permission of Ashalata Devi in 1974, and there is no plea as to when the defendant exhibited hostile "
+        },
+        {
+          "element": "nec vi",
+          "verdict": "NOT_SATISFIED",
+          "reason": "The facts do not provide evidence of nec vi (or violent or forcible entry) to support a claim of adverse possession."
+        },
+        {
+          "element": "nec clam",
+          "verdict": "NOT_SATISFIED",
+          "reason": "The facts state that the defendant pleaded occupation of the suit premises with permission of Ashalata Devi in 1974, indicating that possession was not nec clam"
+        },
+        {
+          "element": "nec precario",
+          "verdict": "NOT_SATISFIED",
+          "reason": "The facts state that the defendant's possession was permissive, not nec precario."
+        },
+        {
+          "element": "hostile possession",
+          "verdict": "NOT_SATISFIED",
+          "reason": "The facts state that the defendant's possession was permissive and there is no evidence of hostile animus."
+        }
+      ]
+    },
+    {
+      "doc_id": "1396621",
+      "year": "2001",
+      "elements": [
+        {
+          "element": "continuous possession",
+          "verdict": "SATISFIED",
+          "reason": "The defendant's claim of adverse possession is supported by a statement of continuous possession since 1940-41.",
+          "quote": "the defendant has been in possession of the suit property since 1940-41, i.e. since the times of his grand father.",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "open possession",
+          "verdict": "UNCLEAR",
+          "reason": "The facts do not explicitly state that the defendant's possession was open."
+        },
+        {
+          "element": "peaceful possession",
+          "verdict": "NOT_SATISFIED",
+          "reason": "The facts indicate that the defendant's possession was not peaceful, but rather involved dispossessing the plaintiff."
+        },
+        {
+          "element": "denial of his title",
+          "verdict": "SATISFIED",
+          "reason": "The defendant's denial of the plaintiff's title is implied in the denial of all material averments.",
+          "quote": "denied all material averments",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "animus possidendi",
+          "verdict": "SATISFIED",
+          "reason": "The defendant's claim of possession since 1940-41 implies an intention to possess the land as their own.",
+          "quote": "the defendant has been in possession of the suit property since 1940-41, i.e. since the times of his grand father.",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "hostile to the real owner",
+          "verdict": "SATISFIED",
+          "reason": "The defendant's claim of possession since 1940-41 implies a hostile possession to the real owner.",
+          "quote": "the defendant has been in possession of the suit property since 1940-41, i.e. since the times of his grand father.",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "nec vi",
+          "verdict": "UNCLEAR",
+          "reason": "The facts do not explicitly state that the defendant possessed the land without force or violence."
+        },
+        {
+          "element": "nec clam",
+          "verdict": "UNCLEAR",
+          "reason": "The facts do not explicitly mention 'nec clam' or its equivalent in the context of adverse possession."
+        },
+        {
+          "element": "nec precario",
+          "verdict": "SATISFIED",
+          "reason": "The defendant's claim of adverse possession implies that he was in possession not precario, meaning not at the plaintiff's pleasure or permission.",
+          "quote": "the defendant has been in possession of the suit property since 1940-41, i.e. since the times of his grand father.",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "hostile possession",
+          "verdict": "SATISFIED",
+          "reason": "The defendant's claim of possession since 1940-41 implies a hostile possession.",
+          "quote": "the defendant has been in possession of the suit property since 1940-41, i.e. since the times of his grand father.",
+          "grounded": true,
+          "check": "verbatim in facts"
+        }
+      ]
+    },
+    {
+      "doc_id": "140008397",
+      "year": "2023",
+      "elements": [
+        {
+          "element": "continuous possession",
+          "verdict": "SATISFIED",
+          "reason": "The facts show continuous possession from 1957 to 2005.",
+          "quote": "From 1957 till 2005, the mortgagee continued to remain in possession of the suit property",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "open possession",
+          "verdict": "SATISFIED",
+          "reason": "The facts show that the mortgagee had continuous and open possession of the property.",
+          "quote": "From 1957 till 2005, the mortgagee continued to remain in possession of the suit property",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "peaceful possession",
+          "verdict": "SATISFIED",
+          "reason": "The facts indicate that the defendant's family had continuous and uninterrupted possession of the property.",
+          "quote": "the mortgagee continued to remain in possession of the suit property",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "denial of his title",
+          "verdict": "SATISFIED",
+          "reason": "The defendant denied the plaintiffs' title by asserting that the plaintiffs' father had executed a mortgage deed in favor of the defendant's father.",
+          "quote": "The Defendant filed his written statement inter alia stating as under: \u01924. That Para-4 of plaint is false and baseless. Father of the Plaintiffs had himself executed registered mortgage deed dated 12-02-57 in favour of f",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "animus possidendi",
+          "verdict": "SATISFIED",
+          "reason": "The defendant's continued possession shows intent to possess.",
+          "quote": "the mortgagee continued to remain in possession of the suit property",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "hostile to the real owner",
+          "verdict": "SATISFIED",
+          "reason": "The defendant's possession was hostile to the real owner's rights.",
+          "quote": "the mortgagee continued to remain in possession of the suit property as neither the mortgage money was paid nor the mortgage was redeemed",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "nec vi",
+          "verdict": "SATISFIED",
+          "reason": "The Defendant was in possession without violence.",
+          "quote": "neither the mortgage money was paid nor the mortgage was redeemed",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "nec clam",
+          "verdict": "SATISFIED",
+          "reason": "The defendant was in open possession",
+          "quote": "the mortgagee continued to remain in possession of the suit property as neither the mortgage money was paid nor the mortgage was redeemed",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "nec precario",
+          "verdict": "SATISFIED",
+          "reason": "The defendant was in possession without permission",
+          "quote": "the mortgagee continued to remain in possession of the suit property as neither the mortgage money was paid nor the mortgage was redeemed",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "hostile possession",
+          "verdict": "SATISFIED",
+          "reason": "The defendant's possession was open and without permission, implying hostility.",
+          "quote": "the mortgagee continued to remain in possession of the suit property as neither the mortgage money was paid nor the mortgage was redeemed",
+          "grounded": true,
+          "check": "verbatim in facts"
+        }
+      ]
+    },
+    {
+      "doc_id": "141679914",
+      "year": "2025",
+      "elements": [
+        {
+          "element": "continuous possession",
+          "verdict": "SATISFIED",
+          "reason": "The facts show continuous possession.",
+          "quote": "the petitioner stepped into his shoes and continued its possession, even after the expiry of the lease period unauthorisedly.",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "open possession",
+          "verdict": "SATISFIED",
+          "reason": "The facts show that the petitioner's possession was open as they were recognized as lessees.",
+          "quote": "the petitioner\u201as father was shown as its Chakotadar (lessee). Upon his death, the petitioner stepped into his shoes and continued its possession",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "peaceful possession",
+          "verdict": "NOT_SATISFIED",
+          "reason": "The facts state that the petitioner was in 'unauthorised possession' and had not handed over possession to the Gram Panchayat, which suggests that the possessio"
+        },
+        {
+          "element": "denial of his title",
+          "verdict": "SATISFIED",
+          "reason": "The petitioner claimed ownership, but it was rejected.",
+          "quote": "rejecting the contra claim over ownership by the petitioner",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "animus possidendi",
+          "verdict": "SATISFIED",
+          "reason": "The petitioner continued possession as a lessee after the lease period expired.",
+          "quote": "the petitioner\u201as father was shown as its Chakotadar (lessee). Upon his death, the petitioner stepped into his shoes and continued its possession, even after the expiry of the lease period unauthorisedly.",
+          "grounded": true,
+          "check": "verbatim in facts"
+        },
+        {
+          "element": "hostile to the real owner",
+          "verdict": "NOT_SATISFIED",
+          "reason": "The facts do not explicitly state that the possession was hostile to the real owner."
+        },
+        {
+          "element": "nec vi",
+          "verdict": "NOT_SATISFIED",
+          "reason": "The facts do not mention the petitioner using force to possess the land."
+        },
+        {
+          "element": "nec clam",
+          "verdict": "NOT_SATISFIED",
+          "reason": "The facts do not mention 'nec clam' or 'secret' possession."
+        },
+        {
+          "element": "nec precario",
+          "verdict": "NOT_SATISFIED",
+          "reason": "The facts do not mention the petitioner having possession that was initially permissive but later became adverse."
+        },
+        {
+          "element": "hostile possession",
+          "verdict": "NOT_SATISFIED",
+          "reason": "The facts do not explicitly mention 'hostile possession' or any equivalent phrase."
+        }
+      ]
+    }
+  ]
+}

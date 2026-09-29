@@ -60,7 +60,7 @@ scripts/
   build_signed_graph.py       # merges both sign sources -> signed graph + Proof-Support Score
   ode_lib.py                  # shared GROUND (LLM) + rule-application logic
   ode_pipeline.py             # CLI: ground / learn / extract (Phase I)
-  build_doc_id_map.py         # doc_id <-> PDF join by normalized title (see gotcha #14)
+  build_doc_id_map.py         # doc_id <-> PDF join by normalized title (see gotcha #15)
   cache_corpus_text.py        # one-off: extract text for every mapped case -> corpus_text.jsonl
   retrieval_lib.py            # BM25Index + DenseIndex (one search() contract) + scrub_citations
   build_dense_index.py        # embeds the corpus with qwen3-embedding-8b -> dense_index.npy
@@ -226,7 +226,15 @@ fully regenerate deterministically from upstream data.
     for `run_evaluation_batch.py` and `answer_from_facts.py` too, and re-run everything
     downstream. Cheapest guard: keep one model for both, and treat `learned_rules.json` as
     invalid whenever the grounding model changes.
-14. **Nothing in the dataset joins doc_ids to PDFs for the full corpus**, and the obvious
+14. **A per-item LLM loop without retries turns an outage into a finding.** Hit twice in
+    one session. `mine_claim_elements.py` swallowed a transient `APIConnectionError` per
+    sentence and reported "0 elements with support >= 2" for four of six claims -- which
+    reads as *the corpus does not state these elements* when in fact 150 of 253 sentences
+    were never asked. `map_facts_to_elements.py` then lost 23 of 80 calls the same way.
+    Both now retry with quadratic backoff and count drops separately from genuine empty
+    results. Any new loop that makes one call per item needs the same, and the summary line
+    must distinguish "model said nothing" from "we never got an answer".
+15. **Nothing in the dataset joins doc_ids to PDFs for the full corpus**, and the obvious
     normalizer is booby-trapped. The land-disputes spreadsheet covers only its own 6,954
     rows; `build_doc_id_map.py` joins the remainder on normalized titles. Filenames carry a
     copy marker after the year (`..._on_23_May_1957_1`) and titles do not, so stripping
@@ -234,17 +242,17 @@ fully regenerate deterministically from upstream data.
     by exactly that year — it silently produced a 0.6% join rate before being caught. The
     script now asserts its rate against the 500 verified pairs in `sample_cases.csv` (94%)
     and refuses to write a join nothing downstream could trust.
-15. **The corpus caps precedent recall at ~26%, and no method fixes that.** Of 46,904 case
+16. **The corpus caps precedent recall at ~26%, and no method fixes that.** Of 46,904 case
     citation edges only 11,991 (25.6%) point at a case that is in this corpus at all —
     it is Supreme Court only, while judgments cite High Courts, the Privy Council and
     English decisions. Report recall against *reachable* authorities with the raw figure
     beside it, or the number is meaningless. 1,206 cases have their own PDF plus >=3
     reachable authorities; 771 of those are post-2000.
-16. **Query cases must be post-2000.** Pre-2000 headnotes list the cited authorities up
+17. **Query cases must be post-2000.** Pre-2000 headnotes list the cited authorities up
     front, so a query built from such a judgment contains its own answer. This exactly
     inverts the old difficulty profile: the decades the extraction pipeline handled *best*
     are the ones precedent prediction cannot use.
-17. **Voyager needs no VPN, and `qwen3-embedding-8b` is already the best embedder it has.**
+18. **Voyager needs no VPN, and `qwen3-embedding-8b` is already the best embedder it has.**
     The endpoint resolves to public Cloudflare IPs and answers from a residential
     connection. `/v1/models` returns no capability metadata (just id/object/created/
     owned_by), so the only way to tell an embedder from a generator is to probe
@@ -351,7 +359,7 @@ fully regenerate deterministically from upstream data.
       | 50  | 51.5%         | 30.4%            | 14.8%              |
       | 100 | 62.4%         | 42.1%            | 23.7%              |
 
-      precision@10 16.5% / 8.3%. Recall is against *reachable* authorities (gotcha #15).
+      precision@10 16.5% / 8.3%. Recall is against *reachable* authorities (gotcha #16).
       Two things make this credible: it beats the popularity control 3-6x, so it is not
       just exploiting citation skew; and cutting the query from ~60k chars to 2,000 — 30x
       less text — costs only half the recall@10, meaning the FACTS carry most of the
@@ -420,6 +428,31 @@ fully regenerate deterministically from upstream data.
       on one of two. Reverted to the committed scout rules rather than destabilise a measured
       pipeline for a capability that does not work. The real fix is contrastive gold
       examples, per next step #1.
+- [x] **Step 2 built (2026-09-28): facts -> elements, with checkable support.**
+      `mine_claim_elements.py` mines the requirements of a claim from judgments that state
+      them, rather than anyone authoring a list -- an invented element would be worse than an
+      invented citation, since nothing downstream would catch it. Window matching failed
+      first (enumeration markers like "(i)" mark numbered findings and statutory sub-clauses
+      in Indian judgments, not requirement lists); requiring the claim term and a requirement
+      trigger in the SAME sentence works. 29 elements survive support >= 2 distinct
+      judgments: adverse possession 17, land acquisition 5, injunction 4, specific
+      performance 3; easement 0 (only 7 candidate sentences corpus-wide) and partition 0 (44
+      raw, none cluster). The injunction result is the method validating itself -- prima
+      facie case / balance of convenience / irreparable injury, the textbook three-part test,
+      with one 2001 judgment stating all three in a single sentence.
+      `map_facts_to_elements.py` then decides each element, and **a SATISFIED verdict is
+      only accepted if its supporting quote occurs in the facts shown** (normalized, min 25
+      chars). 12 cases x 10 elements: 60 verified, **2 refused (3.2%)**, 27 not satisfied,
+      30 unclear, 0 dropped. The two refusals are distinct real failures -- a two-word
+      fragment too short to be evidence, and a quote containing "..." where the model elided
+      text and presented a reconstruction as a quotation. This yields a fabrication metric
+      needing **no ground truth**: it catches manufactured support, not wrong reasoning.
+      Two known weaknesses: the catalogue clusters on normalized strings so semantic
+      duplicates survive (`nec vi`/`nec clam`/`nec precario` are one classical triple;
+      `hostile possession` duplicates `hostile to the real owner`), and negatively-framed
+      elements score badly -- `nec vi` is 2 satisfied / 6 unclear because the model reads
+      silence as failure. Ontology now carries `Element` plus `Claim -requires-> Element`
+      and `Element -satisfiedBy-> Fact`.
 - [ ] **NOT STARTED**: dashboard (Streamlit was the plan) for the live demo
 - [ ] **NOT STARTED**: filling in real team member names/roles in the proposal
 - [ ] **NOT DONE**: checking the professor's official proposal outline once posted
