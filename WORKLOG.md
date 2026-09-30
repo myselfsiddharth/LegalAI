@@ -579,3 +579,26 @@ base-rate drift and a HEADNOTE presence shift from 79.5% to 0.0%. This is a thir
 differ in fact density and attribution rate as well. Any temporal-split result must be read against
 the forum-held-out split, which is era-balanced, and this must be stated rather than discovered by
 a reader.
+
+### Concurrency: measured, not guessed
+
+The endpoint tolerates far more concurrency than the pipeline was using. Measured on the real
+extraction workload (scout, ~2,500 output tokens per call):
+
+| workers | calls/s | mean latency | failures |
+|---|---|---|---|
+| 20 | 1.38 | ~11s | 0 |
+| 48 | 2.64 | — | 0 |
+| **96** | **3.94** | 21.7s | 0 |
+
+Scaling is sublinear — 20→48 (2.4× workers) bought 1.9×, and 48→96 (2×) bought 1.5× — because the
+endpoint queues rather than refuses. Latency rises with the queue, and that is what sets the ceiling:
+at 96 workers the distribution is p50 21.7s, p90 39.1s, **p99 55.4s, max 75.3s** against the client's
+**90s timeout**. Pushing higher would start losing calls to timeouts, and each timeout costs four
+retries with quadratic backoff — more than the concurrency gains.
+
+**96 workers is the knee.** It takes the full-corpus run from ~4.2h to ~45 min.
+
+Worth noting this contradicts the standing note in `client.py` that the endpoint is "token-
+throughput-limited, so batching buys almost nothing". That was measured on *embeddings*, where it
+holds. For *generation* the limit is per-request queueing, and concurrency helps a lot.

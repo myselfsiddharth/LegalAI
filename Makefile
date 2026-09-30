@@ -29,7 +29,7 @@ llm-probe: ## §5.2 LLM-0 outcome-identification probe (the second leakage probe
 
 stage2: ## §6 seed vocabulary, fact extraction, canonicalisation (needs API key; long)
 	$(PY) -m src.extract.vocab
-	$(PY) -m src.extract.facts --n 0 --workers 20 --priority eval-first
+	$(PY) -m src.extract.facts --n 0 --workers 96 --priority eval-first
 	$(PY) -m src.extract.canonicalize --n 0 --workers 8
 
 facts-qa: ## audit the extracted fact set (span integrity, split coverage, per-decade drift)
