@@ -40,6 +40,17 @@ probe: ## §5.2 leakage probe on both splits -- the Stage 1 acceptance gate
 	$(PY) -m src.eval.leakage_probe --split temporal_2004_2013
 	$(PY) -m src.eval.leakage_probe --split forum_heldout
 
+stage4: ## §8 transactions + FP-Growth patterns per claim family
+	$(PY) -m src.patterns.transactions
+	$(PY) -m src.patterns.mine --split forum_heldout
+
+stage6: ## §10 outcome models + §10.2 ablations
+	$(PY) -m src.predict.models --split forum_heldout
+	$(PY) -m src.predict.models --split temporal_2004_2013
+
+burden: ## fill element burden metadata (gated against a degenerate annotation)
+	$(PY) -m src.data.ontology_burden --model glm-5-3
+
 test: ## unit tests, incl. leakage and time-respect asserts
 	$(PY) -m pytest tests/ -q
 

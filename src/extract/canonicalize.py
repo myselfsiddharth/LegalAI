@@ -121,8 +121,13 @@ def make_label(category: str, subcategory: str, props: dict) -> str:
 
 
 def canonicalize_one(fact: dict, keys: list[str], M: np.ndarray, model: str,
-                     vocab_keys: set[str] | None = None) -> CanonicalFact | None:
-    qvec = client.embed([fact["text"]])[0]
+                     vocab_keys: set[str] | None = None,
+                     qvec: np.ndarray | None = None) -> CanonicalFact | None:
+    # `qvec` is supplied by the caller, which embeds all facts in batches first. Embedding one
+    # fact per call left the endpoint's batch unused; since Voyager is token-throughput-limited
+    # the win is in issuing fewer requests, not in more concurrency.
+    if qvec is None:
+        qvec = client.embed([fact["text"]])[0]
     if not qvec.any():
         return None                                  # embedding never arrived; NOT a null label
     cands = candidates_for(fact["text"], keys, M, qvec)
@@ -198,12 +203,22 @@ def main() -> None:
         todo = todo[:args.n]
     print(f"{len(facts)} facts, {len(done)} already labelled, {len(todo)} to do", flush=True)
 
+    # Pre-embed every fact text in batches; a row of zeros means that text's embedding never
+    # arrived, and those facts are reported as dropped rather than labelled from a zero vector.
+    print(f"embedding {len(todo)} fact texts...", flush=True)
+    Q = client.embed([f["text"] for f in todo], batch_size=32, verbose=False)
+    n_missing = int((~Q.any(axis=1)).sum())
+    if n_missing:
+        print(f"  {n_missing} fact embeddings never arrived; they will be reported as dropped",
+              flush=True)
+
     stats = Counter()
     rows = []
     with OUT_PATH.open("a") as out, ThreadPoolExecutor(max_workers=args.workers) as pool:
         for i, cf in enumerate(
-                pool.map(lambda f: canonicalize_one(f, keys, M, args.model, vocab_keys),
-                         todo), 1):
+                pool.map(lambda iq: canonicalize_one(iq[0], keys, M, args.model, vocab_keys,
+                                                     qvec=iq[1]),
+                         zip(todo, Q)), 1):
             if cf is None:
                 stats["dropped"] += 1           # never got an answer -- not a null label
                 continue
