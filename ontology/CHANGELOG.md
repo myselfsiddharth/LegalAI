@@ -39,3 +39,31 @@ The clusters are legally coherent one level up, so the taxonomy is too FINE for 
 **Excluded.** {'Procedural/Forum': 14, 'Statutory/Regulatory Subservience': 9, 'Public Interest/Planning Policy': 4, 'Equitable': 2} — these are DEFENCE families the extractor routed to claims. They are grounds for resisting a claim, not claims, and folding them into a claim super-family would bury that routing error.
 
 **Not frozen.** Derived from 300 cases. Re-run after extraction scales up; a family below the floor here may clear it later, and the merge should be revisited rather than inherited.
+
+## 2026-09-30 — claim families merged 15 -> 6
+`src/cluster/family_merge.py`. Derived from 1408 claims over 805 cases.
+
+**Why.** The 15-way taxonomy is not supported by the data at this scale:
+- HDBSCAN on claim embeddings: ARI **-0.005** against the assigned families, 80% outliers.
+- Agglomerative k=6 by silhouette: NMI 0.271, purity 0.318, silhouette **0.022** — almost no structure at 15-way granularity.
+- Only **9 of 15** families cleared §7's 30-case floor.
+- The extractor assigned **42** distinct families, inventing 27 beyond the ontology.
+
+The clusters are legally coherent one level up, so the taxonomy is too FINE for this corpus rather than wrong. Each family is assigned to the cluster its claims most often land in; only the merged names are authored.
+
+**Effect.** Families clearing the 30-case floor: 9 -> 4, which is what makes §8 per-family mining runnable.
+
+**Merged families.**
+
+| merged | cases | absorbs |
+|---|---|---|
+| `StateAction` | 424 | Ceiling, ConstitutionalDeprivation, Corruption/Public Office, Debt Relief, LandAcquisition, LandRevenue, Licence, License, NEW: MalaFides, Redevelopment, StatutoryInterpretation, Taxation, Taxation/Assessment, Tenure, Title, UltraVires, UnauthorizedConstruction |
+| `PrivateTitlePossession` | 256 | Adoption, AdversePossession, Partition, Possession, Pre-emption, Preemption |
+| `ContractInstrument` | 170 | Benami, Cancellation, Corruption, Evidence, Execution/Proceedings, Insolvency, Insolvency/Receiver, MortgageRedemption, SpecificPerformance, StampDuty, Succession, Suretyship, Trust, Trusts, Wakf |
+| `Mixed_Limitation_Procedure` | 47 | CompassionateAppointment, Contract, Contractual Obligations, CooperativeSociety, Criminal Breach of Trust, ElectionDispute, Evidence/Procedure, FalseCharge, Limitation, Limitation/Delay, Maintenance, NEW: SettlementChallenge, NEW:AnticipatoryBail, NEW:Challenge to Conviction, NEW:Cheating, NEW:Condonation, NEW:CondonationOfDelay, NEW:Limitation, NEW:MalaFides, NEW:Procedural, NEW:ProceedingAgainstAccused, NEW:Reputation, Procedure, Procedure/Execution, ProfessionalMisconduct, Review, Service/Employment, Trusts and Charities |
+| `TenureOccupancy` | 23 | Eviction, Injunction, LeaseTenancy, Procedure/Forum, Rent, RentControl, RentFixation, RentTenancy, Tenancy |
+| `Mixed_Compensation_NEW:Compensation` | 15 | Compensation, Insurance, NEW: Monetary Relief, NEW:Compensation |
+
+**Excluded.** {'Procedural/Forum': 43, 'Statutory/Regulatory Subservience': 31, 'Public Interest/Planning Policy': 6, 'Equitable': 3, 'Title/Tenure': 2} — these are DEFENCE families the extractor routed to claims. They are grounds for resisting a claim, not claims, and folding them into a claim super-family would bury that routing error.
+
+**Not frozen.** Derived from 300 cases. Re-run after extraction scales up; a family below the floor here may clear it later, and the merge should be revisited rather than inherited.

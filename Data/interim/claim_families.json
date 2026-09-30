@@ -1,43 +1,43 @@
 {
  "summary": {
-  "n_claims": 465,
-  "n_assigned_families": 42,
+  "n_claims": 1408,
+  "n_assigned_families": 84,
   "hdbscan": {
-   "n_clusters": 2,
-   "outlier_frac": 0.8,
-   "nmi": 0.1054,
-   "ari": -0.0055,
-   "purity": 0.4946
+   "n_clusters": 4,
+   "outlier_frac": 0.8892,
+   "nmi": 0.0992,
+   "ari": -0.0057,
+   "purity": 0.7244
   },
   "agglomerative": {
-   "k_by_silhouette": 5,
-   "silhouette": 0.035,
+   "k_by_silhouette": 6,
+   "silhouette": 0.0225,
    "silhouette_curve": {
-    "4": 0.0311,
-    "5": 0.035,
-    "6": 0.0249,
-    "7": 0.0266,
-    "8": 0.03,
-    "9": 0.0289,
-    "10": 0.0291,
-    "11": 0.0314,
-    "12": 0.0236,
-    "13": 0.0265,
-    "14": 0.026,
-    "15": 0.0259,
-    "16": 0.0235,
-    "17": 0.0248,
-    "18": 0.0245,
-    "19": 0.0268,
-    "20": 0.0287,
-    "21": 0.0295,
-    "22": 0.0287,
-    "23": 0.03,
-    "24": 0.0317
+    "4": 0.0135,
+    "5": 0.0181,
+    "6": 0.0225,
+    "7": 0.0193,
+    "8": 0.0213,
+    "9": 0.0186,
+    "10": 0.0204,
+    "11": 0.0154,
+    "12": 0.0157,
+    "13": 0.0164,
+    "14": 0.0185,
+    "15": 0.0163,
+    "16": 0.0181,
+    "17": 0.0157,
+    "18": 0.0175,
+    "19": 0.0193,
+    "20": 0.0195,
+    "21": 0.0164,
+    "22": 0.0176,
+    "23": 0.0154,
+    "24": 0.0171
    },
-   "nmi": 0.2709,
-   "ari": 0.0922,
-   "purity": 0.3183
+   "nmi": 0.27,
+   "ari": 0.0919,
+   "purity": 0.3182
   },
   "modules_with_no_cluster": [
    {
@@ -47,31 +47,46 @@
    },
    {
     "family": "AdversePossession",
-    "n_claims": 2,
-    "n_cases": 2
+    "n_claims": 5,
+    "n_cases": 5
    },
    {
     "family": "Benami",
+    "n_claims": 3,
+    "n_cases": 3
+   },
+   {
+    "family": "Cancellation",
+    "n_claims": 53,
+    "n_cases": 46
+   },
+   {
+    "family": "Ceiling",
     "n_claims": 1,
     "n_cases": 1
    },
    {
-    "family": "Cancellation",
-    "n_claims": 17,
-    "n_cases": 16
-   },
-   {
-    "family": "Compensation",
-    "n_claims": 2,
+    "family": "CompassionateAppointment",
+    "n_claims": 1,
     "n_cases": 1
    },
    {
+    "family": "Compensation",
+    "n_claims": 14,
+    "n_cases": 12
+   },
+   {
     "family": "ConstitutionalDeprivation",
-    "n_claims": 30,
-    "n_cases": 23
+    "n_claims": 80,
+    "n_cases": 65
    },
    {
     "family": "Contract",
+    "n_claims": 4,
+    "n_cases": 3
+   },
+   {
+    "family": "Contractual Obligations",
     "n_claims": 1,
     "n_cases": 1
    },
@@ -81,8 +96,23 @@
     "n_cases": 2
    },
    {
+    "family": "Corruption",
+    "n_claims": 1,
+    "n_cases": 1
+   },
+   {
+    "family": "Corruption/Public Office",
+    "n_claims": 2,
+    "n_cases": 1
+   },
+   {
     "family": "Criminal Breach of Trust",
     "n_claims": 1,
+    "n_cases": 1
+   },
+   {
+    "family": "Debt Relief",
+    "n_claims": 2,
     "n_cases": 1
    },
    {
@@ -92,8 +122,13 @@
    },
    {
     "family": "Equitable",
-    "n_claims": 2,
-    "n_cases": 2
+    "n_claims": 3,
+    "n_cases": 3
+   },
+   {
+    "family": "Eviction",
+    "n_claims": 1,
+    "n_cases": 1
    },
    {
     "family": "Evidence",
@@ -106,19 +141,39 @@
     "n_cases": 1
    },
    {
+    "family": "Execution/Proceedings",
+    "n_claims": 2,
+    "n_cases": 1
+   },
+   {
+    "family": "FalseCharge",
+    "n_claims": 1,
+    "n_cases": 1
+   },
+   {
     "family": "Injunction",
     "n_claims": 2,
     "n_cases": 2
    },
    {
     "family": "Insolvency",
+    "n_claims": 2,
+    "n_cases": 2
+   },
+   {
+    "family": "Insolvency/Receiver",
+    "n_claims": 1,
+    "n_cases": 1
+   },
+   {
+    "family": "Insurance",
     "n_claims": 1,
     "n_cases": 1
    },
    {
     "family": "LandAcquisition",
-    "n_claims": 28,
-    "n_cases": 16
+    "n_claims": 91,
+    "n_cases": 55
    },
    {
     "family": "LandRevenue",
@@ -127,18 +182,48 @@
    },
    {
     "family": "LeaseTenancy",
-    "n_claims": 4,
-    "n_cases": 4
+    "n_claims": 17,
+    "n_cases": 12
+   },
+   {
+    "family": "Licence",
+    "n_claims": 2,
+    "n_cases": 1
+   },
+   {
+    "family": "License",
+    "n_claims": 1,
+    "n_cases": 1
    },
    {
     "family": "Limitation",
-    "n_claims": 4,
-    "n_cases": 3
+    "n_claims": 11,
+    "n_cases": 9
+   },
+   {
+    "family": "Limitation/Delay",
+    "n_claims": 1,
+    "n_cases": 1
+   },
+   {
+    "family": "Maintenance",
+    "n_claims": 2,
+    "n_cases": 2
    },
    {
     "family": "MortgageRedemption",
-    "n_claims": 10,
-    "n_cases": 8
+    "n_claims": 35,
+    "n_cases": 27
+   },
+   {
+    "family": "NEW: MalaFides",
+    "n_claims": 1,
+    "n_cases": 1
+   },
+   {
+    "family": "NEW: Monetary Relief",
+    "n_claims": 1,
+    "n_cases": 1
    },
    {
     "family": "NEW: SettlementChallenge",
@@ -146,7 +231,37 @@
     "n_cases": 1
    },
    {
+    "family": "NEW:AnticipatoryBail",
+    "n_claims": 2,
+    "n_cases": 1
+   },
+   {
+    "family": "NEW:Challenge to Conviction",
+    "n_claims": 1,
+    "n_cases": 1
+   },
+   {
+    "family": "NEW:Cheating",
+    "n_claims": 2,
+    "n_cases": 1
+   },
+   {
     "family": "NEW:Compensation",
+    "n_claims": 1,
+    "n_cases": 1
+   },
+   {
+    "family": "NEW:Condonation",
+    "n_claims": 1,
+    "n_cases": 1
+   },
+   {
+    "family": "NEW:CondonationOfDelay",
+    "n_claims": 1,
+    "n_cases": 1
+   },
+   {
+    "family": "NEW:Limitation",
     "n_claims": 1,
     "n_cases": 1
    },
@@ -156,43 +271,83 @@
     "n_cases": 1
    },
    {
-    "family": "Partition",
-    "n_claims": 13,
-    "n_cases": 11
-   },
-   {
-    "family": "Possession",
-    "n_claims": 90,
-    "n_cases": 78
-   },
-   {
-    "family": "Pre-emption",
+    "family": "NEW:Procedural",
     "n_claims": 2,
-    "n_cases": 2
+    "n_cases": 1
    },
    {
-    "family": "Preemption",
+    "family": "NEW:ProceedingAgainstAccused",
     "n_claims": 1,
     "n_cases": 1
    },
    {
+    "family": "NEW:Reputation",
+    "n_claims": 1,
+    "n_cases": 1
+   },
+   {
+    "family": "Partition",
+    "n_claims": 40,
+    "n_cases": 31
+   },
+   {
+    "family": "Pre-emption",
+    "n_claims": 6,
+    "n_cases": 6
+   },
+   {
+    "family": "Preemption",
+    "n_claims": 2,
+    "n_cases": 2
+   },
+   {
     "family": "Procedural/Forum",
-    "n_claims": 16,
-    "n_cases": 14
+    "n_claims": 53,
+    "n_cases": 43
    },
    {
     "family": "Procedure",
+    "n_claims": 10,
+    "n_cases": 9
+   },
+   {
+    "family": "Procedure/Execution",
+    "n_claims": 2,
+    "n_cases": 1
+   },
+   {
+    "family": "Procedure/Forum",
+    "n_claims": 2,
+    "n_cases": 1
+   },
+   {
+    "family": "ProfessionalMisconduct",
+    "n_claims": 4,
+    "n_cases": 2
+   },
+   {
+    "family": "Public Interest/Planning Policy",
     "n_claims": 7,
     "n_cases": 6
    },
    {
-    "family": "Public Interest/Planning Policy",
-    "n_claims": 5,
-    "n_cases": 4
+    "family": "Redevelopment",
+    "n_claims": 2,
+    "n_cases": 2
+   },
+   {
+    "family": "Rent",
+    "n_claims": 3,
+    "n_cases": 1
    },
    {
     "family": "RentControl",
     "n_claims": 1,
+    "n_cases": 1
+   },
+   {
+    "family": "RentFixation",
+    "n_claims": 2,
     "n_cases": 1
    },
    {
@@ -201,105 +356,155 @@
     "n_cases": 1
    },
    {
-    "family": "SpecificPerformance",
-    "n_claims": 35,
-    "n_cases": 27
-   },
-   {
-    "family": "StampDuty",
+    "family": "Review",
     "n_claims": 1,
     "n_cases": 1
    },
    {
+    "family": "Service/Employment",
+    "n_claims": 1,
+    "n_cases": 1
+   },
+   {
+    "family": "SpecificPerformance",
+    "n_claims": 96,
+    "n_cases": 74
+   },
+   {
+    "family": "StampDuty",
+    "n_claims": 5,
+    "n_cases": 3
+   },
+   {
     "family": "Statutory/Regulatory Subservience",
-    "n_claims": 13,
-    "n_cases": 9
+    "n_claims": 39,
+    "n_cases": 31
+   },
+   {
+    "family": "StatutoryInterpretation",
+    "n_claims": 2,
+    "n_cases": 1
    },
    {
     "family": "Succession",
-    "n_claims": 5,
-    "n_cases": 4
+    "n_claims": 18,
+    "n_cases": 14
+   },
+   {
+    "family": "Suretyship",
+    "n_claims": 2,
+    "n_cases": 1
    },
    {
     "family": "Taxation",
-    "n_claims": 4,
-    "n_cases": 4
-   },
-   {
-    "family": "Tenancy",
-    "n_claims": 3,
-    "n_cases": 2
-   },
-   {
-    "family": "Tenure",
-    "n_claims": 11,
+    "n_claims": 14,
     "n_cases": 10
    },
    {
+    "family": "Taxation/Assessment",
+    "n_claims": 1,
+    "n_cases": 1
+   },
+   {
+    "family": "Tenancy",
+    "n_claims": 5,
+    "n_cases": 3
+   },
+   {
+    "family": "Tenure",
+    "n_claims": 38,
+    "n_cases": 30
+   },
+   {
     "family": "Title",
-    "n_claims": 110,
-    "n_cases": 87
+    "n_claims": 303,
+    "n_cases": 235
+   },
+   {
+    "family": "Title/Tenure",
+    "n_claims": 2,
+    "n_cases": 2
    },
    {
     "family": "Trust",
-    "n_claims": 5,
-    "n_cases": 4
+    "n_claims": 6,
+    "n_cases": 5
+   },
+   {
+    "family": "Trusts",
+    "n_claims": 4,
+    "n_cases": 2
+   },
+   {
+    "family": "Trusts and Charities",
+    "n_claims": 2,
+    "n_cases": 1
    },
    {
     "family": "UltraVires",
-    "n_claims": 24,
-    "n_cases": 19
+    "n_claims": 93,
+    "n_cases": 69
+   },
+   {
+    "family": "UnauthorizedConstruction",
+    "n_claims": 3,
+    "n_cases": 1
+   },
+   {
+    "family": "Wakf",
+    "n_claims": 2,
+    "n_cases": 1
    }
   ],
   "mixed_clusters": [
    {
     "cluster": 0,
-    "size": 142,
+    "size": 269,
     "composition": {
-     "Title": 49,
-     "Possession": 41,
-     "Partition": 13,
-     "Trust": 5
+     "Title": 93,
+     "SpecificPerformance": 49,
+     "MortgageRedemption": 26,
+     "Possession": 22
     }
    },
    {
     "cluster": 1,
-    "size": 107,
+    "size": 402,
     "composition": {
-     "SpecificPerformance": 25,
-     "Title": 15,
-     "Procedural/Forum": 13,
-     "Cancellation": 10
+     "Title": 106,
+     "LandAcquisition": 64,
+     "ConstitutionalDeprivation": 50,
+     "UltraVires": 48
     }
    },
    {
     "cluster": 2,
-    "size": 63,
+    "size": 271,
     "composition": {
-     "Possession": 28,
-     "Title": 9,
-     "Tenure": 7,
-     "LeaseTenancy": 4
+     "Procedural/Forum": 45,
+     "UltraVires": 39,
+     "ConstitutionalDeprivation": 22,
+     "Title": 21
     }
    },
    {
     "cluster": 3,
-    "size": 122,
+    "size": 219,
     "composition": {
-     "Title": 35,
-     "UltraVires": 20,
-     "ConstitutionalDeprivation": 19,
-     "LandAcquisition": 13
+     "Possession": 92,
+     "Title": 72,
+     "Partition": 29,
+     "Pre-emption": 6
     }
    },
    {
     "cluster": 4,
-    "size": 31,
+    "size": 98,
     "composition": {
-     "LandAcquisition": 11,
-     "SpecificPerformance": 5,
-     "Possession": 3,
-     "ConstitutionalDeprivation": 3
+     "LandAcquisition": 21,
+     "SpecificPerformance": 20,
+     "Possession": 15,
+     "Compensation": 11
     }
    }
   ],
@@ -310,26 +515,30 @@
    },
    {
     "family": "AdversePossession",
-    "n_cases": 2
+    "n_cases": 5
    },
    {
     "family": "Benami",
+    "n_cases": 3
+   },
+   {
+    "family": "Ceiling",
     "n_cases": 1
    },
    {
-    "family": "Cancellation",
-    "n_cases": 16
+    "family": "CompassionateAppointment",
+    "n_cases": 1
    },
    {
     "family": "Compensation",
-    "n_cases": 1
-   },
-   {
-    "family": "ConstitutionalDeprivation",
-    "n_cases": 23
+    "n_cases": 12
    },
    {
     "family": "Contract",
+    "n_cases": 3
+   },
+   {
+    "family": "Contractual Obligations",
     "n_cases": 1
    },
    {
@@ -337,7 +546,19 @@
     "n_cases": 2
    },
    {
+    "family": "Corruption",
+    "n_cases": 1
+   },
+   {
+    "family": "Corruption/Public Office",
+    "n_cases": 1
+   },
+   {
     "family": "Criminal Breach of Trust",
+    "n_cases": 1
+   },
+   {
+    "family": "Debt Relief",
     "n_cases": 1
    },
    {
@@ -346,7 +567,11 @@
    },
    {
     "family": "Equitable",
-    "n_cases": 2
+    "n_cases": 3
+   },
+   {
+    "family": "Eviction",
+    "n_cases": 1
    },
    {
     "family": "Evidence",
@@ -357,16 +582,28 @@
     "n_cases": 1
    },
    {
+    "family": "Execution/Proceedings",
+    "n_cases": 1
+   },
+   {
+    "family": "FalseCharge",
+    "n_cases": 1
+   },
+   {
     "family": "Injunction",
     "n_cases": 2
    },
    {
     "family": "Insolvency",
+    "n_cases": 2
+   },
+   {
+    "family": "Insolvency/Receiver",
     "n_cases": 1
    },
    {
-    "family": "LandAcquisition",
-    "n_cases": 16
+    "family": "Insurance",
+    "n_cases": 1
    },
    {
     "family": "LandRevenue",
@@ -374,18 +611,54 @@
    },
    {
     "family": "LeaseTenancy",
-    "n_cases": 4
+    "n_cases": 12
+   },
+   {
+    "family": "Licence",
+    "n_cases": 1
+   },
+   {
+    "family": "License",
+    "n_cases": 1
    },
    {
     "family": "Limitation",
-    "n_cases": 3
+    "n_cases": 9
+   },
+   {
+    "family": "Limitation/Delay",
+    "n_cases": 1
+   },
+   {
+    "family": "Maintenance",
+    "n_cases": 2
    },
    {
     "family": "MortgageRedemption",
-    "n_cases": 8
+    "n_cases": 27
+   },
+   {
+    "family": "NEW: MalaFides",
+    "n_cases": 1
+   },
+   {
+    "family": "NEW: Monetary Relief",
+    "n_cases": 1
    },
    {
     "family": "NEW: SettlementChallenge",
+    "n_cases": 1
+   },
+   {
+    "family": "NEW:AnticipatoryBail",
+    "n_cases": 1
+   },
+   {
+    "family": "NEW:Challenge to Conviction",
+    "n_cases": 1
+   },
+   {
+    "family": "NEW:Cheating",
     "n_cases": 1
    },
    {
@@ -393,35 +666,75 @@
     "n_cases": 1
    },
    {
+    "family": "NEW:Condonation",
+    "n_cases": 1
+   },
+   {
+    "family": "NEW:CondonationOfDelay",
+    "n_cases": 1
+   },
+   {
+    "family": "NEW:Limitation",
+    "n_cases": 1
+   },
+   {
     "family": "NEW:MalaFides",
     "n_cases": 1
    },
    {
-    "family": "Partition",
-    "n_cases": 11
-   },
-   {
-    "family": "Pre-emption",
-    "n_cases": 2
-   },
-   {
-    "family": "Preemption",
+    "family": "NEW:Procedural",
     "n_cases": 1
    },
    {
-    "family": "Procedural/Forum",
-    "n_cases": 14
+    "family": "NEW:ProceedingAgainstAccused",
+    "n_cases": 1
    },
    {
-    "family": "Procedure",
+    "family": "NEW:Reputation",
+    "n_cases": 1
+   },
+   {
+    "family": "Pre-emption",
     "n_cases": 6
    },
    {
+    "family": "Preemption",
+    "n_cases": 2
+   },
+   {
+    "family": "Procedure",
+    "n_cases": 9
+   },
+   {
+    "family": "Procedure/Execution",
+    "n_cases": 1
+   },
+   {
+    "family": "Procedure/Forum",
+    "n_cases": 1
+   },
+   {
+    "family": "ProfessionalMisconduct",
+    "n_cases": 2
+   },
+   {
     "family": "Public Interest/Planning Policy",
-    "n_cases": 4
+    "n_cases": 6
+   },
+   {
+    "family": "Redevelopment",
+    "n_cases": 2
+   },
+   {
+    "family": "Rent",
+    "n_cases": 1
    },
    {
     "family": "RentControl",
+    "n_cases": 1
+   },
+   {
+    "family": "RentFixation",
     "n_cases": 1
    },
    {
@@ -429,64 +742,86 @@
     "n_cases": 1
    },
    {
-    "family": "SpecificPerformance",
-    "n_cases": 27
-   },
-   {
-    "family": "StampDuty",
+    "family": "Review",
     "n_cases": 1
    },
    {
-    "family": "Statutory/Regulatory Subservience",
-    "n_cases": 9
+    "family": "Service/Employment",
+    "n_cases": 1
+   },
+   {
+    "family": "StampDuty",
+    "n_cases": 3
+   },
+   {
+    "family": "StatutoryInterpretation",
+    "n_cases": 1
    },
    {
     "family": "Succession",
-    "n_cases": 4
+    "n_cases": 14
+   },
+   {
+    "family": "Suretyship",
+    "n_cases": 1
    },
    {
     "family": "Taxation",
-    "n_cases": 4
-   },
-   {
-    "family": "Tenancy",
-    "n_cases": 2
-   },
-   {
-    "family": "Tenure",
     "n_cases": 10
    },
    {
-    "family": "Trust",
-    "n_cases": 4
+    "family": "Taxation/Assessment",
+    "n_cases": 1
    },
    {
-    "family": "UltraVires",
-    "n_cases": 19
+    "family": "Tenancy",
+    "n_cases": 3
+   },
+   {
+    "family": "Title/Tenure",
+    "n_cases": 2
+   },
+   {
+    "family": "Trust",
+    "n_cases": 5
+   },
+   {
+    "family": "Trusts",
+    "n_cases": 2
+   },
+   {
+    "family": "Trusts and Charities",
+    "n_cases": 1
+   },
+   {
+    "family": "UnauthorizedConstruction",
+    "n_cases": 1
+   },
+   {
+    "family": "Wakf",
+    "n_cases": 1
    }
   ],
-  "ontology_families_never_assigned": [
-   "Redevelopment"
-  ],
+  "ontology_families_never_assigned": [],
   "new_family_proposals": {
-   "Procedural/Forum": 16,
-   "Statutory/Regulatory Subservience": 13,
-   "Tenure": 11,
-   "Procedure": 7,
-   "Trust": 5,
-   "Public Interest/Planning Policy": 5,
-   "Limitation": 4,
-   "Taxation": 4,
-   "Tenancy": 3,
-   "Pre-emption": 2,
-   "Injunction": 2,
-   "Compensation": 2,
-   "LandRevenue": 2,
-   "Equitable": 2,
-   "RentControl": 1
+   "Procedural/Forum": 53,
+   "Statutory/Regulatory Subservience": 39,
+   "Tenure": 38,
+   "Taxation": 14,
+   "Compensation": 14,
+   "Limitation": 11,
+   "Procedure": 10,
+   "Public Interest/Planning Policy": 7,
+   "Pre-emption": 6,
+   "Trust": 6,
+   "Tenancy": 5,
+   "StampDuty": 5,
+   "Contract": 4,
+   "Trusts": 4,
+   "ProfessionalMisconduct": 4
   },
-  "n_cases": 268,
-  "cases_with_multiple_families": 91
+  "n_cases": 805,
+  "cases_with_multiple_families": 255
  },
  "membership": {
   "1000162": {
@@ -2204,6 +2539,3409 @@
     "LandAcquisition"
    ],
    "primary": "ConstitutionalDeprivation"
+  },
+  "1122405": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1123714": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "112400": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1124884": {
+   "families": [
+    "NEW: Monetary Relief",
+    "SpecificPerformance"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "1125222": {
+   "families": [
+    "Cancellation"
+   ],
+   "primary": "Cancellation"
+  },
+  "1125536": {
+   "families": [
+    "CompassionateAppointment"
+   ],
+   "primary": "CompassionateAppointment"
+  },
+  "1125589": {
+   "families": [
+    "Possession",
+    "UltraVires"
+   ],
+   "primary": "UltraVires"
+  },
+  "1126147": {
+   "families": [
+    "Wakf"
+   ],
+   "primary": "Wakf"
+  },
+  "1126288": {
+   "families": [
+    "ConstitutionalDeprivation",
+    "Title"
+   ],
+   "primary": "ConstitutionalDeprivation"
+  },
+  "1126293": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1126538": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "11266": {
+   "families": [
+    "Procedural/Forum",
+    "Title/Tenure"
+   ],
+   "primary": "Procedural/Forum"
+  },
+  "1126923": {
+   "families": [
+    "Maintenance"
+   ],
+   "primary": "Maintenance"
+  },
+  "1128656": {
+   "families": [
+    "Procedural/Forum"
+   ],
+   "primary": "Procedural/Forum"
+  },
+  "1128683": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "112876941": {
+   "families": [
+    "Title",
+    "Trusts"
+   ],
+   "primary": "Title"
+  },
+  "1128835": {
+   "families": [
+    "LandAcquisition",
+    "Title"
+   ],
+   "primary": "LandAcquisition"
+  },
+  "1130343": {
+   "families": [
+    "LandAcquisition"
+   ],
+   "primary": "LandAcquisition"
+  },
+  "1130746": {
+   "families": [
+    "ProfessionalMisconduct"
+   ],
+   "primary": "ProfessionalMisconduct"
+  },
+  "1130828": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1131008": {
+   "families": [
+    "Redevelopment"
+   ],
+   "primary": "Redevelopment"
+  },
+  "113115747": {
+   "families": [
+    "Cancellation",
+    "SpecificPerformance"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "113126923": {
+   "families": [
+    "Equitable"
+   ],
+   "primary": "Equitable"
+  },
+  "1131827": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "113196209": {
+   "families": [
+    "Cancellation",
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1132374": {
+   "families": [
+    "Possession",
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1133248": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1134025": {
+   "families": [
+    "MortgageRedemption"
+   ],
+   "primary": "MortgageRedemption"
+  },
+  "1134266": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1134429": {
+   "families": [
+    "UltraVires"
+   ],
+   "primary": "UltraVires"
+  },
+  "1134977": {
+   "families": [
+    "Procedural/Forum",
+    "Statutory/Regulatory Subservience",
+    "UltraVires"
+   ],
+   "primary": "Statutory/Regulatory Subservience"
+  },
+  "1135097": {
+   "families": [
+    "Title",
+    "UltraVires"
+   ],
+   "primary": "Title"
+  },
+  "1135652": {
+   "families": [
+    "Insurance"
+   ],
+   "primary": "Insurance"
+  },
+  "1136104": {
+   "families": [
+    "MortgageRedemption"
+   ],
+   "primary": "MortgageRedemption"
+  },
+  "1136418": {
+   "families": [
+    "Procedural/Forum"
+   ],
+   "primary": "Procedural/Forum"
+  },
+  "11369008": {
+   "families": [
+    "Cancellation",
+    "Title"
+   ],
+   "primary": "Cancellation"
+  },
+  "1136921": {
+   "families": [
+    "SpecificPerformance"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "1137071": {
+   "families": [
+    "Procedure/Execution"
+   ],
+   "primary": "Procedure/Execution"
+  },
+  "1137092": {
+   "families": [
+    "LeaseTenancy"
+   ],
+   "primary": "LeaseTenancy"
+  },
+  "1138065": {
+   "families": [
+    "Possession",
+    "Title"
+   ],
+   "primary": "Possession"
+  },
+  "1138174": {
+   "families": [
+    "LandAcquisition"
+   ],
+   "primary": "LandAcquisition"
+  },
+  "1138486": {
+   "families": [
+    "SpecificPerformance"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "1139186": {
+   "families": [
+    "Possession",
+    "Tenure"
+   ],
+   "primary": "Possession"
+  },
+  "1139276": {
+   "families": [
+    "Possession",
+    "Procedure"
+   ],
+   "primary": "Possession"
+  },
+  "1139927": {
+   "families": [
+    "Compensation"
+   ],
+   "primary": "Compensation"
+  },
+  "114018934": {
+   "families": [
+    "Review"
+   ],
+   "primary": "Review"
+  },
+  "1140636": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1140705": {
+   "families": [
+    "Tenure"
+   ],
+   "primary": "Tenure"
+  },
+  "1140708": {
+   "families": [
+    "Licence"
+   ],
+   "primary": "Licence"
+  },
+  "1140709": {
+   "families": [
+    "Succession"
+   ],
+   "primary": "Succession"
+  },
+  "1141231": {
+   "families": [
+    "LandAcquisition"
+   ],
+   "primary": "LandAcquisition"
+  },
+  "1141467": {
+   "families": [
+    "Benami",
+    "Limitation"
+   ],
+   "primary": "Benami"
+  },
+  "114155471": {
+   "families": [
+    "SpecificPerformance"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "1141666": {
+   "families": [
+    "SpecificPerformance"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "1142196": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1143021": {
+   "families": [
+    "Eviction"
+   ],
+   "primary": "Eviction"
+  },
+  "1143189": {
+   "families": [
+    "ConstitutionalDeprivation",
+    "Succession"
+   ],
+   "primary": "Succession"
+  },
+  "1143216": {
+   "families": [
+    "Limitation",
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1143655": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1144022": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "114403": {
+   "families": [
+    "Trusts"
+   ],
+   "primary": "Trusts"
+  },
+  "1144327": {
+   "families": [
+    "LandAcquisition"
+   ],
+   "primary": "LandAcquisition"
+  },
+  "1144636": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "114488631": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1144919": {
+   "families": [
+    "SpecificPerformance"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "1144945": {
+   "families": [
+    "MortgageRedemption",
+    "Statutory/Regulatory Subservience"
+   ],
+   "primary": "MortgageRedemption"
+  },
+  "1145196": {
+   "families": [
+    "ConstitutionalDeprivation",
+    "Title"
+   ],
+   "primary": "ConstitutionalDeprivation"
+  },
+  "114533": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1145528": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1145726": {
+   "families": [
+    "Compensation"
+   ],
+   "primary": "Compensation"
+  },
+  "1145870": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1146036": {
+   "families": [
+    "Pre-emption"
+   ],
+   "primary": "Pre-emption"
+  },
+  "1147007": {
+   "families": [
+    "LandAcquisition",
+    "UltraVires"
+   ],
+   "primary": "LandAcquisition"
+  },
+  "114748881": {
+   "families": [
+    "Pre-emption"
+   ],
+   "primary": "Pre-emption"
+  },
+  "1148062": {
+   "families": [
+    "Partition"
+   ],
+   "primary": "Partition"
+  },
+  "1148646": {
+   "families": [
+    "Cancellation"
+   ],
+   "primary": "Cancellation"
+  },
+  "1148873": {
+   "families": [
+    "Possession",
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1149354": {
+   "families": [
+    "ConstitutionalDeprivation"
+   ],
+   "primary": "ConstitutionalDeprivation"
+  },
+  "115022": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1150493": {
+   "families": [
+    "Possession",
+    "Title",
+    "UltraVires"
+   ],
+   "primary": "UltraVires"
+  },
+  "115062186": {
+   "families": [
+    "UltraVires"
+   ],
+   "primary": "UltraVires"
+  },
+  "1151521": {
+   "families": [
+    "Partition"
+   ],
+   "primary": "Partition"
+  },
+  "1151734": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "115280770": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1152976": {
+   "families": [
+    "Possession",
+    "Procedural/Forum"
+   ],
+   "primary": "Possession"
+  },
+  "1153435": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1154805": {
+   "families": [
+    "Possession",
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1155131": {
+   "families": [
+    "SpecificPerformance"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "1155246": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1155281": {
+   "families": [
+    "MortgageRedemption"
+   ],
+   "primary": "MortgageRedemption"
+  },
+  "1155563": {
+   "families": [
+    "ConstitutionalDeprivation"
+   ],
+   "primary": "ConstitutionalDeprivation"
+  },
+  "1155660": {
+   "families": [
+    "UltraVires"
+   ],
+   "primary": "UltraVires"
+  },
+  "11565482": {
+   "families": [
+    "UltraVires"
+   ],
+   "primary": "UltraVires"
+  },
+  "1157153": {
+   "families": [
+    "Statutory/Regulatory Subservience"
+   ],
+   "primary": "Statutory/Regulatory Subservience"
+  },
+  "115787143": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "115795579": {
+   "families": [
+    "Procedure",
+    "Tenure"
+   ],
+   "primary": "Tenure"
+  },
+  "115839893": {
+   "families": [
+    "NEW:CondonationOfDelay",
+    "NEW:Limitation"
+   ],
+   "primary": "NEW:CondonationOfDelay"
+  },
+  "1158482": {
+   "families": [
+    "MortgageRedemption",
+    "Possession",
+    "Title"
+   ],
+   "primary": "Possession"
+  },
+  "1158527": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1158789": {
+   "families": [
+    "ProfessionalMisconduct"
+   ],
+   "primary": "ProfessionalMisconduct"
+  },
+  "1159014": {
+   "families": [
+    "ConstitutionalDeprivation"
+   ],
+   "primary": "ConstitutionalDeprivation"
+  },
+  "1159394": {
+   "families": [
+    "Possession",
+    "Title"
+   ],
+   "primary": "Possession"
+  },
+  "1159404": {
+   "families": [
+    "ConstitutionalDeprivation",
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1160146": {
+   "families": [
+    "SpecificPerformance"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "116024620": {
+   "families": [
+    "Contract",
+    "UltraVires"
+   ],
+   "primary": "UltraVires"
+  },
+  "1160321": {
+   "families": [
+    "Possession",
+    "SpecificPerformance"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "116061333": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "11608427": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "116122": {
+   "families": [
+    "Statutory/Regulatory Subservience"
+   ],
+   "primary": "Statutory/Regulatory Subservience"
+  },
+  "1161744": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "116225116": {
+   "families": [
+    "Corruption/Public Office"
+   ],
+   "primary": "Corruption/Public Office"
+  },
+  "1163900": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1163919": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "11649885": {
+   "families": [
+    "LandAcquisition"
+   ],
+   "primary": "LandAcquisition"
+  },
+  "1166039": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "116608229": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1166417": {
+   "families": [
+    "LeaseTenancy",
+    "MortgageRedemption"
+   ],
+   "primary": "MortgageRedemption"
+  },
+  "116651": {
+   "families": [
+    "Partition",
+    "Title"
+   ],
+   "primary": "Partition"
+  },
+  "116734806": {
+   "families": [
+    "Cancellation",
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1168625": {
+   "families": [
+    "Tenure"
+   ],
+   "primary": "Tenure"
+  },
+  "1169408": {
+   "families": [
+    "Compensation"
+   ],
+   "primary": "Compensation"
+  },
+  "1169432": {
+   "families": [
+    "SpecificPerformance"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "1169518": {
+   "families": [
+    "LandAcquisition"
+   ],
+   "primary": "LandAcquisition"
+  },
+  "116970": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "116992": {
+   "families": [
+    "UltraVires"
+   ],
+   "primary": "UltraVires"
+  },
+  "1170087": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1170122": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1170952": {
+   "families": [
+    "Statutory/Regulatory Subservience"
+   ],
+   "primary": "Statutory/Regulatory Subservience"
+  },
+  "1171107": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1171460": {
+   "families": [
+    "LeaseTenancy"
+   ],
+   "primary": "LeaseTenancy"
+  },
+  "117249167": {
+   "families": [
+    "Procedural/Forum"
+   ],
+   "primary": "Procedural/Forum"
+  },
+  "1173245": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1173284": {
+   "families": [
+    "Partition"
+   ],
+   "primary": "Partition"
+  },
+  "1175277": {
+   "families": [
+    "Title",
+    "UltraVires"
+   ],
+   "primary": "Title"
+  },
+  "1175493": {
+   "families": [
+    "Statutory/Regulatory Subservience"
+   ],
+   "primary": "Statutory/Regulatory Subservience"
+  },
+  "117687": {
+   "families": [
+    "LandAcquisition"
+   ],
+   "primary": "LandAcquisition"
+  },
+  "117771444": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "117835723": {
+   "families": [
+    "Possession",
+    "Title"
+   ],
+   "primary": "Possession"
+  },
+  "1178802": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1179294": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1179310": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "118013356": {
+   "families": [
+    "Cancellation",
+    "Possession"
+   ],
+   "primary": "Cancellation"
+  },
+  "1180387": {
+   "families": [
+    "Possession",
+    "Tenure",
+    "Title"
+   ],
+   "primary": "Possession"
+  },
+  "118072899": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "118156411": {
+   "families": [
+    "Partition"
+   ],
+   "primary": "Partition"
+  },
+  "1181756": {
+   "families": [
+    "Partition",
+    "Title"
+   ],
+   "primary": "Partition"
+  },
+  "1181948": {
+   "families": [
+    "MortgageRedemption"
+   ],
+   "primary": "MortgageRedemption"
+  },
+  "1181955": {
+   "families": [
+    "LandAcquisition",
+    "UltraVires"
+   ],
+   "primary": "LandAcquisition"
+  },
+  "118314": {
+   "families": [
+    "Partition",
+    "Possession",
+    "Title"
+   ],
+   "primary": "Possession"
+  },
+  "118326933": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1183383": {
+   "families": [
+    "Succession"
+   ],
+   "primary": "Succession"
+  },
+  "1183935": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "118395627": {
+   "families": [
+    "Partition",
+    "SpecificPerformance"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "1184385": {
+   "families": [
+    "Tenure"
+   ],
+   "primary": "Tenure"
+  },
+  "1184690": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1186098": {
+   "families": [
+    "LeaseTenancy"
+   ],
+   "primary": "LeaseTenancy"
+  },
+  "1186413": {
+   "families": [
+    "UltraVires"
+   ],
+   "primary": "UltraVires"
+  },
+  "1186610": {
+   "families": [
+    "SpecificPerformance"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "1186788": {
+   "families": [
+    "Possession",
+    "Title"
+   ],
+   "primary": "Possession"
+  },
+  "1186794": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1187058": {
+   "families": [
+    "UltraVires"
+   ],
+   "primary": "UltraVires"
+  },
+  "118714077": {
+   "families": [
+    "Cancellation"
+   ],
+   "primary": "Cancellation"
+  },
+  "1187237": {
+   "families": [
+    "Statutory/Regulatory Subservience"
+   ],
+   "primary": "Statutory/Regulatory Subservience"
+  },
+  "1187427": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "118760660": {
+   "families": [
+    "ConstitutionalDeprivation"
+   ],
+   "primary": "ConstitutionalDeprivation"
+  },
+  "118777590": {
+   "families": [
+    "NEW:ProceedingAgainstAccused"
+   ],
+   "primary": "NEW:ProceedingAgainstAccused"
+  },
+  "118800625": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1188410": {
+   "families": [
+    "Partition",
+    "Possession",
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1189023": {
+   "families": [
+    "UnauthorizedConstruction"
+   ],
+   "primary": "UnauthorizedConstruction"
+  },
+  "118941753": {
+   "families": [
+    "LandAcquisition",
+    "Title"
+   ],
+   "primary": "LandAcquisition"
+  },
+  "1190054": {
+   "families": [
+    "Execution/Proceedings"
+   ],
+   "primary": "Execution/Proceedings"
+  },
+  "1191057": {
+   "families": [
+    "Possession",
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "11911163": {
+   "families": [
+    "LandAcquisition"
+   ],
+   "primary": "LandAcquisition"
+  },
+  "1192000": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1192149": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "11924278": {
+   "families": [
+    "Cancellation"
+   ],
+   "primary": "Cancellation"
+  },
+  "11936": {
+   "families": [
+    "Possession",
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "119367069": {
+   "families": [
+    "Possession",
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1193928": {
+   "families": [
+    "Pre-emption"
+   ],
+   "primary": "Pre-emption"
+  },
+  "119431472": {
+   "families": [
+    "Corruption"
+   ],
+   "primary": "Corruption"
+  },
+  "119495303": {
+   "families": [
+    "Possession",
+    "Tenure"
+   ],
+   "primary": "Possession"
+  },
+  "1195810": {
+   "families": [
+    "Cancellation",
+    "Procedural/Forum"
+   ],
+   "primary": "Cancellation"
+  },
+  "1196031": {
+   "families": [
+    "Procedural/Forum"
+   ],
+   "primary": "Procedural/Forum"
+  },
+  "1196198": {
+   "families": [
+    "UltraVires"
+   ],
+   "primary": "UltraVires"
+  },
+  "119622692": {
+   "families": [
+    "LandAcquisition",
+    "Title"
+   ],
+   "primary": "LandAcquisition"
+  },
+  "1196905": {
+   "families": [
+    "ConstitutionalDeprivation",
+    "NEW: MalaFides",
+    "UltraVires"
+   ],
+   "primary": "UltraVires"
+  },
+  "119799454": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1199248": {
+   "families": [
+    "LandAcquisition"
+   ],
+   "primary": "LandAcquisition"
+  },
+  "1199297": {
+   "families": [
+    "LandAcquisition"
+   ],
+   "primary": "LandAcquisition"
+  },
+  "1199330": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1199737": {
+   "families": [
+    "Partition"
+   ],
+   "primary": "Partition"
+  },
+  "1200153": {
+   "families": [
+    "Possession",
+    "Title"
+   ],
+   "primary": "Possession"
+  },
+  "120122381": {
+   "families": [
+    "Possession",
+    "Title"
+   ],
+   "primary": "Possession"
+  },
+  "120261452": {
+   "families": [
+    "ConstitutionalDeprivation"
+   ],
+   "primary": "ConstitutionalDeprivation"
+  },
+  "1202682": {
+   "families": [
+    "LandAcquisition"
+   ],
+   "primary": "LandAcquisition"
+  },
+  "1203079": {
+   "families": [
+    "Possession",
+    "UltraVires"
+   ],
+   "primary": "Possession"
+  },
+  "1203263": {
+   "families": [
+    "LandAcquisition"
+   ],
+   "primary": "LandAcquisition"
+  },
+  "1203298": {
+   "families": [
+    "ConstitutionalDeprivation"
+   ],
+   "primary": "ConstitutionalDeprivation"
+  },
+  "120343307": {
+   "families": [
+    "SpecificPerformance"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "120358": {
+   "families": [
+    "ConstitutionalDeprivation",
+    "UltraVires"
+   ],
+   "primary": "ConstitutionalDeprivation"
+  },
+  "1203615": {
+   "families": [
+    "Procedural/Forum"
+   ],
+   "primary": "Procedural/Forum"
+  },
+  "1204171": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1205108": {
+   "families": [
+    "UltraVires"
+   ],
+   "primary": "UltraVires"
+  },
+  "1205156": {
+   "families": [
+    "ConstitutionalDeprivation",
+    "Possession"
+   ],
+   "primary": "ConstitutionalDeprivation"
+  },
+  "1205487": {
+   "families": [
+    "Possession",
+    "Tenure"
+   ],
+   "primary": "Possession"
+  },
+  "120571917": {
+   "families": [
+    "Trusts and Charities"
+   ],
+   "primary": "Trusts and Charities"
+  },
+  "1205820": {
+   "families": [
+    "Tenure"
+   ],
+   "primary": "Tenure"
+  },
+  "120614618": {
+   "families": [
+    "SpecificPerformance"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "1206303": {
+   "families": [
+    "Statutory/Regulatory Subservience",
+    "Title/Tenure"
+   ],
+   "primary": "Statutory/Regulatory Subservience"
+  },
+  "120634": {
+   "families": [
+    "Title",
+    "Trust"
+   ],
+   "primary": "Title"
+  },
+  "120765903": {
+   "families": [
+    "LandAcquisition"
+   ],
+   "primary": "LandAcquisition"
+  },
+  "1208823": {
+   "families": [
+    "LandAcquisition"
+   ],
+   "primary": "LandAcquisition"
+  },
+  "120996908": {
+   "families": [
+    "Cancellation",
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "121065383": {
+   "families": [
+    "ConstitutionalDeprivation",
+    "LandAcquisition"
+   ],
+   "primary": "LandAcquisition"
+  },
+  "1210836": {
+   "families": [
+    "Contractual Obligations"
+   ],
+   "primary": "Contractual Obligations"
+  },
+  "121106": {
+   "families": [
+    "Succession"
+   ],
+   "primary": "Succession"
+  },
+  "1211167335": {
+   "families": [
+    "Procedural/Forum",
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1211323": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1211653": {
+   "families": [
+    "Possession",
+    "Title"
+   ],
+   "primary": "Possession"
+  },
+  "1212009": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "121254": {
+   "families": [
+    "Taxation"
+   ],
+   "primary": "Taxation"
+  },
+  "1212607": {
+   "families": [
+    "Tenure"
+   ],
+   "primary": "Tenure"
+  },
+  "1213194": {
+   "families": [
+    "ConstitutionalDeprivation"
+   ],
+   "primary": "ConstitutionalDeprivation"
+  },
+  "1213579": {
+   "families": [
+    "Cancellation",
+    "Title"
+   ],
+   "primary": "Cancellation"
+  },
+  "1214064": {
+   "families": [
+    "SpecificPerformance"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "1214175": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1214330": {
+   "families": [
+    "ConstitutionalDeprivation"
+   ],
+   "primary": "ConstitutionalDeprivation"
+  },
+  "1214360": {
+   "families": [
+    "Rent"
+   ],
+   "primary": "Rent"
+  },
+  "1214654": {
+   "families": [
+    "Succession"
+   ],
+   "primary": "Succession"
+  },
+  "1214848": {
+   "families": [
+    "MortgageRedemption"
+   ],
+   "primary": "MortgageRedemption"
+  },
+  "121624333": {
+   "families": [
+    "SpecificPerformance"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "1216722": {
+   "families": [
+    "Possession",
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1217538": {
+   "families": [
+    "MortgageRedemption",
+    "Procedural/Forum"
+   ],
+   "primary": "MortgageRedemption"
+  },
+  "1217738": {
+   "families": [
+    "Title",
+    "UltraVires"
+   ],
+   "primary": "Title"
+  },
+  "121775": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1218465": {
+   "families": [
+    "LandAcquisition"
+   ],
+   "primary": "LandAcquisition"
+  },
+  "121891009": {
+   "families": [
+    "Cancellation",
+    "Possession",
+    "SpecificPerformance"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "121936": {
+   "families": [
+    "ConstitutionalDeprivation"
+   ],
+   "primary": "ConstitutionalDeprivation"
+  },
+  "1219788": {
+   "families": [
+    "Possession",
+    "Title"
+   ],
+   "primary": "Possession"
+  },
+  "1219878": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1219951": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "122011770": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1220169": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1220466": {
+   "families": [
+    "Compensation",
+    "ConstitutionalDeprivation"
+   ],
+   "primary": "ConstitutionalDeprivation"
+  },
+  "1220660": {
+   "families": [
+    "NEW:Challenge to Conviction"
+   ],
+   "primary": "NEW:Challenge to Conviction"
+  },
+  "1220782": {
+   "families": [
+    "ConstitutionalDeprivation",
+    "Possession",
+    "Statutory/Regulatory Subservience"
+   ],
+   "primary": "Statutory/Regulatory Subservience"
+  },
+  "1221120": {
+   "families": [
+    "Procedural/Forum",
+    "SpecificPerformance",
+    "Title"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "1222516": {
+   "families": [
+    "MortgageRedemption"
+   ],
+   "primary": "MortgageRedemption"
+  },
+  "122264633": {
+   "families": [
+    "SpecificPerformance"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "1223094": {
+   "families": [
+    "LeaseTenancy"
+   ],
+   "primary": "LeaseTenancy"
+  },
+  "122321588": {
+   "families": [
+    "Cancellation",
+    "Partition"
+   ],
+   "primary": "Cancellation"
+  },
+  "1223440": {
+   "families": [
+    "RentFixation"
+   ],
+   "primary": "RentFixation"
+  },
+  "1224011": {
+   "families": [
+    "MortgageRedemption",
+    "Procedural/Forum"
+   ],
+   "primary": "Procedural/Forum"
+  },
+  "1224932": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "122509": {
+   "families": [
+    "Cancellation"
+   ],
+   "primary": "Cancellation"
+  },
+  "1225176": {
+   "families": [
+    "SpecificPerformance"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "1225359": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1225663": {
+   "families": [
+    "Possession",
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1225694": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "122592345": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "12263": {
+   "families": [
+    "Possession",
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "122630889": {
+   "families": [
+    "LandAcquisition"
+   ],
+   "primary": "LandAcquisition"
+  },
+  "1226569": {
+   "families": [
+    "Procedural/Forum",
+    "Public Interest/Planning Policy",
+    "Title",
+    "UltraVires"
+   ],
+   "primary": "Title"
+  },
+  "122752": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1227549": {
+   "families": [
+    "Possession",
+    "Title"
+   ],
+   "primary": "Possession"
+  },
+  "1227665": {
+   "families": [
+    "LeaseTenancy"
+   ],
+   "primary": "LeaseTenancy"
+  },
+  "122795087": {
+   "families": [
+    "Procedural/Forum",
+    "Title"
+   ],
+   "primary": "Procedural/Forum"
+  },
+  "122806905": {
+   "families": [
+    "AdversePossession",
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1228368": {
+   "families": [
+    "Cancellation"
+   ],
+   "primary": "Cancellation"
+  },
+  "122842801": {
+   "families": [
+    "MortgageRedemption"
+   ],
+   "primary": "MortgageRedemption"
+  },
+  "1228547": {
+   "families": [
+    "Possession",
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "122856277": {
+   "families": [
+    "SpecificPerformance",
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1229388": {
+   "families": [
+    "MortgageRedemption",
+    "Title"
+   ],
+   "primary": "MortgageRedemption"
+  },
+  "1229430": {
+   "families": [
+    "Partition",
+    "SpecificPerformance"
+   ],
+   "primary": "Partition"
+  },
+  "122992350": {
+   "families": [
+    "ConstitutionalDeprivation"
+   ],
+   "primary": "ConstitutionalDeprivation"
+  },
+  "1230313": {
+   "families": [
+    "MortgageRedemption"
+   ],
+   "primary": "MortgageRedemption"
+  },
+  "1230342": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "123036": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1230472": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1230877": {
+   "families": [
+    "Tenure",
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "12316330": {
+   "families": [
+    "Possession",
+    "Title"
+   ],
+   "primary": "Possession"
+  },
+  "1232327": {
+   "families": [
+    "Compensation"
+   ],
+   "primary": "Compensation"
+  },
+  "1232578": {
+   "families": [
+    "UltraVires"
+   ],
+   "primary": "UltraVires"
+  },
+  "1232638": {
+   "families": [
+    "ConstitutionalDeprivation"
+   ],
+   "primary": "ConstitutionalDeprivation"
+  },
+  "1233714": {
+   "families": [
+    "Taxation"
+   ],
+   "primary": "Taxation"
+  },
+  "1233720": {
+   "families": [
+    "UltraVires"
+   ],
+   "primary": "UltraVires"
+  },
+  "123401091": {
+   "families": [
+    "Possession",
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "123420950": {
+   "families": [
+    "Insolvency",
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1234664": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1236348": {
+   "families": [
+    "StatutoryInterpretation"
+   ],
+   "primary": "StatutoryInterpretation"
+  },
+  "1236496": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "123741567": {
+   "families": [
+    "Cancellation"
+   ],
+   "primary": "Cancellation"
+  },
+  "1237708": {
+   "families": [
+    "ConstitutionalDeprivation",
+    "Title"
+   ],
+   "primary": "ConstitutionalDeprivation"
+  },
+  "123771": {
+   "families": [
+    "Tenure",
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1237964": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "123834807": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1239058": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1239692": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1239949": {
+   "families": [
+    "Procedural/Forum"
+   ],
+   "primary": "Procedural/Forum"
+  },
+  "124022295": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1240908": {
+   "families": [
+    "Cancellation"
+   ],
+   "primary": "Cancellation"
+  },
+  "1242308": {
+   "families": [
+    "Cancellation"
+   ],
+   "primary": "Cancellation"
+  },
+  "1242384": {
+   "families": [
+    "LandAcquisition"
+   ],
+   "primary": "LandAcquisition"
+  },
+  "1242882": {
+   "families": [
+    "Partition"
+   ],
+   "primary": "Partition"
+  },
+  "1243568": {
+   "families": [
+    "Possession",
+    "SpecificPerformance"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "1243915": {
+   "families": [
+    "Procedure/Forum"
+   ],
+   "primary": "Procedure/Forum"
+  },
+  "124421981": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "12453563": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1245481": {
+   "families": [
+    "Suretyship"
+   ],
+   "primary": "Suretyship"
+  },
+  "124611144": {
+   "families": [
+    "Cancellation"
+   ],
+   "primary": "Cancellation"
+  },
+  "124691580": {
+   "families": [
+    "UltraVires"
+   ],
+   "primary": "UltraVires"
+  },
+  "1247047": {
+   "families": [
+    "Title",
+    "UltraVires"
+   ],
+   "primary": "UltraVires"
+  },
+  "1247733": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1248005": {
+   "families": [
+    "SpecificPerformance"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "124827263": {
+   "families": [
+    "Cancellation",
+    "Possession"
+   ],
+   "primary": "Cancellation"
+  },
+  "1248354": {
+   "families": [
+    "SpecificPerformance"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "124878712": {
+   "families": [
+    "Partition",
+    "Succession"
+   ],
+   "primary": "Succession"
+  },
+  "1249518": {
+   "families": [
+    "UltraVires"
+   ],
+   "primary": "UltraVires"
+  },
+  "1249629": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "125009484": {
+   "families": [
+    "SpecificPerformance"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "125036411": {
+   "families": [
+    "Contract"
+   ],
+   "primary": "Contract"
+  },
+  "125038938": {
+   "families": [
+    "Tenure"
+   ],
+   "primary": "Tenure"
+  },
+  "1250556": {
+   "families": [
+    "UltraVires"
+   ],
+   "primary": "UltraVires"
+  },
+  "1251691": {
+   "families": [
+    "Cancellation"
+   ],
+   "primary": "Cancellation"
+  },
+  "1251841": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1252016": {
+   "families": [
+    "LandAcquisition"
+   ],
+   "primary": "LandAcquisition"
+  },
+  "1252413": {
+   "families": [
+    "Statutory/Regulatory Subservience"
+   ],
+   "primary": "Statutory/Regulatory Subservience"
+  },
+  "1252421": {
+   "families": [
+    "SpecificPerformance"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "1252577": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1253177": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "125378456": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1253855": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "125403578": {
+   "families": [
+    "Public Interest/Planning Policy",
+    "Title"
+   ],
+   "primary": "Public Interest/Planning Policy"
+  },
+  "1254433": {
+   "families": [
+    "Possession",
+    "Tenure"
+   ],
+   "primary": "Possession"
+  },
+  "1254746": {
+   "families": [
+    "Possession",
+    "Title"
+   ],
+   "primary": "Possession"
+  },
+  "1255712": {
+   "families": [
+    "ConstitutionalDeprivation",
+    "Title"
+   ],
+   "primary": "ConstitutionalDeprivation"
+  },
+  "125621297": {
+   "families": [
+    "Redevelopment",
+    "Statutory/Regulatory Subservience"
+   ],
+   "primary": "Redevelopment"
+  },
+  "1256425": {
+   "families": [
+    "Tenure"
+   ],
+   "primary": "Tenure"
+  },
+  "1256429": {
+   "families": [
+    "Procedural/Forum",
+    "UltraVires"
+   ],
+   "primary": "UltraVires"
+  },
+  "1257115": {
+   "families": [
+    "Taxation"
+   ],
+   "primary": "Taxation"
+  },
+  "125715529": {
+   "families": [
+    "SpecificPerformance"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "1257214": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1257391": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "125769": {
+   "families": [
+    "ConstitutionalDeprivation"
+   ],
+   "primary": "ConstitutionalDeprivation"
+  },
+  "1258047": {
+   "families": [
+    "Possession",
+    "Procedural/Forum"
+   ],
+   "primary": "Possession"
+  },
+  "1258228": {
+   "families": [
+    "Statutory/Regulatory Subservience",
+    "UltraVires"
+   ],
+   "primary": "UltraVires"
+  },
+  "1259227": {
+   "families": [
+    "ConstitutionalDeprivation"
+   ],
+   "primary": "ConstitutionalDeprivation"
+  },
+  "1259448": {
+   "families": [
+    "Cancellation",
+    "Compensation",
+    "SpecificPerformance"
+   ],
+   "primary": "Cancellation"
+  },
+  "1259540": {
+   "families": [
+    "Statutory/Regulatory Subservience"
+   ],
+   "primary": "Statutory/Regulatory Subservience"
+  },
+  "125960": {
+   "families": [
+    "ConstitutionalDeprivation"
+   ],
+   "primary": "ConstitutionalDeprivation"
+  },
+  "1260147": {
+   "families": [
+    "ConstitutionalDeprivation",
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "126075287": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1261076": {
+   "families": [
+    "SpecificPerformance",
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "126147244": {
+   "families": [
+    "Title",
+    "UltraVires"
+   ],
+   "primary": "UltraVires"
+  },
+  "1262157": {
+   "families": [
+    "ConstitutionalDeprivation",
+    "Title"
+   ],
+   "primary": "ConstitutionalDeprivation"
+  },
+  "1262724": {
+   "families": [
+    "Limitation"
+   ],
+   "primary": "Limitation"
+  },
+  "1263872": {
+   "families": [
+    "ConstitutionalDeprivation",
+    "UltraVires"
+   ],
+   "primary": "UltraVires"
+  },
+  "1264138": {
+   "families": [
+    "MortgageRedemption"
+   ],
+   "primary": "MortgageRedemption"
+  },
+  "126467": {
+   "families": [
+    "ConstitutionalDeprivation",
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1264971": {
+   "families": [
+    "Procedural/Forum"
+   ],
+   "primary": "Procedural/Forum"
+  },
+  "1265642": {
+   "families": [
+    "LandAcquisition"
+   ],
+   "primary": "LandAcquisition"
+  },
+  "1266434": {
+   "families": [
+    "Possession",
+    "Tenure"
+   ],
+   "primary": "Possession"
+  },
+  "1266860": {
+   "families": [
+    "Partition"
+   ],
+   "primary": "Partition"
+  },
+  "1266902": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1267551": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1268492": {
+   "families": [
+    "MortgageRedemption"
+   ],
+   "primary": "MortgageRedemption"
+  },
+  "1268805": {
+   "families": [
+    "ConstitutionalDeprivation"
+   ],
+   "primary": "ConstitutionalDeprivation"
+  },
+  "127062474": {
+   "families": [
+    "Procedural/Forum"
+   ],
+   "primary": "Procedural/Forum"
+  },
+  "12774099": {
+   "families": [
+    "Cancellation"
+   ],
+   "primary": "Cancellation"
+  },
+  "1280197": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "128032254": {
+   "families": [
+    "Partition",
+    "Possession",
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "128068545": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1281857": {
+   "families": [
+    "Procedural/Forum",
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1282751": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1283865": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "128395": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1284248": {
+   "families": [
+    "SpecificPerformance"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "128437101": {
+   "families": [
+    "Procedural/Forum"
+   ],
+   "primary": "Procedural/Forum"
+  },
+  "1284541": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1285040": {
+   "families": [
+    "SpecificPerformance"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "1285565": {
+   "families": [
+    "Possession",
+    "Title"
+   ],
+   "primary": "Possession"
+  },
+  "128636": {
+   "families": [
+    "Possession",
+    "UltraVires"
+   ],
+   "primary": "UltraVires"
+  },
+  "128638041": {
+   "families": [
+    "Partition"
+   ],
+   "primary": "Partition"
+  },
+  "128807": {
+   "families": [
+    "Cancellation",
+    "Possession"
+   ],
+   "primary": "Cancellation"
+  },
+  "1288378": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1288811": {
+   "families": [
+    "Succession"
+   ],
+   "primary": "Succession"
+  },
+  "1288822": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1289828": {
+   "families": [
+    "AdversePossession",
+    "Statutory/Regulatory Subservience",
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "129022414": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "129071287": {
+   "families": [
+    "SpecificPerformance",
+    "UltraVires"
+   ],
+   "primary": "UltraVires"
+  },
+  "1290723": {
+   "families": [
+    "Taxation"
+   ],
+   "primary": "Taxation"
+  },
+  "129099": {
+   "families": [
+    "ConstitutionalDeprivation",
+    "Title"
+   ],
+   "primary": "ConstitutionalDeprivation"
+  },
+  "1291904": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "129197815": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "129198577": {
+   "families": [
+    "License"
+   ],
+   "primary": "License"
+  },
+  "1292955": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1293282": {
+   "families": [
+    "ConstitutionalDeprivation",
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1293650": {
+   "families": [
+    "LandAcquisition"
+   ],
+   "primary": "LandAcquisition"
+  },
+  "1293751": {
+   "families": [
+    "LandAcquisition",
+    "UltraVires"
+   ],
+   "primary": "UltraVires"
+  },
+  "1293816": {
+   "families": [
+    "UltraVires"
+   ],
+   "primary": "UltraVires"
+  },
+  "1293868": {
+   "families": [
+    "Compensation",
+    "Statutory/Regulatory Subservience"
+   ],
+   "primary": "Compensation"
+  },
+  "1294884": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1295007": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "129507": {
+   "families": [
+    "LandAcquisition"
+   ],
+   "primary": "LandAcquisition"
+  },
+  "1295163": {
+   "families": [
+    "Tenure"
+   ],
+   "primary": "Tenure"
+  },
+  "1295840": {
+   "families": [
+    "ConstitutionalDeprivation",
+    "UltraVires"
+   ],
+   "primary": "ConstitutionalDeprivation"
+  },
+  "1295956": {
+   "families": [
+    "Possession",
+    "Title"
+   ],
+   "primary": "Possession"
+  },
+  "129611051": {
+   "families": [
+    "SpecificPerformance"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "1296928": {
+   "families": [
+    "Succession",
+    "Tenure"
+   ],
+   "primary": "Tenure"
+  },
+  "129700": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "129719559": {
+   "families": [
+    "SpecificPerformance"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "1297602": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "129761998": {
+   "families": [
+    "Procedural/Forum"
+   ],
+   "primary": "Procedural/Forum"
+  },
+  "1298157": {
+   "families": [
+    "Procedural/Forum",
+    "UltraVires"
+   ],
+   "primary": "UltraVires"
+  },
+  "129817967": {
+   "families": [
+    "LandAcquisition"
+   ],
+   "primary": "LandAcquisition"
+  },
+  "1298680": {
+   "families": [
+    "ConstitutionalDeprivation"
+   ],
+   "primary": "ConstitutionalDeprivation"
+  },
+  "129916211": {
+   "families": [
+    "SpecificPerformance"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "129955674": {
+   "families": [
+    "StampDuty"
+   ],
+   "primary": "StampDuty"
+  },
+  "1299794": {
+   "families": [
+    "Statutory/Regulatory Subservience",
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1300233": {
+   "families": [
+    "ConstitutionalDeprivation"
+   ],
+   "primary": "ConstitutionalDeprivation"
+  },
+  "130119054": {
+   "families": [
+    "NEW:AnticipatoryBail"
+   ],
+   "primary": "NEW:AnticipatoryBail"
+  },
+  "1302911": {
+   "families": [
+    "Tenure"
+   ],
+   "primary": "Tenure"
+  },
+  "1303080": {
+   "families": [
+    "LandAcquisition"
+   ],
+   "primary": "LandAcquisition"
+  },
+  "1303625": {
+   "families": [
+    "NEW:Reputation"
+   ],
+   "primary": "NEW:Reputation"
+  },
+  "1305048": {
+   "families": [
+    "Limitation"
+   ],
+   "primary": "Limitation"
+  },
+  "1305163": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "130555487": {
+   "families": [
+    "ConstitutionalDeprivation",
+    "UltraVires"
+   ],
+   "primary": "UltraVires"
+  },
+  "1305738": {
+   "families": [
+    "UltraVires"
+   ],
+   "primary": "UltraVires"
+  },
+  "1305772": {
+   "families": [
+    "Ceiling",
+    "Partition"
+   ],
+   "primary": "Ceiling"
+  },
+  "1305829": {
+   "families": [
+    "Partition",
+    "Title"
+   ],
+   "primary": "Partition"
+  },
+  "1306104": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "130617577": {
+   "families": [
+    "SpecificPerformance"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "1306419": {
+   "families": [
+    "SpecificPerformance"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "1306497": {
+   "families": [
+    "Cancellation"
+   ],
+   "primary": "Cancellation"
+  },
+  "1307573": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "130798": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1308176": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1308567": {
+   "families": [
+    "NEW:Condonation",
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1308647": {
+   "families": [
+    "UltraVires"
+   ],
+   "primary": "UltraVires"
+  },
+  "1308921": {
+   "families": [
+    "Statutory/Regulatory Subservience",
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1309014": {
+   "families": [
+    "Compensation",
+    "Limitation"
+   ],
+   "primary": "Compensation"
+  },
+  "1309299": {
+   "families": [
+    "Possession",
+    "Succession",
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "130936394": {
+   "families": [
+    "Title",
+    "UltraVires"
+   ],
+   "primary": "UltraVires"
+  },
+  "1313008": {
+   "families": [
+    "LandAcquisition"
+   ],
+   "primary": "LandAcquisition"
+  },
+  "1313128": {
+   "families": [
+    "Debt Relief"
+   ],
+   "primary": "Debt Relief"
+  },
+  "1313944": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1314729": {
+   "families": [
+    "SpecificPerformance"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "131538726": {
+   "families": [
+    "SpecificPerformance",
+    "Title"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "1315480": {
+   "families": [
+    "Limitation/Delay",
+    "Statutory/Regulatory Subservience"
+   ],
+   "primary": "Statutory/Regulatory Subservience"
+  },
+  "1315956": {
+   "families": [
+    "UltraVires"
+   ],
+   "primary": "UltraVires"
+  },
+  "1316215": {
+   "families": [
+    "ConstitutionalDeprivation",
+    "LandAcquisition"
+   ],
+   "primary": "ConstitutionalDeprivation"
+  },
+  "1316576": {
+   "families": [
+    "Preemption"
+   ],
+   "primary": "Preemption"
+  },
+  "131693": {
+   "families": [
+    "LeaseTenancy",
+    "Possession"
+   ],
+   "primary": "LeaseTenancy"
+  },
+  "1318646": {
+   "families": [
+    "Insolvency/Receiver",
+    "Title"
+   ],
+   "primary": "Insolvency/Receiver"
+  },
+  "1319210": {
+   "families": [
+    "AdversePossession",
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1319434": {
+   "families": [
+    "Possession",
+    "Title"
+   ],
+   "primary": "Possession"
+  },
+  "1319723": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1319777": {
+   "families": [
+    "Benami",
+    "Procedure"
+   ],
+   "primary": "Benami"
+  },
+  "1319816": {
+   "families": [
+    "Taxation",
+    "Title"
+   ],
+   "primary": "Taxation"
+  },
+  "1320487": {
+   "families": [
+    "StampDuty"
+   ],
+   "primary": "StampDuty"
+  },
+  "132060": {
+   "families": [
+    "Possession",
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "132101707": {
+   "families": [
+    "Cancellation",
+    "Title"
+   ],
+   "primary": "Cancellation"
+  },
+  "132105056": {
+   "families": [
+    "Statutory/Regulatory Subservience"
+   ],
+   "primary": "Statutory/Regulatory Subservience"
+  },
+  "1322950": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "132332748": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1323567": {
+   "families": [
+    "LandAcquisition"
+   ],
+   "primary": "LandAcquisition"
+  },
+  "1323870": {
+   "families": [
+    "Possession",
+    "Tenure"
+   ],
+   "primary": "Possession"
+  },
+  "1324010": {
+   "families": [
+    "SpecificPerformance"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "1324248": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "132465454": {
+   "families": [
+    "Succession"
+   ],
+   "primary": "Succession"
+  },
+  "1325519": {
+   "families": [
+    "SpecificPerformance",
+    "Title"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "1325973": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1326049": {
+   "families": [
+    "UltraVires"
+   ],
+   "primary": "UltraVires"
+  },
+  "132692083": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1326957": {
+   "families": [
+    "Possession",
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1326994": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1327181": {
+   "families": [
+    "NEW:Procedural",
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1327484": {
+   "families": [
+    "SpecificPerformance"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "13275625": {
+   "families": [
+    "LandAcquisition"
+   ],
+   "primary": "LandAcquisition"
+  },
+  "132816645": {
+   "families": [
+    "SpecificPerformance"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "1328359": {
+   "families": [
+    "LandAcquisition"
+   ],
+   "primary": "LandAcquisition"
+  },
+  "1328520": {
+   "families": [
+    "Compensation"
+   ],
+   "primary": "Compensation"
+  },
+  "1329044": {
+   "families": [
+    "LeaseTenancy"
+   ],
+   "primary": "LeaseTenancy"
+  },
+  "132907": {
+   "families": [
+    "Procedural/Forum"
+   ],
+   "primary": "Procedural/Forum"
+  },
+  "1329148": {
+   "families": [
+    "MortgageRedemption"
+   ],
+   "primary": "MortgageRedemption"
+  },
+  "1329151": {
+   "families": [
+    "Possession",
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "132927": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1329646": {
+   "families": [
+    "ConstitutionalDeprivation"
+   ],
+   "primary": "ConstitutionalDeprivation"
+  },
+  "132974180": {
+   "families": [
+    "SpecificPerformance"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "1329939": {
+   "families": [
+    "ConstitutionalDeprivation"
+   ],
+   "primary": "ConstitutionalDeprivation"
+  },
+  "133027253": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1330298": {
+   "families": [
+    "Possession",
+    "UltraVires"
+   ],
+   "primary": "Possession"
+  },
+  "1330996": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1331673": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1331963": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "133208598": {
+   "families": [
+    "Cancellation"
+   ],
+   "primary": "Cancellation"
+  },
+  "133237": {
+   "families": [
+    "Cancellation"
+   ],
+   "primary": "Cancellation"
+  },
+  "1332419": {
+   "families": [
+    "MortgageRedemption"
+   ],
+   "primary": "MortgageRedemption"
+  },
+  "1333014": {
+   "families": [
+    "ConstitutionalDeprivation",
+    "Possession",
+    "Title"
+   ],
+   "primary": "ConstitutionalDeprivation"
+  },
+  "133312412": {
+   "families": [
+    "Compensation",
+    "LandAcquisition"
+   ],
+   "primary": "LandAcquisition"
+  },
+  "133345714": {
+   "families": [
+    "LandAcquisition",
+    "Possession"
+   ],
+   "primary": "LandAcquisition"
+  },
+  "133586924": {
+   "families": [
+    "NEW:Cheating"
+   ],
+   "primary": "NEW:Cheating"
+  },
+  "1336334": {
+   "families": [
+    "Pre-emption"
+   ],
+   "primary": "Pre-emption"
+  },
+  "1336402": {
+   "families": [
+    "ConstitutionalDeprivation"
+   ],
+   "primary": "ConstitutionalDeprivation"
+  },
+  "1336616": {
+   "families": [
+    "Procedural/Forum"
+   ],
+   "primary": "Procedural/Forum"
+  },
+  "1337318": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1338177": {
+   "families": [
+    "Taxation"
+   ],
+   "primary": "Taxation"
+  },
+  "1338325": {
+   "families": [
+    "Possession",
+    "Procedural/Forum"
+   ],
+   "primary": "Possession"
+  },
+  "1338327": {
+   "families": [
+    "Procedural/Forum"
+   ],
+   "primary": "Procedural/Forum"
+  },
+  "1338345": {
+   "families": [
+    "UltraVires"
+   ],
+   "primary": "UltraVires"
+  },
+  "1338837": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1338872": {
+   "families": [
+    "UltraVires"
+   ],
+   "primary": "UltraVires"
+  },
+  "1339216": {
+   "families": [
+    "Compensation"
+   ],
+   "primary": "Compensation"
+  },
+  "1340031": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1340429": {
+   "families": [
+    "UltraVires"
+   ],
+   "primary": "UltraVires"
+  },
+  "134061885": {
+   "families": [
+    "Possession",
+    "UltraVires"
+   ],
+   "primary": "Possession"
+  },
+  "1340641": {
+   "families": [
+    "FalseCharge"
+   ],
+   "primary": "FalseCharge"
+  },
+  "134111389": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1341810": {
+   "families": [
+    "Limitation"
+   ],
+   "primary": "Limitation"
+  },
+  "134307429": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "134319399": {
+   "families": [
+    "LandAcquisition",
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1343356": {
+   "families": [
+    "Taxation/Assessment"
+   ],
+   "primary": "Taxation/Assessment"
+  },
+  "134484034": {
+   "families": [
+    "SpecificPerformance"
+   ],
+   "primary": "SpecificPerformance"
+  },
+  "1345747": {
+   "families": [
+    "Statutory/Regulatory Subservience",
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1345779": {
+   "families": [
+    "Tenancy"
+   ],
+   "primary": "Tenancy"
+  },
+  "1346544": {
+   "families": [
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "1346687": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1346748": {
+   "families": [
+    "Cancellation"
+   ],
+   "primary": "Cancellation"
+  },
+  "1348140": {
+   "families": [
+    "Possession",
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1349095": {
+   "families": [
+    "Statutory/Regulatory Subservience"
+   ],
+   "primary": "Statutory/Regulatory Subservience"
+  },
+  "134989405": {
+   "families": [
+    "Maintenance",
+    "Possession"
+   ],
+   "primary": "Possession"
+  },
+  "134990086": {
+   "families": [
+    "Title"
+   ],
+   "primary": "Title"
+  },
+  "1350051": {
+   "families": [
+    "UltraVires"
+   ],
+   "primary": "UltraVires"
+  },
+  "13503163": {
+   "families": [
+    "Procedural/Forum",
+    "Statutory/Regulatory Subservience"
+   ],
+   "primary": "Procedural/Forum"
+  },
+  "1350326": {
+   "families": [
+    "MortgageRedemption",
+    "Partition"
+   ],
+   "primary": "MortgageRedemption"
+  },
+  "1350467": {
+   "families": [
+    "Service/Employment"
+   ],
+   "primary": "Service/Employment"
+  },
+  "1350793": {
+   "families": [
+    "LandAcquisition"
+   ],
+   "primary": "LandAcquisition"
   }
  }
 }

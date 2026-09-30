@@ -311,3 +311,150 @@ filtering drops the redundant subset.
       more cases, or a coarser merge, or both.
 - [ ] Burden metadata is `llm_draft` at best. §5.1-style human review needed before any result
       leans on the `E` feature group.
+
+---
+
+## 2026-09-30 — Session 1 continued: Stages 6–10 end to end, and where the signal dies
+
+The pipeline now runs end to end. The result is negative for the structured approach and the
+negative is **well-localised**, which makes it useful rather than just disappointing.
+
+### Scale reached
+
+| artifact | count |
+|---|---|
+| facts extracted (§6.1) | **13,919** over 795 cases · 84.7% of proposals kept · **0 dropped calls** |
+| canonical facts (§6.2) | 13,919 labelled · 77.3% mapped · **22.7% out of vocabulary** |
+| claims / defences (§7.1) | 1,408 claims + 1,563 defences over 862 cases (21 dropped calls, recoverable) |
+| transactions (§8.1) | 794 cases across 5 merged families |
+| patterns mined (§8.2) | 351 closed itemsets over 5 families |
+
+### The headline: canonicalisation destroys the signal that extraction preserves
+
+`src/eval/representation_ladder.py`. Same classifier, same split, same labels, and the **same
+557 train / 143 test cases** at every rung — so a drop can only come from the representation.
+
+| rung | representation | features | AUROC | ECE |
+|---|---|---|---|---|
+| 0 | majority | — | — | — |
+| 1 | `masked_text` | 47,720 | **0.578** | 0.064 |
+| 2 | extracted fact text (§6.1) | 9,638 | **0.577** | 0.060 |
+| 3 | canonical atoms (§6.2) | 348 | **0.502** | 0.228 |
+
+- **Extraction preserves the signal** — 0.578 → 0.577 while cutting features 5×. §6.1 works.
+- **Canonicalisation destroys it** — 0.577 → 0.502, which is chance. §6.2's controlled vocabulary
+  cannot carry outcome-relevant information even though the free-text facts it replaces can.
+
+This one diagnostic explains §8's null result downstream, and it says the problem is the
+**vocabulary**, not the extractor and not the law.
+
+### §8: no fact pattern is associated with outcome
+
+FP-Growth per merged family on `forum_heldout`, outcome rules fitted on train only:
+
+| family | cases | closed itemsets | stable (≥80% of 20 bootstraps) | **BH-significant** |
+|---|---|---|---|---|
+| StateAction | 381 | 193 | 135 | **0** |
+| PrivateTitlePossession | 224 | 52 | 36 | **0** |
+| ContractInstrument | 152 | 49 | 32 | **0** |
+| _UNASSIGNED | 113 | 25 | 13 | **0** |
+| Mixed_Limitation_Procedure | 39 | 39 | 18 | **0** |
+
+**351 patterns tested · 10 pass uncorrected p<0.05 · 17.6 expected by chance alone · 0 survive
+Benjamini–Hochberg.** Fewer nominal "discoveries" than noise would produce, so this is not a weak
+effect that needs more data to confirm — there is nothing there.
+
+Patterns are *stable* (135/193 for StateAction) and still carry no outcome information. Stability
+and significance are independent properties, and reporting the first without the second is how a
+pattern library gets mistaken for a finding.
+
+### §10: the structured pipeline is at chance; one procedural feature beats it
+
+`forum_heldout`, 143 test cases with features (the limiter is fact coverage, not the split).
+
+| system | acc | macro-F1 | AUROC | ECE |
+|---|---|---|---|---|
+| majority (global) | 0.566 | 0.362 | — | — |
+| majority (per decade) | 0.552 | 0.524 | — | — |
+| lr `F` (canonical facts) | 0.455 | 0.452 | 0.476 | 0.389 |
+| lr `F+P+E+C` | 0.489 | 0.489 | 0.476 | 0.435 |
+| lr `F+P+E+C+Q` | 0.489 | 0.489 | 0.484 | 0.423 |
+| lr `C only` | 0.524 | 0.524 | 0.542 | 0.122 |
+| **lr `Q only`** (prior court) | **0.629** | **0.619** | **0.686** | **0.068** |
+| gbm `F+P+E+C` | 0.538 | 0.528 | 0.487 | 0.315 |
+| gbm `Q only` | 0.629 | 0.619 | 0.686 | 0.073 |
+
+McNemar: adding `Q` to the structured features changes nothing (lr p=1.00, gbm p=0.27), and
+`F+P+E+C` vs `F` is not significant either (p=0.30 / 0.77). The structured features are too noisy
+to combine with anything.
+
+**`Q only` is the best model and the best calibrated.** Note this partly walks back the earlier
+"the shortcut is weak" finding, and the reconciliation matters:
+
+- as **text** through TF-IDF, `prior_court_text` gave AUROC 0.581 (902 test cases)
+- as a **clean categorical feature**, `Q` gives AUROC 0.686 (143 test cases)
+
+Same information, different encoding and a different, smaller test set. Both numbers are real;
+quote them with their n and their representation. The shortcut is stronger than the first
+measurement suggested, and it is the strongest thing we have.
+
+### Honest limits on these numbers
+
+- **n=143 test cases.** Facts ran on 800 cases chosen by doc_id order, which is arbitrary with
+  respect to the split, so only 143 of `forum_heldout`'s 902 test cases have features. Every CI
+  here is wide (±0.09 on AUROC). Scaling extraction is the single highest-value next action.
+- **Groups `P` and `E` are empty**, and the ablation table now says so rather than printing
+  "F+P+E" as a separate row. `P` is empty because §8 found no BH-significant pattern — a result.
+  `E` is empty because burden metadata is unfilled — a gap.
+- Non-property contamination survives `screen.py` and reaches the family level
+  (`Criminal Breach of Trust`, `ElectionDispute`, `CompassionateAppointment`, `Insurance`).
+
+### §7 at larger scale: the negative result strengthens
+
+Re-run on 1,408 claims / 805 cases (was 465 / 268):
+
+| clusterer | k | NMI | ARI | purity | note |
+|---|---|---|---|---|---|
+| HDBSCAN | 4 | 0.099 | **−0.006** | 0.724 | 88.9% outliers |
+| agglomerative | 6 | 0.270 | 0.092 | 0.318 | silhouette **0.022**, down from 0.035 |
+
+And the extractor assigned **84** distinct families, up from 42 at half the scale — its
+open-ended `NEW:` escape is **not converging**. The merge now yields 4 families over the 30-case
+floor (StateAction 424, PrivateTitlePossession 256, ContractInstrument 170,
+Mixed_Limitation_Procedure 47), but it absorbs some clearly wrong members, so it is doing more
+work than is fully justified. Recorded, not hidden.
+
+### The canonicaliser's accounting fix, vindicated at scale
+
+Out of 3,155 out-of-vocabulary labels, **the model flagged only 75 (2.4%)**. The other 97.6% were
+caught solely by checking its answers against the vocabulary. Had we trusted the `NEW:` flag, the
+measured rate would have read 0.5% — comfortably under §6.2's 5% freeze threshold — and we would
+have frozen a vocabulary that cannot name **a fifth of the facts**, then spent the rest of the
+project wondering why no pattern reached significance.
+
+### What this means for the project
+
+The defensible results are now:
+
+1. **A leakage-controlled benchmark** with a sensitivity-checked probe: `order_only` 0.983,
+   `masked` 0.655, chance 0.500 (902 test cases).
+2. **A precisely localised negative result**: extraction preserves signal, canonicalisation
+   destroys it, and that is why no pattern reaches significance.
+3. **Multiple-testing discipline changing a conclusion**: 10 nominal hits against 17.6 expected by
+   chance. Without BH this would have been a pattern library.
+4. **Zero-shot LLM-0 below TF-IDF** on honest inputs (0.552 vs 0.655) and badly miscalibrated.
+
+The next experiment is determined by result 2: the vocabulary is the bottleneck, so §6.2's
+refinement loop (`src/extract/vocab_refine.py`, built and not yet run) is the highest-value action,
+followed by scaling extraction so n is not 143.
+
+### Open items added
+
+- [ ] **Run `vocab_refine.py`** — 22.7% out-of-vocabulary, and the ladder says the vocabulary is
+      the bottleneck. This is the critical path now.
+- [ ] Scale fact extraction to cover the test sets properly (n=143 is the binding constraint).
+- [ ] `glm-5-3` burden annotation ran 2h+ for 66 elements (71 calls with retries) and is still
+      going. It is ~12× scout's latency and this task is sequential — parallelise it or accept a
+      faster model plus the degeneracy gate.
+- [ ] The `Q`-as-text vs `Q`-as-categorical gap (0.581 vs 0.686) deserves its own measurement on
+      one case set; right now it is confounded with n.

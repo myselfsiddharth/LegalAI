@@ -1,0 +1,1900 @@
+{
+ "split": "forum_heldout",
+ "split_hash": "6e346dd75b7e7d84",
+ "coverage": {
+  "train": {
+   "n": 557,
+   "with_canonical_facts": 557,
+   "with_claim_family": 500,
+   "with_claims": 535,
+   "burden_provenance": {
+    "None": 66
+   },
+   "n_features": 0,
+   "features_per_group": {}
+  },
+  "dev": {
+   "n": 95,
+   "with_canonical_facts": 95,
+   "with_claim_family": 87,
+   "with_claims": 91,
+   "burden_provenance": {
+    "None": 66
+   },
+   "n_features": 0,
+   "features_per_group": {}
+  },
+  "test": {
+   "n": 143,
+   "with_canonical_facts": 143,
+   "with_claim_family": 128,
+   "with_claims": 139,
+   "burden_provenance": {
+    "None": 66
+   },
+   "n_features": 0,
+   "features_per_group": {}
+  },
+  "split_train_total": 3350,
+  "split_test_total": 902
+ },
+ "n_features": 386,
+ "features_per_group": {
+  "F": 348,
+  "C": 32,
+  "Q": 6
+ },
+ "burden_provenance": {
+  "None": 66
+ },
+ "results": [
+  {
+   "name": "majority (global)",
+   "n": 143,
+   "accuracy": 0.5664,
+   "macro_f1": 0.3616,
+   "test_win_rate": 0.4336,
+   "pred_win_rate": 0.0,
+   "macro_f1_ci95": [
+    0.3255,
+    0.3941
+   ],
+   "by_group": {
+    "family": {
+     "ContractInstrument": {
+      "n": 28,
+      "accuracy": 0.5714,
+      "macro_f1": 0.3636,
+      "win_rate": 0.4286
+     },
+     "PrivateTitlePossession": {
+      "n": 30,
+      "accuracy": 0.6,
+      "macro_f1": 0.375,
+      "win_rate": 0.4
+     },
+     "StateAction": {
+      "n": 50,
+      "accuracy": 0.52,
+      "macro_f1": 0.3421,
+      "win_rate": 0.48
+     },
+     "none": {
+      "n": 15,
+      "accuracy": 0.6,
+      "macro_f1": 0.375,
+      "win_rate": 0.4
+     }
+    },
+    "decade": {
+     "1950": {
+      "n": 13,
+      "accuracy": 0.6154,
+      "macro_f1": 0.381,
+      "win_rate": 0.3846
+     },
+     "1960": {
+      "n": 17,
+      "accuracy": 0.5882,
+      "macro_f1": 0.3704,
+      "win_rate": 0.4118
+     },
+     "1970": {
+      "n": 27,
+      "accuracy": 0.7407,
+      "macro_f1": 0.4255,
+      "win_rate": 0.2593
+     },
+     "1980": {
+      "n": 15,
+      "accuracy": 0.4667,
+      "macro_f1": 0.3182,
+      "win_rate": 0.5333
+     },
+     "1990": {
+      "n": 25,
+      "accuracy": 0.48,
+      "macro_f1": 0.3243,
+      "win_rate": 0.52
+     },
+     "2000": {
+      "n": 15,
+      "accuracy": 0.6,
+      "macro_f1": 0.375,
+      "win_rate": 0.4
+     },
+     "2010": {
+      "n": 22,
+      "accuracy": 0.5,
+      "macro_f1": 0.3333,
+      "win_rate": 0.5
+     }
+    }
+   }
+  },
+  {
+   "name": "majority (per decade)",
+   "n": 143,
+   "accuracy": 0.5524,
+   "macro_f1": 0.5239,
+   "test_win_rate": 0.4336,
+   "pred_win_rate": 0.3217,
+   "macro_f1_ci95": [
+    0.4386,
+    0.6077
+   ],
+   "by_group": {
+    "family": {
+     "ContractInstrument": {
+      "n": 28,
+      "accuracy": 0.5,
+      "macro_f1": 0.4974,
+      "win_rate": 0.4286
+     },
+     "PrivateTitlePossession": {
+      "n": 30,
+      "accuracy": 0.5,
+      "macro_f1": 0.3844,
+      "win_rate": 0.4
+     },
+     "StateAction": {
+      "n": 50,
+      "accuracy": 0.64,
+      "macro_f1": 0.6305,
+      "win_rate": 0.48
+     },
+     "none": {
+      "n": 15,
+      "accuracy": 0.4,
+      "macro_f1": 0.2857,
+      "win_rate": 0.4
+     }
+    },
+    "decade": {
+     "1950": {
+      "n": 13,
+      "accuracy": 0.6154,
+      "macro_f1": 0.381,
+      "win_rate": 0.3846
+     },
+     "1960": {
+      "n": 17,
+      "accuracy": 0.5882,
+      "macro_f1": 0.3704,
+      "win_rate": 0.4118
+     },
+     "1970": {
+      "n": 27,
+      "accuracy": 0.7407,
+      "macro_f1": 0.4255,
+      "win_rate": 0.2593
+     },
+     "1980": {
+      "n": 15,
+      "accuracy": 0.4667,
+      "macro_f1": 0.3182,
+      "win_rate": 0.5333
+     },
+     "1990": {
+      "n": 25,
+      "accuracy": 0.48,
+      "macro_f1": 0.3243,
+      "win_rate": 0.52
+     },
+     "2000": {
+      "n": 15,
+      "accuracy": 0.4,
+      "macro_f1": 0.2857,
+      "win_rate": 0.4
+     },
+     "2010": {
+      "n": 22,
+      "accuracy": 0.5,
+      "macro_f1": 0.3333,
+      "win_rate": 0.5
+     }
+    }
+   }
+  },
+  {
+   "name": "lr F",
+   "n": 143,
+   "accuracy": 0.4545,
+   "macro_f1": 0.4524,
+   "test_win_rate": 0.4336,
+   "pred_win_rate": 0.5035,
+   "macro_f1_ci95": [
+    0.3681,
+    0.5385
+   ],
+   "auroc": 0.4759,
+   "auroc_ci95": [
+    0.3807,
+    0.5826
+   ],
+   "ece": 0.389,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 34,
+     "mean_pred": 0.0262,
+     "observed": 0.4706,
+     "gap": -0.4444
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 16,
+     "mean_pred": 0.1474,
+     "observed": 0.6875,
+     "gap": -0.5401
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 8,
+     "mean_pred": 0.2431,
+     "observed": 0.25,
+     "gap": -0.0069
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 4,
+     "mean_pred": 0.3376,
+     "observed": 0.25,
+     "gap": 0.0876
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 9,
+     "mean_pred": 0.4414,
+     "observed": 0.4444,
+     "gap": -0.0031
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 8,
+     "mean_pred": 0.5646,
+     "observed": 0.375,
+     "gap": 0.1896
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 8,
+     "mean_pred": 0.647,
+     "observed": 0.25,
+     "gap": 0.397
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 12,
+     "mean_pred": 0.7553,
+     "observed": 0.4167,
+     "gap": 0.3386
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 15,
+     "mean_pred": 0.8597,
+     "observed": 0.2667,
+     "gap": 0.5931
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 29,
+     "mean_pred": 0.9584,
+     "observed": 0.4828,
+     "gap": 0.4756
+    }
+   ],
+   "by_group": {
+    "family": {
+     "ContractInstrument": {
+      "n": 28,
+      "accuracy": 0.3571,
+      "macro_f1": 0.3538,
+      "win_rate": 0.4286
+     },
+     "PrivateTitlePossession": {
+      "n": 30,
+      "accuracy": 0.5667,
+      "macro_f1": 0.5662,
+      "win_rate": 0.4
+     },
+     "StateAction": {
+      "n": 50,
+      "accuracy": 0.48,
+      "macro_f1": 0.4792,
+      "win_rate": 0.48
+     },
+     "none": {
+      "n": 15,
+      "accuracy": 0.2667,
+      "macro_f1": 0.2534,
+      "win_rate": 0.4
+     }
+    },
+    "decade": {
+     "1950": {
+      "n": 13,
+      "accuracy": 0.4615,
+      "macro_f1": 0.4485,
+      "win_rate": 0.3846
+     },
+     "1960": {
+      "n": 17,
+      "accuracy": 0.4706,
+      "macro_f1": 0.4396,
+      "win_rate": 0.4118
+     },
+     "1970": {
+      "n": 27,
+      "accuracy": 0.4444,
+      "macro_f1": 0.432,
+      "win_rate": 0.2593
+     },
+     "1980": {
+      "n": 15,
+      "accuracy": 0.6,
+      "macro_f1": 0.5982,
+      "win_rate": 0.5333
+     },
+     "1990": {
+      "n": 25,
+      "accuracy": 0.4,
+      "macro_f1": 0.3842,
+      "win_rate": 0.52
+     },
+     "2000": {
+      "n": 15,
+      "accuracy": 0.3333,
+      "macro_f1": 0.3304,
+      "win_rate": 0.4
+     },
+     "2010": {
+      "n": 22,
+      "accuracy": 0.4091,
+      "macro_f1": 0.3979,
+      "win_rate": 0.5
+     }
+    }
+   },
+   "feature_groups": [
+    "F"
+   ],
+   "n_features_used": 348
+  },
+  {
+   "name": "lr F+P+E+C",
+   "n": 143,
+   "accuracy": 0.4895,
+   "macro_f1": 0.4894,
+   "test_win_rate": 0.4336,
+   "pred_win_rate": 0.5524,
+   "macro_f1_ci95": [
+    0.409,
+    0.5758
+   ],
+   "auroc": 0.4757,
+   "auroc_ci95": [
+    0.3795,
+    0.5789
+   ],
+   "ece": 0.4347,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 35,
+     "mean_pred": 0.0291,
+     "observed": 0.4857,
+     "gap": -0.4566
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 11,
+     "mean_pred": 0.1545,
+     "observed": 0.5455,
+     "gap": -0.3909
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 4,
+     "mean_pred": 0.2367,
+     "observed": 0.25,
+     "gap": -0.0133
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 6,
+     "mean_pred": 0.3514,
+     "observed": 0.5,
+     "gap": -0.1486
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 8,
+     "mean_pred": 0.4537,
+     "observed": 0.125,
+     "gap": 0.3287
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 2,
+     "mean_pred": 0.5396,
+     "observed": 1.0,
+     "gap": -0.4604
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 7,
+     "mean_pred": 0.6462,
+     "observed": 0.7143,
+     "gap": -0.0681
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 7,
+     "mean_pred": 0.7588,
+     "observed": 0.1429,
+     "gap": 0.616
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 18,
+     "mean_pred": 0.8477,
+     "observed": 0.3889,
+     "gap": 0.4588
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 45,
+     "mean_pred": 0.9631,
+     "observed": 0.4222,
+     "gap": 0.5408
+    }
+   ],
+   "by_group": {
+    "family": {
+     "ContractInstrument": {
+      "n": 28,
+      "accuracy": 0.3214,
+      "macro_f1": 0.3206,
+      "win_rate": 0.4286
+     },
+     "PrivateTitlePossession": {
+      "n": 30,
+      "accuracy": 0.5667,
+      "macro_f1": 0.5623,
+      "win_rate": 0.4
+     },
+     "StateAction": {
+      "n": 50,
+      "accuracy": 0.5,
+      "macro_f1": 0.4998,
+      "win_rate": 0.48
+     },
+     "none": {
+      "n": 15,
+      "accuracy": 0.4,
+      "macro_f1": 0.4,
+      "win_rate": 0.4
+     }
+    },
+    "decade": {
+     "1950": {
+      "n": 13,
+      "accuracy": 0.4615,
+      "macro_f1": 0.4615,
+      "win_rate": 0.3846
+     },
+     "1960": {
+      "n": 17,
+      "accuracy": 0.5294,
+      "macro_f1": 0.5278,
+      "win_rate": 0.4118
+     },
+     "1970": {
+      "n": 27,
+      "accuracy": 0.5185,
+      "macro_f1": 0.5077,
+      "win_rate": 0.2593
+     },
+     "1980": {
+      "n": 15,
+      "accuracy": 0.6,
+      "macro_f1": 0.5982,
+      "win_rate": 0.5333
+     },
+     "1990": {
+      "n": 25,
+      "accuracy": 0.4,
+      "macro_f1": 0.3961,
+      "win_rate": 0.52
+     },
+     "2000": {
+      "n": 15,
+      "accuracy": 0.4,
+      "macro_f1": 0.4,
+      "win_rate": 0.4
+     },
+     "2010": {
+      "n": 22,
+      "accuracy": 0.4545,
+      "macro_f1": 0.4545,
+      "win_rate": 0.5
+     }
+    }
+   },
+   "feature_groups": [
+    "F",
+    "C"
+   ],
+   "n_features_used": 380
+  },
+  {
+   "name": "lr F+P+E+C+Q",
+   "n": 143,
+   "accuracy": 0.4895,
+   "macro_f1": 0.4895,
+   "test_win_rate": 0.4336,
+   "pred_win_rate": 0.5664,
+   "macro_f1_ci95": [
+    0.4056,
+    0.5733
+   ],
+   "auroc": 0.4841,
+   "auroc_ci95": [
+    0.3881,
+    0.5888
+   ],
+   "ece": 0.4233,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 33,
+     "mean_pred": 0.0251,
+     "observed": 0.4848,
+     "gap": -0.4597
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 13,
+     "mean_pred": 0.1562,
+     "observed": 0.4615,
+     "gap": -0.3053
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 7,
+     "mean_pred": 0.247,
+     "observed": 0.4286,
+     "gap": -0.1816
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 3,
+     "mean_pred": 0.3533,
+     "observed": 0.0,
+     "gap": 0.3533
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 6,
+     "mean_pred": 0.4735,
+     "observed": 0.3333,
+     "gap": 0.1401
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 2,
+     "mean_pred": 0.5403,
+     "observed": 1.0,
+     "gap": -0.4597
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 6,
+     "mean_pred": 0.6671,
+     "observed": 0.5,
+     "gap": 0.1671
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 12,
+     "mean_pred": 0.7602,
+     "observed": 0.3333,
+     "gap": 0.4269
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 13,
+     "mean_pred": 0.8459,
+     "observed": 0.3077,
+     "gap": 0.5382
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 48,
+     "mean_pred": 0.962,
+     "observed": 0.4583,
+     "gap": 0.5036
+    }
+   ],
+   "by_group": {
+    "family": {
+     "ContractInstrument": {
+      "n": 28,
+      "accuracy": 0.3214,
+      "macro_f1": 0.3135,
+      "win_rate": 0.4286
+     },
+     "PrivateTitlePossession": {
+      "n": 30,
+      "accuracy": 0.6,
+      "macro_f1": 0.5928,
+      "win_rate": 0.4
+     },
+     "StateAction": {
+      "n": 50,
+      "accuracy": 0.48,
+      "macro_f1": 0.48,
+      "win_rate": 0.48
+     },
+     "none": {
+      "n": 15,
+      "accuracy": 0.4,
+      "macro_f1": 0.4,
+      "win_rate": 0.4
+     }
+    },
+    "decade": {
+     "1950": {
+      "n": 13,
+      "accuracy": 0.3846,
+      "macro_f1": 0.381,
+      "win_rate": 0.3846
+     },
+     "1960": {
+      "n": 17,
+      "accuracy": 0.5294,
+      "macro_f1": 0.5278,
+      "win_rate": 0.4118
+     },
+     "1970": {
+      "n": 27,
+      "accuracy": 0.5185,
+      "macro_f1": 0.5077,
+      "win_rate": 0.2593
+     },
+     "1980": {
+      "n": 15,
+      "accuracy": 0.6,
+      "macro_f1": 0.5982,
+      "win_rate": 0.5333
+     },
+     "1990": {
+      "n": 25,
+      "accuracy": 0.4,
+      "macro_f1": 0.3961,
+      "win_rate": 0.52
+     },
+     "2000": {
+      "n": 15,
+      "accuracy": 0.4,
+      "macro_f1": 0.4,
+      "win_rate": 0.4
+     },
+     "2010": {
+      "n": 22,
+      "accuracy": 0.5,
+      "macro_f1": 0.499,
+      "win_rate": 0.5
+     }
+    }
+   },
+   "feature_groups": [
+    "F",
+    "C",
+    "Q"
+   ],
+   "n_features_used": 386
+  },
+  {
+   "name": "lr C only",
+   "n": 143,
+   "accuracy": 0.5245,
+   "macro_f1": 0.5243,
+   "test_win_rate": 0.4336,
+   "pred_win_rate": 0.5455,
+   "macro_f1_ci95": [
+    0.4523,
+    0.6041
+   ],
+   "auroc": 0.542,
+   "auroc_ci95": [
+    0.4527,
+    0.6404
+   ],
+   "ece": 0.1222,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 6,
+     "mean_pred": 0.2654,
+     "observed": 0.6667,
+     "gap": -0.4012
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 27,
+     "mean_pred": 0.348,
+     "observed": 0.3333,
+     "gap": 0.0147
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 32,
+     "mean_pred": 0.4668,
+     "observed": 0.4062,
+     "gap": 0.0605
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 35,
+     "mean_pred": 0.543,
+     "observed": 0.4286,
+     "gap": 0.1144
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 25,
+     "mean_pred": 0.6542,
+     "observed": 0.44,
+     "gap": 0.2142
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 18,
+     "mean_pred": 0.7427,
+     "observed": 0.5556,
+     "gap": 0.1872
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    }
+   ],
+   "by_group": {
+    "family": {
+     "ContractInstrument": {
+      "n": 28,
+      "accuracy": 0.5357,
+      "macro_f1": 0.5204,
+      "win_rate": 0.4286
+     },
+     "PrivateTitlePossession": {
+      "n": 30,
+      "accuracy": 0.3667,
+      "macro_f1": 0.3603,
+      "win_rate": 0.4
+     },
+     "StateAction": {
+      "n": 50,
+      "accuracy": 0.62,
+      "macro_f1": 0.6198,
+      "win_rate": 0.48
+     },
+     "none": {
+      "n": 15,
+      "accuracy": 0.5333,
+      "macro_f1": 0.5249,
+      "win_rate": 0.4
+     }
+    },
+    "decade": {
+     "1950": {
+      "n": 13,
+      "accuracy": 0.6154,
+      "macro_f1": 0.381,
+      "win_rate": 0.3846
+     },
+     "1960": {
+      "n": 17,
+      "accuracy": 0.5882,
+      "macro_f1": 0.3704,
+      "win_rate": 0.4118
+     },
+     "1970": {
+      "n": 27,
+      "accuracy": 0.6667,
+      "macro_f1": 0.6137,
+      "win_rate": 0.2593
+     },
+     "1980": {
+      "n": 15,
+      "accuracy": 0.4,
+      "macro_f1": 0.4,
+      "win_rate": 0.5333
+     },
+     "1990": {
+      "n": 25,
+      "accuracy": 0.44,
+      "macro_f1": 0.4167,
+      "win_rate": 0.52
+     },
+     "2000": {
+      "n": 15,
+      "accuracy": 0.4667,
+      "macro_f1": 0.4,
+      "win_rate": 0.4
+     },
+     "2010": {
+      "n": 22,
+      "accuracy": 0.4545,
+      "macro_f1": 0.3125,
+      "win_rate": 0.5
+     }
+    }
+   },
+   "feature_groups": [
+    "C"
+   ],
+   "n_features_used": 32
+  },
+  {
+   "name": "lr Q only",
+   "n": 143,
+   "accuracy": 0.6294,
+   "macro_f1": 0.6186,
+   "test_win_rate": 0.4336,
+   "pred_win_rate": 0.3986,
+   "macro_f1_ci95": [
+    0.5302,
+    0.6945
+   ],
+   "auroc": 0.6857,
+   "auroc_ci95": [
+    0.5934,
+    0.7606
+   ],
+   "ece": 0.0676,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 3,
+     "mean_pred": 0.0169,
+     "observed": 0.0,
+     "gap": 0.0169
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 83,
+     "mean_pred": 0.4615,
+     "observed": 0.3494,
+     "gap": 0.1121
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 45,
+     "mean_pred": 0.5598,
+     "observed": 0.5556,
+     "gap": 0.0042
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 12,
+     "mean_pred": 0.6565,
+     "observed": 0.6667,
+     "gap": -0.0101
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    }
+   ],
+   "by_group": {
+    "family": {
+     "ContractInstrument": {
+      "n": 28,
+      "accuracy": 0.6071,
+      "macro_f1": 0.6026,
+      "win_rate": 0.4286
+     },
+     "PrivateTitlePossession": {
+      "n": 30,
+      "accuracy": 0.5667,
+      "macro_f1": 0.5417,
+      "win_rate": 0.4
+     },
+     "StateAction": {
+      "n": 50,
+      "accuracy": 0.7,
+      "macro_f1": 0.697,
+      "win_rate": 0.48
+     },
+     "none": {
+      "n": 15,
+      "accuracy": 0.6667,
+      "macro_f1": 0.6411,
+      "win_rate": 0.4
+     }
+    },
+    "decade": {
+     "1950": {
+      "n": 13,
+      "accuracy": 0.3846,
+      "macro_f1": 0.35,
+      "win_rate": 0.3846
+     },
+     "1960": {
+      "n": 17,
+      "accuracy": 0.7059,
+      "macro_f1": 0.664,
+      "win_rate": 0.4118
+     },
+     "1970": {
+      "n": 27,
+      "accuracy": 0.6667,
+      "macro_f1": 0.5846,
+      "win_rate": 0.2593
+     },
+     "1980": {
+      "n": 15,
+      "accuracy": 0.5333,
+      "macro_f1": 0.5249,
+      "win_rate": 0.5333
+     },
+     "1990": {
+      "n": 25,
+      "accuracy": 0.6,
+      "macro_f1": 0.5994,
+      "win_rate": 0.52
+     },
+     "2000": {
+      "n": 15,
+      "accuracy": 0.6667,
+      "macro_f1": 0.6606,
+      "win_rate": 0.4
+     },
+     "2010": {
+      "n": 22,
+      "accuracy": 0.7273,
+      "macro_f1": 0.725,
+      "win_rate": 0.5
+     }
+    }
+   },
+   "feature_groups": [
+    "Q"
+   ],
+   "n_features_used": 6
+  },
+  {
+   "name": "gbm F",
+   "n": 143,
+   "accuracy": 0.5175,
+   "macro_f1": 0.5035,
+   "test_win_rate": 0.4336,
+   "pred_win_rate": 0.3986,
+   "macro_f1_ci95": [
+    0.4183,
+    0.5834
+   ],
+   "auroc": 0.4841,
+   "auroc_ci95": [
+    0.3845,
+    0.5859
+   ],
+   "ece": 0.25,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 18,
+     "mean_pred": 0.0635,
+     "observed": 0.3889,
+     "gap": -0.3254
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 15,
+     "mean_pred": 0.1454,
+     "observed": 0.5333,
+     "gap": -0.388
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 16,
+     "mean_pred": 0.2492,
+     "observed": 0.5625,
+     "gap": -0.3133
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 22,
+     "mean_pred": 0.3471,
+     "observed": 0.3636,
+     "gap": -0.0166
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 15,
+     "mean_pred": 0.4466,
+     "observed": 0.3333,
+     "gap": 0.1132
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 15,
+     "mean_pred": 0.5488,
+     "observed": 0.4,
+     "gap": 0.1488
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 7,
+     "mean_pred": 0.6376,
+     "observed": 0.2857,
+     "gap": 0.3519
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 14,
+     "mean_pred": 0.7494,
+     "observed": 0.6429,
+     "gap": 0.1065
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 14,
+     "mean_pred": 0.8682,
+     "observed": 0.4286,
+     "gap": 0.4396
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 7,
+     "mean_pred": 0.9505,
+     "observed": 0.2857,
+     "gap": 0.6647
+    }
+   ],
+   "by_group": {
+    "family": {
+     "ContractInstrument": {
+      "n": 28,
+      "accuracy": 0.6071,
+      "macro_f1": 0.6026,
+      "win_rate": 0.4286
+     },
+     "PrivateTitlePossession": {
+      "n": 30,
+      "accuracy": 0.5667,
+      "macro_f1": 0.5543,
+      "win_rate": 0.4
+     },
+     "StateAction": {
+      "n": 50,
+      "accuracy": 0.48,
+      "macro_f1": 0.4663,
+      "win_rate": 0.48
+     },
+     "none": {
+      "n": 15,
+      "accuracy": 0.5333,
+      "macro_f1": 0.4976,
+      "win_rate": 0.4
+     }
+    },
+    "decade": {
+     "1950": {
+      "n": 13,
+      "accuracy": 0.3077,
+      "macro_f1": 0.3077,
+      "win_rate": 0.3846
+     },
+     "1960": {
+      "n": 17,
+      "accuracy": 0.5882,
+      "macro_f1": 0.5641,
+      "win_rate": 0.4118
+     },
+     "1970": {
+      "n": 27,
+      "accuracy": 0.6296,
+      "macro_f1": 0.4643,
+      "win_rate": 0.2593
+     },
+     "1980": {
+      "n": 15,
+      "accuracy": 0.6667,
+      "macro_f1": 0.6606,
+      "win_rate": 0.5333
+     },
+     "1990": {
+      "n": 25,
+      "accuracy": 0.44,
+      "macro_f1": 0.4318,
+      "win_rate": 0.52
+     },
+     "2000": {
+      "n": 15,
+      "accuracy": 0.4,
+      "macro_f1": 0.3891,
+      "win_rate": 0.4
+     },
+     "2010": {
+      "n": 22,
+      "accuracy": 0.4545,
+      "macro_f1": 0.4545,
+      "win_rate": 0.5
+     }
+    }
+   },
+   "feature_groups": [
+    "F"
+   ],
+   "n_features_used": 348
+  },
+  {
+   "name": "gbm F+P+E+C",
+   "n": 143,
+   "accuracy": 0.5385,
+   "macro_f1": 0.5283,
+   "test_win_rate": 0.4336,
+   "pred_win_rate": 0.4196,
+   "macro_f1_ci95": [
+    0.4405,
+    0.6124
+   ],
+   "auroc": 0.4867,
+   "auroc_ci95": [
+    0.3866,
+    0.5852
+   ],
+   "ece": 0.315,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 27,
+     "mean_pred": 0.0505,
+     "observed": 0.4444,
+     "gap": -0.3939
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 19,
+     "mean_pred": 0.1373,
+     "observed": 0.4211,
+     "gap": -0.2838
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 16,
+     "mean_pred": 0.2447,
+     "observed": 0.5,
+     "gap": -0.2553
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 14,
+     "mean_pred": 0.3519,
+     "observed": 0.2857,
+     "gap": 0.0662
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 7,
+     "mean_pred": 0.4366,
+     "observed": 0.2857,
+     "gap": 0.1509
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 7,
+     "mean_pred": 0.5482,
+     "observed": 0.4286,
+     "gap": 0.1196
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 10,
+     "mean_pred": 0.6456,
+     "observed": 0.8,
+     "gap": -0.1544
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 10,
+     "mean_pred": 0.7559,
+     "observed": 0.7,
+     "gap": 0.0559
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 13,
+     "mean_pred": 0.8488,
+     "observed": 0.3846,
+     "gap": 0.4641
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 20,
+     "mean_pred": 0.9487,
+     "observed": 0.25,
+     "gap": 0.6987
+    }
+   ],
+   "by_group": {
+    "family": {
+     "ContractInstrument": {
+      "n": 28,
+      "accuracy": 0.4643,
+      "macro_f1": 0.4636,
+      "win_rate": 0.4286
+     },
+     "PrivateTitlePossession": {
+      "n": 30,
+      "accuracy": 0.5667,
+      "macro_f1": 0.5238,
+      "win_rate": 0.4
+     },
+     "StateAction": {
+      "n": 50,
+      "accuracy": 0.62,
+      "macro_f1": 0.6073,
+      "win_rate": 0.48
+     },
+     "none": {
+      "n": 15,
+      "accuracy": 0.4,
+      "macro_f1": 0.3891,
+      "win_rate": 0.4
+     }
+    },
+    "decade": {
+     "1950": {
+      "n": 13,
+      "accuracy": 0.4615,
+      "macro_f1": 0.3158,
+      "win_rate": 0.3846
+     },
+     "1960": {
+      "n": 17,
+      "accuracy": 0.5294,
+      "macro_f1": 0.3462,
+      "win_rate": 0.4118
+     },
+     "1970": {
+      "n": 27,
+      "accuracy": 0.5926,
+      "macro_f1": 0.3721,
+      "win_rate": 0.2593
+     },
+     "1980": {
+      "n": 15,
+      "accuracy": 0.6,
+      "macro_f1": 0.5982,
+      "win_rate": 0.5333
+     },
+     "1990": {
+      "n": 25,
+      "accuracy": 0.52,
+      "macro_f1": 0.5192,
+      "win_rate": 0.52
+     },
+     "2000": {
+      "n": 15,
+      "accuracy": 0.5333,
+      "macro_f1": 0.5249,
+      "win_rate": 0.4
+     },
+     "2010": {
+      "n": 22,
+      "accuracy": 0.4091,
+      "macro_f1": 0.3769,
+      "win_rate": 0.5
+     }
+    }
+   },
+   "feature_groups": [
+    "F",
+    "C"
+   ],
+   "n_features_used": 380
+  },
+  {
+   "name": "gbm F+P+E+C+Q",
+   "n": 143,
+   "accuracy": 0.5035,
+   "macro_f1": 0.4891,
+   "test_win_rate": 0.4336,
+   "pred_win_rate": 0.3986,
+   "macro_f1_ci95": [
+    0.4054,
+    0.5729
+   ],
+   "auroc": 0.5161,
+   "auroc_ci95": [
+    0.4178,
+    0.6143
+   ],
+   "ece": 0.2872,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 24,
+     "mean_pred": 0.0473,
+     "observed": 0.2917,
+     "gap": -0.2444
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 26,
+     "mean_pred": 0.1429,
+     "observed": 0.5,
+     "gap": -0.3571
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 12,
+     "mean_pred": 0.2527,
+     "observed": 0.4167,
+     "gap": -0.164
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 11,
+     "mean_pred": 0.3437,
+     "observed": 0.6364,
+     "gap": -0.2927
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 13,
+     "mean_pred": 0.4497,
+     "observed": 0.4615,
+     "gap": -0.0118
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 6,
+     "mean_pred": 0.5535,
+     "observed": 0.5,
+     "gap": 0.0535
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 15,
+     "mean_pred": 0.6503,
+     "observed": 0.4667,
+     "gap": 0.1837
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 8,
+     "mean_pred": 0.7498,
+     "observed": 0.25,
+     "gap": 0.4998
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 9,
+     "mean_pred": 0.8594,
+     "observed": 0.4444,
+     "gap": 0.415
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 19,
+     "mean_pred": 0.9349,
+     "observed": 0.4211,
+     "gap": 0.5138
+    }
+   ],
+   "by_group": {
+    "family": {
+     "ContractInstrument": {
+      "n": 28,
+      "accuracy": 0.5,
+      "macro_f1": 0.5,
+      "win_rate": 0.4286
+     },
+     "PrivateTitlePossession": {
+      "n": 30,
+      "accuracy": 0.5,
+      "macro_f1": 0.4712,
+      "win_rate": 0.4
+     },
+     "StateAction": {
+      "n": 50,
+      "accuracy": 0.54,
+      "macro_f1": 0.5066,
+      "win_rate": 0.48
+     },
+     "none": {
+      "n": 15,
+      "accuracy": 0.4667,
+      "macro_f1": 0.4643,
+      "win_rate": 0.4
+     }
+    },
+    "decade": {
+     "1950": {
+      "n": 13,
+      "accuracy": 0.3846,
+      "macro_f1": 0.2778,
+      "win_rate": 0.3846
+     },
+     "1960": {
+      "n": 17,
+      "accuracy": 0.5882,
+      "macro_f1": 0.3704,
+      "win_rate": 0.4118
+     },
+     "1970": {
+      "n": 27,
+      "accuracy": 0.6296,
+      "macro_f1": 0.3864,
+      "win_rate": 0.2593
+     },
+     "1980": {
+      "n": 15,
+      "accuracy": 0.4667,
+      "macro_f1": 0.4643,
+      "win_rate": 0.5333
+     },
+     "1990": {
+      "n": 25,
+      "accuracy": 0.44,
+      "macro_f1": 0.4391,
+      "win_rate": 0.52
+     },
+     "2000": {
+      "n": 15,
+      "accuracy": 0.4667,
+      "macro_f1": 0.4643,
+      "win_rate": 0.4
+     },
+     "2010": {
+      "n": 22,
+      "accuracy": 0.3636,
+      "macro_f1": 0.3125,
+      "win_rate": 0.5
+     }
+    }
+   },
+   "feature_groups": [
+    "F",
+    "C",
+    "Q"
+   ],
+   "n_features_used": 386
+  },
+  {
+   "name": "gbm C only",
+   "n": 143,
+   "accuracy": 0.5175,
+   "macro_f1": 0.5058,
+   "test_win_rate": 0.4336,
+   "pred_win_rate": 0.4126,
+   "macro_f1_ci95": [
+    0.4206,
+    0.577
+   ],
+   "auroc": 0.501,
+   "auroc_ci95": [
+    0.4006,
+    0.5982
+   ],
+   "ece": 0.2614,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 27,
+     "mean_pred": 0.0545,
+     "observed": 0.4074,
+     "gap": -0.3529
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 16,
+     "mean_pred": 0.142,
+     "observed": 0.4375,
+     "gap": -0.2955
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 18,
+     "mean_pred": 0.2459,
+     "observed": 0.4444,
+     "gap": -0.1986
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 11,
+     "mean_pred": 0.3605,
+     "observed": 0.4545,
+     "gap": -0.0941
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 12,
+     "mean_pred": 0.4409,
+     "observed": 0.4167,
+     "gap": 0.0242
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 12,
+     "mean_pred": 0.56,
+     "observed": 0.5833,
+     "gap": -0.0234
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 14,
+     "mean_pred": 0.6431,
+     "observed": 0.2857,
+     "gap": 0.3574
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 12,
+     "mean_pred": 0.746,
+     "observed": 0.3333,
+     "gap": 0.4127
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 10,
+     "mean_pred": 0.8574,
+     "observed": 0.7,
+     "gap": 0.1574
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 11,
+     "mean_pred": 0.9462,
+     "observed": 0.3636,
+     "gap": 0.5825
+    }
+   ],
+   "by_group": {
+    "family": {
+     "ContractInstrument": {
+      "n": 28,
+      "accuracy": 0.4286,
+      "macro_f1": 0.4286,
+      "win_rate": 0.4286
+     },
+     "PrivateTitlePossession": {
+      "n": 30,
+      "accuracy": 0.5333,
+      "macro_f1": 0.4976,
+      "win_rate": 0.4
+     },
+     "StateAction": {
+      "n": 50,
+      "accuracy": 0.6,
+      "macro_f1": 0.5942,
+      "win_rate": 0.48
+     },
+     "none": {
+      "n": 15,
+      "accuracy": 0.4,
+      "macro_f1": 0.3891,
+      "win_rate": 0.4
+     }
+    },
+    "decade": {
+     "1950": {
+      "n": 13,
+      "accuracy": 0.5385,
+      "macro_f1": 0.35,
+      "win_rate": 0.3846
+     },
+     "1960": {
+      "n": 17,
+      "accuracy": 0.4706,
+      "macro_f1": 0.3953,
+      "win_rate": 0.4118
+     },
+     "1970": {
+      "n": 27,
+      "accuracy": 0.5926,
+      "macro_f1": 0.3721,
+      "win_rate": 0.2593
+     },
+     "1980": {
+      "n": 15,
+      "accuracy": 0.4667,
+      "macro_f1": 0.4643,
+      "win_rate": 0.5333
+     },
+     "1990": {
+      "n": 25,
+      "accuracy": 0.48,
+      "macro_f1": 0.4663,
+      "win_rate": 0.52
+     },
+     "2000": {
+      "n": 15,
+      "accuracy": 0.5333,
+      "macro_f1": 0.5333,
+      "win_rate": 0.4
+     },
+     "2010": {
+      "n": 22,
+      "accuracy": 0.4091,
+      "macro_f1": 0.3425,
+      "win_rate": 0.5
+     }
+    }
+   },
+   "feature_groups": [
+    "C"
+   ],
+   "n_features_used": 32
+  },
+  {
+   "name": "gbm Q only",
+   "n": 143,
+   "accuracy": 0.6294,
+   "macro_f1": 0.6186,
+   "test_win_rate": 0.4336,
+   "pred_win_rate": 0.3986,
+   "macro_f1_ci95": [
+    0.5302,
+    0.6945
+   ],
+   "auroc": 0.6857,
+   "auroc_ci95": [
+    0.5934,
+    0.7606
+   ],
+   "ece": 0.073,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 3,
+     "mean_pred": 0.3159,
+     "observed": 0.0,
+     "gap": 0.3159
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 83,
+     "mean_pred": 0.46,
+     "observed": 0.3494,
+     "gap": 0.1106
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 45,
+     "mean_pred": 0.5595,
+     "observed": 0.5556,
+     "gap": 0.0039
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 12,
+     "mean_pred": 0.6562,
+     "observed": 0.6667,
+     "gap": -0.0104
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    }
+   ],
+   "by_group": {
+    "family": {
+     "ContractInstrument": {
+      "n": 28,
+      "accuracy": 0.6071,
+      "macro_f1": 0.6026,
+      "win_rate": 0.4286
+     },
+     "PrivateTitlePossession": {
+      "n": 30,
+      "accuracy": 0.5667,
+      "macro_f1": 0.5417,
+      "win_rate": 0.4
+     },
+     "StateAction": {
+      "n": 50,
+      "accuracy": 0.7,
+      "macro_f1": 0.697,
+      "win_rate": 0.48
+     },
+     "none": {
+      "n": 15,
+      "accuracy": 0.6667,
+      "macro_f1": 0.6411,
+      "win_rate": 0.4
+     }
+    },
+    "decade": {
+     "1950": {
+      "n": 13,
+      "accuracy": 0.3846,
+      "macro_f1": 0.35,
+      "win_rate": 0.3846
+     },
+     "1960": {
+      "n": 17,
+      "accuracy": 0.7059,
+      "macro_f1": 0.664,
+      "win_rate": 0.4118
+     },
+     "1970": {
+      "n": 27,
+      "accuracy": 0.6667,
+      "macro_f1": 0.5846,
+      "win_rate": 0.2593
+     },
+     "1980": {
+      "n": 15,
+      "accuracy": 0.5333,
+      "macro_f1": 0.5249,
+      "win_rate": 0.5333
+     },
+     "1990": {
+      "n": 25,
+      "accuracy": 0.6,
+      "macro_f1": 0.5994,
+      "win_rate": 0.52
+     },
+     "2000": {
+      "n": 15,
+      "accuracy": 0.6667,
+      "macro_f1": 0.6606,
+      "win_rate": 0.4
+     },
+     "2010": {
+      "n": 22,
+      "accuracy": 0.7273,
+      "macro_f1": 0.725,
+      "win_rate": 0.5
+     }
+    }
+   },
+   "feature_groups": [
+    "Q"
+   ],
+   "n_features_used": 6
+  }
+ ],
+ "empty_groups": {
+  "P": "no pattern survived BOTH bootstrap stability and Benjamini-Hochberg in \u00a78 (351 patterns tested, 0 BH-significant). This is a result, not a missing input.",
+  "E": "no element carries burden metadata yet (burden_provenance is unset), so the element features cannot be computed."
+ },
+ "mcnemar": {
+  "lr F+P+E+C+Q vs lr F+P+E+C": {
+   "b_a_right_b_wrong": 2,
+   "c_a_wrong_b_right": 2,
+   "n_discordant": 4,
+   "p": 1.0
+  },
+  "lr F+P+E+C vs lr F": {
+   "b_a_right_b_wrong": 10,
+   "c_a_wrong_b_right": 5,
+   "n_discordant": 15,
+   "p": 0.301758
+  },
+  "gbm F+P+E+C+Q vs gbm F+P+E+C": {
+   "b_a_right_b_wrong": 4,
+   "c_a_wrong_b_right": 9,
+   "n_discordant": 13,
+   "p": 0.266846
+  },
+  "gbm F+P+E+C vs gbm F": {
+   "b_a_right_b_wrong": 24,
+   "c_a_wrong_b_right": 21,
+   "n_discordant": 45,
+   "p": 0.765992
+  }
+ }
+}

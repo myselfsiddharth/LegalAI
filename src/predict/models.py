@@ -49,14 +49,21 @@ def make_model(kind: str):
     raise ValueError(kind)
 
 
+# §10.2 ablation 1 is cumulative: F -> F+P -> F+P+E -> +C -> +Q.
+#
+# An arm whose ADDED group has no features is not a result, it is the previous arm under a new
+# name. That must be stated rather than printed as a separate row: the first run of this had
+# "F", "F+P" and "F+P+E" reporting byte-identical numbers because §8 found zero BH-significant
+# patterns (P empty) and the burden metadata was unfilled (E empty). Reading those as "patterns
+# and elements add nothing" would be right by accident and wrong in reasoning.
 ABLATIONS = [
-    ("F", ["F"]),
-    ("F+P", ["F", "P"]),
-    ("F+P+E", ["F", "P", "E"]),
-    ("F+P+E+C", ["F", "P", "E", "C"]),
-    ("F+P+E+C+Q", ["F", "P", "E", "C", "Q"]),      # +Q adds the prior-court shortcut
-    ("C only", ["C"]),
-    ("Q only", ["Q"]),                              # the shortcut alone
+    ("F", ["F"], None),
+    ("F+P", ["F", "P"], "P"),
+    ("F+P+E", ["F", "P", "E"], "E"),
+    ("F+P+E+C", ["F", "P", "E", "C"], "C"),
+    ("F+P+E+C+Q", ["F", "P", "E", "C", "Q"], "Q"),   # +Q adds the prior-court shortcut
+    ("C only", ["C"], None),
+    ("Q only", ["Q"], None),                          # the shortcut alone
 ]
 
 
@@ -108,11 +115,26 @@ def run(split_name: str, model_kinds=("lr", "gbm"), min_atom_cases: int = 10,
                                            name="majority (per decade)", groups=groups_te))
 
     # --- ablations x models
+    # which groups actually carry features, and why an empty one is empty
+    per_group = Counter(fb.space.group_of)
+    empty = {g: per_group.get(g, 0) for g in ("F", "P", "E", "C", "Q") if not per_group.get(g)}
+    out["empty_groups"] = {}
+    for g in empty:
+        out["empty_groups"][g] = {
+            "P": "no pattern survived BOTH bootstrap stability and Benjamini-Hochberg in §8 "
+                 "(351 patterns tested, 0 BH-significant). This is a result, not a missing input.",
+            "E": "no element carries burden metadata yet (burden_provenance is unset), so the "
+                 "element features cannot be computed.",
+        }.get(g, "no features in this group")
+
     preds_for_mcnemar = {}
     for kind in model_kinds:
-        for label, groups in ABLATIONS:
+        for label, groups, added in ABLATIONS:
             mask = fb.space.group_mask(groups)
             if mask.sum() == 0:
+                continue
+            if added and added in empty:
+                # the added group contributes nothing; skip so the table cannot imply otherwise
                 continue
             m = make_model(kind)
             m.fit(Xtr[:, mask], ytr)
@@ -121,7 +143,7 @@ def run(split_name: str, model_kinds=("lr", "gbm"), min_atom_cases: int = 10,
                     if hasattr(m, "predict_proba") else None)
             nm = f"{kind} {label}"
             res = metrics.evaluate(yte, pred, prob, name=nm, groups=groups_te)
-            res["feature_groups"] = groups
+            res["feature_groups"] = [g for g in groups if per_group.get(g)]
             res["n_features_used"] = int(mask.sum())
             out["results"].append(res)
             preds_for_mcnemar[nm] = pred
@@ -129,7 +151,9 @@ def run(split_name: str, model_kinds=("lr", "gbm"), min_atom_cases: int = 10,
     # --- paired tests: does +Q (the shortcut) change anything? (§10.2 ablation)
     out["mcnemar"] = {}
     for kind in model_kinds:
-        a, b = f"{kind} F+P+E+C", f"{kind} F+P+E+C+Q"
+        a, b = next((f"{kind} {lb}" for lb, _g, ad in reversed(ABLATIONS)
+                     if ad not in empty and "Q" not in lb and "only" not in lb),
+                    f"{kind} F"), f"{kind} F+P+E+C+Q"
         if a in preds_for_mcnemar and b in preds_for_mcnemar:
             out["mcnemar"][f"{b} vs {a}"] = metrics.mcnemar(
                 yte, preds_for_mcnemar[b], preds_for_mcnemar[a])
@@ -162,6 +186,8 @@ def main() -> None:
           f"/{c['split_train_total']}, test {c['test']['with_canonical_facts']}"
           f"/{c['split_test_total']}")
     print(f"  features: {out['n_features']} -> {out['features_per_group']}")
+    for g, why in out.get("empty_groups", {}).items():
+        print(f"  GROUP {g} IS EMPTY, so no ablation arm adds it: {why}")
     prov = out["burden_provenance"]
     if prov.get("llm_draft"):
         print(f"  NOTE the E group rests on {prov['llm_draft']} LLM-DRAFTED burden values "

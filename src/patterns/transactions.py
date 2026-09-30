@@ -31,6 +31,7 @@ from src.extract.fact_filters import in_defendant_view, in_plaintiff_view
 
 CANON_PATH = paths.INTERIM / "canonical_facts.jsonl"
 FAMILIES_PATH = paths.INTERIM / "claim_families.json"
+MERGE_PATH = paths.INTERIM / "family_merge.json"
 
 
 def load_canonical() -> dict[str, list[dict]]:
@@ -44,11 +45,30 @@ def load_canonical() -> dict[str, list[dict]]:
     return by_case
 
 
-def load_family_membership() -> dict[str, dict]:
-    """case_id -> {families: [...], primary: str}. Empty if §7 has not run."""
+def load_family_membership(apply_merge: bool = True) -> dict[str, dict]:
+    """case_id -> {families: [...], primary: str}. Empty if §7 has not run.
+
+    The MERGED taxonomy is applied by default. The raw 42-way assignment is not usable for §8:
+    only 2 of those families clear the 30-case floor, and §7's clustering showed the 15-way
+    taxonomy is not supported by the data (HDBSCAN ARI -0.005). `apply_merge=False` keeps the raw
+    families for §10.2's taxonomy ablation.
+    """
     if not FAMILIES_PATH.exists():
         return {}
-    return json.loads(FAMILIES_PATH.read_text()).get("membership", {})
+    members = json.loads(FAMILIES_PATH.read_text()).get("membership", {})
+    if not apply_merge or not MERGE_PATH.exists():
+        return members
+    fam_to_super = json.loads(MERGE_PATH.read_text()).get("family_to_merged", {})
+    if not fam_to_super:
+        return members
+    out = {}
+    for case, m in members.items():
+        fams = sorted({fam_to_super[f] for f in m.get("families", []) if f in fam_to_super})
+        if not fams:
+            continue                      # every family was an excluded defence family
+        primary = fam_to_super.get(m.get("primary")) or fams[0]
+        out[case] = {"families": fams, "primary": primary}
+    return out
 
 
 def transactions_for_case(facts: list[dict], oriented: bool = True) -> dict[str, set[str]]:
@@ -67,10 +87,10 @@ def transactions_for_case(facts: list[dict], oriented: bool = True) -> dict[str,
     return {"plaintiff": p, "defendant": d, "combined": combined}
 
 
-def build(oriented: bool = True, min_atoms: int = 2):
+def build(oriented: bool = True, min_atoms: int = 2, apply_merge: bool = True):
     """-> (by_family, stats). by_family[family] = list of {case_id, plaintiff, defendant, combined}."""
     canon = load_canonical()
-    members = load_family_membership()
+    members = load_family_membership(apply_merge=apply_merge)
     stats = Counter()
     by_family: dict[str, list[dict]] = defaultdict(list)
 
