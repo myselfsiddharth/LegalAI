@@ -61,12 +61,9 @@ def load_arm_texts():
 
 
 def load_labels():
-    out = {}
-    for line in open(paths.INTERIM / "outcome_labels.jsonl"):
-        r = json.loads(line)
-        if r["initiator_outcome"] in ("WIN", "LOSE"):
-            out[r["doc_id"]] = 1 if r["initiator_outcome"] == "WIN" else 0
-    return out
+    from src.data.label_merge import load_final
+    return {d: (1 if r["outcome"] == "WIN" else 0)
+            for d, r in load_final().items() if r["outcome"] in ("WIN", "LOSE")}
 
 
 def bootstrap_ci(y, p, metric, n=1000, seed=SEED):

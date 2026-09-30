@@ -20,8 +20,12 @@ stage1: ## §5 screen, labels, masking, splits
 labels-llm: ## §5.1 LLM label pass + rules-vs-LLM agreement (needs VOYAGER_API_KEY; ~25 min)
 	$(PY) -m src.data.label_llm --workers 12
 
+merge: ## §5.1 reconcile rules + LLM labels into the frozen label set
+	$(PY) -m src.data.label_merge
+	$(PY) -m src.data.splits
+
 probe: ## §5.2 leakage probe on both splits -- the Stage 1 acceptance gate
-	$(PY) -m src.eval.leakage_probe --split temporal_2005_2013
+	$(PY) -m src.eval.leakage_probe --split temporal_2004_2013
 	$(PY) -m src.eval.leakage_probe --split forum_heldout
 
 test: ## unit tests, incl. leakage and time-respect asserts

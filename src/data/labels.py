@@ -43,7 +43,23 @@ ORDER_OPENER = re.compile(
     r"|for these reasons|in view of the (foregoing|above|aforesaid)|we therefore|hence, we"
     r"|resultantly|consequently, the)\b", re.I)
 
-_PROC = r"(?:civil |criminal |special leave |letters patent )?(?:appeals?|petitions?|writ petitions?|slps?|suits?|revisions?|applications?)"
+# Two tiers of proceeding, and the distinction decides the label.
+#
+# TIER 1 is the proceeding actually before THIS court. TIER 2 is the underlying proceeding
+# below. Indian orders routinely dispose of both in one breath:
+#
+#     "The appeal is allowed ... and the writ petition filed by the respondent stands dismissed."
+#
+# Reading the LAST disposition in that sentence gives LOSE, when the appellant plainly WON --
+# the dismissal is a CONSEQUENCE of the appeal succeeding, applied to the opposing party's
+# case. This was the single largest error in the rules labeller: 196 cases where the LLM said
+# WIN and the rules said LOSE, and on audit the LLM was right in all 10 sampled.
+#
+# So a tier-1 disposition always governs; tier 2 is consulted only when no tier-1 match exists
+# (e.g. a suit decided directly, or a writ petition under Article 32).
+_PROC_T1 = r"(?:civil |criminal |special leave |letters patent )?(?:appeals?|slps?|special leave petitions?)"
+_PROC_T2 = r"(?:writ petitions?|petitions?|suits?|revisions?|applications?|proceedings?)"
+_PROC = rf"(?:{_PROC_T1}|{_PROC_T2})"
 
 # Disposition patterns. Order matters: PARTIAL and REMAND are checked before the plain
 # allowed/dismissed forms, because "partly allowed" also matches "allowed".
@@ -51,8 +67,12 @@ PARTIAL = re.compile(
     rf"\b{_PROC}\b[^.]{{0,100}}?\b(?:is|are|stands?|shall stand)\s+(?:hereby\s+)?"
     rf"(?:partly|partially|in part)\s+allowed\b"
     rf"|\ballowed\s+(?:only\s+)?in\s+part\b|\bpartly\s+allowed\b|\bpartly\s+succeeds?\b"
-    rf"|\ballowed\s+to\s+(?:that|the\s+above|the\s+aforesaid)\s+extent\b"
-    rf"|\ballowed\s+in\s+part\s+only\b", re.I)
+    rf"|\ballowed\s+to\s+the\s+(?:extent|aforesaid\s+extent|above\s+extent)\b"
+    rf"|\ballowed\s+to\s+that\s+extent\b"
+    rf"|\ballowed\s+in\s+part\s+only\b"
+    rf"|\bsucceeds?\s+(?:only\s+)?in\s+part\b|\bsucceed\s+(?:only\s+)?in\s+part\b"
+    rf"|\b(?:allowed|modified)\s+to\s+the\s+extent\s+(?:indicated|mentioned|stated|set\s+out)\b",
+    re.I)
 
 REMAND = re.compile(
     r"\bremand(?:ed)?\s+(?:the\s+)?(?:matter|case|suit|appeal|proceedings?)\b"
@@ -60,17 +80,35 @@ REMAND = re.compile(
     r"|\bremitted?\s+(?:back\s+)?to\s+the\s+(?:High Court|trial court|first appellate|District Judge)"
     r"|\bsent\s+back\s+to\s+the\s+(?:High Court|trial court)", re.I)
 
-ALLOWED = re.compile(
-    rf"\b{_PROC}\b[^.]{{0,100}}?\b(?:is|are|stands?|shall stand|must be|deserves? to be)\s+"
-    rf"(?:hereby\s+)?(?:allowed|accepted)\b"
-    rf"|\bwe\s+(?:hereby\s+)?allow\s+(?:the|these|this|all)\b"
-    rf"|\b{_PROC}\b[^.]{{0,60}}?\bsucceeds?\b", re.I)
 
-DISMISSED = re.compile(
-    rf"\b{_PROC}\b[^.]{{0,100}}?\b(?:is|are|stands?|shall stand|must be|deserves? to be)\s+"
-    rf"(?:hereby\s+)?(?:dismissed|rejected|not maintainable)\b"
-    rf"|\bwe\s+(?:hereby\s+)?dismiss\s+(?:the|these|this|all)\b"
-    rf"|\b{_PROC}\b[^.]{{0,60}}?\b(?:fails?|is devoid of merit|has no merit)\b", re.I)
+# The span between the proceeding noun and its verb must not step over ANOTHER disposition.
+# Without this, "the appeal is allowed and the suit is dismissed" matches the DISMISSED
+# pattern too -- "appeal" binds across "allowed and the suit" to "is dismissed" -- so both
+# classes fire and the later one wins, yielding LOSE for a clear win. Forcing each proceeding
+# noun to bind to its nearest disposition verb removes that whole class of error.
+_GAP = r"(?:(?!\b(?:allowed|dismissed|rejected|accepted|succeeds?|fails?)\b)[^.]){0,90}?"
+
+
+def _allowed(proc: str) -> re.Pattern:
+    return re.compile(
+        rf"\b{proc}\b{_GAP}\b(?:is|are|stands?|shall stand|must be|deserves? to be)\s+"
+        rf"(?:hereby\s+)?(?:allowed|accepted)\b"
+        rf"|\bwe\s+(?:hereby\s+)?allow\s+(?:the|these|this|all)\s+{proc}\b"
+        rf"|\b{proc}\b{_GAP}\bsucceeds?\b", re.I)
+
+
+def _dismissed(proc: str) -> re.Pattern:
+    return re.compile(
+        rf"\b{proc}\b{_GAP}\b(?:is|are|stands?|shall stand|must be|deserves? to be)\s+"
+        rf"(?:hereby\s+)?(?:dismissed|rejected|not maintainable)\b"
+        rf"|\bwe\s+(?:hereby\s+)?dismiss\s+(?:the|these|this|all)\s+{proc}\b"
+        rf"|\b{proc}\b{_GAP}\b(?:fails?|is devoid of merit|has no merit)\b", re.I)
+
+
+ALLOWED_T1, DISMISSED_T1 = _allowed(_PROC_T1), _dismissed(_PROC_T1)
+ALLOWED_T2, DISMISSED_T2 = _allowed(_PROC_T2), _dismissed(_PROC_T2)
+# kept for callers/tests that want the tier-agnostic form
+ALLOWED, DISMISSED = _allowed(_PROC), _dismissed(_PROC)
 
 OTHER = re.compile(
     r"\bdisposed of (?:as|in terms of|by consent)\b|\bwithdrawn\b|\binfructuous\b"
@@ -116,6 +154,7 @@ class OutcomeLabel:
     order_window: list[int] | None = None     # [start, end] of the region searched
     ambiguous: bool = False           # both allow and dismiss fired in the order window
     negated_skipped: int = 0          # disposition verbs rejected as negated (audit trail)
+    disposition_tier: int = 0         # 1 = read from the appeal/SLP, 2 = from the suit/petition
     competing: list[str] = field(default_factory=list)
     # --- the shortcut axis (§10.2 ablation 2b), NOT part of the label
     prior_court_outcome: str | None = None    # affirmed_below | reversed_below | ... | None
@@ -161,9 +200,15 @@ def label_by_rules(text: str) -> OutcomeLabel:
     lo, hi = find_order_window(text)
     window = text[lo:hi]
 
+    # Tier 1 = the proceeding before this court; consult tier 2 only if tier 1 is silent.
+    if ALLOWED_T1.search(window) or DISMISSED_T1.search(window):
+        allow_rx, dismiss_rx, tier = ALLOWED_T1, DISMISSED_T1, 1
+    else:
+        allow_rx, dismiss_rx, tier = ALLOWED_T2, DISMISSED_T2, 2
+
     hits: list[tuple[str, re.Match]] = []
     for name, rx in (("PARTIAL", PARTIAL), ("REMAND", REMAND),
-                     ("WIN", ALLOWED), ("LOSE", DISMISSED), ("OTHER", OTHER)):
+                     ("WIN", allow_rx), ("LOSE", dismiss_rx), ("OTHER", OTHER)):
         m = None
         for cand in rx.finditer(window):            # keep the LAST non-negated match
             if not _negated(window, cand):
@@ -221,7 +266,7 @@ def label_by_rules(text: str) -> OutcomeLabel:
         order_span=span, order_evidence=evidence, order_window=[lo, hi],
         ambiguous=ambiguous, competing=competing,
         prior_court_outcome=prior, prior_court_evidence=prior_ev,
-        proceeding_type=_proceeding_type(text),
+        proceeding_type=_proceeding_type(text), disposition_tier=tier,
     )
 
 

@@ -121,7 +121,7 @@ def test_no_party_group_straddles_a_split():
                     reason="splits not built yet")
 def test_temporal_split_respects_time():
     d = json.loads((paths.SPLITS / "temporal_2005_2013.json").read_text())
-    labs = {json.loads(l)["doc_id"]: json.loads(l)["year"]
-            for l in open(paths.INTERIM / "outcome_labels.jsonl")}
+    from src.data.label_merge import load_final
+    labs = {d: r["year"] for d, r in load_final().items()}
     assert max(labs[x] for x in d["train"]) <= d["t1"]
     assert min(labs[x] for x in d["test"]) > d["t2"]

@@ -61,10 +61,10 @@ class SplitSpec:
 
 
 def _load():
-    labels = {}
-    for line in open(paths.INTERIM / "outcome_labels.jsonl"):
-        r = json.loads(line)
-        labels[r["doc_id"]] = r
+    # The merged rules+LLM label set (§5.1), not the rules pass alone: merging recovers the
+    # ~33% of cases no regex could reach and grows the eligible set by roughly a third.
+    from src.data.label_merge import load_final
+    labels = load_final()
     screen = {}
     for line in open(paths.INTERIM / "case_screen.jsonl"):
         r = json.loads(line)
