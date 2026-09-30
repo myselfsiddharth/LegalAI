@@ -161,7 +161,13 @@ def extract_case(rec: dict, model: str, title: str = "") -> tuple[list[Fact], Co
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--n", type=int, default=50)
-    ap.add_argument("--split", default=None, help="restrict to a split's train part")
+    ap.add_argument("--split", default=None, help="restrict to one split's cases")
+    ap.add_argument("--priority", default="eval-first",
+                    choices=["eval-first", "doc-id"],
+                    help="'eval-first' extracts TEST and DEV cases of every split before train "
+                         "cases; 'doc-id' is the old arbitrary order")
+    ap.add_argument("--only-missing", action="store_true",
+                    help="re-run cases that produced zero facts or had a dropped chunk")
     ap.add_argument("--model", default=client.DEFAULT_MODEL)
     ap.add_argument("--workers", type=int, default=6)
     ap.add_argument("--min-masked-chars", type=int, default=1000)
@@ -188,18 +194,47 @@ def main() -> None:
         r = json.loads(line)
         if r["doc_id"] in eligible and r["n_chars_masked"] >= args.min_masked_chars:
             cases.append(r)
-    cases.sort(key=lambda r: r["doc_id"])
 
-    done = set()
+    # Order matters, and the obvious order was wrong.
+    #
+    # Taking the first N by doc_id is arbitrary with respect to the splits, so an 800-case run
+    # covered only 143 of forum_heldout's 902 TEST cases -- and test coverage is what every
+    # reported number is limited by. `eval-first` extracts the test and dev cases of every split
+    # before touching train, so a partial run still yields a fully-covered evaluation set.
+    if args.priority == "eval-first":
+        rank = {}
+        for sp in sorted(paths.SPLITS.glob("*.json")):
+            d = json.loads(sp.read_text())
+            for c in d.get("test", []):
+                rank[c] = min(rank.get(c, 9), 0)
+            for c in d.get("dev", []):
+                rank[c] = min(rank.get(c, 9), 1)
+            for c in d.get("train", []):
+                rank[c] = min(rank.get(c, 9), 2)
+        cases.sort(key=lambda r: (rank.get(r["doc_id"], 3), r["doc_id"]))
+        by_rank = Counter(rank.get(c["doc_id"], 3) for c in cases)
+        print(f"  priority=eval-first: {by_rank[0]} test, {by_rank[1]} dev, {by_rank[2]} train, "
+              f"{by_rank[3]} unsplit", flush=True)
+    else:
+        cases.sort(key=lambda r: r["doc_id"])
+
+    done = Counter()
     if OUT_PATH.exists():
         with OUT_PATH.open() as f:
             for line in f:
                 try:
-                    done.add(json.loads(line)["case_id"])
+                    done[json.loads(line)["case_id"]] += 1
                 except json.JSONDecodeError:
                     pass
-    todo = [c for c in cases if c["doc_id"] not in done][:args.n] if args.n else \
-           [c for c in cases if c["doc_id"] not in done]
+    if args.only_missing:
+        # A case absent from the output yielded zero facts, which is either a genuinely
+        # fact-free excerpt or a call that never returned. Re-running distinguishes them.
+        todo = [c for c in cases if not done.get(c["doc_id"])]
+        print(f"  --only-missing: {len(todo)} cases have no facts on disk", flush=True)
+    else:
+        todo = [c for c in cases if c["doc_id"] not in done]
+    if args.n:
+        todo = todo[:args.n]
     print(f"{len(cases)} eligible cases, {len(done)} already extracted, {len(todo)} to do "
           f"(model={args.model})", flush=True)
 

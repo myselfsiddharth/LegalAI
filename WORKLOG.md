@@ -458,3 +458,95 @@ followed by scaling extraction so n is not 143.
       faster model plus the degeneracy gate.
 - [ ] The `Q`-as-text vs `Q`-as-categorical gap (0.581 vs 0.686) deserves its own measurement on
       one case set; right now it is confounded with n.
+
+---
+
+## 2026-09-30 — Scaling extraction, and choosing the extractor by measurement
+
+Brief: scale extraction, "in the best possible way", noting the endpoint has many models.
+
+### The endpoint has 49 models, not the 5 previously benchmarked
+
+Including several never tried here: `llama4-maverick-17b`, `glm-5-3-flash`, `minimax-m3`,
+`olmo3-32b-instruct`, `granite41-30b`, `gemma4-31b-it`, `devstral2-123b`, `qwen36-27b`,
+`qwen38-27b`, `ornith-1-5-35b-a3b`. So the extractor was chosen by measurement rather than
+inherited.
+
+### Two screening traps, both of which would have excluded good models
+
+**1. A short probe mis-ranks throughput by an order of magnitude.** A one-line JSON probe put
+`qwen3-30b-a3b-instruct-2507` at **0.4s** and `glm-5-3-flash` at **2.3s**. On real extraction the
+same models take **15.7s/case** and **hang outright**. Latency here is dominated by OUTPUT length
+(~2,500 tokens per chunk), not by the model's nominal speed. **Never screen throughput on a short
+prompt.**
+
+**2. "Cannot follow a JSON schema" was our token budget, not the model.** 11 of 26 candidates
+returned empty content and looked unusable. At `max_tokens=3000` **all 11 worked** — they are
+reasoning models whose thinking consumed a 120-token budget before any content was emitted.
+`qwen35-27b` spent **1,491 output tokens** on a two-field answer. That also disqualifies them for
+this job on cost, but for the right reason.
+
+### Benchmark: 20 cases stratified 1950–2022, identical for every model
+
+There is no gold fact annotation (§6.4 wants ≥150 hand-annotated cases), so every metric is
+ground-truth-free and tied to a failure we have actually observed.
+
+| model | grounding | legal leak | **attribution** | facts/case | s/case |
+|---|---|---|---|---|---|
+| `llama4-scout-17b` | 0.92 | 0.03 | **0.27** | 18.4 | **4.2** |
+| `llama4-maverick-17b` | **0.93** | **0.01** | **0.41** | **23.5** | 28.7 |
+| `qwen3-30b-a3b-instruct-2507` | 0.92 | 0.03 | 0.40 | 10.5 | 15.7 |
+| `olmo3-32b-instruct` | — | — | — | — | ~49s/call — excluded |
+| `glm-5-3-flash` | — | — | — | — | **hangs** on long prompts — excluded |
+| `glm-5-3` | — | — | — | — | ~47s/call — excluded |
+
+`attribution` is the share of facts assigned to plaintiff or defendant rather than left
+`court_narrative`, and it is the metric §8.1's party-oriented views depend on.
+
+**maverick wins every quality metric** — notably attribution 0.41 vs scout's 0.27, a 52% relative
+gain on the pipeline's known weak point — and is 6.8× slower.
+
+### Decision: scout for coverage, maverick tested rather than assumed
+
+**The representation ladder already told us extraction is not the bottleneck**: masked text 0.578 →
+extracted fact text 0.577 → canonical atoms 0.502. Extraction preserves essentially all the signal;
+canonicalisation destroys it. So a better extractor cannot buy much downstream, while **coverage
+is the binding constraint** — every §10 number rested on 143 test cases.
+
+Full-corpus run therefore uses scout. maverick's attribution edge then gets tested on a controlled
+subset via the ladder, instead of being assumed to matter or assumed not to.
+
+Cost of the alternative, for the record: maverick over 4,611 cases is ~18–36h against scout's
+~3–5h, for a quality gain in the stage that is already not limiting.
+
+### The case-ordering bug that caused n=143
+
+`--n 800` took the first 800 cases **by doc_id**, which is arbitrary with respect to the splits.
+Result: only 143 of `forum_heldout`'s 902 test cases had features, and every reported CI was ±0.09
+on AUROC.
+
+`--priority eval-first` now extracts the TEST and DEV cases of **every** split before any train
+case, so a partial run still yields a fully covered evaluation set. Measured on the eligible pool:
+**1,482 test, 722 dev, 2,407 train.**
+
+Also added `--only-missing`, which re-runs cases that produced no facts — a case absent from the
+output is either a genuinely fact-free excerpt or a call that never returned, and re-running is the
+only way to tell them apart.
+
+### The degeneracy gate earned its place twice
+
+`glm-5-3`'s burden annotation was **also refused** — 87% `claimant` against the 85% limit. Two
+different models, two degenerate annotations, both caught. Without the gate the second would have
+looked like an improvement on the first (87% vs 92%) and been accepted.
+
+Consequence: element burden metadata is still unfilled, the `E` feature group is still empty, and
+the §10 ablation table says so rather than printing "F+P+E" as a distinct row. The fix is not a
+bigger model — it is hand annotation of 66 elements, or a task decomposition that does not ask one
+call to settle burden, standard and trigger at once.
+
+### Open items updated
+
+- [x] Scale fact extraction so n is not 143 — running, eval-first, 3,816 cases to do
+- [ ] Re-run canonicalisation, claims, §8 and §10 on the full fact set once extraction finishes
+- [ ] Ladder comparison scout vs maverick on a fixed subset: does better attribution help downstream?
+- [ ] Burden metadata needs hand annotation or a decomposed prompt; two models have now failed the gate

@@ -1,0 +1,65 @@
+{
+ "n_cases": 20,
+ "notes": {
+  "benchmark_set": "20 cases stratified across 1950-2022, identical for every model",
+  "no_gold_annotation": "\u00a76.4's hand-annotated set does not exist yet, so these are ground-truth-free metrics, each tied to an observed failure mode. Downstream utility is measured separately by src/eval/representation_ladder.py.",
+  "probe_latency_is_misleading": "A one-line schema probe put qwen3-30b at 0.4s and glm-5-3-flash at 2.3s. On real extraction the same models take 15.7s/case and hang respectively: latency is dominated by OUTPUT length (~2,500 tokens), not by the model's nominal speed. Never screen throughput on a short prompt.",
+  "schema_failures_were_our_token_budget": "11 of 26 models initially looked unable to follow a JSON schema. At max_tokens=3000 all 11 worked -- they are reasoning models whose thinking consumed a 120-token budget before emitting content. qwen35-27b spent 1,491 output tokens on a two-field answer.",
+  "decision": "scout for full-corpus coverage. The representation ladder already showed extraction is NOT the bottleneck (masked text 0.578 -> fact text 0.577), so coverage is worth more than extractor quality; maverick's attribution edge is then tested on a controlled subset rather than assumed to matter."
+ },
+ "results": [
+  {
+   "model": "llama4-scout-17b",
+   "kept": 368,
+   "proposed": 428,
+   "grounding_rate": 0.92,
+   "legal_leak_rate": 0.03,
+   "attribution_rate": 0.27,
+   "facts_per_case": 18.4,
+   "sec_per_case": 4.2,
+   "chunks_DROPPED": 0,
+   "verdict": "fastest by a wide margin; weakest attribution"
+  },
+  {
+   "model": "llama4-maverick-17b",
+   "kept": 470,
+   "proposed": 519,
+   "grounding_rate": 0.93,
+   "legal_leak_rate": 0.01,
+   "attribution_rate": 0.41,
+   "facts_per_case": 23.5,
+   "sec_per_case": 28.7,
+   "chunks_DROPPED": 0,
+   "verdict": "best on every quality metric; 6.8x slower than scout"
+  },
+  {
+   "model": "qwen3-30b-a3b-instruct-2507",
+   "kept": 210,
+   "proposed": 282,
+   "grounding_rate": 0.92,
+   "legal_leak_rate": 0.03,
+   "attribution_rate": 0.4,
+   "facts_per_case": 10.5,
+   "sec_per_case": 15.7,
+   "chunks_DROPPED": 0,
+   "verdict": "good attribution but 43% fewer facts per case than scout"
+  },
+  {
+   "model": "olmo3-32b-instruct",
+   "excluded": true,
+   "sec_per_call_observed": 49.0,
+   "verdict": "~50s per call; impractical for 4,611 cases"
+  },
+  {
+   "model": "glm-5-3-flash",
+   "excluded": true,
+   "verdict": "hangs on long extraction prompts -- 4 calls in 5 min, sub-second latencies with no usable content. Fine on a one-line probe, unusable on a 4,000-char excerpt."
+  },
+  {
+   "model": "glm-5-3",
+   "excluded": true,
+   "sec_per_call_observed": 47.0,
+   "verdict": "best instruction discipline in the earlier benchmark, but ~47s/call here and its burden annotation still failed the degeneracy gate"
+  }
+ ]
+}
