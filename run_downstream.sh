@@ -37,8 +37,14 @@ $PY -u -m src.extract.claims --n 0 --workers 64 > logs/p_claims.log 2>&1
 log "  -> logs/p_claims.log"
 
 # 4. canonicalise every fact (§6.2) -- the long one
-log "canonicalising facts"
-$PY -u -m src.extract.canonicalize --n 0 --workers 96 > logs/p_canon.log 2>&1
+#
+# One call per fact put this stage at ~85,000 calls and 5.3h against extraction's ~12,500. Facts
+# are labelled in batches of 16 sharing one candidate menu, which cuts both call count and input
+# tokens. A batched call runs ~80s under this concurrency, so the client timeout is raised for
+# this stage only -- 90s would abort work that is progressing, and each abort costs four retries.
+log "canonicalising facts (batched)"
+VOYAGER_TIMEOUT_S=300 $PY -u -m src.extract.canonicalize --n 0 --workers 96 --batch 16 \
+    > logs/p_canon.log 2>&1
 log "  -> logs/p_canon.log"
 
 # 5. claim families, then the data-driven merge (§7.2-7.3 -> §6.3)

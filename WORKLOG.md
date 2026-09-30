@@ -612,3 +612,85 @@ retries with quadratic backoff — more than the concurrency gains.
 Worth noting this contradicts the standing note in `client.py` that the endpoint is "token-
 throughput-limited, so batching buys almost nothing". That was measured on *embeddings*, where it
 holds. For *generation* the limit is per-request queueing, and concurrency helps a lot.
+
+---
+
+## 2026-09-30 — Why the run is slow, and the two fixes
+
+### Diagnosis: throughput = workers ÷ latency, and we were call-bound not token-bound
+
+Measured on the live extraction (300s window, 1,330 calls, 0 failures):
+
+| | |
+|---|---|
+| throughput | 4.43 calls/s |
+| latency | p50 21.4s · p90 35.9s · p99 52.5s · max 70.1s |
+| output tokens | 4,114 tok/s (mean 928/call) |
+| input tokens | 8,961 tok/s (mean 2,021/call) |
+| **concurrency in flight (Little's law)** | **96 — exactly what we requested** |
+
+All 96 workers are busy all the time, so the client is the constraint, not the endpoint refusing
+us. Throughput is simply `workers ÷ latency`, and the endpoint degrades gracefully: 20→96 workers
+(4.8×) bought 3.2× throughput while latency roughly doubled.
+
+**Extraction was never the slow part.** It is ~12,500 calls, ~75 min total. The slow stage was
+downstream:
+
+| stage | calls | at 4.43 calls/s |
+|---|---|---|
+| extraction | ~12,500 | ~47 min |
+| **canonicalisation** | **~85,000** (one per fact) | **5.3 hours** |
+
+### Fix 1: batch the canonicalisation calls
+
+Canonicalisation was one LLM call **per fact**, and there will be ~85,000 facts. The task is
+per-fact independent, so nothing is lost by sharing a call.
+
+`canonicalize_batch` labels N facts in one call against the **union** of their individual top-k
+candidate menus — union matters, because any other way of building a shared menu could crowd out
+the label a particular fact needs.
+
+Measured serially (latency, so divide by concurrency for throughput):
+
+| batch | latency | per fact |
+|---|---|---|
+| 1 (old) | 4.9s | 4.9s |
+| 8 | 17.8s | 2.23s |
+| 16 | 35.7s | 2.23s |
+| 24 | 38.1s | **1.59s** |
+
+Alignment was verified, not assumed: 8/8 and 24/24 labelled, 0 fell back, every returned
+`fact_id` from the input set. A fact the model skips, duplicates or indexes out of range is **not
+guessed at** — it falls back to a single-fact call, because silently dropping it would look
+exactly like a fact the vocabulary cannot name.
+
+### Fix 2: the 90s timeout was capping the batch size
+
+A batch-24 call takes ~38s idle and ~80s under 96-way concurrency, so a hard 90s timeout would
+abort work that is progressing — and each abort costs four retries with quadratic backoff, which is
+far worse than waiting. `TIMEOUT_S` now reads `VOYAGER_TIMEOUT_S`, and the driver sets 300s for
+canonicalisation only. The 90s default stays for everything else, where it is generous.
+
+Net: canonicalisation **5.3h → roughly 45–60 min**.
+
+### A negative control that strengthens B3
+
+The atom space is 2,828 distinct atoms over 13,919 facts, and the feature builder keeps only atoms
+appearing in ≥10 cases — cutting 2,828 → 348. So the obvious alternative explanation for the
+ladder's collapse was the **frequency filter**, not the vocabulary.
+
+It is not. Varying the threshold (same split, same cases, group `F` only):
+
+| `min_atom_cases` | features | AUROC |
+|---|---|---|
+| 1 | 4,470 | 0.484 |
+| 2 | 1,432 | 0.480 |
+| 3 | 954 | 0.496 |
+| 5 | 630 | 0.501 |
+| 10 | 348 | 0.502 |
+| 20 | 168 | 0.464 |
+
+**At every threshold the atoms are at chance**, including keeping all 4,470. Fact *text* over the
+same cases gives 0.577. So the loss is in the vocabulary **mapping**, not in how aggressively atoms
+are filtered — which closes off the most plausible alternative reading of B3 and makes
+`vocab_refine.py` the right next move rather than a guess.

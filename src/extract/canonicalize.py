@@ -32,12 +32,13 @@ from dataclasses import dataclass, asdict, field
 
 import numpy as np
 import yaml
-from pydantic import BaseModel
+from pydantic import BaseModel, RootModel
 
 from src import paths
 from src.llm import client
 
-PROMPT_ID = "canonicalize_fact.v1"
+PROMPT_ID = "canonicalize_fact.v2"
+BATCH_FACTS = 8
 VOCAB_PATH = paths.ONTOLOGY / "vocab_v1.yaml"
 OUT_PATH = paths.INTERIM / "canonical_facts.jsonl"
 EMB_CACHE = paths.CACHE / "vocab_embeddings.npz"
@@ -52,6 +53,14 @@ class CanonJSON(BaseModel):
     subcategory: str
     properties: dict = {}
     confidence: float = 0.5
+
+
+class CanonItem(CanonJSON):
+    i: int
+
+
+class CanonBatch(RootModel):
+    root: list[CanonItem]
 
 
 @dataclass
@@ -177,11 +186,104 @@ def canonicalize_one(fact: dict, keys: list[str], M: np.ndarray, model: str,
         disputed_status=fact["disputed_status"])
 
 
+def _finish(fact: dict, p, vocab_keys: set[str] | None) -> CanonicalFact:
+    """Turn one validated model answer into a CanonicalFact. Shared by the batched and
+    single-fact paths so they cannot drift apart."""
+    props = {k: v for k, v in (p.properties or {}).items() if k in PROPERTY_KEYS and v}
+    sub_raw = (p.subcategory or "").strip()
+    is_new = sub_raw.upper().startswith("NEW") or p.category.strip().upper() == "NEW"
+    proposal = None
+    if is_new:
+        proposal = re.sub(r"^NEW\s*:?\s*", "", sub_raw, flags=re.I).strip() or sub_raw
+        category = p.category.strip() if p.category.strip().upper() != "NEW" else "NEW"
+        subcategory = proposal
+    else:
+        category = p.category.strip()
+        subcategory = sub_raw.split(".")[-1] if "." in sub_raw else sub_raw
+    if vocab_keys is not None and not is_new:
+        if f"{category}.{subcategory}" not in vocab_keys:
+            is_new = True
+            proposal = f"{category}.{subcategory}"
+    return CanonicalFact(
+        fact_id=fact["fact_id"], case_id=fact["case_id"],
+        category=category, subcategory=subcategory,
+        label=make_label(category, subcategory, props),
+        properties=props, confidence=float(p.confidence),
+        is_new=is_new, new_proposal=proposal,
+        fact_text=fact["text"], asserted_by=fact["asserted_by"],
+        disputed_status=fact["disputed_status"])
+
+
+def canonicalize_batch(batch: list[tuple[dict, "np.ndarray"]], keys: list[str], M: "np.ndarray",
+                       model: str, vocab_keys: set[str] | None
+                       ) -> tuple[list[CanonicalFact], list[dict], Counter]:
+    """Label up to BATCH_FACTS facts in ONE call.
+
+    Why: one call per fact put canonicalisation at ~85,000 calls and 5.3 hours, against
+    extraction's ~12,500. Batching is the whole difference between a 5-hour stage and a 40-minute
+    one, and the task is per-fact independent so nothing is lost by sharing a call.
+
+    The candidate menu is the UNION of each fact's own top-k, so every fact still sees its own
+    shortlist -- a shared menu built any other way could crowd out the label a fact needs.
+
+    Returns (labelled, needs_retry, stats). A fact the model skipped, duplicated or indexed out of
+    range is NOT guessed at: it goes to `needs_retry` for a single-fact call. Silently dropping it
+    would look like a fact the vocabulary could not name.
+    """
+    stats = Counter()
+    facts = [f for f, _ in batch]
+    menu: list[str] = []
+    seen = set()
+    for _f, q in batch:
+        for c in candidates_for("", keys, M, q):
+            if c not in seen:
+                seen.add(c)
+                menu.append(c)
+
+    lines = []
+    for i, f in enumerate(facts, 1):
+        ctx = f"asserted_by={f['asserted_by']}, disputed_status={f['disputed_status']}"
+        if f.get("event_date"):
+            ctx += f", event_date={f['event_date']}"
+        lines.append(f"{i}. {f['text']}\n   ({ctx})")
+    msgs = [{"role": "system", "content": client.load_prompt(PROMPT_ID)},
+            {"role": "user", "content":
+             "FACTS:\n" + "\n".join(lines) +
+             "\n\nCANDIDATE LABELS:\n" + "\n".join(f"- {c}" for c in menu)}]
+
+    res = client.complete(msgs, model=model, json_schema=CanonBatch, prompt_id=PROMPT_ID,
+                          max_tokens=180 * len(facts) + 200)
+    if not res.ok:
+        stats["batch_dropped"] += 1
+        return [], facts, stats                      # never answered: retry, do not discard
+    if res.parsed is None:
+        stats["batch_unparseable"] += 1
+        return [], facts, stats
+
+    out, used = [], set()
+    for item in res.parsed.root:
+        idx = item.i - 1
+        if not (0 <= idx < len(facts)):
+            stats["bad_index"] += 1
+            continue
+        if idx in used:
+            stats["duplicate_index"] += 1
+            continue
+        used.add(idx)
+        out.append(_finish(facts[idx], item, vocab_keys))
+    missing = [f for i, f in enumerate(facts) if i not in used]
+    stats["missing_from_batch"] += len(missing)
+    stats["batch_ok"] += 1
+    return out, missing, stats
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--n", type=int, default=400, help="number of facts to label (0 = all)")
     ap.add_argument("--model", default=client.DEFAULT_MODEL)
     ap.add_argument("--workers", type=int, default=8)
+    ap.add_argument("--batch", type=int, default=BATCH_FACTS,
+                    help="facts per LLM call; 1 restores the one-call-per-fact behaviour")
     args = ap.parse_args()
 
     keys, descs, _ = load_vocab()
@@ -214,21 +316,43 @@ def main() -> None:
 
     stats = Counter()
     rows = []
+    pairs = list(zip(todo, Q))
+    batches = [pairs[i:i + args.batch] for i in range(0, len(pairs), args.batch)]
+    print(f"  {len(batches)} batches of up to {args.batch} facts "
+          f"({len(todo)} facts / {args.batch} per call)", flush=True)
+
+    retry: list[tuple[dict, object]] = []
+    done_n = 0
     with OUT_PATH.open("a") as out, ThreadPoolExecutor(max_workers=args.workers) as pool:
-        for i, cf in enumerate(
-                pool.map(lambda iq: canonicalize_one(iq[0], keys, M, args.model, vocab_keys,
-                                                     qvec=iq[1]),
-                         zip(todo, Q)), 1):
-            if cf is None:
-                stats["dropped"] += 1           # never got an answer -- not a null label
-                continue
-            out.write(json.dumps(asdict(cf)) + "\n")
-            rows.append(cf)
-            stats["new" if cf.is_new else "mapped"] += 1
-            if i % 100 == 0:
+        for labelled, missing, st in pool.map(
+                lambda b: canonicalize_batch(b, keys, M, args.model, vocab_keys), batches):
+            stats.update(st)
+            for cf in labelled:
+                out.write(json.dumps(asdict(cf)) + "\n")
+                rows.append(cf)
+                stats["new" if cf.is_new else "mapped"] += 1
+            qmap = {f["fact_id"]: q for f, q in pairs}
+            retry.extend((f, qmap[f["fact_id"]]) for f in missing)
+            done_n += len(labelled) + len(missing)
+            if done_n // 2000 != (done_n - len(labelled) - len(missing)) // 2000:
                 out.flush()
-                print(f"  {i}/{len(todo)}  NEW rate "
-                      f"{stats['new']/max(1,stats['new']+stats['mapped']):.1%}", flush=True)
+                print(f"  {done_n}/{len(todo)}  NEW rate "
+                      f"{stats['new']/max(1,stats['new']+stats['mapped']):.1%}  "
+                      f"awaiting retry {len(retry)}", flush=True)
+
+        # Facts the batch path skipped get their own call, so a batching failure never looks like
+        # an unlabelable fact.
+        if retry:
+            print(f"  retrying {len(retry)} facts individually", flush=True)
+            for cf in pool.map(
+                    lambda iq: canonicalize_one(iq[0], keys, M, args.model, vocab_keys,
+                                                qvec=iq[1]), retry):
+                if cf is None:
+                    stats["dropped"] += 1       # never got an answer -- not a null label
+                    continue
+                out.write(json.dumps(asdict(cf)) + "\n")
+                rows.append(cf)
+                stats["new" if cf.is_new else "mapped"] += 1
     report(rows, stats, keys)
 
 
@@ -245,6 +369,11 @@ def report(rows, stats, keys) -> None:
           f"by checking its answer against the vocabulary")
     if stats["dropped"]:
         print(f"  DROPPED (no answer):  {stats['dropped']}  -- not evidence of an unlabelable fact")
+    if stats["batch_ok"] or stats["batch_dropped"]:
+        print(f"  batching: {stats['batch_ok']} ok, {stats['batch_dropped']} dropped, "
+              f"{stats['batch_unparseable']} unparseable; "
+              f"{stats['missing_from_batch']} facts fell back to a single call "
+              f"({stats['bad_index']} bad index, {stats['duplicate_index']} duplicate index)")
     off = [r for r in rows if not r.is_new and f"{r.category}.{r.subcategory}" not in valid]
     assert not off, f"BUG: {len(off)} out-of-vocab labels escaped the is_new check"
     cats = Counter(r.category for r in rows)

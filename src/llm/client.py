@@ -40,7 +40,12 @@ DEFAULT_MODEL = os.environ.get("VOYAGER_MODEL", "llama4-scout-17b")
 DEFAULT_EMBED_MODEL = os.environ.get("VOYAGER_EMBED_MODEL", "qwen3-embedding-8b")
 EMBED_DIM = 4096
 
-TIMEOUT_S = 90.0          # NOT the SDK default of 600; see module docstring
+# NOT the SDK default of 600 (see module docstring), but configurable, because the right value
+# depends on the request. A 2,500-token extraction chunk answers in ~20s and 90s is generous. A
+# batched canonicalisation call carrying 24 facts answers in ~40s idle and ~80s under 96-way
+# concurrency, so 90s would time out work that is progressing fine -- and each timeout costs four
+# retries with quadratic backoff, which is far worse than waiting.
+TIMEOUT_S = float(os.environ.get("VOYAGER_TIMEOUT_S", "90"))
 MAX_ATTEMPTS = 4
 BACKOFF_BASE_S = 2.0
 
