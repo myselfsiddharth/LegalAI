@@ -1,0 +1,127 @@
+{
+ "derived_from": {
+  "n_claims": 465,
+  "n_cases": 268,
+  "k_by_silhouette": 5,
+  "silhouette": 0.035
+ },
+ "min_cases": 30,
+ "merged_families": {
+  "PrivateTitlePossession": {
+   "n_cases": 152,
+   "viable": true,
+   "absorbs": [
+    "Adoption",
+    "AdversePossession",
+    "Benami",
+    "Partition",
+    "Possession",
+    "Pre-emption",
+    "Preemption",
+    "Succession",
+    "Title",
+    "Trust"
+   ]
+  },
+  "StateAction": {
+   "n_cases": 59,
+   "viable": true,
+   "absorbs": [
+    "ConstitutionalDeprivation",
+    "Criminal Breach of Trust",
+    "ElectionDispute",
+    "Evidence/Procedure",
+    "LandAcquisition",
+    "LandRevenue",
+    "NEW:MalaFides",
+    "Taxation",
+    "UltraVires"
+   ]
+  },
+  "ContractInstrument": {
+   "n_cases": 56,
+   "viable": true,
+   "absorbs": [
+    "Cancellation",
+    "CooperativeSociety",
+    "Evidence",
+    "Insolvency",
+    "Limitation",
+    "MortgageRedemption",
+    "NEW: SettlementChallenge",
+    "Procedure",
+    "SpecificPerformance"
+   ]
+  },
+  "TenureOccupancy": {
+   "n_cases": 20,
+   "viable": false,
+   "absorbs": [
+    "Contract",
+    "Injunction",
+    "LeaseTenancy",
+    "RentControl",
+    "RentTenancy",
+    "Tenancy",
+    "Tenure"
+   ]
+  },
+  "Mixed_Compensation_StampDuty": {
+   "n_cases": 3,
+   "viable": false,
+   "absorbs": [
+    "Compensation",
+    "NEW:Compensation",
+    "StampDuty"
+   ]
+  }
+ },
+ "family_to_merged": {
+  "Tenancy": "TenureOccupancy",
+  "LandAcquisition": "StateAction",
+  "Possession": "PrivateTitlePossession",
+  "Title": "PrivateTitlePossession",
+  "Pre-emption": "PrivateTitlePossession",
+  "ConstitutionalDeprivation": "StateAction",
+  "UltraVires": "StateAction",
+  "Partition": "PrivateTitlePossession",
+  "Trust": "PrivateTitlePossession",
+  "Procedure": "ContractInstrument",
+  "RentControl": "TenureOccupancy",
+  "Limitation": "ContractInstrument",
+  "Cancellation": "ContractInstrument",
+  "SpecificPerformance": "ContractInstrument",
+  "MortgageRedemption": "ContractInstrument",
+  "Tenure": "TenureOccupancy",
+  "AdversePossession": "PrivateTitlePossession",
+  "LeaseTenancy": "TenureOccupancy",
+  "Succession": "PrivateTitlePossession",
+  "Taxation": "StateAction",
+  "Benami": "PrivateTitlePossession",
+  "Injunction": "TenureOccupancy",
+  "NEW:MalaFides": "StateAction",
+  "Insolvency": "ContractInstrument",
+  "Criminal Breach of Trust": "StateAction",
+  "Contract": "TenureOccupancy",
+  "StampDuty": "Mixed_Compensation_StampDuty",
+  "CooperativeSociety": "ContractInstrument",
+  "NEW:Compensation": "Mixed_Compensation_StampDuty",
+  "Compensation": "Mixed_Compensation_StampDuty",
+  "Preemption": "PrivateTitlePossession",
+  "LandRevenue": "StateAction",
+  "ElectionDispute": "StateAction",
+  "Adoption": "PrivateTitlePossession",
+  "Evidence/Procedure": "StateAction",
+  "Evidence": "ContractInstrument",
+  "NEW: SettlementChallenge": "ContractInstrument",
+  "RentTenancy": "TenureOccupancy"
+ },
+ "excluded_defence_families_misrouted_to_claims": {
+  "Procedural/Forum": 14,
+  "Statutory/Regulatory Subservience": 9,
+  "Public Interest/Planning Policy": 4,
+  "Equitable": 2
+ },
+ "viable_families_before_merge": 2,
+ "viable_families_after_merge": 3
+}

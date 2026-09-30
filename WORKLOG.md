@@ -177,3 +177,137 @@ Worth remembering before "fixing" on the strength of a crude detector.
 - [ ] Atom sparsity: the canonicalisation pilot gave 107 distinct atoms over 150 facts (1.4
       facts/atom). FP-Growth support is per **case**, not per fact, so this may be fine — but
       measure atoms-per-case before running §8, since it is free and predicts the outcome.
+
+---
+
+## 2026-09-30 — Session 1 continued: Stages 3–4
+
+### §7 result: the ontology's 15-family taxonomy is NOT supported by the data
+
+This is a negative result and it is the honest headline of §7. Measured on 465 claims from 300
+cases:
+
+| clusterer | k | NMI | ARI | purity | note |
+|---|---|---|---|---|---|
+| HDBSCAN | 2 | 0.105 | **−0.005** | 0.495 | 80% outliers; ARI ≈ 0 means its partition is **uncorrelated** with the assigned families |
+| agglomerative (k by silhouette) | 5 | 0.271 | 0.092 | 0.318 | **silhouette 0.035** — almost no structure at this granularity |
+
+Supporting facts:
+- Only **2 of 15** ontology families cleared §7's 30-case floor (Title 87 cases, Possession 78).
+- The extractor assigned **42** distinct families, inventing 27 beyond the ontology.
+- `Redevelopment` was never assigned to any claim.
+- 34% of cases fall in more than one family, consistent with §7.4's many-to-many requirement.
+
+**But the clusters are legally coherent one level up**, which is the real finding — the taxonomy is
+too *fine* for this corpus, not wrong:
+
+```
+cluster 0  Title 49, Possession 41, Partition 13, Trust 5              -> private title & possession
+cluster 1  SpecificPerformance 25, Title 15, Cancellation 10           -> contract & instrument
+cluster 2  Possession 28, Title 9, Tenure 7, LeaseTenancy 4            -> tenure & occupancy
+cluster 3  Title 35, UltraVires 20, ConstitutionalDeprivation 19,
+           LandAcquisition 13                                          -> state action against property
+```
+
+**Action taken** (`src/cluster/family_merge.py`, logged to `ontology/CHANGELOG.md` per §6.3):
+merged to 5 super-families, with each family assigned to the cluster its claims most often land
+in — the grouping is derived, only the names are authored. Families clearing the 30-case floor:
+**2 → 3** (PrivateTitlePossession 152, StateAction 59, ContractInstrument 56; TenureOccupancy 20
+and a 3-case residual still below).
+
+Two problems this surfaced, both recorded rather than papered over:
+- **Defence families were routed to claims** by the extractor: `Procedural/Forum` (14 cases),
+  `Statutory/Regulatory Subservience` (9), `Public Interest/Planning Policy` (4), `Equitable` (2).
+  These are grounds for resisting a claim, not claims. **Excluded** from the merge, not folded in,
+  so the routing error stays visible.
+- **Non-property leakage survives `screen.py`**: `Criminal Breach of Trust`, `ElectionDispute`,
+  `Adoption`, `Insolvency`, `Taxation`, `RentControl` each appear once or twice. The merge absorbs
+  them into super-families, which is sloppy at 1 case each but should be fixed at the screen.
+
+**The merge is not frozen.** It is derived from 300 cases. Re-run after extraction scales; a
+family below the floor now may clear it later.
+
+### Element burden metadata: LLM drafting failed, and the gate now catches it
+
+§8.3 and §10.1's `E` feature group read `burden_on` / `burden_standard` /
+`burden_shifts_when`. The source ontology requires all three and supplies them for **0 of 66**
+elements; 6 of 15 claims carry a claim-level default in a notes line. So they had to be produced.
+
+**First attempt (`llama4-scout-17b`) produced an annotation that looked complete and carried almost
+no information:**
+
+- `burden_on` **92% `claimant`** (only 2 of 3 valid values ever used)
+- `clear_proof_required` used **zero times** — including for adverse possession, which the prompt
+  names explicitly and which is *the* textbook heightened standard in Indian law
+- only **2 distinct confidence values** (0.8, 0.7); nothing below 0.6 despite the prompt asking
+  for contested allocations to be flagged
+- `burden_shifts_when` null for all four adverse-possession elements; 14 distinct values over 66
+- claim_12 (mortgage), whose ontology note says the burden *depends on the relief sought*, came
+  out uniformly `claimant`
+
+This is the dangerous shape of failure: **nothing downstream would question it.** A constant
+masquerading as legal metadata would silently become an `E` feature.
+
+**Action:** `degeneracy_report()` now **gates the write**. It refuses when any single value exceeds
+85%, when fewer than 3 distinct standards appear, when fewer than 3 confidence values appear, when
+`burden_shifts_when` has under 0.25 distinct values per element, or when `clear_proof_required` is
+never reached for adverse possession / cancellation-for-fraud / benami. `--force` overrides but
+still tags `llm_draft`. The gate correctly rejects the scout annotation on 4 of those counts.
+
+Retrying with `glm-5-3`, which scored best on instruction discipline in the earlier model
+benchmark (CLAUDE.md: 16/24 and 9 rule keys vs scout's 16/8) — at roughly 12× the latency.
+
+**Provenance is mandatory on every value**: `ontology_notes` (the document said so),
+`llm_draft` (**not reviewed** — any result resting on it must be reported as such), `human`
+(a reviewer confirmed it; only ever set by hand).
+
+### §8 built: FP-Growth with the controls that make patterns mean something
+
+`src/patterns/transactions.py` and `src/patterns/mine.py`. Four controls, each guarding a specific
+failure:
+
+1. **Outcome rules are fitted on the TRAINING split only.** A pattern→outcome rule fitted on test
+   cases is a leak dressed as a feature, and it would be invisible in the final accuracy because
+   the rule carries the answer. Family membership and support use all cases; anything touching the
+   label is train-restricted.
+2. **Benjamini–Hochberg on the chi-square p-values.** Mining thousands of itemsets and keeping
+   those at p<0.05 manufactures ~5% of that count as discoveries.
+3. **Bootstrap stability**, 20 resamples, ≥80% — a pattern present in one resample and absent in
+   the next describes the sample, not the law. The distribution is reported so the threshold is a
+   choice, not a hidden default.
+4. **Closed itemsets only** — {possession, hostile} and {possession} at identical support say one
+   thing; reporting both inflates every count.
+
+Base rates are **per family, never global**: with outcome drift running 39%→64% across the temporal
+split, a global base rate would make a pattern look discriminative purely because its family skews
+late.
+
+`transactions.py` also encodes two §8.1 requirements that are easy to get wrong: **support is per
+CASE** (so transactions are sets — an atom appearing 20 times in one verbose judgment has support
+1, not 20), and atoms carry an `@p`/`@d` view suffix so a rule can say "the *plaintiff* asserted
+continuous possession" rather than "continuous possession appears somewhere". §10.2 ablation 3
+turns the suffix off to measure what orientation is worth.
+
+Statistics verified against hand-built cases: BH keeps exactly the 3 true positives out of 10 and
+0 of 20 nulls; chi-square gives p=4.9e-06 on a strong 2×2 and p=1.000 on independence; closed-set
+filtering drops the redundant subset.
+
+### Claims extraction numbers (n=300)
+
+- 300/300 calls ok, **0 dropped**, 0 unparseable
+- claims: 594 proposed → **465 kept** (78.3%); 129 discarded for an unlocatable quote
+- defences: 654 proposed → **522 kept** (79.8%); 132 discarded
+- median 2 claims/case; 32 of 300 cases yielded none
+- 15.5% of claim families fell outside the 15-item list
+
+### Open items added
+
+- [ ] `screen.py` misses non-property leakage that reaches the family level (Insolvency,
+      ElectionDispute, Criminal Breach of Trust, Adoption, Taxation, RentControl). Low volume but
+      it should be caught at the screen, not absorbed by a merge.
+- [ ] `claims.py` lets DEFENCE families be assigned to claims (15.5% out-of-list overall). Validate
+      against the right list per `kind` and re-route rather than accept.
+- [ ] Only 3 merged families clear the 30-case floor at n=300 cases. §8 per-family mining needs
+      more cases, or a coarser merge, or both.
+- [ ] Burden metadata is `llm_draft` at best. §5.1-style human review needed before any result
+      leans on the `E` feature group.
