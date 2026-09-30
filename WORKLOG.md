@@ -22,18 +22,28 @@ failed, and what we would otherwise re-derive from scratch next session.
 |---|---|---|
 | §4 Stage 0 — registry, text, ontology, LLM client | **done** | `make stage0` |
 | §5 Stage 1 — screen, labels, masking, splits, leakage probes | **done, gate passed** | `make stage1 labels-llm merge probe llm-probe` |
-| §6 Stage 2 — seed vocabulary, fact extraction, canonicalisation | facts running at scale; canonicalisation pilot only | `make stage2` |
-| §7 Stage 3 — claims, defences, family clustering | code written, **not yet run at scale** | `make stage3` |
-| §8 Stage 4 — FP-Growth fact patterns | not started | — |
+| §6 Stage 2 — seed vocabulary, fact extraction, canonicalisation | run; **acceptance NOT met** — 22.7% out of vocabulary | `make stage2` |
+| §7 Stage 3 — claims, defences, family clustering | run; taxonomy **unsupported** by the data | `make stage3` |
+| §8 Stage 4 — FP-Growth fact patterns | run; **0 of 351** significant after BH | `make stage4` |
 | §9 Stage 5 — statutes, precedents, citation graph | not started (assets exist in `scripts/`) | — |
-| §10 Stage 6 — outcome models, ablations | not started | — |
+| §10 Stage 6 — outcome models, ablations | run at n=143; every structured arm at chance | `make stage6` |
 | §11 trace | not started | — |
 
 **Dataset**: 6,954 land/property cases · 5,329 binary WIN/LOSE labels · 4,707 eligible for
 outcome experiments (binary label ∧ ≥500 masked chars ∧ property domain).
 
-**The four headline results so far** (forum-held-out split, AUROC):
-`order_only` 0.983 → `full` 0.827 → **`masked` 0.655** → `prior_court` 0.581 → chance 0.500.
+**Leakage gate** (forum-held-out, AUROC): `order_only` 0.983 → `full` 0.827 → **`masked` 0.655** →
+`prior_court` 0.581 → chance 0.500.
+
+**The result that now drives everything** — same classifier, split, labels and case set at each rung:
+masked text **0.578** → extracted fact text **0.577** → canonical atoms **0.502**.
+Extraction preserves the signal; **canonicalisation destroys it**. §8 therefore finds 0 of 351
+patterns significant after BH (17.6 expected by chance), and every §10 structured arm sits at
+chance while one procedural feature reaches 0.686.
+
+**Stage reports** live in `reports/` (`README.md` indexes them and carries a one-paragraph state of
+the project). Open blockers: **B2** burden metadata (two models failed the degeneracy gate),
+**B3** vocabulary cannot name 22.7% of facts — *the binding constraint*, **B4** no gold set.
 
 ---
 
