@@ -103,25 +103,31 @@ def test_party_signature_does_not_merge_on_institutions_alone():
     assert a != b
 
 
-@pytest.mark.skipif(not (paths.SPLITS / "temporal_2005_2013.json").exists(),
-                    reason="splits not built yet")
+def _split_files():
+    """Discover splits rather than hardcoding names: the temporal split is named after the
+    boundary years it chose, which move when the label set grows."""
+    return sorted(paths.SPLITS.glob("*.json"))
+
+
+@pytest.mark.skipif(not list(paths.SPLITS.glob("*.json")), reason="splits not built yet")
 def test_no_party_group_straddles_a_split():
     reg = {json.loads(l)["doc_id"]: json.loads(l)["title"] for l in open(paths.CASE_REGISTRY)}
-    for name in ("temporal_2005_2013", "forum_heldout"):
-        d = json.loads((paths.SPLITS / f"{name}.json").read_text())
+    for f in _split_files():
+        name = f.stem
+        d = json.loads(f.read_text())
         seen = {}
         for part in ("train", "dev", "test"):
             for doc in d[part]:
                 sig = party_signature(reg.get(doc, doc)) or doc
                 assert seen.get(sig, part) == part, f"{name}: group {sig!r} straddles splits"
                 seen[sig] = part
-
-
-@pytest.mark.skipif(not (paths.SPLITS / "temporal_2005_2013.json").exists(),
-                    reason="splits not built yet")
+@pytest.mark.skipif(not list(paths.SPLITS.glob("temporal_*.json")), reason="splits not built")
 def test_temporal_split_respects_time():
-    d = json.loads((paths.SPLITS / "temporal_2005_2013.json").read_text())
     from src.data.label_merge import load_final
-    labs = {d: r["year"] for d, r in load_final().items()}
+    labs = {doc: r["year"] for doc, r in load_final().items()}
+    for f in paths.SPLITS.glob("temporal_*.json"):
+        d = json.loads(f.read_text())
+        assert max(labs[x] for x in d["train"]) <= d["t1"], f
+        assert min(labs[x] for x in d["test"]) > d["t2"], f
     assert max(labs[x] for x in d["train"]) <= d["t1"]
     assert min(labs[x] for x in d["test"]) > d["t2"]

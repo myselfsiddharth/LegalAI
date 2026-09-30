@@ -24,6 +24,18 @@ merge: ## §5.1 reconcile rules + LLM labels into the frozen label set
 	$(PY) -m src.data.label_merge
 	$(PY) -m src.data.splits
 
+llm-probe: ## §5.2 LLM-0 outcome-identification probe (the second leakage probe)
+	$(PY) -m src.eval.llm_probe --split forum_heldout --n 350
+
+stage2: ## §6 seed vocabulary, fact extraction, canonicalisation (needs API key; long)
+	$(PY) -m src.extract.vocab
+	$(PY) -m src.extract.facts --n 800 --workers 16
+	$(PY) -m src.extract.canonicalize --n 0 --workers 8
+
+stage3: ## §7 claims, defences, and claim-family clustering
+	$(PY) -m src.extract.claims --n 400 --workers 10
+	$(PY) -m src.cluster.claim_families
+
 probe: ## §5.2 leakage probe on both splits -- the Stage 1 acceptance gate
 	$(PY) -m src.eval.leakage_probe --split temporal_2004_2013
 	$(PY) -m src.eval.leakage_probe --split forum_heldout

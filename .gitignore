@@ -28,3 +28,6 @@ Data/cache/
 logs/
 *.egg-info/
 build/
+Data/interim/facts.jsonl
+Data/interim/canonical_facts.jsonl
+Data/interim/claims.jsonl

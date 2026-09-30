@@ -1,0 +1,42 @@
+{
+ "split": "forum_heldout",
+ "hash": "6e346dd75b7e7d84",
+ "model": "llama4-scout-17b",
+ "prompt_id": "probe_outcome.v1",
+ "n_test": 350,
+ "arms": {
+  "order_only": {
+   "n": 350,
+   "accuracy": 0.9571,
+   "macro_f1": 0.9559,
+   "auroc": 0.9728,
+   "pred_win_rate": 0.4029,
+   "true_win_rate": 0.4286,
+   "dropped": 0,
+   "unusable": 0
+  },
+  "masked": {
+   "n": 350,
+   "accuracy": 0.62,
+   "macro_f1": 0.5302,
+   "auroc": 0.5519,
+   "pred_win_rate": 0.1343,
+   "true_win_rate": 0.4286,
+   "dropped": 0,
+   "unusable": 0
+  }
+ },
+ "usage": {
+  "calls": 700,
+  "cache_hits": 0,
+  "dropped": 0,
+  "prompt_tokens": 1152560,
+  "completion_tokens": 11338,
+  "cache_hit_rate": 0.0,
+  "cache": {
+   "entries": 7665,
+   "prompt_tokens": 18983533,
+   "completion_tokens": 782530
+  }
+ }
+}

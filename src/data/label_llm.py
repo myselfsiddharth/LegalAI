@@ -27,6 +27,7 @@ from dataclasses import dataclass
 from pydantic import BaseModel, Field
 
 from src import paths
+from src import grounding
 from src.llm import client
 
 PROMPT_ID = "label_outcome.v1"
@@ -34,7 +35,6 @@ OUT_PATH = paths.INTERIM / "outcome_labels_llm.jsonl"
 
 OPENING_CHARS = 3500
 ORDER_CHARS = 3500
-MIN_QUOTE_CHARS = 12          # "Appeal dismissed." is a real operative line, not a stub
 # A quote must actually state a disposition. This replaces a longer length floor, which
 # rejected the genuine one-line dispositions used in pre-1970 law-report style.
 DISPOSITION_TERM = re.compile(
@@ -52,33 +52,12 @@ class OutcomeJSON(BaseModel):
     confidence: float = Field(default=0.5)
 
 
-def _norm(s: str) -> str:
-    """Normalise for comparison, absorbing two artifacts of PDF extraction.
-
-    Whitespace: extraction inserts line breaks mid-sentence, so a correct quote differs from
-    the source in whitespace alone.
-
-    Hyphenation: judgments before roughly 1980 are typeset with hyphenated line wraps, which
-    survive extraction as "execut- ing", "plain- tiff's", "sanc- tioned". A model quoting the
-    sentence silently repairs these -- which is the correct reading of the page, but does not
-    match the raw text. Measured on a 60-case pilot, this single artifact was rejecting 9 of
-    25 otherwise-correct quotes. Repair is applied to BOTH sides, so it cannot manufacture a
-    match that the words themselves do not support.
-    """
-    s = re.sub(r"\s+", " ", s or "").strip().lower()
-    s = re.sub(r"(\w)[-\u00ad]\s+(\w)", r"\1\2", s)      # execut- ing -> executing
-    return s
-
-
 def quote_is_grounded(quote: str, text: str) -> bool:
-    q = _norm(quote)
-    if len(q) < MIN_QUOTE_CHARS:
+    """A grounded quote, AND one that actually states a disposition -- otherwise a model could
+    satisfy the check by quoting any sentence in the judgment."""
+    if not DISPOSITION_TERM.search(grounding.normalize(quote)):
         return False
-    if "..." in quote or "…" in quote:      # an elision is a reconstruction, not a quotation
-        return False
-    if not DISPOSITION_TERM.search(q):      # not a disposition, so not the operative sentence
-        return False
-    return q in _norm(text)
+    return grounding.is_grounded(quote, text)
 
 
 def build_messages(rec: dict) -> list[dict]:

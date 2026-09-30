@@ -1,0 +1,1468 @@
+version: 1
+derived_from: Land_Property_Dispute_India_Ontology_Refined.docx
+note: SEED vocabulary -- §6.2 iterates this to a frozen vN.
+properties:
+  polarity:
+  - pos
+  - neg
+  proof_status:
+  - asserted
+  - admitted
+  - contested
+  - not_shown
+  - proved_false
+  - inferred
+  - unknown
+  actor:
+  - claimant
+  - respondent
+  - authority
+  - third_party
+  - court_below
+  - unknown
+  asserted_by:
+  - plaintiff
+  - defendant
+  - court_narrative
+  - admitted
+  - unknown
+  duration_years_bin:
+  - lt3
+  - 3to12
+  - gt12
+  - gt30
+  - unknown
+  amount_bin:
+  - lt10k
+  - 10k_1l
+  - 1l_10l
+  - 10l_1cr
+  - gt1cr
+  - unknown
+  delay_years_bin:
+  - lt1
+  - 1to3
+  - 3to12
+  - gt12
+  - unknown
+categories:
+  Instrument:
+    n: 16
+    subcategories:
+      sale_deed:
+        name: Sale Deed
+        source: schema:3_parties_subject_property_and_relationships_4.Governing Instrument
+      lease_deed:
+        name: Lease Deed
+        source: schema:3_parties_subject_property_and_relationships_4.Governing Instrument
+      sub_lease_deed:
+        name: Sub-Lease Deed
+        source: schema:3_parties_subject_property_and_relationships_4.Governing Instrument
+      conveyance:
+        name: Conveyance
+        source: schema:3_parties_subject_property_and_relationships_4.Governing Instrument
+      agreement_to_sell:
+        name: Agreement to Sell
+        source: schema:3_parties_subject_property_and_relationships_4.Governing Instrument
+      gift_deed:
+        name: Gift Deed
+        source: schema:3_parties_subject_property_and_relationships_4.Governing Instrument
+      will:
+        name: Will
+        source: schema:3_parties_subject_property_and_relationships_4.Governing Instrument
+      mortgage_deed:
+        name: Mortgage Deed
+        source: schema:3_parties_subject_property_and_relationships_4.Governing Instrument
+      allotment_letter:
+        name: Allotment Letter
+        source: schema:3_parties_subject_property_and_relationships_4.Governing Instrument
+      development_agreement:
+        name: Development Agreement
+        source: schema:3_parties_subject_property_and_relationships_4.Governing Instrument
+      redevelopment_agreement:
+        name: Redevelopment Agreement
+        source: schema:3_parties_subject_property_and_relationships_4.Governing Instrument
+      government_resolution:
+        name: Government Resolution
+        source: schema:3_parties_subject_property_and_relationships_4.Governing Instrument
+      tender:
+        name: Tender
+        source: schema:3_parties_subject_property_and_relationships_4.Governing Instrument
+      sanction_plan:
+        name: Sanction Plan
+        source: schema:3_parties_subject_property_and_relationships_4.Governing Instrument
+      revenue_record:
+        name: Revenue Record
+        source: schema:3_parties_subject_property_and_relationships_4.Governing Instrument
+      court_order:
+        name: Court Order
+        source: schema:3_parties_subject_property_and_relationships_4.Governing Instrument
+  Relationship:
+    n: 17
+    subcategories:
+      ownership:
+        name: Ownership
+        source: schema:3_parties_subject_property_and_relationships_4.Property Interest Relationship
+      co_ownership:
+        name: Co-ownership
+        source: schema:3_parties_subject_property_and_relationships_4.Property Interest Relationship
+      leasehold:
+        name: Leasehold
+        source: schema:3_parties_subject_property_and_relationships_4.Property Interest Relationship
+      sub_lease:
+        name: Sub-Lease
+        source: schema:3_parties_subject_property_and_relationships_4.Property Interest Relationship
+      tenancy:
+        name: Tenancy
+        source: schema:3_parties_subject_property_and_relationships_4.Property Interest Relationship
+      license:
+        name: License
+        source: schema:3_parties_subject_property_and_relationships_4.Property Interest Relationship
+      allotment:
+        name: Allotment
+        source: schema:3_parties_subject_property_and_relationships_4.Property Interest Relationship
+      possession:
+        name: Possession
+        source: schema:3_parties_subject_property_and_relationships_4.Property Interest Relationship
+      development_right:
+        name: Development Right
+        source: schema:3_parties_subject_property_and_relationships_4.Property Interest Relationship
+      redevelopment_right:
+        name: Redevelopment Right
+        source: schema:3_parties_subject_property_and_relationships_4.Property Interest Relationship
+      rehabilitation_right:
+        name: Rehabilitation Right
+        source: schema:3_parties_subject_property_and_relationships_4.Property Interest Relationship
+      easement:
+        name: Easement
+        source: schema:3_parties_subject_property_and_relationships_4.Property Interest Relationship
+      inheritance:
+        name: Inheritance
+        source: schema:3_parties_subject_property_and_relationships_4.Property Interest Relationship
+      mortgage:
+        name: Mortgage
+        source: schema:3_parties_subject_property_and_relationships_4.Property Interest Relationship
+      agreement_to_sell:
+        name: Agreement to Sell
+        source: schema:3_parties_subject_property_and_relationships_4.Property Interest Relationship
+      benami_allegation:
+        name: Benami Allegation
+        source: schema:3_parties_subject_property_and_relationships_4.Property Interest Relationship
+      acquisition:
+        name: Acquisition
+        source: schema:3_parties_subject_property_and_relationships_4.Property Interest Relationship
+  RightClaimed:
+    n: 17
+    subcategories:
+      title:
+        name: Title
+        source: schema:3_parties_subject_property_and_relationships_4.Property Rights Claimed
+      possession:
+        name: Possession
+        source: schema:3_parties_subject_property_and_relationships_4.Property Rights Claimed
+      enjoyment:
+        name: Enjoyment
+        source: schema:3_parties_subject_property_and_relationships_4.Property Rights Claimed
+      development:
+        name: Development
+        source: schema:3_parties_subject_property_and_relationships_4.Property Rights Claimed
+      redevelopment:
+        name: Redevelopment
+        source: schema:3_parties_subject_property_and_relationships_4.Property Rights Claimed
+      consent:
+        name: Consent
+        source: schema:3_parties_subject_property_and_relationships_4.Property Rights Claimed
+      rehabilitation:
+        name: Rehabilitation
+        source: schema:3_parties_subject_property_and_relationships_4.Property Rights Claimed
+      compensation:
+        name: Compensation
+        source: schema:3_parties_subject_property_and_relationships_4.Property Rights Claimed
+      fsi_tdr:
+        name: FSI/TDR
+        source: schema:3_parties_subject_property_and_relationships_4.Property Rights Claimed
+      mutation:
+        name: Mutation
+        source: schema:3_parties_subject_property_and_relationships_4.Property Rights Claimed
+      injunction:
+        name: Injunction
+        source: schema:3_parties_subject_property_and_relationships_4.Property Rights Claimed
+      restoration:
+        name: Restoration
+        source: schema:3_parties_subject_property_and_relationships_4.Property Rights Claimed
+      partition:
+        name: Partition
+        source: schema:3_parties_subject_property_and_relationships_4.Property Rights Claimed
+      specific_performance:
+        name: Specific Performance
+        source: schema:3_parties_subject_property_and_relationships_4.Property Rights Claimed
+      cancellation:
+        name: Cancellation
+        source: schema:3_parties_subject_property_and_relationships_4.Property Rights Claimed
+      redemption:
+        name: Redemption
+        source: schema:3_parties_subject_property_and_relationships_4.Property Rights Claimed
+      succession:
+        name: Succession
+        source: schema:3_parties_subject_property_and_relationships_4.Property Rights Claimed
+  Statute:
+    n: 16
+    subcategories:
+      transfer_of_property_act:
+        name: Transfer of Property Act
+        source: schema:3_parties_subject_property_and_relationships_4.Governing Statutory Framework
+      registration_act:
+        name: Registration Act
+        source: schema:3_parties_subject_property_and_relationships_4.Governing Statutory Framework
+      specific_relief_act:
+        name: Specific Relief Act
+        source: schema:3_parties_subject_property_and_relationships_4.Governing Statutory Framework
+      limitation_act:
+        name: Limitation Act
+        source: schema:3_parties_subject_property_and_relationships_4.Governing Statutory Framework
+      land_revenue_code:
+        name: Land Revenue Code
+        source: schema:3_parties_subject_property_and_relationships_4.Governing Statutory Framework
+      co_operative_societies_act:
+        name: Co-operative Societies Act
+        source: schema:3_parties_subject_property_and_relationships_4.Governing Statutory Framework
+      town_planning_law:
+        name: Town Planning Law
+        source: schema:3_parties_subject_property_and_relationships_4.Governing Statutory Framework
+      development_control_regulations:
+        name: Development Control Regulations
+        source: schema:3_parties_subject_property_and_relationships_4.Governing Statutory Framework
+      slum_law:
+        name: Slum Law
+        source: schema:3_parties_subject_property_and_relationships_4.Governing Statutory Framework
+      land_acquisition_law:
+        name: Land Acquisition Law
+        source: schema:3_parties_subject_property_and_relationships_4.Governing Statutory Framework
+      benami_act:
+        name: Benami Act
+        source: schema:3_parties_subject_property_and_relationships_4.Governing Statutory Framework
+      hindu_succession_act:
+        name: Hindu Succession Act
+        source: schema:3_parties_subject_property_and_relationships_4.Governing Statutory Framework
+      muslim_personal_law_shariat:
+        name: Muslim Personal Law/Shariat
+        source: schema:3_parties_subject_property_and_relationships_4.Governing Statutory Framework
+      indian_succession_act:
+        name: Indian Succession Act
+        source: schema:3_parties_subject_property_and_relationships_4.Governing Statutory Framework
+      municipal_law:
+        name: Municipal Law
+        source: schema:3_parties_subject_property_and_relationships_4.Governing Statutory Framework
+      constitution_of_india:
+        name: Constitution of India
+        source: schema:3_parties_subject_property_and_relationships_4.Governing Statutory Framework
+  Constitutional:
+    n: 10
+    subcategories:
+      article_14:
+        name: Article 14
+        source: schema:3_parties_subject_property_and_relationships_4.Constitutional / Equitable Relationship
+      article_19:
+        name: Article 19(1)(c)
+        source: schema:3_parties_subject_property_and_relationships_4.Constitutional / Equitable Relationship
+      article_21:
+        name: Article 21
+        source: schema:3_parties_subject_property_and_relationships_4.Constitutional / Equitable Relationship
+      article_226:
+        name: Article 226
+        source: schema:3_parties_subject_property_and_relationships_4.Constitutional / Equitable Relationship
+      article_300a:
+        name: Article 300A
+        source: schema:3_parties_subject_property_and_relationships_4.Constitutional / Equitable Relationship
+      natural_justice:
+        name: Natural Justice
+        source: schema:3_parties_subject_property_and_relationships_4.Constitutional / Equitable Relationship
+      legitimate_expectation:
+        name: Legitimate Expectation
+        source: schema:3_parties_subject_property_and_relationships_4.Constitutional / Equitable Relationship
+      promissory_estoppel:
+        name: Promissory Estoppel
+        source: schema:3_parties_subject_property_and_relationships_4.Constitutional / Equitable Relationship
+      public_trust:
+        name: Public Trust
+        source: schema:3_parties_subject_property_and_relationships_4.Constitutional / Equitable Relationship
+      equity:
+        name: Equity
+        source: schema:3_parties_subject_property_and_relationships_4.Constitutional / Equitable Relationship
+  Possession:
+    n: 7
+    subcategories:
+      in_possession:
+        name: In Possession
+        source: schema:3_parties_subject_property_and_relationships.Possession Status
+      dispossessed:
+        name: Dispossessed
+        source: schema:3_parties_subject_property_and_relationships.Possession Status
+      threatened_dispossession:
+        name: Threatened Dispossession
+        source: schema:3_parties_subject_property_and_relationships.Possession Status
+      transit_occupant:
+        name: Transit Occupant
+        source: schema:3_parties_subject_property_and_relationships.Possession Status
+      constructive_possession:
+        name: Constructive Possession
+        source: schema:3_parties_subject_property_and_relationships.Possession Status
+      disputed_possession:
+        name: Disputed Possession
+        source: schema:3_parties_subject_property_and_relationships.Possession Status
+      unknown:
+        name: Unknown
+        source: schema:3_parties_subject_property_and_relationships.Possession Status
+  PropertyType:
+    n: 14
+    subcategories:
+      land:
+        name: Land
+        source: schema:3_parties_subject_property_and_relationships_3.Property Type
+      building:
+        name: Building
+        source: schema:3_parties_subject_property_and_relationships_3.Property Type
+      flat:
+        name: Flat
+        source: schema:3_parties_subject_property_and_relationships_3.Property Type
+      tenement:
+        name: Tenement
+        source: schema:3_parties_subject_property_and_relationships_3.Property Type
+      agricultural_land:
+        name: Agricultural Land
+        source: schema:3_parties_subject_property_and_relationships_3.Property Type
+      non_agricultural_land:
+        name: Non-Agricultural Land
+        source: schema:3_parties_subject_property_and_relationships_3.Property Type
+      slum_property:
+        name: Slum Property
+        source: schema:3_parties_subject_property_and_relationships_3.Property Type
+      society_property:
+        name: Society Property
+        source: schema:3_parties_subject_property_and_relationships_3.Property Type
+      leasehold_plot:
+        name: Leasehold Plot
+        source: schema:3_parties_subject_property_and_relationships_3.Property Type
+      government_land:
+        name: Government Land
+        source: schema:3_parties_subject_property_and_relationships_3.Property Type
+      redevelopment_layout:
+        name: Redevelopment Layout
+        source: schema:3_parties_subject_property_and_relationships_3.Property Type
+      mortgaged_property:
+        name: Mortgaged Property
+        source: schema:3_parties_subject_property_and_relationships_3.Property Type
+      ancestral_property:
+        name: Ancestral Property
+        source: schema:3_parties_subject_property_and_relationships_3.Property Type
+      acquired_land:
+        name: Acquired Land
+        source: schema:3_parties_subject_property_and_relationships_3.Property Type
+  Tenure:
+    n: 12
+    subcategories:
+      freehold:
+        name: Freehold
+        source: schema:3_parties_subject_property_and_relationships_3.Tenure Type
+      leasehold:
+        name: Leasehold
+        source: schema:3_parties_subject_property_and_relationships_3.Tenure Type
+      sub_lease:
+        name: Sub-Lease
+        source: schema:3_parties_subject_property_and_relationships_3.Tenure Type
+      license:
+        name: License
+        source: schema:3_parties_subject_property_and_relationships_3.Tenure Type
+      tenancy:
+        name: Tenancy
+        source: schema:3_parties_subject_property_and_relationships_3.Tenure Type
+      allotment:
+        name: Allotment
+        source: schema:3_parties_subject_property_and_relationships_3.Tenure Type
+      occupancy_right:
+        name: Occupancy Right
+        source: schema:3_parties_subject_property_and_relationships_3.Tenure Type
+      possessory_claim:
+        name: Possessory Claim
+        source: schema:3_parties_subject_property_and_relationships_3.Tenure Type
+      government_grant:
+        name: Government Grant
+        source: schema:3_parties_subject_property_and_relationships_3.Tenure Type
+      mortgage:
+        name: Mortgage
+        source: schema:3_parties_subject_property_and_relationships_3.Tenure Type
+      inheritance:
+        name: Inheritance
+        source: schema:3_parties_subject_property_and_relationships_3.Tenure Type
+      disputed_tenure:
+        name: Disputed Tenure
+        source: schema:3_parties_subject_property_and_relationships_3.Tenure Type
+  Encumbrance:
+    n: 11
+    subcategories:
+      clear:
+        name: Clear
+        source: schema:3_parties_subject_property_and_relationships_3.Encumbrance Status
+      mortgaged:
+        name: Mortgaged
+        source: schema:3_parties_subject_property_and_relationships_3.Encumbrance Status
+      leased:
+        name: Leased
+        source: schema:3_parties_subject_property_and_relationships_3.Encumbrance Status
+      licensed:
+        name: Licensed
+        source: schema:3_parties_subject_property_and_relationships_3.Encumbrance Status
+      tenanted:
+        name: Tenanted
+        source: schema:3_parties_subject_property_and_relationships_3.Encumbrance Status
+      reserved:
+        name: Reserved
+        source: schema:3_parties_subject_property_and_relationships_3.Encumbrance Status
+      acquired:
+        name: Acquired
+        source: schema:3_parties_subject_property_and_relationships_3.Encumbrance Status
+      encroached:
+        name: Encroached
+        source: schema:3_parties_subject_property_and_relationships_3.Encumbrance Status
+      litigated:
+        name: Litigated
+        source: schema:3_parties_subject_property_and_relationships_3.Encumbrance Status
+      attached:
+        name: Attached
+        source: schema:3_parties_subject_property_and_relationships_3.Encumbrance Status
+      unknown:
+        name: Unknown
+        source: schema:3_parties_subject_property_and_relationships_3.Encumbrance Status
+  LandUse:
+    n: 10
+    subcategories:
+      residential:
+        name: Residential
+        source: schema:3_parties_subject_property_and_relationships_3.Land Use Classification
+      commercial:
+        name: Commercial
+        source: schema:3_parties_subject_property_and_relationships_3.Land Use Classification
+      industrial:
+        name: Industrial
+        source: schema:3_parties_subject_property_and_relationships_3.Land Use Classification
+      agricultural:
+        name: Agricultural
+        source: schema:3_parties_subject_property_and_relationships_3.Land Use Classification
+      mixed_use:
+        name: Mixed-Use
+        source: schema:3_parties_subject_property_and_relationships_3.Land Use Classification
+      public_purpose:
+        name: Public Purpose
+        source: schema:3_parties_subject_property_and_relationships_3.Land Use Classification
+      reserved_land:
+        name: Reserved Land
+        source: schema:3_parties_subject_property_and_relationships_3.Land Use Classification
+      slum:
+        name: Slum
+        source: schema:3_parties_subject_property_and_relationships_3.Land Use Classification
+      redevelopment_zone:
+        name: Redevelopment Zone
+        source: schema:3_parties_subject_property_and_relationships_3.Land Use Classification
+      acquisition_zone:
+        name: Acquisition Zone
+        source: schema:3_parties_subject_property_and_relationships_3.Land Use Classification
+  PartyRole:
+    n: 31
+    subcategories:
+      owner:
+        name: Owner
+        source: schema:3_parties_subject_property_and_relationships.Property Role
+      co_owner:
+        name: Co-owner
+        source: schema:3_parties_subject_property_and_relationships.Property Role
+      lessee:
+        name: Lessee
+        source: schema:3_parties_subject_property_and_relationships.Property Role
+      sub_lessee:
+        name: Sub-Lessee
+        source: schema:3_parties_subject_property_and_relationships.Property Role
+      licensee:
+        name: Licensee
+        source: schema:3_parties_subject_property_and_relationships.Property Role
+      tenant:
+        name: Tenant
+        source: schema:3_parties_subject_property_and_relationships.Property Role
+      occupant:
+        name: Occupant
+        source: schema:3_parties_subject_property_and_relationships.Property Role
+      allottee:
+        name: Allottee
+        source: schema:3_parties_subject_property_and_relationships.Property Role
+      society:
+        name: Society
+        source: schema:3_parties_subject_property_and_relationships.Property Role
+      society_member:
+        name: Society Member
+        source: schema:3_parties_subject_property_and_relationships.Property Role
+      developer:
+        name: Developer
+        source: schema:3_parties_subject_property_and_relationships.Property Role
+      purchaser:
+        name: Purchaser
+        source: schema:3_parties_subject_property_and_relationships.Property Role
+      heir:
+        name: Heir
+        source: schema:3_parties_subject_property_and_relationships.Property Role
+      possessor:
+        name: Possessor
+        source: schema:3_parties_subject_property_and_relationships.Property Role
+      mortgagor:
+        name: Mortgagor
+        source: schema:3_parties_subject_property_and_relationships.Property Role
+      mortgagee:
+        name: Mortgagee
+        source: schema:3_parties_subject_property_and_relationships.Property Role
+      beneficiary:
+        name: Beneficiary
+        source: schema:3_parties_subject_property_and_relationships.Property Role
+      benamidar:
+        name: Benamidar
+        source: schema:3_parties_subject_property_and_relationships.Property Role
+      real_owner:
+        name: Real Owner
+        source: schema:3_parties_subject_property_and_relationships.Property Role
+      acquiring_authority_challenger:
+        name: Acquiring Authority Challenger
+        source: schema:3_parties_subject_property_and_relationships.Property Role
+      state:
+        name: State
+        source: schema:3_parties_subject_property_and_relationships_2.Property Role
+      statutory_authority:
+        name: Statutory Authority
+        source: schema:3_parties_subject_property_and_relationships_2.Property Role
+      municipal_corporation:
+        name: Municipal Corporation
+        source: schema:3_parties_subject_property_and_relationships_2.Property Role
+      planning_authority:
+        name: Planning Authority
+        source: schema:3_parties_subject_property_and_relationships_2.Property Role
+      superior_lessor:
+        name: Superior Lessor
+        source: schema:3_parties_subject_property_and_relationships_2.Property Role
+      landlord:
+        name: Landlord
+        source: schema:3_parties_subject_property_and_relationships_2.Property Role
+      acquiring_body:
+        name: Acquiring Body
+        source: schema:3_parties_subject_property_and_relationships_2.Property Role
+      adverse_claimant:
+        name: Adverse Claimant
+        source: schema:3_parties_subject_property_and_relationships_2.Property Role
+      encroacher:
+        name: Encroacher
+        source: schema:3_parties_subject_property_and_relationships_2.Property Role
+      transferee:
+        name: Transferee
+        source: schema:3_parties_subject_property_and_relationships_2.Property Role
+      purchaser_pendente_lite:
+        name: Purchaser Pendente Lite
+        source: schema:3_parties_subject_property_and_relationships_2.Property Role
+  Event:
+    n: 20
+    subcategories:
+      transaction_breach:
+        name: Transaction Breach
+        source: schema:1_procedural_history_and_events.Event.subtype
+      agreement_executed:
+        name: Agreement Executed
+        source: schema:1_procedural_history_and_events.Event.subtype
+      mutation_applied:
+        name: Mutation Applied
+        source: schema:1_procedural_history_and_events.Event.subtype
+      mutation_rejected:
+        name: Mutation Rejected
+        source: schema:1_procedural_history_and_events.Event.subtype
+      dispossession:
+        name: Dispossession
+        source: schema:1_procedural_history_and_events.Event.subtype
+      possession_taken:
+        name: Possession Taken
+        source: schema:1_procedural_history_and_events.Event.subtype
+      demolition_threatened:
+        name: Demolition Threatened
+        source: schema:1_procedural_history_and_events.Event.subtype
+      notice_issued:
+        name: Notice Issued
+        source: schema:1_procedural_history_and_events.Event.subtype
+      notice_served:
+        name: Notice Served
+        source: schema:1_procedural_history_and_events.Event.subtype
+      authority_order_issued:
+        name: Authority Order Issued
+        source: schema:1_procedural_history_and_events.Event.subtype
+      suit_filed:
+        name: Suit Filed
+        source: schema:1_procedural_history_and_events.Event.subtype
+      writ_filed:
+        name: Writ Filed
+        source: schema:1_procedural_history_and_events.Event.subtype
+      interim_order_granted:
+        name: Interim Order Granted
+        source: schema:1_procedural_history_and_events.Event.subtype
+      interim_order_refused:
+        name: Interim Order Refused
+        source: schema:1_procedural_history_and_events.Event.subtype
+      decree_passed:
+        name: Decree Passed
+        source: schema:1_procedural_history_and_events.Event.subtype
+      appeal_filed:
+        name: Appeal Filed
+        source: schema:1_procedural_history_and_events.Event.subtype
+      appeal_decided:
+        name: Appeal Decided
+        source: schema:1_procedural_history_and_events.Event.subtype
+      remand_ordered:
+        name: Remand Ordered
+        source: schema:1_procedural_history_and_events.Event.subtype
+      settlement_attempt:
+        name: Settlement Attempt
+        source: schema:1_procedural_history_and_events.Event.subtype
+      dispute_arisen:
+        name: Dispute Arisen
+        source: schema:1_procedural_history_and_events.Event.subtype
+  Evidence:
+    n: 63
+    subcategories:
+      sale_deed:
+        name: Sale deed
+        source: evidence_groups:title_tenure_evidence
+      conveyance:
+        name: conveyance
+        source: evidence_groups:title_tenure_evidence
+      gift:
+        name: gift
+        source: evidence_groups:title_tenure_evidence
+      partition:
+        name: partition
+        source: evidence_groups:title_tenure_evidence
+      will:
+        name: will
+        source: evidence_groups:title_tenure_evidence
+      succession_records:
+        name: succession records
+        source: evidence_groups:title_tenure_evidence
+      lease_deed:
+        name: lease deed
+        source: evidence_groups:title_tenure_evidence
+      sub_lease:
+        name: sub-lease
+        source: evidence_groups:title_tenure_evidence
+      license:
+        name: license
+        source: evidence_groups:title_tenure_evidence
+      allotment_letter:
+        name: allotment letter
+        source: evidence_groups:title_tenure_evidence
+      mortgage_deed:
+        name: mortgage deed
+        source: evidence_groups:title_tenure_evidence
+      renewal_records:
+        name: renewal records
+        source: evidence_groups:title_tenure_evidence
+      mutation_entries:
+        name: mutation entries
+        source: evidence_groups:title_tenure_evidence
+      7_12_extracts:
+        name: 7/12 extracts
+        source: evidence_groups:title_tenure_evidence
+      property_cards:
+        name: property cards
+        source: evidence_groups:title_tenure_evidence
+      record_of_rights:
+        name: record of rights
+        source: evidence_groups:title_tenure_evidence
+      encumbrance_certificates:
+        name: encumbrance certificates
+        source: evidence_groups:title_tenure_evidence
+      index_ii:
+        name: Index-II
+        source: evidence_groups:title_tenure_evidence
+      search_reports:
+        name: search reports
+        source: evidence_groups:title_tenure_evidence
+      possession_receipts:
+        name: Possession receipts
+        source: evidence_groups:possession_site_evidence
+      tax_receipts:
+        name: tax receipts
+        source: evidence_groups:possession_site_evidence
+      utility_bills:
+        name: utility bills
+        source: evidence_groups:possession_site_evidence
+      maintenance_records:
+        name: maintenance records
+        source: evidence_groups:possession_site_evidence
+      survey_maps:
+        name: survey maps
+        source: evidence_groups:possession_site_evidence
+      demarcation_reports:
+        name: demarcation reports
+        source: evidence_groups:possession_site_evidence
+      measurement_sheets:
+        name: measurement sheets
+        source: evidence_groups:possession_site_evidence
+      site_plans:
+        name: site plans
+        source: evidence_groups:possession_site_evidence
+      photographs:
+        name: photographs
+        source: evidence_groups:possession_site_evidence
+      inspection_reports:
+        name: inspection reports
+        source: evidence_groups:possession_site_evidence
+      panchanamas:
+        name: panchanamas
+        source: evidence_groups:possession_site_evidence
+      occupancy_records:
+        name: occupancy records
+        source: evidence_groups:possession_site_evidence
+      witness_statements:
+        name: witness statements
+        source: evidence_groups:possession_site_evidence
+      development_regulations:
+        name: Development regulations
+        source: evidence_groups:planning_redevelopment_evidence
+      sanctioned_plans:
+        name: sanctioned plans
+        source: evidence_groups:planning_redevelopment_evidence
+      layout_plans:
+        name: layout plans
+        source: evidence_groups:planning_redevelopment_evidence
+      building_permissions:
+        name: building permissions
+        source: evidence_groups:planning_redevelopment_evidence
+      grs:
+        name: GRs
+        source: evidence_groups:planning_redevelopment_evidence
+      notifications:
+        name: notifications
+        source: evidence_groups:planning_redevelopment_evidence
+      circulars:
+        name: circulars
+        source: evidence_groups:planning_redevelopment_evidence
+      policy_directions:
+        name: policy directions
+        source: evidence_groups:planning_redevelopment_evidence
+      tender_documents:
+        name: tender documents
+        source: evidence_groups:planning_redevelopment_evidence
+      developer_agreements:
+        name: developer agreements
+        source: evidence_groups:planning_redevelopment_evidence
+      project_reports:
+        name: project reports
+        source: evidence_groups:planning_redevelopment_evidence
+      consent_records:
+        name: consent records
+        source: evidence_groups:planning_redevelopment_evidence
+      rehabilitation_statements:
+        name: rehabilitation statements
+        source: evidence_groups:planning_redevelopment_evidence
+      notices:
+        name: Notices
+        source: evidence_groups:administrative_procedural_evidence
+      orders:
+        name: orders
+        source: evidence_groups:administrative_procedural_evidence
+      hearing_records:
+        name: hearing records
+        source: evidence_groups:administrative_procedural_evidence
+      representations:
+        name: representations
+        source: evidence_groups:administrative_procedural_evidence
+      speaking_orders:
+        name: speaking orders
+        source: evidence_groups:administrative_procedural_evidence
+      tribunal_proceedings:
+        name: tribunal proceedings
+        source: evidence_groups:administrative_procedural_evidence
+      revenue_appeals:
+        name: revenue appeals
+        source: evidence_groups:administrative_procedural_evidence
+      prior_suits:
+        name: prior suits
+        source: evidence_groups:administrative_procedural_evidence
+      writ_records:
+        name: writ records
+        source: evidence_groups:administrative_procedural_evidence
+      alternative_remedy_records:
+        name: alternative remedy records
+        source: evidence_groups:administrative_procedural_evidence
+      limitation_records:
+        name: limitation records
+        source: evidence_groups:administrative_procedural_evidence
+      prior_adjudications:
+        name: prior adjudications
+        source: evidence_groups:administrative_procedural_evidence
+      title_search_report:
+        name: Title search report
+        source: evidence_groups:expert_evidence
+      surveyor_architect_planner_report:
+        name: surveyor/architect/planner report
+        source: evidence_groups:expert_evidence
+      valuation_report:
+        name: valuation report
+        source: evidence_groups:expert_evidence
+      structural_safety_report:
+        name: structural/safety report
+        source: evidence_groups:expert_evidence
+      rehabilitation_compensation_assessment:
+        name: rehabilitation/compensation assessment
+        source: evidence_groups:expert_evidence
+      forensic_handwriting_fingerprint_report:
+        name: forensic handwriting/fingerprint report
+        source: evidence_groups:expert_evidence
+  Defense:
+    n: 43
+    subcategories:
+      no_title:
+        name: No Title
+        source: defenses:title_tenure_defense
+      defective_title:
+        name: Defective Title
+        source: defenses:title_tenure_defense
+      expired_lease:
+        name: Expired Lease
+        source: defenses:title_tenure_defense
+      breach_of_lease:
+        name: Breach of Lease
+        source: defenses:title_tenure_defense
+      no_conveyance:
+        name: No Conveyance
+        source: defenses:title_tenure_defense
+      no_mutation:
+        name: No Mutation
+        source: defenses:title_tenure_defense
+      permissive_possession:
+        name: Permissive Possession
+        source: defenses:title_tenure_defense
+      unauthorized_occupation:
+        name: Unauthorized Occupation
+        source: defenses:title_tenure_defense
+      larger_public_interest:
+        name: Larger Public Interest
+        source: defenses:public_interest_planning_policy_defense
+      urban_renewal:
+        name: Urban Renewal
+        source: defenses:public_interest_planning_policy_defense
+      housing_stock_increase:
+        name: Housing Stock Increase
+        source: defenses:public_interest_planning_policy_defense
+      infrastructure_upgrade:
+        name: Infrastructure Upgrade
+        source: defenses:public_interest_planning_policy_defense
+      sustainable_town_planning:
+        name: Sustainable Town Planning
+        source: defenses:public_interest_planning_policy_defense
+      safety:
+        name: Safety
+        source: defenses:public_interest_planning_policy_defense
+      executive_policy_discretion:
+        name: Executive Policy Discretion
+        source: defenses:public_interest_planning_policy_defense
+      lessee_rights_subservient_to_superior_lessor:
+        name: Lessee rights subservient to superior lessor
+        source: defenses:statutory_regulatory_subservience_defense
+      special_statute_override:
+        name: special statute override
+        source: defenses:statutory_regulatory_subservience_defense
+      authority_owned_land:
+        name: authority-owned land
+        source: defenses:statutory_regulatory_subservience_defense
+      statutory_power_to_redevelop:
+        name: statutory power to redevelop
+        source: defenses:statutory_regulatory_subservience_defense
+      compliance_with_parent_act:
+        name: compliance with parent Act
+        source: defenses:statutory_regulatory_subservience_defense
+      consent_not_required:
+        name: Consent not required
+        source: defenses:consent_compliance_defense
+      majority_consent:
+        name: majority consent
+        source: defenses:consent_compliance_defense
+      statutory_waiver:
+        name: statutory waiver
+        source: defenses:consent_compliance_defense
+      authority_ownership:
+        name: authority ownership
+        source: defenses:consent_compliance_defense
+      regulation_tender_or_rehabilitation_compliance:
+        name: regulation, tender, or rehabilitation compliance
+        source: defenses:consent_compliance_defense
+      alternative_remedy:
+        name: Alternative Remedy
+        source: defenses:procedural_forum_defense
+      delay:
+        name: Delay
+        source: defenses:procedural_forum_defense
+      laches:
+        name: Laches
+        source: defenses:procedural_forum_defense
+      limitation:
+        name: Limitation
+        source: defenses:procedural_forum_defense
+      res_judicata:
+        name: Res Judicata
+        source: defenses:procedural_forum_defense
+      maintainability:
+        name: Maintainability
+        source: defenses:procedural_forum_defense
+      jurisdiction:
+        name: Jurisdiction
+        source: defenses:procedural_forum_defense
+      non_joinder:
+        name: Non-Joinder
+        source: defenses:procedural_forum_defense
+      prematurity:
+        name: Prematurity
+        source: defenses:procedural_forum_defense
+      tribunal_first_instance:
+        name: Tribunal first instance
+        source: defenses:procedural_forum_defense
+      acquiescence:
+        name: Acquiescence
+        source: defenses:equitable_defense
+      waiver:
+        name: Waiver
+        source: defenses:equitable_defense
+      estoppel:
+        name: Estoppel
+        source: defenses:equitable_defense
+      unclean_hands:
+        name: Unclean Hands
+        source: defenses:equitable_defense
+      suppression_of_facts:
+        name: Suppression of Facts
+        source: defenses:equitable_defense
+      unauthorized_construction:
+        name: Unauthorized Construction
+        source: defenses:equitable_defense
+      illegal_occupation:
+        name: Illegal Occupation
+        source: defenses:equitable_defense
+      encroachment:
+        name: Encroachment
+        source: defenses:equitable_defense
+  Element:
+    n: 58
+    subcategories:
+      right_interest:
+        name: Right / Interest
+        definition: legally recognized property interest.
+        source: claim_elements:claim_01
+        claim_id: claim_01
+        element_id: claim_01_e01
+      source:
+        name: Source
+        definition: valid legal source of right.
+        source: claim_elements:claim_01
+        claim_id: claim_01
+        element_id: claim_01_e02
+      breach_cloud:
+        name: Breach / Cloud
+        definition: competing claim, denial, cancellation, mutation dispute, encumbrance, or adverse action.
+        source: claim_elements:claim_01
+        claim_id: claim_01
+        element_id: claim_01_e03
+      harm:
+        name: Harm
+        definition: loss, impairment, uncertainty, or threatened deprivation.
+        source: claim_elements:claim_01
+        claim_id: claim_01
+        element_id: claim_01_e04
+      possessory_right:
+        name: Possessory Right
+        definition: actual, constructive, lawful, settled, or protected possession.
+        source: claim_elements:claim_02
+        claim_id: claim_02
+        element_id: claim_02_e01
+      interference:
+        name: Interference
+        definition: threat, dispossession, demolition, obstruction, encroachment, eviction, construction,
+          transfer, or denial of access.
+        source: claim_elements:claim_02
+        claim_id: claim_02
+        element_id: claim_02_e02
+      illegality_lack_of_due_process:
+        name: Illegality / Lack of Due Process
+        definition: absence of notice, authority, hearing, statutory compliance, or lawful procedure.
+        source: claim_elements:claim_02
+        claim_id: claim_02
+        element_id: claim_02_e03
+      tenure_right:
+        name: Tenure Right
+        definition: leasehold, sub-lease, tenancy, license, allotment, or occupancy right.
+        source: claim_elements:claim_03
+        claim_id: claim_03
+        element_id: claim_03_e01
+      obligation:
+        name: Obligation
+        definition: duty under lease, statute, allotment terms, rent law, housing law, or authority regulations.
+        source: claim_elements:claim_03
+        claim_id: claim_03
+        element_id: claim_03_e02
+      breach:
+        name: Breach
+        definition: unlawful termination, non-renewal, refusal of NOC, rent/premium dispute, redevelopment
+          override, or denial of enjoyment.
+        source: claim_elements:claim_03
+        claim_id: claim_03
+        element_id: claim_03_e03
+      authority:
+        name: Authority
+        definition: statutory, contractual, ownership, planning, society, or public-authority power.
+        source: claim_elements:claim_04
+        claim_id: claim_04
+        element_id: claim_04_e01
+      compliance:
+        name: Compliance
+        definition: development regulations, planning law, consent requirements, tender process, rehabilitation
+          standards, and due process.
+        source: claim_elements:claim_04
+        claim_id: claim_04
+        element_id: claim_04_e02
+      breach_illegality:
+        name: Breach / Illegality
+        definition: lack of consent, lack of authority, arbitrary inclusion/exclusion, defective tender,
+          non-compliance, discrimination, ultra vires action, or unfair terms.
+        source: claim_elements:claim_04
+        claim_id: claim_04
+        element_id: claim_04_e03
+      state_action:
+        name: State Action
+        definition: GR, acquisition, reservation, demolition, redevelopment, cancellation, refusal, mutation
+          decision, tender, or regulatory restriction.
+        source: claim_elements:claim_05
+        claim_id: claim_05
+        element_id: claim_05_e01
+      legal_authority:
+        name: Legal Authority
+        definition: statutory power, delegated power, planning power, revenue power, acquisition power,
+          or executive policy.
+        source: claim_elements:claim_05
+        claim_id: claim_05
+        element_id: claim_05_e02
+      illegality:
+        name: Illegality
+        definition: ultra vires action, arbitrariness, discrimination, lack of notice, natural justice
+          violation, lack of compensation, or absence of authority of law.
+        source: claim_elements:claim_05
+        claim_id: claim_05
+        element_id: claim_05_e03
+      power_source:
+        name: Power Source
+        definition: Parent Act, delegated regulation, executive power, planning regulation, government
+          policy, or authority circular.
+        source: claim_elements:claim_06
+        claim_id: claim_06
+        element_id: claim_06_e01
+      legal_limit:
+        name: Legal Limit
+        definition: statutory procedure, consent requirement, hearing requirement, compensation requirement,
+          regulatory hierarchy, or constitutional safeguard.
+        source: claim_elements:claim_06
+        claim_id: claim_06
+        element_id: claim_06_e02
+      associational_right:
+        name: Associational Right
+        definition: society identity, member governance, consent right, general body control, or statutory
+          autonomy.
+        source: claim_elements:claim_07
+        claim_id: claim_07
+        element_id: claim_07_e01
+      procedure:
+        name: Procedure
+        definition: required resolution, majority threshold, notice, general body process, registrar approval,
+          or statutory amalgamation process.
+        source: claim_elements:claim_07
+        claim_id: claim_07
+        element_id: claim_07_e02
+      possession:
+        name: Possession
+        definition: actual, open, continuous, exclusive, and identifiable possession.
+        source: claim_elements:claim_08
+        claim_id: claim_08
+        element_id: claim_08_e01
+      hostility_adverseness:
+        name: Hostility / Adverseness
+        definition: possession adverse to true owner, not permissive or derivative.
+        source: claim_elements:claim_08
+        claim_id: claim_08
+        element_id: claim_08_e02
+      continuity_limitation_period:
+        name: Continuity / Limitation Period
+        definition: statutory period satisfied or disputed.
+        source: claim_elements:claim_08
+        claim_id: claim_08
+        element_id: claim_08_e03
+      knowledge_ouster:
+        name: Knowledge / Ouster
+        definition: owner knew or should have known of adverse claim.
+        source: claim_elements:claim_08
+        claim_id: claim_08
+        element_id: claim_08_e04
+      co_ownership_joint_status:
+        name: Co-ownership / Joint Status
+        definition: null
+        source: claim_elements:claim_09
+        claim_id: claim_09
+        element_id: claim_09_e01
+      quantifiable_share:
+        name: Quantifiable Share
+        definition: null
+        source: claim_elements:claim_09
+        claim_id: claim_09
+        element_id: claim_09_e02
+      demand_and_refusal:
+        name: Demand and Refusal
+        definition: null
+        source: claim_elements:claim_09
+        claim_id: claim_09
+        element_id: claim_09_e03
+      metes_and_bounds_feasibility:
+        name: Metes-and-Bounds Feasibility
+        definition: null
+        source: claim_elements:claim_09
+        claim_id: claim_09
+        element_id: claim_09_e04
+      valid_contract:
+        name: Valid Contract
+        definition: null
+        source: claim_elements:claim_10
+        claim_id: claim_10
+        element_id: claim_10_e01
+      payment_of_consideration_partial_or_full:
+        name: Payment of Consideration, partial or full
+        definition: null
+        source: claim_elements:claim_10
+        claim_id: claim_10
+        element_id: claim_10_e02
+      readiness_and_willingness:
+        name: Readiness and Willingness
+        definition: null
+        source: claim_elements:claim_10
+        claim_id: claim_10
+        element_id: claim_10_e03
+      breach_by_seller:
+        name: Breach by Seller
+        definition: null
+        source: claim_elements:claim_10
+        claim_id: claim_10
+        element_id: claim_10_e04
+      discretionary_and_equitable_suitability_of_relief:
+        name: Discretionary and equitable suitability of relief
+        definition: null
+        source: claim_elements:claim_10
+        claim_id: claim_10
+        element_id: claim_10_e05
+      execution_of_document:
+        name: Execution of Document
+        definition: null
+        source: claim_elements:claim_11
+        claim_id: claim_11
+        element_id: claim_11_e01
+      vitiating_factor:
+        name: Vitiating Factor
+        definition: fraud, coercion, impersonation, incapacity, absence of authority, or forgery.
+        source: claim_elements:claim_11
+        claim_id: claim_11
+        element_id: claim_11_e02
+      injury_or_cloud_on_claimant_right:
+        name: Injury or Cloud on Claimant Right
+        definition: null
+        source: claim_elements:claim_11
+        claim_id: claim_11
+        element_id: claim_11_e03
+      limitation_and_knowledge_of_instrument:
+        name: Limitation and knowledge of instrument
+        definition: null
+        source: claim_elements:claim_11
+        claim_id: claim_11
+        element_id: claim_11_e04
+      valid_mortgage:
+        name: Valid Mortgage
+        definition: null
+        source: claim_elements:claim_12
+        claim_id: claim_12
+        element_id: claim_12_e01
+      debt_subsistence_or_discharge:
+        name: Debt Subsistence or Discharge
+        definition: null
+        source: claim_elements:claim_12
+        claim_id: claim_12
+        element_id: claim_12_e02
+      tender_or_default:
+        name: Tender or Default
+        definition: null
+        source: claim_elements:claim_12
+        claim_id: claim_12
+        element_id: claim_12_e03
+      right_of_redemption_not_extinguished:
+        name: Right of Redemption not extinguished
+        definition: null
+        source: claim_elements:claim_12
+        claim_id: claim_12
+        element_id: claim_12_e04
+      limitation_and_accounting:
+        name: Limitation and accounting
+        definition: null
+        source: claim_elements:claim_12
+        claim_id: claim_12
+        element_id: claim_12_e05
+      death_of_owner:
+        name: Death of Owner
+        definition: null
+        source: claim_elements:claim_13
+        claim_id: claim_13
+        element_id: claim_13_e01
+      valid_will_or_rules_of_intestacy:
+        name: Valid Will or Rules of Intestacy
+        definition: null
+        source: claim_elements:claim_13
+        claim_id: claim_13
+        element_id: claim_13_e02
+      personal_law_applicability:
+        name: Personal Law Applicability
+        definition: null
+        source: claim_elements:claim_13
+        claim_id: claim_13
+        element_id: claim_13_e03
+      heirship_legatee_status:
+        name: Heirship / Legatee Status
+        definition: null
+        source: claim_elements:claim_13
+        claim_id: claim_13
+        element_id: claim_13_e04
+      mutation_or_possession_consequence:
+        name: Mutation or Possession Consequence
+        definition: null
+        source: claim_elements:claim_13
+        claim_id: claim_13
+        element_id: claim_13_e05
+      fictitious_or_nominal_ownership:
+        name: Fictitious or Nominal Ownership
+        definition: null
+        source: claim_elements:claim_14
+        claim_id: claim_14
+        element_id: claim_14_e01
+      source_of_consideration:
+        name: Source of Consideration
+        definition: null
+        source: claim_elements:claim_14
+        claim_id: claim_14
+        element_id: claim_14_e02
+      intention_to_benefit_real_owner:
+        name: Intention to Benefit Real Owner
+        definition: null
+        source: claim_elements:claim_14
+        claim_id: claim_14
+        element_id: claim_14_e03
+      possession_control_custody_of_documents:
+        name: Possession / Control / Custody of Documents
+        definition: null
+        source: claim_elements:claim_14
+        claim_id: claim_14
+        element_id: claim_14_e04
+      statutory_exception_if_invoked:
+        name: Statutory Exception, if invoked
+        definition: null
+        source: claim_elements:claim_14
+        claim_id: claim_14
+        element_id: claim_14_e05
+      public_purpose:
+        name: Public Purpose
+        definition: null
+        source: claim_elements:claim_15
+        claim_id: claim_15
+        element_id: claim_15_e01
+      statutory_notification:
+        name: Statutory Notification
+        definition: null
+        source: claim_elements:claim_15
+        claim_id: claim_15
+        element_id: claim_15_e02
+      due_process_hearing:
+        name: Due Process / Hearing
+        definition: null
+        source: claim_elements:claim_15
+        claim_id: claim_15
+        element_id: claim_15_e03
+      possession_taking:
+        name: Possession Taking
+        definition: null
+        source: claim_elements:claim_15
+        claim_id: claim_15
+        element_id: claim_15_e04
+      adequacy_of_compensation:
+        name: Adequacy of Compensation
+        definition: null
+        source: claim_elements:claim_15
+        claim_id: claim_15
+        element_id: claim_15_e05
+      limitation_and_challenge_timing:
+        name: Limitation and challenge timing
+        definition: null
+        source: claim_elements:claim_15
+        claim_id: claim_15
+        element_id: claim_15_e06
+claim_fact_templates:
+  claim_01:
+    name: Title / Ownership / Declaratory Rights
+    issue: Does the claimant hold a valid title, ownership interest, leasehold interest, allotment right,
+      possessory right, development right, or other legally protected property interest in the subject
+      property?
+    facts:
+    - Claimed property interest exists or is alleged.
+    - Chain of title or tenure is documented.
+    - Possession or enjoyment is established or disputed.
+    - Competing title or adverse claim exists.
+    - Property records support, contradict, or fail to reflect the claimed right.
+  claim_02:
+    name: Possession / Injunction / Dispossession
+    issue: Is the claimant entitled to protection or restoration of possession, or restraint against interference,
+      eviction, demolition, construction, transfer, or dispossession?
+    facts:
+    - Claimant is in possession or claims settled possession.
+    - Respondent interfered or threatened interference.
+    - Notice or due process is present, absent, defective, disputed, or unknown.
+    - Possession is lawful, unauthorized, disputed, protected, or unknown.
+    - Urgent threat requiring interim protection exists.
+  claim_03:
+    name: Lease / Tenancy / Allotment Rights
+    issue: Did the respondent unlawfully impair, terminate, override, or deny lease, tenancy, sub-lease,
+      allotment, occupancy, renewal, NOC, development, or enjoyment rights?
+    facts:
+    - Tenure document exists or is alleged.
+    - Tenure is subsisting, expired, terminated, disputed, renewable, or unknown.
+    - Breach or default is alleged by either side.
+    - Due process for termination or alteration is disputed.
+    - Superior statutory authority is invoked to override tenure rights.
+  claim_04:
+    name: Redevelopment / Planning / Development Rights
+    issue: Is the challenged redevelopment, planning, tender, developer appointment, consent process,
+      cluster inclusion, or rehabilitation scheme lawful and binding on affected property holders or occupants?
+    facts:
+    - Redevelopment scheme exists or is proposed.
+    - Scheme is self-redevelopment, authority-led, developer-led, cluster, slum, or integrated redevelopment.
+    - Consent requirement is required, waived, disputed, not applicable, or unknown.
+    - Public interest or planned development justification is asserted.
+    - Rehabilitation/compensation entitlement is provided, disputed, absent, or unknown.
+  claim_05:
+    name: Government Action / Constitutional Property Deprivation
+    issue: Did a State, statutory authority, municipal body, revenue authority, or public agency deprive,
+      restrict, dilute, or override property rights without authority of law, due process, equality, or
+      fair compensation?
+    facts:
+    - Public authority action exists or is threatened.
+    - Statutory source of power is identified or disputed.
+    - Notice and hearing were given, denied, defective, disputed, or unknown.
+    - Article 300A / Article 14 / Article 21 / Article 19 issue is raised.
+    - Public interest justification is asserted.
+  claim_06:
+    name: Ultra Vires Executive Action / Statutory Override
+    issue: Did the State or public authority exceed executive, delegated, statutory, planning, or regulatory
+      power by issuing directions that override binding law, statutory procedure, consent thresholds,
+      or vested property rights?
+    facts:
+    - Parent statute or regulation prescribes procedure.
+    - Impugned action alters, waives, bypasses, or overrides that procedure.
+    - Action is administrative/executive rather than legislative amendment.
+    - Affected party statutory protection is diluted or removed.
+    - Similarly situated parties are treated differently.
+  claim_07:
+    name: Co-operative Society / Associational Autonomy
+    issue: Does the challenged action force a society, group, association, or member body into redevelopment,
+      amalgamation, cluster treatment, or governance change without required consent, statutory process,
+      or associational autonomy protection?
+    facts:
+    - Claimant is a registered society, association, or member body.
+    - Scheme affects collective governance or society identity.
+    - Society-level or member-level consent is required, disputed, not required, or unknown.
+    - Statutory amalgamation/redevelopment process was followed, bypassed, defective, disputed, or unknown.
+    - Members objected, consented, split, were not consulted, or unknown.
+  claim_08:
+    name: Adverse Possession / Limitation / Long Possession
+    issue: Has long, open, continuous, hostile, and exclusive possession matured into a legally enforceable
+      right, or is the property claim barred by limitation, delay, or laches?
+    facts:
+    - Date or period of possession is pleaded.
+    - Nature of possession is owner-like, permissive, tenant-like, encroaching, or disputed.
+    - True owner title is admitted, denied, disputed, or unknown.
+    - Limitation defense or adverse possession claim is raised.
+    - Delay, laches, acquiescence, or stale claim is alleged.
+  claim_09:
+    name: Partition / Joint Family Property
+    issue: Is the claimant entitled to a specific share and separate possession of joint family or co-owned
+      property?
+    facts:
+    - Property is ancestral or jointly acquired.
+    - Claimant was excluded from enjoyment.
+    - Prior partition has not occurred or is disputed.
+    - Family branch, share, and possession are pleaded.
+  claim_10:
+    name: Specific Performance of Agreement to Sell
+    issue: Did the respondent fail to execute the sale deed despite a valid agreement and the claimant
+      readiness and willingness to perform?
+    facts:
+    - Agreement executed.
+    - Earnest money or consideration paid.
+    - Buyer served notice to perform.
+    - Seller refused or alienated property to a third party.
+    - Delay, hardship, or third-party equities are alleged.
+  claim_11:
+    name: Cancellation of Deed / Instrument
+    issue: Is the registered sale deed, gift deed, will, conveyance, or other instrument void or voidable
+      due to fraud, coercion, impersonation, want of authority, or lack of capacity?
+    facts:
+    - Document was executed by someone without title.
+    - Executant was of unsound mind or lacked capacity.
+    - Signatures or thumb impressions are alleged forged.
+    - Claimant discovered instrument later.
+    - Instrument clouds title or possession.
+  claim_12:
+    name: Mortgage / Redemption / Foreclosure
+    issue: Is the mortgagor entitled to redeem the property upon payment, or is the mortgagee entitled
+      to foreclose, sell, or enforce security?
+    facts:
+    - Mortgage deed executed.
+    - Principal/interest tendered or defaulted.
+    - Limitation period for redemption is active or disputed.
+    - Mortgagee remained in possession or collected income.
+    - Accounting of dues is disputed.
+  claim_13:
+    name: Succession / Testamentary / Inheritance
+    issue: Who is the rightful legal heir or legatee entitled to mutate, inherit, administer, or possess
+      the property?
+    facts:
+    - 'Personal Law Axis: Hindu Succession Act; Muslim Personal Law/Shariat; Indian Succession Act; Customary
+      Law; Other Personal Law.'
+    - Will is genuine and last testament, or class of heirs is undisputed.
+    - Attesting witnesses are available or disputed.
+    - Surviving heirs, branch shares, and exclusion are pleaded.
+    - Mutation based on succession is sought or challenged.
+  claim_14:
+    name: Benami Transactions
+    issue: Was the property purchased in the name of a benamidar while consideration flowed from the alleged
+      real owner, subject to statutory prohibition or exception?
+    facts:
+    - Funds routed from claimant or alleged real owner.
+    - Property managed or possessed by person other than title holder.
+    - Original title deeds held by alleged real owner.
+    - Tax, rent, repairs, or benefits paid/received by alleged real owner.
+    - HUF, spouse, fiduciary, or statutory exception is invoked.
+  claim_15:
+    name: Land Acquisition / Expropriation
+    issue: Was the acquisition of private land legally valid, and was fair compensation awarded?
+    facts:
+    - Notification issued.
+    - Objections ignored or inadequately heard.
+    - Compensation calculated below market value.
+    - Physical possession taken or disputed.
+    - Public purpose or urgency is asserted.
+    - Comparable sale evidence exists or is disputed.
