@@ -550,3 +550,32 @@ call to settle burden, standard and trigger at once.
 - [ ] Re-run canonicalisation, claims, §8 and §10 on the full fact set once extraction finishes
 - [ ] Ladder comparison scout vs maverick on a fixed subset: does better attribution help downstream?
 - [ ] Burden metadata needs hand annotation or a decomposed prompt; two models have now failed the gate
+
+### QA on the scaled fact set: a third confound in the temporal split
+
+`src/extract/facts_qa.py`, run mid-extraction (868 cases in at the time):
+
+- **All 2,227 sampled `source_span`s round-trip exactly** — every span indexes its own quote under
+  the grounding normalisation. §11's trace can rely on them.
+- **0 duplicate quotes** within any case.
+- Only **11 cases (1.3%)** have ≤2 facts.
+
+But the per-decade table shows extraction output is **era-dependent**, and this is new:
+
+| decade | facts/case | attributed | admitted |
+|---|---|---|---|
+| 1950s | 19.1 | 0.17 | 0.80 |
+| 1960s | 13.9 | **0.13** | 0.86 |
+| 1970s | 13.6 | 0.19 | 0.79 |
+| 1990s | 14.4 | 0.17 | 0.80 |
+| 2010s | 24.8 | 0.24 | 0.77 |
+| 2020s | **28.5** | **0.28** | 0.75 |
+
+Modern judgments yield **twice** the facts per case and attribute them to a party **more than twice
+as often** (0.13 → 0.28). Both are properties of how the courts now write, not of the model.
+
+**Consequence for §5.3.** The temporal split already carried two confounds — a 39%→64% outcome
+base-rate drift and a HEADNOTE presence shift from 79.5% to 0.0%. This is a third: train and test
+differ in fact density and attribution rate as well. Any temporal-split result must be read against
+the forum-held-out split, which is era-balanced, and this must be stated rather than discovered by
+a reader.
