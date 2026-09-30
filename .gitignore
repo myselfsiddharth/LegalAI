@@ -3,7 +3,11 @@
 __pycache__/
 *.pyc
 Data/raw_pdfs/
-Docs/
+Docs/*
+# ...but the ontology source IS versioned: ontology_v1.yaml is derived from it,
+# and unlike the Templeton grant doc it is not confidential.
+!Docs/ontology_source/
+!Docs/ontology_source/**
 ~$*
 .DS_Store
 supreme_court_judgments*.zip
@@ -11,3 +15,16 @@ Data/supreme_court_judgments/
 Data/processed/corpus_text.jsonl
 Data/processed/dense_index.npy
 Data/processed/dense_index_meta.json
+
+# Large DERIVED artifacts. All regenerate deterministically from Data/raw_pdfs + the
+# spreadsheet, so they are rebuilt rather than stored:
+#   case_text.jsonl    (103MB->237MB)  make stage0
+#   masked_text.jsonl  (103MB)         make stage1
+# The small derived files (registry, labels, screen, splits) ARE tracked: they are what a
+# reviewer needs to check a reported number without a 4-minute rebuild.
+Data/interim/case_text.jsonl
+Data/interim/masked_text.jsonl
+Data/cache/
+logs/
+*.egg-info/
+build/

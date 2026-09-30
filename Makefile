@@ -1,0 +1,31 @@
+# LexGraph pipeline. Every target is idempotent and safe to re-run: stages either skip
+# work already on disk or regenerate deterministically from upstream data.
+PY := .venv/bin/python
+
+.PHONY: help stage0 stage1 probe clean-cache
+help:
+	@grep -E '^[a-z0-9-]+:.*?##' $(MAKEFILE_LIST) | sed 's/:.*##/\t/' | expand -t22
+
+stage0: ## §4 registry, judgment text, ontology v1  (text extraction ~4 min)
+	$(PY) -m src.data.adapter
+	$(PY) -m src.data.text
+	$(PY) -m src.data.ontology_convert
+
+stage1: ## §5 screen, labels, masking, splits
+	$(PY) -m src.data.screen
+	$(PY) -m src.data.labels
+	$(PY) -m src.data.mask
+	$(PY) -m src.data.splits
+
+labels-llm: ## §5.1 LLM label pass + rules-vs-LLM agreement (needs VOYAGER_API_KEY; ~25 min)
+	$(PY) -m src.data.label_llm --workers 12
+
+probe: ## §5.2 leakage probe on both splits -- the Stage 1 acceptance gate
+	$(PY) -m src.eval.leakage_probe --split temporal_2005_2013
+	$(PY) -m src.eval.leakage_probe --split forum_heldout
+
+test: ## unit tests, incl. leakage and time-respect asserts
+	$(PY) -m pytest tests/ -q
+
+clean-cache: ## drop the LLM cache (forces re-spend; usually you do NOT want this)
+	rm -f Data/cache/llm_cache.sqlite

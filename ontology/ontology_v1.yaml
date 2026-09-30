@@ -1,0 +1,1040 @@
+version: 1
+source_document: Land_Property_Dispute_India_Ontology_Refined.docx
+jurisdiction: India
+domain: land and property disputes
+claims:
+- claim_id: claim_01
+  number: 1
+  name: Title / Ownership / Declaratory Rights
+  slug: title_ownership_declaratory_rights
+  issue: Does the claimant hold a valid title, ownership interest, leasehold interest, allotment right,
+    possessory right, development right, or other legally protected property interest in the subject property?
+  notes: null
+  elements:
+  - element_id: claim_01_e01
+    name: Right / Interest
+    slug: right_interest
+    definition: legally recognized property interest.
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_01_e02
+    name: Source
+    slug: source
+    definition: valid legal source of right.
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_01_e03
+    name: Breach / Cloud
+    slug: breach_cloud
+    definition: competing claim, denial, cancellation, mutation dispute, encumbrance, or adverse action.
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_01_e04
+    name: Harm
+    slug: harm
+    definition: loss, impairment, uncertainty, or threatened deprivation.
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  facts:
+  - Claimed property interest exists or is alleged.
+  - Chain of title or tenure is documented.
+  - Possession or enjoyment is established or disputed.
+  - Competing title or adverse claim exists.
+  - Property records support, contradict, or fail to reflect the claimed right.
+  evidence:
+  - Sale deeds, conveyances, lease deeds, sub-lease deeds, allotment letters, development agreements.
+  - Revenue records, mutation entries, 7/12 extracts, property cards, survey records, city survey records.
+  - Possession documents, tax receipts, utility bills, occupation records, society records.
+  - Maps, plans, demarcation reports, measurement records, sanctioned layouts.
+  - Witness testimony and expert title/survey evidence.
+- claim_id: claim_02
+  number: 2
+  name: Possession / Injunction / Dispossession
+  slug: possession_injunction_dispossession
+  issue: Is the claimant entitled to protection or restoration of possession, or restraint against interference,
+    eviction, demolition, construction, transfer, or dispossession?
+  notes: null
+  elements:
+  - element_id: claim_02_e01
+    name: Possessory Right
+    slug: possessory_right
+    definition: actual, constructive, lawful, settled, or protected possession.
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_02_e02
+    name: Interference
+    slug: interference
+    definition: threat, dispossession, demolition, obstruction, encroachment, eviction, construction,
+      transfer, or denial of access.
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_02_e03
+    name: Illegality / Lack of Due Process
+    slug: illegality_lack_of_due_process
+    definition: absence of notice, authority, hearing, statutory compliance, or lawful procedure.
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_02_e04
+    name: Harm
+    slug: harm
+    definition: loss of shelter, possession, access, use, enjoyment, livelihood, or property value.
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  facts:
+  - Claimant is in possession or claims settled possession.
+  - Respondent interfered or threatened interference.
+  - Notice or due process is present, absent, defective, disputed, or unknown.
+  - Possession is lawful, unauthorized, disputed, protected, or unknown.
+  - Urgent threat requiring interim protection exists.
+  evidence:
+  - Possession records, photographs, inspection reports, utility bills, tax receipts, society records.
+  - Notices, eviction orders, demolition notices, stop-work notices, panchanamas.
+  - Police complaints, municipal records, correspondence, access-denial records.
+  - Site plans, survey reports, occupation certificates, building records.
+  - Fact witness, neighbour, official, and surveyor testimony.
+- claim_id: claim_03
+  number: 3
+  name: Lease / Tenancy / Allotment Rights
+  slug: lease_tenancy_allotment_rights
+  issue: Did the respondent unlawfully impair, terminate, override, or deny lease, tenancy, sub-lease,
+    allotment, occupancy, renewal, NOC, development, or enjoyment rights?
+  notes: null
+  elements:
+  - element_id: claim_03_e01
+    name: Tenure Right
+    slug: tenure_right
+    definition: leasehold, sub-lease, tenancy, license, allotment, or occupancy right.
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_03_e02
+    name: Obligation
+    slug: obligation
+    definition: duty under lease, statute, allotment terms, rent law, housing law, or authority regulations.
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_03_e03
+    name: Breach
+    slug: breach
+    definition: unlawful termination, non-renewal, refusal of NOC, rent/premium dispute, redevelopment
+      override, or denial of enjoyment.
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_03_e04
+    name: Harm
+    slug: harm
+    definition: loss of possession, use, renewal, development benefit, rehabilitation entitlement, FSI/TDR
+      entitlement, or compensation.
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  facts:
+  - Tenure document exists or is alleged.
+  - Tenure is subsisting, expired, terminated, disputed, renewable, or unknown.
+  - Breach or default is alleged by either side.
+  - Due process for termination or alteration is disputed.
+  - Superior statutory authority is invoked to override tenure rights.
+  evidence:
+  - Lease deeds, sub-lease deeds, license agreements, allotment letters, rent receipts, premium payment
+    records.
+  - Termination notices, renewal requests, NOC applications, breach notices, correspondence.
+  - Authority regulations, government orders, board resolutions, society records.
+  - Payment records, arrears records, tax and maintenance records.
+  - Testimony from lessor, lessee, authority officials, society officers, and occupants.
+- claim_id: claim_04
+  number: 4
+  name: Redevelopment / Planning / Development Rights
+  slug: redevelopment_planning_development_rights
+  issue: Is the challenged redevelopment, planning, tender, developer appointment, consent process, cluster
+    inclusion, or rehabilitation scheme lawful and binding on affected property holders or occupants?
+  notes: null
+  elements:
+  - element_id: claim_04_e01
+    name: Authority
+    slug: authority
+    definition: statutory, contractual, ownership, planning, society, or public-authority power.
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_04_e02
+    name: Compliance
+    slug: compliance
+    definition: development regulations, planning law, consent requirements, tender process, rehabilitation
+      standards, and due process.
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_04_e03
+    name: Breach / Illegality
+    slug: breach_illegality
+    definition: lack of consent, lack of authority, arbitrary inclusion/exclusion, defective tender, non-compliance,
+      discrimination, ultra vires action, or unfair terms.
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_04_e04
+    name: Harm
+    slug: harm
+    definition: loss of self-redevelopment right, displacement, inadequate rehabilitation, reduced area,
+      loss of FSI/TDR, delay, or deprivation.
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  facts:
+  - Redevelopment scheme exists or is proposed.
+  - Scheme is self-redevelopment, authority-led, developer-led, cluster, slum, or integrated redevelopment.
+  - Consent requirement is required, waived, disputed, not applicable, or unknown.
+  - Public interest or planned development justification is asserted.
+  - Rehabilitation/compensation entitlement is provided, disputed, absent, or unknown.
+  evidence:
+  - Development control regulations, planning permissions, sanctioned plans, government resolutions, circulars,
+    policy directions.
+  - Tender documents, developer appointment records, redevelopment agreements, project reports.
+  - Consent records, society resolutions, meeting minutes, member ballots, objections, representations.
+  - Rehabilitation entitlement statements, area statements, rent/compensation offers, eligibility lists.
+  - Technical reports, structural reports, feasibility reports, FSI/TDR calculations, layout plans.
+- claim_id: claim_05
+  number: 5
+  name: Government Action / Constitutional Property Deprivation
+  slug: government_action_constitutional_property_deprivation
+  issue: Did a State, statutory authority, municipal body, revenue authority, or public agency deprive,
+    restrict, dilute, or override property rights without authority of law, due process, equality, or
+    fair compensation?
+  notes: Keep this as the broad constitutional/public-law deprivation module. Use Claim 15 for acquisition-specific
+    notification, possession-taking, and valuation disputes.
+  elements:
+  - element_id: claim_05_e01
+    name: State Action
+    slug: state_action
+    definition: GR, acquisition, reservation, demolition, redevelopment, cancellation, refusal, mutation
+      decision, tender, or regulatory restriction.
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_05_e02
+    name: Legal Authority
+    slug: legal_authority
+    definition: statutory power, delegated power, planning power, revenue power, acquisition power, or
+      executive policy.
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_05_e03
+    name: Illegality
+    slug: illegality
+    definition: ultra vires action, arbitrariness, discrimination, lack of notice, natural justice violation,
+      lack of compensation, or absence of authority of law.
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_05_e04
+    name: Harm
+    slug: harm
+    definition: deprivation, restriction, loss of use, loss of development potential, displacement, compulsory
+      association, or denial of benefit.
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  facts:
+  - Public authority action exists or is threatened.
+  - Statutory source of power is identified or disputed.
+  - Notice and hearing were given, denied, defective, disputed, or unknown.
+  - Article 300A / Article 14 / Article 21 / Article 19 issue is raised.
+  - Public interest justification is asserted.
+  evidence:
+  - Government resolutions, notifications, circulars, acquisition notices, planning directions, authority
+    orders.
+  - Objections, representations, hearing records, speaking orders, minutes, file notings.
+  - Ownership, possession, lease, revenue, and development records.
+  - Comparative treatment evidence and similarly situated property records.
+  - Expert, official, planning, valuation, and constitutional-law evidence.
+- claim_id: claim_06
+  number: 6
+  name: Ultra Vires Executive Action / Statutory Override
+  slug: ultra_vires_executive_action_statutory_override
+  issue: Did the State or public authority exceed executive, delegated, statutory, planning, or regulatory
+    power by issuing directions that override binding law, statutory procedure, consent thresholds, or
+    vested property rights?
+  notes: null
+  elements:
+  - element_id: claim_06_e01
+    name: Power Source
+    slug: power_source
+    definition: Parent Act, delegated regulation, executive power, planning regulation, government policy,
+      or authority circular.
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_06_e02
+    name: Legal Limit
+    slug: legal_limit
+    definition: statutory procedure, consent requirement, hearing requirement, compensation requirement,
+      regulatory hierarchy, or constitutional safeguard.
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_06_e03
+    name: Breach
+    slug: breach
+    definition: executive instruction, GR, tender condition, policy direction, or order conflicts with
+      statute or exceeds delegated power.
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_06_e04
+    name: Harm
+    slug: harm
+    definition: loss of statutory protection, forced inclusion, arbitrary exclusion, reduced entitlement,
+      procedural bypass, or unlawful burden.
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  facts:
+  - Parent statute or regulation prescribes procedure.
+  - Impugned action alters, waives, bypasses, or overrides that procedure.
+  - Action is administrative/executive rather than legislative amendment.
+  - Affected party statutory protection is diluted or removed.
+  - Similarly situated parties are treated differently.
+  evidence:
+  - Parent statute, delegated regulations, development control regulations, co-operative law provisions.
+  - Government resolutions, circulars, executive directions, policy notes, tender terms.
+  - Authority minutes, file notings, comparative treatment records, inclusion/exclusion lists.
+  - Objections, representations, legal opinions, and prior court orders.
+  - Judicial precedents on statutory hierarchy, delegated legislation, and executive limits.
+- claim_id: claim_07
+  number: 7
+  name: Co-operative Society / Associational Autonomy
+  slug: co_operative_society_associational_autonomy
+  issue: Does the challenged action force a society, group, association, or member body into redevelopment,
+    amalgamation, cluster treatment, or governance change without required consent, statutory process,
+    or associational autonomy protection?
+  notes: null
+  elements:
+  - element_id: claim_07_e01
+    name: Associational Right
+    slug: associational_right
+    definition: society identity, member governance, consent right, general body control, or statutory
+      autonomy.
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_07_e02
+    name: Procedure
+    slug: procedure
+    definition: required resolution, majority threshold, notice, general body process, registrar approval,
+      or statutory amalgamation process.
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_07_e03
+    name: Breach
+    slug: breach
+    definition: forced amalgamation, cluster inclusion, consent bypass, voting dilution, committee overreach,
+      or denial of participation.
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_07_e04
+    name: Harm
+    slug: harm
+    definition: loss of self-governance, forced association, voting dilution, loss of redevelopment choice,
+      or member-right impairment.
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  facts:
+  - Claimant is a registered society, association, or member body.
+  - Scheme affects collective governance or society identity.
+  - Society-level or member-level consent is required, disputed, not required, or unknown.
+  - Statutory amalgamation/redevelopment process was followed, bypassed, defective, disputed, or unknown.
+  - Members objected, consented, split, were not consulted, or unknown.
+  evidence:
+  - Co-operative society registration records, bye-laws, general body minutes, managing committee records.
+  - Consent forms, member ballots, redevelopment resolutions, registrar records.
+  - Cluster scheme documents, tender conditions, amalgamation proposals, authority directions.
+  - Member objections, representations, correspondence, and meeting notices.
+  - Testimony from society officers, members, registrar officials, and redevelopment consultants.
+- claim_id: claim_08
+  number: 8
+  name: Adverse Possession / Limitation / Long Possession
+  slug: adverse_possession_limitation_long_possession
+  issue: Has long, open, continuous, hostile, and exclusive possession matured into a legally enforceable
+    right, or is the property claim barred by limitation, delay, or laches?
+  notes: null
+  elements:
+  - element_id: claim_08_e01
+    name: Possession
+    slug: possession
+    definition: actual, open, continuous, exclusive, and identifiable possession.
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_08_e02
+    name: Hostility / Adverseness
+    slug: hostility_adverseness
+    definition: possession adverse to true owner, not permissive or derivative.
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_08_e03
+    name: Continuity / Limitation Period
+    slug: continuity_limitation_period
+    definition: statutory period satisfied or disputed.
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_08_e04
+    name: Knowledge / Ouster
+    slug: knowledge_ouster
+    definition: owner knew or should have known of adverse claim.
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  facts:
+  - Date or period of possession is pleaded.
+  - Nature of possession is owner-like, permissive, tenant-like, encroaching, or disputed.
+  - True owner title is admitted, denied, disputed, or unknown.
+  - Limitation defense or adverse possession claim is raised.
+  - Delay, laches, acquiescence, or stale claim is alleged.
+  evidence:
+  - Revenue records, tax receipts, electricity/water bills, possession certificates, panchanamas.
+  - Maps, survey records, photographs, crop records, cultivation records, construction records.
+  - Notices, objections, prior suits, complaints, police records, authority correspondence.
+  - Witness testimony on possession, use, exclusion, and knowledge.
+  - Limitation pleadings and prior litigation records.
+- claim_id: claim_09
+  number: 9
+  name: Partition / Joint Family Property
+  slug: partition_joint_family_property
+  issue: Is the claimant entitled to a specific share and separate possession of joint family or co-owned
+    property?
+  notes: 'Default burden_on: claimant. Burden shifts when joint nucleus, title chain, or co-ownership
+    is prima facie shown.'
+  elements:
+  - element_id: claim_09_e01
+    name: Co-ownership / Joint Status
+    slug: co_ownership_joint_status
+    definition: null
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_09_e02
+    name: Quantifiable Share
+    slug: quantifiable_share
+    definition: null
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_09_e03
+    name: Demand and Refusal
+    slug: demand_and_refusal
+    definition: null
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_09_e04
+    name: Metes-and-Bounds Feasibility
+    slug: metes_and_bounds_feasibility
+    definition: null
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  facts:
+  - Property is ancestral or jointly acquired.
+  - Claimant was excluded from enjoyment.
+  - Prior partition has not occurred or is disputed.
+  - Family branch, share, and possession are pleaded.
+  evidence:
+  - Pedigree tables, family tree, joint account records, settlement deeds, revenue records.
+  - Mutation and property card records.
+  - Prior partition or settlement documents.
+  - Witness testimony from family members or local witnesses.
+- claim_id: claim_10
+  number: 10
+  name: Specific Performance of Agreement to Sell
+  slug: specific_performance_of_agreement_to_sell
+  issue: Did the respondent fail to execute the sale deed despite a valid agreement and the claimant readiness
+    and willingness to perform?
+  notes: 'Default burden_on: purchaser. Burden shifts when execution of agreement or payment is admitted.'
+  elements:
+  - element_id: claim_10_e01
+    name: Valid Contract
+    slug: valid_contract
+    definition: null
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_10_e02
+    name: Payment of Consideration, partial or full
+    slug: payment_of_consideration_partial_or_full
+    definition: null
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_10_e03
+    name: Readiness and Willingness
+    slug: readiness_and_willingness
+    definition: null
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_10_e04
+    name: Breach by Seller
+    slug: breach_by_seller
+    definition: null
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_10_e05
+    name: Discretionary and equitable suitability of relief
+    slug: discretionary_and_equitable_suitability_of_relief
+    definition: null
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  facts:
+  - Agreement executed.
+  - Earnest money or consideration paid.
+  - Buyer served notice to perform.
+  - Seller refused or alienated property to a third party.
+  - Delay, hardship, or third-party equities are alleged.
+  evidence:
+  - Registered or unregistered agreement to sell.
+  - Bank transfer receipts and payment records.
+  - Legal notices and replies.
+  - Witness testimony to execution.
+  - Subsequent sale deed or third-party transfer records.
+- claim_id: claim_11
+  number: 11
+  name: Cancellation of Deed / Instrument
+  slug: cancellation_of_deed_instrument
+  issue: Is the registered sale deed, gift deed, will, conveyance, or other instrument void or voidable
+    due to fraud, coercion, impersonation, want of authority, or lack of capacity?
+  notes: 'Default burden_on: claimant. Burden shifts when fiduciary relationship, suspicious circumstances,
+    or admitted custody/control is established.'
+  elements:
+  - element_id: claim_11_e01
+    name: Execution of Document
+    slug: execution_of_document
+    definition: null
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_11_e02
+    name: Vitiating Factor
+    slug: vitiating_factor
+    definition: fraud, coercion, impersonation, incapacity, absence of authority, or forgery.
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_11_e03
+    name: Injury or Cloud on Claimant Right
+    slug: injury_or_cloud_on_claimant_right
+    definition: null
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_11_e04
+    name: Limitation and knowledge of instrument
+    slug: limitation_and_knowledge_of_instrument
+    definition: null
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  facts:
+  - Document was executed by someone without title.
+  - Executant was of unsound mind or lacked capacity.
+  - Signatures or thumb impressions are alleged forged.
+  - Claimant discovered instrument later.
+  - Instrument clouds title or possession.
+  evidence:
+  - Registered deeds, gift deeds, wills, powers of attorney, and registration records.
+  - Forensic handwriting or fingerprint reports.
+  - Medical records of executant.
+  - Police complaints and criminal records.
+  - Contrasting registered documents and witness testimony.
+- claim_id: claim_12
+  number: 12
+  name: Mortgage / Redemption / Foreclosure
+  slug: mortgage_redemption_foreclosure
+  issue: Is the mortgagor entitled to redeem the property upon payment, or is the mortgagee entitled to
+    foreclose, sell, or enforce security?
+  notes: 'burden_on depends on relief: mortgagor for redemption; mortgagee for foreclosure/sale/enforcement.'
+  elements:
+  - element_id: claim_12_e01
+    name: Valid Mortgage
+    slug: valid_mortgage
+    definition: null
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_12_e02
+    name: Debt Subsistence or Discharge
+    slug: debt_subsistence_or_discharge
+    definition: null
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_12_e03
+    name: Tender or Default
+    slug: tender_or_default
+    definition: null
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_12_e04
+    name: Right of Redemption not extinguished
+    slug: right_of_redemption_not_extinguished
+    definition: null
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_12_e05
+    name: Limitation and accounting
+    slug: limitation_and_accounting
+    definition: null
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  facts:
+  - Mortgage deed executed.
+  - Principal/interest tendered or defaulted.
+  - Limitation period for redemption is active or disputed.
+  - Mortgagee remained in possession or collected income.
+  - Accounting of dues is disputed.
+  evidence:
+  - Registered mortgage deed.
+  - Loan account statements.
+  - Deposit receipts and tender records.
+  - Notice of demand.
+  - Possession and accounting records.
+- claim_id: claim_13
+  number: 13
+  name: Succession / Testamentary / Inheritance
+  slug: succession_testamentary_inheritance
+  issue: Who is the rightful legal heir or legatee entitled to mutate, inherit, administer, or possess
+    the property?
+  notes: 'Default burden_on: propounder of will for testamentary claim; heir asserting right for intestacy
+    claim.'
+  elements:
+  - element_id: claim_13_e01
+    name: Death of Owner
+    slug: death_of_owner
+    definition: null
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_13_e02
+    name: Valid Will or Rules of Intestacy
+    slug: valid_will_or_rules_of_intestacy
+    definition: null
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_13_e03
+    name: Personal Law Applicability
+    slug: personal_law_applicability
+    definition: null
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_13_e04
+    name: Heirship / Legatee Status
+    slug: heirship_legatee_status
+    definition: null
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_13_e05
+    name: Mutation or Possession Consequence
+    slug: mutation_or_possession_consequence
+    definition: null
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  facts:
+  - 'Personal Law Axis: Hindu Succession Act; Muslim Personal Law/Shariat; Indian Succession Act; Customary
+    Law; Other Personal Law.'
+  - Will is genuine and last testament, or class of heirs is undisputed.
+  - Attesting witnesses are available or disputed.
+  - Surviving heirs, branch shares, and exclusion are pleaded.
+  - Mutation based on succession is sought or challenged.
+  evidence:
+  - Death certificate.
+  - Registered or unregistered will.
+  - Attesting witness testimony.
+  - Probate/letters of administration where applicable.
+  - Surviving member certificate, family tree, birth/marriage records, mutation records.
+- claim_id: claim_14
+  number: 14
+  name: Benami Transactions
+  slug: benami_transactions
+  issue: Was the property purchased in the name of a benamidar while consideration flowed from the alleged
+    real owner, subject to statutory prohibition or exception?
+  notes: 'Default burden_on: party alleging benami. Burden shifts when statutory exception or suspicious
+    fund flow is established.'
+  elements:
+  - element_id: claim_14_e01
+    name: Fictitious or Nominal Ownership
+    slug: fictitious_or_nominal_ownership
+    definition: null
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_14_e02
+    name: Source of Consideration
+    slug: source_of_consideration
+    definition: null
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_14_e03
+    name: Intention to Benefit Real Owner
+    slug: intention_to_benefit_real_owner
+    definition: null
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_14_e04
+    name: Possession / Control / Custody of Documents
+    slug: possession_control_custody_of_documents
+    definition: null
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_14_e05
+    name: Statutory Exception, if invoked
+    slug: statutory_exception_if_invoked
+    definition: null
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  facts:
+  - Funds routed from claimant or alleged real owner.
+  - Property managed or possessed by person other than title holder.
+  - Original title deeds held by alleged real owner.
+  - Tax, rent, repairs, or benefits paid/received by alleged real owner.
+  - HUF, spouse, fiduciary, or statutory exception is invoked.
+  evidence:
+  - Bank statements showing fund flow.
+  - Custody of original title deeds.
+  - Tax payments and repair records.
+  - Possession documents.
+  - Correspondence and admissions about beneficial ownership.
+- claim_id: claim_15
+  number: 15
+  name: Land Acquisition / Expropriation
+  slug: land_acquisition_expropriation
+  issue: Was the acquisition of private land legally valid, and was fair compensation awarded?
+  notes: Keep separate from Claim 5. Claim 5 is broad constitutional deprivation; Claim 15 is acquisition-specific
+    and valuation-heavy.
+  elements:
+  - element_id: claim_15_e01
+    name: Public Purpose
+    slug: public_purpose
+    definition: null
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_15_e02
+    name: Statutory Notification
+    slug: statutory_notification
+    definition: null
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_15_e03
+    name: Due Process / Hearing
+    slug: due_process_hearing
+    definition: null
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_15_e04
+    name: Possession Taking
+    slug: possession_taking
+    definition: null
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_15_e05
+    name: Adequacy of Compensation
+    slug: adequacy_of_compensation
+    definition: null
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  - element_id: claim_15_e06
+    name: Limitation and challenge timing
+    slug: limitation_and_challenge_timing
+    definition: null
+    burden_on: null
+    burden_standard: null
+    burden_shifts_when: null
+  facts:
+  - Notification issued.
+  - Objections ignored or inadequately heard.
+  - Compensation calculated below market value.
+  - Physical possession taken or disputed.
+  - Public purpose or urgency is asserted.
+  - Comparable sale evidence exists or is disputed.
+  evidence:
+  - Government notifications.
+  - Land Acquisition Officer awards.
+  - Objections and hearing records.
+  - Possession panchanama or possession notices.
+  - Comparative sale deeds and valuation exemplars.
+  - Valuation reports and compensation payment records.
+defenses:
+- category: Title / Tenure Defense
+  slug: title_tenure_defense
+  detail: 'No Title; Defective Title; Expired Lease; Breach of Lease; No Conveyance; No Mutation; Permissive
+    Possession; Unauthorized Occupation. Rebuttal: chain of title, possession proof, payment proof, authority
+    recognition, estoppel, legitimate expectation, long enjoyment, statutory protection.'
+- category: Public Interest / Planning Policy Defense
+  slug: public_interest_planning_policy_defense
+  detail: 'Larger Public Interest; Urban Renewal; Housing Stock Increase; Infrastructure Upgrade; Sustainable
+    Town Planning; Safety; Executive Policy Discretion. Rebuttal: proportionality, statutory backing,
+    arbitrariness, discrimination, due process, compensation adequacy, actual need.'
+- category: Statutory / Regulatory Subservience Defense
+  slug: statutory_regulatory_subservience_defense
+  detail: 'Lessee rights subservient to superior lessor; special statute override; authority-owned land;
+    statutory power to redevelop; compliance with parent Act. Rebuttal: delegated power excess, conflict
+    with parent Act, vested rights, lease protection, process failure, Article 300A.'
+- category: Consent / Compliance Defense
+  slug: consent_compliance_defense
+  detail: 'Consent not required; majority consent; statutory waiver; authority ownership; regulation,
+    tender, or rehabilitation compliance. Rebuttal: consent required, defective consent, wrong regulation,
+    improper classification, non-compliance, inadequate rehabilitation, forced association.'
+- category: Procedural / Forum Defense
+  slug: procedural_forum_defense
+  detail: 'Alternative Remedy; Delay; Laches; Limitation; Res Judicata; Maintainability; Jurisdiction;
+    Non-Joinder; Prematurity; Tribunal first instance. Rebuttal: constitutional issue, natural justice
+    violation, ultra vires action, lack of efficacious remedy, urgent harm, continuing cause, pure question
+    of law.'
+- category: Equitable Defense
+  slug: equitable_defense
+  detail: 'Acquiescence; Waiver; Estoppel; Unclean Hands; Suppression of Facts; Unauthorized Construction;
+    Illegal Occupation; Encroachment. Rebuttal: no knowing waiver, authority delay, bona fide possession,
+    regularization, public records support, proportionality, clean hands.'
+remedy_tiers:
+- tier: 'Tier 1: Status Quo and Protection'
+  remedies: Status quo order, anti-dispossession injunction, demolition stay, eviction stay, construction
+    stay, tender stay, transfer restraint, records preservation order, protection of settled possession,
+    restoration of possession, police protection, access restoration, transit protection, stay of GR/tender/developer
+    appointment/cluster inclusion.
+- tier: 'Tier 2: Declaration and Administrative Correction'
+  remedies: Declaration of title, leasehold right, possession, invalid order, development right, Article
+    300A violation, mutation correction, property card correction, survey correction, revenue entry correction,
+    boundary demarcation, fresh hearing, speaking order, reconsideration, notice compliance, remand to
+    authority.
+- tier: 'Tier 3: Development / Rehabilitation / Compensation'
+  remedies: Consent enforcement, self-redevelopment permission, scheme modification, developer restraint,
+    tender quashing, regulatory compliance, alternate accommodation, transit rent, permanent rehousing,
+    eligibility recognition, area entitlement, corpus/hardship compensation, acquisition compensation,
+    rent compensation, development benefit, FSI/TDR benefit, damages for loss of use, market value compensation.
+- tier: 'Tier 4: Final Structural Resolution'
+  remedies: Possession decree, eviction, specific performance, cancellation or rectification of instrument,
+    quashing of GR/notification/order, mandamus to authority, ultra vires declaration, Article 300A relief,
+    Article 14 relief, restitution, mesne profits, accounting, regularization, legitimate expectation
+    relief, settlement terms, costs and sanctions.
+evidence_groups:
+- group: Title / Tenure Evidence
+  slug: title_tenure_evidence
+  types: Sale deed, conveyance, gift, partition, will, succession records, lease deed, sub-lease, license,
+    allotment letter, mortgage deed, renewal records, mutation entries, 7/12 extracts, property cards,
+    record of rights, encumbrance certificates, Index-II, search reports.
+- group: Possession / Site Evidence
+  slug: possession_site_evidence
+  types: Possession receipts, tax receipts, utility bills, maintenance records, survey maps, demarcation
+    reports, measurement sheets, site plans, photographs, inspection reports, panchanamas, occupancy records,
+    witness statements.
+- group: Planning / Redevelopment Evidence
+  slug: planning_redevelopment_evidence
+  types: Development regulations, sanctioned plans, layout plans, building permissions, GRs, notifications,
+    circulars, policy directions, tender documents, developer agreements, project reports, consent records,
+    rehabilitation statements.
+- group: Administrative / Procedural Evidence
+  slug: administrative_procedural_evidence
+  types: Notices, orders, hearing records, representations, speaking orders, tribunal proceedings, revenue
+    appeals, prior suits, writ records, alternative remedy records, limitation records, prior adjudications.
+- group: Expert Evidence
+  slug: expert_evidence
+  types: Title search report, surveyor/architect/planner report, valuation report, structural/safety report,
+    rehabilitation/compensation assessment, forensic handwriting/fingerprint report.
+schemas:
+  1_procedural_history_and_events:
+    ProceduralHistory: Container for the chronological and causal sequence of case events.
+    Event.event_id: String identifier.
+    Event.subtype: Transaction Breach; Agreement Executed; Mutation Applied; Mutation Rejected; Dispossession;
+      Possession Taken; Demolition Threatened; Notice Issued; Notice Served; Authority Order Issued; Suit
+      Filed; Writ Filed; Interim Order Granted; Interim Order Refused; Decree Passed; Appeal Filed; Appeal
+      Decided; Remand Ordered; Settlement Attempt; Dispute Arisen.
+    Event.date_or_timestamp: Date, approximate date, or range.
+    Event.actor: Reference to Party, Authority, Court, Tribunal, Developer, Society, or Third Party.
+    Event.object: Reference to SubjectProperty, Claim, Evidence, AuthorityRecord, or Remedy.
+    Event.precedes: Reference to earlier/later Event objects for timeline reconstruction.
+    Event.causes: Reference to Event objects causally triggered by this event.
+    Event.source_span: Paragraph, pleading, order, exhibit, or record span supporting the event.
+    Event.disputed_status: Admitted; Contested; Unclear; Inferred; Human Reviewed.
+  2_authority_records_and_case_law_connectivity:
+    AuthorityRecord.authority_id: String identifier.
+    authority_type: statute; case_law; regulation; government_resolution; circular; court_order; tribunal_order;
+      revenue_record; constitutional_provision; contract; custom_or_personal_law.
+    citation_or_title: Citation, case title, statute section, GR/circular number, order number, or instrument
+      title.
+    court_or_forum: Supreme Court of India; High Court; District Court; Civil Court; Revenue Authority;
+      Revenue Tribunal; Co-operative Forum; Municipal Authority; Planning Authority; Arbitral Forum; Other.
+    holding_or_rule: Short statement of the rule, holding, or legal standard.
+    cited_proposition: The proposition for which the authority is cited. This is mandatory.
+    linked_claims: Reference list to Claim objects.
+    linked_elements: Reference list to Element objects.
+    temporal_validity: good_law; overruled; distinguished; pending_appeal; statute_superseded; amended;
+      conflicting_authority; unknown.
+    jurisdiction_scope: India; State-specific if applicable; forum-specific if applicable.
+    source_span: Case paragraph, statute section, exhibit, order page, or citation span.
+  3_parties_subject_property_and_relationships:
+    Identity: String.
+    Proceeding Posture: Petitioner; Plaintiff; Appellant; Applicant; Claimant; Writ Petitioner; Intervenor;
+      Objector.
+    Property Role: Owner; Co-owner; Lessee; Sub-Lessee; Licensee; Tenant; Occupant; Allottee; Society;
+      Society Member; Developer; Purchaser; Heir; Possessor; Mortgagor; Mortgagee; Beneficiary; Benamidar;
+      Real Owner; Acquiring Authority Challenger.
+    Claimed Right: Title; Possession; Leasehold Right; Sub-Lease Right; Tenancy Right; Development Right;
+      Redevelopment Right; FSI/TDR Right; Rehabilitation Right; Compensation Right; Consent Right; Statutory
+      Protection; Inheritance Right; Redemption Right; Specific Performance Right.
+    Possession Status: In Possession; Dispossessed; Threatened Dispossession; Transit Occupant; Constructive
+      Possession; Disputed Possession; Unknown.
+  3_parties_subject_property_and_relationships_2:
+    Identity: String.
+    Proceeding Posture: Respondent; Defendant; Appellant; Public Authority; Planning Authority; Development
+      Authority; Revenue Authority; Municipal Authority; Society; Developer; Private Party; Acquiring
+      Body.
+    Property Role: State; Statutory Authority; Municipal Corporation; Planning Authority; Superior Lessor;
+      Landlord; Owner; Acquiring Body; Developer; Society; Adverse Claimant; Encroacher; Transferee; Mortgagee;
+      Benamidar; Purchaser Pendente Lite.
+    Authority / Control Position: Absolute Owner; Superior Lessor; Planning Controller; Executive Authority;
+      Delegated Agency; Record Holder; Approving Authority; Adjudicatory Body; Disputed Authority.
+    Records Control: Land Records; Revenue Records; Lease Records; Planning Records; Society Records;
+      Development Records; Tender Records; Acquisition Records; No Control; Disputed Control.
+  3_parties_subject_property_and_relationships_3:
+    Property Identifier: 'String: survey number, CTS number, plot number, flat number, village, ward,
+      property card number, 7/12 reference.'
+    Property Type: Land; Building; Flat; Tenement; Agricultural Land; Non-Agricultural Land; Slum Property;
+      Society Property; Leasehold Plot; Government Land; Redevelopment Layout; Mortgaged Property; Ancestral
+      Property; Acquired Land.
+    Location / Survey Details: String.
+    Tenure Type: Freehold; Leasehold; Sub-Lease; License; Tenancy; Allotment; Occupancy Right; Possessory
+      Claim; Government Grant; Mortgage; Inheritance; Disputed Tenure.
+    Land Use Classification: Residential; Commercial; Industrial; Agricultural; Mixed-Use; Public Purpose;
+      Reserved Land; Slum; Redevelopment Zone; Acquisition Zone.
+    Encumbrance Status: Clear; Mortgaged; Leased; Licensed; Tenanted; Reserved; Acquired; Encroached;
+      Litigated; Attached; Unknown.
+  3_parties_subject_property_and_relationships_4:
+    Property Interest Relationship: Ownership; Co-ownership; Leasehold; Sub-Lease; Tenancy; License; Allotment;
+      Possession; Development Right; Redevelopment Right; Rehabilitation Right; Easement; Inheritance;
+      Mortgage; Agreement to Sell; Benami Allegation; Acquisition.
+    Governing Instrument: Sale Deed; Lease Deed; Sub-Lease Deed; Conveyance; Agreement to Sell; Gift Deed;
+      Will; Mortgage Deed; Allotment Letter; Development Agreement; Redevelopment Agreement; Government
+      Resolution; Tender; Sanction Plan; Revenue Record; Court Order.
+    Governing Statutory Framework: Transfer of Property Act; Registration Act; Specific Relief Act; Limitation
+      Act; Land Revenue Code; Co-operative Societies Act; Town Planning Law; Development Control Regulations;
+      Slum Law; Land Acquisition Law; Benami Act; Hindu Succession Act; Muslim Personal Law/Shariat; Indian
+      Succession Act; Municipal Law; Constitution of India.
+    Property Rights Claimed: Title; Possession; Enjoyment; Development; Redevelopment; Consent; Rehabilitation;
+      Compensation; FSI/TDR; Mutation; Injunction; Restoration; Partition; Specific Performance; Cancellation;
+      Redemption; Succession.
+    Constitutional / Equitable Relationship: Article 14; Article 19(1)(c); Article 21; Article 226; Article
+      300A; Natural Justice; Legitimate Expectation; Promissory Estoppel; Public Trust; Equity.
+  5_claim_template_and_mandatory_metadata:
+    Issue: Legal question presented.
+    Rule & Authority: AuthorityRecord links for statute, case law, regulation, order, GR, or legal standard.
+    Elements: Element objects, each with burden metadata, linked facts, evidence, events, and authorities.
+    Facts: Structured fact propositions with source span and disputed status.
+    Evidence: EvidenceRecord links with status, masking, admissibility, procedural usability, and source
+      span.
+    Defenses / Rebuttals: Defense theory, respondent argument, claimant rebuttal, authority relied on,
+      court treatment.
+    Remedy: Requested and granted/denied relief with tier, source span, and validation status.
+  5_claim_template_and_mandatory_metadata_2:
+    Element.element_id: String identifier.
+    name: Element name.
+    status: satisfied; contested; missing; defeated; not_applicable; unknown.
+    burden_on: claimant; respondent; authority; party_id.
+    burden_standard: prima_facie; balance_of_probabilities; statutory_presumption; clear_proof_required;
+      beyond_reasonable_doubt_if_penal; unknown.
+    burden_shifts_when: Trigger fact or event ID; e.g., registered deed produced, possession shown, authority
+      action admitted, will propounded, statutory exception invoked.
+    linked_facts: List of fact IDs.
+    linked_evidence: List of evidence IDs.
+    linked_authorities: List of AuthorityRecord IDs.
+  8_evidence_proof_matrix_and_evidence_status:
+    evidence_id: String identifier.
+    evidence_category: title_tenure; possession_site; planning_redevelopment; administrative_procedural;
+      expert; financial; succession; acquisition; forensic; other.
+    document_type: 'Specific evidence type: sale deed, 7/12 extract, property card, will, mortgage deed,
+      LAO award, map, notice, order, report, testimony, etc.'
+    evidence_status: admitted; contested; inadmissible; privileged; masked; missing; disputed_authenticity;
+      unknown.
+    masking_reason: privacy; privilege; confidentiality; court_order; sensitive_personal_data; minor_or_family_data;
+      none.
+    admissibility_status: admissible; disputed; privileged; hearsay; stage_limited; requires_foundation;
+      unknown.
+    procedural_usability: pleading; interim_relief; discovery; trial; appeal; settlement; valuation; execution.
+    source_span: paragraph_id, file_span_id, exhibit page, order paragraph, transcript line, or record
+      reference.
+    supports_or_defeats: supports; defeats; contests; bridges; background.
+    linked_claims / elements / events / authorities: Reference lists.
+patterns_instantiated:
+- 'Title / Ownership Dispute: competing title, defective conveyance, sale deed challenge, mutation dispute,
+  inheritance dispute, boundary dispute, fraudulent transfer.'
+- 'Possession / Dispossession: eviction, threatened dispossession, demolition, encroachment, trespass,
+  adverse possession, illegal occupation, possessory injunction.'
+- 'Lease / Tenancy / Allotment: lease term dispute, sub-lease rights, lease termination, rent/premium
+  dispute, NOC refusal, allotment cancellation, occupancy right, renewal dispute.'
+- 'Redevelopment / Planning: self-redevelopment, cluster redevelopment, public authority redevelopment,
+  developer appointment, consent dispute, FSI/TDR dispute, rehabilitation entitlement.'
+- 'Constitutional Deprivation: Article 300A deprivation, expropriation without authority of law, illusory
+  compensation, forced eviction, loss of development potential.'
+- 'Executive Override / Ultra Vires: executive fiat overriding statute, ultra vires government resolution,
+  retrospective policy alteration, delegated power excess, statutory safeguard bypass.'
+- 'Society / Collective Property: co-operative society rights, member consent, forced amalgamation, cluster
+  inclusion, majority-minority conflict, society resolution dispute.'
+- 'Revenue / Land Record: mutation entry, 7/12 extract, property card, survey record, demarcation, measurement,
+  record-of-rights correction.'
+- 'Procedural / Forum: writ petition, civil suit, revenue appeal, co-operative forum, tribunal proceeding,
+  alternative remedy, limitation, laches, res judicata.'
+- 'Additional High-Volume Modules: partition, specific performance, cancellation, mortgage/redemption,
+  succession, benami, land acquisition.'
+validation_gates:
+- 'Narrative completeness: event sequence must show key steps from transaction/breach to suit/order/appeal
+  where available.'
+- 'Authority grounding: each rule, case citation, statute, or GR must be represented as an AuthorityRecord
+  with cited proposition and temporal validity.'
+- 'Element proof: each claim conclusion must map to element, burden, fact, evidence, and authority.'
+- 'Evidence status: no evidence may be displayed as proof unless its status and masking/admissibility
+  fields are set.'
+- 'Burden shift: any shifted burden must reference the triggering fact or event.'
+- 'Jurisdiction/forum: authority, forum, and remedy must be valid for the Indian land/property module
+  and the specific forum or state context.'
+- 'Human review: reusable symbolic patterns and disputed authority mappings require legal-guide approval
+  before promotion.'
+design_rules:
+- 'Jurisdiction-scoped by default: this module is India-specific. Any Pakistan, US, EU, or global variant
+  should be a parallel module, not a mixed enum list.'
+- Every claim must map Issue -> Rule & Authority -> Elements -> Facts -> Evidence -> Defenses/Rebuttals
+  -> Remedies -> Validation.
+- Every factual proposition must trace to a source span or an evidence object.
+- Every authority must state the proposition for which it is cited and its temporal validity.
+- Every element must state who carries the burden and when that burden shifts.
+- Every evidence object must have a status and masking/admissibility profile before display or export.
