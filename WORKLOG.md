@@ -796,3 +796,38 @@ Operational note: the driver had already read its canonicalise line before that 
 the first run used the default batch of 8 and the 90s timeout. Restarting the driver was free — every
 stage is resumable, so recovery and QA took 5 seconds and claims was skipped entirely as already
 complete.
+
+### The "stuck" embedding phase was macOS sleeping
+
+Reported as a possible hang. It was not hung — measured at 40.0 texts/s at the moment of checking,
+and the process showing **0.0% CPU** in state `S` is exactly what an I/O-bound HTTP job looks like,
+which is what made it appear dead.
+
+But the suspicion was right that something was wrong. Reconstructing per-10-minute throughput from
+the cache's own `created` timestamps showed **three stalls: 78, 194 and 232 minutes**, with
+near-zero progress and instant resumption at full speed afterwards. `pmset -g log` named the cause:
+
+```
+21:42:35 Wake from Deep Idle [CDNVA] : due to smc.sysState.Wake lid SMC.OutboxNotEmpty/HID Activity
+21:39:45 Entering Sleep state due to 'Sleep Service Back to Sleep': Using Batt (Charge:63%)
+```
+
+The machine was idle-sleeping on battery. The job held **no power assertion**, so every stage simply
+paused. Nothing was lost — stages are resumable and the HTTP client reconnects on wake — but wall
+clock disappeared. **4 hours elapsed with 25 minutes of work done is what this looks like from the
+outside, and it is indistinguishable from a hang unless you check the timestamps.**
+
+Fix: `run_downstream.sh` now re-execs itself once under `caffeinate -dimsu`, holding
+`PreventUserIdleSystemSleep` for its whole life (verified in `pmset -g assertions`). `CAFFEINATED`
+guards the recursion. **This cannot prevent lid-close sleep on Apple Silicon** — an overnight run
+needs the lid open or AC power, and that is now documented in the script.
+
+**Generalisable lesson:** for any long unattended job on a laptop, elapsed time is not evidence of
+progress, and a 0% CPU network-bound process is not evidence of a hang. The cache's own timestamps
+were the only thing that could distinguish "slow", "asleep" and "hung" — which is a good reason to
+log per-item timestamps in anything long-running.
+
+**Known latent hazard, not the cause here:** `client.embed` consumes its batches through
+`pool.map`, which yields **in order**. One genuinely hung batch would therefore block every
+completed batch behind it. The 300s timeout and four retries bound it, but `as_completed` would be
+strictly better and is worth changing when the stage is not mid-run.

@@ -11,6 +11,24 @@ cd "$(dirname "$0")"
 PY=.venv/bin/python
 mkdir -p logs
 
+# Hold a power assertion for the life of this script.
+#
+# Without one, macOS idle-sleeps on battery and every stage simply PAUSES -- the work is not lost
+# (each stage is resumable and the HTTP client reconnects on wake), but wall-clock time disappears.
+# Measured on the first attempt: three sleeps of 78, 194 and 232 minutes, the last confirmed by
+# `pmset -g log` as "Wake from Deep Idle ... lid/HID Activity". A 4-hour elapsed time with 25
+# minutes of work done is what that looks like from the outside, and it reads as a hung job.
+#
+# caffeinate re-execs this script once with the assertion held. CAFFEINATED guards the recursion.
+# NOTE: this cannot prevent sleep from CLOSING THE LID on Apple Silicon. For an overnight run,
+# leave the lid open or keep the machine on AC power.
+if [[ -z "${CAFFEINATED:-}" ]]; then
+  export CAFFEINATED=1
+  log_pre() { print -r -- "[$(date +%H:%M:%S)] $*" }
+  log_pre "re-exec under caffeinate (prevents idle sleep; lid-close still sleeps)"
+  exec caffeinate -dimsu "$0" "$@"
+fi
+
 log() { print -r -- "[$(date +%H:%M:%S)] $*" }
 
 # 0. wait for extraction, if it is still going
