@@ -87,6 +87,9 @@ def main() -> None:
     ap.add_argument("--split", default="forum_heldout")
     ap.add_argument("--n-queries", type=int, default=400)
     ap.add_argument("--k", type=int, default=50)
+    ap.add_argument("--text-dense", action="store_true",
+                    help="also embed masked text directly (costs API calls); separates 'dense "
+                         "fails here' from 'fact embeddings carry no precedent signal'")
     args = ap.parse_args()
 
     # --- pool and targets
@@ -128,27 +131,55 @@ def main() -> None:
     idx = BM25Index()
     idx.build(lambda: ((d, years[d], scrubbed[d]) for d in pool_ids), verbose=False)
 
-    # --- case vectors for the dense arm: mean-pooled fact embeddings, from cache (no API)
-    print("building case vectors from cached fact embeddings...", flush=True)
+    # --- dense arms, both from cached fact embeddings (no API calls)
+    #
+    # Two aggregations, because the first one measured badly and the reason was diagnosable rather
+    # than fundamental:
+    #
+    #   MEAN-POOL  one vector per case, the mean of its ~17 fact embeddings. Scored R@10 0.053
+    #              against BM25's 0.207. Averaging 17 facts washes out exactly the specifics that
+    #              identify a precedent -- a case about a 1923 partition and one about a mortgage
+    #              redemption both average toward "generic land dispute".
+    #   MAX-POOL   keep every fact vector and score a candidate case by its single best
+    #              fact-to-fact match against the query's facts. One sharply matching fact is
+    #              what makes a precedent relevant, and max-pooling is what preserves it.
+    #
+    # Both are reported so the fix is demonstrated rather than asserted.
+    print("building fact-level dense index from cached embeddings...", flush=True)
     cache = client._get_cache()
     emodel = client.DEFAULT_EMBED_MODEL
-    sums: dict[str, np.ndarray] = {}
-    cnt: Counter = Counter()
+    fvecs: list[np.ndarray] = []
+    fcase: list[str] = []
     for line in open(paths.INTERIM / "facts.jsonl"):
         r = json.loads(line)
+        if r["case_id"] not in pool:
+            continue
         hit = cache.get(client._key("embed", emodel, r["text"], {}))
         if hit is None:
             continue
-        v = np.array(json.loads(hit["response"]), dtype=np.float32)
-        c = r["case_id"]
-        sums[c] = v if c not in sums else sums[c] + v
-        cnt[c] += 1
-    dense_ids = [d for d in pool_ids if cnt[d]]
-    D = np.vstack([sums[d] / cnt[d] for d in dense_ids])
+        fvecs.append(np.array(json.loads(hit["response"]), dtype=np.float32))
+        fcase.append(r["case_id"])
+    F = np.vstack(fvecs)
+    F /= (np.linalg.norm(F, axis=1, keepdims=True) + 1e-9)
+    del fvecs
+    dense_ids = sorted(set(fcase))
+    cpos = {d: i for i, d in enumerate(dense_ids)}
+    fcase_idx = np.fromiter((cpos[c] for c in fcase), dtype=np.int32, count=len(fcase))
+    fyear = np.fromiter((years[c] for c in fcase), dtype=np.int32, count=len(fcase))
+    # rows of F belonging to each case, for building the query side
+    rows_of: dict[str, np.ndarray] = {}
+    for i, c in enumerate(fcase):
+        rows_of.setdefault(c, []).append(i)
+    rows_of = {c: np.array(v, dtype=np.int32) for c, v in rows_of.items()}
+    # mean-pooled case matrix, for the comparison arm
+    D = np.zeros((len(dense_ids), F.shape[1]), dtype=np.float32)
+    for c, rr in rows_of.items():
+        D[cpos[c]] = F[rr].mean(axis=0)
     D /= (np.linalg.norm(D, axis=1, keepdims=True) + 1e-9)
-    dpos = {d: i for i, d in enumerate(dense_ids)}
     dyear = np.array([years[d] for d in dense_ids])
-    print(f"  {len(dense_ids):,} cases have a dense vector")
+    dpos = cpos
+    print(f"  {F.shape[0]:,} fact vectors over {len(dense_ids):,} cases "
+          f"({F.nbytes/1e9:.2f} GB)")
 
     # --- atom sets for the overlap arm
     atoms: dict[str, set[str]] = defaultdict(set)
@@ -166,7 +197,30 @@ def main() -> None:
             pop[b] += 1
     pop_order = [d for d, _ in pop.most_common()]
 
-    systems = ["mention", "popularity", "bm25", "dense", "atom_overlap", "rrf(bm25+dense)"]
+    # --- dense over the MASKED TEXT itself, to separate two very different diagnoses.
+    #
+    # BM25 on masked text works (R@10 0.207) while dense over fact embeddings does not, under either
+    # pooling. That is either (a) dense retrieval failing on this task, or (b) the extracted FACTS
+    # not carrying precedent-relevance signal even though the text does. Embedding the masked text
+    # directly discriminates: if it works, the facts are the problem; if it fails too, dense is.
+    text_dense = None
+    if args.text_dense:
+        print("embedding masked text for the text-dense arm...", flush=True)
+        ids = [d for d in pool_ids]
+        T = client.embed([scrubbed[d][:8000] for d in ids], batch_size=32, workers=24)
+        ok = T.any(axis=1)
+        if not ok.all():
+            print(f"  {int((~ok).sum())} text embeddings never arrived; those cases are excluded")
+        tids = [d for d, k in zip(ids, ok) if k]
+        T = T[ok]
+        T /= (np.linalg.norm(T, axis=1, keepdims=True) + 1e-9)
+        text_dense = (tids, {d: i for i, d in enumerate(tids)}, T,
+                      np.array([years[d] for d in tids]))
+
+    systems = ["mention", "popularity", "bm25", "dense_meanpool", "dense_maxpool",
+               "dense_top3", "atom_overlap", "rrf(bm25+dense_meanpool)"]
+    if text_dense:
+        systems += ["dense_masked_text", "rrf(bm25+dense_masked_text)"]
     scores = {s: defaultdict(list) for s in systems}
     violations = 0
 
@@ -192,13 +246,54 @@ def main() -> None:
 
         if q in dpos:
             sim = D @ D[dpos[q]]
-            ok = (dyear < yq)
-            sim = np.where(ok, sim, -np.inf)
-            top = np.argsort(-sim)[:args.k]
-            ranked["dense"] = [dense_ids[i] for i in top
-                               if dense_ids[i] != q and np.isfinite(sim[i])]
+            sim = np.where(dyear < yq, sim, -np.inf)
+            top = np.argsort(-sim)[:args.k + 1]
+            ranked["dense_meanpool"] = [dense_ids[i] for i in top
+                                        if dense_ids[i] != q and np.isfinite(sim[i])][:args.k]
         else:
-            ranked["dense"] = []
+            ranked["dense_meanpool"] = []
+
+        qrows = rows_of.get(q)
+        if qrows is not None and len(qrows):
+            # (n_query_facts x n_pool_facts) similarities, reduced to one score per candidate case
+            # by taking the single best fact-to-fact match.
+            S = F[qrows] @ F.T                                  # (nq, nF)
+            best_per_fact = S.max(axis=0)                       # (nF,)
+            best_per_fact[fyear >= yq] = -np.inf                # time-respecting
+            case_best = np.full(len(dense_ids), -np.inf, dtype=np.float32)
+            np.maximum.at(case_best, fcase_idx, best_per_fact)
+            case_best[cpos[q]] = -np.inf
+            top = np.argsort(-case_best)[:args.k]
+            ranked["dense_maxpool"] = [dense_ids[i] for i in top if np.isfinite(case_best[i])]
+
+            # top-3 mean: a middle ground. Max rewards a single boilerplate match ("the appellant
+            # filed an appeal"); the full mean washes out the distinctive fact. Averaging the best
+            # few needs several matching facts without requiring all of them to match.
+            finite = np.isfinite(best_per_fact)
+            top3 = defaultdict(list)
+            for fi in np.nonzero(finite)[0]:
+                top3[fcase_idx[fi]].append(best_per_fact[fi])
+            sc3 = [(dense_ids[ci], float(np.mean(sorted(v, reverse=True)[:3])))
+                   for ci, v in top3.items() if dense_ids[ci] != q]
+            sc3.sort(key=lambda kv: -kv[1])
+            ranked["dense_top3"] = [d for d, _ in sc3[:args.k]]
+            del S
+        else:
+            ranked["dense_maxpool"] = []
+            ranked["dense_top3"] = []
+
+        if text_dense:
+            tids, tpos, T, tyear = text_dense
+            if q in tpos:
+                sim = T @ T[tpos[q]]
+                sim = np.where(tyear < yq, sim, -np.inf)
+                top = np.argsort(-sim)[:args.k + 1]
+                ranked["dense_masked_text"] = [tids[i] for i in top
+                                               if tids[i] != q and np.isfinite(sim[i])][:args.k]
+            else:
+                ranked["dense_masked_text"] = []
+            ranked["rrf(bm25+dense_masked_text)"] = rrf(
+                [ranked["bm25"], ranked["dense_masked_text"]])[:args.k]
 
         qa = atoms.get(q, set())
         if qa:
@@ -220,7 +315,8 @@ def main() -> None:
         else:
             ranked["atom_overlap"] = []
 
-        ranked["rrf(bm25+dense)"] = rrf([ranked["bm25"], ranked["dense"]])[:args.k]
+        ranked["rrf(bm25+dense_meanpool)"] = rrf([ranked["bm25"],
+                                                  ranked["dense_meanpool"]])[:args.k]
 
         for s, r in ranked.items():
             # §9.3: time-respecting retrieval, asserted rather than assumed

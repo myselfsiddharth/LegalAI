@@ -28,11 +28,25 @@
    "ndcg@10": 0.2245
   },
   {
-   "system": "dense",
+   "system": "dense_meanpool",
    "r@10": 0.0533,
    "r@50": 0.1303,
    "mrr": 0.1142,
    "ndcg@10": 0.054
+  },
+  {
+   "system": "dense_maxpool",
+   "r@10": 0.039,
+   "r@50": 0.1037,
+   "mrr": 0.0969,
+   "ndcg@10": 0.0438
+  },
+  {
+   "system": "dense_top3",
+   "r@10": 0.0555,
+   "r@50": 0.1268,
+   "mrr": 0.1436,
+   "ndcg@10": 0.0653
   },
   {
    "system": "atom_overlap",
@@ -42,11 +56,25 @@
    "ndcg@10": 0.0207
   },
   {
-   "system": "rrf(bm25+dense)",
+   "system": "rrf(bm25+dense_meanpool)",
    "r@10": 0.1547,
    "r@50": 0.3492,
    "mrr": 0.3262,
    "ndcg@10": 0.1612
+  },
+  {
+   "system": "dense_masked_text",
+   "r@10": 0.2293,
+   "r@50": 0.3895,
+   "mrr": 0.3796,
+   "ndcg@10": 0.2209
+  },
+  {
+   "system": "rrf(bm25+dense_masked_text)",
+   "r@10": 0.2384,
+   "r@50": 0.4529,
+   "mrr": 0.4277,
+   "ndcg@10": 0.2425
   }
  ]
 }

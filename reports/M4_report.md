@@ -113,14 +113,17 @@ the canonical atoms clear a baseline at all.
 Rank earlier cases by how likely the court was to cite them. 150 queries with ≥3 reachable
 precedents, 1,035 reachable targets, pool of 6,849 cases.
 
-| system | R@10 | R@50 | MRR | nDCG@10 |
-|---|---|---|---|---|
-| `mention` (copy control) | 0.022 | 0.112 | 0.037 | 0.014 |
-| `popularity` | 0.032 | 0.103 | 0.071 | 0.032 |
-| **`bm25` on masked text** | **0.207** | **0.350** | **0.431** | **0.224** |
-| `dense` (mean-pooled fact embeddings) | 0.053 | 0.130 | 0.114 | 0.054 |
-| `atom_overlap` (IDF-weighted Jaccard) | 0.021 | 0.058 | 0.046 | 0.021 |
-| `rrf(bm25+dense)` | 0.155 | 0.349 | 0.326 | 0.161 |
+| system | input | R@10 | R@50 | MRR | nDCG@10 |
+|---|---|---|---|---|---|
+| `mention` (copy control) | — | 0.022 | 0.112 | 0.037 | 0.014 |
+| `popularity` | — | 0.032 | 0.103 | 0.071 | 0.032 |
+| `bm25` | masked text | 0.207 | 0.350 | **0.431** | 0.224 |
+| `dense_meanpool` | facts | 0.053 | 0.130 | 0.114 | 0.054 |
+| `dense_maxpool` | facts | 0.039 | 0.104 | 0.097 | 0.044 |
+| `dense_top3` | facts | 0.056 | 0.127 | 0.144 | 0.065 |
+| `atom_overlap` | atoms | 0.021 | 0.058 | 0.046 | 0.021 |
+| `dense_masked_text` | masked text | **0.229** | 0.389 | 0.380 | 0.221 |
+| **`rrf(bm25+dense_masked_text)`** | masked text | **0.238** | **0.453** | 0.428 | **0.242** |
 
 **Time-respecting retrieval asserted, not assumed:** 0 of the retrieved cases post-date their
 query, checked per result rather than trusted to the `before_year` filter.
@@ -138,24 +141,35 @@ figures are stored in the results JSON.
 2. **The copy control passes cleanly here** (0.022), unlike §9.2 where it beat every model. Queries
    are `masked_text` with citation-bearing sentences scrubbed, so a precedent cannot be read off
    the input — the retrieval is real.
-3. **Dense is far weaker than BM25** (0.053). This is a representation problem rather than a verdict
-   on dense retrieval: a case vector is the mean of ~17 fact embeddings, and mean-pooling washes out
-   exactly the specifics that identify a precedent. A per-fact index with max-pooling, or chunk-level
-   vectors, is the obvious fix and is untried.
-4. **RRF fusion *hurts*** (0.155 against BM25's 0.207) because the dense arm is too weak to fuse
-   with. Worth stating, since fusion is usually assumed to be free.
-5. **`atom_overlap` sits at baseline level** (0.021). The canonical atoms fail here as they do
-   everywhere else.
+3. **Dense retrieval is not the problem — the extracted facts are.** Dense over fact embeddings
+   scores 0.039–0.056 under *every* pooling tried, while dense over the **masked text** reaches
+   **0.229**, slightly ahead of BM25.
+
+   This corrects a diagnosis stated in an earlier version of this report. The hypothesis was that
+   mean-pooling ~17 fact embeddings washed out the specifics identifying a precedent, and that
+   max-pooling would fix it. **Max-pooling made it worse** (0.039 vs 0.053) — a single best
+   fact-to-fact match rewards boilerplate ("the appellant filed an appeal"), which the mean at
+   least averages away. A top-3 mean, the middle ground, reached only 0.056.
+
+   Embedding the masked text directly is what settled it: the signal is in the text and does not
+   survive into the facts. **The facts carry 4× less precedent-relevance signal than the text they
+   came from** (0.056 vs 0.229).
+4. **RRF fusion helps once it has a second strong arm.** With the weak fact-based dense arm it
+   *hurt* (0.155 against BM25's 0.207); with the text-based one it gives the best system overall
+   (R@10 0.238, R@50 0.453, nDCG 0.242) — 7.4× the popularity control. Fusion is not free; it
+   amplifies or dilutes depending on what it is given.
+5. **`atom_overlap` sits at baseline level** (0.021, against popularity's 0.032). The canonical
+   atoms fail here as they do everywhere else.
 
 ### 3.2 The cross-task pattern is now consistent
 
 Three independent tasks, same ordering of representations:
 
-| task | masked text | extracted fact text | canonical atoms | baseline |
+| task | masked text | extracted facts | canonical atoms | baseline |
 |---|---|---|---|---|
 | outcome (AUROC) | 0.657 | 0.614 | **0.517** | 0.500 |
 | statutes (micro-F1) | 0.173 | 0.159 | **0.109** | 0.093 |
-| precedents (R@10) | 0.207 (BM25) | — | **0.021** | 0.032 |
+| precedents (R@10) | **0.238** | 0.056 | **0.021** | 0.032 |
 
 **The canonical atoms lose to, or barely clear, the baseline on every task.** That is the
 discretisation finding of `reports/M5_report.md` §2, replicated across three tasks of quite
@@ -179,9 +193,8 @@ different shape — which is much stronger evidence than the outcome task alone 
 
 ## 5. Next
 
-1. **Fix the dense arm.** Mean-pooling ~17 fact embeddings into one case vector is almost certainly
-   why dense scores 0.053 against BM25's 0.207. A per-fact index with max-pooling over fact-level
-   hits would keep the distinctiveness that identifies a precedent.
+1. ~~Fix the dense arm by max-pooling~~ — **done and the hypothesis was wrong** (§3.1 item 3).
+   Dense works on masked text and fails on facts under every pooling; the deficit is in the facts.
 2. **Re-rank by the signed citation graph** — 8,467 edges already exist with polarity, and "is this
    still good law" is a question none of these retrievers asks. Temper expectations: only 174 edges
    are negative.
