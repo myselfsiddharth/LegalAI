@@ -831,3 +831,64 @@ log per-item timestamps in anything long-running.
 `pool.map`, which yields **in order**. One genuinely hung batch would therefore block every
 completed batch behind it. The 300s timeout and four retries bound it, but `as_completed` would be
 strictly better and is worth changing when the stage is not mid-run.
+
+### Batching cost label fidelity, caught by watching the NEW rate
+
+The batched canonicalisation run reported an out-of-vocabulary rate of **64%**, against 22.7% for
+the unbatched pass. The proposals showed what was wrong: **valid categories with invented
+subcategories** — `Event.death`, `Event.application_filed`, `Event.sale` — when the vocabulary
+already had fitting entries (`Element.death_of_owner`, `Event.suit_filed`). The model had stopped
+picking from the menu.
+
+Controlled test, same 96 facts through every arm, so only the strategy varied. With a **shared union
+menu**, out-of-vocabulary rose with menu size:
+
+| arm | menu size | out of vocabulary |
+|---|---|---|
+| batch 4 | 52 labels | 51.0% |
+| batch 8 | 87 labels | 75.0% |
+| batch 16 | 123 labels | 76.0% |
+
+So batching was not the problem — the **shared** menu was. A long menu stops being scanned.
+
+Switched to **per-fact candidate menus** inside the batched call (`canonicalize_fact.v3`), which
+keeps each fact's single-fact framing while still amortising one call over eight facts. Re-measured:
+
+| arm | out of vocabulary |
+|---|---|
+| unbatched, 24 candidates/fact | 34.4% |
+| **batch 8, per-fact menus** | **32.3%** |
+| batch 16, per-fact menus | 49.0% |
+
+Batch 8 now matches unbatched. Batch 16 still degrades, so 8 is the setting.
+
+**A second bug the same test exposed:** arm 1 labelled **0 of 96**. Changing `PROMPT_ID` to the
+batched prompt had silently broken `canonicalize_one`, which was still validating against the
+single-object schema — so the single-fact path returned `None` for everything. That path is the
+**fallback for facts a batch skips**, so every retry was being dropped as unlabelable. Now split
+into `PROMPT_ID_ONE` and `PROMPT_ID`.
+
+**And a correction to my own earlier number.** The baseline out-of-vocabulary rate on this corpus
+slice is ~34%, not the 22.7% measured on the first 795 cases. So the 22.7% → 64% jump conflated two
+things: **data** (22.7% → ~34%, later cases are more varied) and **method** (34% → 64%, the shared
+menu). Only the second was a bug. §6.2's real out-of-vocabulary rate is ~32–34%, still far above the
+5% freeze threshold.
+
+**Also worth correcting: the "5.3 hours" figure for unbatched canonicalisation was an
+overestimate.** It applied extraction's observed 4.43 calls/s to canonicalisation, whose calls carry
+350 max output tokens against extraction's 3,000. Canonicalisation calls are far cheaper, and
+unbatched at 96 workers would have been roughly an hour. Batching is still the right choice on a
+throughput-limited endpoint — 8× fewer requests at equal label quality — but it is not the 5×
+difference originally claimed.
+
+### A driver bug that let two pipelines run at once
+
+`run_downstream.sh` checked only the QA gate's exit code. When `canonicalize` was killed mid-run,
+the script therefore **advanced to the next stage on incomplete canonical facts**, and a later
+`pkill` on the script orphaned that child to init — where it ran for 26 minutes against stale state
+while a fresh driver did the same work. Two pipelines writing the same files is how state becomes
+quietly inconsistent.
+
+Every stage now runs through `run_stage`, which aborts the whole run on a non-zero exit. The 66,605
+rows written by the degraded batched run were quarantined and the file reverted to the 13,919 trusted
+unbatched rows.

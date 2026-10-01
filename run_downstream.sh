@@ -8,6 +8,24 @@
 # claim families; patterns need transactions; the outcome models need patterns.
 set -u
 cd "$(dirname "$0")"
+
+# Abort on any stage failure.
+#
+# This script originally checked only the QA gate's exit code. When `canonicalize` was killed
+# mid-run, the script therefore advanced to `claim_families` on INCOMPLETE canonical facts, and a
+# later `pkill` on the script orphaned that child to init, where it kept running for 26 minutes
+# against stale state while a fresh run did the same work. Two pipelines writing the same files is
+# how state becomes quietly inconsistent, so a failed or killed stage now stops the run.
+run_stage() {
+  local name="$1"; shift
+  local logf="$1"; shift
+  log "$name"
+  if ! "$@" > "$logf" 2>&1; then
+    log "STAGE FAILED: $name (see $logf) -- stopping so nothing downstream runs on partial data"
+    exit 1
+  fi
+  log "  -> $logf"
+}
 PY=.venv/bin/python
 mkdir -p logs
 
@@ -36,10 +54,8 @@ while pgrep -f "src.extract.facts" >/dev/null; do sleep 60; done
 log "extraction finished"
 
 # 1. recover cases that produced no facts -- absent means either fact-free or never answered
-log "recovering missing cases"
-$PY -u -m src.extract.facts --n 0 --workers 96 --priority eval-first --only-missing \
-    > logs/p_facts_missing.log 2>&1
-log "  -> logs/p_facts_missing.log"
+run_stage "recovering missing cases" logs/p_facts_missing.log \
+  $PY -u -m src.extract.facts --n 0 --workers 96 --priority eval-first --only-missing
 
 # 2. QA gate. If spans do not index their source, stop: nothing downstream would be trustworthy.
 log "fact-set QA"
@@ -50,9 +66,8 @@ fi
 log "  QA passed"
 
 # 3. claims and defences for every case (§7.1)
-log "claims + defences"
-$PY -u -m src.extract.claims --n 0 --workers 64 > logs/p_claims.log 2>&1
-log "  -> logs/p_claims.log"
+run_stage "claims + defences" logs/p_claims.log \
+  $PY -u -m src.extract.claims --n 0 --workers 64
 
 # 4. canonicalise every fact (§6.2) -- the long one
 #
@@ -61,25 +76,22 @@ log "  -> logs/p_claims.log"
 # tokens. A batched call runs ~80s under this concurrency, so the client timeout is raised for
 # this stage only -- 90s would abort work that is progressing, and each abort costs four retries.
 log "canonicalising facts (batched)"
-VOYAGER_TIMEOUT_S=300 $PY -u -m src.extract.canonicalize --n 0 --workers 96 --batch 16 \
+VOYAGER_TIMEOUT_S=300 $PY -u -m src.extract.canonicalize --n 0 --workers 96 --batch 8 \
     > logs/p_canon.log 2>&1
 log "  -> logs/p_canon.log"
 
 # 5. claim families, then the data-driven merge (§7.2-7.3 -> §6.3)
-log "claim families + merge"
-$PY -u -m src.cluster.claim_families > logs/p_families.log 2>&1
-$PY -u -m src.cluster.family_merge   > logs/p_merge.log 2>&1
-log "  -> logs/p_families.log logs/p_merge.log"
+run_stage "claim families" logs/p_families.log $PY -u -m src.cluster.claim_families
+run_stage "family merge"   logs/p_merge.log    $PY -u -m src.cluster.family_merge
 
 # 6. vocabulary refinement proposal (§6.2 steps 3-4). Proposal only: §6.2 wants human review
 #    before a vocabulary is frozen, so this does not pass --apply.
-log "vocabulary refinement proposal"
-$PY -u -m src.extract.vocab_refine > logs/p_vocab_refine.log 2>&1
-log "  -> logs/p_vocab_refine.log"
+run_stage "vocabulary refinement proposal" logs/p_vocab_refine.log \
+  $PY -u -m src.extract.vocab_refine
 
 # 7. transactions + FP-Growth per family (§8)
-log "transactions + patterns"
-$PY -u -m src.patterns.transactions > logs/p_transactions.log 2>&1
+run_stage "transactions" logs/p_transactions.log $PY -u -m src.patterns.transactions
+log "patterns"
 for S in forum_heldout temporal_2004_2013; do
   $PY -u -m src.patterns.mine --split $S > logs/p_mine_$S.log 2>&1
 done

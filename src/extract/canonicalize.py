@@ -37,7 +37,8 @@ from pydantic import BaseModel, RootModel
 from src import paths
 from src.llm import client
 
-PROMPT_ID = "canonicalize_fact.v2"
+PROMPT_ID_ONE = "canonicalize_fact.v1"      # one fact per call, 24 focused candidates
+PROMPT_ID = "canonicalize_fact.v3"          # batched, PER-FACT candidate menus
 BATCH_FACTS = 8
 VOCAB_PATH = paths.ONTOLOGY / "vocab_v1.yaml"
 OUT_PATH = paths.INTERIM / "canonical_facts.jsonl"
@@ -141,13 +142,13 @@ def canonicalize_one(fact: dict, keys: list[str], M: np.ndarray, model: str,
         return None                                  # embedding never arrived; NOT a null label
     cands = candidates_for(fact["text"], keys, M, qvec)
     menu = "\n".join(f"- {c}" for c in cands)
-    msgs = [{"role": "system", "content": client.load_prompt(PROMPT_ID)},
+    msgs = [{"role": "system", "content": client.load_prompt(PROMPT_ID_ONE)},
             {"role": "user", "content":
              f"FACT: {fact['text']}\n\nCONTEXT (how it was asserted): "
              f"asserted_by={fact['asserted_by']}, disputed_status={fact['disputed_status']}"
              f"{', event_date=' + fact['event_date'] if fact.get('event_date') else ''}\n\n"
              f"CANDIDATE LABELS:\n{menu}"}]
-    res = client.complete(msgs, model=model, json_schema=CanonJSON, prompt_id=PROMPT_ID,
+    res = client.complete(msgs, model=model, json_schema=CanonJSON, prompt_id=PROMPT_ID_ONE,
                           max_tokens=350)
     if not res.ok or res.parsed is None:
         return None
@@ -232,24 +233,26 @@ def canonicalize_batch(batch: list[tuple[dict, "np.ndarray"]], keys: list[str], 
     """
     stats = Counter()
     facts = [f for f, _ in batch]
-    menu: list[str] = []
-    seen = set()
-    for _f, q in batch:
-        for c in candidates_for("", keys, M, q):
-            if c not in seen:
-                seen.add(c)
-                menu.append(c)
 
+    # PER-FACT candidate menus, not a shared union.
+    #
+    # A shared union menu was measured to wreck label fidelity: out-of-vocabulary answers rose with
+    # menu size -- 51% at batch 4 (52 labels), 75% at batch 8 (87 labels), 76% at batch 16 (123
+    # labels) -- against 22.7% for the unbatched path with 24 focused candidates. The model stops
+    # scanning a long menu and invents instead, emitting valid CATEGORIES with invented
+    # subcategories (`Event.death` when `Element.death_of_owner` exists). Giving each fact its own
+    # short menu keeps the single-fact framing while still amortising one call over many facts;
+    # input tokens are cheap relative to the output tokens that dominate latency.
     lines = []
-    for i, f in enumerate(facts, 1):
+    for i, (f, q) in enumerate(batch, 1):
         ctx = f"asserted_by={f['asserted_by']}, disputed_status={f['disputed_status']}"
         if f.get("event_date"):
             ctx += f", event_date={f['event_date']}"
-        lines.append(f"{i}. {f['text']}\n   ({ctx})")
+        cands = candidates_for("", keys, M, q, k=N_CANDIDATES)
+        lines.append(f"{i}. {f['text']}\n   ({ctx})\n   CANDIDATES: "
+                     + " | ".join(cands))
     msgs = [{"role": "system", "content": client.load_prompt(PROMPT_ID)},
-            {"role": "user", "content":
-             "FACTS:\n" + "\n".join(lines) +
-             "\n\nCANDIDATE LABELS:\n" + "\n".join(f"- {c}" for c in menu)}]
+            {"role": "user", "content": "FACTS:\n\n" + "\n\n".join(lines)}]
 
     res = client.complete(msgs, model=model, json_schema=CanonBatch, prompt_id=PROMPT_ID,
                           max_tokens=180 * len(facts) + 200)
