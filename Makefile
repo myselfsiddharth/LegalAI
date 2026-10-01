@@ -66,6 +66,9 @@ precedents: ## §9.3 precedent retrieval (add --text-dense for the best system)
 llm-baselines: ## §3.3 all five LLM arms on the same cases and metrics
 	$(PY) -m src.predict.llm_baselines --split forum_heldout --n 300
 
+errors: ## §10.3 error analysis with a base-rate control
+	$(PY) -m src.eval.error_analysis --split forum_heldout --n-llm 50
+
 trace: ## §11 build traces and run the deletion test
 	$(PY) -m src.trace.build --split forum_heldout --model gbm --n 25
 	$(PY) -m src.trace.evaluate --split forum_heldout --model gbm --n 60

@@ -363,6 +363,10 @@ def embed(texts: Sequence[str], model: str | None = None, batch_size: int = 32,
                                      json.dumps(v), 0, 0)
             _counters["calls"] += 1
             done += len(idx)
+            # §14 asks every experiment to report token usage. Successful embed batches were not
+            # being logged at all -- only failures were -- so embedding cost was invisible in
+            # llm_calls.jsonl even though it is a large share of the total.
+            _log({"kind": "embed", "model": model, "ok": True, "n": len(idx)})
             if verbose and done % (batch_size * 20) < batch_size:
                 print(f"  embedded {done}/{len(pending)}", flush=True)
     return out

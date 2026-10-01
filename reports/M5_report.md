@@ -230,7 +230,70 @@ fixes the prediction bias: `predWIN` 0.48 against `LLM-0`'s 0.13, against a true
 elements supplied come from the ontology, so this is the one place the ontology demonstrably helps
 something — not as a feature space, but as a reasoning scaffold for a prompt.
 
-## 6. Leakage probes (§5.2), n=902
+## 6. Error analysis (§10.3): the pipeline's records do not explain its errors
+
+Best structured model (gbm `F+P+E+S+R+C`), 881 test cases, accuracy 0.598 — **354 errors (40.2%)**.
+
+§10.3 names seven error categories. Six are checkable from the pipeline's own records, so those are
+computed deterministically and only the residual goes to an LLM.
+
+### 6.1 The base-rate control invalidated the first categorisation
+
+The raw counts looked explanatory: `statute_mismatch` 144 errors (40.7%), `family_unassigned` 36,
+`discretionary` 29, `extraction_thin` 25. But a signal present in 40% of errors explains nothing if
+it is present in 40% of everything, so each was re-measured against the correct predictions too:
+
+| signal | in errors | in correct | P(error \| flagged) | lift | diagnostic? |
+|---|---|---|---|---|---|
+| `statute_mismatch` | 175 | 265 | 0.398 | **0.99** | no |
+| `family_unassigned` | 39 | 48 | 0.448 | 1.12 | no |
+| `discretionary` | 67 | 113 | 0.372 | 0.93 | no |
+| `extraction_thin` | 25 | 46 | 0.352 | 0.88 | no |
+| `atoms_only_generic` | 1 | 3 | 0.250 | 0.62 | no |
+| `label_noise` | 0 | 0 | — | — | **vacuous** |
+
+Base error rate 0.402. **Every lift is ≈ 1.0.** `statute_mismatch` dominated the error counts purely
+because it occurs in about 40% of all cases; it carries no information about which ones fail.
+
+`label_noise` never fires, and that is a **limitation of the implementation, not a finding**:
+eligibility already excludes the 562 UNRESOLVED labels, so conflicted labels cannot reach the test
+set. Nothing here shows label noise is absent — only that it was filtered upstream.
+
+**So the pipeline's errors are not concentrated anywhere its own records can see.** They are not the
+thin extractions, the unassigned families, or the discretionary claims.
+
+### 6.2 The model's and the LLM's errors are statistically independent
+
+| | n=300 |
+|---|---|
+| model errors | 119 (39.7%) |
+| `LLM-CoT` errors | 125 (41.7%) |
+| both wrong | **46** |
+| expected under independence | **49.6** |
+| observed / expected | **0.93** |
+| Jaccard | 0.232 |
+
+If both systems were failing on a shared set of intrinsically hard cases, `both_wrong` would exceed
+the independence expectation. It is slightly *below* it. Two systems with quite different inputs —
+tree model over structured features, LLM over raw text with element prompting — fail on
+**essentially uncorrelated** sets of cases.
+
+That is what two systems close to guessing on a large shared subset looks like, and it is the most
+direct evidence yet that the ~0.60 ceiling is a property of the task on masked inputs rather than a
+defect either system could fix. It also means an ensemble has room in principle, which is the one
+constructive reading.
+
+### 6.3 The LLM's own account of the residual, discounted
+
+119 errors trip no deterministic signal. Asked to choose between "the facts underdetermine this" and
+"the facts point the other way", the LLM called 29 of 50 `facts_point_other_way` and 18
+`facts_underdetermine`.
+
+**This should be weighted lightly.** The same model scores 0.583 accuracy on this task, so its
+judgement that 60% of these errors were winnable is an assessment made by a system that is itself
+close to chance. It is recorded, not relied on.
+
+## 7. Leakage probes (§5.2), n=902
 
 | arm | macro-F1 | AUROC |
 |---|---|---|
@@ -248,7 +311,7 @@ quoted with confidence.
 time where truth is 43%. A zero-shot LLM is worse than TF-IDF+LR on honest inputs and badly
 miscalibrated.
 
-## 7. §10 acceptance
+## 8. §10 acceptance
 
 | requirement | status |
 |---|---|
@@ -264,9 +327,9 @@ miscalibrated.
 | trace faithfulness, deletion test (§11a) | **met** — cited facts move the prediction 3.1× more than random, CI excludes 0 |
 | trace faithfulness, human rating (§11b) | **not done** — needs a legal reviewer |
 | trace vs `LLM-CoT` rationales (§11c) | **not done** — `LLM-CoT` not built |
-| error analysis (§10.3) | **not built** |
+| error analysis (§10.3) | **met** — 354 errors categorised with a base-rate control; model/LLM error overlap reported |
 
-## 8. What this means for the project
+## 9. What this means for the project
 
 §8 as specified — FP-Growth over canonical fact labels per claim family — **cannot work on this
 corpus**, for a measured reason: its input representation carries no outcome signal. That is a
@@ -278,8 +341,14 @@ What still carries signal is `masked_text` (0.657) and the extracted fact **text
 pipeline's useful product is the span-verified, party-attributed fact set — not its projection onto
 a label vocabulary.
 
-**Where this leaves the project.** The structured pipeline now beats a per-decade majority baseline
-(macro-F1 0.597 vs 0.557) and the features responsible are §9's — predicted statutes and retrieved
-precedents — not §6's canonical atoms, which remain at chance. The raw masked text still beats all
-of it at 0.657, so the value of the structure is interpretability and provenance rather than
-accuracy.
+**Where this leaves the project.** The structured pipeline edges a per-decade majority baseline
+(macro-F1 0.597 vs 0.571 on the common subset) and the features responsible are §9's — predicted
+statutes and retrieved precedents — not §6's canonical atoms, which remain at chance. The raw masked
+text still matches or beats all of it, so the value of the structure is interpretability and
+provenance rather than accuracy.
+
+**And the ~0.60 ceiling now looks intrinsic.** §10.3 finds no signal that predicts which cases fail
+(every lift ≈ 1.0), and the structured model's errors are statistically independent of an LLM's
+working from raw text. Both facts point the same way: on leakage-controlled inputs, the facts and
+pleadings of an Indian land dispute underdetermine its outcome. That is a statement about the task,
+and it is the most defensible thing this project has measured about outcome prediction.

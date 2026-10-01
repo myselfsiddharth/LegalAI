@@ -220,6 +220,12 @@ def main() -> None:
         r["n_scored"] = len(sub)
         results.append(r)
         preds[arm] = (sub, y, p)
+        # Persist per-case answers: §10.3 asks for the overlap between the model's errors and the
+        # LLM's, which needs the individual predictions and not just the aggregate.
+        slug = arm.lower().replace("llm-", "").replace("-", "_").replace("+", "p")
+        with (paths.INTERIM / f"llm_{slug}_predictions.jsonl").open("w") as fh:
+            for row in rows:          # NOT `r`: that name holds the metrics dict used just below
+                fh.write(json.dumps(row) + "\n")
         print("  " + metrics.format_row(r) + f"  dropped={dropped} unusable={unusable}")
 
     # --- paired tests between arms that scored the same cases
