@@ -10,34 +10,34 @@
    "purity": 0.3947
   },
   "agglomerative": {
-   "k_by_silhouette": 5,
-   "silhouette": 0.0243,
+   "k_by_silhouette": 6,
+   "silhouette": 0.0245,
    "silhouette_curve": {
-    "4": 0.0229,
-    "5": 0.0243,
-    "6": 0.0172,
-    "7": 0.0192,
-    "8": 0.0164,
-    "9": 0.0154,
-    "10": 0.0105,
-    "11": 0.013,
-    "12": 0.0151,
-    "13": 0.0157,
-    "14": 0.0172,
-    "15": 0.0194,
-    "16": 0.0192,
-    "17": 0.0211,
-    "18": 0.0204,
-    "19": 0.0211,
-    "20": 0.0167,
-    "21": 0.0179,
-    "22": 0.0188,
-    "23": 0.0177,
-    "24": 0.0184
+    "4": 0.0235,
+    "5": 0.0206,
+    "6": 0.0245,
+    "7": 0.0179,
+    "8": 0.0167,
+    "9": 0.0191,
+    "10": 0.0165,
+    "11": 0.015,
+    "12": 0.0159,
+    "13": 0.018,
+    "14": 0.0203,
+    "15": 0.0225,
+    "16": 0.0225,
+    "17": 0.0206,
+    "18": 0.0161,
+    "19": 0.0103,
+    "20": 0.0113,
+    "21": 0.0122,
+    "22": 0.0133,
+    "23": 0.0141,
+    "24": 0.0152
    },
-   "nmi": 0.2163,
-   "ari": 0.0966,
-   "purity": 0.2923
+   "nmi": 0.2368,
+   "ari": 0.0833,
+   "purity": 0.3137
   },
   "modules_with_no_cluster": [
    {
@@ -1444,16 +1444,6 @@
   "mixed_clusters": [
    {
     "cluster": 0,
-    "size": 2356,
-    "composition": {
-     "Title": 880,
-     "Possession": 700,
-     "Partition": 196,
-     "Succession": 99
-    }
-   },
-   {
-    "cluster": 1,
     "size": 1554,
     "composition": {
      "SpecificPerformance": 254,
@@ -1463,13 +1453,33 @@
     }
    },
    {
-    "cluster": 3,
+    "cluster": 1,
     "size": 2310,
     "composition": {
      "Title": 421,
      "LandAcquisition": 372,
      "ConstitutionalDeprivation": 352,
      "UltraVires": 289
+    }
+   },
+   {
+    "cluster": 2,
+    "size": 1018,
+    "composition": {
+     "Title": 435,
+     "Partition": 190,
+     "Succession": 96,
+     "Possession": 96
+    }
+   },
+   {
+    "cluster": 3,
+    "size": 1338,
+    "composition": {
+     "Possession": 604,
+     "Title": 445,
+     "Tenure": 50,
+     "AdversePossession": 37
     }
    },
    {

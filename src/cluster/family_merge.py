@@ -42,6 +42,16 @@ from sklearn.cluster import AgglomerativeClustering
 from sklearn.metrics import silhouette_score
 
 from src import paths
+
+# Choosing k by silhouette is O(n^2) in both the clustering fit and the score, and it is run once
+# per candidate k. At 7,441 claims x 4096 dims that measured at 99.5% CPU for 19 minutes with no
+# end in sight -- roughly 21 fits plus 21 scores, each pairwise over 7,441 points.
+#
+# The sweep only has to RANK candidate k values, which a subsample does just as well, so k is chosen
+# on a sample and the final clustering is then fit on every point. `silhouette_score` also takes its
+# own `sample_size`, which bounds the scoring independently of the fit.
+SWEEP_SAMPLE = 2500
+SIL_SAMPLE = 2000
 from src.extract.claims import DEFENCE_FAMILIES
 from src.llm import client
 
@@ -80,10 +90,12 @@ def main() -> None:
     X, claims = X[keep], [c for c, k in zip(claims, keep) if k]
     fams = [c["family"] for c in claims]
 
+    rng = np.random.default_rng(573)
+    Xs = X if len(X) <= SWEEP_SAMPLE else X[rng.choice(len(X), SWEEP_SAMPLE, replace=False)]
     best = (None, -1.0)
     for k in range(3, 13):
-        a = AgglomerativeClustering(n_clusters=k).fit_predict(X)
-        s = silhouette_score(X, a)
+        a = AgglomerativeClustering(n_clusters=k).fit_predict(Xs)
+        s = silhouette_score(Xs, a, sample_size=min(SIL_SAMPLE, len(Xs)), random_state=573)
         if s > best[1]:
             best = (k, s)
     k, sil = best

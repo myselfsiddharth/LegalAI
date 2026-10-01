@@ -892,3 +892,83 @@ quietly inconsistent.
 Every stage now runs through `run_stage`, which aborts the whole run on a non-zero exit. The 66,605
 rows written by the degraded batched run were quarantined and the file reverted to the 13,919 trusted
 unbatched rows.
+
+---
+
+## 2026-10-01 — The fork resolved at n=881, and it overturned the hypothesis
+
+The decisive re-run, with canonicalisation complete (79,496 facts, 4,581 cases, 19.8% out of
+vocabulary) and **881 test cases instead of 143**.
+
+### Both vocabularies lose the signal; neither is better than the other
+
+| representation | features | AUROC |
+|---|---|---|
+| fact text (tf-idf) | 41,142 | **0.614** |
+| induced atoms (clustered, k=345) | 331 | **0.500** |
+| ontology atoms (§6.2) | 1,973 | **0.525** |
+| chance | | 0.500 |
+
+Paired bootstrap on the same 881 test cases:
+
+| comparison | diff | 95% CI | P(≤0) |
+|---|---|---|---|
+| text − induced | **+0.114** | [+0.073, +0.154] | **0.000** |
+| text − ontology | **+0.089** | [+0.043, +0.135] | **0.000** |
+| induced − ontology | −0.025 | [−0.071, +0.020] | 0.846 |
+
+**The n=143 result reversed sign.** At 143 test cases the forum split gave
+induced − ontology = **+0.125, P=0.030** and read as "induce the vocabulary and the structured
+pipeline is rescued". At 881 it is **−0.025, P=0.846** — induced is, if anything, slightly worse.
+
+Declining to call that fork was correct. Reporting it would have put a small-sample artifact at the
+centre of the project.
+
+### More atoms does not help either
+
+If 345 symbols were simply too few, more would recover the signal. Sweeping k (clustering only,
+embeddings cached):
+
+| k atoms | features | AUROC | gap to text |
+|---|---|---|---|
+| 345 | 334 | 0.557 | +0.056 |
+| 1,000 | 845 | 0.548 | +0.066 |
+
+The gap does not close; it widens slightly. (The k=345 figure differs from the table above —
+0.557 vs 0.500 — because MiniBatchKMeans with a different init path produces a different
+clustering. That instability is itself worth noting: the induced result varies more with clustering
+seed than it does with vocabulary source.)
+
+### What this establishes
+
+**Discretising extracted facts into a symbol vocabulary destroys the outcome signal those facts
+carry, regardless of whether the vocabulary is authored or induced, and regardless of its size.**
+
+Three independent lines now support it:
+1. The representation ladder: text 0.614 → atoms 0.500–0.525 at n=881, P=0.000.
+2. The atom-frequency sweep: chance at every threshold from `min_atom_cases` 1 to 20.
+3. The k-sweep: no recovery from 345 to 1,000 atoms.
+
+**This explains §8's null result and makes it expected rather than puzzling.** FP-Growth mines
+itemised atoms; if the itemisation carries no outcome signal, no pattern over it can be significant.
+0 of 351 patterns surviving Benjamini–Hochberg (against 17.6 expected by chance) is exactly what a
+mis-specified representation looks like.
+
+### Consequence for the project
+
+§8 as PROJECT.md specifies it — FP-Growth over canonical fact labels, per claim family — **cannot
+work on this corpus**, and the reason is now measured rather than suspected. That is a real finding
+about symbolic fact representations for legal judgment prediction, and it is backed by the leakage
+control (`order_only` 0.983, `masked` 0.655) and the multiple-testing discipline that make the null
+credible rather than merely unimpressive.
+
+What still carries signal is the **fact text** (0.614), which extraction preserves losslessly from
+`masked_text` (0.614 vs 0.578 earlier at smaller n). So the pipeline's useful output is the
+extracted, span-verified, party-attributed fact set — not its projection onto a label vocabulary.
+
+### Also corrected
+
+An earlier WORKLOG entry framed this as "the ONTOLOGY vocabulary is the problem". That was the
+n=143 reading and it is **too narrow**. The ontology is not uniquely bad: it loses 0.089 where an
+induced vocabulary of the same granularity loses 0.114, and the two are statistically
+indistinguishable. The problem is discretisation, not the ontology's particular choices.

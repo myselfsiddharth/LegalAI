@@ -27,6 +27,16 @@ from sklearn.metrics import (adjusted_rand_score, normalized_mutual_info_score,
                              silhouette_score)
 
 from src import paths
+
+# Choosing k by silhouette is O(n^2) in both the clustering fit and the score, and it is run once
+# per candidate k. At 7,441 claims x 4096 dims that measured at 99.5% CPU for 19 minutes with no
+# end in sight -- roughly 21 fits plus 21 scores, each pairwise over 7,441 points.
+#
+# The sweep only has to RANK candidate k values, which a subsample does just as well, so k is chosen
+# on a sample and the final clustering is then fit on every point. `silhouette_score` also takes its
+# own `sample_size`, which bounds the scoring independently of the fit.
+SWEEP_SAMPLE = 2500
+SIL_SAMPLE = 2000
 from src.llm import client
 from src.extract.claims import FAMILIES
 
@@ -88,17 +98,26 @@ def main() -> None:
         "purity": round(purity(h, fams), 4)}
 
     # --- agglomerative with k by silhouette
+    rng = np.random.default_rng(573)
+    if len(X) > SWEEP_SAMPLE:
+        sel = rng.choice(len(X), SWEEP_SAMPLE, replace=False)
+        Xs = X[sel]
+        print(f"  choosing k on a {SWEEP_SAMPLE}-point subsample "
+              f"(the sweep only has to rank k; the final fit uses all {len(X)})", flush=True)
+    else:
+        Xs = X
     best = (None, -1.0)
     sil_curve = {}
-    for k in range(4, min(args.max_k, len(texts) // 4) + 1):
-        a = AgglomerativeClustering(n_clusters=k).fit_predict(X)
+    for k in range(4, min(args.max_k, len(Xs) // 4) + 1):
+        a = AgglomerativeClustering(n_clusters=k).fit_predict(Xs)
         if len(set(a)) < 2:
             continue
-        s = silhouette_score(X, a)
+        s = silhouette_score(Xs, a, sample_size=min(SIL_SAMPLE, len(Xs)), random_state=573)
         sil_curve[k] = round(float(s), 4)
         if s > best[1]:
             best = (k, s)
     k_best = best[0]
+    print(f"  k={k_best} by silhouette; fitting on all {len(X)} points", flush=True)
     agg = AgglomerativeClustering(n_clusters=k_best).fit_predict(X)
     results["agglomerative"] = {
         "k_by_silhouette": k_best, "silhouette": round(float(best[1]), 4),

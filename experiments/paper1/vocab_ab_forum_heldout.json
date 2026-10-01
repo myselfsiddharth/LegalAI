@@ -1,44 +1,44 @@
 {
  "split": "forum_heldout",
- "n_train": 557,
- "n_test": 143,
+ "n_train": 3258,
+ "n_test": 881,
  "text": {
-  "auroc": 0.5765,
-  "features": 9638
+  "auroc": 0.6137,
+  "features": 41142
  },
  "induced": {
-  "auroc": 0.5939,
-  "features": 272
+  "auroc": 0.4999,
+  "features": 331
  },
  "ontology": {
-  "auroc": 0.4693,
-  "features": 702
+  "auroc": 0.525,
+  "features": 1973
  },
  "paired": {
   "text - induced": {
-   "diff": -0.0174,
+   "diff": 0.1138,
    "ci95": [
-    -0.1358,
-    0.0968
+    0.0732,
+    0.1545
    ],
-   "p_le_0": 0.6325
+   "p_le_0": 0.0
   },
   "text - ontology": {
-   "diff": 0.1071,
+   "diff": 0.0887,
    "ci95": [
-    -0.0172,
-    0.2281
+    0.043,
+    0.1352
    ],
-   "p_le_0": 0.0475
+   "p_le_0": 0.0
   },
   "induced - ontology": {
-   "diff": 0.1246,
+   "diff": -0.0251,
    "ci95": [
-    -0.0052,
-    0.2476
+    -0.0711,
+    0.02
    ],
-   "p_le_0": 0.0305
+   "p_le_0": 0.846
   }
  },
- "verdict": "the ONTOLOGY vocabulary is the problem -- induce it instead"
+ "verdict": "ANY reduction to ~345 symbols loses the signal -- \u00a78's itemisation is mis-specified regardless of vocabulary"
 }
