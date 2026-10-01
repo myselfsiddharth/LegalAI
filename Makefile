@@ -54,6 +54,19 @@ stage6: ## §10 outcome models + §10.2 ablations
 	$(PY) -m src.predict.models --split forum_heldout
 	$(PY) -m src.predict.models --split temporal_2004_2013
 
+side-inputs: ## §10.1 S and R groups: predicted statutes + retrieved precedents
+	$(PY) -m src.predict.side_inputs --split forum_heldout
+
+statutes: ## §9.2 statute prediction (novel-provision targets)
+	$(PY) -m src.authorities.statute_predict --split forum_heldout --rebuild-targets
+
+precedents: ## §9.3 precedent retrieval (add --text-dense for the best system)
+	$(PY) -m src.authorities.precedent_retrieve --split forum_heldout --n-queries 150 --text-dense
+
+trace: ## §11 build traces and run the deletion test
+	$(PY) -m src.trace.build --split forum_heldout --model gbm --n 25
+	$(PY) -m src.trace.evaluate --split forum_heldout --model gbm --n 60
+
 burden: ## fill element burden metadata (gated against a degenerate annotation)
 	$(PY) -m src.data.ontology_burden --model glm-5-3
 

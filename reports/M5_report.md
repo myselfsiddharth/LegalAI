@@ -111,7 +111,71 @@ closed it.
 `P` contributes 3 features and changes nothing; `E` is empty (BLOCKER B2) and the table says so.
 `F` — the canonical atoms — remains at chance alone and does not help any arm it is added to.
 
-## 4. Leakage probes (§5.2), n=902
+## 4. The trace (§11)
+
+`src/trace/build.py` emits the §11 contract for a prediction; `src/trace/evaluate.py` runs its
+deletion test. 25 traces built, 19 of 25 predictions correct.
+
+Every trace carries: the prediction and its probability; the case's claim families; fact
+`source_span` offsets into `masked_text`, each verified to round-trip against its own quote
+(4,184/4,184 exact in `facts_qa.py`); predicted statutes from §9.2's train-only model; retrieved
+precedents with the analogous party's outcome where that label was available at training time; and
+feature attributions computed by **ablation** rather than read off coefficients, so they are
+model-agnostic and measure what the model does rather than what a weight suggests.
+
+An example, *State Of T.N. vs Ananthi Ammal* (1994), predicted LOSE p=0.43 against an actual WIN —
+statutes predicted `LA:17`, `LA:4(1)`, `LA:23`, `LA:6`, all Land Acquisition Act provisions, which
+is the right body of law for the case.
+
+### 4.1 What the trace deliberately leaves empty
+
+§11's contract wants `issues` with per-element status, `burden_on`, and the patterns satisfying or
+defeating each element. **These are emitted as an explicit gap, not filled.** No element carries
+burden metadata (BLOCKER B2) and §8 found no pattern surviving significance correction, so there is
+nothing to populate them with. A trace that invented element statuses would read as legal reasoning
+while being decoration — worse than one that reports the gap.
+
+### 4.2 Deletion test: the trace is mechanistically faithful
+
+§11 asks that removing the facts a trace cites drop confidence more than removing random facts.
+**The test deletes FACTS, not features**, which matters: attribution is itself computed by feature
+ablation, so re-ablating the same features would measure the attribution against itself. Deleting a
+fact re-derives its canonical atoms, rebuilds the whole feature row, and re-scores.
+
+45 cases, 3 facts deleted per arm:
+
+| deleted | mean \|Δp\| |
+|---|---|
+| **trace-cited facts** | **0.0650** |
+| random facts | 0.0209 |
+| the trace's own lowest-ranked facts | 0.0180 |
+
+| comparison | mean difference | 95% CI | cases won |
+|---|---|---|---|
+| cited − random | **+0.0441** | [+0.0245, +0.0659] | 77.8% |
+| cited − inverse | **+0.0470** | [+0.0290, +0.0666] | 75.6% |
+
+Both CIs exclude zero. The `inverse` control — deleting the trace's own *lowest*-ranked facts — is
+the stronger claim, since a trace could beat random simply by citing many facts; beating its own
+tail means the ranking carries information.
+
+### 4.3 What this does and does not establish
+
+It establishes **mechanistic faithfulness**: the trace points at the evidence the model actually
+uses. It does **not** establish that the cited evidence is legally correct reasoning. That is the
+same distinction as the earlier "groundedness is not correctness" result — a trace can be perfectly
+faithful to a model that is wrong, and this model is right on 19 of 25.
+
+It is also a consistency check between single-fact and joint-fact ablation rather than a fully
+independent validation: the ranking comes from deleting facts one at a time, the test from deleting
+three together. Interactions could have broken that transfer and did not, which is informative but
+weaker than an outside signal.
+
+§11's other two evaluations are **not done**: (b) human rating of 50 traces by a legal reviewer
+(needs a human, like BLOCKER B4), and (c) comparison against `LLM-CoT` rationales (needs the
+`LLM-CoT` baseline, which is not built).
+
+## 5. Leakage probes (§5.2), n=902
 
 | arm | macro-F1 | AUROC |
 |---|---|---|
@@ -129,7 +193,7 @@ quoted with confidence.
 time where truth is 43%. A zero-shot LLM is worse than TF-IDF+LR on honest inputs and badly
 miscalibrated.
 
-## 5. §10 acceptance
+## 6. §10 acceptance
 
 | requirement | status |
 |---|---|
@@ -141,10 +205,13 @@ miscalibrated.
 | bootstrap 95% CIs | **met** — 1,000 resamples |
 | paired significance test | **met** — exact-binomial McNemar |
 | per-family / per-court breakdown | **met** in code; groups under 10 cases suppressed |
-| trace (§11) | **not built** |
+| trace (§11) output contract | **partial** — prediction, facts+spans, authorities, attributions built; `issues`/`elements` emitted as an explicit gap (B2) |
+| trace faithfulness, deletion test (§11a) | **met** — cited facts move the prediction 3.1× more than random, CI excludes 0 |
+| trace faithfulness, human rating (§11b) | **not done** — needs a legal reviewer |
+| trace vs `LLM-CoT` rationales (§11c) | **not done** — `LLM-CoT` not built |
 | error analysis (§10.3) | **not built** |
 
-## 6. What this means for the project
+## 7. What this means for the project
 
 §8 as specified — FP-Growth over canonical fact labels per claim family — **cannot work on this
 corpus**, for a measured reason: its input representation carries no outcome signal. That is a

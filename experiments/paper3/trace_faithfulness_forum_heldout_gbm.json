@@ -1,0 +1,399 @@
+{
+ "split": "forum_heldout",
+ "model": "gbm",
+ "n_cases": 45,
+ "n_deleted": 3,
+ "groups": [
+  "F",
+  "P",
+  "S",
+  "R",
+  "C"
+ ],
+ "mean_delta": {
+  "cited": 0.06503,
+  "random": 0.02092,
+  "inverse": 0.01802
+ },
+ "cited_vs_random": {
+  "mean_diff": 0.04411,
+  "ci95": [
+   0.02451,
+   0.06591
+  ],
+  "ci_excludes_zero": true,
+  "win_rate": 0.7778
+ },
+ "cited_vs_inverse": {
+  "mean_diff": 0.04701,
+  "ci95": [
+   0.02905,
+   0.06659
+  ],
+  "ci_excludes_zero": true,
+  "win_rate": 0.7556
+ },
+ "verdict": "FAITHFUL: the facts the trace cites move the prediction more than random facts",
+ "per_case": [
+  {
+   "case_id": "100146695",
+   "n_facts": 19,
+   "base_probability": 0.79523,
+   "delta_cited": 0.01881,
+   "delta_random": 0.00546,
+   "delta_inverse": 0.00998
+  },
+  {
+   "case_id": "1005473",
+   "n_facts": 10,
+   "base_probability": 0.43342,
+   "delta_cited": 0.01224,
+   "delta_random": 0.08575,
+   "delta_inverse": 0.01892
+  },
+  {
+   "case_id": "1006829",
+   "n_facts": 16,
+   "base_probability": 0.42809,
+   "delta_cited": 0.01442,
+   "delta_random": 0.01226,
+   "delta_inverse": 0.0
+  },
+  {
+   "case_id": "1009489",
+   "n_facts": 13,
+   "base_probability": 0.22073,
+   "delta_cited": 0.09513,
+   "delta_random": 0.0166,
+   "delta_inverse": 0.02862
+  },
+  {
+   "case_id": "1015823",
+   "n_facts": 20,
+   "base_probability": 0.22359,
+   "delta_cited": 0.01208,
+   "delta_random": 0.00078,
+   "delta_inverse": 0.00339
+  },
+  {
+   "case_id": "1025530",
+   "n_facts": 10,
+   "base_probability": 0.86715,
+   "delta_cited": 0.03007,
+   "delta_random": 0.00165,
+   "delta_inverse": 0.01077
+  },
+  {
+   "case_id": "1027711",
+   "n_facts": 20,
+   "base_probability": 0.42216,
+   "delta_cited": 0.08984,
+   "delta_random": 0.02573,
+   "delta_inverse": 0.02328
+  },
+  {
+   "case_id": "1029152",
+   "n_facts": 10,
+   "base_probability": 0.47775,
+   "delta_cited": 0.03663,
+   "delta_random": 0.03601,
+   "delta_inverse": 0.0251
+  },
+  {
+   "case_id": "1037405",
+   "n_facts": 17,
+   "base_probability": 0.5733,
+   "delta_cited": 0.15007,
+   "delta_random": 0.01412,
+   "delta_inverse": 0.01965
+  },
+  {
+   "case_id": "1044034",
+   "n_facts": 8,
+   "base_probability": 0.17891,
+   "delta_cited": 0.011,
+   "delta_random": 0.02569,
+   "delta_inverse": 0.02569
+  },
+  {
+   "case_id": "1047951",
+   "n_facts": 15,
+   "base_probability": 0.82742,
+   "delta_cited": 0.0088,
+   "delta_random": 0.01418,
+   "delta_inverse": 0.02673
+  },
+  {
+   "case_id": "1047975",
+   "n_facts": 25,
+   "base_probability": 0.64767,
+   "delta_cited": 0.06465,
+   "delta_random": 0.01233,
+   "delta_inverse": 0.0
+  },
+  {
+   "case_id": "105132",
+   "n_facts": 23,
+   "base_probability": 0.08092,
+   "delta_cited": 0.10996,
+   "delta_random": 0.01347,
+   "delta_inverse": 0.00275
+  },
+  {
+   "case_id": "1051548",
+   "n_facts": 31,
+   "base_probability": 0.88784,
+   "delta_cited": 2e-05,
+   "delta_random": 0.0194,
+   "delta_inverse": 0.0
+  },
+  {
+   "case_id": "105179863",
+   "n_facts": 49,
+   "base_probability": 0.86265,
+   "delta_cited": 0.00547,
+   "delta_random": 0.00728,
+   "delta_inverse": 0.0
+  },
+  {
+   "case_id": "1053338",
+   "n_facts": 9,
+   "base_probability": 0.41919,
+   "delta_cited": 0.15127,
+   "delta_random": 0.0257,
+   "delta_inverse": 0.0149
+  },
+  {
+   "case_id": "105509416",
+   "n_facts": 24,
+   "base_probability": 0.50785,
+   "delta_cited": 0.12838,
+   "delta_random": 0.04609,
+   "delta_inverse": 0.0006
+  },
+  {
+   "case_id": "1057826",
+   "n_facts": 9,
+   "base_probability": 0.19649,
+   "delta_cited": 0.02179,
+   "delta_random": 0.02083,
+   "delta_inverse": 0.00519
+  },
+  {
+   "case_id": "1059860",
+   "n_facts": 12,
+   "base_probability": 0.65451,
+   "delta_cited": 0.16888,
+   "delta_random": 0.01427,
+   "delta_inverse": 0.02032
+  },
+  {
+   "case_id": "1062130",
+   "n_facts": 33,
+   "base_probability": 0.47413,
+   "delta_cited": 0.10255,
+   "delta_random": 0.00844,
+   "delta_inverse": 0.0075
+  },
+  {
+   "case_id": "1063151",
+   "n_facts": 24,
+   "base_probability": 0.29183,
+   "delta_cited": 0.04744,
+   "delta_random": 0.00043,
+   "delta_inverse": 0.00727
+  },
+  {
+   "case_id": "1063933",
+   "n_facts": 29,
+   "base_probability": 0.85403,
+   "delta_cited": 0.00638,
+   "delta_random": 0.00579,
+   "delta_inverse": 0.01034
+  },
+  {
+   "case_id": "1065009",
+   "n_facts": 41,
+   "base_probability": 0.69057,
+   "delta_cited": 0.10804,
+   "delta_random": 0.02723,
+   "delta_inverse": 0.00088
+  },
+  {
+   "case_id": "106803917",
+   "n_facts": 18,
+   "base_probability": 0.75287,
+   "delta_cited": 0.10697,
+   "delta_random": 0.0065,
+   "delta_inverse": 0.0
+  },
+  {
+   "case_id": "107541118",
+   "n_facts": 21,
+   "base_probability": 0.73377,
+   "delta_cited": 0.00562,
+   "delta_random": 0.01362,
+   "delta_inverse": 0.0
+  },
+  {
+   "case_id": "107879",
+   "n_facts": 11,
+   "base_probability": 0.19725,
+   "delta_cited": 0.03417,
+   "delta_random": 0.01822,
+   "delta_inverse": 0.00991
+  },
+  {
+   "case_id": "1082702",
+   "n_facts": 10,
+   "base_probability": 0.3411,
+   "delta_cited": 0.15506,
+   "delta_random": 0.03021,
+   "delta_inverse": 0.023
+  },
+  {
+   "case_id": "108374381",
+   "n_facts": 16,
+   "base_probability": 0.90173,
+   "delta_cited": 0.00557,
+   "delta_random": 0.00361,
+   "delta_inverse": 0.01372
+  },
+  {
+   "case_id": "1087193",
+   "n_facts": 22,
+   "base_probability": 0.38537,
+   "delta_cited": 0.08331,
+   "delta_random": 0.0813,
+   "delta_inverse": 0.00078
+  },
+  {
+   "case_id": "109083",
+   "n_facts": 31,
+   "base_probability": 0.1128,
+   "delta_cited": 0.02635,
+   "delta_random": 0.00058,
+   "delta_inverse": 0.00058
+  },
+  {
+   "case_id": "109230659",
+   "n_facts": 48,
+   "base_probability": 0.2396,
+   "delta_cited": 0.35283,
+   "delta_random": 0.00094,
+   "delta_inverse": 0.13234
+  },
+  {
+   "case_id": "1095861",
+   "n_facts": 11,
+   "base_probability": 0.25142,
+   "delta_cited": 0.05868,
+   "delta_random": 0.02886,
+   "delta_inverse": 0.07094
+  },
+  {
+   "case_id": "1096820",
+   "n_facts": 19,
+   "base_probability": 0.36492,
+   "delta_cited": 0.03945,
+   "delta_random": 0.04471,
+   "delta_inverse": 0.01061
+  },
+  {
+   "case_id": "1097490",
+   "n_facts": 8,
+   "base_probability": 0.40117,
+   "delta_cited": 0.07448,
+   "delta_random": 0.0138,
+   "delta_inverse": 0.0138
+  },
+  {
+   "case_id": "1106992",
+   "n_facts": 18,
+   "base_probability": 0.59388,
+   "delta_cited": 0.04118,
+   "delta_random": 0.02265,
+   "delta_inverse": 0.04145
+  },
+  {
+   "case_id": "1109064",
+   "n_facts": 17,
+   "base_probability": 0.64796,
+   "delta_cited": 0.01786,
+   "delta_random": 0.02036,
+   "delta_inverse": 0.01043
+  },
+  {
+   "case_id": "1111190",
+   "n_facts": 18,
+   "base_probability": 0.5886,
+   "delta_cited": 0.24254,
+   "delta_random": 0.1009,
+   "delta_inverse": 0.02238
+  },
+  {
+   "case_id": "1112065",
+   "n_facts": 8,
+   "base_probability": 0.6102,
+   "delta_cited": 0.1211,
+   "delta_random": 0.00436,
+   "delta_inverse": 0.01392
+  },
+  {
+   "case_id": "1113046",
+   "n_facts": 15,
+   "base_probability": 0.47284,
+   "delta_cited": 0.09063,
+   "delta_random": 0.03054,
+   "delta_inverse": 0.025
+  },
+  {
+   "case_id": "111545111",
+   "n_facts": 13,
+   "base_probability": 0.79545,
+   "delta_cited": 0.01818,
+   "delta_random": 0.00704,
+   "delta_inverse": 0.01717
+  },
+  {
+   "case_id": "111591942",
+   "n_facts": 10,
+   "base_probability": 0.73859,
+   "delta_cited": 0.01039,
+   "delta_random": 0.0061,
+   "delta_inverse": 0.02487
+  },
+  {
+   "case_id": "111973",
+   "n_facts": 34,
+   "base_probability": 0.28005,
+   "delta_cited": 0.0002,
+   "delta_random": 0.00969,
+   "delta_inverse": 0.0006
+  },
+  {
+   "case_id": "1121727",
+   "n_facts": 33,
+   "base_probability": 0.47533,
+   "delta_cited": 0.00967,
+   "delta_random": 0.00868,
+   "delta_inverse": 0.08296
+  },
+  {
+   "case_id": "112183713",
+   "n_facts": 13,
+   "base_probability": 0.47799,
+   "delta_cited": 0.02204,
+   "delta_random": 0.03449,
+   "delta_inverse": 0.03449
+  },
+  {
+   "case_id": "1126147",
+   "n_facts": 18,
+   "base_probability": 0.50926,
+   "delta_cited": 0.01602,
+   "delta_random": 0.01474,
+   "delta_inverse": 0.0
+  }
+ ]
+}

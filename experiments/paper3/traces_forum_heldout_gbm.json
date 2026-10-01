@@ -1,0 +1,6129 @@
+[
+ {
+  "case_id": "1000425",
+  "title": "State Of T N vs Ananthi Ammal on 22 November 1994",
+  "year": 1994,
+  "prediction": {
+   "label": "LOSE",
+   "probability": 0.4308
+  },
+  "actual": "WIN",
+  "claim_families": [],
+  "authorities": {
+   "statutes_predicted": [
+    {
+     "provision": "LA:17",
+     "probability": 0.7164
+    },
+    {
+     "provision": "LA:4(1)",
+     "probability": 0.5546
+    },
+    {
+     "provision": "LA:23",
+     "probability": 0.5256
+    },
+    {
+     "provision": "LA:6",
+     "probability": 0.5088
+    },
+    {
+     "provision": "LA:4",
+     "probability": 0.4712
+    },
+    {
+     "provision": "CONST:Art14",
+     "probability": 0.4709
+    },
+    {
+     "provision": "CONST:Art226",
+     "probability": 0.4463
+    },
+    {
+     "provision": "CONST:Art31(2)",
+     "probability": 0.3141
+    },
+    {
+     "provision": "LA:18",
+     "probability": 0.3132
+    },
+    {
+     "provision": "CONST:Art19(1)(f)",
+     "probability": 0.3119
+    }
+   ],
+   "precedents_retrieved": [
+    {
+     "case_id": "818638",
+     "title": "Union Of India Uoi vs Hari Krishan Khosla Dead By Lrs on 16 September 1992",
+     "year": 1992,
+     "similarity": 1.0,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "270610",
+     "title": "Udai Ram Sharma And Others Etc vs Union Of India And Others on 7 February 1968",
+     "year": 1968,
+     "similarity": 0.5,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "49043",
+     "title": "The State Of Bihar vs Maharajadhiraja Sir Kameshwar Singh Of on 2 May 1952",
+     "year": 1952,
+     "similarity": 0.3333,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "337342",
+     "title": "Nagpur Improvement Trust And Another vs Vithal Rao And Others on 11 December 1972",
+     "year": 1972,
+     "similarity": 0.25,
+     "analogous_party_outcome": "LOSE"
+    },
+    {
+     "case_id": "1474119",
+     "title": "State Of Karnataka And Anr Etc vs Shri Ranganatha Reddy Anr Etc on 11 October 1977",
+     "year": 1977,
+     "similarity": 0.2,
+     "analogous_party_outcome": null
+    }
+   ]
+  },
+  "evidence": {
+   "n_facts": 7,
+   "facts_cited_by_features": [],
+   "fact_spans": [
+    {
+     "fact_id": "1000425_f001",
+     "text": "The State of Tamil Nadu filed an appeal against the judgment of the High Court of Madras dated 9-9-1981",
+     "source_span": [
+      583,
+      721
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1000425_f002",
+     "text": "The High Court struck down the Tamil Nadu Acquisition of Land for Harijan Welfare Schemes Act, 1978, as being ultra vires the Constitution of India",
+     "source_span": [
+      723,
+      868
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1000425_f003",
+     "text": "The Act was enacted to acquire land for Harijan Welfare Schemes",
+     "source_span": [
+      2232,
+      2308
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1000425_f004",
+     "text": "The District Collector is empowered to acquire land for a Harijan Welfare Scheme",
+     "source_span": [
+      12242,
+      12549
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1000425_f005",
+     "text": "No enquiry into the value of the land is contemplated under the said Act",
+     "source_span": [
+      9793,
+      9979
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1000425_f006",
+     "text": "The said Act does not provide for a reference to the court in regard to a claim for enhancement of compensation",
+     "source_span": [
+      10263,
+      10429
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1000425_f007",
+     "text": "The sum prescribed for the purposes of all second appeals to the High Court is Rs 50,000",
+     "source_span": [
+      10944,
+      11131
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    }
+   ]
+  },
+  "top_feature_contributions": [
+   {
+    "feature": "S:pred=CONST:Art14",
+    "index": 1319,
+    "delta_probability": -0.08828
+   },
+   {
+    "feature": "S:pred=CONST:Art19(1)(f)",
+    "index": 1322,
+    "delta_probability": -0.08699
+   },
+   {
+    "feature": "F:n_atoms",
+    "index": 1309,
+    "delta_probability": -0.08617
+   },
+   {
+    "feature": "F:n_facts",
+    "index": 1310,
+    "delta_probability": 0.07638
+   },
+   {
+    "feature": "R:win_rate_simweighted",
+    "index": 1367,
+    "delta_probability": -0.07527
+   },
+   {
+    "feature": "R:win_rate",
+    "index": 1366,
+    "delta_probability": 0.06884
+   },
+   {
+    "feature": "S:pred=LA:4",
+    "index": 1355,
+    "delta_probability": 0.0598
+   },
+   {
+    "feature": "C:year",
+    "index": 1371,
+    "delta_probability": 0.05391
+   },
+   {
+    "feature": "R:n_labelled",
+    "index": 1370,
+    "delta_probability": -0.04618
+   },
+   {
+    "feature": "F:ncat=Event",
+    "index": 1100,
+    "delta_probability": 0.03558
+   }
+  ],
+  "gaps": {
+   "issues_elements": "EMPTY. \u00a711's contract wants per-element status with burden_on and the patterns satisfying or defeating each. No element carries burden metadata (BLOCKER B2) and \u00a78 found no pattern surviving Benjamini-Hochberg, so there is nothing to populate this with. Inventing element statuses would read as legal reasoning while being decoration.",
+   "defaults_assumed": "EMPTY. \u00a710.4's default/burden-shift modelling is not built, so no conclusion here depends on a stated default."
+  },
+  "provenance": {
+   "model": "gbm",
+   "feature_groups": [
+    "F",
+    "P",
+    "S",
+    "R",
+    "C"
+   ],
+   "split": "forum_heldout",
+   "split_hash": "6e346dd75b7e7d84",
+   "attribution": "ablation (zero the feature, re-score); not coefficients",
+   "spans_index": "masked_text, offsets verified to round-trip against the quote"
+  }
+ },
+ {
+  "case_id": "100146695",
+  "title": "Ahmad Ali Quraishi vs The State Of Uttar Pradesh on 30 January 2020",
+  "year": 2020,
+  "prediction": {
+   "label": "WIN",
+   "probability": 0.7952
+  },
+  "actual": "WIN",
+  "claim_families": [
+   "Procedural/Forum"
+  ],
+  "authorities": {
+   "statutes_predicted": [
+    {
+     "provision": "CONST:Art21",
+     "probability": 0.643
+    },
+    {
+     "provision": "CONST:Art226",
+     "probability": 0.3729
+    },
+    {
+     "provision": "CONST:Art136",
+     "probability": 0.3444
+    },
+    {
+     "provision": "CONST:Art142",
+     "probability": 0.2003
+    },
+    {
+     "provision": "CPC:7",
+     "probability": 0.1823
+    },
+    {
+     "provision": "CPC:4",
+     "probability": 0.1629
+    },
+    {
+     "provision": "CONST:Art32",
+     "probability": 0.1629
+    },
+    {
+     "provision": "CONST:Art227",
+     "probability": 0.1559
+    },
+    {
+     "provision": "CPC:5",
+     "probability": 0.1527
+    },
+    {
+     "provision": "CPC:8",
+     "probability": 0.1448
+    }
+   ],
+   "precedents_retrieved": [
+    {
+     "case_id": "76413",
+     "title": "State Of Maharashtra vs Jagmohan Singh Kuldip Singh Anand Ors on 27 August 2004",
+     "year": 2004,
+     "similarity": 1.0,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "89699186",
+     "title": "Ude Singh vs The State Of Haryana on 25 July 2019",
+     "year": 2019,
+     "similarity": 0.5,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "13792570",
+     "title": "Chilakamarthi Venkateswarlu vs The State Of Andhra Pradesh on 31 July 2019",
+     "year": 2019,
+     "similarity": 0.3333,
+     "analogous_party_outcome": "LOSE"
+    },
+    {
+     "case_id": "1914526",
+     "title": "State Of Orissa vs Rajendra Prasad Bharadia on 13 May 1994",
+     "year": 1994,
+     "similarity": 0.25,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "1282121",
+     "title": "Shiji Pappu Ors vs Radhika Anr on 14 November 2011",
+     "year": 2011,
+     "similarity": 0.2,
+     "analogous_party_outcome": null
+    }
+   ]
+  },
+  "evidence": {
+   "n_facts": 19,
+   "facts_cited_by_features": [
+    "event.dispute_arisen"
+   ],
+   "fact_spans": [
+    {
+     "fact_id": "100146695_f001",
+     "text": "Ahmad Ali Quraishi and the State Of Uttar Pradesh belong to the same family and are neighbours.",
+     "source_span": [
+      348,
+      449
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "100146695_f002",
+     "text": "A suit for partition of properties, O.S.No.744/2015, was filed by Anwarul Haq against the complainant.",
+     "source_span": [
+      450,
+      651
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "100146695_f003",
+     "text": "A quarrel took place between the parties on 19.07.2016.",
+     "source_span": [
+      855,
+      905
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "100146695_f004",
+     "text": "The police initiated proceedings under Section 151, 107 and 116 Cr.P.C. on 19.07.2016.",
+     "source_span": [
+      906,
+      1030
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "100146695_f005",
+     "text": "An application under Section 156(3) Cr.P.C. was filed by Sajjad Quraishi on 29.08.2016.",
+     "source_span": [
+      1130,
+      1233
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "100146695_f006",
+     "text": "The application under Section 156(3) Cr.P.C. alleged an incident on 19.07.2016 at 06:00 PM.",
+     "source_span": [
+      1424,
+      1730
+     ],
+     "asserted_by": "plaintiff",
+     "disputed_status": "contested"
+    },
+    {
+     "fact_id": "100146695_f007",
+     "text": "The Additional District/Sessions Judge rejected the application under Section 156(3) Cr.P.C. on 14.10.2016.",
+     "source_span": [
+      2622,
+      2867
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "100146695_f008",
+     "text": "The High Court did not interfere with the order rejecting the application on 22.11.2016.",
+     "source_span": [
+      3116,
+      3224
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    }
+   ]
+  },
+  "top_feature_contributions": [
+   {
+    "feature": "C:year",
+    "index": 1371,
+    "delta_probability": 0.28379
+   },
+   {
+    "feature": "S:n_predicted",
+    "index": 1363,
+    "delta_probability": 0.11174
+   },
+   {
+    "feature": "F:n_facts",
+    "index": 1310,
+    "delta_probability": 0.07614
+   },
+   {
+    "feature": "R:mean_sim",
+    "index": 1369,
+    "delta_probability": -0.05443
+   },
+   {
+    "feature": "F:ncat=Event",
+    "index": 1100,
+    "delta_probability": 0.05298
+   },
+   {
+    "feature": "S:pred=CPC:7",
+    "index": 1349,
+    "delta_probability": -0.04348
+   },
+   {
+    "feature": "F:n_atoms",
+    "index": 1309,
+    "delta_probability": -0.03628
+   },
+   {
+    "feature": "F:atom@d=event.dispute_arisen",
+    "index": 383,
+    "delta_probability": -0.035
+   },
+   {
+    "feature": "R:win_rate",
+    "index": 1366,
+    "delta_probability": -0.03342
+   },
+   {
+    "feature": "C:n_claims",
+    "index": 1405,
+    "delta_probability": -0.03108
+   }
+  ],
+  "gaps": {
+   "issues_elements": "EMPTY. \u00a711's contract wants per-element status with burden_on and the patterns satisfying or defeating each. No element carries burden metadata (BLOCKER B2) and \u00a78 found no pattern surviving Benjamini-Hochberg, so there is nothing to populate this with. Inventing element statuses would read as legal reasoning while being decoration.",
+   "defaults_assumed": "EMPTY. \u00a710.4's default/burden-shift modelling is not built, so no conclusion here depends on a stated default."
+  },
+  "provenance": {
+   "model": "gbm",
+   "feature_groups": [
+    "F",
+    "P",
+    "S",
+    "R",
+    "C"
+   ],
+   "split": "forum_heldout",
+   "split_hash": "6e346dd75b7e7d84",
+   "attribution": "ablation (zero the feature, re-score); not coefficients",
+   "spans_index": "masked_text, offsets verified to round-trip against the quote"
+  }
+ },
+ {
+  "case_id": "1005473",
+  "title": "A G Varadarajulu Anr vs The State Of Tamil Nadu Ors on 23 March 1998",
+  "year": 1998,
+  "prediction": {
+   "label": "LOSE",
+   "probability": 0.4334
+  },
+  "actual": "LOSE",
+  "claim_families": [],
+  "authorities": {
+   "statutes_predicted": [
+    {
+     "provision": "CONST:Art14",
+     "probability": 0.2574
+    },
+    {
+     "provision": "CONST:Art19(1)(f)",
+     "probability": 0.2359
+    },
+    {
+     "provision": "CONST:Art136",
+     "probability": 0.2207
+    },
+    {
+     "provision": "CONST:Art226",
+     "probability": 0.22
+    },
+    {
+     "provision": "CPC:3",
+     "probability": 0.1872
+    },
+    {
+     "provision": "CONST:Art227",
+     "probability": 0.1823
+    },
+    {
+     "provision": "CPC:4",
+     "probability": 0.1694
+    },
+    {
+     "provision": "CONST:Art31(2)",
+     "probability": 0.165
+    },
+    {
+     "provision": "CONST:Art31",
+     "probability": 0.165
+    },
+    {
+     "provision": "CONST:Art19",
+     "probability": 0.1452
+    }
+   ],
+   "precedents_retrieved": [
+    {
+     "case_id": "1494994",
+     "title": "Vengdasalam Pillai vs Union Territory Of Pondicherry on 18 February 1985",
+     "year": 1985,
+     "similarity": 1.0,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "717074",
+     "title": "M Ramakrishnan vs State Of Madras on 28 August 1979",
+     "year": 1979,
+     "similarity": 0.5,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "572071",
+     "title": "V Gopal Reddiar Dead By L R And Anr vs State Of Tamil Nadu And Anr on 6 December 1994",
+     "year": 1994,
+     "similarity": 0.3333,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "1100371",
+     "title": "Sanjay Dinkar Asarkar vs State Of Maharashtra And Anr on 20 November 1985",
+     "year": 1985,
+     "similarity": 0.25,
+     "analogous_party_outcome": "LOSE"
+    },
+    {
+     "case_id": "1878241",
+     "title": "Jagannath Etc Etc vs Authorised Officer Land Reforms Ors on 11 October 1971",
+     "year": 1971,
+     "similarity": 0.2,
+     "analogous_party_outcome": null
+    }
+   ]
+  },
+  "evidence": {
+   "n_facts": 10,
+   "facts_cited_by_features": [
+    "event.statutory_notification",
+    "statute.land_reforms_act"
+   ],
+   "fact_spans": [
+    {
+     "fact_id": "1005473_f001",
+     "text": "A.G. Varadarajulu is the declarant and his wife is Srimati V. Jayalakshmi.",
+     "source_span": [
+      748,
+      921
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1005473_f002",
+     "text": "There was a partition deed between A.G. Varadarajulu and his son Balaguruswamy in 1959.",
+     "source_span": [
+      1275,
+      1373
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1005473_f003",
+     "text": "Under the partition deed of 24.9.1970, Balaguruswamy allotted 36.74 acres to his mother.",
+     "source_span": [
+      1762,
+      1884
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1005473_f004",
+     "text": "The partition deed of 24.9.1970 was executed when Balaguruswamy was a minor and was represented by his father, A.G. Varadarajulu.",
+     "source_span": [
+      1885,
+      2052
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1005473_f005",
+     "text": "The land ceiling authorities started proceedings under the Tamil Nadu Land Reforms (Fixation of Ceiling on land) Act, 1961.",
+     "source_span": [
+      2053,
+      2220
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1005473_f006",
+     "text": "The Authorised Officer passed an order on 13.9.1985 holding that the land allotted to Srimati V. Jayalakshmi could not be treated as her 'stridhana'.",
+     "source_span": [
+      2237,
+      2666
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "contested"
+    },
+    {
+     "fact_id": "1005473_f007",
+     "text": "A preliminary statement was published in the Gazette in Form 7 on 18.9.1985.",
+     "source_span": [
+      2895,
+      2986
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1005473_f008",
+     "text": "No objections were received from the appellants.",
+     "source_span": [
+      2987,
+      3035
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    }
+   ]
+  },
+  "top_feature_contributions": [
+   {
+    "feature": "S:n_predicted",
+    "index": 1363,
+    "delta_probability": 0.15058
+   },
+   {
+    "feature": "S:pred=CONST:Art19(1)(f)",
+    "index": 1322,
+    "delta_probability": -0.11082
+   },
+   {
+    "feature": "F:n_atoms",
+    "index": 1309,
+    "delta_probability": -0.09014
+   },
+   {
+    "feature": "R:win_rate",
+    "index": 1366,
+    "delta_probability": 0.08907
+   },
+   {
+    "feature": "F:atom@d=event.statutory_notification",
+    "index": 449,
+    "delta_probability": -0.07821
+   },
+   {
+    "feature": "C:year",
+    "index": 1371,
+    "delta_probability": -0.06276
+   },
+   {
+    "feature": "S:pred=CPC:4",
+    "index": 1345,
+    "delta_probability": -0.05518
+   },
+   {
+    "feature": "F:ncat=Event",
+    "index": 1100,
+    "delta_probability": 0.05205
+   },
+   {
+    "feature": "F:atom@p=statute.land_reforms_act",
+    "index": 938,
+    "delta_probability": -0.04973
+   },
+   {
+    "feature": "F:atom@p=event.statutory_notification",
+    "index": 448,
+    "delta_probability": -0.04612
+   }
+  ],
+  "gaps": {
+   "issues_elements": "EMPTY. \u00a711's contract wants per-element status with burden_on and the patterns satisfying or defeating each. No element carries burden metadata (BLOCKER B2) and \u00a78 found no pattern surviving Benjamini-Hochberg, so there is nothing to populate this with. Inventing element statuses would read as legal reasoning while being decoration.",
+   "defaults_assumed": "EMPTY. \u00a710.4's default/burden-shift modelling is not built, so no conclusion here depends on a stated default."
+  },
+  "provenance": {
+   "model": "gbm",
+   "feature_groups": [
+    "F",
+    "P",
+    "S",
+    "R",
+    "C"
+   ],
+   "split": "forum_heldout",
+   "split_hash": "6e346dd75b7e7d84",
+   "attribution": "ablation (zero the feature, re-score); not coefficients",
+   "spans_index": "masked_text, offsets verified to round-trip against the quote"
+  }
+ },
+ {
+  "case_id": "1006731",
+  "title": "Tarkeshwar Sio Thakur Jiu vs Bar Dass Dey Co And Ors on 6 February 1979",
+  "year": 1979,
+  "prediction": {
+   "label": "LOSE",
+   "probability": 0.1449
+  },
+  "actual": "LOSE",
+  "claim_families": [
+   "PrivateTitlePossession"
+  ],
+  "authorities": {
+   "statutes_predicted": [
+    {
+     "provision": "CPC:3",
+     "probability": 0.386
+    },
+    {
+     "provision": "CONST:Art226",
+     "probability": 0.3812
+    },
+    {
+     "provision": "CONST:Art19",
+     "probability": 0.2797
+    },
+    {
+     "provision": "TPA:106",
+     "probability": 0.2577
+    },
+    {
+     "provision": "CONST:Art14",
+     "probability": 0.2508
+    },
+    {
+     "provision": "CONST:Art136",
+     "probability": 0.2405
+    },
+    {
+     "provision": "CPC:2",
+     "probability": 0.2353
+    },
+    {
+     "provision": "CPC:4",
+     "probability": 0.2255
+    },
+    {
+     "provision": "CPC:22",
+     "probability": 0.1937
+    },
+    {
+     "provision": "TPA:3",
+     "probability": 0.1674
+    }
+   ],
+   "precedents_retrieved": [
+    {
+     "case_id": "1015823",
+     "title": "Sone Valley Portland Cement Co Ltd vs The General Mining Syndicate Pvt Ltd on 24 August 1976",
+     "year": 1976,
+     "similarity": 1.0,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "39379987",
+     "title": "Bihar Mines Ltd vs Union Of India Uoi on 3 October 1966",
+     "year": 1966,
+     "similarity": 0.5,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "1291977",
+     "title": "Bihar Mines Ltd vs Union Of India on 3 October 1966",
+     "year": 1966,
+     "similarity": 0.3333,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "1690233",
+     "title": "Gujarat Pottery Works vs B P Sood Controller Of Mining Leases on 3 October 1966",
+     "year": 1966,
+     "similarity": 0.25,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "587565",
+     "title": "Shibsankar Nandy vs Prabartak Sangha And Ors on 1 February 1967",
+     "year": 1967,
+     "similarity": 0.2,
+     "analogous_party_outcome": null
+    }
+   ]
+  },
+  "evidence": {
+   "n_facts": 7,
+   "facts_cited_by_features": [],
+   "fact_spans": [
+    {
+     "fact_id": "1006731_f001",
+     "text": "The property was described as Patni Mahal in the lease deed.",
+     "source_span": [
+      812,
+      877
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1006731_f002",
+     "text": "The lessee had an option of renewal for another 9 years.",
+     "source_span": [
+      878,
+      965
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1006731_f003",
+     "text": "The appellant made a similar grant for another 9 years expiring on April 13, 1959.",
+     "source_span": [
+      966,
+      1121
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1006731_f004",
+     "text": "The respondents did not pay the licence fee for the period from 1362 (14-4-1955) to 1365 B.S.",
+     "source_span": [
+      1122,
+      1215
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1006731_f005",
+     "text": "The plaintiffs issued notice, dated March 31, 1966, terminating the licence.",
+     "source_span": [
+      1216,
+      1425
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1006731_f006",
+     "text": "The respondents claimed to be tenants, not licensees, under the plaintiff.",
+     "source_span": [
+      1426,
+      1866
+     ],
+     "asserted_by": "defendant",
+     "disputed_status": "contested"
+    },
+    {
+     "fact_id": "1006731_f007",
+     "text": "The land had vested in the State under the West Bengal Estates Acquisition Act, 1953.",
+     "source_span": [
+      1426,
+      1643
+     ],
+     "asserted_by": "defendant",
+     "disputed_status": "contested"
+    }
+   ]
+  },
+  "top_feature_contributions": [
+   {
+    "feature": "S:pred=CPC:2",
+    "index": 1340,
+    "delta_probability": -0.10875
+   },
+   {
+    "feature": "S:pred=CONST:Art19",
+    "index": 1321,
+    "delta_probability": -0.08182
+   },
+   {
+    "feature": "R:n_labelled",
+    "index": 1370,
+    "delta_probability": -0.05253
+   },
+   {
+    "feature": "F:n_atoms",
+    "index": 1309,
+    "delta_probability": -0.03727
+   },
+   {
+    "feature": "S:n_predicted",
+    "index": 1363,
+    "delta_probability": 0.03571
+   },
+   {
+    "feature": "S:pred=CONST:Art226",
+    "index": 1324,
+    "delta_probability": 0.02777
+   },
+   {
+    "feature": "F:frac_attributed",
+    "index": 1312,
+    "delta_probability": -0.02485
+   },
+   {
+    "feature": "C:year",
+    "index": 1371,
+    "delta_probability": -0.02425
+   },
+   {
+    "feature": "R:win_rate",
+    "index": 1366,
+    "delta_probability": 0.0236
+   },
+   {
+    "feature": "R:win_rate_simweighted",
+    "index": 1367,
+    "delta_probability": -0.02257
+   }
+  ],
+  "gaps": {
+   "issues_elements": "EMPTY. \u00a711's contract wants per-element status with burden_on and the patterns satisfying or defeating each. No element carries burden metadata (BLOCKER B2) and \u00a78 found no pattern surviving Benjamini-Hochberg, so there is nothing to populate this with. Inventing element statuses would read as legal reasoning while being decoration.",
+   "defaults_assumed": "EMPTY. \u00a710.4's default/burden-shift modelling is not built, so no conclusion here depends on a stated default."
+  },
+  "provenance": {
+   "model": "gbm",
+   "feature_groups": [
+    "F",
+    "P",
+    "S",
+    "R",
+    "C"
+   ],
+   "split": "forum_heldout",
+   "split_hash": "6e346dd75b7e7d84",
+   "attribution": "ablation (zero the feature, re-score); not coefficients",
+   "spans_index": "masked_text, offsets verified to round-trip against the quote"
+  }
+ },
+ {
+  "case_id": "1006829",
+  "title": "Hameed Joharan D And Ors vs Abdul Salam D By Lrs And Ors on 13 August 2001",
+  "year": 2001,
+  "prediction": {
+   "label": "LOSE",
+   "probability": 0.4281
+  },
+  "actual": "LOSE",
+  "claim_families": [
+   "ContractInstrument"
+  ],
+  "authorities": {
+   "statutes_predicted": [
+    {
+     "provision": "CPC:3",
+     "probability": 0.4012
+    },
+    {
+     "provision": "CONST:Art136",
+     "probability": 0.3081
+    },
+    {
+     "provision": "CPC:13",
+     "probability": 0.2881
+    },
+    {
+     "provision": "CPC:6",
+     "probability": 0.283
+    },
+    {
+     "provision": "CONST:Art226",
+     "probability": 0.2653
+    },
+    {
+     "provision": "CPC:11",
+     "probability": 0.2622
+    },
+    {
+     "provision": "CPC:4",
+     "probability": 0.2356
+    },
+    {
+     "provision": "CONST:Art142",
+     "probability": 0.2316
+    },
+    {
+     "provision": "CPC:14",
+     "probability": 0.2299
+    },
+    {
+     "provision": "CPC:2",
+     "probability": 0.2267
+    }
+   ],
+   "precedents_retrieved": [
+    {
+     "case_id": "257876",
+     "title": "Kesavananda Bharati Sripadagalvaru vs State Of Kerala And Anr on 24 April 1973",
+     "year": 1973,
+     "similarity": 1.0,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "437299",
+     "title": "Prem Lata Agarwal vs Lakshman Prasad Gupta Ors on 23 April 1970",
+     "year": 1970,
+     "similarity": 0.5,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "49043",
+     "title": "The State Of Bihar vs Maharajadhiraja Sir Kameshwar Singh Of on 2 May 1952",
+     "year": 1952,
+     "similarity": 0.3333,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "349715",
+     "title": "Prem Raj vs Ram Charan on 4 March 1974",
+     "year": 1974,
+     "similarity": 0.25,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "21266288",
+     "title": "I C Golak Nath And Ors vs State Of Punjab And Anr on 27 February 1967",
+     "year": 1967,
+     "similarity": 0.2,
+     "analogous_party_outcome": "LOSE"
+    }
+   ]
+  },
+  "evidence": {
+   "n_facts": 16,
+   "facts_cited_by_features": [
+    "event.decree_passed"
+   ],
+   "fact_spans": [
+    {
+     "fact_id": "1006829_f001",
+     "text": "A preliminary decree for partition was passed on 8.6.1969",
+     "source_span": [
+      4872,
+      4960
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1006829_f002",
+     "text": "A final decree for partition was passed on 20.11.1970",
+     "source_span": [
+      4872,
+      5012
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1006829_f003",
+     "text": "The District Court, Nagapattinam issued notice to the parties to furnish stamp papers on 28.2.1972",
+     "source_span": [
+      5172,
+      5342
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1006829_f004",
+     "text": "The decree-holder did not furnish any stamp paper by 17.3.1972",
+     "source_span": [
+      5344,
+      5483
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1006829_f005",
+     "text": "The original decree-holder died on 17.1.1977",
+     "source_span": [
+      5484,
+      5567
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1006829_f006",
+     "text": "The legal representatives of the original plaintiff were impleaded on 8.3.1984",
+     "source_span": [
+      5737,
+      5840
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1006829_f007",
+     "text": "An execution application was presented before the District Court on 21.5.1984",
+     "source_span": [
+      5845,
+      5996
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1006829_f008",
+     "text": "A Civil Revision Petition was filed before the High Court against the order of impleadment",
+     "source_span": [
+      5998,
+      6198
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    }
+   ]
+  },
+  "top_feature_contributions": [
+   {
+    "feature": "C:year",
+    "index": 1371,
+    "delta_probability": 0.15341
+   },
+   {
+    "feature": "S:n_predicted",
+    "index": 1363,
+    "delta_probability": 0.13738
+   },
+   {
+    "feature": "S:pred=CPC:3",
+    "index": 1344,
+    "delta_probability": 0.09526
+   },
+   {
+    "feature": "F:n_atoms",
+    "index": 1309,
+    "delta_probability": -0.08273
+   },
+   {
+    "feature": "S:pred=CPC:2",
+    "index": 1340,
+    "delta_probability": -0.06874
+   },
+   {
+    "feature": "F:ncat=Event",
+    "index": 1100,
+    "delta_probability": 0.05713
+   },
+   {
+    "feature": "S:pred=CONST:Art136",
+    "index": 1318,
+    "delta_probability": 0.05298
+   },
+   {
+    "feature": "F:atom@p=event.decree_passed",
+    "index": 372,
+    "delta_probability": -0.04814
+   },
+   {
+    "feature": "S:pred=CPC:13",
+    "index": 1335,
+    "delta_probability": 0.04758
+   },
+   {
+    "feature": "S:top_score",
+    "index": 1364,
+    "delta_probability": -0.0375
+   }
+  ],
+  "gaps": {
+   "issues_elements": "EMPTY. \u00a711's contract wants per-element status with burden_on and the patterns satisfying or defeating each. No element carries burden metadata (BLOCKER B2) and \u00a78 found no pattern surviving Benjamini-Hochberg, so there is nothing to populate this with. Inventing element statuses would read as legal reasoning while being decoration.",
+   "defaults_assumed": "EMPTY. \u00a710.4's default/burden-shift modelling is not built, so no conclusion here depends on a stated default."
+  },
+  "provenance": {
+   "model": "gbm",
+   "feature_groups": [
+    "F",
+    "P",
+    "S",
+    "R",
+    "C"
+   ],
+   "split": "forum_heldout",
+   "split_hash": "6e346dd75b7e7d84",
+   "attribution": "ablation (zero the feature, re-score); not coefficients",
+   "spans_index": "masked_text, offsets verified to round-trip against the quote"
+  }
+ },
+ {
+  "case_id": "1009489",
+  "title": "Sri La Sri Subramania Desika vs State Of Madras And Another on 10 February 1965",
+  "year": 1965,
+  "prediction": {
+   "label": "LOSE",
+   "probability": 0.2207
+  },
+  "actual": "WIN",
+  "claim_families": [
+   "StateAction"
+  ],
+  "authorities": {
+   "statutes_predicted": [
+    {
+     "provision": "CONST:Art226",
+     "probability": 0.531
+    },
+    {
+     "provision": "CONST:Art19(1)(f)",
+     "probability": 0.3818
+    },
+    {
+     "provision": "CONST:Art14",
+     "probability": 0.3541
+    },
+    {
+     "provision": "CONST:Art32",
+     "probability": 0.3018
+    },
+    {
+     "provision": "CPC:6",
+     "probability": 0.3012
+    },
+    {
+     "provision": "CONST:Art133",
+     "probability": 0.2618
+    },
+    {
+     "provision": "CONST:Art19",
+     "probability": 0.2571
+    },
+    {
+     "provision": "CONST:Art31",
+     "probability": 0.2541
+    },
+    {
+     "provision": "CONST:Art227",
+     "probability": 0.249
+    },
+    {
+     "provision": "CPC:3",
+     "probability": 0.2387
+    }
+   ],
+   "precedents_retrieved": [
+    {
+     "case_id": "944747",
+     "title": "Sri Jagadguru Kari vs Commissioner Of Hindu Religious on 8 May 1964",
+     "year": 1964,
+     "similarity": 1.0,
+     "analogous_party_outcome": "LOSE"
+    },
+    {
+     "case_id": "1430396",
+     "title": "The Commissioner Hindu Religious vs Sri Lakshmindra Thirtha Swamiar Of Sri on 16 April 1954",
+     "year": 1954,
+     "similarity": 0.5,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "1411911",
+     "title": "Sri Sadasib Prakash Brahmachari vs The State Of Orissa With Connected on 20 January 1956",
+     "year": 1956,
+     "similarity": 0.3333,
+     "analogous_party_outcome": "LOSE"
+    },
+    {
+     "case_id": "1866329",
+     "title": "Bhogaraju Venkata Janakirama Rao vs The Board Of Commissioners For Hindu on 31 October 1963",
+     "year": 1963,
+     "similarity": 0.25,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "1896039",
+     "title": "Sri Venkataramana Devaruand Others vs The State Of Mysore And Others With on 8 November 1957",
+     "year": 1957,
+     "similarity": 0.2,
+     "analogous_party_outcome": null
+    }
+   ]
+  },
+  "evidence": {
+   "n_facts": 13,
+   "facts_cited_by_features": [
+    "partyrole.beneficiary"
+   ],
+   "fact_spans": [
+    {
+     "fact_id": "1009489_f001",
+     "text": "The Sri Thiyagarajaswami Temple is located in Tiruvarur, Nagapattanam Taluk, Tanjor District.",
+     "source_span": [
+      650,
+      725
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1009489_f002",
+     "text": "The temple was brought under the purview of the Madras Hindu Religious Endowments Act, 1927, by a notification issued under clause (b) of sub-section (5) of s.6",
+     "source_span": [
+      944,
+      1026
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1009489_f003",
+     "text": "A notification was issued on 4th August, 1956, extending the earlier notification for a further period of five years.",
+     "source_span": [
+      1398,
+      1414
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1009489_f004",
+     "text": "The appellant, Sri-la-Sri Subramania Desika Gnana Sambanda Pandarasannadhi, is the Hereditary Trustee of the Rajan Kattalai of the temple.",
+     "source_span": [
+      1496,
+      1611
+     ],
+     "asserted_by": "plaintiff",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1009489_f005",
+     "text": "The management of the temple is vested in a Hereditary Trustee or Trustees.",
+     "source_span": [
+      2386,
+      2487
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1009489_f006",
+     "text": "The head of the Dharmapuram mutt is known as Pandarasannadhi.",
+     "source_span": [
+      2690,
+      2739
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1009489_f007",
+     "text": "The Dharmapuram mutt has large endowments of lands in Thanjavur and Tirunelveli districts.",
+     "source_span": [
+      2592,
+      2688
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1009489_f008",
+     "text": "The Madras Hindu Religious Endowments Act, 1927, was enacted to provide for the proper administration and governance of certain Hindu Religious Endowments.",
+     "source_span": [
+      4744,
+      4865
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    }
+   ]
+  },
+  "top_feature_contributions": [
+   {
+    "feature": "F:atom@p=partyrole.beneficiary",
+    "index": 692,
+    "delta_probability": -0.18619
+   },
+   {
+    "feature": "C:year",
+    "index": 1371,
+    "delta_probability": -0.17228
+   },
+   {
+    "feature": "S:pred=CONST:Art32",
+    "index": 1328,
+    "delta_probability": -0.11084
+   },
+   {
+    "feature": "R:win_rate_simweighted",
+    "index": 1367,
+    "delta_probability": -0.10046
+   },
+   {
+    "feature": "S:pred=CONST:Art226",
+    "index": 1324,
+    "delta_probability": 0.09302
+   },
+   {
+    "feature": "S:pred=CPC:3",
+    "index": 1344,
+    "delta_probability": 0.07537
+   },
+   {
+    "feature": "R:mean_sim",
+    "index": 1369,
+    "delta_probability": 0.0698
+   },
+   {
+    "feature": "R:win_rate",
+    "index": 1366,
+    "delta_probability": -0.06945
+   },
+   {
+    "feature": "R:n_labelled",
+    "index": 1370,
+    "delta_probability": -0.06073
+   },
+   {
+    "feature": "S:pred=CONST:Art19",
+    "index": 1321,
+    "delta_probability": -0.06036
+   }
+  ],
+  "gaps": {
+   "issues_elements": "EMPTY. \u00a711's contract wants per-element status with burden_on and the patterns satisfying or defeating each. No element carries burden metadata (BLOCKER B2) and \u00a78 found no pattern surviving Benjamini-Hochberg, so there is nothing to populate this with. Inventing element statuses would read as legal reasoning while being decoration.",
+   "defaults_assumed": "EMPTY. \u00a710.4's default/burden-shift modelling is not built, so no conclusion here depends on a stated default."
+  },
+  "provenance": {
+   "model": "gbm",
+   "feature_groups": [
+    "F",
+    "P",
+    "S",
+    "R",
+    "C"
+   ],
+   "split": "forum_heldout",
+   "split_hash": "6e346dd75b7e7d84",
+   "attribution": "ablation (zero the feature, re-score); not coefficients",
+   "spans_index": "masked_text, offsets verified to round-trip against the quote"
+  }
+ },
+ {
+  "case_id": "1015823",
+  "title": "Sone Valley Portland Cement Co Ltd vs The General Mining Syndicate Pvt Ltd on 24 August 1976",
+  "year": 1976,
+  "prediction": {
+   "label": "LOSE",
+   "probability": 0.2236
+  },
+  "actual": "LOSE",
+  "claim_families": [
+   "TenureOccupancy",
+   "PrivateTitlePossession"
+  ],
+  "authorities": {
+   "statutes_predicted": [
+    {
+     "provision": "CONST:Art226",
+     "probability": 0.5389
+    },
+    {
+     "provision": "CONST:Art31",
+     "probability": 0.4264
+    },
+    {
+     "provision": "CONST:Art14",
+     "probability": 0.3262
+    },
+    {
+     "provision": "CPC:4",
+     "probability": 0.2894
+    },
+    {
+     "provision": "CPC:2",
+     "probability": 0.2687
+    },
+    {
+     "provision": "CONST:Art19",
+     "probability": 0.2502
+    },
+    {
+     "provision": "CONST:Art31(2)",
+     "probability": 0.2467
+    },
+    {
+     "provision": "CONST:Art133(1)(c)",
+     "probability": 0.2354
+    },
+    {
+     "provision": "CPC:5",
+     "probability": 0.2257
+    },
+    {
+     "provision": "CPC:3",
+     "probability": 0.2202
+    }
+   ],
+   "precedents_retrieved": [
+    {
+     "case_id": "1291977",
+     "title": "Bihar Mines Ltd vs Union Of India on 3 October 1966",
+     "year": 1966,
+     "similarity": 1.0,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "39379987",
+     "title": "Bihar Mines Ltd vs Union Of India Uoi on 3 October 1966",
+     "year": 1966,
+     "similarity": 0.5,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "71379004",
+     "title": "Baijnath Kadio vs State Of Bihar And Ors on 28 August 1969",
+     "year": 1969,
+     "similarity": 0.3333,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "306833",
+     "title": "State Of Madhya Pradesh Anr vs Dadabhoy S New Chirimiri Ponri Hill on 29 November 1971",
+     "year": 1971,
+     "similarity": 0.25,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "1752601",
+     "title": "Baijnath Kedia vs State Of Bihar Ors on 28 August 1969",
+     "year": 1969,
+     "similarity": 0.2,
+     "analogous_party_outcome": "WIN"
+    }
+   ]
+  },
+  "evidence": {
+   "n_facts": 20,
+   "facts_cited_by_features": [
+    "statute.land_reforms_act"
+   ],
+   "fact_spans": [
+    {
+     "fact_id": "1015823_f001",
+     "text": "The head lessees undertook to pay royalty at the rate of annas -/10/- (ten) for every 100 cubic feet of limestone quarried during the first 15 years of the leas",
+     "source_span": [
+      1559,
+      1696
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1015823_f002",
+     "text": "The head lessees undertook to pay royalty at the rate of annas -/15/- (fifteen) for every 100 cubic feet of limestone quarried during the remaining 25 years of ",
+     "source_span": [
+      1875,
+      2037
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1015823_f003",
+     "text": "The head lessees undertook to pay yearly rent of annas -/6/ (sux) per acre subject to the maximum of Rs. 100/-.",
+     "source_span": [
+      2281,
+      2357
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1015823_f004",
+     "text": "The appellant undertook to pay to Dutts the same royalty and rent as were payable by Dutts to the Raja.",
+     "source_span": [
+      4165,
+      4267
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1015823_f005",
+     "text": "The sublease was executed on October 12, 1928.",
+     "source_span": [
+      3863,
+      3933
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1015823_f006",
+     "text": "The Central Legislature passed the 1948 Act on September 8, 1948.",
+     "source_span": [
+      4857,
+      5005
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1015823_f007",
+     "text": "The 1948 Act empowered the Central Government to make rules for regulating the grant of mining leases.",
+     "source_span": [
+      5006,
+      5203
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1015823_f008",
+     "text": "The Mineral Concession Rules, 1949, were made under section 5 of the 1948 Act.",
+     "source_span": [
+      5492,
+      5624
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    }
+   ]
+  },
+  "top_feature_contributions": [
+   {
+    "feature": "S:pred=CPC:2",
+    "index": 1340,
+    "delta_probability": -0.11029
+   },
+   {
+    "feature": "S:pred=CONST:Art226",
+    "index": 1324,
+    "delta_probability": 0.09222
+   },
+   {
+    "feature": "C:year",
+    "index": 1371,
+    "delta_probability": -0.0855
+   },
+   {
+    "feature": "R:n_labelled",
+    "index": 1370,
+    "delta_probability": -0.0715
+   },
+   {
+    "feature": "S:pred=CPC:3",
+    "index": 1344,
+    "delta_probability": -0.06191
+   },
+   {
+    "feature": "S:n_predicted",
+    "index": 1363,
+    "delta_probability": 0.05977
+   },
+   {
+    "feature": "F:atom@p=statute.land_reforms_act",
+    "index": 938,
+    "delta_probability": -0.05009
+   },
+   {
+    "feature": "F:frac_attributed",
+    "index": 1312,
+    "delta_probability": -0.04775
+   },
+   {
+    "feature": "S:pred=CONST:Art14",
+    "index": 1319,
+    "delta_probability": -0.0404
+   },
+   {
+    "feature": "F:n_atoms",
+    "index": 1309,
+    "delta_probability": -0.03903
+   }
+  ],
+  "gaps": {
+   "issues_elements": "EMPTY. \u00a711's contract wants per-element status with burden_on and the patterns satisfying or defeating each. No element carries burden metadata (BLOCKER B2) and \u00a78 found no pattern surviving Benjamini-Hochberg, so there is nothing to populate this with. Inventing element statuses would read as legal reasoning while being decoration.",
+   "defaults_assumed": "EMPTY. \u00a710.4's default/burden-shift modelling is not built, so no conclusion here depends on a stated default."
+  },
+  "provenance": {
+   "model": "gbm",
+   "feature_groups": [
+    "F",
+    "P",
+    "S",
+    "R",
+    "C"
+   ],
+   "split": "forum_heldout",
+   "split_hash": "6e346dd75b7e7d84",
+   "attribution": "ablation (zero the feature, re-score); not coefficients",
+   "spans_index": "masked_text, offsets verified to round-trip against the quote"
+  }
+ },
+ {
+  "case_id": "1019898",
+  "title": "Nand Kishore Mehra vs Sushila Mehra on 2 July 1995",
+  "year": 1995,
+  "prediction": {
+   "label": "WIN",
+   "probability": 0.5243
+  },
+  "actual": "WIN",
+  "claim_families": [
+   "ContractInstrument"
+  ],
+  "authorities": {
+   "statutes_predicted": [
+    {
+     "provision": "CPC:7",
+     "probability": 0.331
+    },
+    {
+     "provision": "CPC:2",
+     "probability": 0.2289
+    },
+    {
+     "provision": "CONST:Art136",
+     "probability": 0.2099
+    },
+    {
+     "provision": "CONST:Art226",
+     "probability": 0.2089
+    },
+    {
+     "provision": "CPC:3",
+     "probability": 0.1853
+    },
+    {
+     "provision": "CPC:15",
+     "probability": 0.1739
+    },
+    {
+     "provision": "CONST:Art14",
+     "probability": 0.171
+    },
+    {
+     "provision": "CPC:6",
+     "probability": 0.1708
+    },
+    {
+     "provision": "CONST:Art227",
+     "probability": 0.1678
+    },
+    {
+     "provision": "CPC:1",
+     "probability": 0.1531
+    }
+   ],
+   "precedents_retrieved": [
+    {
+     "case_id": "159739558",
+     "title": "Thakur Bhim Singh Dead By Lrs And Anr vs Thakur Kan Singh on 21 December 1979",
+     "year": 1979,
+     "similarity": 1.0,
+     "analogous_party_outcome": "WIN"
+    },
+    {
+     "case_id": "675387",
+     "title": "S M Karim vs Mst Bibi Sakina on 14 February 1964",
+     "year": 1964,
+     "similarity": 0.5,
+     "analogous_party_outcome": "LOSE"
+    },
+    {
+     "case_id": "1403823",
+     "title": "Smt Surasaibalini Debi vs Phanindra Mohan Majumdar on 27 October 1964",
+     "year": 1964,
+     "similarity": 0.3333,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "1340031",
+     "title": "P V Sankara Kurup vs Leelavathy Nambiar on 16 August 1994",
+     "year": 1994,
+     "similarity": 0.25,
+     "analogous_party_outcome": "LOSE"
+    },
+    {
+     "case_id": "1064891",
+     "title": "Dattatraya Shanker Mote Ors vs Anand Chintaman Datar Ors on 3 October 1974",
+     "year": 1974,
+     "similarity": 0.2,
+     "analogous_party_outcome": null
+    }
+   ]
+  },
+  "evidence": {
+   "n_facts": 3,
+   "facts_cited_by_features": [
+    "partyrole.co_owner"
+   ],
+   "fact_spans": [
+    {
+     "fact_id": "1019898_f001",
+     "text": "The plaintiff, Nand Kishore Mehra, filed a suit seeking relief in respect of properties alleged to have been purchased benami in the name of the defendant, Sush",
+     "source_span": [
+      6521,
+      6688
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1019898_f002",
+     "text": "The defendant, Sushila Mehra, had filed a First Appeal against the order of rejection of an application.",
+     "source_span": [
+      6689,
+      6812
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1019898_f003",
+     "text": "The plaintiff, Nand Kishore Mehra, is the husband of the defendant, Sushila Mehra.",
+     "source_span": [
+      6902,
+      7246
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    }
+   ]
+  },
+  "top_feature_contributions": [
+   {
+    "feature": "C:year",
+    "index": 1371,
+    "delta_probability": 0.34991
+   },
+   {
+    "feature": "F:n_atoms",
+    "index": 1309,
+    "delta_probability": -0.06227
+   },
+   {
+    "feature": "R:mean_sim",
+    "index": 1369,
+    "delta_probability": 0.05974
+   },
+   {
+    "feature": "S:pred=CPC:2",
+    "index": 1340,
+    "delta_probability": -0.05714
+   },
+   {
+    "feature": "C:n_defences",
+    "index": 1406,
+    "delta_probability": 0.05437
+   },
+   {
+    "feature": "R:win_rate",
+    "index": 1366,
+    "delta_probability": 0.05256
+   },
+   {
+    "feature": "S:pred=CONST:Art136",
+    "index": 1318,
+    "delta_probability": -0.05175
+   },
+   {
+    "feature": "S:pred=CPC:6",
+    "index": 1348,
+    "delta_probability": 0.0459
+   },
+   {
+    "feature": "F:atom@d=partyrole.co_owner",
+    "index": 695,
+    "delta_probability": -0.03489
+   },
+   {
+    "feature": "R:n_labelled",
+    "index": 1370,
+    "delta_probability": -0.03161
+   }
+  ],
+  "gaps": {
+   "issues_elements": "EMPTY. \u00a711's contract wants per-element status with burden_on and the patterns satisfying or defeating each. No element carries burden metadata (BLOCKER B2) and \u00a78 found no pattern surviving Benjamini-Hochberg, so there is nothing to populate this with. Inventing element statuses would read as legal reasoning while being decoration.",
+   "defaults_assumed": "EMPTY. \u00a710.4's default/burden-shift modelling is not built, so no conclusion here depends on a stated default."
+  },
+  "provenance": {
+   "model": "gbm",
+   "feature_groups": [
+    "F",
+    "P",
+    "S",
+    "R",
+    "C"
+   ],
+   "split": "forum_heldout",
+   "split_hash": "6e346dd75b7e7d84",
+   "attribution": "ablation (zero the feature, re-score); not coefficients",
+   "spans_index": "masked_text, offsets verified to round-trip against the quote"
+  }
+ },
+ {
+  "case_id": "1020200",
+  "title": "Busching Schmitz Private Ltd vs P T Menghani And Anr on 17 March 1977",
+  "year": 1977,
+  "prediction": {
+   "label": "LOSE",
+   "probability": 0.253
+  },
+  "actual": "LOSE",
+  "claim_families": [
+   "PrivateTitlePossession"
+  ],
+  "authorities": {
+   "statutes_predicted": [
+    {
+     "provision": "CONST:Art14",
+     "probability": 0.4394
+    },
+    {
+     "provision": "CONST:Art226",
+     "probability": 0.3214
+    },
+    {
+     "provision": "CPC:3",
+     "probability": 0.3028
+    },
+    {
+     "provision": "CONST:Art227",
+     "probability": 0.2573
+    },
+    {
+     "provision": "CONST:Art19(1)(f)",
+     "probability": 0.2506
+    },
+    {
+     "provision": "CPC:5",
+     "probability": 0.2303
+    },
+    {
+     "provision": "CPC:14",
+     "probability": 0.2159
+    },
+    {
+     "provision": "CPC:17",
+     "probability": 0.2078
+    },
+    {
+     "provision": "CONST:Art19",
+     "probability": 0.1853
+    },
+    {
+     "provision": "CONST:Art136",
+     "probability": 0.1748
+    }
+   ],
+   "precedents_retrieved": [
+    {
+     "case_id": "1575265",
+     "title": "Sarwan Singh Anr vs Kasturi Lal on 14 December 1976",
+     "year": 1976,
+     "similarity": 1.0,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "843614",
+     "title": "B Banerjee vs Anita Pan on 20 November 1974",
+     "year": 1974,
+     "similarity": 0.5,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "1870868",
+     "title": "Rattan Lal vs Vardesh Chander Ors on 9 December 1975",
+     "year": 1975,
+     "similarity": 0.3333,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "678245",
+     "title": "Jyoti Pershad vs The Administrator For The on 21 April 1961",
+     "year": 1961,
+     "similarity": 0.25,
+     "analogous_party_outcome": "LOSE"
+    },
+    {
+     "case_id": "1377335",
+     "title": "Anand Nivas Private Ltd vs Anandji Kalyanji Pedhi Ors on 5 September 1963",
+     "year": 1963,
+     "similarity": 0.2,
+     "analogous_party_outcome": "LOSE"
+    }
+   ]
+  },
+  "evidence": {
+   "n_facts": 4,
+   "facts_cited_by_features": [
+    "partyrole.tenant",
+    "tenure.allotment"
+   ],
+   "fact_spans": [
+    {
+     "fact_id": "1020200_f001",
+     "text": "The Delhi Rent Control Act, 1958, was amended by the Delhi Rent Control (Amendment) Act, 18 of 1976.",
+     "source_span": [
+      3257,
+      3310
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1020200_f002",
+     "text": "The government allotted residential accommodation to government servants at moderate rents.",
+     "source_span": [
+      3445,
+      3683
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1020200_f003",
+     "text": "Government servants were allowed to occupy classified quarters based on their hierarchical position.",
+     "source_span": [
+      1693,
+      2004
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1020200_f004",
+     "text": "The rents paid by government servants as tenants were negligible compared to the returns they made as landlords.",
+     "source_span": [
+      2005,
+      2099
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    }
+   ]
+  },
+  "top_feature_contributions": [
+   {
+    "feature": "F:n_atoms",
+    "index": 1309,
+    "delta_probability": -0.05258
+   },
+   {
+    "feature": "S:pred=CONST:Art227",
+    "index": 1325,
+    "delta_probability": -0.05118
+   },
+   {
+    "feature": "R:mean_sim",
+    "index": 1369,
+    "delta_probability": 0.04972
+   },
+   {
+    "feature": "S:pred=CONST:Art19",
+    "index": 1321,
+    "delta_probability": -0.04802
+   },
+   {
+    "feature": "S:top_score",
+    "index": 1364,
+    "delta_probability": 0.04535
+   },
+   {
+    "feature": "S:pred=CPC:3",
+    "index": 1344,
+    "delta_probability": 0.04478
+   },
+   {
+    "feature": "R:n_labelled",
+    "index": 1370,
+    "delta_probability": -0.03451
+   },
+   {
+    "feature": "F:n_facts",
+    "index": 1310,
+    "delta_probability": 0.03027
+   },
+   {
+    "feature": "F:atom@p=partyrole.tenant",
+    "index": 764,
+    "delta_probability": 0.02631
+   },
+   {
+    "feature": "F:atom@p=tenure.allotment",
+    "index": 968,
+    "delta_probability": 0.02471
+   }
+  ],
+  "gaps": {
+   "issues_elements": "EMPTY. \u00a711's contract wants per-element status with burden_on and the patterns satisfying or defeating each. No element carries burden metadata (BLOCKER B2) and \u00a78 found no pattern surviving Benjamini-Hochberg, so there is nothing to populate this with. Inventing element statuses would read as legal reasoning while being decoration.",
+   "defaults_assumed": "EMPTY. \u00a710.4's default/burden-shift modelling is not built, so no conclusion here depends on a stated default."
+  },
+  "provenance": {
+   "model": "gbm",
+   "feature_groups": [
+    "F",
+    "P",
+    "S",
+    "R",
+    "C"
+   ],
+   "split": "forum_heldout",
+   "split_hash": "6e346dd75b7e7d84",
+   "attribution": "ablation (zero the feature, re-score); not coefficients",
+   "spans_index": "masked_text, offsets verified to round-trip against the quote"
+  }
+ },
+ {
+  "case_id": "1020620",
+  "title": "Caltex India Ltd vs Bhagwan Devi Marodia on 26 September 1968",
+  "year": 1968,
+  "prediction": {
+   "label": "LOSE",
+   "probability": 0.1579
+  },
+  "actual": "LOSE",
+  "claim_families": [
+   "PrivateTitlePossession",
+   "ContractInstrument"
+  ],
+  "authorities": {
+   "statutes_predicted": [
+    {
+     "provision": "TPA:106",
+     "probability": 0.2606
+    },
+    {
+     "provision": "CONST:Art226",
+     "probability": 0.2529
+    },
+    {
+     "provision": "CPC:11",
+     "probability": 0.2187
+    },
+    {
+     "provision": "CONST:Art136",
+     "probability": 0.2081
+    },
+    {
+     "provision": "CONST:Art227",
+     "probability": 0.2076
+    },
+    {
+     "provision": "CONST:Art14",
+     "probability": 0.1857
+    },
+    {
+     "provision": "CPC:1",
+     "probability": 0.1834
+    },
+    {
+     "provision": "CPC:3",
+     "probability": 0.1781
+    },
+    {
+     "provision": "CPC:13",
+     "probability": 0.1712
+    },
+    {
+     "provision": "CPC:5",
+     "probability": 0.1623
+    }
+   ],
+   "precedents_retrieved": [
+    {
+     "case_id": "464153",
+     "title": "Gopi Kanta Sen vs Abdul Gaffur Ors on 11 August 1967",
+     "year": 1967,
+     "similarity": 1.0,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "57894",
+     "title": "Manujendra Dutt vs Purendu Prosad Roy Chowdhury Ors on 22 September 1966",
+     "year": 1966,
+     "similarity": 0.5,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "1730322",
+     "title": "Dr K A Dhairyawan And Others vs J R Thakur And Others on 28 April 1958",
+     "year": 1958,
+     "similarity": 0.3333,
+     "analogous_party_outcome": "WIN"
+    },
+    {
+     "case_id": "493375",
+     "title": "N Vajrapani Naidu And Another vs The New Theatre Carnatic Talkies on 4 March 1964",
+     "year": 1964,
+     "similarity": 0.25,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "246146",
+     "title": "Sheikh Gulfan And Others vs Sanat Kumar Ganguli on 15 March 1965",
+     "year": 1965,
+     "similarity": 0.2,
+     "analogous_party_outcome": null
+    }
+   ]
+  },
+  "evidence": {
+   "n_facts": 7,
+   "facts_cited_by_features": [
+    "defense.delay"
+   ],
+   "fact_spans": [
+    {
+     "fact_id": "1020620_f001",
+     "text": "Caltex India Ltd leased land at 22, Jatindra Mohan Avenue, Calcutta, for a term of 10 years commencing from February 1, 1954.",
+     "source_span": [
+      380,
+      473
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1020620_f002",
+     "text": "The time fixed for applying for the renewal of the lease expired on December 1, 1963.",
+     "source_span": [
+      1161,
+      1247
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1020620_f003",
+     "text": "Caltex India Ltd made a written request for renewal on December 13, 1963.",
+     "source_span": [
+      1248,
+      1317
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1020620_f004",
+     "text": "The respondent's solicitors replied on December 23, 1963, stating that the request was out of time.",
+     "source_span": [
+      1318,
+      1506
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1020620_f005",
+     "text": "Caltex India Ltd erected structures on the land for a petrol delivery station.",
+     "source_span": [
+      1507,
+      1691
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1020620_f006",
+     "text": "The appellant filed a suit for a declaration that it was entitled to a renewal of the lease.",
+     "source_span": [
+      2311,
+      2638
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1020620_f007",
+     "text": "The appellant alleged that the delay in giving notice of renewal was due to oversight.",
+     "source_span": [
+      2639,
+      2843
+     ],
+     "asserted_by": "plaintiff",
+     "disputed_status": "contested"
+    }
+   ]
+  },
+  "top_feature_contributions": [
+   {
+    "feature": "C:year",
+    "index": 1371,
+    "delta_probability": -0.11912
+   },
+   {
+    "feature": "F:atom@p=defense.delay",
+    "index": 38,
+    "delta_probability": -0.10511
+   },
+   {
+    "feature": "R:n_labelled",
+    "index": 1370,
+    "delta_probability": -0.07541
+   },
+   {
+    "feature": "S:pred=CPC:13",
+    "index": 1335,
+    "delta_probability": -0.06282
+   },
+   {
+    "feature": "R:win_rate",
+    "index": 1366,
+    "delta_probability": 0.0553
+   },
+   {
+    "feature": "F:n_atoms",
+    "index": 1309,
+    "delta_probability": -0.05143
+   },
+   {
+    "feature": "F:ncat=Event",
+    "index": 1100,
+    "delta_probability": 0.05101
+   },
+   {
+    "feature": "S:pred=CONST:Art226",
+    "index": 1324,
+    "delta_probability": 0.02919
+   },
+   {
+    "feature": "R:win_rate_simweighted",
+    "index": 1367,
+    "delta_probability": -0.02486
+   },
+   {
+    "feature": "S:pred=CONST:Art136",
+    "index": 1318,
+    "delta_probability": 0.01982
+   }
+  ],
+  "gaps": {
+   "issues_elements": "EMPTY. \u00a711's contract wants per-element status with burden_on and the patterns satisfying or defeating each. No element carries burden metadata (BLOCKER B2) and \u00a78 found no pattern surviving Benjamini-Hochberg, so there is nothing to populate this with. Inventing element statuses would read as legal reasoning while being decoration.",
+   "defaults_assumed": "EMPTY. \u00a710.4's default/burden-shift modelling is not built, so no conclusion here depends on a stated default."
+  },
+  "provenance": {
+   "model": "gbm",
+   "feature_groups": [
+    "F",
+    "P",
+    "S",
+    "R",
+    "C"
+   ],
+   "split": "forum_heldout",
+   "split_hash": "6e346dd75b7e7d84",
+   "attribution": "ablation (zero the feature, re-score); not coefficients",
+   "spans_index": "masked_text, offsets verified to round-trip against the quote"
+  }
+ },
+ {
+  "case_id": "1022527",
+  "title": "Smt Ratni Devi Anr vs Chief Commissioner Delhi Ors on 30 April 1975",
+  "year": 1975,
+  "prediction": {
+   "label": "LOSE",
+   "probability": 0.2649
+  },
+  "actual": "LOSE",
+  "claim_families": [
+   "PrivateTitlePossession"
+  ],
+  "authorities": {
+   "statutes_predicted": [
+    {
+     "provision": "LA:4",
+     "probability": 0.7425
+    },
+    {
+     "provision": "LA:6",
+     "probability": 0.6495
+    },
+    {
+     "provision": "LA:5A",
+     "probability": 0.5981
+    },
+    {
+     "provision": "LA:9",
+     "probability": 0.5608
+    },
+    {
+     "provision": "LA:4(1)",
+     "probability": 0.4844
+    },
+    {
+     "provision": "CONST:Art226",
+     "probability": 0.4259
+    },
+    {
+     "provision": "CONST:Art31(2)",
+     "probability": 0.3116
+    },
+    {
+     "provision": "CONST:Art14",
+     "probability": 0.3101
+    },
+    {
+     "provision": "CONST:Art31",
+     "probability": 0.2586
+    },
+    {
+     "provision": "LA:18",
+     "probability": 0.2574
+    }
+   ],
+   "precedents_retrieved": [
+    {
+     "case_id": "1568935",
+     "title": "Aflatoon And Others vs Lt Governor Of Delhi Others on 23 August 1974",
+     "year": 1974,
+     "similarity": 1.0,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "1634289",
+     "title": "P Vajravelu Mudaliar vs Special Deputy Collector Madras Anr on 5 October 1964",
+     "year": 1964,
+     "similarity": 0.5,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "270610",
+     "title": "Udai Ram Sharma And Others Etc vs Union Of India And Others on 7 February 1968",
+     "year": 1968,
+     "similarity": 0.3333,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "1536600",
+     "title": "Smt Somavanti And Others vs The State Of Punjab And Others And on 2 May 1962",
+     "year": 1962,
+     "similarity": 0.25,
+     "analogous_party_outcome": "WIN"
+    },
+    {
+     "case_id": "284811",
+     "title": "Arnold Rodricks Anr vs State Of Maharashtra Ors on 14 March 1966",
+     "year": 1966,
+     "similarity": 0.2,
+     "analogous_party_outcome": "WIN"
+    }
+   ]
+  },
+  "evidence": {
+   "n_facts": 7,
+   "facts_cited_by_features": [],
+   "fact_spans": [
+    {
+     "fact_id": "1022527_f001",
+     "text": "The notification dated 13 November, 1959 under section 4 of the Land Acquisition Act was issued",
+     "source_span": [
+      840,
+      907
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1022527_f002",
+     "text": "The piecemeal acquisition was held to be bad in State of Madhya Pradesh & Ors. v. Vishnu Prasad Sharma & Ors.",
+     "source_span": [
+      1000,
+      1111
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1022527_f003",
+     "text": "The Land Acquisition Amendment and Validation Act validated piecemeal acquisition with retrospective effect",
+     "source_span": [
+      1132,
+      1224
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1022527_f004",
+     "text": "The validity of the Amending Act has been upheld by this Court in Udai Ram Sharma & Ors. v. Union of India & Ors.",
+     "source_span": [
+      1226,
+      1339
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1022527_f005",
+     "text": "The petitioners and the appellants contended that compensation should be paid with reference to the value of the property on the date possession of the property",
+     "source_span": [
+      2049,
+      2192
+     ],
+     "asserted_by": "plaintiff",
+     "disputed_status": "contested"
+    },
+    {
+     "fact_id": "1022527_f006",
+     "text": "The main contention of the petitioners and the appellants is that compensation which is to be paid with reference to the value of the property on the date of th",
+     "source_span": [
+      1810,
+      2047
+     ],
+     "asserted_by": "plaintiff",
+     "disputed_status": "contested"
+    },
+    {
+     "fact_id": "1022527_f007",
+     "text": "The declaration was that specified land was required to be taken at public expense for a public purpose, viz., the Planned Development of Delhi",
+     "source_span": [
+      1665,
+      1808
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    }
+   ]
+  },
+  "top_feature_contributions": [
+   {
+    "feature": "C:year",
+    "index": 1371,
+    "delta_probability": -0.16072
+   },
+   {
+    "feature": "R:n_labelled",
+    "index": 1370,
+    "delta_probability": -0.13673
+   },
+   {
+    "feature": "R:win_rate",
+    "index": 1366,
+    "delta_probability": -0.08083
+   },
+   {
+    "feature": "S:pred=CONST:Art31",
+    "index": 1326,
+    "delta_probability": 0.07014
+   },
+   {
+    "feature": "S:pred=LA:4",
+    "index": 1355,
+    "delta_probability": 0.05724
+   },
+   {
+    "feature": "C:n_defences",
+    "index": 1406,
+    "delta_probability": -0.05548
+   },
+   {
+    "feature": "R:win_rate_simweighted",
+    "index": 1367,
+    "delta_probability": -0.04652
+   },
+   {
+    "feature": "S:pred=CONST:Art226",
+    "index": 1324,
+    "delta_probability": 0.04369
+   },
+   {
+    "feature": "F:frac_attributed",
+    "index": 1312,
+    "delta_probability": -0.04084
+   },
+   {
+    "feature": "F:n_facts",
+    "index": 1310,
+    "delta_probability": 0.03824
+   }
+  ],
+  "gaps": {
+   "issues_elements": "EMPTY. \u00a711's contract wants per-element status with burden_on and the patterns satisfying or defeating each. No element carries burden metadata (BLOCKER B2) and \u00a78 found no pattern surviving Benjamini-Hochberg, so there is nothing to populate this with. Inventing element statuses would read as legal reasoning while being decoration.",
+   "defaults_assumed": "EMPTY. \u00a710.4's default/burden-shift modelling is not built, so no conclusion here depends on a stated default."
+  },
+  "provenance": {
+   "model": "gbm",
+   "feature_groups": [
+    "F",
+    "P",
+    "S",
+    "R",
+    "C"
+   ],
+   "split": "forum_heldout",
+   "split_hash": "6e346dd75b7e7d84",
+   "attribution": "ablation (zero the feature, re-score); not coefficients",
+   "spans_index": "masked_text, offsets verified to round-trip against the quote"
+  }
+ },
+ {
+  "case_id": "1025530",
+  "title": "Manoj Kumar vs Bihari Lal Dead By Lrs on 18 April 2001",
+  "year": 2001,
+  "prediction": {
+   "label": "WIN",
+   "probability": 0.8672
+  },
+  "actual": "WIN",
+  "claim_families": [
+   "PrivateTitlePossession",
+   "PrivateTitlePossession"
+  ],
+  "authorities": {
+   "statutes_predicted": [
+    {
+     "provision": "CONST:Art136",
+     "probability": 0.4559
+    },
+    {
+     "provision": "CONST:Art227",
+     "probability": 0.3329
+    },
+    {
+     "provision": "CONST:Art226",
+     "probability": 0.2993
+    },
+    {
+     "provision": "CPC:3",
+     "probability": 0.2782
+    },
+    {
+     "provision": "CPC:1",
+     "probability": 0.2777
+    },
+    {
+     "provision": "CPC:2",
+     "probability": 0.257
+    },
+    {
+     "provision": "CPC:6",
+     "probability": 0.2504
+    },
+    {
+     "provision": "CPC:115",
+     "probability": 0.2438
+    },
+    {
+     "provision": "CPC:41",
+     "probability": 0.2087
+    },
+    {
+     "provision": "CPC:11",
+     "probability": 0.2051
+    }
+   ],
+   "precedents_retrieved": [
+    {
+     "case_id": "1187427",
+     "title": "B N Mutto Anr vs T K Nandi on 29 November 1978",
+     "year": 1978,
+     "similarity": 1.0,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "1238854",
+     "title": "Rita Markandey vs Surjit Singh Arora on 27 September 1996",
+     "year": 1996,
+     "similarity": 0.5,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "378172",
+     "title": "Inderjeet Kaur vs Nirpal Singh on 15 December 2000",
+     "year": 2000,
+     "similarity": 0.3333,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "1954254",
+     "title": "O P Kathpalia vs Lakhmir Singh Dead And Ors on 23 July 1984",
+     "year": 1984,
+     "similarity": 0.25,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "730740",
+     "title": "Om Prakash Gupta vs Rattan Singh And Another on 17 December 1962",
+     "year": 1962,
+     "similarity": 0.2,
+     "analogous_party_outcome": "LOSE"
+    }
+   ]
+  },
+  "evidence": {
+   "n_facts": 10,
+   "facts_cited_by_features": [],
+   "fact_spans": [
+    {
+     "fact_id": "1025530_f001",
+     "text": "The parties are related to each other.",
+     "source_span": [
+      506,
+      544
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1025530_f002",
+     "text": "The appellant filed an application under Section 25(B) which was rejected.",
+     "source_span": [
+      545,
+      616
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1025530_f003",
+     "text": "The respondent's petition for eviction of the appellant was allowed on 20th March, 1998.",
+     "source_span": [
+      621,
+      737
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1025530_f004",
+     "text": "The suit premises is No. 5A/11004 (Quarter No.167) Ground Floor, Gali No.7 WEA Sat Nagar, Karol Bagh, New Delhi.",
+     "source_span": [
+      1239,
+      1328
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1025530_f005",
+     "text": "An agreement was entered between the parties on 1.11.1985 for sale of the property.",
+     "source_span": [
+      1805,
+      1887
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1025530_f006",
+     "text": "The appellant paid Rs.45,000/- as part payment of consideration.",
+     "source_span": [
+      1957,
+      2060
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1025530_f007",
+     "text": "The appellant was put in possession of the property on 1.11.1985.",
+     "source_span": [
+      2061,
+      2116
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1025530_f008",
+     "text": "The sale deed could not be executed due to some difficulty.",
+     "source_span": [
+      2118,
+      2210
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    }
+   ]
+  },
+  "top_feature_contributions": [
+   {
+    "feature": "C:year",
+    "index": 1371,
+    "delta_probability": 0.3738
+   },
+   {
+    "feature": "S:pred=CPC:115",
+    "index": 1333,
+    "delta_probability": 0.15401
+   },
+   {
+    "feature": "R:win_rate",
+    "index": 1366,
+    "delta_probability": 0.11037
+   },
+   {
+    "feature": "R:win_rate_simweighted",
+    "index": 1367,
+    "delta_probability": 0.04523
+   },
+   {
+    "feature": "S:pred=CONST:Art136",
+    "index": 1318,
+    "delta_probability": -0.03923
+   },
+   {
+    "feature": "R:mean_sim",
+    "index": 1369,
+    "delta_probability": 0.03568
+   },
+   {
+    "feature": "S:pred=CPC:1",
+    "index": 1329,
+    "delta_probability": 0.02981
+   },
+   {
+    "feature": "S:pred=CONST:Art227",
+    "index": 1325,
+    "delta_probability": -0.02719
+   },
+   {
+    "feature": "F:ncat=Possession",
+    "index": 1230,
+    "delta_probability": 0.02443
+   },
+   {
+    "feature": "F:n_facts",
+    "index": 1310,
+    "delta_probability": 0.02267
+   }
+  ],
+  "gaps": {
+   "issues_elements": "EMPTY. \u00a711's contract wants per-element status with burden_on and the patterns satisfying or defeating each. No element carries burden metadata (BLOCKER B2) and \u00a78 found no pattern surviving Benjamini-Hochberg, so there is nothing to populate this with. Inventing element statuses would read as legal reasoning while being decoration.",
+   "defaults_assumed": "EMPTY. \u00a710.4's default/burden-shift modelling is not built, so no conclusion here depends on a stated default."
+  },
+  "provenance": {
+   "model": "gbm",
+   "feature_groups": [
+    "F",
+    "P",
+    "S",
+    "R",
+    "C"
+   ],
+   "split": "forum_heldout",
+   "split_hash": "6e346dd75b7e7d84",
+   "attribution": "ablation (zero the feature, re-score); not coefficients",
+   "spans_index": "masked_text, offsets verified to round-trip against the quote"
+  }
+ },
+ {
+  "case_id": "1027711",
+  "title": "Ganpat Ram Sharma Ors vs Smt Gayatri Devi on 17 July 1987",
+  "year": 1987,
+  "prediction": {
+   "label": "LOSE",
+   "probability": 0.4222
+  },
+  "actual": "LOSE",
+  "claim_families": [
+   "PrivateTitlePossession"
+  ],
+  "authorities": {
+   "statutes_predicted": [
+    {
+     "provision": "CONST:Art136",
+     "probability": 0.4162
+    },
+    {
+     "provision": "CPC:4",
+     "probability": 0.2817
+    },
+    {
+     "provision": "CONST:Art227",
+     "probability": 0.2708
+    },
+    {
+     "provision": "CONST:Art226",
+     "probability": 0.2694
+    },
+    {
+     "provision": "TPA:106",
+     "probability": 0.2138
+    },
+    {
+     "provision": "CPC:14",
+     "probability": 0.2018
+    },
+    {
+     "provision": "CPC:13",
+     "probability": 0.1992
+    },
+    {
+     "provision": "CPC:3",
+     "probability": 0.1801
+    },
+    {
+     "provision": "CONST:Art14",
+     "probability": 0.1695
+    },
+    {
+     "provision": "CPC:15",
+     "probability": 0.1613
+    }
+   ],
+   "precedents_retrieved": [
+    {
+     "case_id": "1211323",
+     "title": "S B Noronah vs Prem Kumari Khanna on 16 August 1979",
+     "year": 1979,
+     "similarity": 1.0,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "1575265",
+     "title": "Sarwan Singh Anr vs Kasturi Lal on 14 December 1976",
+     "year": 1976,
+     "similarity": 0.5,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "1020200",
+     "title": "Busching Schmitz Private Ltd vs P T Menghani And Anr on 17 March 1977",
+     "year": 1977,
+     "similarity": 0.3333,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "867163",
+     "title": "Nihal Chand vs Kalyan Chand Jain on 15 November 1977",
+     "year": 1977,
+     "similarity": 0.25,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "678245",
+     "title": "Jyoti Pershad vs The Administrator For The on 21 April 1961",
+     "year": 1961,
+     "similarity": 0.2,
+     "analogous_party_outcome": "LOSE"
+    }
+   ]
+  },
+  "evidence": {
+   "n_facts": 20,
+   "facts_cited_by_features": [],
+   "fact_spans": [
+    {
+     "fact_id": "1027711_f001",
+     "text": "The land and building at No. A-6, 25, Krishna Nagar, Delhi was purchased by Nathu Ram, Ganpat Ram, Pearey Lal, and Jai Bhagwan in 1952",
+     "source_span": [
+      1322,
+      1538
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1027711_f002",
+     "text": "The building at Krishna Nagar, Delhi consisted of two rooms, two kitchens, and a Barsati",
+     "source_span": [
+      1539,
+      1604
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1027711_f003",
+     "text": "The appellants made three applications under Order 41 Rule 2 of C.P.C. on or about 4th of August, 1980",
+     "source_span": [
+      1605,
+      1716
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1027711_f004",
+     "text": "Village Seelampur, Shahdara was declared an urban area on 28th of May, 1966",
+     "source_span": [
+      1753,
+      1857
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1027711_f005",
+     "text": "Village Seelampur, Shahdara was subjected to the provisions of the Delhi Rent Act on 27th March, 1979",
+     "source_span": [
+      1858,
+      2037
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1027711_f006",
+     "text": "Ms. Sushila Devi was inducted into the quarter at Seelampur in 1967-68",
+     "source_span": [
+      2038,
+      2167
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1027711_f007",
+     "text": "Ms. Sushila Devi applied for the allotment of the quarter in her name in 1974",
+     "source_span": [
+      2168,
+      2257
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1027711_f008",
+     "text": "The authorities allotted the quarter to Ms. Sushila Devi on 20th of July, 1980",
+     "source_span": [
+      2258,
+      2340
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    }
+   ]
+  },
+  "top_feature_contributions": [
+   {
+    "feature": "C:year",
+    "index": 1371,
+    "delta_probability": 0.13982
+   },
+   {
+    "feature": "S:n_predicted",
+    "index": 1363,
+    "delta_probability": 0.13897
+   },
+   {
+    "feature": "R:win_rate",
+    "index": 1366,
+    "delta_probability": 0.11717
+   },
+   {
+    "feature": "S:pred=CPC:4",
+    "index": 1345,
+    "delta_probability": -0.0821
+   },
+   {
+    "feature": "S:pred=CONST:Art227",
+    "index": 1325,
+    "delta_probability": -0.07719
+   },
+   {
+    "feature": "S:pred=CONST:Art14",
+    "index": 1319,
+    "delta_probability": -0.06742
+   },
+   {
+    "feature": "R:mean_sim",
+    "index": 1369,
+    "delta_probability": 0.0604
+   },
+   {
+    "feature": "F:ncat=Element",
+    "index": 1062,
+    "delta_probability": -0.05746
+   },
+   {
+    "feature": "R:win_rate_simweighted",
+    "index": 1367,
+    "delta_probability": -0.05132
+   },
+   {
+    "feature": "S:top_score",
+    "index": 1364,
+    "delta_probability": 0.03532
+   }
+  ],
+  "gaps": {
+   "issues_elements": "EMPTY. \u00a711's contract wants per-element status with burden_on and the patterns satisfying or defeating each. No element carries burden metadata (BLOCKER B2) and \u00a78 found no pattern surviving Benjamini-Hochberg, so there is nothing to populate this with. Inventing element statuses would read as legal reasoning while being decoration.",
+   "defaults_assumed": "EMPTY. \u00a710.4's default/burden-shift modelling is not built, so no conclusion here depends on a stated default."
+  },
+  "provenance": {
+   "model": "gbm",
+   "feature_groups": [
+    "F",
+    "P",
+    "S",
+    "R",
+    "C"
+   ],
+   "split": "forum_heldout",
+   "split_hash": "6e346dd75b7e7d84",
+   "attribution": "ablation (zero the feature, re-score); not coefficients",
+   "spans_index": "masked_text, offsets verified to round-trip against the quote"
+  }
+ },
+ {
+  "case_id": "1029152",
+  "title": "N Narasimhaiah Ors Etc vs State Of Karnataka Ors Union Of India on 17 January 1996",
+  "year": 1996,
+  "prediction": {
+   "label": "LOSE",
+   "probability": 0.4777
+  },
+  "actual": "LOSE",
+  "claim_families": [
+   "StateAction"
+  ],
+  "authorities": {
+   "statutes_predicted": [
+    {
+     "provision": "LA:4(1)",
+     "probability": 0.8564
+    },
+    {
+     "provision": "LA:6",
+     "probability": 0.8101
+    },
+    {
+     "provision": "LA:5A",
+     "probability": 0.7427
+    },
+    {
+     "provision": "LA:4",
+     "probability": 0.6237
+    },
+    {
+     "provision": "LA:17",
+     "probability": 0.5494
+    },
+    {
+     "provision": "CONST:Art226",
+     "probability": 0.5438
+    },
+    {
+     "provision": "LA:9",
+     "probability": 0.5265
+    },
+    {
+     "provision": "CONST:Art14",
+     "probability": 0.3731
+    },
+    {
+     "provision": "CONST:Art136",
+     "probability": 0.367
+    },
+    {
+     "provision": "CPC:4",
+     "probability": 0.2943
+    }
+   ],
+   "precedents_retrieved": [
+    {
+     "case_id": "1465016",
+     "title": "Ram Chand vs Union Of India N P Singh J on 30 September 1993",
+     "year": 1993,
+     "similarity": 1.0,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "9971659",
+     "title": "Ram Chand And Ors vs Union Of India Uoi And Ors on 30 September 1993",
+     "year": 1993,
+     "similarity": 0.5,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "1144327",
+     "title": "R L Arora vs State Of U P on 1 December 1961",
+     "year": 1961,
+     "similarity": 0.3333,
+     "analogous_party_outcome": "WIN"
+    },
+    {
+     "case_id": "1701068",
+     "title": "Rajaanand Brahma Shah vs State Of Uttar Pradesh Ors on 16 September 1966",
+     "year": 1966,
+     "similarity": 0.25,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "1325151",
+     "title": "Sarju Prasad Saha vs The State Of U P And Ors on 3 March 1965",
+     "year": 1965,
+     "similarity": 0.2,
+     "analogous_party_outcome": null
+    }
+   ]
+  },
+  "evidence": {
+   "n_facts": 10,
+   "facts_cited_by_features": [],
+   "fact_spans": [
+    {
+     "fact_id": "1029152_f001",
+     "text": "The petitioners were directed to file objections against the preliminary notification within 30 days from the date of receipt of the order.",
+     "source_span": [
+      260,
+      680
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1029152_f002",
+     "text": "The Land Acquisition Officer was directed to hold an enquiry under Section 5A of the Act expeditiously and complete the proceedings in accordance with law.",
+     "source_span": [
+      681,
+      827
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1029152_f003",
+     "text": "Enquiry under Section 5A was conducted and declaration thereof was published on May 13, 1989.",
+     "source_span": [
+      829,
+      934
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1029152_f004",
+     "text": "The declaration under Section 6 was published.",
+     "source_span": [
+      1037,
+      1079
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1029152_f005",
+     "text": "The validity of the declaration under Section 6 was questioned in Writ Petition No.19245/89 and batch.",
+     "source_span": [
+      935,
+      1036
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1029152_f006",
+     "text": "The declaration under Section 6 published in the first instance was within the period prescribed under proviso to Section 6(1).",
+     "source_span": [
+      1080,
+      1207
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1029152_f007",
+     "text": "The initial period of limitation had expired",
+     "source_span": [
+      9201,
+      9278
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "unclear"
+    },
+    {
+     "fact_id": "1029152_f008",
+     "text": "An order made after expiry of the period was invalid in law",
+     "source_span": [
+      9396,
+      9456
+     ],
+     "asserted_by": "defendant",
+     "disputed_status": "contested"
+    }
+   ]
+  },
+  "top_feature_contributions": [
+   {
+    "feature": "C:year",
+    "index": 1371,
+    "delta_probability": -0.15426
+   },
+   {
+    "feature": "S:top_score",
+    "index": 1364,
+    "delta_probability": -0.135
+   },
+   {
+    "feature": "S:pred=LA:17",
+    "index": 1352,
+    "delta_probability": -0.12636
+   },
+   {
+    "feature": "S:pred=CONST:Art226",
+    "index": 1324,
+    "delta_probability": 0.12547
+   },
+   {
+    "feature": "S:n_predicted",
+    "index": 1363,
+    "delta_probability": 0.12237
+   },
+   {
+    "feature": "S:pred=LA:4",
+    "index": 1355,
+    "delta_probability": 0.1187
+   },
+   {
+    "feature": "S:pred=LA:5A",
+    "index": 1357,
+    "delta_probability": -0.10293
+   },
+   {
+    "feature": "S:pred=CONST:Art136",
+    "index": 1318,
+    "delta_probability": 0.10129
+   },
+   {
+    "feature": "F:ncat=Event",
+    "index": 1100,
+    "delta_probability": 0.09062
+   },
+   {
+    "feature": "F:n_facts",
+    "index": 1310,
+    "delta_probability": 0.06133
+   }
+  ],
+  "gaps": {
+   "issues_elements": "EMPTY. \u00a711's contract wants per-element status with burden_on and the patterns satisfying or defeating each. No element carries burden metadata (BLOCKER B2) and \u00a78 found no pattern surviving Benjamini-Hochberg, so there is nothing to populate this with. Inventing element statuses would read as legal reasoning while being decoration.",
+   "defaults_assumed": "EMPTY. \u00a710.4's default/burden-shift modelling is not built, so no conclusion here depends on a stated default."
+  },
+  "provenance": {
+   "model": "gbm",
+   "feature_groups": [
+    "F",
+    "P",
+    "S",
+    "R",
+    "C"
+   ],
+   "split": "forum_heldout",
+   "split_hash": "6e346dd75b7e7d84",
+   "attribution": "ablation (zero the feature, re-score); not coefficients",
+   "spans_index": "masked_text, offsets verified to round-trip against the quote"
+  }
+ },
+ {
+  "case_id": "1037405",
+  "title": "P Ananthakrishnan Nair Anr vs Dr G Ramakrishnan Anr on 31 March 1987",
+  "year": 1987,
+  "prediction": {
+   "label": "WIN",
+   "probability": 0.5733
+  },
+  "actual": "LOSE",
+  "claim_families": [
+   "TenureOccupancy"
+  ],
+  "authorities": {
+   "statutes_predicted": [
+    {
+     "provision": "CONST:Art136",
+     "probability": 0.4573
+    },
+    {
+     "provision": "CPC:13",
+     "probability": 0.3316
+    },
+    {
+     "provision": "CPC:1",
+     "probability": 0.3008
+    },
+    {
+     "provision": "CPC:4",
+     "probability": 0.2661
+    },
+    {
+     "provision": "CPC:9",
+     "probability": 0.2634
+    },
+    {
+     "provision": "CONST:Art227",
+     "probability": 0.2522
+    },
+    {
+     "provision": "CPC:10",
+     "probability": 0.2433
+    },
+    {
+     "provision": "CPC:11",
+     "probability": 0.2408
+    },
+    {
+     "provision": "CPC:3",
+     "probability": 0.2355
+    },
+    {
+     "provision": "CONST:Art226",
+     "probability": 0.2352
+    }
+   ],
+   "precedents_retrieved": [
+    {
+     "case_id": "1560549",
+     "title": "R Ramamurthi Iyer vs Raja V Rajeswara Rao on 22 August 1972",
+     "year": 1972,
+     "similarity": 1.0,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "252896",
+     "title": "K Balakrishna Rao And Ors vs Hazi Abdulla Sait And Ors on 10 October 1979",
+     "year": 1979,
+     "similarity": 0.5,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "942903",
+     "title": "Sriram Pasricha vs Jagannath Ors on 24 August 1976",
+     "year": 1976,
+     "similarity": 0.3333,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "116122",
+     "title": "Gyan Chand vs Kunjbeharilal And Ors on 6 December 1976",
+     "year": 1976,
+     "similarity": 0.25,
+     "analogous_party_outcome": "LOSE"
+    },
+    {
+     "case_id": "1062764",
+     "title": "M M Quasim vs Manohar Lal Sharma Ors on 7 April 1981",
+     "year": 1981,
+     "similarity": 0.2,
+     "analogous_party_outcome": null
+    }
+   ]
+  },
+  "evidence": {
+   "n_facts": 17,
+   "facts_cited_by_features": [
+    "defense.statutory_waiver"
+   ],
+   "fact_spans": [
+    {
+     "fact_id": "1037405_f001",
+     "text": "the super-structures were constructed prior to 1954",
+     "source_span": [
+      1304,
+      1443
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1037405_f002",
+     "text": "a suit for partition was filed in 1960",
+     "source_span": [
+      1594,
+      1657
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1037405_f003",
+     "text": "P. Ananthakrishnan Nair was appointed Receiver in 1966",
+     "source_span": [
+      1730,
+      1819
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1037405_f004",
+     "text": "the lease was terminated by the landlords in 1972",
+     "source_span": [
+      2124,
+      2257
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1037405_f005",
+     "text": "four suits for ejectment were instituted in 1972",
+     "source_span": [
+      2345,
+      2470
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1037405_f006",
+     "text": "defendant Nos. 1 to 3 and 5 to 10 did not contest the suit",
+     "source_span": [
+      2625,
+      2716
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1037405_f007",
+     "text": "K.K. Kunhammoo and P. Ananthakrishnan Nair contested the ejectment suits",
+     "source_span": [
+      2767,
+      2921
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1037405_f008",
+     "text": "defendant No. 4 filed an application under Section 9 of the Tamil Nadu City Tenants Protection Act",
+     "source_span": [
+      2923,
+      3092
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    }
+   ]
+  },
+  "top_feature_contributions": [
+   {
+    "feature": "C:year",
+    "index": 1371,
+    "delta_probability": 0.44282
+   },
+   {
+    "feature": "S:n_predicted",
+    "index": 1363,
+    "delta_probability": 0.14273
+   },
+   {
+    "feature": "S:pred=CPC:13",
+    "index": 1335,
+    "delta_probability": 0.1239
+   },
+   {
+    "feature": "R:n_labelled",
+    "index": 1370,
+    "delta_probability": 0.08835
+   },
+   {
+    "feature": "F:atom@d=defense.statutory_waiver",
+    "index": 103,
+    "delta_probability": -0.08834
+   },
+   {
+    "feature": "R:win_rate",
+    "index": 1366,
+    "delta_probability": 0.08275
+   },
+   {
+    "feature": "S:pred=CONST:Art226",
+    "index": 1324,
+    "delta_probability": 0.08036
+   },
+   {
+    "feature": "R:win_rate_simweighted",
+    "index": 1367,
+    "delta_probability": -0.0659
+   },
+   {
+    "feature": "S:pred=CPC:1",
+    "index": 1329,
+    "delta_probability": 0.06567
+   },
+   {
+    "feature": "F:n_atoms",
+    "index": 1309,
+    "delta_probability": -0.06318
+   }
+  ],
+  "gaps": {
+   "issues_elements": "EMPTY. \u00a711's contract wants per-element status with burden_on and the patterns satisfying or defeating each. No element carries burden metadata (BLOCKER B2) and \u00a78 found no pattern surviving Benjamini-Hochberg, so there is nothing to populate this with. Inventing element statuses would read as legal reasoning while being decoration.",
+   "defaults_assumed": "EMPTY. \u00a710.4's default/burden-shift modelling is not built, so no conclusion here depends on a stated default."
+  },
+  "provenance": {
+   "model": "gbm",
+   "feature_groups": [
+    "F",
+    "P",
+    "S",
+    "R",
+    "C"
+   ],
+   "split": "forum_heldout",
+   "split_hash": "6e346dd75b7e7d84",
+   "attribution": "ablation (zero the feature, re-score); not coefficients",
+   "spans_index": "masked_text, offsets verified to round-trip against the quote"
+  }
+ },
+ {
+  "case_id": "1044034",
+  "title": "Gulab Chand Sharma vs Saraswati Devi And Anr on 14 December 1976",
+  "year": 1976,
+  "prediction": {
+   "label": "LOSE",
+   "probability": 0.1789
+  },
+  "actual": "LOSE",
+  "claim_families": [
+   "ContractInstrument"
+  ],
+  "authorities": {
+   "statutes_predicted": [
+    {
+     "provision": "CONST:Art226",
+     "probability": 0.2027
+    },
+    {
+     "provision": "CONST:Art136",
+     "probability": 0.1931
+    },
+    {
+     "provision": "CPC:3",
+     "probability": 0.1796
+    },
+    {
+     "provision": "CPC:1",
+     "probability": 0.1708
+    },
+    {
+     "provision": "CONST:Art227",
+     "probability": 0.1662
+    },
+    {
+     "provision": "CPC:16",
+     "probability": 0.1485
+    },
+    {
+     "provision": "CPC:10",
+     "probability": 0.145
+    },
+    {
+     "provision": "TPA:106",
+     "probability": 0.1439
+    },
+    {
+     "provision": "LIM:5",
+     "probability": 0.1421
+    },
+    {
+     "provision": "CPC:6",
+     "probability": 0.1386
+    }
+   ],
+   "precedents_retrieved": [
+    {
+     "case_id": "1531467",
+     "title": "Murarilal vs Dev Karan on 8 May 1964",
+     "year": 1964,
+     "similarity": 1.0,
+     "analogous_party_outcome": "LOSE"
+    },
+    {
+     "case_id": "1155281",
+     "title": "Muramlal vs Dev Karan on 8 May 1964",
+     "year": 1964,
+     "similarity": 0.5,
+     "analogous_party_outcome": "LOSE"
+    },
+    {
+     "case_id": "739122",
+     "title": "Seth Ganga Dhar vs Shankar Lal Others on 15 April 1958",
+     "year": 1958,
+     "similarity": 0.3333,
+     "analogous_party_outcome": "LOSE"
+    },
+    {
+     "case_id": "1158527",
+     "title": "Shri Bhaskar Waman Joshi Deceased And vs Shri Narayan Rambilas on 3 November 1959",
+     "year": 1959,
+     "similarity": 0.25,
+     "analogous_party_outcome": "LOSE"
+    },
+    {
+     "case_id": "105132",
+     "title": "Samarendra Nath Sinha Anr vs Krishna Kumar Nag on 1 November 1966",
+     "year": 1966,
+     "similarity": 0.2,
+     "analogous_party_outcome": null
+    }
+   ]
+  },
+  "evidence": {
+   "n_facts": 8,
+   "facts_cited_by_features": [
+    "relationship.leasehold"
+   ],
+   "fact_spans": [
+    {
+     "fact_id": "1044034_f001",
+     "text": "The Secretary of State for India in council leased a plot of land in New Delhi to Niranjan Das Sanon and Hans Raj Sanon on October 20, 1936.",
+     "source_span": [
+      251,
+      557
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1044034_f002",
+     "text": "The lease deed provided for a right of re-entry upon breach of covenants.",
+     "source_span": [
+      558,
+      844
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1044034_f003",
+     "text": "The lessees sold their leasehold rights to Bakshi Mohan Lal Sanon on March 21, 1949.",
+     "source_span": [
+      845,
+      1023
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1044034_f004",
+     "text": "Bakshi Mohan Lal Sanon mortgaged the property to Gulab Chand Sharma on May 31, 1956.",
+     "source_span": [
+      1024,
+      1182
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1044034_f005",
+     "text": "The mortgage deed included Clause 9 with conditions for re-entry.",
+     "source_span": [
+      1289,
+      1813
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1044034_f006",
+     "text": "Gulab Chand Sharma refused to reconvey the mortgaged property.",
+     "source_span": [
+      2214,
+      2246
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1044034_f007",
+     "text": "Bakshi Mohan Lal Sanon filed a suit for redemption of the mortgage on May 24, 1960.",
+     "source_span": [
+      2247,
+      2339
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1044034_f008",
+     "text": "Gulab Chand Sharma filed a suit for injunction on July 29, 1960.",
+     "source_span": [
+      2778,
+      2999
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    }
+   ]
+  },
+  "top_feature_contributions": [
+   {
+    "feature": "S:pred=CPC:16",
+    "index": 1338,
+    "delta_probability": -0.12368
+   },
+   {
+    "feature": "F:atom@d=relationship.leasehold",
+    "index": 841,
+    "delta_probability": -0.10603
+   },
+   {
+    "feature": "F:ncat=Event",
+    "index": 1100,
+    "delta_probability": 0.09079
+   },
+   {
+    "feature": "S:n_predicted",
+    "index": 1363,
+    "delta_probability": -0.06376
+   },
+   {
+    "feature": "R:mean_sim",
+    "index": 1369,
+    "delta_probability": 0.05236
+   },
+   {
+    "feature": "C:year",
+    "index": 1371,
+    "delta_probability": -0.04149
+   },
+   {
+    "feature": "S:pred=CONST:Art136",
+    "index": 1318,
+    "delta_probability": -0.0396
+   },
+   {
+    "feature": "F:ncat=Defense",
+    "index": 1030,
+    "delta_probability": 0.03037
+   },
+   {
+    "feature": "S:pred=CPC:1",
+    "index": 1329,
+    "delta_probability": -0.02813
+   },
+   {
+    "feature": "F:ncat=Instrument",
+    "index": 1171,
+    "delta_probability": -0.02651
+   }
+  ],
+  "gaps": {
+   "issues_elements": "EMPTY. \u00a711's contract wants per-element status with burden_on and the patterns satisfying or defeating each. No element carries burden metadata (BLOCKER B2) and \u00a78 found no pattern surviving Benjamini-Hochberg, so there is nothing to populate this with. Inventing element statuses would read as legal reasoning while being decoration.",
+   "defaults_assumed": "EMPTY. \u00a710.4's default/burden-shift modelling is not built, so no conclusion here depends on a stated default."
+  },
+  "provenance": {
+   "model": "gbm",
+   "feature_groups": [
+    "F",
+    "P",
+    "S",
+    "R",
+    "C"
+   ],
+   "split": "forum_heldout",
+   "split_hash": "6e346dd75b7e7d84",
+   "attribution": "ablation (zero the feature, re-score); not coefficients",
+   "spans_index": "masked_text, offsets verified to round-trip against the quote"
+  }
+ },
+ {
+  "case_id": "1047951",
+  "title": "M P Ram Mohan Raja vs State Of Tamil Nadu Ors on 25 April 2007",
+  "year": 2007,
+  "prediction": {
+   "label": "WIN",
+   "probability": 0.8274
+  },
+  "actual": "LOSE",
+  "claim_families": [
+   "ContractInstrument",
+   "ContractInstrument"
+  ],
+  "authorities": {
+   "statutes_predicted": [
+    {
+     "provision": "CONST:Art226",
+     "probability": 0.6858
+    },
+    {
+     "provision": "CONST:Art136",
+     "probability": 0.5457
+    },
+    {
+     "provision": "CONST:Art14",
+     "probability": 0.425
+    },
+    {
+     "provision": "CONST:Art32",
+     "probability": 0.3646
+    },
+    {
+     "provision": "CPC:6",
+     "probability": 0.3286
+    },
+    {
+     "provision": "CONST:Art227",
+     "probability": 0.312
+    },
+    {
+     "provision": "CPC:4",
+     "probability": 0.2916
+    },
+    {
+     "provision": "CPC:3",
+     "probability": 0.2888
+    },
+    {
+     "provision": "CPC:2",
+     "probability": 0.2813
+    },
+    {
+     "provision": "CPC:9",
+     "probability": 0.2693
+    }
+   ],
+   "precedents_retrieved": [
+    {
+     "case_id": "1805578",
+     "title": "Premium Granites vs State Of T N on 4 February 1994",
+     "year": 1994,
+     "similarity": 1.0,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "1866013",
+     "title": "V Karnal Durai vs District Collector Tuticorin And Anr on 1 December 1998",
+     "year": 1998,
+     "similarity": 0.5,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "1201771",
+     "title": "M S A One Granites vs State Of U P Ors on 16 February 2001",
+     "year": 2001,
+     "similarity": 0.3333,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "975323",
+     "title": "State Of Tamil Nadu Anr vs P Krishnamurthy Ors on 24 March 2006",
+     "year": 2006,
+     "similarity": 0.25,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "1956761",
+     "title": "Verigamto Naveen vs Government Of Andhra Pradesh Ors on 18 September 2001",
+     "year": 2001,
+     "similarity": 0.2,
+     "analogous_party_outcome": null
+    }
+   ]
+  },
+  "evidence": {
+   "n_facts": 15,
+   "facts_cited_by_features": [],
+   "fact_spans": [
+    {
+     "fact_id": "1047951_f001",
+     "text": "M P Ram Mohan Raja applied for a quarry lease on 2 February 1996",
+     "source_span": [
+      369,
+      596
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1047951_f002",
+     "text": "The application was for quarrying jelly and rough stone for 20 years",
+     "source_span": [
+      644,
+      730
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1047951_f003",
+     "text": "The lease was for 3.64 hectares in survey No.782/2 and 2.36 hectares in survey No.",
+     "source_span": [
+      756,
+      856
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1047951_f004",
+     "text": "The High Court directed the State Government to consider the application within four weeks on 14 June 1996",
+     "source_span": [
+      1271,
+      1525
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1047951_f005",
+     "text": "The application of M P Ram Mohan Raja was rejected on 8 October 1996",
+     "source_span": [
+      1703,
+      1800
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1047951_f006",
+     "text": "The District Collector put certain lands for auction in 2003",
+     "source_span": [
+      1802,
+      1876
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1047951_f007",
+     "text": "M P Ram Mohan Raja filed the present writ petition on 2003",
+     "source_span": [
+      1986,
+      2083
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1047951_f008",
+     "text": "The writ petition was admitted on 29 April 2003",
+     "source_span": [
+      2365,
+      2408
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    }
+   ]
+  },
+  "top_feature_contributions": [
+   {
+    "feature": "C:year",
+    "index": 1371,
+    "delta_probability": 0.35003
+   },
+   {
+    "feature": "S:n_predicted",
+    "index": 1363,
+    "delta_probability": 0.09752
+   },
+   {
+    "feature": "S:pred=CONST:Art226",
+    "index": 1324,
+    "delta_probability": 0.08783
+   },
+   {
+    "feature": "F:ncat=Event",
+    "index": 1100,
+    "delta_probability": 0.0786
+   },
+   {
+    "feature": "S:pred=CPC:6",
+    "index": 1348,
+    "delta_probability": 0.0701
+   },
+   {
+    "feature": "S:pred=CONST:Art14",
+    "index": 1319,
+    "delta_probability": 0.05793
+   },
+   {
+    "feature": "C:n_claims",
+    "index": 1405,
+    "delta_probability": -0.03484
+   },
+   {
+    "feature": "F:n_facts",
+    "index": 1310,
+    "delta_probability": 0.02956
+   },
+   {
+    "feature": "S:pred=CONST:Art32",
+    "index": 1328,
+    "delta_probability": 0.0219
+   },
+   {
+    "feature": "S:pred=CONST:Art227",
+    "index": 1325,
+    "delta_probability": -0.02178
+   }
+  ],
+  "gaps": {
+   "issues_elements": "EMPTY. \u00a711's contract wants per-element status with burden_on and the patterns satisfying or defeating each. No element carries burden metadata (BLOCKER B2) and \u00a78 found no pattern surviving Benjamini-Hochberg, so there is nothing to populate this with. Inventing element statuses would read as legal reasoning while being decoration.",
+   "defaults_assumed": "EMPTY. \u00a710.4's default/burden-shift modelling is not built, so no conclusion here depends on a stated default."
+  },
+  "provenance": {
+   "model": "gbm",
+   "feature_groups": [
+    "F",
+    "P",
+    "S",
+    "R",
+    "C"
+   ],
+   "split": "forum_heldout",
+   "split_hash": "6e346dd75b7e7d84",
+   "attribution": "ablation (zero the feature, re-score); not coefficients",
+   "spans_index": "masked_text, offsets verified to round-trip against the quote"
+  }
+ },
+ {
+  "case_id": "1047975",
+  "title": "Sulochana Amma vs Narayanan Nair on 24 September 1993",
+  "year": 1993,
+  "prediction": {
+   "label": "WIN",
+   "probability": 0.6477
+  },
+  "actual": "WIN",
+  "claim_families": [
+   "PrivateTitlePossession"
+  ],
+  "authorities": {
+   "statutes_predicted": [
+    {
+     "provision": "CPC:11",
+     "probability": 0.7519
+    },
+    {
+     "provision": "CPC:2",
+     "probability": 0.3771
+    },
+    {
+     "provision": "CPC:1",
+     "probability": 0.3652
+    },
+    {
+     "provision": "CPC:3",
+     "probability": 0.3563
+    },
+    {
+     "provision": "CPC:10",
+     "probability": 0.308
+    },
+    {
+     "provision": "CONST:Art226",
+     "probability": 0.3056
+    },
+    {
+     "provision": "CONST:Art136",
+     "probability": 0.2853
+    },
+    {
+     "provision": "CPC:21",
+     "probability": 0.2628
+    },
+    {
+     "provision": "CPC:6",
+     "probability": 0.2606
+    },
+    {
+     "provision": "CONST:Art227",
+     "probability": 0.2334
+    }
+   ],
+   "precedents_retrieved": [
+    {
+     "case_id": "1633194",
+     "title": "Sheodan Singh vs Smt Daryao Kunwar on 14 January 1966",
+     "year": 1966,
+     "similarity": 1.0,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "750958",
+     "title": "Zafar Khan And Ors vs Board Of Revenue U P Ors on 31 July 1984",
+     "year": 1984,
+     "similarity": 0.5,
+     "analogous_party_outcome": "LOSE"
+    },
+    {
+     "case_id": "909807",
+     "title": "R Viswanathan vs Rukn Ul Mulk Syed Abdul Wajid on 4 May 1962",
+     "year": 1962,
+     "similarity": 0.3333,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "1464203",
+     "title": "Jeevantha And Ors vs Hanumantha And Ors on 20 November 1950",
+     "year": 1950,
+     "similarity": 0.25,
+     "analogous_party_outcome": "WIN"
+    },
+    {
+     "case_id": "257876",
+     "title": "Kesavananda Bharati Sripadagalvaru vs State Of Kerala And Anr on 24 April 1973",
+     "year": 1973,
+     "similarity": 0.2,
+     "analogous_party_outcome": null
+    }
+   ]
+  },
+  "evidence": {
+   "n_facts": 25,
+   "facts_cited_by_features": [
+    "defense.res_judicata",
+    "event.petition_filed",
+    "tenure.possessory_claim"
+   ],
+   "fact_spans": [
+    {
+     "fact_id": "1047975_f001",
+     "text": "Kutty Ammna executed a settlement deed on May 19, 1961",
+     "source_span": [
+      244,
+      307
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1047975_f002",
+     "text": "Kutty Ammna gave a life estate to her husband Krishnan Nair",
+     "source_span": [
+      308,
+      418
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1047975_f003",
+     "text": "Krishnan Nair alienated the property in 1972",
+     "source_span": [
+      448,
+      546
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1047975_f004",
+     "text": "The trial court decreed the suit on November 18, 1975",
+     "source_span": [
+      819,
+      913
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1047975_f005",
+     "text": "The appellant purchased the suit property on April 7, 1975",
+     "source_span": [
+      713,
+      817
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1047975_f006",
+     "text": "The appellant is bound by the decrees under Exs. A-2 to A-5",
+     "source_span": [
+      1732,
+      1895
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1047975_f007",
+     "text": "The transfer in favour of the appellant was only of the life estate of K",
+     "source_span": [
+      1942,
+      2076
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1047975_f008",
+     "text": "The appellant firm issued a work order to the first respondent for construction of 'E' type building in Sector 10, Vashi, New Bombay on February 8, 1982.",
+     "source_span": [
+      12127,
+      12279
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    }
+   ]
+  },
+  "top_feature_contributions": [
+   {
+    "feature": "C:year",
+    "index": 1371,
+    "delta_probability": 0.15202
+   },
+   {
+    "feature": "S:pred=CPC:10",
+    "index": 1330,
+    "delta_probability": 0.09224
+   },
+   {
+    "feature": "F:n_facts",
+    "index": 1310,
+    "delta_probability": 0.07653
+   },
+   {
+    "feature": "F:atom@p=tenure.possessory_claim",
+    "index": 998,
+    "delta_probability": -0.07605
+   },
+   {
+    "feature": "S:pred=CONST:Art226",
+    "index": 1324,
+    "delta_probability": 0.07112
+   },
+   {
+    "feature": "R:win_rate",
+    "index": 1366,
+    "delta_probability": 0.05815
+   },
+   {
+    "feature": "S:pred=CPC:6",
+    "index": 1348,
+    "delta_probability": 0.05242
+   },
+   {
+    "feature": "S:pred=CPC:1",
+    "index": 1329,
+    "delta_probability": 0.05043
+   },
+   {
+    "feature": "F:atom@p=event.petition_filed",
+    "index": 428,
+    "delta_probability": -0.04803
+   },
+   {
+    "feature": "F:atom@p=defense.res_judicata",
+    "index": 90,
+    "delta_probability": -0.04783
+   }
+  ],
+  "gaps": {
+   "issues_elements": "EMPTY. \u00a711's contract wants per-element status with burden_on and the patterns satisfying or defeating each. No element carries burden metadata (BLOCKER B2) and \u00a78 found no pattern surviving Benjamini-Hochberg, so there is nothing to populate this with. Inventing element statuses would read as legal reasoning while being decoration.",
+   "defaults_assumed": "EMPTY. \u00a710.4's default/burden-shift modelling is not built, so no conclusion here depends on a stated default."
+  },
+  "provenance": {
+   "model": "gbm",
+   "feature_groups": [
+    "F",
+    "P",
+    "S",
+    "R",
+    "C"
+   ],
+   "split": "forum_heldout",
+   "split_hash": "6e346dd75b7e7d84",
+   "attribution": "ablation (zero the feature, re-score); not coefficients",
+   "spans_index": "masked_text, offsets verified to round-trip against the quote"
+  }
+ },
+ {
+  "case_id": "1050950",
+  "title": "V S Talwar vs Prem Chandra Sharma on 1 March 1984",
+  "year": 1984,
+  "prediction": {
+   "label": "WIN",
+   "probability": 0.6726
+  },
+  "actual": "WIN",
+  "claim_families": [
+   "TenureOccupancy"
+  ],
+  "authorities": {
+   "statutes_predicted": [
+    {
+     "provision": "CONST:Art227",
+     "probability": 0.347
+    },
+    {
+     "provision": "CONST:Art226",
+     "probability": 0.3312
+    },
+    {
+     "provision": "CONST:Art136",
+     "probability": 0.3167
+    },
+    {
+     "provision": "TPA:106",
+     "probability": 0.2766
+    },
+    {
+     "provision": "CPC:5",
+     "probability": 0.1871
+    },
+    {
+     "provision": "CPC:115",
+     "probability": 0.1721
+    },
+    {
+     "provision": "CPC:3",
+     "probability": 0.1615
+    },
+    {
+     "provision": "CONST:Art14",
+     "probability": 0.1494
+    },
+    {
+     "provision": "CPC:14",
+     "probability": 0.1483
+    },
+    {
+     "provision": "CPC:2",
+     "probability": 0.1374
+    }
+   ],
+   "precedents_retrieved": [
+    {
+     "case_id": "320485",
+     "title": "Dr Gopal Dass Verma vs Dr S K Bhardwaj And Another on 2 May 1961",
+     "year": 1961,
+     "similarity": 1.0,
+     "analogous_party_outcome": "LOSE"
+    },
+    {
+     "case_id": "1539874",
+     "title": "S Sanyal vs Gian Chand on 14 September 1967",
+     "year": 1967,
+     "similarity": 0.5,
+     "analogous_party_outcome": "WIN"
+    },
+    {
+     "case_id": "1187427",
+     "title": "B N Mutto Anr vs T K Nandi on 29 November 1978",
+     "year": 1978,
+     "similarity": 0.3333,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "1155246",
+     "title": "S Kartar Singh vs Chamanlal And Ors on 14 March 1969",
+     "year": 1969,
+     "similarity": 0.25,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "846403",
+     "title": "Kartar Singh vs Chaman Lal Others on 14 March 1969",
+     "year": 1969,
+     "similarity": 0.2,
+     "analogous_party_outcome": "LOSE"
+    }
+   ]
+  },
+  "evidence": {
+   "n_facts": 5,
+   "facts_cited_by_features": [
+    "event.authority_order_issued"
+   ],
+   "fact_spans": [
+    {
+     "fact_id": "1050950_f001",
+     "text": "The respondent was admitted into tenancy of the premises under a lease deed dated 5th January, 1968.",
+     "source_span": [
+      243,
+      355
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1050950_f002",
+     "text": "The landlord applied to the Controller on March 14, 1972, for eviction of the respondent under Section 14 (1) (e) of the Delhi Rent Control Act, 1958.",
+     "source_span": [
+      537,
+      731
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1050950_f003",
+     "text": "The tenant pleaded that the premises were let out for both residential and office purposes.",
+     "source_span": [
+      732,
+      968
+     ],
+     "asserted_by": "defendant",
+     "disputed_status": "contested"
+    },
+    {
+     "fact_id": "1050950_f004",
+     "text": "The Controller passed an order for eviction.",
+     "source_span": [
+      969,
+      1044
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1050950_f005",
+     "text": "The tenant carried a revision to the Delhi High Court.",
+     "source_span": [
+      1045,
+      1186
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    }
+   ]
+  },
+  "top_feature_contributions": [
+   {
+    "feature": "R:win_rate",
+    "index": 1366,
+    "delta_probability": 0.18476
+   },
+   {
+    "feature": "F:ncat=Element",
+    "index": 1062,
+    "delta_probability": 0.13587
+   },
+   {
+    "feature": "S:pred=CPC:115",
+    "index": 1333,
+    "delta_probability": 0.08573
+   },
+   {
+    "feature": "R:mean_sim",
+    "index": 1369,
+    "delta_probability": -0.08339
+   },
+   {
+    "feature": "R:win_rate_simweighted",
+    "index": 1367,
+    "delta_probability": 0.06169
+   },
+   {
+    "feature": "F:frac_contested",
+    "index": 1311,
+    "delta_probability": -0.04248
+   },
+   {
+    "feature": "F:atom@d=event.authority_order_issued",
+    "index": 355,
+    "delta_probability": 0.03972
+   },
+   {
+    "feature": "R:n_labelled",
+    "index": 1370,
+    "delta_probability": -0.039
+   },
+   {
+    "feature": "S:pred=CPC:5",
+    "index": 1347,
+    "delta_probability": 0.03768
+   },
+   {
+    "feature": "C:year",
+    "index": 1371,
+    "delta_probability": 0.03379
+   }
+  ],
+  "gaps": {
+   "issues_elements": "EMPTY. \u00a711's contract wants per-element status with burden_on and the patterns satisfying or defeating each. No element carries burden metadata (BLOCKER B2) and \u00a78 found no pattern surviving Benjamini-Hochberg, so there is nothing to populate this with. Inventing element statuses would read as legal reasoning while being decoration.",
+   "defaults_assumed": "EMPTY. \u00a710.4's default/burden-shift modelling is not built, so no conclusion here depends on a stated default."
+  },
+  "provenance": {
+   "model": "gbm",
+   "feature_groups": [
+    "F",
+    "P",
+    "S",
+    "R",
+    "C"
+   ],
+   "split": "forum_heldout",
+   "split_hash": "6e346dd75b7e7d84",
+   "attribution": "ablation (zero the feature, re-score); not coefficients",
+   "spans_index": "masked_text, offsets verified to round-trip against the quote"
+  }
+ },
+ {
+  "case_id": "105132",
+  "title": "Samarendra Nath Sinha Anr vs Krishna Kumar Nag on 1 November 1966",
+  "year": 1966,
+  "prediction": {
+   "label": "LOSE",
+   "probability": 0.0809
+  },
+  "actual": "WIN",
+  "claim_families": [
+   "ContractInstrument"
+  ],
+  "authorities": {
+   "statutes_predicted": [
+    {
+     "provision": "CPC:21",
+     "probability": 0.4748
+    },
+    {
+     "provision": "CPC:3",
+     "probability": 0.4623
+    },
+    {
+     "provision": "CPC:1",
+     "probability": 0.3762
+    },
+    {
+     "provision": "CPC:6",
+     "probability": 0.3058
+    },
+    {
+     "provision": "TPA:3",
+     "probability": 0.3003
+    },
+    {
+     "provision": "CPC:2",
+     "probability": 0.3
+    },
+    {
+     "provision": "CONST:Art136",
+     "probability": 0.2895
+    },
+    {
+     "provision": "CPC:100",
+     "probability": 0.2454
+    },
+    {
+     "provision": "CPC:4",
+     "probability": 0.2452
+    },
+    {
+     "provision": "CPC:14",
+     "probability": 0.2379
+    }
+   ],
+   "precedents_retrieved": [
+    {
+     "case_id": "1010762",
+     "title": "Nagubai Ammal Others vs B Shama Rao Others on 26 April 1956",
+     "year": 1956,
+     "similarity": 1.0,
+     "analogous_party_outcome": "LOSE"
+    },
+    {
+     "case_id": "1651985",
+     "title": "Srimati Ashalata Debi And Others vs Sri Jadu Nath Roy And Others on 26 April 1954",
+     "year": 1954,
+     "similarity": 0.5,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "948916",
+     "title": "Keshardeo Chamria vs Radha Kissen Chamria And Othersradha on 30 October 1952",
+     "year": 1952,
+     "similarity": 0.3333,
+     "analogous_party_outcome": "WIN"
+    },
+    {
+     "case_id": "1531467",
+     "title": "Murarilal vs Dev Karan on 8 May 1964",
+     "year": 1964,
+     "similarity": 0.25,
+     "analogous_party_outcome": "LOSE"
+    },
+    {
+     "case_id": "1482396",
+     "title": "Manimala Devi vs Indu Bala Debya Ors on 3 December 1963",
+     "year": 1963,
+     "similarity": 0.2,
+     "analogous_party_outcome": null
+    }
+   ]
+  },
+  "evidence": {
+   "n_facts": 23,
+   "facts_cited_by_features": [
+    "element.debt_subsistence_or_discharge",
+    "event.decree_passed"
+   ],
+   "fact_spans": [
+    {
+     "fact_id": "105132_f001",
+     "text": "A deed of mortgage by conditional sale was executed on June 2, 1933",
+     "source_span": [
+      691,
+      751
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "105132_f002",
+     "text": "The mortgage amount was Rs. 2,750",
+     "source_span": [
+      796,
+      845
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "105132_f003",
+     "text": "The mortgagee was Panchu Gopal Srimani, a minor",
+     "source_span": [
+      849,
+      883
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "105132_f004",
+     "text": "The mortgagors assigned their right, title and interest to Satchindananda Hazra on June 18, 1934",
+     "source_span": [
+      1203,
+      1324
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "105132_f005",
+     "text": "The mortgagee filed a suit on July 17, 1945",
+     "source_span": [
+      1423,
+      1466
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "105132_f006",
+     "text": "The suit was for enforcement of the mortgagee's rights",
+     "source_span": [
+      1467,
+      1496
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "105132_f007",
+     "text": "The preliminary decree was passed under O. 34 r. 4(1) of the Code of Civil Procedure",
+     "source_span": [
+      2408,
+      2515
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "105132_f008",
+     "text": "The respondent obtained a money decree against Satchindananda Hazra",
+     "source_span": [
+      3218,
+      3313
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    }
+   ]
+  },
+  "top_feature_contributions": [
+   {
+    "feature": "F:atom@p=event.decree_passed",
+    "index": 372,
+    "delta_probability": -0.09155
+   },
+   {
+    "feature": "S:pred=TPA:3",
+    "index": 1362,
+    "delta_probability": -0.06032
+   },
+   {
+    "feature": "F:atom@d=element.debt_subsistence_or_discharge",
+    "index": 159,
+    "delta_probability": -0.05857
+   },
+   {
+    "feature": "R:win_rate_simweighted",
+    "index": 1367,
+    "delta_probability": -0.04019
+   },
+   {
+    "feature": "R:mean_sim",
+    "index": 1369,
+    "delta_probability": 0.03501
+   },
+   {
+    "feature": "S:n_predicted",
+    "index": 1363,
+    "delta_probability": 0.03484
+   },
+   {
+    "feature": "C:year",
+    "index": 1371,
+    "delta_probability": -0.03368
+   },
+   {
+    "feature": "S:pred=CPC:2",
+    "index": 1340,
+    "delta_probability": -0.02992
+   },
+   {
+    "feature": "S:pred=CONST:Art136",
+    "index": 1318,
+    "delta_probability": 0.01841
+   },
+   {
+    "feature": "S:pred=CPC:14",
+    "index": 1336,
+    "delta_probability": 0.01729
+   }
+  ],
+  "gaps": {
+   "issues_elements": "EMPTY. \u00a711's contract wants per-element status with burden_on and the patterns satisfying or defeating each. No element carries burden metadata (BLOCKER B2) and \u00a78 found no pattern surviving Benjamini-Hochberg, so there is nothing to populate this with. Inventing element statuses would read as legal reasoning while being decoration.",
+   "defaults_assumed": "EMPTY. \u00a710.4's default/burden-shift modelling is not built, so no conclusion here depends on a stated default."
+  },
+  "provenance": {
+   "model": "gbm",
+   "feature_groups": [
+    "F",
+    "P",
+    "S",
+    "R",
+    "C"
+   ],
+   "split": "forum_heldout",
+   "split_hash": "6e346dd75b7e7d84",
+   "attribution": "ablation (zero the feature, re-score); not coefficients",
+   "spans_index": "masked_text, offsets verified to round-trip against the quote"
+  }
+ },
+ {
+  "case_id": "1051548",
+  "title": "N A Munavar Hussain Sahib Dead By vs E R Narayanan Dead Ors on 11 July 1995",
+  "year": 1995,
+  "prediction": {
+   "label": "WIN",
+   "probability": 0.8878
+  },
+  "actual": "WIN",
+  "claim_families": [],
+  "authorities": {
+   "statutes_predicted": [
+    {
+     "provision": "CPC:3",
+     "probability": 0.4652
+    },
+    {
+     "provision": "CPC:21",
+     "probability": 0.4034
+    },
+    {
+     "provision": "CONST:Art136",
+     "probability": 0.3648
+    },
+    {
+     "provision": "CPC:13",
+     "probability": 0.3347
+    },
+    {
+     "provision": "CPC:2",
+     "probability": 0.3165
+    },
+    {
+     "provision": "CPC:1",
+     "probability": 0.3157
+    },
+    {
+     "provision": "CPC:4",
+     "probability": 0.2923
+    },
+    {
+     "provision": "CPC:11",
+     "probability": 0.2734
+    },
+    {
+     "provision": "CPC:41",
+     "probability": 0.2632
+    },
+    {
+     "provision": "CPC:12",
+     "probability": 0.2542
+    }
+   ],
+   "precedents_retrieved": [
+    {
+     "case_id": "493375",
+     "title": "N Vajrapani Naidu And Another vs The New Theatre Carnatic Talkies on 4 March 1964",
+     "year": 1964,
+     "similarity": 1.0,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "577356",
+     "title": "N M Ponniah Nadar vs Kamalakshmi Ammal on 22 September 1988",
+     "year": 1988,
+     "similarity": 0.5,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "1712747",
+     "title": "V K A Ranganatha Konar vs The Tiruchirappalli Municipal on 18 December 1964",
+     "year": 1964,
+     "similarity": 0.3333,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "252896",
+     "title": "K Balakrishna Rao And Ors vs Hazi Abdulla Sait And Ors on 10 October 1979",
+     "year": 1979,
+     "similarity": 0.25,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "1622288",
+     "title": "Mylapore Hindu Permanant Ltd Madras vs K S Subramania Iyer on 6 May 1970",
+     "year": 1970,
+     "similarity": 0.2,
+     "analogous_party_outcome": null
+    }
+   ]
+  },
+  "evidence": {
+   "n_facts": 31,
+   "facts_cited_by_features": [],
+   "fact_spans": [
+    {
+     "fact_id": "1051548_f001",
+     "text": "Ramaswami Konar built a theatre on the plot.",
+     "source_span": [
+      1357,
+      1406
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1051548_f002",
+     "text": "A fresh lease was granted in favour of Ramaswami Konar by Abdul Kader Sahib for a period of 11 years on February 23, 1935.",
+     "source_span": [
+      1497,
+      1619
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1051548_f003",
+     "text": "Ramaswami Konar died and there was a partition in the family.",
+     "source_span": [
+      1620,
+      1689
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1051548_f004",
+     "text": "The leasehold rights over the vacant land and the superstructure came to the share of Narayanan, respondent No.1.",
+     "source_span": [
+      1690,
+      1831
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1051548_f005",
+     "text": "Narayanan sold the leasehold rights in the site as well as superstructure in favour of Bharatha Muthu Thevar on March 12, 1948.",
+     "source_span": [
+      1832,
+      1965
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1051548_f006",
+     "text": "Veerbhadra Thevar transferred his 1/4th share in the leasehold rights and the superstructure in favour of S.S.Sundaram Chettiar on December 19, 1956.",
+     "source_span": [
+      3932,
+      4082
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1051548_f007",
+     "text": "Bharatnamuthu Thevar filed E.A.No.486/58",
+     "source_span": [
+      4553,
+      4593
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1051548_f008",
+     "text": "N.A. Munavar Hussain Sahib died",
+     "source_span": [
+      5125,
+      5238
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    }
+   ]
+  },
+  "top_feature_contributions": [
+   {
+    "feature": "R:win_rate_simweighted",
+    "index": 1367,
+    "delta_probability": 0.17015
+   },
+   {
+    "feature": "S:pred=CONST:Art136",
+    "index": 1318,
+    "delta_probability": 0.11852
+   },
+   {
+    "feature": "S:pred=CPC:2",
+    "index": 1340,
+    "delta_probability": 0.1066
+   },
+   {
+    "feature": "C:year",
+    "index": 1371,
+    "delta_probability": 0.10601
+   },
+   {
+    "feature": "S:n_predicted",
+    "index": 1363,
+    "delta_probability": 0.06457
+   },
+   {
+    "feature": "S:top_score",
+    "index": 1364,
+    "delta_probability": 0.05156
+   },
+   {
+    "feature": "R:win_rate",
+    "index": 1366,
+    "delta_probability": 0.04412
+   },
+   {
+    "feature": "S:pred=CPC:12",
+    "index": 1334,
+    "delta_probability": 0.03687
+   },
+   {
+    "feature": "S:pred=CPC:13",
+    "index": 1335,
+    "delta_probability": 0.03515
+   },
+   {
+    "feature": "S:pred=CPC:1",
+    "index": 1329,
+    "delta_probability": 0.0286
+   }
+  ],
+  "gaps": {
+   "issues_elements": "EMPTY. \u00a711's contract wants per-element status with burden_on and the patterns satisfying or defeating each. No element carries burden metadata (BLOCKER B2) and \u00a78 found no pattern surviving Benjamini-Hochberg, so there is nothing to populate this with. Inventing element statuses would read as legal reasoning while being decoration.",
+   "defaults_assumed": "EMPTY. \u00a710.4's default/burden-shift modelling is not built, so no conclusion here depends on a stated default."
+  },
+  "provenance": {
+   "model": "gbm",
+   "feature_groups": [
+    "F",
+    "P",
+    "S",
+    "R",
+    "C"
+   ],
+   "split": "forum_heldout",
+   "split_hash": "6e346dd75b7e7d84",
+   "attribution": "ablation (zero the feature, re-score); not coefficients",
+   "spans_index": "masked_text, offsets verified to round-trip against the quote"
+  }
+ },
+ {
+  "case_id": "105179863",
+  "title": "Authorised Officer State Bank Of India vs C Natarajan on 10 April 2023",
+  "year": 2023,
+  "prediction": {
+   "label": "WIN",
+   "probability": 0.8627
+  },
+  "actual": "WIN",
+  "claim_families": [
+   "ContractInstrument"
+  ],
+  "authorities": {
+   "statutes_predicted": [
+    {
+     "provision": "CONST:Art226",
+     "probability": 0.5845
+    },
+    {
+     "provision": "CONST:Art136",
+     "probability": 0.3663
+    },
+    {
+     "provision": "CONST:Art14",
+     "probability": 0.3145
+    },
+    {
+     "provision": "CPC:3",
+     "probability": 0.2854
+    },
+    {
+     "provision": "CONST:Art227",
+     "probability": 0.2745
+    },
+    {
+     "provision": "CPC:1",
+     "probability": 0.2701
+    },
+    {
+     "provision": "CPC:2",
+     "probability": 0.2255
+    },
+    {
+     "provision": "CPC:12",
+     "probability": 0.209
+    },
+    {
+     "provision": "LIM:5",
+     "probability": 0.2084
+    },
+    {
+     "provision": "CPC:5",
+     "probability": 0.2037
+    }
+   ],
+   "precedents_retrieved": [
+    {
+     "case_id": "139101201",
+     "title": "Vasu P Shetty vs M S Hotel Vandana Palace Ors on 22 April 2014",
+     "year": 2014,
+     "similarity": 1.0,
+     "analogous_party_outcome": "LOSE"
+    },
+    {
+     "case_id": "179064366",
+     "title": "Varimadugu Obi Reddy vs B Sreenivasulu on 16 November 2022",
+     "year": 2022,
+     "similarity": 0.5,
+     "analogous_party_outcome": "WIN"
+    },
+    {
+     "case_id": "115833969",
+     "title": "Gm Sri Siddeshwara Co Op Bank Ltd vs Sri Ikbal Ors on 22 August 2013",
+     "year": 2013,
+     "similarity": 0.3333,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "85748040",
+     "title": "S Karthik vs N Subhash Chand Jain on 23 September 2021",
+     "year": 2021,
+     "similarity": 0.25,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "182258007",
+     "title": "Agarwal Tracom Pvt Ltd vs Punjab National Bank on 27 November 2017",
+     "year": 2017,
+     "similarity": 0.2,
+     "analogous_party_outcome": null
+    }
+   ]
+  },
+  "evidence": {
+   "n_facts": 49,
+   "facts_cited_by_features": [
+    "event.interim_order_refused"
+   ],
+   "fact_spans": [
+    {
+     "fact_id": "105179863_f001",
+     "text": "M/s Stallion Knitwear India Private Limited committed default in discharging its debts to the State Bank of India",
+     "source_span": [
+      661,
+      803
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "105179863_f002",
+     "text": "The Authorized Officer of the State Bank of India took possession of the secured asset as a measure under section 13(4) of the SARFAESI Act",
+     "source_span": [
+      804,
+      1169
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "105179863_f003",
+     "text": "An e-auction notice dated 22nd August, 2007 was issued by the Authorized Officer",
+     "source_span": [
+      1170,
+      1316
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "105179863_f004",
+     "text": "The contesting respondent participated in the e-auction held on 15th September, 2017",
+     "source_span": [
+      1317,
+      1444
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "105179863_f005",
+     "text": "The contesting respondent was declared the highest bidder with a quote of Rs. 1,23,00,000/-",
+     "source_span": [
+      1445,
+      1574
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "105179863_f006",
+     "text": "The contesting respondent paid Rs. 30,75,000/- towards 25% of the sale price by RTGS on 15th September, 2017",
+     "source_span": [
+      1575,
+      1720
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "105179863_f007",
+     "text": "The contesting respondent sought for extension of time to pay the balance of amount within 25 days by a request letter dated 27th September, 2017",
+     "source_span": [
+      1836,
+      2021
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "105179863_f008",
+     "text": "The Authorized Officer extended the time for payment till 23rd October, 2017",
+     "source_span": [
+      2022,
+      2148
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    }
+   ]
+  },
+  "top_feature_contributions": [
+   {
+    "feature": "C:year",
+    "index": 1371,
+    "delta_probability": 0.3997
+   },
+   {
+    "feature": "R:win_rate_simweighted",
+    "index": 1367,
+    "delta_probability": 0.09249
+   },
+   {
+    "feature": "S:pred=CONST:Art136",
+    "index": 1318,
+    "delta_probability": 0.05597
+   },
+   {
+    "feature": "R:mean_sim",
+    "index": 1369,
+    "delta_probability": 0.04916
+   },
+   {
+    "feature": "S:pred=CONST:Art226",
+    "index": 1324,
+    "delta_probability": 0.03983
+   },
+   {
+    "feature": "F:atom@p=event.interim_order_refused",
+    "index": 392,
+    "delta_probability": 0.03554
+   },
+   {
+    "feature": "S:pred=CONST:Art14",
+    "index": 1319,
+    "delta_probability": 0.03514
+   },
+   {
+    "feature": "F:n_atoms",
+    "index": 1309,
+    "delta_probability": -0.03167
+   },
+   {
+    "feature": "S:pred=LIM:5",
+    "index": 1360,
+    "delta_probability": -0.0218
+   },
+   {
+    "feature": "S:top_score",
+    "index": 1364,
+    "delta_probability": -0.01881
+   }
+  ],
+  "gaps": {
+   "issues_elements": "EMPTY. \u00a711's contract wants per-element status with burden_on and the patterns satisfying or defeating each. No element carries burden metadata (BLOCKER B2) and \u00a78 found no pattern surviving Benjamini-Hochberg, so there is nothing to populate this with. Inventing element statuses would read as legal reasoning while being decoration.",
+   "defaults_assumed": "EMPTY. \u00a710.4's default/burden-shift modelling is not built, so no conclusion here depends on a stated default."
+  },
+  "provenance": {
+   "model": "gbm",
+   "feature_groups": [
+    "F",
+    "P",
+    "S",
+    "R",
+    "C"
+   ],
+   "split": "forum_heldout",
+   "split_hash": "6e346dd75b7e7d84",
+   "attribution": "ablation (zero the feature, re-score); not coefficients",
+   "spans_index": "masked_text, offsets verified to round-trip against the quote"
+  }
+ },
+ {
+  "case_id": "1053338",
+  "title": "M S Neyvely Lignite Corpn Ltd vs Special Tahsildar Land Acquisition on 19 October 1994",
+  "year": 1994,
+  "prediction": {
+   "label": "LOSE",
+   "probability": 0.4192
+  },
+  "actual": "WIN",
+  "claim_families": [
+   "StateAction"
+  ],
+  "authorities": {
+   "statutes_predicted": [
+    {
+     "provision": "LA:6",
+     "probability": 0.6443
+    },
+    {
+     "provision": "LA:4",
+     "probability": 0.5782
+    },
+    {
+     "provision": "LA:18",
+     "probability": 0.5698
+    },
+    {
+     "provision": "LA:4(1)",
+     "probability": 0.5245
+    },
+    {
+     "provision": "LA:23",
+     "probability": 0.4446
+    },
+    {
+     "provision": "CONST:Art136",
+     "probability": 0.4034
+    },
+    {
+     "provision": "CONST:Art226",
+     "probability": 0.3781
+    },
+    {
+     "provision": "LA:17",
+     "probability": 0.3677
+    },
+    {
+     "provision": "LA:9",
+     "probability": 0.3296
+    },
+    {
+     "provision": "CONST:Art14",
+     "probability": 0.3143
+    }
+   ],
+   "precedents_retrieved": [
+    {
+     "case_id": "1303080",
+     "title": "Union Of India vs Sher Singh And Ors on 28 January 1993",
+     "year": 1993,
+     "similarity": 1.0,
+     "analogous_party_outcome": "WIN"
+    },
+    {
+     "case_id": "818638",
+     "title": "Union Of India Uoi vs Hari Krishan Khosla Dead By Lrs on 16 September 1992",
+     "year": 1992,
+     "similarity": 0.5,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "1242384",
+     "title": "Sunder Lal vs Paramsukhdas on 25 August 1967",
+     "year": 1967,
+     "similarity": 0.3333,
+     "analogous_party_outcome": "LOSE"
+    },
+    {
+     "case_id": "1474119",
+     "title": "State Of Karnataka And Anr Etc vs Shri Ranganatha Reddy Anr Etc on 11 October 1977",
+     "year": 1977,
+     "similarity": 0.25,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "1922997",
+     "title": "Dr G H Grant vs State Of Bihar on 30 March 1965",
+     "year": 1965,
+     "similarity": 0.2,
+     "analogous_party_outcome": "LOSE"
+    }
+   ]
+  },
+  "evidence": {
+   "n_facts": 9,
+   "facts_cited_by_features": [
+    "event.decree_passed"
+   ],
+   "fact_spans": [
+    {
+     "fact_id": "1053338_f001",
+     "text": "The land acquired was 5200 acres in South Arcot District, Tamil Nadu",
+     "source_span": [
+      128,
+      285
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1053338_f002",
+     "text": "The Tehsildar awarded compensation in 1977-80",
+     "source_span": [
+      287,
+      396
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1053338_f003",
+     "text": "Over 2000 references were made to the Civil Court under section 18",
+     "source_span": [
+      398,
+      547
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1053338_f004",
+     "text": "The Civil Court made awards and decrees under section 26",
+     "source_span": [
+      549,
+      616
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1053338_f005",
+     "text": "The appellant's applications to be impleaded as a party respondent were dismissed",
+     "source_span": [
+      763,
+      902
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1053338_f006",
+     "text": "The High Court upheld the Civil Court's order",
+     "source_span": [
+      904,
+      1008
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1053338_f007",
+     "text": "The appeals before the Supreme Court were filed by special leave",
+     "source_span": [
+      1487,
+      1538
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1053338_f008",
+     "text": "The Union of India is a person interested in determination of compensation when land is acquired for its benefit.",
+     "source_span": [
+      5082,
+      5286
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    }
+   ]
+  },
+  "top_feature_contributions": [
+   {
+    "feature": "S:top_score",
+    "index": 1364,
+    "delta_probability": -0.15372
+   },
+   {
+    "feature": "S:pred=LA:17",
+    "index": 1352,
+    "delta_probability": -0.10747
+   },
+   {
+    "feature": "F:n_facts",
+    "index": 1310,
+    "delta_probability": 0.1067
+   },
+   {
+    "feature": "C:year",
+    "index": 1371,
+    "delta_probability": 0.08553
+   },
+   {
+    "feature": "S:pred=CONST:Art226",
+    "index": 1324,
+    "delta_probability": 0.08415
+   },
+   {
+    "feature": "F:ncat=PartyRole",
+    "index": 1199,
+    "delta_probability": 0.07637
+   },
+   {
+    "feature": "F:atom@p=event.decree_passed",
+    "index": 372,
+    "delta_probability": -0.0762
+   },
+   {
+    "feature": "S:pred=CONST:Art14",
+    "index": 1319,
+    "delta_probability": -0.0688
+   },
+   {
+    "feature": "S:pred=LA:4",
+    "index": 1355,
+    "delta_probability": 0.06835
+   },
+   {
+    "feature": "F:ncat=Event",
+    "index": 1100,
+    "delta_probability": 0.06465
+   }
+  ],
+  "gaps": {
+   "issues_elements": "EMPTY. \u00a711's contract wants per-element status with burden_on and the patterns satisfying or defeating each. No element carries burden metadata (BLOCKER B2) and \u00a78 found no pattern surviving Benjamini-Hochberg, so there is nothing to populate this with. Inventing element statuses would read as legal reasoning while being decoration.",
+   "defaults_assumed": "EMPTY. \u00a710.4's default/burden-shift modelling is not built, so no conclusion here depends on a stated default."
+  },
+  "provenance": {
+   "model": "gbm",
+   "feature_groups": [
+    "F",
+    "P",
+    "S",
+    "R",
+    "C"
+   ],
+   "split": "forum_heldout",
+   "split_hash": "6e346dd75b7e7d84",
+   "attribution": "ablation (zero the feature, re-score); not coefficients",
+   "spans_index": "masked_text, offsets verified to round-trip against the quote"
+  }
+ },
+ {
+  "case_id": "105509416",
+  "title": "Smt Sefali Roy Chowdhary And Ors vs A K Dutta on 6 May 1976",
+  "year": 1976,
+  "prediction": {
+   "label": "WIN",
+   "probability": 0.5079
+  },
+  "actual": "WIN",
+  "claim_families": [
+   "PrivateTitlePossession"
+  ],
+  "authorities": {
+   "statutes_predicted": [
+    {
+     "provision": "CONST:Art227",
+     "probability": 0.5985
+    },
+    {
+     "provision": "CPC:115",
+     "probability": 0.4205
+    },
+    {
+     "provision": "TPA:106",
+     "probability": 0.3609
+    },
+    {
+     "provision": "CPC:12",
+     "probability": 0.34
+    },
+    {
+     "provision": "CONST:Art226",
+     "probability": 0.2446
+    },
+    {
+     "provision": "CPC:4",
+     "probability": 0.2443
+    },
+    {
+     "provision": "CPC:3",
+     "probability": 0.2343
+    },
+    {
+     "provision": "CPC:1",
+     "probability": 0.2192
+    },
+    {
+     "provision": "CPC:5",
+     "probability": 0.2183
+    },
+    {
+     "provision": "CPC:13",
+     "probability": 0.2155
+    }
+   ],
+   "precedents_retrieved": [
+    {
+     "case_id": "569555",
+     "title": "Karam Singh Sobti Anr vs Shri Pratap Chand Anr on 29 August 1963",
+     "year": 1963,
+     "similarity": 1.0,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "1976119",
+     "title": "M S A C Estates vs M S Serajuddin Co And Another on 7 May 1965",
+     "year": 1965,
+     "similarity": 0.5,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "707409",
+     "title": "Indra Kumar Karnani vs Atul Chandra Patitundi And Anr on 10 March 1965",
+     "year": 1965,
+     "similarity": 0.3333,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "1192149",
+     "title": "Gojer Bros Pvt Ltd vs Ratan Lal Singh on 1 May 1974",
+     "year": 1974,
+     "similarity": 0.25,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "769335",
+     "title": "Gauri Shanker vs Hindustan Trust Pvt Ltd And Ors on 27 April 1972",
+     "year": 1972,
+     "similarity": 0.2,
+     "analogous_party_outcome": null
+    }
+   ]
+  },
+  "evidence": {
+   "n_facts": 24,
+   "facts_cited_by_features": [
+    "event.interim_order_refused"
+   ],
+   "fact_spans": [
+    {
+     "fact_id": "105509416_f001",
+     "text": "The respondent was a tenant of premises No. 17/1E Gopal Nagar Road, Alipore, Calcutta.",
+     "source_span": [
+      63,
+      149
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "105509416_f002",
+     "text": "The respondent's landlord was one Jagabandhu Saha.",
+     "source_span": [
+      150,
+      191
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "105509416_f003",
+     "text": "Dilip Narayan Roy Chowdhury was a sub-tenant under the respondent.",
+     "source_span": [
+      216,
+      281
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "105509416_f004",
+     "text": "The respondent instituted a suit in the Munsifs court at Alipore on March 21, 1956.",
+     "source_span": [
+      353,
+      435
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "105509416_f005",
+     "text": "The West Bengal Premises Rent Control (Temporary Provisions) Act, 1950 was in force at that time.",
+     "source_span": [
+      436,
+      525
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "105509416_f006",
+     "text": "The respondent sought to evict Roy Choudhury on the ground that he was a defaulter in payment of rent.",
+     "source_span": [
+      526,
+      614
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "105509416_f007",
+     "text": "Roy Choudhury served a notice under Section 16(2) of the 1956 Act upon the superior landlord.",
+     "source_span": [
+      2425,
+      2528
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "105509416_f008",
+     "text": "Roy Choudhury applied under Section 16(3) for being declared a tenant directly under the superior landlord.",
+     "source_span": [
+      2529,
+      2608
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    }
+   ]
+  },
+  "top_feature_contributions": [
+   {
+    "feature": "S:pred=CPC:13",
+    "index": 1335,
+    "delta_probability": -0.15072
+   },
+   {
+    "feature": "S:pred=CPC:115",
+    "index": 1333,
+    "delta_probability": 0.14121
+   },
+   {
+    "feature": "S:n_predicted",
+    "index": 1363,
+    "delta_probability": 0.13284
+   },
+   {
+    "feature": "F:atom@p=event.interim_order_refused",
+    "index": 392,
+    "delta_probability": 0.09868
+   },
+   {
+    "feature": "S:pred=CPC:5",
+    "index": 1347,
+    "delta_probability": 0.09264
+   },
+   {
+    "feature": "C:year",
+    "index": 1371,
+    "delta_probability": -0.08344
+   },
+   {
+    "feature": "R:win_rate_simweighted",
+    "index": 1367,
+    "delta_probability": -0.07312
+   },
+   {
+    "feature": "S:pred=CPC:4",
+    "index": 1345,
+    "delta_probability": -0.06543
+   },
+   {
+    "feature": "S:pred=CONST:Art227",
+    "index": 1325,
+    "delta_probability": -0.05518
+   },
+   {
+    "feature": "S:top_score",
+    "index": 1364,
+    "delta_probability": 0.05059
+   }
+  ],
+  "gaps": {
+   "issues_elements": "EMPTY. \u00a711's contract wants per-element status with burden_on and the patterns satisfying or defeating each. No element carries burden metadata (BLOCKER B2) and \u00a78 found no pattern surviving Benjamini-Hochberg, so there is nothing to populate this with. Inventing element statuses would read as legal reasoning while being decoration.",
+   "defaults_assumed": "EMPTY. \u00a710.4's default/burden-shift modelling is not built, so no conclusion here depends on a stated default."
+  },
+  "provenance": {
+   "model": "gbm",
+   "feature_groups": [
+    "F",
+    "P",
+    "S",
+    "R",
+    "C"
+   ],
+   "split": "forum_heldout",
+   "split_hash": "6e346dd75b7e7d84",
+   "attribution": "ablation (zero the feature, re-score); not coefficients",
+   "spans_index": "masked_text, offsets verified to round-trip against the quote"
+  }
+ },
+ {
+  "case_id": "1057826",
+  "title": "Kanai Lal Sur vs Paramnidhi Sadhukhan on 10 September 1957",
+  "year": 1957,
+  "prediction": {
+   "label": "LOSE",
+   "probability": 0.1965
+  },
+  "actual": "LOSE",
+  "claim_families": [
+   "Statutory/Regulatory Subservience"
+  ],
+  "authorities": {
+   "statutes_predicted": [
+    {
+     "provision": "CPC:3",
+     "probability": 0.4421
+    },
+    {
+     "provision": "CONST:Art227",
+     "probability": 0.3557
+    },
+    {
+     "provision": "CPC:21",
+     "probability": 0.3062
+    },
+    {
+     "provision": "CONST:Art14",
+     "probability": 0.2919
+    },
+    {
+     "provision": "TPA:3",
+     "probability": 0.2787
+    },
+    {
+     "provision": "CONST:Art226",
+     "probability": 0.2597
+    },
+    {
+     "provision": "CPC:13",
+     "probability": 0.2439
+    },
+    {
+     "provision": "CPC:15",
+     "probability": 0.2373
+    },
+    {
+     "provision": "CPC:1",
+     "probability": 0.234
+    },
+    {
+     "provision": "CPC:2",
+     "probability": 0.2326
+    }
+   ],
+   "precedents_retrieved": [
+    {
+     "case_id": "553711",
+     "title": "Nalinakhya Bysack vs Shyam Sunder Haldar And Others on 29 January 1953",
+     "year": 1953,
+     "similarity": 1.0,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "1530984",
+     "title": "Rai Brij Raj Krishna And Another vs S K Shaw And Brothers on 2 February 1951",
+     "year": 1951,
+     "similarity": 0.5,
+     "analogous_party_outcome": "WIN"
+    },
+    {
+     "case_id": "973363",
+     "title": "The State Of West Bengal vs Subodh Gopal Bose And Others on 17 December 1953",
+     "year": 1953,
+     "similarity": 0.3333,
+     "analogous_party_outcome": "WIN"
+    },
+    {
+     "case_id": "869781",
+     "title": "The State Of Tripura vs The Province Of East Bengalunion Of on 4 December 1950",
+     "year": 1950,
+     "similarity": 0.25,
+     "analogous_party_outcome": null
+    },
+    {
+     "case_id": "1750663",
+     "title": "Thakur Amar Singhji vs State Of Rajasthan And Other on 15 April 1955",
+     "year": 1955,
+     "similarity": 0.2,
+     "analogous_party_outcome": null
+    }
+   ]
+  },
+  "evidence": {
+   "n_facts": 9,
+   "facts_cited_by_features": [
+    "event.decree_passed"
+   ],
+   "fact_spans": [
+    {
+     "fact_id": "1057826_f001",
+     "text": "Kanai Lal Sur is the petitioner",
+     "source_span": [
+      76,
+      89
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1057826_f002",
+     "text": "Paramnidhi Sadhukhan is the respondent",
+     "source_span": [
+      114,
+      134
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1057826_f003",
+     "text": "A decree for ejectment was passed against Kanai Lal Sur and in favour of Paramnidhi Sadhukhan on March 16, 1949",
+     "source_span": [
+      833,
+      952
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1057826_f004",
+     "text": "Paramnidhi Sadhukhan filed an execution case before the First Additional Court, Sealdah on May 22, 1953",
+     "source_span": [
+      1091,
+      1239
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1057826_f005",
+     "text": "Kanai Lal Sur filed a Miscellaneous Judicial Case under s. 47 of the Code of Civil Procedure",
+     "source_span": [
+      1369,
+      1600
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1057826_f006",
+     "text": "The Miscellaneous Judicial Case was dismissed by the executing court on February 2, 1954",
+     "source_span": [
+      1601,
+      1668
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1057826_f007",
+     "text": "The Calcutta Thika Tenancy Ordinance XI of 1948 was promulgated on October 26, 1948",
+     "source_span": [
+      2528,
+      2613
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    },
+    {
+     "fact_id": "1057826_f008",
+     "text": "The Calcutta Thika Tenancy Act, 1949 came into effect on February 28, 1949",
+     "source_span": [
+      3553,
+      3603
+     ],
+     "asserted_by": "court_narrative",
+     "disputed_status": "admitted"
+    }
+   ]
+  },
+  "top_feature_contributions": [
+   {
+    "feature": "S:pred=CPC:2",
+    "index": 1340,
+    "delta_probability": -0.08504
+   },
+   {
+    "feature": "S:top_score",
+    "index": 1364,
+    "delta_probability": -0.06619
+   },
+   {
+    "feature": "S:pred=CONST:Art227",
+    "index": 1325,
+    "delta_probability": -0.04996
+   },
+   {
+    "feature": "S:pred=CPC:15",
+    "index": 1337,
+    "delta_probability": 0.04473
+   },
+   {
+    "feature": "R:win_rate_simweighted",
+    "index": 1367,
+    "delta_probability": -0.04316
+   },
+   {
+    "feature": "F:atom@p=event.decree_passed",
+    "index": 372,
+    "delta_probability": -0.03541
+   },
+   {
+    "feature": "S:pred=TPA:3",
+    "index": 1362,
+    "delta_probability": -0.0335
+   },
+   {
+    "feature": "F:n_facts",
+    "index": 1310,
+    "delta_probability": 0.03037
+   },
+   {
+    "feature": "R:n_labelled",
+    "index": 1370,
+    "delta_probability": -0.02749
+   },
+   {
+    "feature": "C:n_defences",
+    "index": 1406,
+    "delta_probability": 0.02508
+   }
+  ],
+  "gaps": {
+   "issues_elements": "EMPTY. \u00a711's contract wants per-element status with burden_on and the patterns satisfying or defeating each. No element carries burden metadata (BLOCKER B2) and \u00a78 found no pattern surviving Benjamini-Hochberg, so there is nothing to populate this with. Inventing element statuses would read as legal reasoning while being decoration.",
+   "defaults_assumed": "EMPTY. \u00a710.4's default/burden-shift modelling is not built, so no conclusion here depends on a stated default."
+  },
+  "provenance": {
+   "model": "gbm",
+   "feature_groups": [
+    "F",
+    "P",
+    "S",
+    "R",
+    "C"
+   ],
+   "split": "forum_heldout",
+   "split_hash": "6e346dd75b7e7d84",
+   "attribution": "ablation (zero the feature, re-score); not coefficients",
+   "spans_index": "masked_text, offsets verified to round-trip against the quote"
+  }
+ }
+]
