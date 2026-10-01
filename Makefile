@@ -63,6 +63,9 @@ statutes: ## §9.2 statute prediction (novel-provision targets)
 precedents: ## §9.3 precedent retrieval (add --text-dense for the best system)
 	$(PY) -m src.authorities.precedent_retrieve --split forum_heldout --n-queries 150 --text-dense
 
+llm-baselines: ## §3.3 all five LLM arms on the same cases and metrics
+	$(PY) -m src.predict.llm_baselines --split forum_heldout --n 300
+
 trace: ## §11 build traces and run the deletion test
 	$(PY) -m src.trace.build --split forum_heldout --model gbm --n 25
 	$(PY) -m src.trace.evaluate --split forum_heldout --model gbm --n 60

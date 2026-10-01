@@ -1,0 +1,735 @@
+{
+ "n_test": 300,
+ "non_llm": [
+  {
+   "name": "structured gbm F+P+E+S+R+C",
+   "n": 300,
+   "accuracy": 0.6033,
+   "macro_f1": 0.5991,
+   "test_win_rate": 0.4567,
+   "pred_win_rate": 0.44,
+   "macro_f1_ci95": [
+    0.5445,
+    0.6538
+   ],
+   "auroc": 0.6282,
+   "auroc_ci95": [
+    0.5666,
+    0.6912
+   ],
+   "ece": 0.1086,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 11,
+     "mean_pred": 0.0721,
+     "observed": 0.0909,
+     "gap": -0.0188
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 33,
+     "mean_pred": 0.1464,
+     "observed": 0.3636,
+     "gap": -0.2173
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 43,
+     "mean_pred": 0.255,
+     "observed": 0.3953,
+     "gap": -0.1404
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 47,
+     "mean_pred": 0.344,
+     "observed": 0.3617,
+     "gap": -0.0177
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 34,
+     "mean_pred": 0.4472,
+     "observed": 0.4412,
+     "gap": 0.006
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 26,
+     "mean_pred": 0.5415,
+     "observed": 0.5,
+     "gap": 0.0415
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 35,
+     "mean_pred": 0.6458,
+     "observed": 0.5143,
+     "gap": 0.1315
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 43,
+     "mean_pred": 0.751,
+     "observed": 0.6279,
+     "gap": 0.1231
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 23,
+     "mean_pred": 0.8492,
+     "observed": 0.6957,
+     "gap": 0.1536
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 5,
+     "mean_pred": 0.9239,
+     "observed": 0.2,
+     "gap": 0.7239
+    }
+   ]
+  },
+  {
+   "name": "structured lr S only",
+   "n": 300,
+   "accuracy": 0.6033,
+   "macro_f1": 0.6006,
+   "test_win_rate": 0.4567,
+   "pred_win_rate": 0.46,
+   "macro_f1_ci95": [
+    0.5415,
+    0.6545
+   ],
+   "auroc": 0.6121,
+   "auroc_ci95": [
+    0.5446,
+    0.6758
+   ],
+   "ece": 0.0498,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 6,
+     "mean_pred": 0.2797,
+     "observed": 0.3333,
+     "gap": -0.0536
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 45,
+     "mean_pred": 0.3692,
+     "observed": 0.3778,
+     "gap": -0.0085
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 111,
+     "mean_pred": 0.4574,
+     "observed": 0.3604,
+     "gap": 0.0971
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 96,
+     "mean_pred": 0.5455,
+     "observed": 0.5208,
+     "gap": 0.0247
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 38,
+     "mean_pred": 0.6333,
+     "observed": 0.6579,
+     "gap": -0.0246
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 4,
+     "mean_pred": 0.7093,
+     "observed": 0.75,
+     "gap": -0.0407
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    }
+   ]
+  },
+  {
+   "name": "TF-IDF on masked text",
+   "n": 300,
+   "accuracy": 0.5967,
+   "macro_f1": 0.5934,
+   "test_win_rate": 0.4567,
+   "pred_win_rate": 0.4533,
+   "macro_f1_ci95": [
+    0.5353,
+    0.6495
+   ],
+   "auroc": 0.6448,
+   "auroc_ci95": [
+    0.5814,
+    0.705
+   ],
+   "ece": 0.0446,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 41,
+     "mean_pred": 0.3648,
+     "observed": 0.2439,
+     "gap": 0.1209
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 123,
+     "mean_pred": 0.4518,
+     "observed": 0.4146,
+     "gap": 0.0372
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 93,
+     "mean_pred": 0.5453,
+     "observed": 0.5484,
+     "gap": -0.003
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 41,
+     "mean_pred": 0.6333,
+     "observed": 0.561,
+     "gap": 0.0723
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 2,
+     "mean_pred": 0.7026,
+     "observed": 1.0,
+     "gap": -0.2974
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    }
+   ]
+  },
+  {
+   "name": "majority (per decade)",
+   "n": 300,
+   "accuracy": 0.5867,
+   "macro_f1": 0.5706,
+   "test_win_rate": 0.4567,
+   "pred_win_rate": 0.35,
+   "macro_f1_ci95": [
+    0.5146,
+    0.6255
+   ]
+  }
+ ],
+ "llm": [
+  {
+   "name": "LLM-0",
+   "n": 300,
+   "accuracy": 0.5767,
+   "macro_f1": 0.4911,
+   "test_win_rate": 0.4567,
+   "pred_win_rate": 0.1333,
+   "macro_f1_ci95": [
+    0.4343,
+    0.5461
+   ],
+   "auroc": 0.5786,
+   "auroc_ci95": [
+    0.5215,
+    0.6344
+   ],
+   "ece": 0.2646,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 145,
+     "mean_pred": 0.0973,
+     "observed": 0.3793,
+     "gap": -0.282
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 62,
+     "mean_pred": 0.2,
+     "observed": 0.5645,
+     "gap": -0.3645
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 37,
+     "mean_pred": 0.4,
+     "observed": 0.4324,
+     "gap": -0.0324
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 16,
+     "mean_pred": 0.5,
+     "observed": 0.375,
+     "gap": 0.125
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 2,
+     "mean_pred": 0.6,
+     "observed": 1.0,
+     "gap": -0.4
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 1,
+     "mean_pred": 0.7,
+     "observed": 1.0,
+     "gap": -0.3
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 34,
+     "mean_pred": 0.9,
+     "observed": 0.5588,
+     "gap": 0.3412
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 3,
+     "mean_pred": 1.0,
+     "observed": 1.0,
+     "gap": 0.0
+    }
+   ],
+   "dropped": 0,
+   "unusable": 0,
+   "n_scored": 300
+  },
+  {
+   "name": "LLM-FS",
+   "n": 300,
+   "accuracy": 0.5433,
+   "macro_f1": 0.5223,
+   "test_win_rate": 0.4567,
+   "pred_win_rate": 0.3333,
+   "macro_f1_ci95": [
+    0.4675,
+    0.5732
+   ],
+   "auroc": 0.5221,
+   "auroc_ci95": [
+    0.4595,
+    0.5756
+   ],
+   "ece": 0.117,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 4,
+     "mean_pred": 0.1,
+     "observed": 0.25,
+     "gap": -0.15
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 16,
+     "mean_pred": 0.2,
+     "observed": 0.5625,
+     "gap": -0.3625
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 8,
+     "mean_pred": 0.3,
+     "observed": 0.5,
+     "gap": -0.2
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 171,
+     "mean_pred": 0.4,
+     "observed": 0.4269,
+     "gap": -0.0269
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 1,
+     "mean_pred": 0.5,
+     "observed": 0.0,
+     "gap": 0.5
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 24,
+     "mean_pred": 0.6,
+     "observed": 0.5,
+     "gap": 0.1
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 36,
+     "mean_pred": 0.7,
+     "observed": 0.4444,
+     "gap": 0.2556
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 36,
+     "mean_pred": 0.8,
+     "observed": 0.5833,
+     "gap": 0.2167
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 4,
+     "mean_pred": 0.9,
+     "observed": 0.25,
+     "gap": 0.65
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    }
+   ],
+   "dropped": 0,
+   "unusable": 0,
+   "n_scored": 300
+  },
+  {
+   "name": "LLM-CoT",
+   "n": 300,
+   "accuracy": 0.5833,
+   "macro_f1": 0.5817,
+   "test_win_rate": 0.4567,
+   "pred_win_rate": 0.48,
+   "macro_f1_ci95": [
+    0.5265,
+    0.6329
+   ],
+   "auroc": 0.6098,
+   "auroc_ci95": [
+    0.545,
+    0.6636
+   ],
+   "ece": 0.207,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 30,
+     "mean_pred": 0.0903,
+     "observed": 0.1667,
+     "gap": -0.0763
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 85,
+     "mean_pred": 0.2,
+     "observed": 0.4118,
+     "gap": -0.2118
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 14,
+     "mean_pred": 0.3,
+     "observed": 0.4286,
+     "gap": -0.1286
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 26,
+     "mean_pred": 0.4,
+     "observed": 0.4615,
+     "gap": -0.0615
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 1,
+     "mean_pred": 0.5,
+     "observed": 1.0,
+     "gap": -0.5
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 11,
+     "mean_pred": 0.6,
+     "observed": 0.6364,
+     "gap": -0.0364
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 24,
+     "mean_pred": 0.7,
+     "observed": 0.4583,
+     "gap": 0.2417
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 66,
+     "mean_pred": 0.8,
+     "observed": 0.5606,
+     "gap": 0.2394
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 41,
+     "mean_pred": 0.9,
+     "observed": 0.5366,
+     "gap": 0.3634
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 2,
+     "mean_pred": 1.0,
+     "observed": 0.5,
+     "gap": 0.5
+    }
+   ],
+   "dropped": 0,
+   "unusable": 0,
+   "n_scored": 300
+  },
+  {
+   "name": "LLM-CF",
+   "n": 300,
+   "accuracy": 0.56,
+   "macro_f1": 0.4693,
+   "test_win_rate": 0.4567,
+   "pred_win_rate": 0.13,
+   "macro_f1_ci95": [
+    0.4192,
+    0.5248
+   ],
+   "auroc": 0.5448,
+   "auroc_ci95": [
+    0.5047,
+    0.5913
+   ],
+   "ece": 0.0617,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 1,
+     "mean_pred": 0.1,
+     "observed": 0.0,
+     "gap": 0.1
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 10,
+     "mean_pred": 0.2,
+     "observed": 0.4,
+     "gap": -0.2
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 245,
+     "mean_pred": 0.4,
+     "observed": 0.4367,
+     "gap": -0.0367
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 5,
+     "mean_pred": 0.5,
+     "observed": 0.8,
+     "gap": -0.3
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 20,
+     "mean_pred": 0.6,
+     "observed": 0.45,
+     "gap": 0.15
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 5,
+     "mean_pred": 0.7,
+     "observed": 0.8,
+     "gap": -0.1
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 12,
+     "mean_pred": 0.8,
+     "observed": 0.6667,
+     "gap": 0.1333
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 2,
+     "mean_pred": 0.9,
+     "observed": 0.5,
+     "gap": 0.4
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    }
+   ],
+   "dropped": 0,
+   "unusable": 0,
+   "n_scored": 300
+  },
+  {
+   "name": "LLM-CF+A",
+   "n": 300,
+   "accuracy": 0.56,
+   "macro_f1": 0.5025,
+   "test_win_rate": 0.4567,
+   "pred_win_rate": 0.2033,
+   "macro_f1_ci95": [
+    0.4524,
+    0.5602
+   ],
+   "auroc": 0.5348,
+   "auroc_ci95": [
+    0.4903,
+    0.5851
+   ],
+   "ece": 0.0463,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 14,
+     "mean_pred": 0.3,
+     "observed": 0.4286,
+     "gap": -0.1286
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 224,
+     "mean_pred": 0.4,
+     "observed": 0.433,
+     "gap": -0.033
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 1,
+     "mean_pred": 0.5,
+     "observed": 1.0,
+     "gap": -0.5
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 55,
+     "mean_pred": 0.6,
+     "observed": 0.5818,
+     "gap": 0.0182
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 6,
+     "mean_pred": 0.7,
+     "observed": 0.1667,
+     "gap": 0.5333
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    }
+   ],
+   "dropped": 0,
+   "unusable": 0,
+   "n_scored": 300
+  }
+ ]
+}
