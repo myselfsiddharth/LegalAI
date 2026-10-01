@@ -56,13 +56,20 @@ def make_model(kind: str):
 # "F", "F+P" and "F+P+E" reporting byte-identical numbers because §8 found zero BH-significant
 # patterns (P empty) and the burden metadata was unfilled (E empty). Reading those as "patterns
 # and elements add nothing" would be right by accident and wrong in reasoning.
+# §10.2 ablation 1, cumulative in the order PROJECT.md specifies:
+#   F -> F+P -> F+P+E -> +S -> +R -> +C, then the shortcut Q last and alone.
 ABLATIONS = [
     ("F", ["F"], None),
     ("F+P", ["F", "P"], "P"),
     ("F+P+E", ["F", "P", "E"], "E"),
-    ("F+P+E+C", ["F", "P", "E", "C"], "C"),
-    ("F+P+E+C+Q", ["F", "P", "E", "C", "Q"], "Q"),   # +Q adds the prior-court shortcut
+    ("F+P+E+S", ["F", "P", "E", "S"], "S"),
+    ("F+P+E+S+R", ["F", "P", "E", "S", "R"], "R"),
+    ("F+P+E+S+R+C", ["F", "P", "E", "S", "R", "C"], "C"),
+    ("all+Q", ["F", "P", "E", "S", "R", "C", "Q"], "Q"),
     ("C only", ["C"], None),
+    ("S only", ["S"], None),
+    ("R only", ["R"], None),
+    ("C+S+R", ["C", "S", "R"], None),
     ("Q only", ["Q"], None),                          # the shortcut alone
 ]
 
@@ -117,7 +124,8 @@ def run(split_name: str, model_kinds=("lr", "gbm"), min_atom_cases: int = 10,
     # --- ablations x models
     # which groups actually carry features, and why an empty one is empty
     per_group = Counter(fb.space.group_of)
-    empty = {g: per_group.get(g, 0) for g in ("F", "P", "E", "C", "Q") if not per_group.get(g)}
+    empty = {g: per_group.get(g, 0) for g in ("F", "P", "E", "S", "R", "C", "Q")
+             if not per_group.get(g)}
     out["empty_groups"] = {}
     for g in empty:
         out["empty_groups"][g] = {
@@ -125,6 +133,8 @@ def run(split_name: str, model_kinds=("lr", "gbm"), min_atom_cases: int = 10,
                  "(351 patterns tested, 0 BH-significant). This is a result, not a missing input.",
             "E": "no element carries burden metadata yet (burden_provenance is unset), so the "
                  "element features cannot be computed.",
+            "S": "no predicted statutes on disk -- run `python -m src.predict.side_inputs`.",
+            "R": "no retrieved precedents on disk -- run `python -m src.predict.side_inputs`.",
         }.get(g, "no features in this group")
 
     preds_for_mcnemar = {}

@@ -9,6 +9,10 @@ Groups, and what each is meant to isolate:
                  burden. **Reads `llm_draft` burden metadata** unless `require_human_burden=True`,
                  and any result using it must say so.
   `C` context    year, forum, proceeding type, claim family, party type.
+  `S` statutes   PREDICTED provisions (§9.2) -- never the court-cited ones, which §5.2 makes
+                 targets rather than inputs. The statute model is fit on train only.
+  `R` precedents the outcome distribution of retrieved earlier precedents (§9.3), oriented to the
+                 querying party, similarity-weighted.
   `Q` shortcut   prior-court disposition, ISOLATED IN ITS OWN GROUP so §10.2 can run with and
                  without it. It is not part of `C`, because burying a shortcut inside a
                  legitimate group is how a shortcut becomes invisible.
@@ -30,7 +34,7 @@ import numpy as np
 from src import paths
 from src.extract.fact_filters import in_defendant_view, in_plaintiff_view
 
-GROUPS = ("F", "P", "E", "C", "Q")
+GROUPS = ("F", "P", "E", "S", "R", "C", "Q")
 
 
 def _load_jsonl(path):
@@ -50,6 +54,8 @@ class FeatureSpace:
     names: list[str] = field(default_factory=list)
     group_of: list[str] = field(default_factory=list)
 
+    statute_vocab: list[str] = field(default_factory=list)
+
     def group_mask(self, groups) -> np.ndarray:
         keep = set(groups)
         return np.array([g in keep for g in self.group_of], dtype=bool)
@@ -62,6 +68,7 @@ class FeatureBuilder:
         self.use_patterns = use_patterns
         self.require_human_burden = require_human_burden
         self.space = FeatureSpace()
+        self._r_label: dict[str, int] = {}
         self._load_sources()
 
     # ---------------------------------------------------------------- sources
@@ -102,6 +109,21 @@ class FeatureBuilder:
                     "slug": e["slug"], "claim_id": c["claim_id"], "name": e["name"],
                     "burden_on": e["burden_on"], "provenance": prov}
 
+        # --- S: PREDICTED statutes. §5.2 forbids court-cited authorities as inputs, so this reads
+        # a prediction file produced by a model fit on train only. Absent file -> empty group.
+        self.pred_statutes: dict[str, dict[str, float]] = {}
+        sp = paths.INTERIM / "predicted_statutes.jsonl"
+        if sp.exists():
+            for r in _load_jsonl(sp):
+                self.pred_statutes[r["doc_id"]] = r["scores"]
+
+        # --- R: retrieved precedents and their outcomes.
+        self.retrieved: dict[str, list[tuple[str, float]]] = {}
+        rp = paths.INTERIM / "retrieved_precedents.jsonl"
+        if rp.exists():
+            for r in _load_jsonl(rp):
+                self.retrieved[r["doc_id"]] = [(x["doc_id"], x["score"]) for x in r["hits"]]
+
         self.patterns = {}
         if self.use_patterns:
             for p in sorted(paths.PATTERNS.glob("patterns_*.json")):
@@ -127,6 +149,10 @@ class FeatureBuilder:
 
     # ---------------------------------------------------------------- fit
     def fit(self, train_ids):
+        # Outcome labels of TRAIN cases only, for the R group. See transform() for why.
+        self._r_label = {c: (1 if self.labels[c]["outcome"] == "WIN" else 0)
+                         for c in train_ids
+                         if self.labels.get(c, {}).get("outcome") in ("WIN", "LOSE")}
         atom_cases = Counter()
         cats = Counter()
         for cid in train_ids:
@@ -141,6 +167,8 @@ class FeatureBuilder:
 
         self.space.pattern_vocab = [(fam, pat) for fam, pats in sorted(self.patterns.items())
                                     for pat in pats]
+        sv = Counter(s for c in train_ids for s in self.pred_statutes.get(c, {}))
+        self.space.statute_vocab = sorted(s for s, n in sv.items() if n >= 10)
         self.space.element_vocab = sorted(self.elements)
 
         forums = Counter(self.screen.get(c, {}).get("primary_forum") for c in train_ids)
@@ -180,6 +208,16 @@ class FeatureBuilder:
             add(f"E:{eid}:{e['slug']}:net_burden_weighted", "E")
         if self.space.element_vocab:
             add("E:all_elements_touched", "E")
+
+        for s in self.space.statute_vocab:
+            add(f"S:pred={s}", "S")
+        if self.space.statute_vocab:
+            add("S:n_predicted", "S"); add("S:top_score", "S")
+
+        if self.retrieved:
+            for nm in ("R:n_hits", "R:win_rate", "R:win_rate_simweighted",
+                       "R:top1_outcome", "R:mean_sim", "R:n_labelled"):
+                add(nm, "R")
 
         add("C:year", "C"); add("C:decade", "C")
         for f in self.space.context_vocab["forum"]:
@@ -244,6 +282,29 @@ class FeatureBuilder:
                     j += 3
                 X[i, j] = touched / max(1, len(S.element_vocab)); j += 1
 
+            ps = self.pred_statutes.get(cid, {})
+            for s in S.statute_vocab:
+                X[i, j] = float(ps.get(s, 0.0)); j += 1
+            if S.statute_vocab:
+                X[i, j] = len(ps); j += 1
+                X[i, j] = max(ps.values()) if ps else 0.0; j += 1
+
+            if self.retrieved:
+                hits = self.retrieved.get(cid, [])
+                # Only precedents whose outcome we are entitled to know are counted. Restricting to
+                # the labels available at training time avoids any test-to-test information flow,
+                # which a looser reading of "earlier precedents" would permit.
+                lab_hits = [(d, s) for d, s in hits if d in self._r_label]
+                wins = [self._r_label[d] for d, _ in lab_hits]
+                sims = [s for _, s in lab_hits]
+                X[i, j] = len(hits); j += 1
+                X[i, j] = (sum(wins) / len(wins)) if wins else 0.5; j += 1
+                tot = sum(sims) or 1.0
+                X[i, j] = (sum(w * s for w, s in zip(wins, sims)) / tot) if wins else 0.5; j += 1
+                X[i, j] = float(wins[0]) if wins else 0.5; j += 1
+                X[i, j] = (sum(sims) / len(sims)) if sims else 0.0; j += 1
+                X[i, j] = len(lab_hits); j += 1
+
             lab = self.labels.get(cid, {})
             yr = lab.get("year") or 0
             X[i, j] = yr; j += 1
@@ -283,5 +344,7 @@ class FeatureBuilder:
                 "with_claim_family": have_fam,
                 "with_claims": have_claims,
                 "burden_provenance": dict(self.burden_provenance),
+                "with_predicted_statutes": sum(1 for c in ids if self.pred_statutes.get(c)),
+                "with_retrieved_precedents": sum(1 for c in ids if self.retrieved.get(c)),
                 "n_features": len(self.space.names),
                 "features_per_group": dict(Counter(self.space.group_of))}
