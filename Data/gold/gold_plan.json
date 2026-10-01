@@ -1,0 +1,18 @@
+{
+  "n_tasks": 150,
+  "strata": {
+    "conflict": 40,
+    "stratified": 80,
+    "error": 30
+  },
+  "second_annotator_block": 30,
+  "facts_to_review": 2126,
+  "outcome_only_tasks": 40,
+  "why_these_cases": {
+    "conflict": "rules and LLM labellers disagreed; no usable label exists. Resolves \u00a75.1's human check and returns these cases to the eligible pool.",
+    "stratified": "decade x merged claim family. The backbone for \u00a76.1 extraction F1 and \u00a76.2 canonical-label accuracy.",
+    "error": "best model wrong AND tripping none of \u00a710.3's deterministic signals. \u00a710.3 could not explain these; a reviewer can say whether the facts determine the outcome at all.",
+    "agreement": "overlap block for \u00a76.4's inter-annotator agreement, drawn from the ordinary stratum so agreement is measured on typical cases."
+  },
+  "meets_6_4_minimum": true
+}

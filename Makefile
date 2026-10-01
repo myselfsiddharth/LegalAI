@@ -73,6 +73,13 @@ trace: ## §11 build traces and run the deletion test
 	$(PY) -m src.trace.build --split forum_heldout --model gbm --n 25
 	$(PY) -m src.trace.evaluate --split forum_heldout --model gbm --n 60
 
+gold: ## §6.4 build the 150-case gold annotation set + the B2 burden sheet
+	$(PY) -m src.data.gold_sample
+	$(PY) -m src.data.burden_sheet
+
+annotate: ## §6.4 open the annotation tool (correct pipeline output; nothing pre-selected)
+	.venv/bin/streamlit run src/annotate/app.py
+
 burden: ## fill element burden metadata (gated against a degenerate annotation)
 	$(PY) -m src.data.ontology_burden --model glm-5-3
 
