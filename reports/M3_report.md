@@ -1,6 +1,6 @@
 # M3 — Claim families and fact patterns (§7, §8)
 
-**Status: INTERIM**, pending the full-coverage re-run. Reproduce: `make stage3 stage4`.
+**Status: full scale** (7,441 claims over 4,235 cases; §8 over 4,581 canonicalised cases). Reproduce: `make stage3 stage4`.
 
 **Headline: §7's 15-family taxonomy is not supported by the data, and §8 finds no fact pattern
 associated with outcome.** Both are results, not failures to reach a result, and §8's is airtight.
@@ -24,8 +24,11 @@ Claim texts embedded and clustered, then compared with the assigned families. At
 
 | clusterer | k | NMI | ARI | purity | note |
 |---|---|---|---|---|---|
-| HDBSCAN | 4 | 0.099 | **−0.006** | 0.724 | 88.9% outliers |
-| agglomerative (k by silhouette) | 6 | 0.270 | 0.092 | 0.318 | **silhouette 0.022** |
+| HDBSCAN | 6 | 0.070 | **0.003** | 0.395 | 71.5% outliers |
+| agglomerative (k by silhouette) | 6 | 0.237 | 0.083 | 0.314 | **silhouette 0.025** |
+
+(At full scale, 7,441 claims / 4,235 cases. The earlier 1,408-claim run gave ARI −0.006 and
+silhouette 0.022 — the same answer with looser precision.)
 
 **ARI ≈ 0 means the unsupervised partition is uncorrelated with the assigned 15-way families**, and
 silhouette 0.022 means there is almost no cluster structure at that granularity.
@@ -33,8 +36,9 @@ silhouette 0.022 means there is almost no cluster structure at that granularity.
 Supporting evidence:
 - Only **2 of 15** ontology families cleared §7's 30-case floor (Title 235 cases, Possession 219).
 - `Redevelopment` was never assigned to any claim.
-- The extractor assigned **84 distinct families** at 805 cases, up from **42** at 268 — its
-  open-ended `NEW:` escape is **not converging**.
+- The extractor assigned **42** distinct families at 268 cases, **84** at 805, and **281** at 4,235.
+  Its open-ended `NEW:` escape invents roughly in proportion to corpus size and **does not
+  converge** — now measurable across three scales.
 - 32% of cases fall in more than one family, consistent with §7.4's many-to-many requirement.
 
 ### 2.1 The clusters are coherent one level up
@@ -96,12 +100,16 @@ is a leak that carries the answer):
 
 | family | cases | closed itemsets | stable (≥80% of 20 bootstraps) | **BH-significant** |
 |---|---|---|---|---|
-| StateAction | 381 | 193 | 135 | **0** |
-| PrivateTitlePossession | 224 | 52 | 36 | **0** |
-| ContractInstrument | 152 | 49 | 32 | **0** |
-| _UNASSIGNED | 113 | 25 | 13 | **0** |
-| Mixed_Limitation_Procedure | 39 | 39 | 18 | **0** |
-| **total** | | **351** | **234** | **0** |
+| PrivateTitlePossession | 2,354 | 67 | 53 | **0** |
+| StateAction | 1,148 | 196 | 115 | **0** |
+| ContractInstrument | 859 | 91 | 58 | **0** |
+| _UNASSIGNED | 550 | 38 | 23 | **0** |
+| TenureOccupancy | 188 | 53 | 31 | **0** |
+| Mixed_Compensation_LandAcquisition | 87 | 53 | 31 | **0** |
+| **total** | | **498** | **311** | **0** |
+
+Confirmed at 6× the earlier scale: 498 closed itemsets, 311 stable across 20 bootstraps, **zero**
+significant after Benjamini–Hochberg in any family.
 
 **351 patterns tested · 10 pass uncorrected p<0.05 · 17.6 expected by chance alone · 0 survive
 Benjamini–Hochberg.**
@@ -115,10 +123,13 @@ exactly how a pattern library gets mistaken for a finding.
 
 ### 3.3 Why: the atoms carry no signal
 
-FP-Growth mines the canonical atoms of §6.2, and the representation ladder shows those atoms are at
-chance (AUROC 0.502, see `reports/M5_report.md`). **No pattern over uninformative atoms can be
-significant**, so §8's null result is a property of the vocabulary, not of the law — and it is not
-evidence that fact patterns are a bad idea.
+FP-Growth mines the canonical atoms of §6.2, and the ladder shows those atoms sit near chance
+(AUROC 0.517 at n=881). **No pattern over uninformative atoms can be significant.**
+
+The stronger version, established at full scale (`reports/M5_report.md` §2): an *induced* vocabulary
+of equal granularity is no better, and more atoms do not help. So §8's null is a property of
+**discretisation itself**, not of this ontology's particular choices — and the approach is
+mis-specified for this corpus rather than merely under-tuned.
 
 ### 3.4 Element mapping (§8.3): not built
 

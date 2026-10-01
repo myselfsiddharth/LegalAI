@@ -29,7 +29,7 @@ apart is wrong. Numeric properties are binned so labels stay itemizable for §8.
 
 Prompt `extract_facts.v2`, model `llama4-scout-17b` (chosen by measurement — §3).
 
-Over the first 800-case pass: **13,919 facts from 795 cases**, median 14 per case.
+Full corpus: **79,496 facts from 4,581 cases**, median 13 per case.
 
 | | share of proposals |
 |---|---|
@@ -95,9 +95,9 @@ ground-truth-free metrics because §6.4's gold set does not exist:
 | `glm-5-3-flash` | excluded | | | | hangs on long prompts |
 | `glm-5-3` | excluded | | | | ~47s/call |
 
-**scout was chosen despite maverick winning every quality metric**, because the representation
-ladder (`reports/M5_report.md`) shows extraction is not the bottleneck: masked text 0.578 →
-extracted fact text 0.577. Coverage is binding, and maverick would take 18–36h against scout's
+**scout was chosen despite maverick winning every quality metric**, because canonicalisation, not
+extraction, was the dominant loss (0.097 against 0.043 at n=881) and coverage was the binding
+constraint. Coverage is binding, and maverick would take 18–36h against scout's
 ~1.5h. maverick's attribution edge is queued as a controlled subset test rather than assumed to
 matter or assumed not to.
 
@@ -116,9 +116,12 @@ similarity (24 per fact) rather than dumping all 345 into every prompt.
 
 | | count | share |
 |---|---|---|
-| mapped to the vocabulary | 10,764 | **77.3%** |
-| **out of vocabulary** | 3,155 | **22.7%** |
+| mapped to the vocabulary | 63,370 | **79.7%** |
+| **out of vocabulary** | 16,126 | **20.3%** |
 | §6.2 freeze threshold | | 5% |
+
+(79,496 facts over 4,581 cases. An earlier figure of 22.7% was measured on the first 795 cases; the
+full-corpus rate is 20.3%.)
 
 ### 4.1 The NEW-rate flag could not be trusted
 
@@ -134,11 +137,15 @@ checking, not by trusting.
 ### 4.2 This is the pipeline's binding constraint
 
 The representation ladder localises the loss precisely (see `reports/M5_report.md`):
-masked text **0.578** → extracted fact text **0.577** → canonical atoms **0.502** (chance 0.500).
+masked text **0.657** → extracted fact text **0.614** → canonical atoms **0.517** (chance 0.500),
+at n=881.
 
-**Extraction preserves the signal while cutting features 5×. Canonicalisation destroys it.** §6.1
-works; §6.2's controlled vocabulary cannot carry outcome-relevant information that the free-text
-facts it replaces can.
+Extraction loses 0.043 and canonicalisation a further 0.097. An earlier reading of this report said
+extraction was *lossless* (0.578 → 0.577); that held at n=143 and does not at n=881.
+
+The decisive follow-up is in `reports/M5_report.md` §2: an **induced** vocabulary of equal
+granularity loses just as much, and more atoms do not help. The problem is **discretisation**, not
+this ontology's particular labels.
 
 ## 5. §6 acceptance, item by item
 

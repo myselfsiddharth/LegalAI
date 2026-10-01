@@ -1,0 +1,8608 @@
+{
+ "split": "temporal_2004_2013",
+ "split_hash": "43d9d645667ad3a5",
+ "view": "combined",
+ "oriented": true,
+ "families": {
+  "PrivateTitlePossession": {
+   "family": "PrivateTitlePossession",
+   "view": "combined",
+   "n_cases": 2354,
+   "n_train_cases": 1716,
+   "min_support": 0.1,
+   "support_search": [
+    [
+     0.3,
+     3
+    ],
+    [
+     0.2,
+     11
+    ],
+    [
+     0.15,
+     19
+    ],
+    [
+     0.1,
+     67
+    ]
+   ],
+   "n_itemsets": 67,
+   "n_closed": 67,
+   "n_rules": 67,
+   "train_base_win_rate": 0.3963,
+   "n_discriminative_bh": 3,
+   "n_stable": 42,
+   "n_stable_and_discriminative": 3,
+   "rules": [
+    {
+     "pattern": [
+      "event.appeal_filed@p",
+      "event.suit_filed@p"
+     ],
+     "len": 2,
+     "support_all": 0.1003,
+     "n_train_with_pattern": 126,
+     "confidence_win": 0.5079,
+     "lift": 1.282,
+     "conviction": 1.227,
+     "chi2": 6.593,
+     "p": 0.010239127929861145,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@d",
+      "event.suit_filed@p"
+     ],
+     "len": 2,
+     "support_all": 0.1003,
+     "n_train_with_pattern": 126,
+     "confidence_win": 0.5079,
+     "lift": 1.282,
+     "conviction": 1.227,
+     "chi2": 6.593,
+     "p": 0.010239127929861145,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@p"
+     ],
+     "len": 1,
+     "support_all": 0.198,
+     "n_train_with_pattern": 285,
+     "confidence_win": 0.4842,
+     "lift": 1.222,
+     "conviction": 1.17,
+     "chi2": 10.611,
+     "p": 0.0011241247164897467,
+     "discriminative_bh": true,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@d"
+     ],
+     "len": 1,
+     "support_all": 0.1954,
+     "n_train_with_pattern": 283,
+     "confidence_win": 0.4806,
+     "lift": 1.213,
+     "conviction": 1.162,
+     "chi2": 9.648,
+     "p": 0.0018957900442016658,
+     "discriminative_bh": true,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@d",
+      "event.appeal_filed@p"
+     ],
+     "len": 2,
+     "support_all": 0.1929,
+     "n_train_with_pattern": 279,
+     "confidence_win": 0.4803,
+     "lift": 1.212,
+     "conviction": 1.162,
+     "chi2": 9.415,
+     "p": 0.0021519238409310948,
+     "discriminative_bh": true,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.writ_filed@d"
+     ],
+     "len": 1,
+     "support_all": 0.116,
+     "n_train_with_pattern": 148,
+     "confidence_win": 0.4595,
+     "lift": 1.159,
+     "conviction": 1.117,
+     "chi2": 2.422,
+     "p": 0.11964965231585267,
+     "discriminative_bh": false,
+     "stability": 0.1,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.writ_filed@d",
+      "event.writ_filed@p"
+     ],
+     "len": 2,
+     "support_all": 0.1134,
+     "n_train_with_pattern": 146,
+     "confidence_win": 0.4589,
+     "lift": 1.158,
+     "conviction": 1.116,
+     "chi2": 2.338,
+     "p": 0.12622181778304933,
+     "discriminative_bh": false,
+     "stability": 0.05,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d"
+     ],
+     "len": 1,
+     "support_all": 0.2196,
+     "n_train_with_pattern": 333,
+     "confidence_win": 0.4535,
+     "lift": 1.144,
+     "conviction": 1.105,
+     "chi2": 5.355,
+     "p": 0.02066753982953887,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@p"
+     ],
+     "len": 1,
+     "support_all": 0.2192,
+     "n_train_with_pattern": 333,
+     "confidence_win": 0.4535,
+     "lift": 1.144,
+     "conviction": 1.105,
+     "chi2": 5.355,
+     "p": 0.02066753982953887,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d",
+      "event.appeal_decided@p"
+     ],
+     "len": 2,
+     "support_all": 0.2188,
+     "n_train_with_pattern": 333,
+     "confidence_win": 0.4535,
+     "lift": 1.144,
+     "conviction": 1.105,
+     "chi2": 5.355,
+     "p": 0.02066753982953887,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.writ_filed@p"
+     ],
+     "len": 1,
+     "support_all": 0.116,
+     "n_train_with_pattern": 148,
+     "confidence_win": 0.4527,
+     "lift": 1.142,
+     "conviction": 1.103,
+     "chi2": 1.906,
+     "p": 0.1674517701352068,
+     "discriminative_bh": false,
+     "stability": 0.05,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.decree_passed@d"
+     ],
+     "len": 1,
+     "support_all": 0.1342,
+     "n_train_with_pattern": 218,
+     "confidence_win": 0.4495,
+     "lift": 1.134,
+     "conviction": 1.097,
+     "chi2": 2.713,
+     "p": 0.09956019094717031,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.decree_passed@d",
+      "event.decree_passed@p"
+     ],
+     "len": 2,
+     "support_all": 0.1317,
+     "n_train_with_pattern": 214,
+     "confidence_win": 0.4486,
+     "lift": 1.132,
+     "conviction": 1.095,
+     "chi2": 2.554,
+     "p": 0.11001755593796693,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.decree_passed@p"
+     ],
+     "len": 1,
+     "support_all": 0.1325,
+     "n_train_with_pattern": 216,
+     "confidence_win": 0.4444,
+     "lift": 1.122,
+     "conviction": 1.087,
+     "chi2": 2.172,
+     "p": 0.1405253259820503,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "rightclaimed.title@p"
+     ],
+     "len": 1,
+     "support_all": 0.1308,
+     "n_train_with_pattern": 187,
+     "confidence_win": 0.3529,
+     "lift": 0.891,
+     "conviction": 0.933,
+     "chi2": 1.45,
+     "p": 0.2285353083339494,
+     "discriminative_bh": false,
+     "stability": 0.9,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "partyrole.owner@p"
+     ],
+     "len": 1,
+     "support_all": 0.1181,
+     "n_train_with_pattern": 180,
+     "confidence_win": 0.4389,
+     "lift": 1.108,
+     "conviction": 1.076,
+     "chi2": 1.334,
+     "p": 0.2480606146277335,
+     "discriminative_bh": false,
+     "stability": 0.9,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d",
+      "event.suit_filed@p"
+     ],
+     "len": 2,
+     "support_all": 0.1202,
+     "n_train_with_pattern": 171,
+     "confidence_win": 0.4386,
+     "lift": 1.107,
+     "conviction": 1.075,
+     "chi2": 1.233,
+     "p": 0.26691973311164363,
+     "discriminative_bh": false,
+     "stability": 0.5,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@p",
+      "event.suit_filed@p"
+     ],
+     "len": 2,
+     "support_all": 0.1198,
+     "n_train_with_pattern": 171,
+     "confidence_win": 0.4386,
+     "lift": 1.107,
+     "conviction": 1.075,
+     "chi2": 1.233,
+     "p": 0.26691973311164363,
+     "discriminative_bh": false,
+     "stability": 0.5,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d",
+      "event.appeal_decided@p",
+      "event.suit_filed@p"
+     ],
+     "len": 3,
+     "support_all": 0.1194,
+     "n_train_with_pattern": 171,
+     "confidence_win": 0.4386,
+     "lift": 1.107,
+     "conviction": 1.075,
+     "chi2": 1.233,
+     "p": 0.26691973311164363,
+     "discriminative_bh": false,
+     "stability": 0.5,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d",
+      "event.suit_filed@d",
+      "event.suit_filed@p"
+     ],
+     "len": 3,
+     "support_all": 0.1181,
+     "n_train_with_pattern": 167,
+     "confidence_win": 0.4371,
+     "lift": 1.103,
+     "conviction": 1.073,
+     "chi2": 1.109,
+     "p": 0.2924057444490997,
+     "discriminative_bh": false,
+     "stability": 0.4,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@p",
+      "event.suit_filed@d",
+      "event.suit_filed@p"
+     ],
+     "len": 3,
+     "support_all": 0.1177,
+     "n_train_with_pattern": 167,
+     "confidence_win": 0.4371,
+     "lift": 1.103,
+     "conviction": 1.073,
+     "chi2": 1.109,
+     "p": 0.2924057444490997,
+     "discriminative_bh": false,
+     "stability": 0.4,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d",
+      "event.appeal_decided@p",
+      "event.suit_filed@d",
+      "event.suit_filed@p"
+     ],
+     "len": 4,
+     "support_all": 0.1172,
+     "n_train_with_pattern": 167,
+     "confidence_win": 0.4371,
+     "lift": 1.103,
+     "conviction": 1.073,
+     "chi2": 1.109,
+     "p": 0.2924057444490997,
+     "discriminative_bh": false,
+     "stability": 0.4,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "rightclaimed.partition@p"
+     ],
+     "len": 1,
+     "support_all": 0.1177,
+     "n_train_with_pattern": 191,
+     "confidence_win": 0.356,
+     "lift": 0.898,
+     "conviction": 0.937,
+     "chi2": 1.272,
+     "p": 0.25935551781089605,
+     "discriminative_bh": false,
+     "stability": 0.9,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d",
+      "event.suit_filed@d"
+     ],
+     "len": 2,
+     "support_all": 0.1189,
+     "n_train_with_pattern": 168,
+     "confidence_win": 0.4345,
+     "lift": 1.097,
+     "conviction": 1.068,
+     "chi2": 0.969,
+     "p": 0.32499292108088595,
+     "discriminative_bh": false,
+     "stability": 0.45,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@p",
+      "event.suit_filed@d"
+     ],
+     "len": 2,
+     "support_all": 0.1185,
+     "n_train_with_pattern": 168,
+     "confidence_win": 0.4345,
+     "lift": 1.097,
+     "conviction": 1.068,
+     "chi2": 0.969,
+     "p": 0.32499292108088595,
+     "discriminative_bh": false,
+     "stability": 0.45,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d",
+      "event.appeal_decided@p",
+      "event.suit_filed@d"
+     ],
+     "len": 3,
+     "support_all": 0.1181,
+     "n_train_with_pattern": 168,
+     "confidence_win": 0.4345,
+     "lift": 1.097,
+     "conviction": 1.068,
+     "chi2": 0.969,
+     "p": 0.32499292108088595,
+     "discriminative_bh": false,
+     "stability": 0.45,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "evidence.sale_deed@d"
+     ],
+     "len": 1,
+     "support_all": 0.1168,
+     "n_train_with_pattern": 169,
+     "confidence_win": 0.432,
+     "lift": 1.09,
+     "conviction": 1.063,
+     "chi2": 0.839,
+     "p": 0.35965966301984975,
+     "discriminative_bh": false,
+     "stability": 0.5,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "partyrole.owner@d",
+      "partyrole.owner@p"
+     ],
+     "len": 2,
+     "support_all": 0.1071,
+     "n_train_with_pattern": 169,
+     "confidence_win": 0.432,
+     "lift": 1.09,
+     "conviction": 1.063,
+     "chi2": 0.839,
+     "p": 0.35965966301984975,
+     "discriminative_bh": false,
+     "stability": 0.55,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.agreement_executed@p"
+     ],
+     "len": 1,
+     "support_all": 0.1058,
+     "n_train_with_pattern": 166,
+     "confidence_win": 0.3675,
+     "lift": 0.927,
+     "conviction": 0.954,
+     "chi2": 0.511,
+     "p": 0.47476234122176847,
+     "discriminative_bh": false,
+     "stability": 0.2,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "evidence.sale_deed@d",
+      "evidence.sale_deed@p"
+     ],
+     "len": 2,
+     "support_all": 0.1066,
+     "n_train_with_pattern": 158,
+     "confidence_win": 0.4241,
+     "lift": 1.07,
+     "conviction": 1.048,
+     "chi2": 0.441,
+     "p": 0.5067586496819805,
+     "discriminative_bh": false,
+     "stability": 0.05,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_served@p"
+     ],
+     "len": 1,
+     "support_all": 0.1512,
+     "n_train_with_pattern": 237,
+     "confidence_win": 0.4219,
+     "lift": 1.065,
+     "conviction": 1.044,
+     "chi2": 0.638,
+     "p": 0.4244232888500992,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.notice_served@d"
+     ],
+     "len": 1,
+     "support_all": 0.1432,
+     "n_train_with_pattern": 230,
+     "confidence_win": 0.4217,
+     "lift": 1.064,
+     "conviction": 1.044,
+     "chi2": 0.602,
+     "p": 0.4376500605664872,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.agreement_executed@d"
+     ],
+     "len": 1,
+     "support_all": 0.1015,
+     "n_train_with_pattern": 159,
+     "confidence_win": 0.3711,
+     "lift": 0.936,
+     "conviction": 0.96,
+     "chi2": 0.356,
+     "p": 0.5505447407513373,
+     "discriminative_bh": false,
+     "stability": 0.05,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "partyrole.owner@d"
+     ],
+     "len": 1,
+     "support_all": 0.1138,
+     "n_train_with_pattern": 176,
+     "confidence_win": 0.4205,
+     "lift": 1.061,
+     "conviction": 1.042,
+     "chi2": 0.373,
+     "p": 0.5411467643592875,
+     "discriminative_bh": false,
+     "stability": 0.85,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "rightclaimed.possession@d"
+     ],
+     "len": 1,
+     "support_all": 0.1827,
+     "n_train_with_pattern": 303,
+     "confidence_win": 0.4191,
+     "lift": 1.058,
+     "conviction": 1.039,
+     "chi2": 0.693,
+     "p": 0.40525585520878293,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.notice_served@d",
+      "event.notice_served@p"
+     ],
+     "len": 2,
+     "support_all": 0.1376,
+     "n_train_with_pattern": 222,
+     "confidence_win": 0.4189,
+     "lift": 1.057,
+     "conviction": 1.039,
+     "chi2": 0.443,
+     "p": 0.5054901870077773,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "rightclaimed.partition@d"
+     ],
+     "len": 1,
+     "support_all": 0.11,
+     "n_train_with_pattern": 179,
+     "confidence_win": 0.3743,
+     "lift": 0.945,
+     "conviction": 0.965,
+     "chi2": 0.307,
+     "p": 0.5794335674979569,
+     "discriminative_bh": false,
+     "stability": 0.7,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "element.death_of_owner@d",
+      "event.suit_filed@d",
+      "event.suit_filed@p"
+     ],
+     "len": 3,
+     "support_all": 0.1279,
+     "n_train_with_pattern": 198,
+     "confidence_win": 0.3788,
+     "lift": 0.956,
+     "conviction": 0.972,
+     "chi2": 0.209,
+     "p": 0.6473121647420375,
+     "discriminative_bh": false,
+     "stability": 0.95,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "element.death_of_owner@d",
+      "element.death_of_owner@p",
+      "event.suit_filed@d",
+      "event.suit_filed@p"
+     ],
+     "len": 4,
+     "support_all": 0.1266,
+     "n_train_with_pattern": 198,
+     "confidence_win": 0.3788,
+     "lift": 0.956,
+     "conviction": 0.972,
+     "chi2": 0.209,
+     "p": 0.6473121647420375,
+     "discriminative_bh": false,
+     "stability": 0.95,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "element.death_of_owner@p",
+      "event.suit_filed@d",
+      "event.suit_filed@p"
+     ],
+     "len": 3,
+     "support_all": 0.1274,
+     "n_train_with_pattern": 200,
+     "confidence_win": 0.38,
+     "lift": 0.959,
+     "conviction": 0.974,
+     "chi2": 0.179,
+     "p": 0.6718593516869658,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "element.death_of_owner@d",
+      "event.suit_filed@d"
+     ],
+     "len": 2,
+     "support_all": 0.1283,
+     "n_train_with_pattern": 199,
+     "confidence_win": 0.3819,
+     "lift": 0.964,
+     "conviction": 0.977,
+     "chi2": 0.132,
+     "p": 0.716277392392394,
+     "discriminative_bh": false,
+     "stability": 0.95,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "element.death_of_owner@d",
+      "element.death_of_owner@p",
+      "event.suit_filed@d"
+     ],
+     "len": 3,
+     "support_all": 0.127,
+     "n_train_with_pattern": 199,
+     "confidence_win": 0.3819,
+     "lift": 0.964,
+     "conviction": 0.977,
+     "chi2": 0.132,
+     "p": 0.716277392392394,
+     "discriminative_bh": false,
+     "stability": 0.95,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "partyrole.heir@p"
+     ],
+     "len": 1,
+     "support_all": 0.1092,
+     "n_train_with_pattern": 196,
+     "confidence_win": 0.3827,
+     "lift": 0.966,
+     "conviction": 0.978,
+     "chi2": 0.113,
+     "p": 0.7364554220998125,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "element.death_of_owner@p",
+      "event.suit_filed@d"
+     ],
+     "len": 2,
+     "support_all": 0.1279,
+     "n_train_with_pattern": 201,
+     "confidence_win": 0.3831,
+     "lift": 0.967,
+     "conviction": 0.979,
+     "chi2": 0.109,
+     "p": 0.7413813655713648,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.suit_filed@p"
+     ],
+     "len": 1,
+     "support_all": 0.4588,
+     "n_train_with_pattern": 733,
+     "confidence_win": 0.4093,
+     "lift": 1.033,
+     "conviction": 1.022,
+     "chi2": 0.812,
+     "p": 0.36741347490439924,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "evidence.sale_deed@p"
+     ],
+     "len": 1,
+     "support_all": 0.1198,
+     "n_train_with_pattern": 174,
+     "confidence_win": 0.408,
+     "lift": 1.03,
+     "conviction": 1.02,
+     "chi2": 0.064,
+     "p": 0.8000691646720055,
+     "discriminative_bh": false,
+     "stability": 0.5,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "tenure.tenancy@p"
+     ],
+     "len": 1,
+     "support_all": 0.1088,
+     "n_train_with_pattern": 206,
+     "confidence_win": 0.4078,
+     "lift": 1.029,
+     "conviction": 1.019,
+     "chi2": 0.08,
+     "p": 0.7766370874730342,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "rightclaimed.possession@d",
+      "rightclaimed.possession@p"
+     ],
+     "len": 2,
+     "support_all": 0.1555,
+     "n_train_with_pattern": 265,
+     "confidence_win": 0.4075,
+     "lift": 1.028,
+     "conviction": 1.019,
+     "chi2": 0.116,
+     "p": 0.7339646208899664,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "element.death_of_owner@d",
+      "event.suit_filed@p"
+     ],
+     "len": 2,
+     "support_all": 0.1308,
+     "n_train_with_pattern": 205,
+     "confidence_win": 0.3854,
+     "lift": 0.972,
+     "conviction": 0.982,
+     "chi2": 0.07,
+     "p": 0.791716247268866,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.suit_filed@d"
+     ],
+     "len": 1,
+     "support_all": 0.4511,
+     "n_train_with_pattern": 716,
+     "confidence_win": 0.4064,
+     "lift": 1.026,
+     "conviction": 1.017,
+     "chi2": 0.459,
+     "p": 0.49799984423369165,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "propertytype.land@p"
+     ],
+     "len": 1,
+     "support_all": 0.2005,
+     "n_train_with_pattern": 305,
+     "confidence_win": 0.3869,
+     "lift": 0.976,
+     "conviction": 0.985,
+     "chi2": 0.093,
+     "p": 0.7603689410784329,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.suit_filed@d",
+      "event.suit_filed@p"
+     ],
+     "len": 2,
+     "support_all": 0.446,
+     "n_train_with_pattern": 710,
+     "confidence_win": 0.4056,
+     "lift": 1.024,
+     "conviction": 1.016,
+     "chi2": 0.38,
+     "p": 0.5378309620642909,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "element.death_of_owner@d",
+      "element.death_of_owner@p",
+      "event.suit_filed@p"
+     ],
+     "len": 3,
+     "support_all": 0.1291,
+     "n_train_with_pattern": 204,
+     "confidence_win": 0.3873,
+     "lift": 0.977,
+     "conviction": 0.985,
+     "chi2": 0.042,
+     "p": 0.8381870648780936,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "rightclaimed.title@d"
+     ],
+     "len": 1,
+     "support_all": 0.1198,
+     "n_train_with_pattern": 178,
+     "confidence_win": 0.4045,
+     "lift": 1.021,
+     "conviction": 1.014,
+     "chi2": 0.024,
+     "p": 0.8760197001701863,
+     "discriminative_bh": false,
+     "stability": 0.75,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.suit_filed@p",
+      "rightclaimed.possession@p"
+     ],
+     "len": 2,
+     "support_all": 0.1058,
+     "n_train_with_pattern": 170,
+     "confidence_win": 0.3882,
+     "lift": 0.98,
+     "conviction": 0.987,
+     "chi2": 0.02,
+     "p": 0.8862439163204716,
+     "discriminative_bh": false,
+     "stability": 0.4,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "element.death_of_owner@p",
+      "event.suit_filed@p"
+     ],
+     "len": 2,
+     "support_all": 0.13,
+     "n_train_with_pattern": 206,
+     "confidence_win": 0.3883,
+     "lift": 0.98,
+     "conviction": 0.987,
+     "chi2": 0.03,
+     "p": 0.8635548607715398,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "element.death_of_owner@d",
+      "element.death_of_owner@p"
+     ],
+     "len": 2,
+     "support_all": 0.2366,
+     "n_train_with_pattern": 406,
+     "confidence_win": 0.4039,
+     "lift": 1.019,
+     "conviction": 1.013,
+     "chi2": 0.092,
+     "p": 0.7614416291907485,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "element.death_of_owner@d"
+     ],
+     "len": 1,
+     "support_all": 0.2392,
+     "n_train_with_pattern": 409,
+     "confidence_win": 0.4034,
+     "lift": 1.018,
+     "conviction": 1.012,
+     "chi2": 0.079,
+     "p": 0.7787497922832772,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "tenure.tenancy@d"
+     ],
+     "len": 1,
+     "support_all": 0.1062,
+     "n_train_with_pattern": 201,
+     "confidence_win": 0.403,
+     "lift": 1.017,
+     "conviction": 1.011,
+     "chi2": 0.017,
+     "p": 0.8962499914957356,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "partyrole.heir@d"
+     ],
+     "len": 1,
+     "support_all": 0.1079,
+     "n_train_with_pattern": 197,
+     "confidence_win": 0.3909,
+     "lift": 0.986,
+     "conviction": 0.991,
+     "chi2": 0.008,
+     "p": 0.9302619154682472,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "element.death_of_owner@p"
+     ],
+     "len": 1,
+     "support_all": 0.24,
+     "n_train_with_pattern": 411,
+     "confidence_win": 0.4015,
+     "lift": 1.013,
+     "conviction": 1.009,
+     "chi2": 0.036,
+     "p": 0.850227667146971,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "partyrole.heir@d",
+      "partyrole.heir@p"
+     ],
+     "len": 2,
+     "support_all": 0.1049,
+     "n_train_with_pattern": 191,
+     "confidence_win": 0.3927,
+     "lift": 0.991,
+     "conviction": 0.994,
+     "chi2": 0.001,
+     "p": 0.9765087634564711,
+     "discriminative_bh": false,
+     "stability": 0.9,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.suit_filed@d",
+      "rightclaimed.possession@p"
+     ],
+     "len": 2,
+     "support_all": 0.1041,
+     "n_train_with_pattern": 168,
+     "confidence_win": 0.3929,
+     "lift": 0.991,
+     "conviction": 0.994,
+     "chi2": 0.0,
+     "p": 0.9902706454002246,
+     "discriminative_bh": false,
+     "stability": 0.3,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "rightclaimed.possession@p"
+     ],
+     "len": 1,
+     "support_all": 0.2039,
+     "n_train_with_pattern": 351,
+     "confidence_win": 0.3932,
+     "lift": 0.992,
+     "conviction": 0.995,
+     "chi2": 0.005,
+     "p": 0.9423626239703926,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "propertytype.land@d",
+      "propertytype.land@p"
+     ],
+     "len": 2,
+     "support_all": 0.1907,
+     "n_train_with_pattern": 292,
+     "confidence_win": 0.3938,
+     "lift": 0.994,
+     "conviction": 0.996,
+     "chi2": 0.001,
+     "p": 0.97789599569003,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "propertytype.land@d"
+     ],
+     "len": 1,
+     "support_all": 0.1967,
+     "n_train_with_pattern": 296,
+     "confidence_win": 0.3986,
+     "lift": 1.006,
+     "conviction": 1.004,
+     "chi2": 0.001,
+     "p": 0.9787435369047252,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.suit_filed@d",
+      "event.suit_filed@p",
+      "rightclaimed.possession@p"
+     ],
+     "len": 3,
+     "support_all": 0.1032,
+     "n_train_with_pattern": 167,
+     "confidence_win": 0.3952,
+     "lift": 0.997,
+     "conviction": 0.998,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.3,
+     "stable": false
+    }
+   ]
+  },
+  "StateAction": {
+   "family": "StateAction",
+   "view": "combined",
+   "n_cases": 1148,
+   "n_train_cases": 865,
+   "min_support": 0.05,
+   "support_search": [
+    [
+     0.3,
+     0
+    ],
+    [
+     0.2,
+     15
+    ],
+    [
+     0.15,
+     17
+    ],
+    [
+     0.1,
+     41
+    ],
+    [
+     0.05,
+     238
+    ]
+   ],
+   "n_itemsets": 238,
+   "n_closed": 196,
+   "n_rules": 196,
+   "train_base_win_rate": 0.3723,
+   "n_discriminative_bh": 0,
+   "n_stable": 84,
+   "n_stable_and_discriminative": 0,
+   "rules": [
+    {
+     "pattern": [
+      "statute.constitution_of_india@d"
+     ],
+     "len": 1,
+     "support_all": 0.0592,
+     "n_train_with_pattern": 58,
+     "confidence_win": 0.2069,
+     "lift": 0.556,
+     "conviction": 0.792,
+     "chi2": 6.536,
+     "p": 0.010573190649925037,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "statute.constitution_of_india@d",
+      "statute.constitution_of_india@p"
+     ],
+     "len": 2,
+     "support_all": 0.0575,
+     "n_train_with_pattern": 56,
+     "confidence_win": 0.2143,
+     "lift": 0.576,
+     "conviction": 0.799,
+     "chi2": 5.692,
+     "p": 0.01704583099359847,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.notice_issued@p",
+      "propertytype.land@p"
+     ],
+     "len": 2,
+     "support_all": 0.0557,
+     "n_train_with_pattern": 32,
+     "confidence_win": 0.2188,
+     "lift": 0.588,
+     "conviction": 0.804,
+     "chi2": 2.703,
+     "p": 0.10014010664873241,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_issued@d",
+      "propertytype.land@p"
+     ],
+     "len": 2,
+     "support_all": 0.0557,
+     "n_train_with_pattern": 31,
+     "confidence_win": 0.2258,
+     "lift": 0.607,
+     "conviction": 0.811,
+     "chi2": 2.337,
+     "p": 0.12635707010034386,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_issued@d",
+      "event.notice_issued@p",
+      "propertytype.land@p"
+     ],
+     "len": 3,
+     "support_all": 0.054,
+     "n_train_with_pattern": 31,
+     "confidence_win": 0.2258,
+     "lift": 0.607,
+     "conviction": 0.811,
+     "chi2": 2.337,
+     "p": 0.12635707010034386,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "evidence.prior_adjudications@d",
+      "evidence.prior_adjudications@p"
+     ],
+     "len": 2,
+     "support_all": 0.0531,
+     "n_train_with_pattern": 35,
+     "confidence_win": 0.5143,
+     "lift": 1.382,
+     "conviction": 1.292,
+     "chi2": 2.547,
+     "p": 0.11048504371052134,
+     "discriminative_bh": false,
+     "stability": 0.1,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "evidence.prior_adjudications@d"
+     ],
+     "len": 1,
+     "support_all": 0.0592,
+     "n_train_with_pattern": 41,
+     "confidence_win": 0.5122,
+     "lift": 1.376,
+     "conviction": 1.287,
+     "chi2": 3.006,
+     "p": 0.08297355573147447,
+     "discriminative_bh": false,
+     "stability": 0.6,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.interim_order_granted@p"
+     ],
+     "len": 1,
+     "support_all": 0.074,
+     "n_train_with_pattern": 43,
+     "confidence_win": 0.5116,
+     "lift": 1.374,
+     "conviction": 1.285,
+     "chi2": 3.16,
+     "p": 0.07546502727662605,
+     "discriminative_bh": false,
+     "stability": 0.4,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_issued@d",
+      "propertytype.land@d",
+      "propertytype.land@p"
+     ],
+     "len": 3,
+     "support_all": 0.0531,
+     "n_train_with_pattern": 30,
+     "confidence_win": 0.2333,
+     "lift": 0.627,
+     "conviction": 0.819,
+     "chi2": 1.988,
+     "p": 0.1585791277483236,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_issued@p",
+      "propertytype.land@d",
+      "propertytype.land@p"
+     ],
+     "len": 3,
+     "support_all": 0.0523,
+     "n_train_with_pattern": 30,
+     "confidence_win": 0.2333,
+     "lift": 0.627,
+     "conviction": 0.819,
+     "chi2": 1.988,
+     "p": 0.1585791277483236,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_issued@d",
+      "event.notice_issued@p",
+      "propertytype.land@d",
+      "propertytype.land@p"
+     ],
+     "len": 4,
+     "support_all": 0.0514,
+     "n_train_with_pattern": 30,
+     "confidence_win": 0.2333,
+     "lift": 0.627,
+     "conviction": 0.819,
+     "chi2": 1.988,
+     "p": 0.1585791277483236,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "element.obligation@d",
+      "element.obligation@p"
+     ],
+     "len": 2,
+     "support_all": 0.0514,
+     "n_train_with_pattern": 45,
+     "confidence_win": 0.2444,
+     "lift": 0.657,
+     "conviction": 0.831,
+     "chi2": 2.766,
+     "p": 0.09625901280484402,
+     "discriminative_bh": false,
+     "stability": 0.55,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.interim_order_granted@d",
+      "event.interim_order_granted@p"
+     ],
+     "len": 2,
+     "support_all": 0.0732,
+     "n_train_with_pattern": 42,
+     "confidence_win": 0.5,
+     "lift": 1.343,
+     "conviction": 1.255,
+     "chi2": 2.535,
+     "p": 0.11135183599851865,
+     "discriminative_bh": false,
+     "stability": 0.2,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "element.obligation@p"
+     ],
+     "len": 1,
+     "support_all": 0.0575,
+     "n_train_with_pattern": 49,
+     "confidence_win": 0.2449,
+     "lift": 0.658,
+     "conviction": 0.831,
+     "chi2": 3.051,
+     "p": 0.08070212998730157,
+     "discriminative_bh": false,
+     "stability": 0.75,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_issued@d",
+      "propertytype.land@d"
+     ],
+     "len": 2,
+     "support_all": 0.0575,
+     "n_train_with_pattern": 32,
+     "confidence_win": 0.25,
+     "lift": 0.672,
+     "conviction": 0.837,
+     "chi2": 1.617,
+     "p": 0.20354131758996433,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_issued@p",
+      "propertytype.land@d"
+     ],
+     "len": 2,
+     "support_all": 0.0566,
+     "n_train_with_pattern": 32,
+     "confidence_win": 0.25,
+     "lift": 0.672,
+     "conviction": 0.837,
+     "chi2": 1.617,
+     "p": 0.20354131758996433,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_issued@p",
+      "propertytype.acquired_land@d"
+     ],
+     "len": 2,
+     "support_all": 0.0557,
+     "n_train_with_pattern": 32,
+     "confidence_win": 0.25,
+     "lift": 0.672,
+     "conviction": 0.837,
+     "chi2": 1.617,
+     "p": 0.20354131758996433,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_issued@d",
+      "event.notice_issued@p",
+      "propertytype.land@d"
+     ],
+     "len": 3,
+     "support_all": 0.0557,
+     "n_train_with_pattern": 32,
+     "confidence_win": 0.25,
+     "lift": 0.672,
+     "conviction": 0.837,
+     "chi2": 1.617,
+     "p": 0.20354131758996433,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_issued@p",
+      "propertytype.acquired_land@d",
+      "propertytype.acquired_land@p"
+     ],
+     "len": 3,
+     "support_all": 0.0531,
+     "n_train_with_pattern": 32,
+     "confidence_win": 0.25,
+     "lift": 0.672,
+     "conviction": 0.837,
+     "chi2": 1.617,
+     "p": 0.20354131758996433,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.interim_order_granted@d"
+     ],
+     "len": 1,
+     "support_all": 0.0749,
+     "n_train_with_pattern": 43,
+     "confidence_win": 0.4884,
+     "lift": 1.312,
+     "conviction": 1.227,
+     "chi2": 2.114,
+     "p": 0.14594228517002017,
+     "discriminative_bh": false,
+     "stability": 0.25,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "rightclaimed.cancellation@p"
+     ],
+     "len": 1,
+     "support_all": 0.0549,
+     "n_train_with_pattern": 41,
+     "confidence_win": 0.4878,
+     "lift": 1.31,
+     "conviction": 1.226,
+     "chi2": 1.968,
+     "p": 0.16071296989975065,
+     "discriminative_bh": false,
+     "stability": 0.3,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_issued@d",
+      "propertytype.acquired_land@d"
+     ],
+     "len": 2,
+     "support_all": 0.0557,
+     "n_train_with_pattern": 31,
+     "confidence_win": 0.2581,
+     "lift": 0.693,
+     "conviction": 0.846,
+     "chi2": 1.323,
+     "p": 0.2500439016184892,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_issued@d",
+      "event.notice_issued@p",
+      "propertytype.acquired_land@d"
+     ],
+     "len": 3,
+     "support_all": 0.054,
+     "n_train_with_pattern": 31,
+     "confidence_win": 0.2581,
+     "lift": 0.693,
+     "conviction": 0.846,
+     "chi2": 1.323,
+     "p": 0.2500439016184892,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_issued@d",
+      "propertytype.acquired_land@d",
+      "propertytype.acquired_land@p"
+     ],
+     "len": 3,
+     "support_all": 0.0531,
+     "n_train_with_pattern": 31,
+     "confidence_win": 0.2581,
+     "lift": 0.693,
+     "conviction": 0.846,
+     "chi2": 1.323,
+     "p": 0.2500439016184892,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_issued@d",
+      "event.notice_issued@p",
+      "propertytype.acquired_land@d",
+      "propertytype.acquired_land@p"
+     ],
+     "len": 4,
+     "support_all": 0.0514,
+     "n_train_with_pattern": 31,
+     "confidence_win": 0.2581,
+     "lift": 0.693,
+     "conviction": 0.846,
+     "chi2": 1.323,
+     "p": 0.2500439016184892,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "element.state_action@d",
+      "event.writ_filed@d"
+     ],
+     "len": 2,
+     "support_all": 0.0531,
+     "n_train_with_pattern": 29,
+     "confidence_win": 0.4828,
+     "lift": 1.297,
+     "conviction": 1.214,
+     "chi2": 1.117,
+     "p": 0.2905936432714788,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "element.state_action@d",
+      "event.writ_filed@d",
+      "event.writ_filed@p"
+     ],
+     "len": 3,
+     "support_all": 0.0523,
+     "n_train_with_pattern": 29,
+     "confidence_win": 0.4828,
+     "lift": 1.297,
+     "conviction": 1.214,
+     "chi2": 1.117,
+     "p": 0.2905936432714788,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "element.state_action@p",
+      "event.writ_filed@d"
+     ],
+     "len": 2,
+     "support_all": 0.0505,
+     "n_train_with_pattern": 27,
+     "confidence_win": 0.4815,
+     "lift": 1.293,
+     "conviction": 1.211,
+     "chi2": 0.981,
+     "p": 0.32187374388172313,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_issued@p",
+      "propertytype.acquired_land@p"
+     ],
+     "len": 2,
+     "support_all": 0.0566,
+     "n_train_with_pattern": 34,
+     "confidence_win": 0.2647,
+     "lift": 0.711,
+     "conviction": 0.854,
+     "chi2": 1.305,
+     "p": 0.25321760787183517,
+     "discriminative_bh": false,
+     "stability": 0.05,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "tenure.government_grant@p"
+     ],
+     "len": 1,
+     "support_all": 0.0514,
+     "n_train_with_pattern": 49,
+     "confidence_win": 0.2653,
+     "lift": 0.713,
+     "conviction": 0.854,
+     "chi2": 2.08,
+     "p": 0.14920062648476784,
+     "discriminative_bh": false,
+     "stability": 0.75,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.decree_passed@p"
+     ],
+     "len": 1,
+     "support_all": 0.0775,
+     "n_train_with_pattern": 64,
+     "confidence_win": 0.2656,
+     "lift": 0.714,
+     "conviction": 0.855,
+     "chi2": 2.888,
+     "p": 0.08923988808251897,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "rightclaimed.possession@p"
+     ],
+     "len": 1,
+     "support_all": 0.0976,
+     "n_train_with_pattern": 78,
+     "confidence_win": 0.2692,
+     "lift": 0.723,
+     "conviction": 0.859,
+     "chi2": 3.424,
+     "p": 0.06423899266023542,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "evidence.prior_adjudications@p"
+     ],
+     "len": 1,
+     "support_all": 0.0592,
+     "n_train_with_pattern": 40,
+     "confidence_win": 0.475,
+     "lift": 1.276,
+     "conviction": 1.196,
+     "chi2": 1.462,
+     "p": 0.22666350917955957,
+     "discriminative_bh": false,
+     "stability": 0.5,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.decree_passed@d",
+      "event.decree_passed@p"
+     ],
+     "len": 2,
+     "support_all": 0.0767,
+     "n_train_with_pattern": 63,
+     "confidence_win": 0.2698,
+     "lift": 0.725,
+     "conviction": 0.86,
+     "chi2": 2.595,
+     "p": 0.10717331844160749,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.notice_issued@d",
+      "propertytype.acquired_land@p"
+     ],
+     "len": 2,
+     "support_all": 0.0566,
+     "n_train_with_pattern": 33,
+     "confidence_win": 0.2727,
+     "lift": 0.733,
+     "conviction": 0.863,
+     "chi2": 1.045,
+     "p": 0.30660567638332803,
+     "discriminative_bh": false,
+     "stability": 0.05,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_issued@d",
+      "event.notice_issued@p",
+      "propertytype.acquired_land@p"
+     ],
+     "len": 3,
+     "support_all": 0.0549,
+     "n_train_with_pattern": 33,
+     "confidence_win": 0.2727,
+     "lift": 0.733,
+     "conviction": 0.863,
+     "chi2": 1.045,
+     "p": 0.30660567638332803,
+     "discriminative_bh": false,
+     "stability": 0.05,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "element.obligation@d"
+     ],
+     "len": 1,
+     "support_all": 0.0549,
+     "n_train_with_pattern": 47,
+     "confidence_win": 0.2766,
+     "lift": 0.743,
+     "conviction": 0.868,
+     "chi2": 1.537,
+     "p": 0.21500760657798498,
+     "discriminative_bh": false,
+     "stability": 0.65,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.decree_passed@d"
+     ],
+     "len": 1,
+     "support_all": 0.0793,
+     "n_train_with_pattern": 65,
+     "confidence_win": 0.2769,
+     "lift": 0.744,
+     "conviction": 0.868,
+     "chi2": 2.31,
+     "p": 0.12854477643492007,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "tenure.allotment@d"
+     ],
+     "len": 1,
+     "support_all": 0.0566,
+     "n_train_with_pattern": 45,
+     "confidence_win": 0.4667,
+     "lift": 1.254,
+     "conviction": 1.177,
+     "chi2": 1.41,
+     "p": 0.23512382098936138,
+     "discriminative_bh": false,
+     "stability": 0.5,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "tenure.allotment@p"
+     ],
+     "len": 1,
+     "support_all": 0.0566,
+     "n_train_with_pattern": 45,
+     "confidence_win": 0.4667,
+     "lift": 1.254,
+     "conviction": 1.177,
+     "chi2": 1.41,
+     "p": 0.23512382098936138,
+     "discriminative_bh": false,
+     "stability": 0.5,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "element.state_action@d",
+      "event.writ_filed@p"
+     ],
+     "len": 2,
+     "support_all": 0.0531,
+     "n_train_with_pattern": 30,
+     "confidence_win": 0.4667,
+     "lift": 1.254,
+     "conviction": 1.177,
+     "chi2": 0.804,
+     "p": 0.3699421544502208,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "propertytype.acquired_land@d",
+      "propertytype.land@d"
+     ],
+     "len": 2,
+     "support_all": 0.0505,
+     "n_train_with_pattern": 30,
+     "confidence_win": 0.4667,
+     "lift": 1.254,
+     "conviction": 1.177,
+     "chi2": 0.804,
+     "p": 0.3699421544502208,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "element.state_action@p",
+      "event.writ_filed@p"
+     ],
+     "len": 2,
+     "support_all": 0.0505,
+     "n_train_with_pattern": 28,
+     "confidence_win": 0.4643,
+     "lift": 1.247,
+     "conviction": 1.172,
+     "chi2": 0.681,
+     "p": 0.4091432239074789,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "rightclaimed.possession@d"
+     ],
+     "len": 1,
+     "support_all": 0.0793,
+     "n_train_with_pattern": 64,
+     "confidence_win": 0.2812,
+     "lift": 0.756,
+     "conviction": 0.873,
+     "chi2": 2.047,
+     "p": 0.15251416589166586,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "partyrole.state@p"
+     ],
+     "len": 1,
+     "support_all": 0.0584,
+     "n_train_with_pattern": 49,
+     "confidence_win": 0.2857,
+     "lift": 0.768,
+     "conviction": 0.879,
+     "chi2": 1.295,
+     "p": 0.2550808458261706,
+     "discriminative_bh": false,
+     "stability": 0.7,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "statute.land_revenue_code@p"
+     ],
+     "len": 1,
+     "support_all": 0.0941,
+     "n_train_with_pattern": 94,
+     "confidence_win": 0.2872,
+     "lift": 0.772,
+     "conviction": 0.881,
+     "chi2": 2.867,
+     "p": 0.09042531116597143,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.statutory_notification@d",
+      "event.statutory_notification@p"
+     ],
+     "len": 2,
+     "support_all": 0.0514,
+     "n_train_with_pattern": 45,
+     "confidence_win": 0.2889,
+     "lift": 0.776,
+     "conviction": 0.883,
+     "chi2": 1.061,
+     "p": 0.3030964818813378,
+     "discriminative_bh": false,
+     "stability": 0.6,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "tenure.allotment@d",
+      "tenure.allotment@p"
+     ],
+     "len": 2,
+     "support_all": 0.0549,
+     "n_train_with_pattern": 44,
+     "confidence_win": 0.4545,
+     "lift": 1.221,
+     "conviction": 1.151,
+     "chi2": 0.998,
+     "p": 0.3177945465681494,
+     "discriminative_bh": false,
+     "stability": 0.5,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "statute.land_revenue_code@d",
+      "statute.land_revenue_code@p"
+     ],
+     "len": 2,
+     "support_all": 0.0923,
+     "n_train_with_pattern": 93,
+     "confidence_win": 0.2903,
+     "lift": 0.78,
+     "conviction": 0.885,
+     "chi2": 2.613,
+     "p": 0.10596268212611039,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "partyrole.state@d",
+      "partyrole.state@p"
+     ],
+     "len": 2,
+     "support_all": 0.0557,
+     "n_train_with_pattern": 48,
+     "confidence_win": 0.2917,
+     "lift": 0.784,
+     "conviction": 0.886,
+     "chi2": 1.071,
+     "p": 0.30075435563144176,
+     "discriminative_bh": false,
+     "stability": 0.7,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_issued@d",
+      "event.notice_served@d"
+     ],
+     "len": 2,
+     "support_all": 0.0523,
+     "n_train_with_pattern": 31,
+     "confidence_win": 0.4516,
+     "lift": 1.213,
+     "conviction": 1.145,
+     "chi2": 0.55,
+     "p": 0.4582837687027401,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "rightclaimed.cancellation@d"
+     ],
+     "len": 1,
+     "support_all": 0.0531,
+     "n_train_with_pattern": 40,
+     "confidence_win": 0.45,
+     "lift": 1.209,
+     "conviction": 1.141,
+     "chi2": 0.764,
+     "p": 0.3820748977388228,
+     "discriminative_bh": false,
+     "stability": 0.3,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "statute.land_revenue_code@d"
+     ],
+     "len": 1,
+     "support_all": 0.0941,
+     "n_train_with_pattern": 95,
+     "confidence_win": 0.2947,
+     "lift": 0.792,
+     "conviction": 0.89,
+     "chi2": 2.384,
+     "p": 0.12256304312937565,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "rightclaimed.possession@d",
+      "rightclaimed.possession@p"
+     ],
+     "len": 2,
+     "support_all": 0.0723,
+     "n_train_with_pattern": 61,
+     "confidence_win": 0.2951,
+     "lift": 0.793,
+     "conviction": 0.891,
+     "chi2": 1.336,
+     "p": 0.24771256712871112,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.notice_issued@d",
+      "event.writ_filed@d",
+      "event.writ_filed@p"
+     ],
+     "len": 3,
+     "support_all": 0.0897,
+     "n_train_with_pattern": 49,
+     "confidence_win": 0.449,
+     "lift": 1.206,
+     "conviction": 1.139,
+     "chi2": 0.984,
+     "p": 0.32131172363247634,
+     "discriminative_bh": false,
+     "stability": 0.75,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_issued@d",
+      "event.notice_issued@p",
+      "event.writ_filed@d",
+      "event.writ_filed@p"
+     ],
+     "len": 4,
+     "support_all": 0.0871,
+     "n_train_with_pattern": 49,
+     "confidence_win": 0.449,
+     "lift": 1.206,
+     "conviction": 1.139,
+     "chi2": 0.984,
+     "p": 0.32131172363247634,
+     "discriminative_bh": false,
+     "stability": 0.75,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "evidence.sale_deed@d",
+      "evidence.sale_deed@p"
+     ],
+     "len": 2,
+     "support_all": 0.0592,
+     "n_train_with_pattern": 49,
+     "confidence_win": 0.449,
+     "lift": 1.206,
+     "conviction": 1.139,
+     "chi2": 0.984,
+     "p": 0.32131172363247634,
+     "discriminative_bh": false,
+     "stability": 0.7,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "element.state_action@p",
+      "event.notice_issued@d"
+     ],
+     "len": 2,
+     "support_all": 0.0505,
+     "n_train_with_pattern": 29,
+     "confidence_win": 0.4483,
+     "lift": 1.204,
+     "conviction": 1.138,
+     "chi2": 0.444,
+     "p": 0.505363448503601,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d",
+      "event.appeal_decided@p",
+      "event.writ_filed@d",
+      "event.writ_filed@p"
+     ],
+     "len": 4,
+     "support_all": 0.0723,
+     "n_train_with_pattern": 45,
+     "confidence_win": 0.4444,
+     "lift": 1.194,
+     "conviction": 1.13,
+     "chi2": 0.758,
+     "p": 0.38400666753568186,
+     "discriminative_bh": false,
+     "stability": 0.65,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "evidence.valuation_report@d"
+     ],
+     "len": 1,
+     "support_all": 0.0688,
+     "n_train_with_pattern": 54,
+     "confidence_win": 0.4444,
+     "lift": 1.194,
+     "conviction": 1.13,
+     "chi2": 0.976,
+     "p": 0.32316444040171943,
+     "discriminative_bh": false,
+     "stability": 0.95,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "evidence.valuation_report@p"
+     ],
+     "len": 1,
+     "support_all": 0.0671,
+     "n_train_with_pattern": 52,
+     "confidence_win": 0.4423,
+     "lift": 1.188,
+     "conviction": 1.126,
+     "chi2": 0.865,
+     "p": 0.35239365023009167,
+     "discriminative_bh": false,
+     "stability": 0.95,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "evidence.sale_deed@p"
+     ],
+     "len": 1,
+     "support_all": 0.0627,
+     "n_train_with_pattern": 52,
+     "confidence_win": 0.4423,
+     "lift": 1.188,
+     "conviction": 1.126,
+     "chi2": 0.865,
+     "p": 0.35239365023009167,
+     "discriminative_bh": false,
+     "stability": 0.9,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "evidence.sale_deed@d"
+     ],
+     "len": 1,
+     "support_all": 0.0601,
+     "n_train_with_pattern": 50,
+     "confidence_win": 0.44,
+     "lift": 1.182,
+     "conviction": 1.121,
+     "chi2": 0.757,
+     "p": 0.3841880345937692,
+     "discriminative_bh": false,
+     "stability": 0.8,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "partyrole.state@d"
+     ],
+     "len": 1,
+     "support_all": 0.0592,
+     "n_train_with_pattern": 49,
+     "confidence_win": 0.3061,
+     "lift": 0.822,
+     "conviction": 0.905,
+     "chi2": 0.695,
+     "p": 0.40437729924644633,
+     "discriminative_bh": false,
+     "stability": 0.75,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "propertytype.acquired_land@p",
+      "propertytype.land@d"
+     ],
+     "len": 2,
+     "support_all": 0.0523,
+     "n_train_with_pattern": 32,
+     "confidence_win": 0.4375,
+     "lift": 1.175,
+     "conviction": 1.116,
+     "chi2": 0.35,
+     "p": 0.5540425469756516,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d",
+      "event.appeal_decided@p",
+      "event.writ_filed@p"
+     ],
+     "len": 3,
+     "support_all": 0.0732,
+     "n_train_with_pattern": 46,
+     "confidence_win": 0.4348,
+     "lift": 1.168,
+     "conviction": 1.111,
+     "chi2": 0.555,
+     "p": 0.45635411374675733,
+     "discriminative_bh": false,
+     "stability": 0.7,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.possession_taken@p"
+     ],
+     "len": 1,
+     "support_all": 0.1037,
+     "n_train_with_pattern": 76,
+     "confidence_win": 0.4342,
+     "lift": 1.166,
+     "conviction": 1.11,
+     "chi2": 1.093,
+     "p": 0.29571198114492264,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "propertytype.acquired_land@d",
+      "propertytype.land@p"
+     ],
+     "len": 2,
+     "support_all": 0.0514,
+     "n_train_with_pattern": 30,
+     "confidence_win": 0.4333,
+     "lift": 1.164,
+     "conviction": 1.108,
+     "chi2": 0.262,
+     "p": 0.6085294493107616,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "propertytype.acquired_land@d",
+      "propertytype.acquired_land@p",
+      "propertytype.land@p"
+     ],
+     "len": 3,
+     "support_all": 0.0505,
+     "n_train_with_pattern": 30,
+     "confidence_win": 0.4333,
+     "lift": 1.164,
+     "conviction": 1.108,
+     "chi2": 0.262,
+     "p": 0.6085294493107616,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d",
+      "event.suit_filed@d"
+     ],
+     "len": 2,
+     "support_all": 0.0505,
+     "n_train_with_pattern": 32,
+     "confidence_win": 0.3125,
+     "lift": 0.839,
+     "conviction": 0.913,
+     "chi2": 0.277,
+     "p": 0.5987279230453616,
+     "discriminative_bh": false,
+     "stability": 0.1,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_issued@d",
+      "event.writ_filed@p"
+     ],
+     "len": 2,
+     "support_all": 0.0915,
+     "n_train_with_pattern": 51,
+     "confidence_win": 0.4314,
+     "lift": 1.159,
+     "conviction": 1.104,
+     "chi2": 0.564,
+     "p": 0.45265050859556205,
+     "discriminative_bh": false,
+     "stability": 0.85,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.notice_issued@d",
+      "event.notice_issued@p",
+      "event.writ_filed@p"
+     ],
+     "len": 3,
+     "support_all": 0.0889,
+     "n_train_with_pattern": 51,
+     "confidence_win": 0.4314,
+     "lift": 1.159,
+     "conviction": 1.104,
+     "chi2": 0.564,
+     "p": 0.45265050859556205,
+     "discriminative_bh": false,
+     "stability": 0.85,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "evidence.valuation_report@d",
+      "evidence.valuation_report@p"
+     ],
+     "len": 2,
+     "support_all": 0.0653,
+     "n_train_with_pattern": 51,
+     "confidence_win": 0.4314,
+     "lift": 1.159,
+     "conviction": 1.104,
+     "chi2": 0.564,
+     "p": 0.45265050859556205,
+     "discriminative_bh": false,
+     "stability": 0.9,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "evidence.orders@d",
+      "evidence.orders@p"
+     ],
+     "len": 2,
+     "support_all": 0.0566,
+     "n_train_with_pattern": 38,
+     "confidence_win": 0.3158,
+     "lift": 0.848,
+     "conviction": 0.917,
+     "chi2": 0.319,
+     "p": 0.5722111929241669,
+     "discriminative_bh": false,
+     "stability": 0.05,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "evidence.tribunal_proceedings@d"
+     ],
+     "len": 1,
+     "support_all": 0.0523,
+     "n_train_with_pattern": 38,
+     "confidence_win": 0.3158,
+     "lift": 0.848,
+     "conviction": 0.917,
+     "chi2": 0.319,
+     "p": 0.5722111929241669,
+     "discriminative_bh": false,
+     "stability": 0.25,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "evidence.orders@p"
+     ],
+     "len": 1,
+     "support_all": 0.0592,
+     "n_train_with_pattern": 41,
+     "confidence_win": 0.3171,
+     "lift": 0.852,
+     "conviction": 0.919,
+     "chi2": 0.34,
+     "p": 0.5596370108651936,
+     "discriminative_bh": false,
+     "stability": 0.1,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "landuse.acquisition_zone@d"
+     ],
+     "len": 1,
+     "support_all": 0.0557,
+     "n_train_with_pattern": 41,
+     "confidence_win": 0.3171,
+     "lift": 0.852,
+     "conviction": 0.919,
+     "chi2": 0.34,
+     "p": 0.5596370108651936,
+     "discriminative_bh": false,
+     "stability": 0.25,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "element.death_of_owner@p"
+     ],
+     "len": 1,
+     "support_all": 0.0679,
+     "n_train_with_pattern": 66,
+     "confidence_win": 0.4242,
+     "lift": 1.14,
+     "conviction": 1.09,
+     "chi2": 0.603,
+     "p": 0.43739366776354593,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.notice_issued@p",
+      "event.writ_filed@d",
+      "event.writ_filed@p"
+     ],
+     "len": 3,
+     "support_all": 0.0897,
+     "n_train_with_pattern": 52,
+     "confidence_win": 0.4231,
+     "lift": 1.137,
+     "conviction": 1.088,
+     "chi2": 0.402,
+     "p": 0.5260459606098484,
+     "discriminative_bh": false,
+     "stability": 0.85,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@p",
+      "event.notice_issued@d"
+     ],
+     "len": 2,
+     "support_all": 0.0575,
+     "n_train_with_pattern": 37,
+     "confidence_win": 0.3243,
+     "lift": 0.871,
+     "conviction": 0.929,
+     "chi2": 0.196,
+     "p": 0.6580276096221962,
+     "discriminative_bh": false,
+     "stability": 0.1,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@p",
+      "event.notice_issued@p"
+     ],
+     "len": 2,
+     "support_all": 0.0566,
+     "n_train_with_pattern": 37,
+     "confidence_win": 0.3243,
+     "lift": 0.871,
+     "conviction": 0.929,
+     "chi2": 0.196,
+     "p": 0.6580276096221962,
+     "discriminative_bh": false,
+     "stability": 0.1,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@d",
+      "event.appeal_filed@p",
+      "event.notice_issued@d"
+     ],
+     "len": 3,
+     "support_all": 0.0566,
+     "n_train_with_pattern": 37,
+     "confidence_win": 0.3243,
+     "lift": 0.871,
+     "conviction": 0.929,
+     "chi2": 0.196,
+     "p": 0.6580276096221962,
+     "discriminative_bh": false,
+     "stability": 0.1,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@p",
+      "event.notice_issued@d",
+      "event.notice_issued@p"
+     ],
+     "len": 3,
+     "support_all": 0.0557,
+     "n_train_with_pattern": 37,
+     "confidence_win": 0.3243,
+     "lift": 0.871,
+     "conviction": 0.929,
+     "chi2": 0.196,
+     "p": 0.6580276096221962,
+     "discriminative_bh": false,
+     "stability": 0.1,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@d",
+      "event.appeal_filed@p",
+      "event.notice_issued@p"
+     ],
+     "len": 3,
+     "support_all": 0.0557,
+     "n_train_with_pattern": 37,
+     "confidence_win": 0.3243,
+     "lift": 0.871,
+     "conviction": 0.929,
+     "chi2": 0.196,
+     "p": 0.6580276096221962,
+     "discriminative_bh": false,
+     "stability": 0.1,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@d",
+      "event.appeal_filed@p",
+      "event.notice_issued@d",
+      "event.notice_issued@p"
+     ],
+     "len": 4,
+     "support_all": 0.0549,
+     "n_train_with_pattern": 37,
+     "confidence_win": 0.3243,
+     "lift": 0.871,
+     "conviction": 0.929,
+     "chi2": 0.196,
+     "p": 0.6580276096221962,
+     "discriminative_bh": false,
+     "stability": 0.1,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "landuse.acquisition_zone@p"
+     ],
+     "len": 1,
+     "support_all": 0.0557,
+     "n_train_with_pattern": 40,
+     "confidence_win": 0.325,
+     "lift": 0.873,
+     "conviction": 0.93,
+     "chi2": 0.217,
+     "p": 0.6415054146136188,
+     "discriminative_bh": false,
+     "stability": 0.15,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.writ_filed@p",
+      "propertytype.land@d"
+     ],
+     "len": 2,
+     "support_all": 0.0575,
+     "n_train_with_pattern": 31,
+     "confidence_win": 0.4194,
+     "lift": 1.127,
+     "conviction": 1.081,
+     "chi2": 0.132,
+     "p": 0.7163866855542342,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "propertytype.acquired_land@p",
+      "propertytype.land@d",
+      "propertytype.land@p"
+     ],
+     "len": 3,
+     "support_all": 0.0505,
+     "n_train_with_pattern": 31,
+     "confidence_win": 0.4194,
+     "lift": 1.127,
+     "conviction": 1.081,
+     "chi2": 0.132,
+     "p": 0.7163866855542342,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.possession_taken@d",
+      "event.possession_taken@p"
+     ],
+     "len": 2,
+     "support_all": 0.0993,
+     "n_train_with_pattern": 74,
+     "confidence_win": 0.4189,
+     "lift": 1.125,
+     "conviction": 1.08,
+     "chi2": 0.552,
+     "p": 0.45769586289230313,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "element.public_purpose@d"
+     ],
+     "len": 1,
+     "support_all": 0.0749,
+     "n_train_with_pattern": 61,
+     "confidence_win": 0.3279,
+     "lift": 0.881,
+     "conviction": 0.934,
+     "chi2": 0.368,
+     "p": 0.5442049214892608,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.writ_filed@d"
+     ],
+     "len": 1,
+     "support_all": 0.2552,
+     "n_train_with_pattern": 183,
+     "confidence_win": 0.4153,
+     "lift": 1.116,
+     "conviction": 1.074,
+     "chi2": 1.614,
+     "p": 0.20389557003883407,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.possession_taken@d"
+     ],
+     "len": 1,
+     "support_all": 0.1054,
+     "n_train_with_pattern": 75,
+     "confidence_win": 0.4133,
+     "lift": 1.11,
+     "conviction": 1.07,
+     "chi2": 0.416,
+     "p": 0.5188619493611799,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "element.death_of_owner@d",
+      "element.death_of_owner@p"
+     ],
+     "len": 2,
+     "support_all": 0.0653,
+     "n_train_with_pattern": 63,
+     "confidence_win": 0.4127,
+     "lift": 1.109,
+     "conviction": 1.069,
+     "chi2": 0.307,
+     "p": 0.5793569371641356,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.writ_filed@d",
+      "event.writ_filed@p"
+     ],
+     "len": 2,
+     "support_all": 0.2526,
+     "n_train_with_pattern": 182,
+     "confidence_win": 0.4121,
+     "lift": 1.107,
+     "conviction": 1.068,
+     "chi2": 1.357,
+     "p": 0.24411724674985036,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "landuse.public_purpose@d",
+      "landuse.public_purpose@p"
+     ],
+     "len": 2,
+     "support_all": 0.0784,
+     "n_train_with_pattern": 57,
+     "confidence_win": 0.3333,
+     "lift": 0.895,
+     "conviction": 0.942,
+     "chi2": 0.237,
+     "p": 0.6261207954902479,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "element.statutory_notification@d",
+      "element.statutory_notification@p",
+      "event.notice_issued@p"
+     ],
+     "len": 3,
+     "support_all": 0.0566,
+     "n_train_with_pattern": 39,
+     "confidence_win": 0.3333,
+     "lift": 0.895,
+     "conviction": 0.942,
+     "chi2": 0.119,
+     "p": 0.7300536731739047,
+     "discriminative_bh": false,
+     "stability": 0.2,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "element.statutory_notification@d",
+      "element.statutory_notification@p",
+      "event.notice_issued@d",
+      "event.notice_issued@p"
+     ],
+     "len": 4,
+     "support_all": 0.0557,
+     "n_train_with_pattern": 39,
+     "confidence_win": 0.3333,
+     "lift": 0.895,
+     "conviction": 0.942,
+     "chi2": 0.119,
+     "p": 0.7300536731739047,
+     "discriminative_bh": false,
+     "stability": 0.2,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "landuse.acquisition_zone@d",
+      "landuse.acquisition_zone@p"
+     ],
+     "len": 2,
+     "support_all": 0.0531,
+     "n_train_with_pattern": 39,
+     "confidence_win": 0.3333,
+     "lift": 0.895,
+     "conviction": 0.942,
+     "chi2": 0.119,
+     "p": 0.7300536731739047,
+     "discriminative_bh": false,
+     "stability": 0.1,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.writ_filed@p"
+     ],
+     "len": 1,
+     "support_all": 0.2552,
+     "n_train_with_pattern": 185,
+     "confidence_win": 0.4108,
+     "lift": 1.104,
+     "conviction": 1.065,
+     "chi2": 1.295,
+     "p": 0.2552076688237392,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "element.illegality@p"
+     ],
+     "len": 1,
+     "support_all": 0.0505,
+     "n_train_with_pattern": 39,
+     "confidence_win": 0.4103,
+     "lift": 1.102,
+     "conviction": 1.064,
+     "chi2": 0.111,
+     "p": 0.7392054504947698,
+     "discriminative_bh": false,
+     "stability": 0.25,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_issued@p"
+     ],
+     "len": 1,
+     "support_all": 0.2291,
+     "n_train_with_pattern": 161,
+     "confidence_win": 0.3354,
+     "lift": 0.901,
+     "conviction": 0.945,
+     "chi2": 0.964,
+     "p": 0.32618773699081677,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.notice_issued@p",
+      "event.writ_filed@p"
+     ],
+     "len": 2,
+     "support_all": 0.0915,
+     "n_train_with_pattern": 54,
+     "confidence_win": 0.4074,
+     "lift": 1.094,
+     "conviction": 1.059,
+     "chi2": 0.165,
+     "p": 0.6843627295245469,
+     "discriminative_bh": false,
+     "stability": 0.85,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@d"
+     ],
+     "len": 1,
+     "support_all": 0.2213,
+     "n_train_with_pattern": 182,
+     "confidence_win": 0.4066,
+     "lift": 1.092,
+     "conviction": 1.058,
+     "chi2": 0.984,
+     "p": 0.3211032519322248,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "element.death_of_owner@d"
+     ],
+     "len": 1,
+     "support_all": 0.0671,
+     "n_train_with_pattern": 64,
+     "confidence_win": 0.4062,
+     "lift": 1.091,
+     "conviction": 1.057,
+     "chi2": 0.203,
+     "p": 0.652501441686917,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "propertytype.acquired_land@p",
+      "propertytype.land@p"
+     ],
+     "len": 2,
+     "support_all": 0.0531,
+     "n_train_with_pattern": 32,
+     "confidence_win": 0.4062,
+     "lift": 1.091,
+     "conviction": 1.057,
+     "chi2": 0.048,
+     "p": 0.8265991494661817,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "landuse.public_purpose@d"
+     ],
+     "len": 1,
+     "support_all": 0.0845,
+     "n_train_with_pattern": 59,
+     "confidence_win": 0.339,
+     "lift": 0.911,
+     "conviction": 0.95,
+     "chi2": 0.167,
+     "p": 0.6831435280854223,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "statute.land_acquisition_law@d"
+     ],
+     "len": 1,
+     "support_all": 0.142,
+     "n_train_with_pattern": 111,
+     "confidence_win": 0.4054,
+     "lift": 1.089,
+     "conviction": 1.056,
+     "chi2": 0.447,
+     "p": 0.5036737358483979,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d"
+     ],
+     "len": 1,
+     "support_all": 0.2099,
+     "n_train_with_pattern": 159,
+     "confidence_win": 0.3396,
+     "lift": 0.912,
+     "conviction": 0.951,
+     "chi2": 0.725,
+     "p": 0.39455802333980144,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d",
+      "event.appeal_decided@p"
+     ],
+     "len": 2,
+     "support_all": 0.2082,
+     "n_train_with_pattern": 159,
+     "confidence_win": 0.3396,
+     "lift": 0.912,
+     "conviction": 0.951,
+     "chi2": 0.725,
+     "p": 0.39455802333980144,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "evidence.orders@d"
+     ],
+     "len": 1,
+     "support_all": 0.0592,
+     "n_train_with_pattern": 41,
+     "confidence_win": 0.3415,
+     "lift": 0.917,
+     "conviction": 0.953,
+     "chi2": 0.064,
+     "p": 0.8007543043949832,
+     "discriminative_bh": false,
+     "stability": 0.1,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_issued@p",
+      "rightclaimed.compensation@d"
+     ],
+     "len": 2,
+     "support_all": 0.0514,
+     "n_train_with_pattern": 38,
+     "confidence_win": 0.3421,
+     "lift": 0.919,
+     "conviction": 0.954,
+     "chi2": 0.049,
+     "p": 0.8246296238099255,
+     "discriminative_bh": false,
+     "stability": 0.05,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_issued@d",
+      "rightclaimed.compensation@d"
+     ],
+     "len": 2,
+     "support_all": 0.0514,
+     "n_train_with_pattern": 38,
+     "confidence_win": 0.3421,
+     "lift": 0.919,
+     "conviction": 0.954,
+     "chi2": 0.049,
+     "p": 0.8246296238099255,
+     "discriminative_bh": false,
+     "stability": 0.05,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_issued@p",
+      "rightclaimed.compensation@p"
+     ],
+     "len": 2,
+     "support_all": 0.0505,
+     "n_train_with_pattern": 38,
+     "confidence_win": 0.3421,
+     "lift": 0.919,
+     "conviction": 0.954,
+     "chi2": 0.049,
+     "p": 0.8246296238099255,
+     "discriminative_bh": false,
+     "stability": 0.05,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_issued@d",
+      "rightclaimed.compensation@p"
+     ],
+     "len": 2,
+     "support_all": 0.0505,
+     "n_train_with_pattern": 38,
+     "confidence_win": 0.3421,
+     "lift": 0.919,
+     "conviction": 0.954,
+     "chi2": 0.049,
+     "p": 0.8246296238099255,
+     "discriminative_bh": false,
+     "stability": 0.05,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_issued@d",
+      "event.notice_issued@p",
+      "rightclaimed.compensation@d"
+     ],
+     "len": 3,
+     "support_all": 0.0505,
+     "n_train_with_pattern": 38,
+     "confidence_win": 0.3421,
+     "lift": 0.919,
+     "conviction": 0.954,
+     "chi2": 0.049,
+     "p": 0.8246296238099255,
+     "discriminative_bh": false,
+     "stability": 0.05,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "element.state_action@d",
+      "element.state_action@p"
+     ],
+     "len": 2,
+     "support_all": 0.1307,
+     "n_train_with_pattern": 92,
+     "confidence_win": 0.4022,
+     "lift": 1.08,
+     "conviction": 1.05,
+     "chi2": 0.264,
+     "p": 0.6073067379603678,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@p"
+     ],
+     "len": 1,
+     "support_all": 0.2239,
+     "n_train_with_pattern": 182,
+     "confidence_win": 0.4011,
+     "lift": 1.077,
+     "conviction": 1.048,
+     "chi2": 0.672,
+     "p": 0.4124274938097348,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@d",
+      "event.appeal_filed@p"
+     ],
+     "len": 2,
+     "support_all": 0.2169,
+     "n_train_with_pattern": 177,
+     "confidence_win": 0.4011,
+     "lift": 1.078,
+     "conviction": 1.048,
+     "chi2": 0.646,
+     "p": 0.4214473333492255,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.writ_filed@d",
+      "propertytype.land@p"
+     ],
+     "len": 2,
+     "support_all": 0.061,
+     "n_train_with_pattern": 32,
+     "confidence_win": 0.3438,
+     "lift": 0.923,
+     "conviction": 0.957,
+     "chi2": 0.024,
+     "p": 0.8779387926645005,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.writ_filed@d",
+      "event.writ_filed@p",
+      "propertytype.land@p"
+     ],
+     "len": 3,
+     "support_all": 0.0601,
+     "n_train_with_pattern": 32,
+     "confidence_win": 0.3438,
+     "lift": 0.923,
+     "conviction": 0.957,
+     "chi2": 0.024,
+     "p": 0.8779387926645005,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_issued@d",
+      "event.notice_issued@p"
+     ],
+     "len": 2,
+     "support_all": 0.2247,
+     "n_train_with_pattern": 157,
+     "confidence_win": 0.3439,
+     "lift": 0.924,
+     "conviction": 0.957,
+     "chi2": 0.518,
+     "p": 0.4717019486919535,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "element.state_action@p"
+     ],
+     "len": 1,
+     "support_all": 0.135,
+     "n_train_with_pattern": 95,
+     "confidence_win": 0.4,
+     "lift": 1.075,
+     "conviction": 1.046,
+     "chi2": 0.231,
+     "p": 0.6309001442001947,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "evidence.notices@d",
+      "evidence.notices@p"
+     ],
+     "len": 2,
+     "support_all": 0.0636,
+     "n_train_with_pattern": 40,
+     "confidence_win": 0.4,
+     "lift": 1.075,
+     "conviction": 1.046,
+     "chi2": 0.042,
+     "p": 0.838164155647389,
+     "discriminative_bh": false,
+     "stability": 0.25,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@d",
+      "event.writ_filed@d"
+     ],
+     "len": 2,
+     "support_all": 0.0636,
+     "n_train_with_pattern": 40,
+     "confidence_win": 0.4,
+     "lift": 1.075,
+     "conviction": 1.046,
+     "chi2": 0.042,
+     "p": 0.838164155647389,
+     "discriminative_bh": false,
+     "stability": 0.4,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.writ_filed@d",
+      "propertytype.land@d"
+     ],
+     "len": 2,
+     "support_all": 0.0575,
+     "n_train_with_pattern": 30,
+     "confidence_win": 0.4,
+     "lift": 1.075,
+     "conviction": 1.046,
+     "chi2": 0.016,
+     "p": 0.8983344163278588,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.writ_filed@d",
+      "event.writ_filed@p",
+      "propertytype.land@d"
+     ],
+     "len": 3,
+     "support_all": 0.0566,
+     "n_train_with_pattern": 30,
+     "confidence_win": 0.4,
+     "lift": 1.075,
+     "conviction": 1.046,
+     "chi2": 0.016,
+     "p": 0.8983344163278588,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.writ_filed@p",
+      "propertytype.land@d",
+      "propertytype.land@p"
+     ],
+     "len": 3,
+     "support_all": 0.0557,
+     "n_train_with_pattern": 30,
+     "confidence_win": 0.4,
+     "lift": 1.075,
+     "conviction": 1.046,
+     "chi2": 0.016,
+     "p": 0.8983344163278588,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "element.public_purpose@d",
+      "element.public_purpose@p"
+     ],
+     "len": 2,
+     "support_all": 0.0653,
+     "n_train_with_pattern": 55,
+     "confidence_win": 0.3455,
+     "lift": 0.928,
+     "conviction": 0.959,
+     "chi2": 0.079,
+     "p": 0.7788989360163749,
+     "discriminative_bh": false,
+     "stability": 0.85,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.authority_order_issued@p"
+     ],
+     "len": 1,
+     "support_all": 0.1289,
+     "n_train_with_pattern": 103,
+     "confidence_win": 0.3981,
+     "lift": 1.069,
+     "conviction": 1.043,
+     "chi2": 0.22,
+     "p": 0.6393480059571808,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "element.state_action@d"
+     ],
+     "len": 1,
+     "support_all": 0.1394,
+     "n_train_with_pattern": 98,
+     "confidence_win": 0.398,
+     "lift": 1.069,
+     "conviction": 1.043,
+     "chi2": 0.201,
+     "p": 0.6541084813928584,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "element.statutory_notification@d"
+     ],
+     "len": 1,
+     "support_all": 0.1481,
+     "n_train_with_pattern": 118,
+     "confidence_win": 0.3475,
+     "lift": 0.933,
+     "conviction": 0.962,
+     "chi2": 0.247,
+     "p": 0.6190829318608457,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "element.statutory_notification@d",
+      "element.statutory_notification@p"
+     ],
+     "len": 2,
+     "support_all": 0.1472,
+     "n_train_with_pattern": 118,
+     "confidence_win": 0.3475,
+     "lift": 0.933,
+     "conviction": 0.962,
+     "chi2": 0.247,
+     "p": 0.6190829318608457,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "element.payment_of_consideration_partial_or_full@p"
+     ],
+     "len": 1,
+     "support_all": 0.0828,
+     "n_train_with_pattern": 58,
+     "confidence_win": 0.3966,
+     "lift": 1.065,
+     "conviction": 1.04,
+     "chi2": 0.065,
+     "p": 0.7981836600625358,
+     "discriminative_bh": false,
+     "stability": 0.95,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.notice_issued@d"
+     ],
+     "len": 1,
+     "support_all": 0.2291,
+     "n_train_with_pattern": 158,
+     "confidence_win": 0.3481,
+     "lift": 0.935,
+     "conviction": 0.963,
+     "chi2": 0.364,
+     "p": 0.5460656391673658,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "rightclaimed.compensation@d",
+      "rightclaimed.compensation@p"
+     ],
+     "len": 2,
+     "support_all": 0.122,
+     "n_train_with_pattern": 96,
+     "confidence_win": 0.3958,
+     "lift": 1.063,
+     "conviction": 1.039,
+     "chi2": 0.156,
+     "p": 0.69291233130475,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@d",
+      "event.notice_issued@d"
+     ],
+     "len": 2,
+     "support_all": 0.0592,
+     "n_train_with_pattern": 40,
+     "confidence_win": 0.35,
+     "lift": 0.94,
+     "conviction": 0.966,
+     "chi2": 0.017,
+     "p": 0.8960313383134784,
+     "discriminative_bh": false,
+     "stability": 0.2,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@d",
+      "event.notice_issued@p"
+     ],
+     "len": 2,
+     "support_all": 0.0584,
+     "n_train_with_pattern": 40,
+     "confidence_win": 0.35,
+     "lift": 0.94,
+     "conviction": 0.966,
+     "chi2": 0.017,
+     "p": 0.8960313383134784,
+     "discriminative_bh": false,
+     "stability": 0.2,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "element.statutory_notification@p",
+      "event.notice_issued@p"
+     ],
+     "len": 2,
+     "support_all": 0.0575,
+     "n_train_with_pattern": 40,
+     "confidence_win": 0.35,
+     "lift": 0.94,
+     "conviction": 0.966,
+     "chi2": 0.017,
+     "p": 0.8960313383134784,
+     "discriminative_bh": false,
+     "stability": 0.2,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@d",
+      "event.notice_issued@d",
+      "event.notice_issued@p"
+     ],
+     "len": 3,
+     "support_all": 0.0575,
+     "n_train_with_pattern": 40,
+     "confidence_win": 0.35,
+     "lift": 0.94,
+     "conviction": 0.966,
+     "chi2": 0.017,
+     "p": 0.8960313383134784,
+     "discriminative_bh": false,
+     "stability": 0.2,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "element.statutory_notification@p",
+      "event.notice_issued@d",
+      "event.notice_issued@p"
+     ],
+     "len": 3,
+     "support_all": 0.0566,
+     "n_train_with_pattern": 40,
+     "confidence_win": 0.35,
+     "lift": 0.94,
+     "conviction": 0.966,
+     "chi2": 0.017,
+     "p": 0.8960313383134784,
+     "discriminative_bh": false,
+     "stability": 0.2,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.authority_order_issued@d"
+     ],
+     "len": 1,
+     "support_all": 0.1307,
+     "n_train_with_pattern": 104,
+     "confidence_win": 0.3942,
+     "lift": 1.059,
+     "conviction": 1.036,
+     "chi2": 0.149,
+     "p": 0.6993835543352412,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "rightclaimed.compensation@d"
+     ],
+     "len": 1,
+     "support_all": 0.1272,
+     "n_train_with_pattern": 99,
+     "confidence_win": 0.3939,
+     "lift": 1.058,
+     "conviction": 1.036,
+     "chi2": 0.132,
+     "p": 0.7159773462623665,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d",
+      "event.appeal_decided@p",
+      "propertytype.land@p"
+     ],
+     "len": 3,
+     "support_all": 0.0566,
+     "n_train_with_pattern": 37,
+     "confidence_win": 0.3514,
+     "lift": 0.944,
+     "conviction": 0.968,
+     "chi2": 0.009,
+     "p": 0.9242849863960845,
+     "discriminative_bh": false,
+     "stability": 0.15,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d",
+      "event.appeal_decided@p",
+      "propertytype.land@d"
+     ],
+     "len": 3,
+     "support_all": 0.0557,
+     "n_train_with_pattern": 37,
+     "confidence_win": 0.3514,
+     "lift": 0.944,
+     "conviction": 0.968,
+     "chi2": 0.009,
+     "p": 0.9242849863960845,
+     "discriminative_bh": false,
+     "stability": 0.1,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "evidence.notifications@d"
+     ],
+     "len": 1,
+     "support_all": 0.0906,
+     "n_train_with_pattern": 56,
+     "confidence_win": 0.3929,
+     "lift": 1.055,
+     "conviction": 1.034,
+     "chi2": 0.035,
+     "p": 0.8517608905200956,
+     "discriminative_bh": false,
+     "stability": 0.95,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "evidence.notifications@d",
+      "evidence.notifications@p"
+     ],
+     "len": 2,
+     "support_all": 0.0871,
+     "n_train_with_pattern": 56,
+     "confidence_win": 0.3929,
+     "lift": 1.055,
+     "conviction": 1.034,
+     "chi2": 0.035,
+     "p": 0.8517608905200956,
+     "discriminative_bh": false,
+     "stability": 0.95,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "rightclaimed.compensation@p"
+     ],
+     "len": 1,
+     "support_all": 0.1341,
+     "n_train_with_pattern": 107,
+     "confidence_win": 0.3925,
+     "lift": 1.054,
+     "conviction": 1.033,
+     "chi2": 0.127,
+     "p": 0.7214594122572444,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.authority_order_issued@d",
+      "event.authority_order_issued@p"
+     ],
+     "len": 2,
+     "support_all": 0.128,
+     "n_train_with_pattern": 102,
+     "confidence_win": 0.3922,
+     "lift": 1.053,
+     "conviction": 1.033,
+     "chi2": 0.111,
+     "p": 0.738614307014079,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "element.statutory_notification@p"
+     ],
+     "len": 1,
+     "support_all": 0.149,
+     "n_train_with_pattern": 119,
+     "confidence_win": 0.3529,
+     "lift": 0.948,
+     "conviction": 0.97,
+     "chi2": 0.135,
+     "p": 0.7134669058546395,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "evidence.notices@p"
+     ],
+     "len": 1,
+     "support_all": 0.0662,
+     "n_train_with_pattern": 41,
+     "confidence_win": 0.3902,
+     "lift": 1.048,
+     "conviction": 1.03,
+     "chi2": 0.006,
+     "p": 0.9373199802530527,
+     "discriminative_bh": false,
+     "stability": 0.25,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "evidence.notices@d"
+     ],
+     "len": 1,
+     "support_all": 0.0662,
+     "n_train_with_pattern": 41,
+     "confidence_win": 0.3902,
+     "lift": 1.048,
+     "conviction": 1.03,
+     "chi2": 0.006,
+     "p": 0.9373199802530527,
+     "discriminative_bh": false,
+     "stability": 0.25,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.dispute_arisen@d"
+     ],
+     "len": 1,
+     "support_all": 0.0523,
+     "n_train_with_pattern": 41,
+     "confidence_win": 0.3902,
+     "lift": 1.048,
+     "conviction": 1.03,
+     "chi2": 0.006,
+     "p": 0.9373199802530527,
+     "discriminative_bh": false,
+     "stability": 0.4,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "landuse.public_purpose@p"
+     ],
+     "len": 1,
+     "support_all": 0.0828,
+     "n_train_with_pattern": 59,
+     "confidence_win": 0.3559,
+     "lift": 0.956,
+     "conviction": 0.975,
+     "chi2": 0.017,
+     "p": 0.8972166530551002,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "element.public_purpose@p"
+     ],
+     "len": 1,
+     "support_all": 0.0679,
+     "n_train_with_pattern": 56,
+     "confidence_win": 0.3571,
+     "lift": 0.959,
+     "conviction": 0.976,
+     "chi2": 0.01,
+     "p": 0.921161151445038,
+     "discriminative_bh": false,
+     "stability": 0.85,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "partyrole.statutory_authority@d"
+     ],
+     "len": 1,
+     "support_all": 0.0549,
+     "n_train_with_pattern": 42,
+     "confidence_win": 0.3571,
+     "lift": 0.959,
+     "conviction": 0.976,
+     "chi2": 0.002,
+     "p": 0.9648454905742766,
+     "discriminative_bh": false,
+     "stability": 0.4,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "partyrole.statutory_authority@d",
+      "partyrole.statutory_authority@p"
+     ],
+     "len": 2,
+     "support_all": 0.054,
+     "n_train_with_pattern": 42,
+     "confidence_win": 0.3571,
+     "lift": 0.959,
+     "conviction": 0.976,
+     "chi2": 0.002,
+     "p": 0.9648454905742766,
+     "discriminative_bh": false,
+     "stability": 0.4,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.dispute_arisen@p"
+     ],
+     "len": 1,
+     "support_all": 0.0523,
+     "n_train_with_pattern": 44,
+     "confidence_win": 0.3864,
+     "lift": 1.038,
+     "conviction": 1.023,
+     "chi2": 0.001,
+     "p": 0.9691517594758458,
+     "discriminative_bh": false,
+     "stability": 0.6,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_served@d"
+     ],
+     "len": 1,
+     "support_all": 0.142,
+     "n_train_with_pattern": 109,
+     "confidence_win": 0.3853,
+     "lift": 1.035,
+     "conviction": 1.021,
+     "chi2": 0.038,
+     "p": 0.8446919366657337,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d",
+      "event.notice_issued@d"
+     ],
+     "len": 2,
+     "support_all": 0.0671,
+     "n_train_with_pattern": 39,
+     "confidence_win": 0.3846,
+     "lift": 1.033,
+     "conviction": 1.02,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.15,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d",
+      "event.notice_issued@d",
+      "event.notice_issued@p"
+     ],
+     "len": 3,
+     "support_all": 0.0662,
+     "n_train_with_pattern": 39,
+     "confidence_win": 0.3846,
+     "lift": 1.033,
+     "conviction": 1.02,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.15,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d",
+      "event.appeal_decided@p",
+      "event.notice_issued@d"
+     ],
+     "len": 3,
+     "support_all": 0.0662,
+     "n_train_with_pattern": 39,
+     "confidence_win": 0.3846,
+     "lift": 1.033,
+     "conviction": 1.02,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.15,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d",
+      "event.appeal_decided@p",
+      "event.notice_issued@d",
+      "event.notice_issued@p"
+     ],
+     "len": 4,
+     "support_all": 0.0653,
+     "n_train_with_pattern": 39,
+     "confidence_win": 0.3846,
+     "lift": 1.033,
+     "conviction": 1.02,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.15,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@p",
+      "event.writ_filed@d",
+      "event.writ_filed@p"
+     ],
+     "len": 3,
+     "support_all": 0.0636,
+     "n_train_with_pattern": 39,
+     "confidence_win": 0.3846,
+     "lift": 1.033,
+     "conviction": 1.02,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.3,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@d",
+      "event.appeal_filed@p",
+      "event.writ_filed@d",
+      "event.writ_filed@p"
+     ],
+     "len": 4,
+     "support_all": 0.0627,
+     "n_train_with_pattern": 39,
+     "confidence_win": 0.3846,
+     "lift": 1.033,
+     "conviction": 1.02,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.3,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "propertytype.land@p"
+     ],
+     "len": 1,
+     "support_all": 0.2239,
+     "n_train_with_pattern": 172,
+     "confidence_win": 0.3605,
+     "lift": 0.968,
+     "conviction": 0.982,
+     "chi2": 0.072,
+     "p": 0.7877559972696904,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d",
+      "event.appeal_decided@p",
+      "propertytype.land@d",
+      "propertytype.land@p"
+     ],
+     "len": 4,
+     "support_all": 0.054,
+     "n_train_with_pattern": 36,
+     "confidence_win": 0.3611,
+     "lift": 0.97,
+     "conviction": 0.983,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.1,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_served@d",
+      "event.notice_served@p"
+     ],
+     "len": 2,
+     "support_all": 0.1376,
+     "n_train_with_pattern": 107,
+     "confidence_win": 0.3832,
+     "lift": 1.029,
+     "conviction": 1.018,
+     "chi2": 0.02,
+     "p": 0.8863886870983029,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.suit_filed@p"
+     ],
+     "len": 1,
+     "support_all": 0.1524,
+     "n_train_with_pattern": 126,
+     "confidence_win": 0.381,
+     "lift": 1.023,
+     "conviction": 1.014,
+     "chi2": 0.014,
+     "p": 0.9054153982859419,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "propertytype.acquired_land@p"
+     ],
+     "len": 1,
+     "support_all": 0.1368,
+     "n_train_with_pattern": 99,
+     "confidence_win": 0.3636,
+     "lift": 0.977,
+     "conviction": 0.986,
+     "chi2": 0.006,
+     "p": 0.9378044995212171,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "element.payment_of_consideration_partial_or_full@d",
+      "element.payment_of_consideration_partial_or_full@p"
+     ],
+     "len": 2,
+     "support_all": 0.074,
+     "n_train_with_pattern": 55,
+     "confidence_win": 0.3636,
+     "lift": 0.977,
+     "conviction": 0.986,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.9,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.writ_filed@p",
+      "propertytype.land@p"
+     ],
+     "len": 2,
+     "support_all": 0.061,
+     "n_train_with_pattern": 33,
+     "confidence_win": 0.3636,
+     "lift": 0.977,
+     "conviction": 0.986,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.agreement_executed@d"
+     ],
+     "len": 1,
+     "support_all": 0.0801,
+     "n_train_with_pattern": 63,
+     "confidence_win": 0.3651,
+     "lift": 0.981,
+     "conviction": 0.989,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.95,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "evidence.notifications@p"
+     ],
+     "len": 1,
+     "support_all": 0.0915,
+     "n_train_with_pattern": 58,
+     "confidence_win": 0.3793,
+     "lift": 1.019,
+     "conviction": 1.011,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.95,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.writ_filed@d",
+      "propertytype.land@d",
+      "propertytype.land@p"
+     ],
+     "len": 3,
+     "support_all": 0.0557,
+     "n_train_with_pattern": 29,
+     "confidence_win": 0.3793,
+     "lift": 1.019,
+     "conviction": 1.011,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.writ_filed@d",
+      "event.writ_filed@p",
+      "propertytype.land@d",
+      "propertytype.land@p"
+     ],
+     "len": 4,
+     "support_all": 0.0549,
+     "n_train_with_pattern": 29,
+     "confidence_win": 0.3793,
+     "lift": 1.019,
+     "conviction": 1.011,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "propertytype.acquired_land@d"
+     ],
+     "len": 1,
+     "support_all": 0.1324,
+     "n_train_with_pattern": 93,
+     "confidence_win": 0.3656,
+     "lift": 0.982,
+     "conviction": 0.989,
+     "chi2": 0.001,
+     "p": 0.9783251019235228,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "propertytype.acquired_land@d",
+      "propertytype.acquired_land@p"
+     ],
+     "len": 2,
+     "support_all": 0.1289,
+     "n_train_with_pattern": 93,
+     "confidence_win": 0.3656,
+     "lift": 0.982,
+     "conviction": 0.989,
+     "chi2": 0.001,
+     "p": 0.9783251019235228,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d",
+      "event.appeal_decided@p",
+      "event.appeal_filed@p"
+     ],
+     "len": 3,
+     "support_all": 0.0889,
+     "n_train_with_pattern": 66,
+     "confidence_win": 0.3788,
+     "lift": 1.018,
+     "conviction": 1.011,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d",
+      "event.appeal_decided@p",
+      "event.appeal_filed@d",
+      "event.appeal_filed@p"
+     ],
+     "len": 4,
+     "support_all": 0.088,
+     "n_train_with_pattern": 66,
+     "confidence_win": 0.3788,
+     "lift": 1.018,
+     "conviction": 1.011,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "propertytype.land@d"
+     ],
+     "len": 1,
+     "support_all": 0.2186,
+     "n_train_with_pattern": 169,
+     "confidence_win": 0.3787,
+     "lift": 1.017,
+     "conviction": 1.01,
+     "chi2": 0.011,
+     "p": 0.9167801809945821,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "partyrole.owner@d",
+      "partyrole.owner@p"
+     ],
+     "len": 2,
+     "support_all": 0.0767,
+     "n_train_with_pattern": 74,
+     "confidence_win": 0.3784,
+     "lift": 1.016,
+     "conviction": 1.01,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.notice_issued@p",
+      "statute.land_acquisition_law@d"
+     ],
+     "len": 2,
+     "support_all": 0.0505,
+     "n_train_with_pattern": 37,
+     "confidence_win": 0.3784,
+     "lift": 1.016,
+     "conviction": 1.01,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_issued@d",
+      "statute.land_acquisition_law@d"
+     ],
+     "len": 2,
+     "support_all": 0.0505,
+     "n_train_with_pattern": 37,
+     "confidence_win": 0.3784,
+     "lift": 1.016,
+     "conviction": 1.01,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "element.payment_of_consideration_partial_or_full@d"
+     ],
+     "len": 1,
+     "support_all": 0.0793,
+     "n_train_with_pattern": 57,
+     "confidence_win": 0.3684,
+     "lift": 0.99,
+     "conviction": 0.994,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "partyrole.owner@d"
+     ],
+     "len": 1,
+     "support_all": 0.0793,
+     "n_train_with_pattern": 76,
+     "confidence_win": 0.3684,
+     "lift": 0.99,
+     "conviction": 0.994,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.notice_served@p"
+     ],
+     "len": 1,
+     "support_all": 0.1411,
+     "n_train_with_pattern": 109,
+     "confidence_win": 0.3761,
+     "lift": 1.01,
+     "conviction": 1.006,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "statute.land_acquisition_law@d",
+      "statute.land_acquisition_law@p"
+     ],
+     "len": 2,
+     "support_all": 0.1324,
+     "n_train_with_pattern": 104,
+     "confidence_win": 0.375,
+     "lift": 1.007,
+     "conviction": 1.004,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.agreement_executed@p"
+     ],
+     "len": 1,
+     "support_all": 0.081,
+     "n_train_with_pattern": 64,
+     "confidence_win": 0.375,
+     "lift": 1.007,
+     "conviction": 1.004,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.95,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d",
+      "event.notice_issued@p"
+     ],
+     "len": 2,
+     "support_all": 0.0679,
+     "n_train_with_pattern": 40,
+     "confidence_win": 0.375,
+     "lift": 1.007,
+     "conviction": 1.004,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.2,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d",
+      "event.appeal_decided@p",
+      "event.notice_issued@p"
+     ],
+     "len": 3,
+     "support_all": 0.0671,
+     "n_train_with_pattern": 40,
+     "confidence_win": 0.375,
+     "lift": 1.007,
+     "conviction": 1.004,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.2,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.suit_filed@d",
+      "event.suit_filed@p"
+     ],
+     "len": 2,
+     "support_all": 0.1498,
+     "n_train_with_pattern": 124,
+     "confidence_win": 0.371,
+     "lift": 0.997,
+     "conviction": 0.998,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.agreement_executed@d",
+      "event.agreement_executed@p"
+     ],
+     "len": 2,
+     "support_all": 0.0784,
+     "n_train_with_pattern": 62,
+     "confidence_win": 0.371,
+     "lift": 0.997,
+     "conviction": 0.998,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.95,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "propertytype.land@d",
+      "propertytype.land@p"
+     ],
+     "len": 2,
+     "support_all": 0.2125,
+     "n_train_with_pattern": 166,
+     "confidence_win": 0.3735,
+     "lift": 1.003,
+     "conviction": 1.002,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "statute.land_acquisition_law@p"
+     ],
+     "len": 1,
+     "support_all": 0.1359,
+     "n_train_with_pattern": 105,
+     "confidence_win": 0.3714,
+     "lift": 0.998,
+     "conviction": 0.999,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.suit_filed@d"
+     ],
+     "len": 1,
+     "support_all": 0.1533,
+     "n_train_with_pattern": 126,
+     "confidence_win": 0.373,
+     "lift": 1.002,
+     "conviction": 1.001,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "partyrole.owner@p"
+     ],
+     "len": 1,
+     "support_all": 0.081,
+     "n_train_with_pattern": 78,
+     "confidence_win": 0.3718,
+     "lift": 0.999,
+     "conviction": 0.999,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    }
+   ]
+  },
+  "ContractInstrument": {
+   "family": "ContractInstrument",
+   "view": "combined",
+   "n_cases": 859,
+   "n_train_cases": 507,
+   "min_support": 0.1,
+   "support_search": [
+    [
+     0.3,
+     3
+    ],
+    [
+     0.2,
+     17
+    ],
+    [
+     0.15,
+     20
+    ],
+    [
+     0.1,
+     100
+    ]
+   ],
+   "n_itemsets": 100,
+   "n_closed": 91,
+   "n_rules": 91,
+   "train_base_win_rate": 0.4004,
+   "n_discriminative_bh": 0,
+   "n_stable": 31,
+   "n_stable_and_discriminative": 0,
+   "rules": [
+    {
+     "pattern": [
+      "event.appeal_decided@p",
+      "event.suit_filed@d"
+     ],
+     "len": 2,
+     "support_all": 0.1036,
+     "n_train_with_pattern": 46,
+     "confidence_win": 0.587,
+     "lift": 1.466,
+     "conviction": 1.452,
+     "chi2": 6.505,
+     "p": 0.010759856636530486,
+     "discriminative_bh": false,
+     "stability": 0.3,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@p",
+      "event.suit_filed@p"
+     ],
+     "len": 2,
+     "support_all": 0.1036,
+     "n_train_with_pattern": 46,
+     "confidence_win": 0.587,
+     "lift": 1.466,
+     "conviction": 1.452,
+     "chi2": 6.505,
+     "p": 0.010759856636530486,
+     "discriminative_bh": false,
+     "stability": 0.3,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d",
+      "event.suit_filed@d"
+     ],
+     "len": 2,
+     "support_all": 0.1036,
+     "n_train_with_pattern": 46,
+     "confidence_win": 0.587,
+     "lift": 1.466,
+     "conviction": 1.452,
+     "chi2": 6.505,
+     "p": 0.010759856636530486,
+     "discriminative_bh": false,
+     "stability": 0.3,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d",
+      "event.suit_filed@p"
+     ],
+     "len": 2,
+     "support_all": 0.1036,
+     "n_train_with_pattern": 46,
+     "confidence_win": 0.587,
+     "lift": 1.466,
+     "conviction": 1.452,
+     "chi2": 6.505,
+     "p": 0.010759856636530486,
+     "discriminative_bh": false,
+     "stability": 0.3,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@p",
+      "event.suit_filed@d",
+      "event.suit_filed@p"
+     ],
+     "len": 3,
+     "support_all": 0.1024,
+     "n_train_with_pattern": 46,
+     "confidence_win": 0.587,
+     "lift": 1.466,
+     "conviction": 1.452,
+     "chi2": 6.505,
+     "p": 0.010759856636530486,
+     "discriminative_bh": false,
+     "stability": 0.3,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d",
+      "event.appeal_decided@p",
+      "event.suit_filed@d"
+     ],
+     "len": 3,
+     "support_all": 0.1024,
+     "n_train_with_pattern": 46,
+     "confidence_win": 0.587,
+     "lift": 1.466,
+     "conviction": 1.452,
+     "chi2": 6.505,
+     "p": 0.010759856636530486,
+     "discriminative_bh": false,
+     "stability": 0.3,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d",
+      "event.suit_filed@d",
+      "event.suit_filed@p"
+     ],
+     "len": 3,
+     "support_all": 0.1024,
+     "n_train_with_pattern": 46,
+     "confidence_win": 0.587,
+     "lift": 1.466,
+     "conviction": 1.452,
+     "chi2": 6.505,
+     "p": 0.010759856636530486,
+     "discriminative_bh": false,
+     "stability": 0.3,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d",
+      "event.appeal_decided@p",
+      "event.suit_filed@p"
+     ],
+     "len": 3,
+     "support_all": 0.1024,
+     "n_train_with_pattern": 46,
+     "confidence_win": 0.587,
+     "lift": 1.466,
+     "conviction": 1.452,
+     "chi2": 6.505,
+     "p": 0.010759856636530486,
+     "discriminative_bh": false,
+     "stability": 0.3,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d",
+      "event.appeal_decided@p",
+      "event.suit_filed@d",
+      "event.suit_filed@p"
+     ],
+     "len": 4,
+     "support_all": 0.1013,
+     "n_train_with_pattern": 46,
+     "confidence_win": 0.587,
+     "lift": 1.466,
+     "conviction": 1.452,
+     "chi2": 6.505,
+     "p": 0.010759856636530486,
+     "discriminative_bh": false,
+     "stability": 0.3,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "element.payment_of_consideration_partial_or_full.lt10k@p"
+     ],
+     "len": 1,
+     "support_all": 0.1024,
+     "n_train_with_pattern": 50,
+     "confidence_win": 0.56,
+     "lift": 1.399,
+     "conviction": 1.363,
+     "chi2": 5.171,
+     "p": 0.0229624620564669,
+     "discriminative_bh": false,
+     "stability": 0.45,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "instrument.agreement_to_sell@d",
+      "instrument.agreement_to_sell@p"
+     ],
+     "len": 2,
+     "support_all": 0.1083,
+     "n_train_with_pattern": 36,
+     "confidence_win": 0.5556,
+     "lift": 1.388,
+     "conviction": 1.349,
+     "chi2": 3.221,
+     "p": 0.07267994593439768,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "instrument.agreement_to_sell@p"
+     ],
+     "len": 1,
+     "support_all": 0.1164,
+     "n_train_with_pattern": 38,
+     "confidence_win": 0.5526,
+     "lift": 1.38,
+     "conviction": 1.34,
+     "chi2": 3.31,
+     "p": 0.06887181129274438,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "instrument.agreement_to_sell@d"
+     ],
+     "len": 1,
+     "support_all": 0.1106,
+     "n_train_with_pattern": 38,
+     "confidence_win": 0.5526,
+     "lift": 1.38,
+     "conviction": 1.34,
+     "chi2": 3.31,
+     "p": 0.06887181129274438,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.interim_order_granted@d",
+      "event.interim_order_granted@p"
+     ],
+     "len": 2,
+     "support_all": 0.1036,
+     "n_train_with_pattern": 33,
+     "confidence_win": 0.5455,
+     "lift": 1.362,
+     "conviction": 1.319,
+     "chi2": 2.481,
+     "p": 0.11521282354589558,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "encumbrance.mortgaged@p"
+     ],
+     "len": 1,
+     "support_all": 0.1246,
+     "n_train_with_pattern": 69,
+     "confidence_win": 0.2609,
+     "lift": 0.652,
+     "conviction": 0.811,
+     "chi2": 5.821,
+     "p": 0.015834685094758463,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "encumbrance.mortgaged@d"
+     ],
+     "len": 1,
+     "support_all": 0.1222,
+     "n_train_with_pattern": 65,
+     "confidence_win": 0.2615,
+     "lift": 0.653,
+     "conviction": 0.812,
+     "chi2": 5.343,
+     "p": 0.02080746731711018,
+     "discriminative_bh": false,
+     "stability": 0.95,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "encumbrance.mortgaged@d",
+      "encumbrance.mortgaged@p"
+     ],
+     "len": 2,
+     "support_all": 0.1176,
+     "n_train_with_pattern": 65,
+     "confidence_win": 0.2615,
+     "lift": 0.653,
+     "conviction": 0.812,
+     "chi2": 5.343,
+     "p": 0.02080746731711018,
+     "discriminative_bh": false,
+     "stability": 0.95,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "element.debt_subsistence_or_discharge@d"
+     ],
+     "len": 1,
+     "support_all": 0.1176,
+     "n_train_with_pattern": 63,
+     "confidence_win": 0.2698,
+     "lift": 0.674,
+     "conviction": 0.821,
+     "chi2": 4.505,
+     "p": 0.033792558174266574,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.interim_order_granted@p"
+     ],
+     "len": 1,
+     "support_all": 0.1048,
+     "n_train_with_pattern": 34,
+     "confidence_win": 0.5294,
+     "lift": 1.322,
+     "conviction": 1.274,
+     "chi2": 1.984,
+     "p": 0.15901307881202645,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "element.debt_subsistence_or_discharge@d",
+      "element.debt_subsistence_or_discharge@p"
+     ],
+     "len": 2,
+     "support_all": 0.1106,
+     "n_train_with_pattern": 59,
+     "confidence_win": 0.2881,
+     "lift": 0.72,
+     "conviction": 0.842,
+     "chi2": 2.996,
+     "p": 0.08348820007602552,
+     "discriminative_bh": false,
+     "stability": 0.95,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@d",
+      "event.suit_filed@p"
+     ],
+     "len": 2,
+     "support_all": 0.1106,
+     "n_train_with_pattern": 47,
+     "confidence_win": 0.5106,
+     "lift": 1.275,
+     "conviction": 1.225,
+     "chi2": 2.141,
+     "p": 0.1434339809238413,
+     "discriminative_bh": false,
+     "stability": 0.3,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@d",
+      "event.appeal_filed@p",
+      "event.suit_filed@p"
+     ],
+     "len": 3,
+     "support_all": 0.1094,
+     "n_train_with_pattern": 47,
+     "confidence_win": 0.5106,
+     "lift": 1.275,
+     "conviction": 1.225,
+     "chi2": 2.141,
+     "p": 0.1434339809238413,
+     "discriminative_bh": false,
+     "stability": 0.3,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@d",
+      "event.suit_filed@d",
+      "event.suit_filed@p"
+     ],
+     "len": 3,
+     "support_all": 0.1071,
+     "n_train_with_pattern": 47,
+     "confidence_win": 0.5106,
+     "lift": 1.275,
+     "conviction": 1.225,
+     "chi2": 2.141,
+     "p": 0.1434339809238413,
+     "discriminative_bh": false,
+     "stability": 0.3,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@d",
+      "event.appeal_filed@p",
+      "event.suit_filed@d",
+      "event.suit_filed@p"
+     ],
+     "len": 4,
+     "support_all": 0.1059,
+     "n_train_with_pattern": 47,
+     "confidence_win": 0.5106,
+     "lift": 1.275,
+     "conviction": 1.225,
+     "chi2": 2.141,
+     "p": 0.1434339809238413,
+     "discriminative_bh": false,
+     "stability": 0.3,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.writ_filed@d"
+     ],
+     "len": 1,
+     "support_all": 0.1234,
+     "n_train_with_pattern": 40,
+     "confidence_win": 0.5,
+     "lift": 1.249,
+     "conviction": 1.199,
+     "chi2": 1.372,
+     "p": 0.24139560192191545,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "element.debt_subsistence_or_discharge@p"
+     ],
+     "len": 1,
+     "support_all": 0.1234,
+     "n_train_with_pattern": 63,
+     "confidence_win": 0.3016,
+     "lift": 0.753,
+     "conviction": 0.859,
+     "chi2": 2.474,
+     "p": 0.11571805090796083,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.writ_filed@p"
+     ],
+     "len": 1,
+     "support_all": 0.1222,
+     "n_train_with_pattern": 39,
+     "confidence_win": 0.4872,
+     "lift": 1.217,
+     "conviction": 1.169,
+     "chi2": 0.963,
+     "p": 0.326491591042776,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.writ_filed@d",
+      "event.writ_filed@p"
+     ],
+     "len": 2,
+     "support_all": 0.1211,
+     "n_train_with_pattern": 39,
+     "confidence_win": 0.4872,
+     "lift": 1.217,
+     "conviction": 1.169,
+     "chi2": 0.963,
+     "p": 0.326491591042776,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "element.death_of_owner@p"
+     ],
+     "len": 1,
+     "support_all": 0.1385,
+     "n_train_with_pattern": 73,
+     "confidence_win": 0.3151,
+     "lift": 0.787,
+     "conviction": 0.875,
+     "chi2": 2.188,
+     "p": 0.13912567862060374,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "element.death_of_owner@d",
+      "element.death_of_owner@p"
+     ],
+     "len": 2,
+     "support_all": 0.1374,
+     "n_train_with_pattern": 73,
+     "confidence_win": 0.3151,
+     "lift": 0.787,
+     "conviction": 0.875,
+     "chi2": 2.188,
+     "p": 0.13912567862060374,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@p"
+     ],
+     "len": 1,
+     "support_all": 0.2363,
+     "n_train_with_pattern": 111,
+     "confidence_win": 0.4775,
+     "lift": 1.193,
+     "conviction": 1.148,
+     "chi2": 3.118,
+     "p": 0.07742430825016586,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@d",
+      "event.appeal_filed@p"
+     ],
+     "len": 2,
+     "support_all": 0.234,
+     "n_train_with_pattern": 109,
+     "confidence_win": 0.4771,
+     "lift": 1.191,
+     "conviction": 1.147,
+     "chi2": 3.005,
+     "p": 0.0830030385924479,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "element.death_of_owner@d"
+     ],
+     "len": 1,
+     "support_all": 0.1385,
+     "n_train_with_pattern": 74,
+     "confidence_win": 0.3243,
+     "lift": 0.81,
+     "conviction": 0.887,
+     "chi2": 1.734,
+     "p": 0.18790933150947256,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@d"
+     ],
+     "len": 1,
+     "support_all": 0.2363,
+     "n_train_with_pattern": 110,
+     "confidence_win": 0.4727,
+     "lift": 1.181,
+     "conviction": 1.137,
+     "chi2": 2.689,
+     "p": 0.10105780547687998,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "element.payment_of_consideration_partial_or_full@p",
+      "event.suit_filed@d"
+     ],
+     "len": 2,
+     "support_all": 0.1001,
+     "n_train_with_pattern": 34,
+     "confidence_win": 0.4706,
+     "lift": 1.175,
+     "conviction": 1.133,
+     "chi2": 0.467,
+     "p": 0.49419590899905225,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "element.payment_of_consideration_partial_or_full@p"
+     ],
+     "len": 1,
+     "support_all": 0.2154,
+     "n_train_with_pattern": 86,
+     "confidence_win": 0.4651,
+     "lift": 1.162,
+     "conviction": 1.121,
+     "chi2": 1.497,
+     "p": 0.22113612763739213,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.decree_passed@p"
+     ],
+     "len": 1,
+     "support_all": 0.1502,
+     "n_train_with_pattern": 80,
+     "confidence_win": 0.3375,
+     "lift": 0.843,
+     "conviction": 0.905,
+     "chi2": 1.269,
+     "p": 0.2598611529864055,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.decree_passed@d"
+     ],
+     "len": 1,
+     "support_all": 0.149,
+     "n_train_with_pattern": 80,
+     "confidence_win": 0.3375,
+     "lift": 0.843,
+     "conviction": 0.905,
+     "chi2": 1.269,
+     "p": 0.2598611529864055,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "element.payment_of_consideration_partial_or_full@d",
+      "element.payment_of_consideration_partial_or_full@p"
+     ],
+     "len": 2,
+     "support_all": 0.2002,
+     "n_train_with_pattern": 80,
+     "confidence_win": 0.4625,
+     "lift": 1.155,
+     "conviction": 1.116,
+     "chi2": 1.234,
+     "p": 0.26655706769178406,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.decree_passed@d",
+      "event.decree_passed@p"
+     ],
+     "len": 2,
+     "support_all": 0.1478,
+     "n_train_with_pattern": 79,
+     "confidence_win": 0.3418,
+     "lift": 0.854,
+     "conviction": 0.911,
+     "chi2": 1.066,
+     "p": 0.30186684166904626,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "rightclaimed.possession@p"
+     ],
+     "len": 1,
+     "support_all": 0.1257,
+     "n_train_with_pattern": 59,
+     "confidence_win": 0.4576,
+     "lift": 1.143,
+     "conviction": 1.106,
+     "chi2": 0.661,
+     "p": 0.4161428783609416,
+     "discriminative_bh": false,
+     "stability": 0.95,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@p"
+     ],
+     "len": 1,
+     "support_all": 0.2154,
+     "n_train_with_pattern": 105,
+     "confidence_win": 0.4571,
+     "lift": 1.142,
+     "conviction": 1.105,
+     "chi2": 1.491,
+     "p": 0.22210362819859084,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d"
+     ],
+     "len": 1,
+     "support_all": 0.2154,
+     "n_train_with_pattern": 105,
+     "confidence_win": 0.4571,
+     "lift": 1.142,
+     "conviction": 1.105,
+     "chi2": 1.491,
+     "p": 0.22210362819859084,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d",
+      "event.appeal_decided@p"
+     ],
+     "len": 2,
+     "support_all": 0.2142,
+     "n_train_with_pattern": 105,
+     "confidence_win": 0.4571,
+     "lift": 1.142,
+     "conviction": 1.105,
+     "chi2": 1.491,
+     "p": 0.22210362819859084,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.notice_served@p",
+      "event.suit_filed@d"
+     ],
+     "len": 2,
+     "support_all": 0.1048,
+     "n_train_with_pattern": 37,
+     "confidence_win": 0.3514,
+     "lift": 0.878,
+     "conviction": 0.924,
+     "chi2": 0.21,
+     "p": 0.646873597024936,
+     "discriminative_bh": false,
+     "stability": 0.05,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_served@p",
+      "event.suit_filed@p"
+     ],
+     "len": 2,
+     "support_all": 0.1036,
+     "n_train_with_pattern": 37,
+     "confidence_win": 0.3514,
+     "lift": 0.878,
+     "conviction": 0.924,
+     "chi2": 0.21,
+     "p": 0.646873597024936,
+     "discriminative_bh": false,
+     "stability": 0.05,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_served@p",
+      "event.suit_filed@d",
+      "event.suit_filed@p"
+     ],
+     "len": 3,
+     "support_all": 0.1024,
+     "n_train_with_pattern": 37,
+     "confidence_win": 0.3514,
+     "lift": 0.878,
+     "conviction": 0.924,
+     "chi2": 0.21,
+     "p": 0.646873597024936,
+     "discriminative_bh": false,
+     "stability": 0.05,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "rightclaimed.specific_performance@p"
+     ],
+     "len": 1,
+     "support_all": 0.1257,
+     "n_train_with_pattern": 47,
+     "confidence_win": 0.4468,
+     "lift": 1.116,
+     "conviction": 1.084,
+     "chi2": 0.276,
+     "p": 0.599224728245358,
+     "discriminative_bh": false,
+     "stability": 0.3,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "propertytype.land@p"
+     ],
+     "len": 1,
+     "support_all": 0.135,
+     "n_train_with_pattern": 44,
+     "confidence_win": 0.3636,
+     "lift": 0.908,
+     "conviction": 0.942,
+     "chi2": 0.129,
+     "p": 0.7190332009937176,
+     "discriminative_bh": false,
+     "stability": 0.05,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "element.payment_of_consideration_partial_or_full@d"
+     ],
+     "len": 1,
+     "support_all": 0.2154,
+     "n_train_with_pattern": 87,
+     "confidence_win": 0.4368,
+     "lift": 1.091,
+     "conviction": 1.065,
+     "chi2": 0.411,
+     "p": 0.5216253609574608,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "rightclaimed.possession@d"
+     ],
+     "len": 1,
+     "support_all": 0.1187,
+     "n_train_with_pattern": 55,
+     "confidence_win": 0.4364,
+     "lift": 1.09,
+     "conviction": 1.064,
+     "chi2": 0.186,
+     "p": 0.6665672356820859,
+     "discriminative_bh": false,
+     "stability": 0.75,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "rightclaimed.specific_performance@d"
+     ],
+     "len": 1,
+     "support_all": 0.1071,
+     "n_train_with_pattern": 39,
+     "confidence_win": 0.4359,
+     "lift": 1.089,
+     "conviction": 1.063,
+     "chi2": 0.091,
+     "p": 0.7634885320538103,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "propertytype.land@d"
+     ],
+     "len": 1,
+     "support_all": 0.1315,
+     "n_train_with_pattern": 43,
+     "confidence_win": 0.3721,
+     "lift": 0.929,
+     "conviction": 0.955,
+     "chi2": 0.054,
+     "p": 0.815563648160669,
+     "discriminative_bh": false,
+     "stability": 0.05,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "propertytype.land@d",
+      "propertytype.land@p"
+     ],
+     "len": 2,
+     "support_all": 0.1281,
+     "n_train_with_pattern": 43,
+     "confidence_win": 0.3721,
+     "lift": 0.929,
+     "conviction": 0.955,
+     "chi2": 0.054,
+     "p": 0.815563648160669,
+     "discriminative_bh": false,
+     "stability": 0.05,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.agreement_executed@d",
+      "event.suit_filed@d"
+     ],
+     "len": 2,
+     "support_all": 0.1187,
+     "n_train_with_pattern": 43,
+     "confidence_win": 0.3721,
+     "lift": 0.929,
+     "conviction": 0.955,
+     "chi2": 0.054,
+     "p": 0.815563648160669,
+     "discriminative_bh": false,
+     "stability": 0.1,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "relationship.agreement_to_sell@d"
+     ],
+     "len": 1,
+     "support_all": 0.1001,
+     "n_train_with_pattern": 35,
+     "confidence_win": 0.4286,
+     "lift": 1.07,
+     "conviction": 1.049,
+     "chi2": 0.03,
+     "p": 0.8619970720552137,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.suit_filed@p"
+     ],
+     "len": 1,
+     "support_all": 0.4482,
+     "n_train_with_pattern": 204,
+     "confidence_win": 0.3725,
+     "lift": 0.93,
+     "conviction": 0.956,
+     "chi2": 0.917,
+     "p": 0.33829115094112905,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.suit_filed@d"
+     ],
+     "len": 1,
+     "support_all": 0.44,
+     "n_train_with_pattern": 201,
+     "confidence_win": 0.3731,
+     "lift": 0.932,
+     "conviction": 0.957,
+     "chi2": 0.851,
+     "p": 0.35619094154002456,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.suit_filed@d",
+      "event.suit_filed@p"
+     ],
+     "len": 2,
+     "support_all": 0.4366,
+     "n_train_with_pattern": 200,
+     "confidence_win": 0.375,
+     "lift": 0.937,
+     "conviction": 0.959,
+     "chi2": 0.721,
+     "p": 0.3957768821629485,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.decree_passed@p",
+      "event.suit_filed@p"
+     ],
+     "len": 2,
+     "support_all": 0.1059,
+     "n_train_with_pattern": 53,
+     "confidence_win": 0.3774,
+     "lift": 0.942,
+     "conviction": 0.963,
+     "chi2": 0.046,
+     "p": 0.830882226884075,
+     "discriminative_bh": false,
+     "stability": 0.7,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.decree_passed@d",
+      "event.suit_filed@p"
+     ],
+     "len": 2,
+     "support_all": 0.1048,
+     "n_train_with_pattern": 53,
+     "confidence_win": 0.3774,
+     "lift": 0.942,
+     "conviction": 0.963,
+     "chi2": 0.046,
+     "p": 0.830882226884075,
+     "discriminative_bh": false,
+     "stability": 0.6,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.decree_passed@p",
+      "event.suit_filed@d",
+      "event.suit_filed@p"
+     ],
+     "len": 3,
+     "support_all": 0.1024,
+     "n_train_with_pattern": 53,
+     "confidence_win": 0.3774,
+     "lift": 0.942,
+     "conviction": 0.963,
+     "chi2": 0.046,
+     "p": 0.830882226884075,
+     "discriminative_bh": false,
+     "stability": 0.7,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.decree_passed@d",
+      "event.suit_filed@d",
+      "event.suit_filed@p"
+     ],
+     "len": 3,
+     "support_all": 0.1013,
+     "n_train_with_pattern": 53,
+     "confidence_win": 0.3774,
+     "lift": 0.942,
+     "conviction": 0.963,
+     "chi2": 0.046,
+     "p": 0.830882226884075,
+     "discriminative_bh": false,
+     "stability": 0.6,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "rightclaimed.specific_performance@d",
+      "rightclaimed.specific_performance@p"
+     ],
+     "len": 2,
+     "support_all": 0.1048,
+     "n_train_with_pattern": 38,
+     "confidence_win": 0.4211,
+     "lift": 1.052,
+     "conviction": 1.036,
+     "chi2": 0.01,
+     "p": 0.9218457505024965,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "rightclaimed.cancellation@d",
+      "rightclaimed.cancellation@p"
+     ],
+     "len": 2,
+     "support_all": 0.1036,
+     "n_train_with_pattern": 38,
+     "confidence_win": 0.4211,
+     "lift": 1.052,
+     "conviction": 1.036,
+     "chi2": 0.01,
+     "p": 0.9218457505024965,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "rightclaimed.possession@d",
+      "rightclaimed.possession@p"
+     ],
+     "len": 2,
+     "support_all": 0.1048,
+     "n_train_with_pattern": 50,
+     "confidence_win": 0.42,
+     "lift": 1.049,
+     "conviction": 1.034,
+     "chi2": 0.021,
+     "p": 0.883915502930201,
+     "discriminative_bh": false,
+     "stability": 0.45,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.agreement_executed@p",
+      "event.suit_filed@d"
+     ],
+     "len": 2,
+     "support_all": 0.1222,
+     "n_train_with_pattern": 42,
+     "confidence_win": 0.381,
+     "lift": 0.951,
+     "conviction": 0.969,
+     "chi2": 0.011,
+     "p": 0.9170914451655067,
+     "discriminative_bh": false,
+     "stability": 0.1,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.agreement_executed@d",
+      "event.suit_filed@p"
+     ],
+     "len": 2,
+     "support_all": 0.1187,
+     "n_train_with_pattern": 42,
+     "confidence_win": 0.381,
+     "lift": 0.951,
+     "conviction": 0.969,
+     "chi2": 0.011,
+     "p": 0.9170914451655067,
+     "discriminative_bh": false,
+     "stability": 0.1,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.agreement_executed@d",
+      "event.agreement_executed@p",
+      "event.suit_filed@d"
+     ],
+     "len": 3,
+     "support_all": 0.1164,
+     "n_train_with_pattern": 42,
+     "confidence_win": 0.381,
+     "lift": 0.951,
+     "conviction": 0.969,
+     "chi2": 0.011,
+     "p": 0.9170914451655067,
+     "discriminative_bh": false,
+     "stability": 0.1,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.agreement_executed@d",
+      "event.suit_filed@d",
+      "event.suit_filed@p"
+     ],
+     "len": 3,
+     "support_all": 0.1164,
+     "n_train_with_pattern": 42,
+     "confidence_win": 0.381,
+     "lift": 0.951,
+     "conviction": 0.969,
+     "chi2": 0.011,
+     "p": 0.9170914451655067,
+     "discriminative_bh": false,
+     "stability": 0.1,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "rightclaimed.cancellation@p"
+     ],
+     "len": 1,
+     "support_all": 0.1246,
+     "n_train_with_pattern": 43,
+     "confidence_win": 0.4186,
+     "lift": 1.045,
+     "conviction": 1.031,
+     "chi2": 0.008,
+     "p": 0.9266323659696595,
+     "discriminative_bh": false,
+     "stability": 0.1,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_issued@p"
+     ],
+     "len": 1,
+     "support_all": 0.1525,
+     "n_train_with_pattern": 48,
+     "confidence_win": 0.4167,
+     "lift": 1.041,
+     "conviction": 1.028,
+     "chi2": 0.008,
+     "p": 0.9306575270481513,
+     "discriminative_bh": false,
+     "stability": 0.35,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.agreement_executed@p"
+     ],
+     "len": 1,
+     "support_all": 0.2293,
+     "n_train_with_pattern": 91,
+     "confidence_win": 0.3846,
+     "lift": 0.961,
+     "conviction": 0.974,
+     "chi2": 0.049,
+     "p": 0.825054490213875,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.decree_passed@d",
+      "event.decree_passed@p",
+      "event.suit_filed@p"
+     ],
+     "len": 3,
+     "support_all": 0.1036,
+     "n_train_with_pattern": 52,
+     "confidence_win": 0.3846,
+     "lift": 0.961,
+     "conviction": 0.974,
+     "chi2": 0.009,
+     "p": 0.9237145093210023,
+     "discriminative_bh": false,
+     "stability": 0.55,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.decree_passed@d",
+      "event.decree_passed@p",
+      "event.suit_filed@d",
+      "event.suit_filed@p"
+     ],
+     "len": 4,
+     "support_all": 0.1001,
+     "n_train_with_pattern": 52,
+     "confidence_win": 0.3846,
+     "lift": 0.961,
+     "conviction": 0.974,
+     "chi2": 0.009,
+     "p": 0.9237145093210023,
+     "discriminative_bh": false,
+     "stability": 0.55,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "rightclaimed.cancellation@d"
+     ],
+     "len": 1,
+     "support_all": 0.1106,
+     "n_train_with_pattern": 41,
+     "confidence_win": 0.4146,
+     "lift": 1.036,
+     "conviction": 1.024,
+     "chi2": 0.001,
+     "p": 0.9777665397601195,
+     "discriminative_bh": false,
+     "stability": 0.15,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_served@d",
+      "event.notice_served@p"
+     ],
+     "len": 2,
+     "support_all": 0.1921,
+     "n_train_with_pattern": 67,
+     "confidence_win": 0.3881,
+     "lift": 0.969,
+     "conviction": 0.98,
+     "chi2": 0.008,
+     "p": 0.9303788391598503,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.agreement_executed@d"
+     ],
+     "len": 1,
+     "support_all": 0.2212,
+     "n_train_with_pattern": 90,
+     "confidence_win": 0.3889,
+     "lift": 0.971,
+     "conviction": 0.981,
+     "chi2": 0.016,
+     "p": 0.8989181770144308,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.notice_served@p"
+     ],
+     "len": 1,
+     "support_all": 0.2154,
+     "n_train_with_pattern": 77,
+     "confidence_win": 0.3896,
+     "lift": 0.973,
+     "conviction": 0.982,
+     "chi2": 0.007,
+     "p": 0.9335047247431197,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.agreement_executed@p",
+      "event.suit_filed@p"
+     ],
+     "len": 2,
+     "support_all": 0.1234,
+     "n_train_with_pattern": 41,
+     "confidence_win": 0.3902,
+     "lift": 0.975,
+     "conviction": 0.983,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.05,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.agreement_executed@p",
+      "event.suit_filed@d",
+      "event.suit_filed@p"
+     ],
+     "len": 3,
+     "support_all": 0.1199,
+     "n_train_with_pattern": 41,
+     "confidence_win": 0.3902,
+     "lift": 0.975,
+     "conviction": 0.983,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.05,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.agreement_executed@d",
+      "event.agreement_executed@p",
+      "event.suit_filed@p"
+     ],
+     "len": 3,
+     "support_all": 0.1164,
+     "n_train_with_pattern": 41,
+     "confidence_win": 0.3902,
+     "lift": 0.975,
+     "conviction": 0.983,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.05,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.agreement_executed@d",
+      "event.agreement_executed@p",
+      "event.suit_filed@d",
+      "event.suit_filed@p"
+     ],
+     "len": 4,
+     "support_all": 0.1141,
+     "n_train_with_pattern": 41,
+     "confidence_win": 0.3902,
+     "lift": 0.975,
+     "conviction": 0.983,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.05,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "relationship.agreement_to_sell@p"
+     ],
+     "len": 1,
+     "support_all": 0.1106,
+     "n_train_with_pattern": 39,
+     "confidence_win": 0.4103,
+     "lift": 1.025,
+     "conviction": 1.017,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.agreement_executed@d",
+      "event.agreement_executed@p"
+     ],
+     "len": 2,
+     "support_all": 0.2154,
+     "n_train_with_pattern": 87,
+     "confidence_win": 0.3908,
+     "lift": 0.976,
+     "conviction": 0.984,
+     "chi2": 0.006,
+     "p": 0.9359414214588349,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "evidence.sale_deed@d"
+     ],
+     "len": 1,
+     "support_all": 0.1409,
+     "n_train_with_pattern": 49,
+     "confidence_win": 0.4082,
+     "lift": 1.019,
+     "conviction": 1.013,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.4,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_served@d"
+     ],
+     "len": 1,
+     "support_all": 0.2002,
+     "n_train_with_pattern": 69,
+     "confidence_win": 0.4058,
+     "lift": 1.013,
+     "conviction": 1.009,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "evidence.sale_deed@p"
+     ],
+     "len": 1,
+     "support_all": 0.1478,
+     "n_train_with_pattern": 53,
+     "confidence_win": 0.3962,
+     "lift": 0.99,
+     "conviction": 0.993,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.6,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_issued@d"
+     ],
+     "len": 1,
+     "support_all": 0.1467,
+     "n_train_with_pattern": 47,
+     "confidence_win": 0.4043,
+     "lift": 1.01,
+     "conviction": 1.006,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.35,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_issued@d",
+      "event.notice_issued@p"
+     ],
+     "len": 2,
+     "support_all": 0.1432,
+     "n_train_with_pattern": 47,
+     "confidence_win": 0.4043,
+     "lift": 1.01,
+     "conviction": 1.006,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.35,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "evidence.sale_deed@d",
+      "evidence.sale_deed@p"
+     ],
+     "len": 2,
+     "support_all": 0.1304,
+     "n_train_with_pattern": 45,
+     "confidence_win": 0.4,
+     "lift": 0.999,
+     "conviction": 0.999,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.2,
+     "stable": false
+    }
+   ]
+  },
+  "_UNASSIGNED": {
+   "family": "_UNASSIGNED",
+   "view": "combined",
+   "n_cases": 550,
+   "n_train_cases": 398,
+   "min_support": 0.1,
+   "support_search": [
+    [
+     0.3,
+     3
+    ],
+    [
+     0.2,
+     9
+    ],
+    [
+     0.15,
+     19
+    ],
+    [
+     0.1,
+     55
+    ]
+   ],
+   "n_itemsets": 55,
+   "n_closed": 38,
+   "n_rules": 38,
+   "train_base_win_rate": 0.4146,
+   "n_discriminative_bh": 0,
+   "n_stable": 24,
+   "n_stable_and_discriminative": 0,
+   "rules": [
+    {
+     "pattern": [
+      "event.decree_passed@p"
+     ],
+     "len": 1,
+     "support_all": 0.1309,
+     "n_train_with_pattern": 49,
+     "confidence_win": 0.2857,
+     "lift": 0.689,
+     "conviction": 0.82,
+     "chi2": 3.242,
+     "p": 0.07179409929587542,
+     "discriminative_bh": false,
+     "stability": 0.95,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.agreement_executed@p"
+     ],
+     "len": 1,
+     "support_all": 0.1018,
+     "n_train_with_pattern": 28,
+     "confidence_win": 0.2857,
+     "lift": 0.689,
+     "conviction": 0.82,
+     "chi2": 1.529,
+     "p": 0.21625446347730296,
+     "discriminative_bh": false,
+     "stability": 0.0,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.decree_passed@d",
+      "event.decree_passed@p"
+     ],
+     "len": 2,
+     "support_all": 0.1291,
+     "n_train_with_pattern": 48,
+     "confidence_win": 0.2917,
+     "lift": 0.704,
+     "conviction": 0.826,
+     "chi2": 2.846,
+     "p": 0.09161209458187516,
+     "discriminative_bh": false,
+     "stability": 0.9,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@d",
+      "event.appeal_filed@p",
+      "event.suit_filed@p"
+     ],
+     "len": 3,
+     "support_all": 0.1036,
+     "n_train_with_pattern": 32,
+     "confidence_win": 0.5,
+     "lift": 1.206,
+     "conviction": 1.171,
+     "chi2": 0.699,
+     "p": 0.40326150794598925,
+     "discriminative_bh": false,
+     "stability": 0.1,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_issued@d"
+     ],
+     "len": 1,
+     "support_all": 0.1545,
+     "n_train_with_pattern": 53,
+     "confidence_win": 0.4906,
+     "lift": 1.183,
+     "conviction": 1.149,
+     "chi2": 1.116,
+     "p": 0.2907712468904927,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.notice_issued@p"
+     ],
+     "len": 1,
+     "support_all": 0.1545,
+     "n_train_with_pattern": 53,
+     "confidence_win": 0.4906,
+     "lift": 1.183,
+     "conviction": 1.149,
+     "chi2": 1.116,
+     "p": 0.2907712468904927,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.notice_issued@d",
+      "event.notice_issued@p"
+     ],
+     "len": 2,
+     "support_all": 0.1509,
+     "n_train_with_pattern": 51,
+     "confidence_win": 0.4902,
+     "lift": 1.182,
+     "conviction": 1.148,
+     "chi2": 1.044,
+     "p": 0.30686182769257087,
+     "discriminative_bh": false,
+     "stability": 0.95,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@d",
+      "event.suit_filed@p"
+     ],
+     "len": 2,
+     "support_all": 0.1073,
+     "n_train_with_pattern": 33,
+     "confidence_win": 0.4848,
+     "lift": 1.17,
+     "conviction": 1.136,
+     "chi2": 0.451,
+     "p": 0.5020883841218265,
+     "discriminative_bh": false,
+     "stability": 0.15,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@p",
+      "event.suit_filed@p"
+     ],
+     "len": 2,
+     "support_all": 0.1055,
+     "n_train_with_pattern": 33,
+     "confidence_win": 0.4848,
+     "lift": 1.17,
+     "conviction": 1.136,
+     "chi2": 0.451,
+     "p": 0.5020883841218265,
+     "discriminative_bh": false,
+     "stability": 0.1,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_served@p"
+     ],
+     "len": 1,
+     "support_all": 0.1691,
+     "n_train_with_pattern": 61,
+     "confidence_win": 0.4754,
+     "lift": 1.147,
+     "conviction": 1.116,
+     "chi2": 0.823,
+     "p": 0.3644451172264263,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.notice_served@d",
+      "event.notice_served@p"
+     ],
+     "len": 2,
+     "support_all": 0.1564,
+     "n_train_with_pattern": 57,
+     "confidence_win": 0.4737,
+     "lift": 1.143,
+     "conviction": 1.112,
+     "chi2": 0.695,
+     "p": 0.40459797590059876,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@d",
+      "event.appeal_filed@p"
+     ],
+     "len": 2,
+     "support_all": 0.2618,
+     "n_train_with_pattern": 90,
+     "confidence_win": 0.4667,
+     "lift": 1.126,
+     "conviction": 1.098,
+     "chi2": 1.038,
+     "p": 0.3083295011114485,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@p"
+     ],
+     "len": 1,
+     "support_all": 0.2673,
+     "n_train_with_pattern": 93,
+     "confidence_win": 0.4624,
+     "lift": 1.115,
+     "conviction": 1.089,
+     "chi2": 0.9,
+     "p": 0.3428832780261787,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@d"
+     ],
+     "len": 1,
+     "support_all": 0.2655,
+     "n_train_with_pattern": 91,
+     "confidence_win": 0.4615,
+     "lift": 1.113,
+     "conviction": 1.087,
+     "chi2": 0.836,
+     "p": 0.3605449284170042,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "propertytype.land@d"
+     ],
+     "len": 1,
+     "support_all": 0.1491,
+     "n_train_with_pattern": 57,
+     "confidence_win": 0.3684,
+     "lift": 0.889,
+     "conviction": 0.927,
+     "chi2": 0.383,
+     "p": 0.5359988038809993,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "propertytype.land@d",
+      "propertytype.land@p"
+     ],
+     "len": 2,
+     "support_all": 0.1473,
+     "n_train_with_pattern": 57,
+     "confidence_win": 0.3684,
+     "lift": 0.889,
+     "conviction": 0.927,
+     "chi2": 0.383,
+     "p": 0.5359988038809993,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "element.death_of_owner@p"
+     ],
+     "len": 1,
+     "support_all": 0.1473,
+     "n_train_with_pattern": 61,
+     "confidence_win": 0.459,
+     "lift": 1.107,
+     "conviction": 1.082,
+     "chi2": 0.39,
+     "p": 0.5323068559110351,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "element.death_of_owner@d",
+      "element.death_of_owner@p"
+     ],
+     "len": 2,
+     "support_all": 0.14,
+     "n_train_with_pattern": 57,
+     "confidence_win": 0.4561,
+     "lift": 1.1,
+     "conviction": 1.076,
+     "chi2": 0.295,
+     "p": 0.5871469400190708,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d",
+      "event.appeal_decided@p",
+      "event.suit_filed@p"
+     ],
+     "len": 3,
+     "support_all": 0.1018,
+     "n_train_with_pattern": 33,
+     "confidence_win": 0.4545,
+     "lift": 1.096,
+     "conviction": 1.073,
+     "chi2": 0.091,
+     "p": 0.7624776750630657,
+     "discriminative_bh": false,
+     "stability": 0.05,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d",
+      "event.appeal_decided@p",
+      "event.suit_filed@d",
+      "event.suit_filed@p"
+     ],
+     "len": 4,
+     "support_all": 0.1,
+     "n_train_with_pattern": 33,
+     "confidence_win": 0.4545,
+     "lift": 1.096,
+     "conviction": 1.073,
+     "chi2": 0.091,
+     "p": 0.7624776750630657,
+     "discriminative_bh": false,
+     "stability": 0.05,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@d",
+      "event.suit_filed@d",
+      "event.suit_filed@p"
+     ],
+     "len": 3,
+     "support_all": 0.1018,
+     "n_train_with_pattern": 31,
+     "confidence_win": 0.4516,
+     "lift": 1.089,
+     "conviction": 1.068,
+     "chi2": 0.061,
+     "p": 0.805597885029635,
+     "discriminative_bh": false,
+     "stability": 0.05,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@p",
+      "event.suit_filed@d",
+      "event.suit_filed@p"
+     ],
+     "len": 3,
+     "support_all": 0.1,
+     "n_train_with_pattern": 31,
+     "confidence_win": 0.4516,
+     "lift": 1.089,
+     "conviction": 1.068,
+     "chi2": 0.061,
+     "p": 0.805597885029635,
+     "discriminative_bh": false,
+     "stability": 0.05,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@d",
+      "event.appeal_filed@p",
+      "event.suit_filed@d"
+     ],
+     "len": 3,
+     "support_all": 0.1,
+     "n_train_with_pattern": 31,
+     "confidence_win": 0.4516,
+     "lift": 1.089,
+     "conviction": 1.068,
+     "chi2": 0.061,
+     "p": 0.805597885029635,
+     "discriminative_bh": false,
+     "stability": 0.05,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d"
+     ],
+     "len": 1,
+     "support_all": 0.2382,
+     "n_train_with_pattern": 82,
+     "confidence_win": 0.378,
+     "lift": 0.912,
+     "conviction": 0.941,
+     "chi2": 0.394,
+     "p": 0.5302305465103496,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@p"
+     ],
+     "len": 1,
+     "support_all": 0.2382,
+     "n_train_with_pattern": 81,
+     "confidence_win": 0.3827,
+     "lift": 0.923,
+     "conviction": 0.948,
+     "chi2": 0.276,
+     "p": 0.5990614827184311,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d",
+      "event.appeal_decided@p"
+     ],
+     "len": 2,
+     "support_all": 0.2364,
+     "n_train_with_pattern": 81,
+     "confidence_win": 0.3827,
+     "lift": 0.923,
+     "conviction": 0.948,
+     "chi2": 0.276,
+     "p": 0.5990614827184311,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d",
+      "event.appeal_decided@p",
+      "event.appeal_filed@d",
+      "event.appeal_filed@p"
+     ],
+     "len": 4,
+     "support_all": 0.1109,
+     "n_train_with_pattern": 36,
+     "confidence_win": 0.4444,
+     "lift": 1.072,
+     "conviction": 1.054,
+     "chi2": 0.042,
+     "p": 0.8382722160743038,
+     "discriminative_bh": false,
+     "stability": 0.2,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.suit_filed@p"
+     ],
+     "len": 1,
+     "support_all": 0.3582,
+     "n_train_with_pattern": 133,
+     "confidence_win": 0.4436,
+     "lift": 1.07,
+     "conviction": 1.052,
+     "chi2": 0.526,
+     "p": 0.468358878142141,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d",
+      "event.appeal_decided@p",
+      "event.suit_filed@d"
+     ],
+     "len": 3,
+     "support_all": 0.1018,
+     "n_train_with_pattern": 34,
+     "confidence_win": 0.4412,
+     "lift": 1.064,
+     "conviction": 1.048,
+     "chi2": 0.022,
+     "p": 0.8829341543087279,
+     "discriminative_bh": false,
+     "stability": 0.2,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.writ_filed@d",
+      "event.writ_filed@p"
+     ],
+     "len": 2,
+     "support_all": 0.1509,
+     "n_train_with_pattern": 48,
+     "confidence_win": 0.4375,
+     "lift": 1.055,
+     "conviction": 1.041,
+     "chi2": 0.035,
+     "p": 0.8511793791994283,
+     "discriminative_bh": false,
+     "stability": 0.95,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@d",
+      "event.suit_filed@d"
+     ],
+     "len": 2,
+     "support_all": 0.1036,
+     "n_train_with_pattern": 32,
+     "confidence_win": 0.4375,
+     "lift": 1.055,
+     "conviction": 1.041,
+     "chi2": 0.008,
+     "p": 0.9303251569153274,
+     "discriminative_bh": false,
+     "stability": 0.05,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@p",
+      "event.suit_filed@d"
+     ],
+     "len": 2,
+     "support_all": 0.1018,
+     "n_train_with_pattern": 32,
+     "confidence_win": 0.4375,
+     "lift": 1.055,
+     "conviction": 1.041,
+     "chi2": 0.008,
+     "p": 0.9303251569153274,
+     "discriminative_bh": false,
+     "stability": 0.05,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.suit_filed@d"
+     ],
+     "len": 1,
+     "support_all": 0.3509,
+     "n_train_with_pattern": 133,
+     "confidence_win": 0.4361,
+     "lift": 1.052,
+     "conviction": 1.038,
+     "chi2": 0.26,
+     "p": 0.6104375496164949,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.suit_filed@d",
+      "event.suit_filed@p"
+     ],
+     "len": 2,
+     "support_all": 0.3473,
+     "n_train_with_pattern": 131,
+     "confidence_win": 0.4351,
+     "lift": 1.05,
+     "conviction": 1.036,
+     "chi2": 0.225,
+     "p": 0.6352130345947231,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.writ_filed@d"
+     ],
+     "len": 1,
+     "support_all": 0.1564,
+     "n_train_with_pattern": 49,
+     "confidence_win": 0.4286,
+     "lift": 1.034,
+     "conviction": 1.024,
+     "chi2": 0.003,
+     "p": 0.9540862531283515,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.writ_filed@p"
+     ],
+     "len": 1,
+     "support_all": 0.1527,
+     "n_train_with_pattern": 49,
+     "confidence_win": 0.4286,
+     "lift": 1.034,
+     "conviction": 1.024,
+     "chi2": 0.003,
+     "p": 0.9540862531283515,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "propertytype.land@p"
+     ],
+     "len": 1,
+     "support_all": 0.1582,
+     "n_train_with_pattern": 61,
+     "confidence_win": 0.4098,
+     "lift": 0.989,
+     "conviction": 0.992,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "rightclaimed.possession@p"
+     ],
+     "len": 1,
+     "support_all": 0.1145,
+     "n_train_with_pattern": 43,
+     "confidence_win": 0.4186,
+     "lift": 1.01,
+     "conviction": 1.007,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.65,
+     "stable": false
+    }
+   ]
+  },
+  "TenureOccupancy": {
+   "family": "TenureOccupancy",
+   "view": "combined",
+   "n_cases": 188,
+   "n_train_cases": 165,
+   "min_support": 0.1,
+   "support_search": [
+    [
+     0.3,
+     6
+    ],
+    [
+     0.2,
+     14
+    ],
+    [
+     0.15,
+     28
+    ],
+    [
+     0.1,
+     106
+    ]
+   ],
+   "n_itemsets": 106,
+   "n_closed": 53,
+   "n_rules": 53,
+   "train_base_win_rate": 0.3515,
+   "n_discriminative_bh": 0,
+   "n_stable": 32,
+   "n_stable_and_discriminative": 0,
+   "rules": [
+    {
+     "pattern": [
+      "event.appeal_filed@d",
+      "event.appeal_filed@p",
+      "tenure.tenancy@p"
+     ],
+     "len": 3,
+     "support_all": 0.1011,
+     "n_train_with_pattern": 15,
+     "confidence_win": 0.6,
+     "lift": 1.707,
+     "conviction": 1.621,
+     "chi2": 3.351,
+     "p": 0.06717854017583866,
+     "discriminative_bh": false,
+     "stability": 0.6,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_served@p",
+      "partyrole.tenant@p"
+     ],
+     "len": 2,
+     "support_all": 0.1011,
+     "n_train_with_pattern": 17,
+     "confidence_win": 0.5882,
+     "lift": 1.673,
+     "conviction": 1.575,
+     "chi2": 3.573,
+     "p": 0.05871799260392471,
+     "discriminative_bh": false,
+     "stability": 0.5,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "partyrole.tenant@d",
+      "partyrole.tenant@p",
+      "tenure.tenancy@p"
+     ],
+     "len": 3,
+     "support_all": 0.1011,
+     "n_train_with_pattern": 16,
+     "confidence_win": 0.5625,
+     "lift": 1.6,
+     "conviction": 1.482,
+     "chi2": 2.511,
+     "p": 0.11305763805949892,
+     "discriminative_bh": false,
+     "stability": 0.55,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "partyrole.tenant@p",
+      "tenure.tenancy@p"
+     ],
+     "len": 2,
+     "support_all": 0.1117,
+     "n_train_with_pattern": 18,
+     "confidence_win": 0.5556,
+     "lift": 1.58,
+     "conviction": 1.459,
+     "chi2": 2.754,
+     "p": 0.09703000978689888,
+     "discriminative_bh": false,
+     "stability": 0.75,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "rightclaimed.possession@p"
+     ],
+     "len": 1,
+     "support_all": 0.1117,
+     "n_train_with_pattern": 20,
+     "confidence_win": 0.15,
+     "lift": 0.427,
+     "conviction": 0.763,
+     "chi2": 3.111,
+     "p": 0.07777682170235739,
+     "discriminative_bh": false,
+     "stability": 0.95,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "rightclaimed.possession@d",
+      "rightclaimed.possession@p"
+     ],
+     "len": 2,
+     "support_all": 0.1011,
+     "n_train_with_pattern": 18,
+     "confidence_win": 0.1667,
+     "lift": 0.474,
+     "conviction": 0.778,
+     "chi2": 2.187,
+     "p": 0.13920891243449582,
+     "discriminative_bh": false,
+     "stability": 0.6,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "element.death_of_owner@d",
+      "element.death_of_owner@p"
+     ],
+     "len": 2,
+     "support_all": 0.1011,
+     "n_train_with_pattern": 15,
+     "confidence_win": 0.5333,
+     "lift": 1.517,
+     "conviction": 1.39,
+     "chi2": 1.596,
+     "p": 0.20648590612774234,
+     "discriminative_bh": false,
+     "stability": 0.4,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "partyrole.tenant@p",
+      "tenure.tenancy@d",
+      "tenure.tenancy@p"
+     ],
+     "len": 3,
+     "support_all": 0.1064,
+     "n_train_with_pattern": 17,
+     "confidence_win": 0.5294,
+     "lift": 1.506,
+     "conviction": 1.378,
+     "chi2": 1.833,
+     "p": 0.17575914650414445,
+     "discriminative_bh": false,
+     "stability": 0.65,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.decree_passed@d",
+      "event.decree_passed@p"
+     ],
+     "len": 2,
+     "support_all": 0.117,
+     "n_train_with_pattern": 19,
+     "confidence_win": 0.5263,
+     "lift": 1.497,
+     "conviction": 1.369,
+     "chi2": 2.077,
+     "p": 0.14954853653069278,
+     "discriminative_bh": false,
+     "stability": 0.6,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "partyrole.tenant@p",
+      "tenure.tenancy@d"
+     ],
+     "len": 2,
+     "support_all": 0.1117,
+     "n_train_with_pattern": 18,
+     "confidence_win": 0.5,
+     "lift": 1.422,
+     "conviction": 1.297,
+     "chi2": 1.291,
+     "p": 0.2557901793035977,
+     "discriminative_bh": false,
+     "stability": 0.8,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "partyrole.tenant@d",
+      "tenure.tenancy@p"
+     ],
+     "len": 2,
+     "support_all": 0.1117,
+     "n_train_with_pattern": 18,
+     "confidence_win": 0.5,
+     "lift": 1.422,
+     "conviction": 1.297,
+     "chi2": 1.291,
+     "p": 0.2557901793035977,
+     "discriminative_bh": false,
+     "stability": 0.75,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "partyrole.tenant@d",
+      "partyrole.tenant@p",
+      "tenure.tenancy@d"
+     ],
+     "len": 3,
+     "support_all": 0.1011,
+     "n_train_with_pattern": 16,
+     "confidence_win": 0.5,
+     "lift": 1.422,
+     "conviction": 1.297,
+     "chi2": 1.068,
+     "p": 0.30133309055178026,
+     "discriminative_bh": false,
+     "stability": 0.55,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "propertytype.land@d",
+      "propertytype.land@p"
+     ],
+     "len": 2,
+     "support_all": 0.117,
+     "n_train_with_pattern": 19,
+     "confidence_win": 0.2105,
+     "lift": 0.599,
+     "conviction": 0.821,
+     "chi2": 1.239,
+     "p": 0.2657231911303352,
+     "discriminative_bh": false,
+     "stability": 0.75,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "partyrole.tenant@d",
+      "tenure.tenancy@d",
+      "tenure.tenancy@p"
+     ],
+     "len": 3,
+     "support_all": 0.1064,
+     "n_train_with_pattern": 17,
+     "confidence_win": 0.4706,
+     "lift": 1.339,
+     "conviction": 1.225,
+     "chi2": 0.668,
+     "p": 0.41360941926303635,
+     "discriminative_bh": false,
+     "stability": 0.65,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.agreement_executed@p"
+     ],
+     "len": 1,
+     "support_all": 0.133,
+     "n_train_with_pattern": 22,
+     "confidence_win": 0.4545,
+     "lift": 1.293,
+     "conviction": 1.189,
+     "chi2": 0.718,
+     "p": 0.39676478234848833,
+     "discriminative_bh": false,
+     "stability": 0.8,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.agreement_executed@d",
+      "event.agreement_executed@p"
+     ],
+     "len": 2,
+     "support_all": 0.1277,
+     "n_train_with_pattern": 22,
+     "confidence_win": 0.4545,
+     "lift": 1.293,
+     "conviction": 1.189,
+     "chi2": 0.718,
+     "p": 0.39676478234848833,
+     "discriminative_bh": false,
+     "stability": 0.8,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "propertytype.land@p"
+     ],
+     "len": 1,
+     "support_all": 0.1223,
+     "n_train_with_pattern": 20,
+     "confidence_win": 0.25,
+     "lift": 0.711,
+     "conviction": 0.865,
+     "chi2": 0.585,
+     "p": 0.44454733610618075,
+     "discriminative_bh": false,
+     "stability": 0.9,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.notice_served@p",
+      "tenure.tenancy@p"
+     ],
+     "len": 2,
+     "support_all": 0.1649,
+     "n_train_with_pattern": 27,
+     "confidence_win": 0.4444,
+     "lift": 1.264,
+     "conviction": 1.167,
+     "chi2": 0.784,
+     "p": 0.3758764360238973,
+     "discriminative_bh": false,
+     "stability": 0.95,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "partyrole.tenant@d",
+      "tenure.tenancy@d"
+     ],
+     "len": 2,
+     "support_all": 0.1117,
+     "n_train_with_pattern": 18,
+     "confidence_win": 0.4444,
+     "lift": 1.264,
+     "conviction": 1.167,
+     "chi2": 0.376,
+     "p": 0.5396320864864496,
+     "discriminative_bh": false,
+     "stability": 0.8,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.notice_served@p"
+     ],
+     "len": 1,
+     "support_all": 0.2979,
+     "n_train_with_pattern": 46,
+     "confidence_win": 0.4348,
+     "lift": 1.237,
+     "conviction": 1.147,
+     "chi2": 1.467,
+     "p": 0.22588766365778778,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "partyrole.tenant@d",
+      "partyrole.tenant@p"
+     ],
+     "len": 2,
+     "support_all": 0.1755,
+     "n_train_with_pattern": 30,
+     "confidence_win": 0.4333,
+     "lift": 1.233,
+     "conviction": 1.144,
+     "chi2": 0.683,
+     "p": 0.40863334965236603,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "rightclaimed.possession@d"
+     ],
+     "len": 1,
+     "support_all": 0.1223,
+     "n_train_with_pattern": 22,
+     "confidence_win": 0.2727,
+     "lift": 0.776,
+     "conviction": 0.892,
+     "chi2": 0.35,
+     "p": 0.5541248829112876,
+     "discriminative_bh": false,
+     "stability": 0.85,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d",
+      "event.appeal_decided@p"
+     ],
+     "len": 2,
+     "support_all": 0.2394,
+     "n_train_with_pattern": 40,
+     "confidence_win": 0.425,
+     "lift": 1.209,
+     "conviction": 1.128,
+     "chi2": 0.861,
+     "p": 0.3533310965443384,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.notice_served@d",
+      "event.notice_served@p",
+      "tenure.tenancy@p"
+     ],
+     "len": 3,
+     "support_all": 0.1596,
+     "n_train_with_pattern": 26,
+     "confidence_win": 0.4231,
+     "lift": 1.204,
+     "conviction": 1.124,
+     "chi2": 0.371,
+     "p": 0.5425792150397415,
+     "discriminative_bh": false,
+     "stability": 0.95,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.notice_served@d"
+     ],
+     "len": 1,
+     "support_all": 0.2819,
+     "n_train_with_pattern": 43,
+     "confidence_win": 0.4186,
+     "lift": 1.191,
+     "conviction": 1.115,
+     "chi2": 0.785,
+     "p": 0.37569122736779265,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.notice_served@d",
+      "event.notice_served@p"
+     ],
+     "len": 2,
+     "support_all": 0.2766,
+     "n_train_with_pattern": 43,
+     "confidence_win": 0.4186,
+     "lift": 1.191,
+     "conviction": 1.115,
+     "chi2": 0.785,
+     "p": 0.37569122736779265,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.writ_filed@d"
+     ],
+     "len": 1,
+     "support_all": 0.1011,
+     "n_train_with_pattern": 14,
+     "confidence_win": 0.2857,
+     "lift": 0.813,
+     "conviction": 0.908,
+     "chi2": 0.061,
+     "p": 0.8053165207647889,
+     "discriminative_bh": false,
+     "stability": 0.3,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "partyrole.tenant@p"
+     ],
+     "len": 1,
+     "support_all": 0.2021,
+     "n_train_with_pattern": 34,
+     "confidence_win": 0.4118,
+     "lift": 1.171,
+     "conviction": 1.102,
+     "chi2": 0.39,
+     "p": 0.532469706839864,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.suit_filed@d",
+      "event.suit_filed@p",
+      "tenure.tenancy@d",
+      "tenure.tenancy@p"
+     ],
+     "len": 4,
+     "support_all": 0.1489,
+     "n_train_with_pattern": 22,
+     "confidence_win": 0.4091,
+     "lift": 1.164,
+     "conviction": 1.097,
+     "chi2": 0.135,
+     "p": 0.7130630823016413,
+     "discriminative_bh": false,
+     "stability": 0.9,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d",
+      "event.appeal_decided@p",
+      "tenure.tenancy@p"
+     ],
+     "len": 3,
+     "support_all": 0.1223,
+     "n_train_with_pattern": 22,
+     "confidence_win": 0.4091,
+     "lift": 1.164,
+     "conviction": 1.097,
+     "chi2": 0.135,
+     "p": 0.7130630823016413,
+     "discriminative_bh": false,
+     "stability": 0.95,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.suit_filed@d",
+      "event.suit_filed@p",
+      "partyrole.tenant@p"
+     ],
+     "len": 3,
+     "support_all": 0.1117,
+     "n_train_with_pattern": 17,
+     "confidence_win": 0.2941,
+     "lift": 0.837,
+     "conviction": 0.919,
+     "chi2": 0.065,
+     "p": 0.7985823568380146,
+     "discriminative_bh": false,
+     "stability": 0.6,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "partyrole.tenant@d"
+     ],
+     "len": 1,
+     "support_all": 0.2021,
+     "n_train_with_pattern": 35,
+     "confidence_win": 0.4,
+     "lift": 1.138,
+     "conviction": 1.081,
+     "chi2": 0.228,
+     "p": 0.6330655173500432,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "evidence.lease_deed@p"
+     ],
+     "len": 1,
+     "support_all": 0.133,
+     "n_train_with_pattern": 20,
+     "confidence_win": 0.4,
+     "lift": 1.138,
+     "conviction": 1.081,
+     "chi2": 0.055,
+     "p": 0.8144727521240184,
+     "discriminative_bh": false,
+     "stability": 0.8,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "evidence.lease_deed@d",
+      "evidence.lease_deed@p"
+     ],
+     "len": 2,
+     "support_all": 0.1277,
+     "n_train_with_pattern": 20,
+     "confidence_win": 0.4,
+     "lift": 1.138,
+     "conviction": 1.081,
+     "chi2": 0.055,
+     "p": 0.8144727521240184,
+     "discriminative_bh": false,
+     "stability": 0.8,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "tenure.tenancy@d"
+     ],
+     "len": 1,
+     "support_all": 0.3617,
+     "n_train_with_pattern": 62,
+     "confidence_win": 0.3065,
+     "lift": 0.872,
+     "conviction": 0.935,
+     "chi2": 0.596,
+     "p": 0.43993520869855723,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "tenure.leasehold@d",
+      "tenure.leasehold@p"
+     ],
+     "len": 2,
+     "support_all": 0.1543,
+     "n_train_with_pattern": 26,
+     "confidence_win": 0.3077,
+     "lift": 0.875,
+     "conviction": 0.937,
+     "chi2": 0.082,
+     "p": 0.7747628731559952,
+     "discriminative_bh": false,
+     "stability": 0.9,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.suit_filed@d",
+      "event.suit_filed@p",
+      "tenure.tenancy@d"
+     ],
+     "len": 3,
+     "support_all": 0.1543,
+     "n_train_with_pattern": 23,
+     "confidence_win": 0.3913,
+     "lift": 1.113,
+     "conviction": 1.065,
+     "chi2": 0.038,
+     "p": 0.8450467034059327,
+     "discriminative_bh": false,
+     "stability": 0.9,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "tenure.tenancy@d",
+      "tenure.tenancy@p"
+     ],
+     "len": 2,
+     "support_all": 0.3511,
+     "n_train_with_pattern": 60,
+     "confidence_win": 0.3167,
+     "lift": 0.901,
+     "conviction": 0.949,
+     "chi2": 0.291,
+     "p": 0.589710110251841,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "tenure.leasehold@p"
+     ],
+     "len": 1,
+     "support_all": 0.1649,
+     "n_train_with_pattern": 28,
+     "confidence_win": 0.3214,
+     "lift": 0.914,
+     "conviction": 0.956,
+     "chi2": 0.022,
+     "p": 0.8817540786175686,
+     "discriminative_bh": false,
+     "stability": 0.95,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.notice_served@p",
+      "tenure.tenancy@d",
+      "tenure.tenancy@p"
+     ],
+     "len": 3,
+     "support_all": 0.1489,
+     "n_train_with_pattern": 24,
+     "confidence_win": 0.375,
+     "lift": 1.067,
+     "conviction": 1.038,
+     "chi2": 0.001,
+     "p": 0.9765205685953563,
+     "discriminative_bh": false,
+     "stability": 0.95,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "element.obligation@d",
+      "element.obligation@p"
+     ],
+     "len": 2,
+     "support_all": 0.117,
+     "n_train_with_pattern": 16,
+     "confidence_win": 0.375,
+     "lift": 1.067,
+     "conviction": 1.038,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.5,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_served@d",
+      "event.notice_served@p",
+      "tenure.tenancy@d"
+     ],
+     "len": 3,
+     "support_all": 0.1489,
+     "n_train_with_pattern": 24,
+     "confidence_win": 0.3333,
+     "lift": 0.948,
+     "conviction": 0.973,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.notice_served@p",
+      "event.suit_filed@d",
+      "event.suit_filed@p"
+     ],
+     "len": 3,
+     "support_all": 0.133,
+     "n_train_with_pattern": 18,
+     "confidence_win": 0.3333,
+     "lift": 0.948,
+     "conviction": 0.973,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.75,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_served@d",
+      "event.suit_filed@d",
+      "event.suit_filed@p"
+     ],
+     "len": 3,
+     "support_all": 0.133,
+     "n_train_with_pattern": 18,
+     "confidence_win": 0.3333,
+     "lift": 0.948,
+     "conviction": 0.973,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.75,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_served@d",
+      "event.notice_served@p",
+      "event.suit_filed@d",
+      "event.suit_filed@p"
+     ],
+     "len": 4,
+     "support_all": 0.1277,
+     "n_train_with_pattern": 18,
+     "confidence_win": 0.3333,
+     "lift": 0.948,
+     "conviction": 0.973,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.75,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d",
+      "event.appeal_decided@p",
+      "tenure.tenancy@d",
+      "tenure.tenancy@p"
+     ],
+     "len": 4,
+     "support_all": 0.1011,
+     "n_train_with_pattern": 18,
+     "confidence_win": 0.3333,
+     "lift": 0.948,
+     "conviction": 0.973,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.5,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@d",
+      "event.appeal_filed@p",
+      "event.suit_filed@d",
+      "event.suit_filed@p"
+     ],
+     "len": 4,
+     "support_all": 0.1011,
+     "n_train_with_pattern": 11,
+     "confidence_win": 0.3636,
+     "lift": 1.034,
+     "conviction": 1.019,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.05,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.suit_filed@d",
+      "event.suit_filed@p"
+     ],
+     "len": 2,
+     "support_all": 0.3404,
+     "n_train_with_pattern": 50,
+     "confidence_win": 0.36,
+     "lift": 1.024,
+     "conviction": 1.013,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.notice_served@p",
+      "tenure.tenancy@d"
+     ],
+     "len": 2,
+     "support_all": 0.1543,
+     "n_train_with_pattern": 25,
+     "confidence_win": 0.36,
+     "lift": 1.024,
+     "conviction": 1.013,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "tenure.tenancy@p"
+     ],
+     "len": 1,
+     "support_all": 0.3883,
+     "n_train_with_pattern": 67,
+     "confidence_win": 0.3582,
+     "lift": 1.019,
+     "conviction": 1.01,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@d",
+      "event.appeal_filed@p"
+     ],
+     "len": 2,
+     "support_all": 0.1915,
+     "n_train_with_pattern": 28,
+     "confidence_win": 0.3571,
+     "lift": 1.016,
+     "conviction": 1.009,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.notice_served@d",
+      "event.notice_served@p",
+      "tenure.tenancy@d",
+      "tenure.tenancy@p"
+     ],
+     "len": 4,
+     "support_all": 0.1436,
+     "n_train_with_pattern": 23,
+     "confidence_win": 0.3478,
+     "lift": 0.99,
+     "conviction": 0.994,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.95,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.suit_filed@d",
+      "event.suit_filed@p",
+      "partyrole.tenant@d"
+     ],
+     "len": 3,
+     "support_all": 0.1064,
+     "n_train_with_pattern": 17,
+     "confidence_win": 0.3529,
+     "lift": 1.004,
+     "conviction": 1.002,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.75,
+     "stable": false
+    }
+   ]
+  },
+  "Mixed_Compensation_Land Acquisition": {
+   "family": "Mixed_Compensation_Land Acquisition",
+   "view": "combined",
+   "n_cases": 87,
+   "n_train_cases": 64,
+   "min_support": 0.1,
+   "support_search": [
+    [
+     0.3,
+     3
+    ],
+    [
+     0.2,
+     16
+    ],
+    [
+     0.15,
+     27
+    ],
+    [
+     0.1,
+     79
+    ]
+   ],
+   "n_itemsets": 79,
+   "n_closed": 53,
+   "n_rules": 53,
+   "train_base_win_rate": 0.3906,
+   "n_discriminative_bh": 0,
+   "n_stable": 28,
+   "n_stable_and_discriminative": 0,
+   "rules": [
+    {
+     "pattern": [
+      "rightclaimed.compensation.gt1cr@p"
+     ],
+     "len": 1,
+     "support_all": 0.1149,
+     "n_train_with_pattern": 4,
+     "confidence_win": 0.0,
+     "lift": 0.0,
+     "conviction": 0.609,
+     "chi2": 1.265,
+     "p": 0.2607663770889059,
+     "discriminative_bh": false,
+     "stability": 0.2,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_issued@d",
+      "event.notice_issued@p",
+      "rightclaimed.compensation@d",
+      "rightclaimed.compensation@p"
+     ],
+     "len": 4,
+     "support_all": 0.1149,
+     "n_train_with_pattern": 5,
+     "confidence_win": 0.0,
+     "lift": 0.0,
+     "conviction": 0.609,
+     "chi2": 1.925,
+     "p": 0.1653607861454942,
+     "discriminative_bh": false,
+     "stability": 0.25,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "evidence.sale_deed@p"
+     ],
+     "len": 1,
+     "support_all": 0.1034,
+     "n_train_with_pattern": 7,
+     "confidence_win": 0.1429,
+     "lift": 0.366,
+     "conviction": 0.711,
+     "chi2": 1.027,
+     "p": 0.3109277168533652,
+     "discriminative_bh": false,
+     "stability": 0.7,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@p"
+     ],
+     "len": 1,
+     "support_all": 0.1494,
+     "n_train_with_pattern": 8,
+     "confidence_win": 0.625,
+     "lift": 1.6,
+     "conviction": 1.625,
+     "chi2": 1.135,
+     "p": 0.2867852266441152,
+     "discriminative_bh": false,
+     "stability": 0.65,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "rightclaimed.compensation.lt10k@p"
+     ],
+     "len": 1,
+     "support_all": 0.1034,
+     "n_train_with_pattern": 8,
+     "confidence_win": 0.625,
+     "lift": 1.6,
+     "conviction": 1.625,
+     "chi2": 1.135,
+     "p": 0.2867852266441152,
+     "discriminative_bh": false,
+     "stability": 0.75,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "propertytype.acquired_land@d",
+      "propertytype.acquired_land@p",
+      "rightclaimed.compensation@d",
+      "rightclaimed.compensation@p"
+     ],
+     "len": 4,
+     "support_all": 0.1034,
+     "n_train_with_pattern": 6,
+     "confidence_win": 0.1667,
+     "lift": 0.427,
+     "conviction": 0.731,
+     "chi2": 0.55,
+     "p": 0.45830685615490074,
+     "discriminative_bh": false,
+     "stability": 0.5,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_served@d"
+     ],
+     "len": 1,
+     "support_all": 0.2299,
+     "n_train_with_pattern": 10,
+     "confidence_win": 0.6,
+     "lift": 1.536,
+     "conviction": 1.523,
+     "chi2": 1.265,
+     "p": 0.2607663770889059,
+     "discriminative_bh": false,
+     "stability": 0.8,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "element.statutory_notification@p"
+     ],
+     "len": 1,
+     "support_all": 0.1494,
+     "n_train_with_pattern": 11,
+     "confidence_win": 0.1818,
+     "lift": 0.465,
+     "conviction": 0.745,
+     "chi2": 1.489,
+     "p": 0.22236753478056348,
+     "discriminative_bh": false,
+     "stability": 0.85,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "element.statutory_notification@d",
+      "element.statutory_notification@p"
+     ],
+     "len": 2,
+     "support_all": 0.1379,
+     "n_train_with_pattern": 10,
+     "confidence_win": 0.2,
+     "lift": 0.512,
+     "conviction": 0.762,
+     "chi2": 0.985,
+     "p": 0.3210619922539066,
+     "discriminative_bh": false,
+     "stability": 0.8,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_filed@d",
+      "event.appeal_filed@p"
+     ],
+     "len": 2,
+     "support_all": 0.1264,
+     "n_train_with_pattern": 7,
+     "confidence_win": 0.5714,
+     "lift": 1.463,
+     "conviction": 1.422,
+     "chi2": 0.395,
+     "p": 0.5296840006854105,
+     "discriminative_bh": false,
+     "stability": 0.65,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "element.state_action@d"
+     ],
+     "len": 1,
+     "support_all": 0.1264,
+     "n_train_with_pattern": 9,
+     "confidence_win": 0.2222,
+     "lift": 0.569,
+     "conviction": 0.783,
+     "chi2": 0.56,
+     "p": 0.4541517335879372,
+     "discriminative_bh": false,
+     "stability": 0.85,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.notice_served@p"
+     ],
+     "len": 1,
+     "support_all": 0.2299,
+     "n_train_with_pattern": 9,
+     "confidence_win": 0.5556,
+     "lift": 1.422,
+     "conviction": 1.371,
+     "chi2": 0.526,
+     "p": 0.4681574208404544,
+     "discriminative_bh": false,
+     "stability": 0.75,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "statute.land_acquisition_law@d"
+     ],
+     "len": 1,
+     "support_all": 0.1379,
+     "n_train_with_pattern": 9,
+     "confidence_win": 0.5556,
+     "lift": 1.422,
+     "conviction": 1.371,
+     "chi2": 0.526,
+     "p": 0.4681574208404544,
+     "discriminative_bh": false,
+     "stability": 0.8,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "statute.land_acquisition_law@d",
+      "statute.land_acquisition_law@p"
+     ],
+     "len": 2,
+     "support_all": 0.1264,
+     "n_train_with_pattern": 9,
+     "confidence_win": 0.5556,
+     "lift": 1.422,
+     "conviction": 1.371,
+     "chi2": 0.526,
+     "p": 0.4681574208404544,
+     "discriminative_bh": false,
+     "stability": 0.8,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "rightclaimed.possession@d"
+     ],
+     "len": 1,
+     "support_all": 0.1379,
+     "n_train_with_pattern": 8,
+     "confidence_win": 0.25,
+     "lift": 0.64,
+     "conviction": 0.812,
+     "chi2": 0.234,
+     "p": 0.6282566916936227,
+     "discriminative_bh": false,
+     "stability": 0.75,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "evidence.sale_deed@d"
+     ],
+     "len": 1,
+     "support_all": 0.1034,
+     "n_train_with_pattern": 8,
+     "confidence_win": 0.25,
+     "lift": 0.64,
+     "conviction": 0.812,
+     "chi2": 0.234,
+     "p": 0.6282566916936227,
+     "discriminative_bh": false,
+     "stability": 0.8,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "element.state_action@d",
+      "element.state_action@p"
+     ],
+     "len": 2,
+     "support_all": 0.1034,
+     "n_train_with_pattern": 8,
+     "confidence_win": 0.25,
+     "lift": 0.64,
+     "conviction": 0.812,
+     "chi2": 0.234,
+     "p": 0.6282566916936227,
+     "discriminative_bh": false,
+     "stability": 0.8,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "propertytype.acquired_land@d"
+     ],
+     "len": 1,
+     "support_all": 0.2069,
+     "n_train_with_pattern": 12,
+     "confidence_win": 0.5,
+     "lift": 1.28,
+     "conviction": 1.219,
+     "chi2": 0.284,
+     "p": 0.5938028572077025,
+     "discriminative_bh": false,
+     "stability": 0.95,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.notice_served@d",
+      "event.notice_served@p"
+     ],
+     "len": 2,
+     "support_all": 0.2069,
+     "n_train_with_pattern": 8,
+     "confidence_win": 0.5,
+     "lift": 1.28,
+     "conviction": 1.219,
+     "chi2": 0.084,
+     "p": 0.7714267015464749,
+     "discriminative_bh": false,
+     "stability": 0.55,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "element.payment_of_consideration_partial_or_full@d"
+     ],
+     "len": 1,
+     "support_all": 0.1149,
+     "n_train_with_pattern": 8,
+     "confidence_win": 0.5,
+     "lift": 1.28,
+     "conviction": 1.219,
+     "chi2": 0.084,
+     "p": 0.7714267015464749,
+     "discriminative_bh": false,
+     "stability": 0.7,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "element.payment_of_consideration_partial_or_full@d",
+      "element.payment_of_consideration_partial_or_full@p"
+     ],
+     "len": 2,
+     "support_all": 0.1034,
+     "n_train_with_pattern": 8,
+     "confidence_win": 0.5,
+     "lift": 1.28,
+     "conviction": 1.219,
+     "chi2": 0.084,
+     "p": 0.7714267015464749,
+     "discriminative_bh": false,
+     "stability": 0.7,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_issued@d",
+      "event.notice_issued@p",
+      "rightclaimed.compensation@p"
+     ],
+     "len": 3,
+     "support_all": 0.1609,
+     "n_train_with_pattern": 7,
+     "confidence_win": 0.2857,
+     "lift": 0.731,
+     "conviction": 0.853,
+     "chi2": 0.037,
+     "p": 0.847433256609376,
+     "discriminative_bh": false,
+     "stability": 0.6,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "propertytype.acquired_land@d",
+      "propertytype.acquired_land@p",
+      "rightclaimed.compensation@p"
+     ],
+     "len": 3,
+     "support_all": 0.1264,
+     "n_train_with_pattern": 7,
+     "confidence_win": 0.2857,
+     "lift": 0.731,
+     "conviction": 0.853,
+     "chi2": 0.037,
+     "p": 0.847433256609376,
+     "discriminative_bh": false,
+     "stability": 0.6,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "propertytype.acquired_land@d",
+      "rightclaimed.compensation@d",
+      "rightclaimed.compensation@p"
+     ],
+     "len": 3,
+     "support_all": 0.1149,
+     "n_train_with_pattern": 7,
+     "confidence_win": 0.2857,
+     "lift": 0.731,
+     "conviction": 0.853,
+     "chi2": 0.037,
+     "p": 0.847433256609376,
+     "discriminative_bh": false,
+     "stability": 0.6,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "rightclaimed.possession@d",
+      "rightclaimed.possession@p"
+     ],
+     "len": 2,
+     "support_all": 0.1034,
+     "n_train_with_pattern": 7,
+     "confidence_win": 0.2857,
+     "lift": 0.731,
+     "conviction": 0.853,
+     "chi2": 0.037,
+     "p": 0.847433256609376,
+     "discriminative_bh": false,
+     "stability": 0.55,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.notice_issued@d"
+     ],
+     "len": 1,
+     "support_all": 0.2529,
+     "n_train_with_pattern": 10,
+     "confidence_win": 0.3,
+     "lift": 0.768,
+     "conviction": 0.871,
+     "chi2": 0.082,
+     "p": 0.7743741588000905,
+     "discriminative_bh": false,
+     "stability": 0.9,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.notice_issued@d",
+      "event.notice_issued@p"
+     ],
+     "len": 2,
+     "support_all": 0.2414,
+     "n_train_with_pattern": 10,
+     "confidence_win": 0.3,
+     "lift": 0.768,
+     "conviction": 0.871,
+     "chi2": 0.082,
+     "p": 0.7743741588000905,
+     "discriminative_bh": false,
+     "stability": 0.9,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "rightclaimed.possession@p"
+     ],
+     "len": 1,
+     "support_all": 0.1379,
+     "n_train_with_pattern": 10,
+     "confidence_win": 0.3,
+     "lift": 0.768,
+     "conviction": 0.871,
+     "chi2": 0.082,
+     "p": 0.7743741588000905,
+     "discriminative_bh": false,
+     "stability": 0.85,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "propertytype.land@d",
+      "propertytype.land@p",
+      "rightclaimed.compensation@p"
+     ],
+     "len": 3,
+     "support_all": 0.1379,
+     "n_train_with_pattern": 10,
+     "confidence_win": 0.3,
+     "lift": 0.768,
+     "conviction": 0.871,
+     "chi2": 0.082,
+     "p": 0.7743741588000905,
+     "discriminative_bh": false,
+     "stability": 0.9,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "rightclaimed.compensation@d"
+     ],
+     "len": 1,
+     "support_all": 0.3448,
+     "n_train_with_pattern": 22,
+     "confidence_win": 0.3182,
+     "lift": 0.815,
+     "conviction": 0.894,
+     "chi2": 0.348,
+     "p": 0.555192724372414,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "propertytype.acquired_land@d",
+      "propertytype.acquired_land@p"
+     ],
+     "len": 2,
+     "support_all": 0.1954,
+     "n_train_with_pattern": 11,
+     "confidence_win": 0.4545,
+     "lift": 1.164,
+     "conviction": 1.117,
+     "chi2": 0.019,
+     "p": 0.8902861973317329,
+     "discriminative_bh": false,
+     "stability": 0.85,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "rightclaimed.compensation@d",
+      "rightclaimed.compensation@p"
+     ],
+     "len": 2,
+     "support_all": 0.3218,
+     "n_train_with_pattern": 21,
+     "confidence_win": 0.3333,
+     "lift": 0.853,
+     "conviction": 0.914,
+     "chi2": 0.147,
+     "p": 0.7012240487557853,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.possession_taken@d"
+     ],
+     "len": 1,
+     "support_all": 0.1839,
+     "n_train_with_pattern": 9,
+     "confidence_win": 0.3333,
+     "lift": 0.853,
+     "conviction": 0.914,
+     "chi2": 0.0,
+     "p": 0.990812115168588,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.possession_taken@d",
+      "event.possession_taken@p"
+     ],
+     "len": 2,
+     "support_all": 0.1724,
+     "n_train_with_pattern": 9,
+     "confidence_win": 0.3333,
+     "lift": 0.853,
+     "conviction": 0.914,
+     "chi2": 0.0,
+     "p": 0.990812115168588,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.writ_filed@d",
+      "event.writ_filed@p"
+     ],
+     "len": 2,
+     "support_all": 0.1609,
+     "n_train_with_pattern": 9,
+     "confidence_win": 0.3333,
+     "lift": 0.853,
+     "conviction": 0.914,
+     "chi2": 0.0,
+     "p": 0.990812115168588,
+     "discriminative_bh": false,
+     "stability": 0.8,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d"
+     ],
+     "len": 1,
+     "support_all": 0.1379,
+     "n_train_with_pattern": 6,
+     "confidence_win": 0.3333,
+     "lift": 0.853,
+     "conviction": 0.914,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.3,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@p"
+     ],
+     "len": 1,
+     "support_all": 0.1379,
+     "n_train_with_pattern": 6,
+     "confidence_win": 0.3333,
+     "lift": 0.853,
+     "conviction": 0.914,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.3,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.appeal_decided@d",
+      "event.appeal_decided@p"
+     ],
+     "len": 2,
+     "support_all": 0.1264,
+     "n_train_with_pattern": 6,
+     "confidence_win": 0.3333,
+     "lift": 0.853,
+     "conviction": 0.914,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.3,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "event.possession_taken@d",
+      "event.possession_taken@p",
+      "rightclaimed.compensation@p"
+     ],
+     "len": 3,
+     "support_all": 0.1264,
+     "n_train_with_pattern": 6,
+     "confidence_win": 0.3333,
+     "lift": 0.853,
+     "conviction": 0.914,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.3,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "rightclaimed.title@p"
+     ],
+     "len": 1,
+     "support_all": 0.1034,
+     "n_train_with_pattern": 6,
+     "confidence_win": 0.3333,
+     "lift": 0.853,
+     "conviction": 0.914,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.45,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "evidence.valuation_report@p"
+     ],
+     "len": 1,
+     "support_all": 0.1034,
+     "n_train_with_pattern": 6,
+     "confidence_win": 0.3333,
+     "lift": 0.853,
+     "conviction": 0.914,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.5,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "landuse.acquisition_zone@d",
+      "landuse.acquisition_zone@p"
+     ],
+     "len": 2,
+     "support_all": 0.1034,
+     "n_train_with_pattern": 6,
+     "confidence_win": 0.3333,
+     "lift": 0.853,
+     "conviction": 0.914,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.5,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "element.payment_of_consideration_partial_or_full@p"
+     ],
+     "len": 1,
+     "support_all": 0.1264,
+     "n_train_with_pattern": 9,
+     "confidence_win": 0.4444,
+     "lift": 1.138,
+     "conviction": 1.097,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.8,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "propertytype.land@d"
+     ],
+     "len": 1,
+     "support_all": 0.2299,
+     "n_train_with_pattern": 14,
+     "confidence_win": 0.4286,
+     "lift": 1.097,
+     "conviction": 1.066,
+     "chi2": 0.0,
+     "p": 0.9845481114540511,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "propertytype.land@d",
+      "propertytype.land@p"
+     ],
+     "len": 2,
+     "support_all": 0.2184,
+     "n_train_with_pattern": 14,
+     "confidence_win": 0.4286,
+     "lift": 1.097,
+     "conviction": 1.066,
+     "chi2": 0.0,
+     "p": 0.9845481114540511,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.suit_filed@d"
+     ],
+     "len": 1,
+     "support_all": 0.2069,
+     "n_train_with_pattern": 11,
+     "confidence_win": 0.3636,
+     "lift": 0.931,
+     "conviction": 0.958,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.85,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.suit_filed@d",
+      "event.suit_filed@p"
+     ],
+     "len": 2,
+     "support_all": 0.1954,
+     "n_train_with_pattern": 11,
+     "confidence_win": 0.3636,
+     "lift": 0.931,
+     "conviction": 0.958,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.85,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "propertytype.acquired_land@p"
+     ],
+     "len": 1,
+     "support_all": 0.2069,
+     "n_train_with_pattern": 12,
+     "confidence_win": 0.4167,
+     "lift": 1.067,
+     "conviction": 1.045,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.95,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.suit_filed@p"
+     ],
+     "len": 1,
+     "support_all": 0.2069,
+     "n_train_with_pattern": 12,
+     "confidence_win": 0.4167,
+     "lift": 1.067,
+     "conviction": 1.045,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.9,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "propertytype.acquired_land@d",
+      "rightclaimed.compensation@p"
+     ],
+     "len": 2,
+     "support_all": 0.1379,
+     "n_train_with_pattern": 8,
+     "confidence_win": 0.375,
+     "lift": 0.96,
+     "conviction": 0.975,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.75,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "propertytype.land@p"
+     ],
+     "len": 1,
+     "support_all": 0.2299,
+     "n_train_with_pattern": 15,
+     "confidence_win": 0.4,
+     "lift": 1.024,
+     "conviction": 1.016,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    },
+    {
+     "pattern": [
+      "event.agreement_executed@d"
+     ],
+     "len": 1,
+     "support_all": 0.1149,
+     "n_train_with_pattern": 5,
+     "confidence_win": 0.4,
+     "lift": 1.024,
+     "conviction": 1.016,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 0.15,
+     "stable": false
+    },
+    {
+     "pattern": [
+      "rightclaimed.compensation@p"
+     ],
+     "len": 1,
+     "support_all": 0.4253,
+     "n_train_with_pattern": 26,
+     "confidence_win": 0.3846,
+     "lift": 0.985,
+     "conviction": 0.99,
+     "chi2": 0.0,
+     "p": 1.0,
+     "discriminative_bh": false,
+     "stability": 1.0,
+     "stable": true
+    }
+   ]
+  }
+ }
+}
