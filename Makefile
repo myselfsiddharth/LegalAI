@@ -73,6 +73,10 @@ trace: ## §11 build traces and run the deletion test
 	$(PY) -m src.trace.build --split forum_heldout --model gbm --n 25
 	$(PY) -m src.trace.evaluate --split forum_heldout --model gbm --n 60
 
+proposal: ## generate both proposal drafts from measured figures (A4/1in/12pt TNR)
+	$(PY) -m src.report.figures
+	$(PY) -m src.report.proposal --which both
+
 gold: ## §6.4 build the 150-case gold annotation set + the B2 burden sheet
 	$(PY) -m src.data.gold_sample
 	$(PY) -m src.data.burden_sheet

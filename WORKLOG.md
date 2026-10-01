@@ -972,3 +972,59 @@ An earlier WORKLOG entry framed this as "the ONTOLOGY vocabulary is the problem"
 n=143 reading and it is **too narrow**. The ontology is not uniquely bad: it loses 0.089 where an
 induced vocabulary of the same granularity loses 0.114, and the two are statistically
 indistinguishable. The problem is discretisation, not the ontology's particular choices.
+
+---
+
+## 2026-10-01 — The proposal, due Oct 7
+
+Every compute-side item in M0–M5 is complete, so the binding deliverable is the course proposal:
+**due 7 October, 15% of the grade, six days out.**
+
+### The existing draft describes a project that no longer exists
+
+`LexGraph_Proposal.docx` (26 Sep) is titled *"Proof-Carrying Precedent Prediction from Facts"* and
+argues the facts→authorities pipeline with signed-graph ranking and IRAC certification. PROJECT.md
+(29 Sep) replaced that framing with outcome prediction, fact patterning and FP-Growth. Team names
+are still `[Member 1]…[Member 4]`, the date is `[Submission Date]`, and the professor's official
+template was never checked against Canvas.
+
+### Why there were two defensible framings, not one
+
+The evidence moved in a direction that cuts across both:
+
+| the old draft's claim | where it stands now |
+|---|---|
+| precedent prediction from facts works | **stronger** — RRF R@10 0.238, MRR 0.431 against a 0.032 popularity control |
+| certification cuts fabrication | holds, and §9.2 adds statute prediction at 1.9× the best baseline |
+| ontology extraction demoted to a labelling tool | **now measured as actively harmful** — discretisation costs 0.089 AUROC, P=0.000 |
+| — | outcome prediction, PROJECT.md's stated goal, is **at chance** for the structured pipeline |
+
+So the parts the old draft led with improved, and the thing PROJECT.md made central came out
+negative — with a well-controlled explanation. User chose to have both drafts written and decide
+after.
+
+### Figures are generated, never transcribed
+
+`src/report/figures.py` reads every number from `experiments/` and raises if a required file is
+missing, so a document cannot be built from a half-finished run. This exists because the failure it
+prevents already happened on this project: a proposal section was written against results that a
+later fix had changed, and the numbers silently went stale.
+
+Verified after generation: every headline figure in the document matches the experiment file it came
+from, and formatting is exactly A4 / 1-inch margins / 12pt Times New Roman / single column with no
+stray fonts — the course rule whose violation costs 20%.
+
+### The two drafts
+
+| | leads with | headline |
+|---|---|---|
+| `Proposal_A_authority_grounding.docx` | statute prediction and precedent retrieval | positive: the facts predict the governing law |
+| `Proposal_B_leakage_benchmark.docx` | the leakage-controlled benchmark and the ladder | a benchmark contribution plus a precise negative result |
+
+Both ~2,400 words, 7 tables, 6 visible TODO markers (roster, date, Canvas template, citations,
+schedule, role assignment) written in red bold rather than as plausible-looking filler, so nothing
+can be submitted silently wrong.
+
+Both include the same risk table, which states plainly that the vocabulary cannot be frozen, that no
+gold annotation exists so extraction F1 is currently uncomputable, that two models failed the burden
+degeneracy gate, and that outcome prediction may simply not be achievable on this corpus.
