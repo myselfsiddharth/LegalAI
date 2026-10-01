@@ -23,6 +23,7 @@ import os
 import re
 import sqlite3
 import threading
+from concurrent.futures import ThreadPoolExecutor
 import time
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -303,14 +304,17 @@ def _validate(text: str, schema: type):
 
 
 # --- embeddings ---------------------------------------------------------------
-def embed(texts: Sequence[str], model: str | None = None, batch_size: int = 8,
-          use_cache: bool = True, verbose: bool = False):
+def embed(texts: Sequence[str], model: str | None = None, batch_size: int = 32,
+          use_cache: bool = True, verbose: bool = False, workers: int = 24):
     """Embed texts, cached per text. Returns an (n, EMBED_DIM) float32 array.
 
-    Voyager is token-throughput-limited rather than request-limited, so a larger batch
-    buys almost nothing (measured 0.95 s/doc vs 1.06 s/doc); the batch exists to amortise
-    request overhead, not to chase throughput. A row of zeros means that text's embedding
-    was never obtained -- callers must check, not assume.
+    Batches are issued CONCURRENTLY. They used to run one after another, which made embedding the
+    bottleneck of canonicalisation: 65,577 texts at 32 per request is ~2,050 sequential round trips,
+    measured at 10.3 texts/s and 77 minutes, while the chat path alongside it was sustaining 96
+    concurrent requests. The endpoint queues rather than refuses (see WORKLOG on the concurrency
+    measurement), so the fix is the same here as there.
+
+    A row of zeros means that text's embedding was never obtained -- callers must check, not assume.
     """
     import numpy as np
 
@@ -326,34 +330,41 @@ def embed(texts: Sequence[str], model: str | None = None, batch_size: int = 8,
                 out[i] = np.array(json.loads(hit["response"]), dtype=np.float32)
                 continue
         pending.append(i)
+    if not pending:
+        return out
 
     client = _get_client()
-    for s in range(0, len(pending), batch_size):
-        idx = pending[s:s + batch_size]
+    batches = [pending[s:s + batch_size] for s in range(0, len(pending), batch_size)]
+
+    def run(idx: list[int]):
         batch = [texts[i] for i in idx]
-        vecs = None
         for attempt in range(1, MAX_ATTEMPTS + 1):
             try:
                 resp = client.embeddings.create(model=model, input=batch)
-                vecs = [d.embedding for d in resp.data]
-                break
+                return idx, [d.embedding for d in resp.data]
             except Exception as e:                              # noqa: BLE001
                 if attempt == MAX_ATTEMPTS:
-                    _counters["dropped"] += len(idx)
                     _log({"kind": "embed", "model": model, "ok": False,
                           "error": f"{type(e).__name__}: {e}", "n": len(idx)})
-                else:
-                    time.sleep(BACKOFF_BASE_S * attempt ** 2)
-        if vecs is None:
-            continue                                            # rows stay zero, by design
-        for i, v in zip(idx, vecs):
-            out[i] = np.array(v, dtype=np.float32)
-            if use_cache:
-                _get_cache().put(_key("embed", model, texts[i], {}), "embed", model,
-                                 json.dumps(v), 0, 0)
-        _counters["calls"] += 1
-        if verbose:
-            print(f"  embedded {min(s+batch_size, len(pending))}/{len(pending)}", flush=True)
+                    return idx, None
+                time.sleep(BACKOFF_BASE_S * attempt ** 2)
+        return idx, None
+
+    done = 0
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        for idx, vecs in pool.map(run, batches):
+            if vecs is None:
+                _counters["dropped"] += len(idx)                # rows stay zero, by design
+                continue
+            for i, v in zip(idx, vecs):
+                out[i] = np.array(v, dtype=np.float32)
+                if use_cache:
+                    _get_cache().put(_key("embed", model, texts[i], {}), "embed", model,
+                                     json.dumps(v), 0, 0)
+            _counters["calls"] += 1
+            done += len(idx)
+            if verbose and done % (batch_size * 20) < batch_size:
+                print(f"  embedded {done}/{len(pending)}", flush=True)
     return out
 
 

@@ -777,3 +777,22 @@ n≈140 test cases is the limiting factor on every one of these. The driver is c
 79,496 facts right now, which takes the comparison to **n≈880** and should settle it. Re-running
 `vocab_diagnosis` and `vocab_ab` at that point is the next action, and the answer determines whether
 §8 is re-mined over induced atoms or abandoned as mis-specified.
+
+### Embeddings were serial while chat ran 96-wide
+
+After batching fixed the chat side, embedding became the bottleneck of canonicalisation.
+`client.embed` issued its batches **one after another**: 65,577 texts at 32 per request is ~2,050
+sequential round trips, measured at **10.3 texts/s** and **77 minutes** — while the chat path
+alongside it was sustaining 96 concurrent requests against the same endpoint.
+
+Parallelised to 24 concurrent batches: **38.6 texts/s**, embedding phase **77 min → 18 min**.
+
+The general lesson, now hit twice in one stage: the endpoint queues rather than refuses, so
+**anything issued serially against it is leaving throughput on the table.** Both fixes in this stage
+(batch the calls, then parallelise them) came from measuring where the wall-clock actually went
+rather than from where it seemed like it should go.
+
+Operational note: the driver had already read its canonicalise line before that line was patched, so
+the first run used the default batch of 8 and the 90s timeout. Restarting the driver was free — every
+stage is resumable, so recovery and QA took 5 seconds and claims was skipped entirely as already
+complete.
