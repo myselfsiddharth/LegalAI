@@ -1,6 +1,6 @@
 # M4 — Grounding facts in law (§9)
 
-**Status: §9.1 and §9.2 built and measured. §9.3 (precedent retrieval) not yet started.**
+**Status: §9.1, §9.2 and §9.3 built and measured.**
 Reproduce: `python -m src.authorities.statute_predict --split forum_heldout --rebuild-targets`.
 
 **Headline: statute prediction is the first task on this project with clear positive signal from
@@ -108,7 +108,60 @@ non-significant. It would be easy to conclude the extracted facts carry nothing.
 not about who wins.** Statute prediction is the demonstration, and it is also the first task where
 the canonical atoms clear a baseline at all.
 
-## 3. §9 acceptance
+## 3. Precedent retrieval (§9.3)
+
+Rank earlier cases by how likely the court was to cite them. 150 queries with ≥3 reachable
+precedents, 1,035 reachable targets, pool of 6,849 cases.
+
+| system | R@10 | R@50 | MRR | nDCG@10 |
+|---|---|---|---|---|
+| `mention` (copy control) | 0.022 | 0.112 | 0.037 | 0.014 |
+| `popularity` | 0.032 | 0.103 | 0.071 | 0.032 |
+| **`bm25` on masked text** | **0.207** | **0.350** | **0.431** | **0.224** |
+| `dense` (mean-pooled fact embeddings) | 0.053 | 0.130 | 0.114 | 0.054 |
+| `atom_overlap` (IDF-weighted Jaccard) | 0.021 | 0.058 | 0.046 | 0.021 |
+| `rrf(bm25+dense)` | 0.155 | 0.349 | 0.326 | 0.161 |
+
+**Time-respecting retrieval asserted, not assumed:** 0 of the retrieved cases post-date their
+query, checked per result rather than trusted to the `before_year` filter.
+
+**Reachability.** Corpus-wide, only 22.1% of case-to-case citations point at a case this corpus
+contains. Within the selected queries it is 49.0% — a selection effect, since queries were chosen
+for having ≥3 reachable precedents. **Recall above is against the reachable set**, and the raw
+figures are stored in the results JSON.
+
+### 3.1 Findings
+
+1. **BM25 retrieves precedents from facts at 6.5× the popularity control** (R@10 0.207 vs 0.032)
+   and 9.4× the mention control. MRR 0.431 means the first correct precedent typically lands around
+   rank 2–3.
+2. **The copy control passes cleanly here** (0.022), unlike §9.2 where it beat every model. Queries
+   are `masked_text` with citation-bearing sentences scrubbed, so a precedent cannot be read off
+   the input — the retrieval is real.
+3. **Dense is far weaker than BM25** (0.053). This is a representation problem rather than a verdict
+   on dense retrieval: a case vector is the mean of ~17 fact embeddings, and mean-pooling washes out
+   exactly the specifics that identify a precedent. A per-fact index with max-pooling, or chunk-level
+   vectors, is the obvious fix and is untried.
+4. **RRF fusion *hurts*** (0.155 against BM25's 0.207) because the dense arm is too weak to fuse
+   with. Worth stating, since fusion is usually assumed to be free.
+5. **`atom_overlap` sits at baseline level** (0.021). The canonical atoms fail here as they do
+   everywhere else.
+
+### 3.2 The cross-task pattern is now consistent
+
+Three independent tasks, same ordering of representations:
+
+| task | masked text | extracted fact text | canonical atoms | baseline |
+|---|---|---|---|---|
+| outcome (AUROC) | 0.657 | 0.614 | **0.517** | 0.500 |
+| statutes (micro-F1) | 0.173 | 0.159 | **0.109** | 0.093 |
+| precedents (R@10) | 0.207 (BM25) | — | **0.021** | 0.032 |
+
+**The canonical atoms lose to, or barely clear, the baseline on every task.** That is the
+discretisation finding of `reports/M5_report.md` §2, replicated across three tasks of quite
+different shape — which is much stronger evidence than the outcome task alone could give.
+
+## 4. §9 acceptance
 
 | requirement | status |
 |---|---|
@@ -117,15 +170,22 @@ the canonical atoms clear a baseline at all.
 | §9.2 micro/macro-F1, P@k, R@k | **met** |
 | §9.2 association-rule classifier arm | **not built** — §8 produced no significant rules to classify with |
 | §9.2 `LLM-0` / `LLM-FS` statute prediction | **not built** |
-| §9.3 precedent retrieval, Recall@k / MRR / nDCG | **not started** |
-| §9.3 time-respecting retrieval asserted in code | available in `scripts/retrieval_lib.py` (`before_year=`), not yet wired |
+| §9.3 precedent retrieval, Recall@k / MRR / nDCG | **met** — 6 systems incl. 2 controls |
+| §9.3 time-respecting retrieval asserted in code | **met** — asserted per result, 0 violations |
+| §9.3 pattern-overlap similarity retriever | **met** — `atom_overlap`, IDF-weighted Jaccard |
+| §9.3 hybrid fusion (RRF) | **met** — and it *hurts* here |
+| §9.3 LLM re-ranker | **not built** |
 | citation graph | exists from earlier work (8,467 signed edges) |
 
-## 4. Next
+## 5. Next
 
-1. **§9.3 precedent retrieval** — the remaining half of M4, with assets ready: `retrieval_lib.py`
-   (BM25 + dense behind one `search()`, already time-respecting), the signed citation graph, and
-   `citations_classified.jsonl` for targets. Earlier work on this corpus found real signal here
-   (recall@10 31%, 3–6× a popularity control).
-2. **`LLM-0` / `LLM-FS` statute prediction**, to complete §9.2's baseline set.
-3. Feed predicted statutes into §10's `S` feature group, which is currently empty.
+1. **Fix the dense arm.** Mean-pooling ~17 fact embeddings into one case vector is almost certainly
+   why dense scores 0.053 against BM25's 0.207. A per-fact index with max-pooling over fact-level
+   hits would keep the distinctiveness that identifies a precedent.
+2. **Re-rank by the signed citation graph** — 8,467 edges already exist with polarity, and "is this
+   still good law" is a question none of these retrievers asks. Temper expectations: only 174 edges
+   are negative.
+3. **Feed §9's output into §10's empty `S` and `R` feature groups.** Predicted statutes and the
+   outcome distribution of retrieved precedents are the two groups §10.1 specifies and has never
+   had.
+4. `LLM-0` / `LLM-FS` arms for both §9.2 and §9.3, to complete the baseline set.

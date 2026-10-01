@@ -1,0 +1,52 @@
+{
+ "split": "forum_heldout",
+ "n_queries": 150,
+ "targets_reachable": 1035,
+ "targets_raw": 2113,
+ "reachable_frac": 0.4898,
+ "note": "recall is against the REACHABLE target set; see targets_reachable/targets_raw",
+ "results": [
+  {
+   "system": "mention",
+   "r@10": 0.0218,
+   "r@50": 0.1118,
+   "mrr": 0.0371,
+   "ndcg@10": 0.0142
+  },
+  {
+   "system": "popularity",
+   "r@10": 0.0317,
+   "r@50": 0.103,
+   "mrr": 0.0715,
+   "ndcg@10": 0.0317
+  },
+  {
+   "system": "bm25",
+   "r@10": 0.2069,
+   "r@50": 0.35,
+   "mrr": 0.4306,
+   "ndcg@10": 0.2245
+  },
+  {
+   "system": "dense",
+   "r@10": 0.0533,
+   "r@50": 0.1303,
+   "mrr": 0.1142,
+   "ndcg@10": 0.054
+  },
+  {
+   "system": "atom_overlap",
+   "r@10": 0.0207,
+   "r@50": 0.0582,
+   "mrr": 0.0456,
+   "ndcg@10": 0.0207
+  },
+  {
+   "system": "rrf(bm25+dense)",
+   "r@10": 0.1547,
+   "r@50": 0.3492,
+   "mrr": 0.3262,
+   "ndcg@10": 0.1612
+  }
+ ]
+}
