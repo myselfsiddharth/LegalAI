@@ -1,0 +1,37 @@
+{
+ "split": "forum_heldout",
+ "n_mapped": 10764,
+ "n_new": 3155,
+ "arms": [
+  {
+   "name": "A. facts the vocabulary CAN name",
+   "n_train": 556,
+   "n_test": 143,
+   "paired_diff_ci95": [
+    -0.0431,
+    0.2136
+   ],
+   "p_no_cost": 0.083,
+   "text_auroc": 0.5436,
+   "atom_auroc": 0.457,
+   "cost_of_naming": 0.0866,
+   "n_text_features": 8059,
+   "n_atom_features": 475
+  },
+  {
+   "name": "B. facts it CANNOT name (proposals as atoms)",
+   "n_train": 489,
+   "n_test": 127,
+   "paired_diff_ci95": [
+    -0.1315,
+    0.1295
+   ],
+   "p_no_cost": 0.492,
+   "text_auroc": 0.5263,
+   "atom_auroc": 0.5244,
+   "cost_of_naming": 0.0019,
+   "n_text_features": 2640,
+   "n_atom_features": 228
+  }
+ ]
+}

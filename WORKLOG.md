@@ -694,3 +694,86 @@ It is not. Varying the threshold (same split, same cases, group `F` only):
 same cases gives 0.577. So the loss is in the vocabulary **mapping**, not in how aggressively atoms
 are filtered — which closes off the most plausible alternative reading of B3 and makes
 `vocab_refine.py` the right next move rather than a guess.
+
+---
+
+## 2026-09-30 — Attacking B3: diagnose before fixing, and one claim that did not replicate
+
+Started on the evidenced next step (repair §6.2's vocabulary). Diagnosing first changed what the
+fix should be, and then a replication check partly undid the conclusion. Both steps recorded.
+
+### Diagnosis: the loss is in the mapping, not in coverage
+
+The planned fix was `vocab_refine` — add labels for the 22.7% of facts the vocabulary cannot name.
+But the other 77.3% map fine and the atoms are *still* at chance, so the fix might be aimed at the
+wrong thing. `src/eval/vocab_diagnosis.py` separates them by scoring, within each group, the atoms
+against the text they replace:
+
+| group | text | atoms | cost of naming | P(no cost) |
+|---|---|---|---|---|
+| facts the vocabulary **can** name (forum) | 0.544 | 0.457 | **+0.087** | 0.083 |
+| facts it **cannot** name (forum) | 0.526 | 0.524 | +0.002 | 0.492 |
+| facts the vocabulary **can** name (temporal) | 0.516 | 0.423 | **+0.093** | 0.058 |
+| facts it **cannot** name (temporal) | 0.542 | 0.530 | +0.011 | 0.424 |
+
+**Naming a nameable fact costs ~0.09 AUROC; naming an unnameable one costs nothing.** Replicates in
+direction and magnitude on both splits, though neither CI excludes zero at n≈140.
+
+So expanding coverage cannot be the fix: `vocab_refine` would add labels that lose signal just as
+efficiently as the existing ones. **This is why diagnosing first mattered — an hour of vocabulary
+expansion was about to be spent on the wrong stage.**
+
+### The A/B that follows: is it THIS vocabulary, or itemisation itself?
+
+Two readings remained, with opposite consequences. `src/extract/induced_vocab.py` builds the control:
+cluster the cached fact embeddings bottom-up into the same number of atoms the ontology has, with no
+ontology input, fit on **train cases only**. `src/eval/vocab_ab.py` then scores text, induced atoms
+and ontology atoms on identical cases.
+
+| representation | forum AUROC | temporal AUROC |
+|---|---|---|
+| fact text (tf-idf, ~9,000 features) | 0.577 | 0.556 |
+| **induced atoms** (~270) | **0.594** | **0.471** |
+| ontology atoms (~700) | 0.469 | 0.422 |
+| chance | 0.500 | 0.500 |
+
+Paired bootstrap, same test cases, P(≤0) in brackets:
+
+| | forum | temporal |
+|---|---|---|
+| text − induced | −0.017 [0.632] | +0.085 [0.079] |
+| **text − ontology** | **+0.107 [0.048]** | **+0.134 [0.011]** |
+| induced − ontology | +0.125 [0.030] | +0.050 [0.229] |
+
+### What replicates, and what does not
+
+**Replicates, significant on both splits: the ontology's vocabulary destroys signal relative to the
+fact text it replaces** (+0.107, P=0.048; +0.134, P=0.011). Combined with the frequency-filter sweep
+(chance at every threshold) and the mapping-vs-coverage diagnosis, this is now supported three
+independent ways.
+
+**Does NOT replicate: that an induced vocabulary fixes it.** On the forum split induced atoms match
+the full text with 35× fewer features (0.594 vs 0.577) and beat the ontology significantly
+(P=0.030). On the temporal split they drop to **0.471 — below chance** — lose to the text
+(P=0.079), and the gap over the ontology shrinks to +0.050 (P=0.229, not significant).
+
+The forum result alone reads as "induce the vocabulary and the structured pipeline is rescued". It
+would have been an easy and wrong thing to report. The temporal split does not support it.
+
+Two candidate explanations, untested:
+- The temporal split is genuinely harder (base-rate inversion plus three confounds), so every arm
+  degrades there — but the induced arm degrades *more* than the ontology arm does, which this does
+  not explain on its own.
+- The clustering is refit per split and may be unstable at this scale; 345 clusters over ~9,700
+  train facts averages 28 facts per cluster, with 20 singletons.
+
+### Honest status of B3
+
+- The ontology vocabulary is harmful as a feature representation: **well supported.**
+- Itemisation per se is not inherently fatal: **supported on one split, contradicted on the other.**
+- A learned vocabulary is the fix: **not established.**
+
+n≈140 test cases is the limiting factor on every one of these. The driver is canonicalising all
+79,496 facts right now, which takes the comparison to **n≈880** and should settle it. Re-running
+`vocab_diagnosis` and `vocab_ab` at that point is the next action, and the answer determines whether
+§8 is re-mined over induced atoms or abandoned as mis-specified.

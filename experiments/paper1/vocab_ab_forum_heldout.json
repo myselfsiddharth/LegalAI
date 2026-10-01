@@ -1,0 +1,44 @@
+{
+ "split": "forum_heldout",
+ "n_train": 557,
+ "n_test": 143,
+ "text": {
+  "auroc": 0.5765,
+  "features": 9638
+ },
+ "induced": {
+  "auroc": 0.5939,
+  "features": 272
+ },
+ "ontology": {
+  "auroc": 0.4693,
+  "features": 702
+ },
+ "paired": {
+  "text - induced": {
+   "diff": -0.0174,
+   "ci95": [
+    -0.1358,
+    0.0968
+   ],
+   "p_le_0": 0.6325
+  },
+  "text - ontology": {
+   "diff": 0.1071,
+   "ci95": [
+    -0.0172,
+    0.2281
+   ],
+   "p_le_0": 0.0475
+  },
+  "induced - ontology": {
+   "diff": 0.1246,
+   "ci95": [
+    -0.0052,
+    0.2476
+   ],
+   "p_le_0": 0.0305
+  }
+ },
+ "verdict": "the ONTOLOGY vocabulary is the problem -- induce it instead"
+}
