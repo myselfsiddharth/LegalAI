@@ -1129,3 +1129,89 @@ supplies the external reference point the project previously lacked.
 - Our outcome labels are our own (87.0% rules-vs-LLM agreement), not ILDC's.
 - This is a *comparable construction* on our corpus, **not a replication on ILDC's data**. Running
   the probe on the actual ILDC release is the obvious strengthening step and is not yet done.
+
+### Two masking bugs found while building the ILDC arm, both corpus-wide
+
+Trying to apply §5.2's masking to an ILDC-shaped document (disposition already deleted by its
+publishers) returned **zero words**. Diagnosing that found two bugs affecting our own corpus:
+
+**1. The order window could swallow a whole document.** `find_order_window` fell back to "the last
+4,000 characters", which on a short judgment starts at character 0 — so every unit was classified as
+the operative order and dropped. Measured: **59 cases (0.85%) had `order_region_start == 0`, and all
+59 produced unusable masked text** — a third of all unusable cases, silently falling out of
+eligibility. The window is now bounded below by 70% of the document.
+
+**2. `CAPTION_CUE` was eating argument text, which is what §5.2 means to KEEP.** Two patterns:
+
+- `For the (Appellant|Respondent)` was meant to catch counsel listings ("For the Appellant: Mr K. K.
+  Venugopal, Senior Advocate") and instead fired on *"learned counsel **for the appellant**
+  submitted …"*. It now requires the listing form — a colon, or line start.
+- The page footer `Indian Kanoon - http://indiankanoon.org/doc/.../ 7` is interleaved at every page
+  boundary, so any unit spanning a page break became a caption. Page furniture is now **stripped
+  before segmentation** rather than used to classify a unit.
+
+Measured over 400 judgments before the fix: **545 of 5,255 caption units also matched
+`ARGUMENT_CUE`**, discarding ~69,000 words of argument text — roughly 1.2M words corpus-wide.
+
+Effect on masking:
+
+| | before | after |
+|---|---|---|
+| median characters retained | 32.6% | **46.7%** |
+| unusable cases | 178 (2.6%) | **79 (1.1%)** |
+| caption units | 18.1% | **3.0%** |
+| argument units | 5.8% | **14.9%** |
+
+**The mask still holds.** Re-running the probe: `order_only` 0.981, `full` 0.827, `masked` 0.674
+(up from 0.655), `prior_court` 0.585. The extra argument text added signal without reintroducing
+leakage, which is the outcome one wants from this kind of fix.
+
+### The reasoning ablation, restated after the fix
+
+| input construction | words | accuracy | AUROC |
+|---|---|---|---|
+| the removed disposition (control) | 427 | 0.921 | **0.976** |
+| full unmasked judgment | 5,302 | 0.720 | 0.788 |
+| **last 512 tokens** (ILDC's best input) | **511** | **0.776** | **0.845** |
+| everything except the order | 5,051 | 0.680 | 0.734 |
+| the same, HEADNOTE removed | 4,481 | 0.678 | 0.735 |
+| **facts, pleadings and arguments only** | 2,501 | **0.621** | **0.668** |
+
+| comparison | mean difference | 95% CI |
+|---|---|---|
+| **last-512 − masked** | **+0.1764** | [+0.1480, +0.2064] |
+| all-but-order − masked | +0.0660 | [+0.0539, +0.0789] |
+| no-HEADNOTE − masked | +0.0670 | [+0.0535, +0.0820] |
+
+The fix **strengthened** the finding: the gap widened from +0.128 to +0.176, and the last-512
+reproduction now reaches **accuracy 0.776 against ILDC's published 78%** — a TF-IDF and
+logistic-regression model landing within half a point of BERT-family results on a comparable input
+construction. Of the headroom between chance and the disposition's 0.976, the facts carry **35%** and
+adding the court's reasoning carries **49%**.
+
+### What this invalidates, stated plainly
+
+`masked_text` changed, and `facts.py` extracts FROM `masked_text`. So:
+
+- **Still valid, and improved:** everything in the reasoning ablation and the leakage probe. These
+  are TF-IDF over text and do not touch the fact pipeline. The paper's headline claim is unaffected
+  except for being stronger.
+- **Stale and needing re-computation:** all 79,496 extracted facts (drawn from text missing ~14% of
+  its argument content), and therefore the canonical labels, the ladder's rungs 2 and 3, §8's
+  patterns, §9's fact-based arms, §10's models, and the trace.
+
+Re-extraction is likely to *improve* the fact layer rather than merely move it: attribution was the
+known weak point at 20%, and the recovered text is precisely the "learned counsel for the appellant
+submitted" material that makes a fact attributable to a party.
+
+### ILDC itself: blocked on a licence, deliberately
+
+`Exploration-Lab/IL-TUR` on Hugging Face returns `x-error-code: GatedRepo`. The licence restricts
+use to academic research, and acceptance is the user's to give, so `src/eval/ildc_ablation.py` is
+written and tested but **does not route around the gate**. The authors' original 2021 link still
+resolves to a live IITK SharePoint folder, and scraping it would work — but they deliberately moved
+from that open link to a gated release, so going around it would be ignoring a choice they made on
+purpose.
+
+The module runs the moment the files are in `Data/ildc/`, in either parquet or CSV layout, and adds
+a positional control (`ildc_first_third`) so a result cannot be explained away as crude truncation.

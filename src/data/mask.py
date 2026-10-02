@@ -81,11 +81,32 @@ PLEADING_CUE = re.compile(
     r"|prayed\s+for|prayer\s+(?:is|was|clause)|sought\s+a\s+declaration|plaint|written\s+statement"
     r"|relief\s+(?:claimed|sought)|cause\s+of\s+action)\b", re.I)
 
+# --- page furniture: STRIPPED from the text, not used to classify a unit ------------------
+#
+# The extractor interleaves a page footer ("Indian Kanoon - http://indiankanoon.org/doc/123/ 7")
+# at every page boundary. Treating that as a CAPTION cue made any unit spanning a page break a
+# caption, which discarded the argument text inside it: measured over 400 judgments, 245 argument
+# units were lost to this pattern alone. Page furniture is removed before segmentation instead.
+PAGE_FURNITURE = re.compile(
+    r"Indian\s+Kanoon\s*-+\s*https?://\S*indiankanoon\.org\S*\s*\d*"
+    r"|https?://\S*indiankanoon\.org\S*", re.I)
+
+
+def strip_page_furniture(text: str) -> str:
+    return PAGE_FURNITURE.sub(" ", text)
+
+
 # --- the case caption / reporting apparatus: drop -----------------------------------------
 CAPTION_CUE = re.compile(
-    r"Equivalent\s+citations|From\s+the\s+Judgment|Indian\s+Kanoon|indiankanoon\.org"
+    r"Equivalent\s+citations|From\s+the\s+Judgment"
     r"|^\s*(?:HEADNOTE|JUDGMENT|J\s*U\s*D\s*G\s*M\s*E\s*N\s*T|ORDER)\s*:?\s*$"
-    r"|For\s+the\s+(?:Appellant|Respondent|Petitioner)|Appeal\s+by\s+Special\s+Leave"
+    # A counsel LISTING, which is apparatus: "For the Appellant: Mr X, Senior Advocate". It must
+    # be followed by a colon or sit at the start of a line. Without that constraint it matched
+    # "learned counsel for the appellant submitted ...", losing 338 argument units in 400
+    # judgments -- ordinary argument text, which is exactly what §5.2 means to KEEP.
+    r"|(?:^|\n)\s*For\s+the\s+(?:Appellant|Respondent|Petitioner)s?\s*[:\-]"
+    r"|For\s+the\s+(?:Appellant|Respondent|Petitioner)s?\s*:\s*(?:M/s|Mr|Mrs|Ms|Shri|Sri|Dr)\b"
+    r"|Appeal\s+by\s+Special\s+Leave"
     r"|The\s+Judgment\s+of\s+the\s+Court\s+was\s+delivered", re.I | re.M)
 
 HEADNOTE_START = re.compile(r"^\s*HEADNOTE\s*:?\s*$", re.M | re.I)
@@ -156,8 +177,11 @@ def _classify(unit: Unit, order_start: int, frac: float) -> str:
     return "unclear"                            # excluded; see module docstring
 
 
-def mask_case(rec: dict) -> MaskedCase:
-    text = rec["text"]
+def mask_case(rec: dict, order_already_removed: bool = False) -> MaskedCase:
+    """`order_already_removed=True` for a corpus whose disposition is already deleted -- ILDC, for
+    instance, where the authors removed the end sections stating the decision. Excluding an order
+    region that is not there would discard real reasoning text and understate what the mask costs."""
+    text = strip_page_furniture(rec["text"])
     n = len(text)
 
     # 1. HEADNOTE: drop whole. Pure leakage (states outcome, lists authorities).
@@ -169,7 +193,10 @@ def mask_case(rec: dict) -> MaskedCase:
 
     # 2. Operative order region: everything from here on is excluded.
     from src.data.labels import find_order_window
-    order_start, _ = find_order_window(text)
+    # `order_already_removed` sets the boundary past the end, so no unit is classified as the
+    # order. Needed for a corpus whose disposition the publishers already deleted (ILDC); excluding
+    # an order region that is not there would discard real reasoning and understate the mask's cost.
+    order_start = n + 1 if order_already_removed else find_order_window(text)[0]
 
     units = segment(text)
     kept: list[tuple[int, int, str]] = []

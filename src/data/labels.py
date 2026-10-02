@@ -186,13 +186,18 @@ def find_order_window(text: str) -> tuple[int, int]:
     procedural recital being read as the holding.
     """
     n = len(text)
-    tail_start = max(0, n - ORDER_WINDOW_CHARS)
+    # The fallback window is a fixed 4,000 characters from the end, which on a SHORT document
+    # starts at 0 and makes the whole text the "order region". Measured on this corpus: 59 cases
+    # (0.85%) had order_region_start == 0 and every one of them produced unusable masked text --
+    # a third of all unusable cases, dropping out of eligibility silently. The window is therefore
+    # bounded below by 70% of the document, so it can never swallow the whole thing.
+    tail_start = max(int(n * 0.70), n - ORDER_WINDOW_CHARS)
     last = None
     for m in ORDER_OPENER.finditer(text):
         if m.start() > n * 0.6:                     # only openers late in the document
             last = m.start()
     if last is not None:
-        return max(0, last - 200), n
+        return max(int(n * 0.40), last - 200), n
     return tail_start, n
 
 
