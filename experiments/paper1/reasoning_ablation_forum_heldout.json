@@ -1,0 +1,575 @@
+{
+ "split": "forum_heldout",
+ "n_train": 3325,
+ "n_test": 896,
+ "reference": "Malik et al., ILDC for CJPE, ACL 2021: 34,816 Indian Supreme Court proceedings, best model 78% accuracy, human experts 94%. ILDC deletes the end sections stating the decision but retains the court's reasoning, and its best model reads the last 512 tokens.",
+ "results": [
+  {
+   "name": "order_only",
+   "n": 896,
+   "accuracy": 0.923,
+   "macro_f1": 0.9224,
+   "test_win_rate": 0.4699,
+   "pred_win_rate": 0.442,
+   "macro_f1_ci95": [
+    0.9044,
+    0.9384
+   ],
+   "auroc": 0.9791,
+   "auroc_ci95": [
+    0.9702,
+    0.986
+   ],
+   "ece": 0.2155,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 7,
+     "mean_pred": 0.0849,
+     "observed": 0.0,
+     "gap": 0.0849
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 88,
+     "mean_pred": 0.1543,
+     "observed": 0.0,
+     "gap": 0.1543
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 165,
+     "mean_pred": 0.2575,
+     "observed": 0.0061,
+     "gap": 0.2514
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 135,
+     "mean_pred": 0.3471,
+     "observed": 0.0519,
+     "gap": 0.2952
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 105,
+     "mean_pred": 0.448,
+     "observed": 0.3714,
+     "gap": 0.0766
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 86,
+     "mean_pred": 0.5504,
+     "observed": 0.8256,
+     "gap": -0.2752
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 97,
+     "mean_pred": 0.6492,
+     "observed": 0.9588,
+     "gap": -0.3096
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 92,
+     "mean_pred": 0.756,
+     "observed": 0.9783,
+     "gap": -0.2223
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 95,
+     "mean_pred": 0.8493,
+     "observed": 0.9895,
+     "gap": -0.1402
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 26,
+     "mean_pred": 0.9194,
+     "observed": 1.0,
+     "gap": -0.0806
+    }
+   ],
+   "n_features": 50000,
+   "mean_words": 353
+  },
+  {
+   "name": "full",
+   "n": 896,
+   "accuracy": 0.7199,
+   "macro_f1": 0.7186,
+   "test_win_rate": 0.4699,
+   "pred_win_rate": 0.4621,
+   "macro_f1_ci95": [
+    0.6886,
+    0.7496
+   ],
+   "auroc": 0.7884,
+   "auroc_ci95": [
+    0.7574,
+    0.8174
+   ],
+   "ece": 0.1296,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 12,
+     "mean_pred": 0.2828,
+     "observed": 0.0,
+     "gap": 0.2828
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 188,
+     "mean_pred": 0.3607,
+     "observed": 0.1223,
+     "gap": 0.2384
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 282,
+     "mean_pred": 0.4477,
+     "observed": 0.3759,
+     "gap": 0.0718
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 248,
+     "mean_pred": 0.5482,
+     "observed": 0.6371,
+     "gap": -0.0889
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 141,
+     "mean_pred": 0.6397,
+     "observed": 0.7801,
+     "gap": -0.1404
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 25,
+     "mean_pred": 0.7284,
+     "observed": 0.96,
+     "gap": -0.2316
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    }
+   ],
+   "n_features": 50000,
+   "mean_words": 5299
+  },
+  {
+   "name": "ildc_style",
+   "n": 896,
+   "accuracy": 0.6685,
+   "macro_f1": 0.6667,
+   "test_win_rate": 0.4699,
+   "pred_win_rate": 0.4554,
+   "macro_f1_ci95": [
+    0.6361,
+    0.6984
+   ],
+   "auroc": 0.7184,
+   "auroc_ci95": [
+    0.6847,
+    0.7518
+   ],
+   "ece": 0.0867,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 4,
+     "mean_pred": 0.2694,
+     "observed": 0.0,
+     "gap": 0.2694
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 170,
+     "mean_pred": 0.3677,
+     "observed": 0.2118,
+     "gap": 0.1559
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 314,
+     "mean_pred": 0.4511,
+     "observed": 0.379,
+     "gap": 0.0721
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 256,
+     "mean_pred": 0.5466,
+     "observed": 0.6055,
+     "gap": -0.0588
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 137,
+     "mean_pred": 0.6409,
+     "observed": 0.7153,
+     "gap": -0.0744
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 15,
+     "mean_pred": 0.7225,
+     "observed": 0.8667,
+     "gap": -0.1442
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    }
+   ],
+   "n_features": 50000,
+   "mean_words": 5012
+  },
+  {
+   "name": "ildc_style_no_headnote",
+   "n": 896,
+   "accuracy": 0.6674,
+   "macro_f1": 0.6657,
+   "test_win_rate": 0.4699,
+   "pred_win_rate": 0.4587,
+   "macro_f1_ci95": [
+    0.6355,
+    0.6982
+   ],
+   "auroc": 0.7115,
+   "auroc_ci95": [
+    0.6773,
+    0.7438
+   ],
+   "ece": 0.0854,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 5,
+     "mean_pred": 0.2729,
+     "observed": 0.0,
+     "gap": 0.2729
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 161,
+     "mean_pred": 0.3664,
+     "observed": 0.2174,
+     "gap": 0.149
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 319,
+     "mean_pred": 0.4505,
+     "observed": 0.373,
+     "gap": 0.0775
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 254,
+     "mean_pred": 0.5459,
+     "observed": 0.6142,
+     "gap": -0.0682
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 143,
+     "mean_pred": 0.6415,
+     "observed": 0.6923,
+     "gap": -0.0509
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 14,
+     "mean_pred": 0.7266,
+     "observed": 0.8571,
+     "gap": -0.1305
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    }
+   ],
+   "n_features": 50000,
+   "mean_words": 4575
+  },
+  {
+   "name": "last_512_tokens",
+   "n": 896,
+   "accuracy": 0.7243,
+   "macro_f1": 0.7217,
+   "test_win_rate": 0.4699,
+   "pred_win_rate": 0.433,
+   "macro_f1_ci95": [
+    0.6917,
+    0.7507
+   ],
+   "auroc": 0.7819,
+   "auroc_ci95": [
+    0.7536,
+    0.8113
+   ],
+   "ece": 0.152,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 4,
+     "mean_pred": 0.2837,
+     "observed": 0.0,
+     "gap": 0.2837
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 104,
+     "mean_pred": 0.3674,
+     "observed": 0.1442,
+     "gap": 0.2231
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 400,
+     "mean_pred": 0.4526,
+     "observed": 0.3125,
+     "gap": 0.1401
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 266,
+     "mean_pred": 0.5459,
+     "observed": 0.6654,
+     "gap": -0.1195
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 104,
+     "mean_pred": 0.6428,
+     "observed": 0.8365,
+     "gap": -0.1937
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 17,
+     "mean_pred": 0.7249,
+     "observed": 0.9412,
+     "gap": -0.2163
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 1,
+     "mean_pred": 0.801,
+     "observed": 1.0,
+     "gap": -0.199
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    }
+   ],
+   "n_features": 50000,
+   "mean_words": 510
+  },
+  {
+   "name": "masked",
+   "n": 896,
+   "accuracy": 0.6105,
+   "macro_f1": 0.6074,
+   "test_win_rate": 0.4699,
+   "pred_win_rate": 0.442,
+   "macro_f1_ci95": [
+    0.5743,
+    0.6401
+   ],
+   "auroc": 0.6544,
+   "auroc_ci95": [
+    0.6172,
+    0.6899
+   ],
+   "ece": 0.0404,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 3,
+     "mean_pred": 0.2849,
+     "observed": 0.0,
+     "gap": 0.2849
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 119,
+     "mean_pred": 0.3694,
+     "observed": 0.2521,
+     "gap": 0.1173
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 378,
+     "mean_pred": 0.4542,
+     "observed": 0.4153,
+     "gap": 0.0389
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 281,
+     "mean_pred": 0.5467,
+     "observed": 0.5587,
+     "gap": -0.0121
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 106,
+     "mean_pred": 0.6347,
+     "observed": 0.6509,
+     "gap": -0.0162
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 9,
+     "mean_pred": 0.7087,
+     "observed": 0.8889,
+     "gap": -0.1802
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    }
+   ],
+   "n_features": 50000,
+   "mean_words": 1891
+  }
+ ],
+ "paired": {
+  "ildc_style - masked": {
+   "mean_diff": 0.0641,
+   "ci95": [
+    0.0493,
+    0.079
+   ],
+   "ci_excludes_zero": true
+  },
+  "ildc_style_no_headnote - masked": {
+   "mean_diff": 0.0572,
+   "ci95": [
+    0.0429,
+    0.0715
+   ],
+   "ci_excludes_zero": true
+  },
+  "last_512_tokens - masked": {
+   "mean_diff": 0.128,
+   "ci95": [
+    0.0997,
+    0.1576
+   ],
+   "ci_excludes_zero": true
+  },
+  "full - ildc_style": {
+   "mean_diff": 0.07,
+   "ci95": [
+    0.0626,
+    0.0775
+   ],
+   "ci_excludes_zero": true
+  }
+ }
+}

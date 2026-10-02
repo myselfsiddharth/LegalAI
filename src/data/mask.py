@@ -102,12 +102,29 @@ PRIOR_COURT_DISPOSITION = re.compile(
 
 KEEP_ROLES = {"facts", "pleadings", "arguments"}
 
+# An ILDC-style input, for the comparison in src/eval/reasoning_ablation.py.
+#
+# Malik et al. (ACL 2021) construct ILDC by deleting "end section(s) directly stating the decision
+# ... since that is what we aim to predict", and state that they "consider (along with the facts)
+# the entire case (except the judgment)". So the court's REASONING is retained; only the
+# disposition is removed. Their best model reads the last 512 tokens, which they justify because
+# "the last parts of case proceedings usually contain the main information about the case and the
+# rationale behind the judgment".
+#
+# §5.2 of this project excludes the analysis section as well, on the ground that reasoning is
+# written knowing the outcome. These two role sets make that difference measurable on identical
+# cases rather than argued about.
+ILDC_STYLE_ROLES = KEEP_ROLES | {"analysis", "unclear", "headnote", "caption"}
+ILDC_STYLE_NO_HEADNOTE_ROLES = KEEP_ROLES | {"analysis", "unclear", "caption"}
+
 
 @dataclass
 class MaskedCase:
     doc_id: str
     year: int
     masked_text: str
+    ildc_style_text: str                       # + the court's reasoning; order still removed
+    ildc_style_no_headnote: str                # same, minus the pre-2000 HEADNOTE artifact
     prior_court_text: str                      # the shortcut channel, kept out of masked_text
     n_chars_original: int
     n_chars_masked: int
@@ -160,6 +177,8 @@ def mask_case(rec: dict) -> MaskedCase:
     roles, counts = [], Counter()
     dropped_cue = 0
 
+    ildc_keep: list[str] = []
+    ildc_keep_nh: list[str] = []
     for u in units:
         frac = u.start / max(1, n)
         role = _classify(u, order_start, frac)
@@ -170,6 +189,16 @@ def mask_case(rec: dict) -> MaskedCase:
             role = "headnote"
         roles.append(role)
         counts[role] += 1
+
+        # ILDC-style arms: everything except the operative order. The HEADNOTE variant exists
+        # because a pre-2000 headnote lists the outcome and the authorities outright, which is an
+        # artifact of this corpus rather than of ILDC's construction.
+        in_headnote = head_lo is not None and u.start < head_hi and u.end > head_lo
+        if role in ILDC_STYLE_ROLES:
+            ildc_keep.append(u.text)
+        if role in ILDC_STYLE_NO_HEADNOTE_ROLES and not in_headnote:
+            ildc_keep_nh.append(u.text)
+
         if role not in KEEP_ROLES:
             continue
 
@@ -189,6 +218,8 @@ def mask_case(rec: dict) -> MaskedCase:
     return MaskedCase(
         doc_id=rec["doc_id"], year=rec["year"],
         masked_text=masked,
+        ildc_style_text="\n".join(ildc_keep),
+        ildc_style_no_headnote="\n".join(ildc_keep_nh),
         prior_court_text="\n".join(prior_bits),
         n_chars_original=n, n_chars_masked=len(masked),
         kept_spans=[[lo, hi] for lo, hi, _ in kept],

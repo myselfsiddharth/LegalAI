@@ -1028,3 +1028,104 @@ can be submitted silently wrong.
 Both include the same risk table, which states plainly that the vocabulary cannot be frozen, that no
 gold annotation exists so extraction F1 is currently uncomputable, that two models failed the burden
 degeneracy gate, and that outcome prediction may simply not be achievable on this corpus.
+
+---
+
+## 2026-10-01 — Contact with the published literature: the reasoning ablation
+
+Research-paper assessment put "no contact with published LJP numbers" as the third-biggest reviewer
+objection. Addressed, and the result reframes the project.
+
+### The target, verified rather than recalled
+
+**Malik et al., "ILDC for CJPE", ACL 2021** (`aclanthology.org/2021.acl-long.313`,
+`github.com/Exploration-Lab/CJPE`): 34,816 Indian Supreme Court proceedings, judgment prediction
+plus explanation, **best model 78% accuracy against 94% for human legal experts**, with a
+legal-expert-annotated explanation test set. Same court, same jurisdiction, public.
+
+### A hypothesis I had to retract
+
+I expected ILDC's inputs to leak the operative order, which would have made this a straightforward
+"their numbers need re-examination" paper. **That is wrong and I am not going to claim it.** They
+are explicit:
+
+> "In SCI case proceedings, the decisions are written towards the end of the document. These end
+> section(s) directly stating the decision have been deleted from the documents in ILDC since that
+> is what we aim to predict."
+
+ILDC removes the disposition and documents doing so. The hypothesis was wrong.
+
+### What the papers actually differ on, and it is a real difference
+
+Their next sentence:
+
+> "Unlike LJP, we consider (along with the facts) **the entire case (except the judgment)**, and we
+> predict the judgment only."
+
+ILDC retains the court's **reasoning**. §5.2 of this project excludes it, on the ground that
+reasoning is written *knowing* the outcome — a model reading it is reading an argument constructed
+to support a conclusion already reached. And ILDC's best model reads the **last 512 tokens**, chosen
+empirically and justified because "the last parts of case proceedings usually contain the main
+information about the case and the rationale behind the judgment."
+
+That is a difference in task definition, not a defect in either paper. It is also measurable.
+
+### The measurement, on identical cases
+
+`src/eval/reasoning_ablation.py`. Same classifier, split, labels and 896 test cases; only the input
+construction varies.
+
+| input construction | words | accuracy | AUROC |
+|---|---|---|---|
+| the removed disposition (sensitivity control) | 353 | 0.923 | **0.979** |
+| full unmasked judgment | 5,299 | 0.720 | 0.788 |
+| **last 512 tokens of the order-removed document** (ILDC's best input) | **510** | **0.724** | **0.782** |
+| everything except the order (ILDC's construction) | 5,012 | 0.668 | 0.718 |
+| the same, HEADNOTE removed | 4,575 | 0.667 | 0.712 |
+| **facts, pleadings and arguments only** (this project) | 1,891 | **0.611** | **0.654** |
+
+Paired bootstrap, same test cases, every comparison significant:
+
+| comparison | mean difference | 95% CI |
+|---|---|---|
+| **last-512 − masked** | **+0.1280** | [+0.0997, +0.1576] |
+| ildc_style − masked | +0.0641 | [+0.0493, +0.0790] |
+| no-HEADNOTE − masked | +0.0572 | [+0.0429, +0.0715] |
+| full − ildc_style | +0.0700 | [+0.0626, +0.0775] |
+
+### Three things this establishes
+
+1. **We reproduce something close to ILDC's reported accuracy with their input construction.**
+   Their best is 78% with BERT-family models over 34,816 cases; the last-512-token construction on
+   our 896 land-dispute test cases reaches **72.4%** with TF-IDF and logistic regression. Different
+   subset, different labels, far simpler model — but the same region, which is the sanity check that
+   says we have built a comparable setup rather than a straw man.
+
+2. **The last 512 tokens beat the entire 5,012-word document** (AUROC 0.782 vs 0.718). The
+   predictive signal is concentrated in the text immediately preceding the deleted disposition.
+   ILDC observed this empirically and attributed it to the rationale; this quantifies it.
+
+3. **The court's reasoning contributes more predictive signal than the facts of the dispute do.**
+   Of the headroom between chance and the disposition's own 0.979: the facts and pleadings carry
+   **32%**, and adding the reasoning carries **44%**. Removing the HEADNOTE barely changes this
+   (+0.057 against +0.064), so it is the reasoning rather than a corpus artifact.
+
+### What the paper now is
+
+Not "ILDC leaks" — it does not. The claim is about task definition:
+
+> **Predicting a judgment from the court's reasoning is a materially different and substantially
+> easier task than predicting it from the facts of the dispute, and the legal-judgment-prediction
+> literature does not consistently distinguish them. On the same corpus and apparatus, the facts
+> support AUROC 0.654 while the reasoning-inclusive construction supports 0.782.**
+
+That is a contribution about the field's framing rather than about one paper's hygiene, it is
+measured rather than argued, and it is fair to the authors whose construction it examines. It also
+supplies the external reference point the project previously lacked.
+
+### Honest limits
+
+- Our corpus is land/property disputes only; ILDC is all SCI subject matter.
+- Our outcome labels are our own (87.0% rules-vs-LLM agreement), not ILDC's.
+- This is a *comparable construction* on our corpus, **not a replication on ILDC's data**. Running
+  the probe on the actual ILDC release is the obvious strengthening step and is not yet done.
