@@ -1356,3 +1356,77 @@ facts were true and neither was responsive: a detector can mark the boundary *co
 leave the preceding sentence in place. **An indirect argument that an objection is unlikely is not a
 measurement, and on this project it was wrong the one time it mattered most.** The direct test cost
 one module and fifteen model fits.
+
+---
+
+## 2026-10-02 — Replication on the second split, and the baseline cleared
+
+Two follow-ups to yesterday's leakage finding. Both were motivated by the same discipline the finding
+itself taught: do not assume an arm is clean without testing it.
+
+### 1. The setback result replicates on `temporal_2004_2013`
+
+| | `forum_heldout` (842) | `temporal_2004_2013` (722) |
+|---|---|---|
+| `masked` | 0.656 | 0.577 |
+| `w0` (last 512) | 0.838 | 0.716 |
+| `w0` − `masked` | +0.181 [+0.150, +0.213] | +0.139 [+0.099, +0.181] |
+| `w1` − `masked` (set back) | +0.013 [−0.016, +0.041] | +0.012 [−0.027, +0.053] |
+| advantage gone at offset | **128 words** | **128 words** |
+| `ildc_minus128` − `masked` | +0.027 [+0.014, +0.039] | +0.022 [−0.0002, +0.043] |
+| cue excess in `w0` | +0.150 | **−0.058** |
+
+**Replicates:** the shape, which is the argument. Cliff after `w0` on both; `w1` indistinguishable
+from `masked` on both; the contamination boundary independently landing at 128 words on both.
+
+**Does not replicate — two things, both worth stating:**
+
+*The cue enrichment.* On temporal, `w0`'s cue rate (0.316) is **below** the `masked` base rate
+(0.374), and `w0` still wins by +0.139. The enrichment statistic is sensitive to case mix: temporal's
+masked text averages 3,792 words against 2,616, and more text means more chances to match. This
+vindicates the choice to make the setback curve primary and the cue audit corroboration — **the curve
+never depends on detecting a cue**, and it is the part that held.
+
+*The reasoning's significance.* `ildc_minus128 − masked` does not clear zero on temporal
+(+0.0215, CI lower bound −0.0002). The point estimates agree closely across splits (+0.027, +0.022),
+so the effect is probably real but sits at the edge of what 700–850 cases resolve. **Corrected the
+claim in the explainer from "real and significant" to "small and hard to distinguish from zero".**
+
+### 2. Is `masked` — the baseline everything is compared against — itself leaky?
+
+This had a concrete motivation, not just paranoia: the repo contains **two disposition detectors that
+disagree by construction**. `mask.py`'s `OUTCOME_CUE`, which does the scrubbing, requires the
+proceeding noun *adjacent* to the verb. `labels.py`'s patterns, which produced the labels, allow a
+90-char `_GAP` and also cover "the appeal fails", "we hereby dismiss the appeal", "is devoid of
+merit", plus a wider proceeding vocabulary. So "This appeal, filed against the judgment dated 12
+March 1998, is dismissed." escapes the scrubber.
+
+`src/eval/masked_integrity.py` finds every escaped sentence, prints them, and prices them.
+
+| arm | AUROC | Δ from `masked` | |
+|---|---|---|---|
+| `masked` (2,647 words) | 0.662 | — | |
+| `masked_strict` (escaped sentences removed) | 0.662 | **−0.0001 [−0.0007, +0.0005]** | not significant |
+| `masked_w0` (its last 512 words) | 0.671 | — | |
+| `masked_w1` (set back 512, volume-matched) | 0.644 | **+0.027 [−0.002, +0.056]** | not significant |
+
+**Verdict: the baseline is sound.** 109 escaped sentences across 839 cases — **one word per case** out
+of 2,647 — and removing all of them moves AUROC by −0.0001. Reading the list (gotcha #9) shows why
+they are harmless: statutory quotations ("that a suit must fail by reason of some formal defect" —
+Order 23 CPC), prior-court dispositions whose forum the narrow regex did not name ("A single judge
+partly allowed the appeal"), legal propositions ("the suit as framed is not maintainable in law"),
+and conditionals. A few are genuine ("The appeal therefore fails and is dismissed.") but far too rare
+to matter.
+
+The volume-controlled arms settle it: the same setback design applied to `masked` gives +0.027 with
+an interval spanning zero, at cue rates 0.054/0.031. The identical test on the contaminated window
+gave +0.169 [+0.136, +0.202] at 0.419/0.089. **Six times less positionally skewed, and not
+significantly skewed at all.**
+
+### A caveat the test supplied about itself
+
+The naive version — `masked_minus128`, just deleting the last 128 words — **was** significant
+(+0.0058 [+0.0023, +0.0092]), as was `masked_minus512` (+0.0187). Both are confounded: deleting 128
+words of anything loses information. Only the volume-matched arms separate "the tail is contaminated"
+from "I deleted some text". **Without them this would have been written up as a leak that is not
+there** — the same error as yesterday's, one step removed.

@@ -49,9 +49,11 @@ who has never seen the repository.
 
 The project began as a system that would read a court judgment, pull structured legal objects out
 of it, and reason over them. It became something more useful and less flattering: a carefully
-leakage-controlled measurement apparatus which shows that \emph{85\% of the apparent advantage of
-the published input construction is disposition language surviving the deletion of the operative
-order}, that the court's reasoning itself adds only a small real amount, and that
+leakage-controlled measurement apparatus which shows that \emph{essentially all of the apparent
+advantage of the published input construction is disposition language surviving the deletion of the
+operative order} --- replicated on two splits, with the court's own reasoning adding only
+$+0.02$--$0.03$ AUROC once that residue is removed, at the edge of what these sample sizes resolve
+--- and that
 \emph{converting facts into a symbolic vocabulary destroys most of the predictive signal they
 carry}. Both claims are supported by controlled experiments with confidence intervals, and both
 contradict what the project originally assumed. Along the way several genuinely positive results
@@ -745,18 +747,119 @@ by $+0.027$ AUROC, and the interval excludes zero. So the reasoning does carry r
 simply far smaller than it appears. Of \code{ildc\_style}'s $+0.059$ advantage, more than half
 ($+0.032$) is the contaminated tail.
 
+\subsubsection*{Does it replicate on the other split?}
+
+The result above is one split. Running the identical module on \code{temporal\_2004\_2013} --- train
+up to 2004, test after 2013, a harder and differently-composed set --- replicates the core finding
+and corrects one part of it.
+
+\begin{center}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+ & \code{forum\_heldout} & \code{temporal\_2004\_2013} \\
+ & \emph{(842 cases)} & \emph{(722 cases)} \\
+\midrule
+\code{masked} AUROC & 0.656 & 0.577 \\
+\code{w0} (last 512) AUROC & 0.838 & 0.716 \\
+\midrule
+\code{w0} $-$ \code{masked} & $+0.181$ $[+0.150, +0.213]$ & $+0.139$ $[+0.099, +0.181]$ \\
+\code{w1} $-$ \code{masked} \emph{(set back)} & $+0.013$ $[-0.016, +0.041]$ & $+0.012$ $[-0.027, +0.053]$ \\
+Advantage gone at offset & \textbf{128 words} & \textbf{128 words} \\
+\midrule
+\code{ildc\_minus128} $-$ \code{masked} & $+0.027$ $[+0.014, +0.039]$ & $+0.022$ $[-0.0002, +0.043]$ \\
+\emph{\quad significant?} & \emph{yes} & \textbf{\emph{no --- by a hair}} \\
+\midrule
+Cue excess in \code{w0} over base & $+0.150$ & $\mathbf{-0.058}$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\paragraph{What replicates} The shape, which is the whole argument. A cliff after the final window on
+both splits; \code{w1} statistically indistinguishable from \code{masked} on both; and the
+contamination boundary landing at \textbf{128 words} on both, independently.
+
+\paragraph{What does not} Two things, and both are worth stating rather than burying.
+
+First, \textbf{the cue enrichment does not replicate}. On the temporal split \code{w0}'s cue rate
+(0.316) is \emph{below} the \code{masked} base rate (0.374), yet \code{w0} still wins by $+0.139$.
+The enrichment statistic is sensitive to case mix --- temporal's masked text averages 3,792 words
+against 842's 2,616, and more text means more chances to match. This is precisely why the setback
+curve is the primary evidence and the cue audit only corroboration: \textbf{the curve never relies
+on detecting a cue at all}, and it is the measurement that holds.
+
+Second, \textbf{the reasoning's contribution does not clear zero on the temporal split}
+($+0.0215$, CI $[-0.0002, +0.0428]$). The point estimates agree closely across splits
+($+0.027$ and $+0.022$), so the honest reading is that the effect is real but small enough to sit at
+the edge of what 700--850 cases can resolve --- not that it is established.
+
 \begin{tcolorbox}[plainbox,title={The corrected headline}]
-The input construction used by the published state of the art appears to beat a facts-only input by
-$\mathbf{+0.181}$ AUROC. \textbf{About 85\% of that is an artifact of imperfect order removal.}
-Deleting the operative order leaves roughly 100 words of outcome-telegraphing text in place; a
-512-word window set back past that residue scores no better than the facts at all
-($+0.013$, CI $[-0.016, +0.041]$).
+The input construction used by the published state of the art beats a facts-only input by
+$\mathbf{+0.181}$ AUROC (replicating at $+0.139$ on a second split). \textbf{Essentially all of that
+is an artifact of imperfect order removal.} Deleting the operative order leaves roughly
+\textbf{128 words} of outcome-telegraphing text in place; a 512-word window set back past that
+residue scores no better than the facts on either split ($+0.013$ and $+0.012$, both CIs spanning
+zero).
 
 \smallskip
-With the contaminated tail removed, the court's reasoning adds $\mathbf{+0.027}$ AUROC
-($\mathbf{[+0.014, +0.039]}$) --- real, statistically significant, and \textbf{one-seventh} of what
-it appears to add.
+With the contaminated tail removed, the court's \emph{entire} reasoning adds
+$\mathbf{+0.02}$--$\mathbf{0.03}$ AUROC --- around \textbf{one-seventh} of what it appears to add,
+significant on one split and marginal on the other. The defensible claim is that \textbf{the
+reasoning's contribution is small and hard to distinguish from zero}, not that it is substantial.
 \end{tcolorbox}
+
+\subsubsection*{Is the baseline itself clean?}\label{sec:baseline}
+
+The correction above came from assuming an arm was clean without testing it. \code{masked} is the
+baseline \emph{every} comparison in this project runs against, and the text fact extraction reads,
+so the same question has to be put to it.
+
+There was a concrete reason for concern: this repository contains \emph{two} disposition detectors
+and they disagree by construction. \code{mask.py}'s \code{OUTCOME\_CUE}, which does the scrubbing,
+requires the proceeding noun \emph{adjacent} to the disposition verb. \code{labels.py}'s patterns,
+which produced the outcome labels, allow up to 90 characters between them and also cover ``the
+appeal fails'', ``we hereby dismiss the appeal'' and ``is devoid of merit''. So a sentence such as
+``This appeal, filed against the judgment dated 12 March 1998, is dismissed.'' is a disposition that
+one detector catches and the other misses.
+
+\code{src/eval/masked\_integrity.py} finds every such escaped sentence, prints them for reading, and
+measures what removing them costs.
+
+\begin{center}
+\begin{tabular}{@{}lrrc@{}}
+\toprule
+\textbf{Arm} & \textbf{AUROC} & \textbf{$\Delta$ from \code{masked}} & \textbf{Sig.} \\
+\midrule
+\code{masked} (2,647 words) & 0.662 & --- & --- \\
+\code{masked\_strict} \emph{(escaped sentences removed)} & 0.662 & $-0.0001$ $[-0.0007, +0.0005]$ & \textbf{no} \\
+\midrule
+\code{masked\_w0} \emph{(its last 512 words)} & 0.671 & --- & --- \\
+\code{masked\_w1} \emph{(set back 512, volume-matched)} & 0.644 & $+0.027$ $[-0.002, +0.056]$ & \textbf{no} \\
+\bottomrule
+\end{tabular}
+\captionof{table}{The facts-only baseline is sound. Source:
+\code{experiments/paper1/masked\_integrity\_forum\_heldout.json}.}
+\end{center}
+
+\textbf{Verdict: sound.} Only 109 sentences across 839 cases escape, averaging \textbf{one word per
+case} out of 2,647, and removing all of them changes AUROC by $-0.0001$. Reading the list explains
+why they are harmless: they are overwhelmingly statutory quotations (``that a suit must fail by
+reason of some formal defect'' --- Order 23 of the Civil Procedure Code), prior-court dispositions
+whose forum the narrow regex did not name (``A single judge partly allowed the appeal''), legal
+propositions (``the suit as framed is not maintainable in law'') and conditionals. A handful are
+genuine --- ``The appeal therefore fails and is dismissed.'' --- but far too rare to move anything.
+
+The volume-controlled arms close it properly. Applying the \emph{same} setback design to
+\code{masked} gives $+0.027$ with an interval spanning zero, at cue rates of 0.054 and 0.031. The
+identical test on the contaminated window gave $+0.169$ $[+0.136, +0.202]$ at cue rates 0.419 and
+0.089. \textbf{The baseline is six times less positionally skewed and not significantly skewed at
+all}, so every comparison against it stands.
+
+\paragraph{A caveat this test supplies about itself} The naive version of this check ---
+\code{masked\_minus128}, simply deleting the last 128 words --- \emph{did} come out significant
+($+0.0058$, CI $[+0.0023, +0.0092]$). That number is confounded: deleting 128 words of anything
+loses information. The volume-matched arms are what distinguish ``the tail is contaminated'' from
+``I deleted some text'', and without them this section would have reported a leak that is not
+there.
 
 \paragraph{Why this is a better result than the one it replaces} The earlier claim --- ``the court's
 reasoning carries more signal than the facts'' --- was a claim about legal text. This one is a claim
@@ -1212,10 +1315,10 @@ retractions are more informative than the confirmations.
 \midrule
 ``The last-512 window is clean, so its $+0.176$ advantage shows the court's \emph{reasoning} carries
 the signal.''
- & \textbf{Wrong, and this document said so before it was tested.} The window is cue-enriched
-   ($+0.150$ over the base rate) and the advantage vanishes once it is set back 128 words. Roughly
-   85\% of it is residual disposition language; the reasoning's real contribution is $+0.027$.
-   See Section~\ref{sec:contamination}. \\
+ & \textbf{Wrong, and this document asserted it before it was tested.} The advantage vanishes once
+   the window is set back 128 words, on both splits. Essentially all of it is residual disposition
+   language; the reasoning's own contribution is $+0.02$--$0.03$ and does not clear zero on the
+   temporal split. See Section~\ref{sec:contamination}. \\
 \addlinespace
 ``Extraction preserves the signal in the text.''
  & At $n=881$ it loses 0.043 AUROC. Canonicalisation loses a further 0.097. \\
@@ -1304,6 +1407,10 @@ our corpus as a comparable construction of ILDC's task. The module that runs the
 ILDC's own released text and labels is written and tested; the dataset is gated behind a licence whose
 acceptance belongs to the user, and the module refuses to route around the gate. Until it runs, the
 headline is a strong internally-controlled result, not a replication.
+\item \textbf{Whether the court's reasoning adds anything at all.} With the contaminated tail
+removed, the whole-document arm beats facts-only by $+0.027$ on \code{forum\_heldout} (significant)
+and $+0.022$ on \code{temporal\_2004\_2013} (CI lower bound $-0.0002$). The point estimates agree,
+but one interval includes zero, so this is \textbf{not} established at these sample sizes.
 \item \textbf{What the cue scrub cannot separate.} The residual-leakage audit is done
 (Section~\ref{sec:contamination}) and found contamination reaching about 128 words. But
 \code{w0\_scrubbed} and \code{w0\_cue\_free} both remain above \code{masked}, so some
@@ -1338,7 +1445,8 @@ section says plainly which numbers are current.
 \midrule
 Leakage probe (§\ref{sec:sensitivity})      & \textbf{current} & TF-IDF over text; independent of the fact layer \\
 Reasoning ablation (§\ref{sec:head1})       & \textbf{current} & Re-run after the fix \\
-Setback / contamination (§\ref{sec:contamination}) & \textbf{current} & New, 1 Oct 2026; TF-IDF over text \\
+Setback / contamination (§\ref{sec:contamination}) & \textbf{current} & New, 1--2 Oct 2026; both splits \\
+Baseline integrity (§\ref{sec:baseline}) & \textbf{current} & New; TF-IDF over text \\
 Corpus, labels, splits (§\ref{sec:data})    & \textbf{current} & Upstream of facts \\
 Extractor benchmark (§\ref{sec:pipeline})   & \textbf{current} & Fixed 20-case set \\
 Fact counts, grounding (§\ref{sec:pipeline}) & \textbf{current} & Post-fix: 96,623 facts, 0 dropped, QA 4,026/4,026 spans exact \\
@@ -1388,12 +1496,15 @@ measurement:
 
 \begin{tcolorbox}[plainbox,title={The contribution}]
 \textbf{1.} On Indian Supreme Court land disputes, the input construction used by the published
-state of the art beats a facts-only input by $+0.181$ AUROC --- and \textbf{about 85\% of that gap
-is an artifact of imperfect order removal}, not the court's reasoning. Deleting the operative order
-leaves roughly \textbf{128 words} of outcome-telegraphing text behind; a 512-word window set back
-past it scores no better than the facts ($+0.013$, CI $[-0.016, +0.041]$). With the tail removed,
-the reasoning's real contribution is $+0.027$ AUROC, CI $[+0.014, +0.039]$. The practical
-consequence for anyone building such a benchmark is a concrete margin, not a caution.
+state of the art beats a facts-only input by $+0.181$ AUROC, and \textbf{essentially all of that gap
+is an artifact of imperfect order removal} rather than the court's reasoning. Deleting the operative
+order leaves roughly \textbf{128 words} of outcome-telegraphing text behind; a 512-word window set
+back past it scores no better than the facts on \emph{either} split ($+0.013$ and $+0.012$, both
+CIs spanning zero). With the tail removed the reasoning adds only $+0.02$--$0.03$, significant on
+one split and marginal on the other. The facts-only baseline was put through the same test and is
+sound ($-0.0001$ from a full disposition scrub). The practical consequence for anyone building such
+a benchmark is a concrete margin --- about 128 words past the detected order boundary --- not a
+caution.
 
 \smallskip
 \textbf{2.} Projecting facts into a symbolic legal vocabulary \textbf{costs 0.097 AUROC}, which is
@@ -1499,6 +1610,7 @@ and runs a QA gate after extraction. Every stage is resumable.
 python -m src.eval.leakage\_probe --split forum\_heldout\\
 python -m src.eval.reasoning\_ablation --split forum\_heldout\\
 python -m src.eval.leakage\_setback --split forum\_heldout\\
+python -m src.eval.masked\_integrity --split forum\_heldout\\
 python -m src.eval.representation\_ladder --split forum\_heldout\\
 python -m src.eval.vocab\_ab --split forum\_heldout\\
 python -m src.authorities.statute\_predict --split forum\_heldout\\
