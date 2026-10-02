@@ -49,8 +49,9 @@ who has never seen the repository.
 
 The project began as a system that would read a court judgment, pull structured legal objects out
 of it, and reason over them. It became something more useful and less flattering: a carefully
-leakage-controlled measurement apparatus which shows that \emph{most published accuracy on this
-task comes from the court's own reasoning rather than from the facts of the dispute}, and that
+leakage-controlled measurement apparatus which shows that \emph{85\% of the apparent advantage of
+the published input construction is disposition language surviving the deletion of the operative
+order}, that the court's reasoning itself adds only a small real amount, and that
 \emph{converting facts into a symbolic vocabulary destroys most of the predictive signal they
 carry}. Both claims are supported by controlled experiments with confidence intervals, and both
 contradict what the project originally assumed. Along the way several genuinely positive results
@@ -167,8 +168,9 @@ reasoning rather than from the facts of the dispute?
 ontology-driven pipeline is \emph{for} --- help or hurt?
 \end{tcolorbox}
 
-The answers, established in Section~\ref{sec:results}, are: \textbf{most of it}, and
-\textbf{it hurts, substantially and measurably}.
+The answers, established in Section~\ref{sec:results}, are: \textbf{far less than it appears,
+because most of the apparent contribution is not reasoning at all but residual disposition
+language}; and \textbf{it hurts, substantially and measurably}.
 
 %==============================================================================
 \section{The one idea: leakage}\label{sec:leakage}
@@ -441,6 +443,7 @@ instance, requires possession that is open, continuous, hostile and for the stat
 Each extracted fact is then \emph{canonicalised}: mapped from free text to a controlled label drawn
 from a 345-entry vocabulary generated from the ontology's own named fields. ``The plaintiff had been
 cultivating the land since 1962'' becomes something like
+\mbox{}\linebreak
 \code{possession.continuous\_since\_date}.
 
 This step is the one Section~\ref{sec:head2} shows to be destructive, so it is worth being precise
@@ -509,9 +512,11 @@ than decorative --- which is not the same as establishing they are correct.
 %==============================================================================
 \section{Results}\label{sec:results}
 
-\subsection{Headline 1: the court's reasoning carries more signal than the facts}\label{sec:head1}
+\subsection{Headline 1: the published result is mostly leakage}\label{sec:head1}
 
-This is the project's main finding. Six input constructions were run on \textbf{identical cases,
+This is the project's main finding, and it is not the finding the project expected --- an earlier
+version of this document claimed the court's \emph{reasoning} was the source of the gap, and
+Section~\ref{sec:contamination} reports the measurement that refuted it. Six input constructions were run on \textbf{identical cases,
 with an identical split, identical labels and an identical classifier} (TF-IDF features into
 logistic regression). The \emph{only} thing that varies between rows is which part of the judgment
 the model is allowed to read.
@@ -552,38 +557,35 @@ Paired bootstrap over the test cases (2,000 resamples), reporting the difference
 \end{tabular}
 \end{center}
 
-\subsubsection*{What this says}
+\subsubsection*{What this appears to say, and why that reading is wrong}
 
-Take the \code{order\_only} arm as the ceiling on what is knowable from this corpus: AUROC 0.976,
-so there is $0.976 - 0.500 = 0.476$ of signal available above chance. Then:
+Read naively, the table says the court's reasoning is worth a great deal. Take \code{order\_only} as
+the ceiling on what is knowable here (AUROC 0.976, so $0.476$ of signal is available above chance);
+then the facts and arguments appear to carry $(0.668-0.5)/0.476 = 35\%$ of it, the whole
+order-removed document $49\%$, and the last 512 tokens $73\%$.
 
-\begin{itemize}
-\item the \textbf{facts and arguments} carry $(0.668-0.5)/0.476 = \mathbf{35\%}$ of it;
-\item \textbf{adding the court's reasoning} brings that to $(0.735-0.5)/0.476 = \mathbf{49\%}$;
-\item \textbf{ILDC's actual best input}, the last 512 tokens, reaches
-      $(0.845-0.5)/0.476 = \mathbf{73\%}$.
-\end{itemize}
-
-So roughly \textbf{half of what the reasoning-inclusive setup achieves is attributable to the
-reasoning, not to the dispute}.
+That reading has one weak point, and it turns out to be fatal to it. \textbf{The final 512 tokens sit
+exactly where the operative order used to be.} If the boundary between ``reasoning'' and ``order'' is
+even slightly imperfect, that arm --- and no other --- is contaminated. The next section measures
+whether it is.
 
 \subsubsection*{Three objections, and what answers each}
 
-This is the kind of result that invites immediate objections. Each was anticipated and tested.
+This is the kind of result that invites immediate objections. Each was tested; the second one won.
 
 \paragraph{``Your masked arm is worse simply because it has less text''} No --- the evidence runs
 hard the other way. The \emph{best} non-leaky arm, \code{last\_512\_tokens}, reads \textbf{511
 words}; the masked arm reads \textbf{2,501}. The winning construction has roughly one-fifth the text
 and beats the masked arm by 0.176 AUROC. Volume is not the mechanism; \emph{which} text is.
 
-\paragraph{``The last 512 tokens must still contain the order''} This is the one objection with real
-bite, because the last 512 tokens sit exactly where the order used to be. Two things speak against
-it. First, the order-removal detector is independently validated: the \code{order\_only} arm built
-from the removed span reaches AUROC 0.976, so the detector is finding the order, not missing it.
-Second, \code{ildc\_style} and \code{ildc\_style\_no\_headnote} --- which also have the order removed
-but read the whole remaining document --- both beat \code{masked} significantly, and they have no
-positional proximity advantage at all. A complete audit of residual outcome cues in the
-last-512 window is nonetheless an open item (Section~\ref{sec:notestablished}).
+\paragraph{``The last 512 tokens must still contain the order''} \textbf{This objection is correct},
+and Section~\ref{sec:contamination} is the measurement that establishes it. An earlier version of
+this document argued the objection was unlikely, on two indirect grounds: that the order detector is
+independently validated (the \code{order\_only} arm reaches 0.976, so it finds the order rather than
+missing it), and that \code{ildc\_style} beats \code{masked} without any positional advantage. Both
+of those facts are true and neither settles the question, because the order detector can mark the
+boundary correctly and still leave the sentence \emph{before} it in place. That is exactly what
+happens.
 
 \paragraph{``This is just your corpus''} Correct, and this is the single most important
 qualification on the result. Everything above is measured on \emph{our} 6,954 land-dispute cases
@@ -593,14 +595,182 @@ replication on ILDC's own released text and labels is written
 dataset licence acceptance, which is the user's to give and which this project deliberately did not
 route around.
 
-\subsubsection*{The number that gives the result its force}
+\subsubsection*{One number worth keeping}
 
-The \code{last\_512\_tokens} arm reaches \textbf{accuracy 0.776}. ILDC's published best is
-\textbf{78\%}. A plain TF-IDF model, on a different and much smaller corpus, reproduces a published
-transformer result to within half a percentage point --- once it is allowed to read the same thing
-the published model read. The same model, denied the court's reasoning, falls to 0.621.
+The \code{last\_512\_tokens} arm reaches \textbf{accuracy 0.776}; ILDC's published best is
+\textbf{78\%}. A plain TF-IDF model, on a different and much smaller corpus, lands within half a
+percentage point of a published transformer result once it reads the same window the published model
+reads. That is worth keeping --- but after the next section it is no longer a statement about
+reasoning. It is a statement about how much can be recovered from a window that both setups leave
+contaminated.
 
-That juxtaposition is the paper.
+\subsection{Where the advantage actually comes from}\label{sec:contamination}
+
+The claim to be tested is that \code{last\_512\_tokens} wins because the final window retains
+disposition language, not because the court's reasoning is informative. Three measurements settle
+it, on 842 test cases (60 of the 902 were dropped for being shorter than 2,048 words in the
+order-removed text, which the setback arms require). \textbf{Every arm here is exactly 512 words by
+construction}, so volume cannot explain any difference between them.
+
+\subsubsection*{1. The setback curve}
+
+Take four non-overlapping 512-word windows, stepping backwards from the end of the order-removed
+document. The two hypotheses predict different shapes, and both predictions were written into the
+module before it was run:
+
+\begin{itemize}
+\item \textbf{Residual leakage} --- contamination lives next to the boundary and cannot reach back
+512 words, so the curve should \emph{fall off a cliff} after the first window.
+\item \textbf{Reasoning} --- a court's analysis occupies the last several thousand words, so signal
+should \emph{decay gradually} with distance, with every window still above \code{masked}.
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{@{}llrrrc@{}}
+\toprule
+\textbf{Arm} & \textbf{Window} & \textbf{AUROC} & \textbf{$\Delta$ vs \code{masked}} & \textbf{95\% CI} & \textbf{Sig.} \\
+\midrule
+\code{masked} & facts + arguments (2,616 w) & 0.656 & --- & --- & --- \\
+\midrule
+\code{w0} & $[-512{:}]$      & \textbf{0.838} & $+0.1814$ & $[+0.1501, +0.2134]$ & \textbf{yes} \\
+\code{w1} & $[-1024{:}-512]$ & 0.669 & $+0.0128$ & $[-0.0158, +0.0410]$ & \textbf{no} \\
+\code{w2} & $[-1536{:}-1024]$ & 0.647 & $-0.0094$ & $[-0.0358, +0.0154]$ & no \\
+\code{w3} & $[-2048{:}-1536]$ & 0.638 & $-0.0183$ & $[-0.0457, +0.0070]$ & no \\
+\bottomrule
+\end{tabular}
+\captionof{table}{The setback curve. Source:
+\code{experiments/paper1/leakage\_setback\_forum\_heldout.json}.}
+\end{center}
+
+This is unambiguously the leakage shape: a cliff, not a decay. \textbf{512 words of the court's
+reasoning, taken from anywhere other than the very end, carry no more outcome signal than the facts
+do.}
+
+\subsubsection*{2. A cue audit, against the right base rate}
+
+Why that shape? Run the disposition patterns from \code{src/data/labels.py} --- the \emph{same}
+regular expressions that produced this project's outcome labels --- over each window and count the
+cases containing an explicit disposition statement.
+
+A raw count would be uninterpretable. Masked text is full of sentences like ``the High Court
+dismissed the suit'', which recite what a \emph{lower} court did and leak nothing about this court's
+decision; the patterns match those too. So \code{masked} supplies the base rate, and only an
+\emph{excess} over it is evidence of contamination.
+
+\begin{center}
+\begin{tabular}{@{}lrrl@{}}
+\toprule
+\textbf{Arm} & \textbf{Cases with a cue} & \textbf{Rate} & \textbf{Excess over base} \\
+\midrule
+\code{masked} & 227 / 842 & 0.270 & \emph{--- base rate} \\
+\code{w0} & 353 / 842 & \textbf{0.419} & $\mathbf{+0.150}$ \\
+\code{w1} & 75 / 842 & 0.089 & $-0.180$ \\
+\code{w2} & 70 / 842 & 0.083 & $-0.186$ \\
+\code{w3} & 62 / 842 & 0.074 & $-0.196$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Only the final window is \emph{enriched} in disposition language. Every setback window sits well
+\emph{below} the base rate --- cleaner than \code{masked} --- and scores the same as it.
+
+\paragraph{The mechanism, visible in the text} Indian judgments announce the conclusion one sentence
+before the operative order:
+
+\begin{quote}
+``For the foregoing reasons we find no merit in the appeal. \emph{The appeal is dismissed with
+costs.}''
+\end{quote}
+
+The order detector marks the boundary at the second sentence, which is \textbf{correct} --- that is
+the operative order. The first sentence stays, and it states the outcome just as plainly.
+
+\subsubsection*{3. How deep the contamination reaches}
+
+The setback curve answers the question at 512-word granularity. Sweeping the same 512-word window
+backwards in fine steps locates the boundary precisely --- and AUROC and cue rate fall together,
+which is what a single shared cause looks like:
+
+\begin{center}
+\begin{tabular}{@{}rrrrc@{}}
+\toprule
+\textbf{Offset} & \textbf{AUROC} & \textbf{Cue rate} & \textbf{$\Delta$ vs \code{masked}} & \textbf{Sig.} \\
+\midrule
+0 words   & 0.838 & 0.419 & $+0.1814$ & yes \\
+32 words  & 0.780 & 0.296 & $+0.1240$ & yes \\
+64 words  & 0.719 & 0.208 & $+0.0625$ & yes \\
+\textbf{128 words} & 0.684 & 0.131 & $+0.0278$ & \textbf{no} \\
+256 words & 0.676 & 0.099 & $+0.0200$ & no \\
+512 words & 0.669 & 0.089 & $+0.0128$ & no \\
+\bottomrule
+\end{tabular}
+\captionof{table}{Contamination depth. The advantage is gone once the window is set back
+\textbf{128 words}.}
+\end{center}
+
+\textbf{Deleting the operative order leaves roughly 100 words of outcome-telegraphing text behind,
+and that residue accounts for essentially all of the last-512 arm's advantage.}
+
+Two subsidiary checks point the same way and bound how much a cue-detector alone can do. Deleting
+every cue-bearing \emph{sentence} from \code{w0} drops it from 0.838 to 0.775; evaluating the same
+model only on the 489 cases where no cue was detected gives 0.742, against \code{masked}'s 0.646 on
+those same cases. Both remain above \code{masked}, so sentence-level scrubbing does \emph{not} fully
+clean the window --- there is outcome-telegraphing language the patterns miss (``we find no merit in
+the submission'', ``the conclusion is inescapable''). This is exactly why the setback curve is the
+primary evidence: it never relies on detecting a cue at all.
+
+\subsubsection*{So does the reasoning add anything? Yes, but little}
+
+One loose end remains. The whole-document arm \code{ildc\_style} \emph{contains} the contaminated
+tail, so its advantage might be the same residue diluted across 5,000 words. Cutting the tail off
+answers it:
+
+\begin{center}
+\begin{tabular}{@{}lrrc@{}}
+\toprule
+\textbf{Comparison} & \textbf{$\Delta$AUROC} & \textbf{95\% CI} & \textbf{Sig.} \\
+\midrule
+\code{w0} (last 512) $-$ \code{masked} & $+0.1814$ & $[+0.1501, +0.2134]$ & yes \\
+\code{ildc\_style} $-$ \code{masked} & $+0.0588$ & $[+0.0458, +0.0722]$ & yes \\
+\code{ildc\_style} $-$ \code{ildc\_minus128} \emph{(the tail alone)} & $+0.0322$ & $[+0.0273, +0.0376]$ & yes \\
+\midrule
+\textbf{\code{ildc\_minus128}} $-$ \code{masked} \emph{(reasoning, cleaned)} & $\mathbf{+0.0266}$ & $\mathbf{[+0.0143, +0.0391]}$ & \textbf{yes} \\
+\code{ildc\_minus512} $-$ \code{masked} & $+0.0215$ & $[+0.0096, +0.0334]$ & yes \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+With the final 128 words removed, the court's \emph{entire} reasoning still beats facts-and-arguments
+by $+0.027$ AUROC, and the interval excludes zero. So the reasoning does carry real signal --- it is
+simply far smaller than it appears. Of \code{ildc\_style}'s $+0.059$ advantage, more than half
+($+0.032$) is the contaminated tail.
+
+\begin{tcolorbox}[plainbox,title={The corrected headline}]
+The input construction used by the published state of the art appears to beat a facts-only input by
+$\mathbf{+0.181}$ AUROC. \textbf{About 85\% of that is an artifact of imperfect order removal.}
+Deleting the operative order leaves roughly 100 words of outcome-telegraphing text in place; a
+512-word window set back past that residue scores no better than the facts at all
+($+0.013$, CI $[-0.016, +0.041]$).
+
+\smallskip
+With the contaminated tail removed, the court's reasoning adds $\mathbf{+0.027}$ AUROC
+($\mathbf{[+0.014, +0.039]}$) --- real, statistically significant, and \textbf{one-seventh} of what
+it appears to add.
+\end{tcolorbox}
+
+\paragraph{Why this is a better result than the one it replaces} The earlier claim --- ``the court's
+reasoning carries more signal than the facts'' --- was a claim about legal text. This one is a claim
+about \emph{benchmark construction}, it is more precisely quantified, and it is actionable: a
+benchmark built this way needs roughly 128 words of margin past the detected order boundary, not
+zero. It also explains a puzzle the earlier framing left open, namely why a 511-word window would
+beat a 2,501-word one so decisively when it supposedly contained only a subset of the same kind of
+reasoning.
+
+\paragraph{One caveat on scope} These arms run on 842 cases rather than the 895 of
+Section~\ref{sec:head1}, because the setback windows need documents of at least 2,048 words. The two
+tables are therefore not directly comparable row by row --- \code{masked} is 0.656 here and 0.668
+there --- but every comparison \emph{within} each table is paired on identical cases, which is what
+the confidence intervals are computed over.
 
 \subsection{Headline 2: turning facts into symbols destroys the signal}\label{sec:head2}
 
@@ -1040,6 +1210,13 @@ retractions are more informative than the confirmations.
 \toprule
 \textbf{Belief} & \textbf{What the measurement said} \\
 \midrule
+``The last-512 window is clean, so its $+0.176$ advantage shows the court's \emph{reasoning} carries
+the signal.''
+ & \textbf{Wrong, and this document said so before it was tested.} The window is cue-enriched
+   ($+0.150$ over the base rate) and the advantage vanishes once it is set back 128 words. Roughly
+   85\% of it is residual disposition language; the reasoning's real contribution is $+0.027$.
+   See Section~\ref{sec:contamination}. \\
+\addlinespace
 ``Extraction preserves the signal in the text.''
  & At $n=881$ it loses 0.043 AUROC. Canonicalisation loses a further 0.097. \\
 \addlinespace
@@ -1127,10 +1304,12 @@ our corpus as a comparable construction of ILDC's task. The module that runs the
 ILDC's own released text and labels is written and tested; the dataset is gated behind a licence whose
 acceptance belongs to the user, and the module refuses to route around the gate. Until it runs, the
 headline is a strong internally-controlled result, not a replication.
-\item \textbf{A residual-leakage audit of the last-512 window.} The arguments in
-Section~\ref{sec:head1} make residual order leakage unlikely but do not exclude it by direct
-measurement. A cue-level audit of that window, and a ``setback'' arm reading tokens
-$[-1024,-512]$, would settle it. Neither has been run.
+\item \textbf{What the cue scrub cannot separate.} The residual-leakage audit is done
+(Section~\ref{sec:contamination}) and found contamination reaching about 128 words. But
+\code{w0\_scrubbed} and \code{w0\_cue\_free} both remain above \code{masked}, so some
+outcome-telegraphing language in the final window escapes the patterns. Whether that remainder is
+undetected leakage or genuine summative reasoning is \textbf{not} resolved --- the setback curve
+sidesteps the question rather than answering it.
 \item \textbf{Human verification of outcome labels.} The specification's check of 200 labels is
 outstanding; the 562 \code{UNRESOLVED} conflicts are where it should start.
 \item \textbf{The attribution ceiling.} 19--20\% of facts are attributed to a party. The hypothesis
@@ -1159,6 +1338,7 @@ section says plainly which numbers are current.
 \midrule
 Leakage probe (§\ref{sec:sensitivity})      & \textbf{current} & TF-IDF over text; independent of the fact layer \\
 Reasoning ablation (§\ref{sec:head1})       & \textbf{current} & Re-run after the fix \\
+Setback / contamination (§\ref{sec:contamination}) & \textbf{current} & New, 1 Oct 2026; TF-IDF over text \\
 Corpus, labels, splits (§\ref{sec:data})    & \textbf{current} & Upstream of facts \\
 Extractor benchmark (§\ref{sec:pipeline})   & \textbf{current} & Fixed 20-case set \\
 Fact counts, grounding (§\ref{sec:pipeline}) & \textbf{current} & Post-fix: 96,623 facts, 0 dropped, QA 4,026/4,026 spans exact \\
@@ -1207,11 +1387,13 @@ The defensible contribution is not a system that predicts outcomes well --- it d
 measurement:
 
 \begin{tcolorbox}[plainbox,title={The contribution}]
-\textbf{1.} On Indian Supreme Court land disputes, roughly \textbf{half} of the achievable
-outcome-prediction signal available to a reasoning-inclusive setup comes from the court's own
-reasoning rather than from the dispute. A plain TF-IDF model reading ILDC's chosen input reproduces
-its published accuracy (0.776 vs 78\%); the same model reading only facts and arguments falls to
-0.621, a gap of $+0.176$ AUROC with a 95\% CI of $[+0.148, +0.206]$.
+\textbf{1.} On Indian Supreme Court land disputes, the input construction used by the published
+state of the art beats a facts-only input by $+0.181$ AUROC --- and \textbf{about 85\% of that gap
+is an artifact of imperfect order removal}, not the court's reasoning. Deleting the operative order
+leaves roughly \textbf{128 words} of outcome-telegraphing text behind; a 512-word window set back
+past it scores no better than the facts ($+0.013$, CI $[-0.016, +0.041]$). With the tail removed,
+the reasoning's real contribution is $+0.027$ AUROC, CI $[+0.014, +0.039]$. The practical
+consequence for anyone building such a benchmark is a concrete margin, not a caution.
 
 \smallskip
 \textbf{2.} Projecting facts into a symbolic legal vocabulary \textbf{costs 0.097 AUROC}, which is
@@ -1236,9 +1418,6 @@ original framing: facts in, rules and authorities out.
 strong internally-controlled result to a replication. Written and waiting on a licence.
 \item \textbf{Get the 150 gold cases annotated.} Removes the largest reviewer objection: there is
 currently no precision or recall figure for extraction, only proxies.
-\item \textbf{Run the residual-leakage audit on the last-512 window}, including the setback arm.
-Cheap, deterministic, and closes the one objection to Headline 1 that is not yet answered by
-measurement.
 \item \textbf{Refresh all fact-derived results} once the driver chain completes, and update the
 reports.
 \item \textbf{Hand-annotate the 66 element burdens} (B2), which unblocks feature group \code{E} and
@@ -1319,6 +1498,7 @@ and runs a QA gate after extraction. Every stage is resumable.
 \begin{quote}\footnotesize\ttfamily\raggedright
 python -m src.eval.leakage\_probe --split forum\_heldout\\
 python -m src.eval.reasoning\_ablation --split forum\_heldout\\
+python -m src.eval.leakage\_setback --split forum\_heldout\\
 python -m src.eval.representation\_ladder --split forum\_heldout\\
 python -m src.eval.vocab\_ab --split forum\_heldout\\
 python -m src.authorities.statute\_predict --split forum\_heldout\\

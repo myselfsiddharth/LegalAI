@@ -1222,3 +1222,137 @@ purpose.
 
 The module runs the moment the files are in `Data/ildc/`, in either parquet or CSV layout, and adds
 a positional control (`ildc_first_third`) so a result cannot be explained away as crude truncation.
+
+---
+
+## 2026-10-01 — The last-512 result is residual leakage, not reasoning
+
+I wrote in `writeup/LexGraph_Explained.tex` that the one objection to Headline 1 we had not answered
+by measurement — that the final 512 tokens sit where the order used to be, so an imperfect boundary
+would contaminate that arm and no other — was "unlikely" on two indirect grounds. Then I measured it.
+**The objection was correct.**
+
+`src/eval/leakage_setback.py` tests it three ways on the same 842 post-2000-and-long-enough test
+cases, with every arm holding word count constant at 512 by construction.
+
+### The setback curve
+
+Four non-overlapping 512-word windows stepping backwards from the end of the order-removed document:
+
+| arm | AUROC | vs `masked` | 95% CI | |
+|---|---|---|---|---|
+| `masked` (facts + arguments, 2,616 words) | 0.656 | — | — | |
+| `w0` = `[-512:]` | **0.838** | **+0.1814** | [+0.1501, +0.2134] | significant |
+| `w1` = `[-1024:-512]` | 0.669 | +0.0128 | [−0.0158, +0.0410] | **not significant** |
+| `w2` = `[-1536:-1024]` | 0.647 | −0.0094 | [−0.0358, +0.0154] | not significant |
+| `w3` = `[-2048:-1536]` | 0.638 | −0.0183 | [−0.0457, +0.0070] | not significant |
+
+The two hypotheses were stated in the module docstring before running, and this is unambiguously the
+leakage shape: a cliff after `w0`, not a gradual decay. **512 words of the court's reasoning taken
+from anywhere but the very end carry no more outcome signal than the facts do.**
+
+### The cue audit, against the right base rate
+
+The disposition patterns from `src/data/labels.py` — the same ones that produced the outcome labels —
+run over each window. A raw count would be meaningless, because `masked` text is full of
+*recitals* of what a lower court did ("the High Court dismissed the suit") which the regexes also
+match and which leak nothing. So `masked` is the base rate:
+
+| arm | cases with a disposition cue | excess over base |
+|---|---|---|
+| `masked` (base rate) | 227/842 = 0.270 | — |
+| `w0` | 353/842 = **0.419** | **+0.150** |
+| `w1` | 75/842 = 0.089 | −0.180 |
+| `w2` | 70/842 = 0.083 | −0.186 |
+| `w3` | 62/842 = 0.074 | −0.196 |
+
+Only the final window is *enriched* in disposition language. Every setback window is well below the
+base rate, i.e. cleaner than `masked`, and scores the same as it.
+
+### How deep the contamination reaches
+
+The same 512-word window set back in fine steps. AUROC and cue rate fall together:
+
+| offset | AUROC | cue rate | vs `masked` | |
+|---|---|---|---|---|
+| 0 words | 0.838 | 0.419 | +0.1814 | significant |
+| 32 | 0.780 | 0.296 | +0.1240 | significant |
+| 64 | 0.719 | 0.208 | +0.0625 | significant |
+| **128** | 0.684 | 0.131 | +0.0278 | **not significant** |
+| 256 | 0.676 | 0.099 | +0.0200 | not significant |
+| 512 | 0.669 | 0.089 | +0.0128 | not significant |
+
+**Deleting the operative order leaves roughly 100 words of outcome-telegraphing text behind, and
+that residue accounts for essentially all of the last-512 arm's advantage.** The mechanism is visible
+in the text: Indian judgments announce the conclusion a sentence before the operative order —
+"For the foregoing reasons we find no merit in the appeal. The appeal is dismissed with costs." —
+and `ORDER_OPENER` marks the boundary at the second sentence, correctly, leaving the first.
+
+Scrubbing every cue-bearing *sentence* from `w0` drops it 0.838 → 0.775 (−0.0632, CI
+[+0.0527, +0.0746] on the reverse direction, significant); evaluating the same model only on the 489
+cases with no detected cue gives 0.742 against `masked`'s 0.646 on those same cases. So sentence-level
+scrubbing does not fully clean the window — there is residual outcome-telegraphing language the
+regexes do not catch ("we find no merit in the submission", "the conclusion is inescapable"), which
+is exactly what one would expect, and which the setback curve handles properly because it does not
+rely on detecting cues at all.
+
+### What this invalidates, and what survives
+
+**Invalidated:** the claim that `last_512_tokens` at AUROC 0.845 / accuracy 0.776 is a clean
+non-leaky arm, and therefore the "reasoning carries 73% of the headroom" figure, and the framing of
+"a TF-IDF model reproduces ILDC's published 78% once allowed to read the same input" as a statement
+about *reasoning*. The arm is partially leaky. So, by the same construction, is the input ILDC's best
+model reads — which makes this a sharper criticism of the benchmark than the one I was making, not a
+weaker one.
+
+**Survives:** the `ildc_style` comparison. That arm reads the *whole* order-removed document, so it
+is not a positional artifact: +0.066 [+0.054, +0.079] over `masked`. The facts-carry-35% /
+with-reasoning-49% decomposition comes from `ildc_style_no_headnote`, not from `last_512`, and is
+unaffected.
+
+### Does the reasoning add anything at all? Yes, +0.027
+
+`ildc_style` *contains* the contaminated tail, so its advantage could be the same residue diluted
+across 5,000 words. Cutting the tail off settles it:
+
+| comparison | ΔAUROC | 95% CI | |
+|---|---|---|---|
+| `w0` (last 512) − `masked` | +0.1814 | [+0.1501, +0.2134] | significant |
+| `ildc_style` − `masked` | +0.0588 | [+0.0458, +0.0722] | significant |
+| `ildc_style` − `ildc_minus128` (the tail alone) | +0.0322 | [+0.0273, +0.0376] | significant |
+| **`ildc_minus128` − `masked`** (reasoning, cleaned) | **+0.0266** | **[+0.0143, +0.0391]** | **significant** |
+| `ildc_minus512` − `masked` | +0.0215 | [+0.0096, +0.0334] | significant |
+
+So the reasoning does carry real signal — it is just small. More than half of `ildc_style`'s +0.059
+is the contaminated tail. **Of the +0.181 the published input construction appears to deliver, the
+reasoning accounts for 15% and imperfect order removal for 85%.**
+
+### Why this is a better result than the one it replaces
+
+The old claim ("the court's reasoning carries more signal than the facts") was a claim about legal
+text. This one is a claim about **benchmark construction**: it is quantified, it is actionable — a
+benchmark built this way needs ~128 words of margin past the detected order boundary, not zero — and
+it resolves a puzzle the old framing left open, namely why a 511-word window would beat a 2,501-word
+one so decisively when it supposedly held only a subset of the same kind of reasoning.
+
+It also means the criticism of ILDC is **sharper**, not softer. Their boundary is drawn the same way
+and their best model reads only that window, so the contamination lands squarely on their headline
+input. The replication in `src/eval/ildc_ablation.py` should therefore gain a setback arm before it
+runs; added to the next-steps list.
+
+### What remains unresolved
+
+`w0_scrubbed` (0.775) and `w0_cue_free` (0.742) both stay above `masked` (0.656 / 0.646 on the
+matched subset). Sentence-level cue scrubbing does not fully clean the final window, so some
+outcome-telegraphing language escapes the patterns. **Whether that remainder is undetected leakage or
+genuine summative reasoning is not resolved** — the setback curve sidesteps the question rather than
+answering it, which is why it is the primary evidence and the scrub is corroboration.
+
+### Lesson
+
+I argued in `writeup/LexGraph_Explained.tex` that this objection was "unlikely" on two indirect
+grounds — a validated order detector, and a whole-document arm with no positional advantage. Both
+facts were true and neither was responsive: a detector can mark the boundary *correctly* and still
+leave the preceding sentence in place. **An indirect argument that an objection is unlikely is not a
+measurement, and on this project it was wrong the one time it mattered most.** The direct test cost
+one module and fifteen model fits.

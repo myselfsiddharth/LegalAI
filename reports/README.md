@@ -17,6 +17,15 @@ M4 (§9 statutes and precedents) is not started; assets for it exist in `scripts
 
 ## The one-paragraph state of the project
 
+**Headline (revised 2026-10-01).** The reasoning ablation's +0.176 gap between the last-512 window
+and facts-only is **85% residual leakage, not reasoning**. `src/eval/leakage_setback.py` shows a
+cliff rather than a decay — a 512-word window set back one window-width scores +0.013 over `masked`
+with a CI spanning zero — and locates the contamination at **~128 words past the detected order
+boundary**, where AUROC and disposition-cue rate fall together. With that tail cut, the court's
+entire reasoning still beats facts-and-arguments by **+0.027 [+0.014, +0.039]**: real, significant,
+one-seventh of the apparent effect. This sharpens rather than weakens the criticism of ILDC, whose
+best model reads exactly the contaminated window.
+
 A leakage-controlled benchmark is in place and passes its own sensitivity check (`order_only` AUROC
 0.983, `masked` 0.655, chance 0.500). Within it, measured on **881 test cases**, the structured
 pipeline predicts outcome at chance, and the representation ladder localises why: extraction loses
