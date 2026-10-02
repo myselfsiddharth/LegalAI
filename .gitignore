@@ -31,3 +31,11 @@ build/
 Data/interim/facts.jsonl
 Data/interim/canonical_facts.jsonl
 Data/interim/claims.jsonl
+
+# LaTeX build intermediates (the .tex and .pdf are tracked)
+writeup/*.aux
+writeup/*.log
+writeup/*.out
+writeup/*.toc
+writeup/*.xdv
+writeup/*.synctex.gz

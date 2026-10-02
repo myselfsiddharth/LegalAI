@@ -1,0 +1,1370 @@
+% LexGraph: a complete account for a reader who knows nothing about the project.
+% Compile with:  tectonic writeup/LexGraph_Explained.tex
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{mathptmx}            % Times New Roman text and math
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{caption}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\captionsetup{font=small,labelfont=bf}
+\setlist{itemsep=2pt,topsep=3pt,parsep=0pt}
+\newcommand{\code}[1]{\texttt{\small #1}}
+\newcommand{\pct}[1]{#1\%}
+\titleformat{\paragraph}[runin]{\normalfont\bfseries}{}{0pt}{}[.]
+
+\tcbset{
+  plainbox/.style={colback=black!3,colframe=black!25,boxrule=0.4pt,
+                   left=6pt,right=6pt,top=5pt,bottom=5pt,
+                   fonttitle=\bfseries\small,arc=1pt}
+}
+
+\title{\textbf{LexGraph}\\[4pt]
+\large Predicting Outcomes and Grounding Authorities in\\
+Indian Supreme Court Land-Dispute Judgments\\[10pt]
+\normalsize A complete account for a reader starting from zero}
+\author{CSE 573 --- Semantic Web Mining --- Arizona State University}
+\date{1 October 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+This document explains, from first principles and assuming no prior knowledge of law or machine
+learning, what this project set out to do, what was built, what was measured, and --- in equal
+detail --- what turned out not to be true. It is written to be read straight through by someone
+who has never seen the repository.
+
+The project began as a system that would read a court judgment, pull structured legal objects out
+of it, and reason over them. It became something more useful and less flattering: a carefully
+leakage-controlled measurement apparatus which shows that \emph{most published accuracy on this
+task comes from the court's own reasoning rather than from the facts of the dispute}, and that
+\emph{converting facts into a symbolic vocabulary destroys most of the predictive signal they
+carry}. Both claims are supported by controlled experiments with confidence intervals, and both
+contradict what the project originally assumed. Along the way several genuinely positive results
+were established --- statute prediction and precedent retrieval both work well above their
+baselines, and the system's explanations were shown to be faithful rather than decorative.
+
+Nothing in this document is an estimate or a projection. Every number is read from a results file
+produced by a script in this repository, and Section~\ref{sec:status} states for each number
+whether it is current or awaiting recomputation.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+%==============================================================================
+\section{How to read this document}
+
+Section~\ref{sec:problem} explains the problem in ordinary language --- what a court judgment is,
+what we are trying to predict, and why anyone would want to. Section~\ref{sec:leakage} explains the
+single idea that governs every design decision in the project; if you read only one section, read
+that one. Sections~\ref{sec:data} and~\ref{sec:pipeline} describe the data and the machinery.
+Section~\ref{sec:results} reports every result. Section~\ref{sec:engineering} is about the
+unglamorous work --- the fifteen bugs that would each have produced a confident wrong answer.
+Section~\ref{sec:retracted} lists the beliefs the project held and had to give up.
+Section~\ref{sec:notestablished} is the honest inventory of what is \emph{not} shown.
+Section~\ref{sec:glossary} is a glossary; feel free to jump there at any point.
+
+A reader in a hurry should read Sections~\ref{sec:leakage}, \ref{sec:head1} and \ref{sec:head2},
+which contain the whole argument.
+
+%==============================================================================
+\section{The problem, in ordinary language}\label{sec:problem}
+
+\subsection{What a judgment is}
+
+When a dispute reaches the Supreme Court of India, the court eventually publishes a document called
+a \emph{judgment}. A typical land-dispute judgment in our corpus is around 5,300 words long and has
+a predictable shape, though almost never explicit headings:
+
+\begin{enumerate}[label=(\arabic*)]
+\item a \textbf{caption}: the case number, the parties' names, the judges, the lawyers;
+\item the \textbf{facts}: who owned what, who sold what to whom, when, and what went wrong;
+\item the \textbf{procedural history}: which lower courts already heard this and what they decided;
+\item the \textbf{arguments}: what each side's counsel submitted;
+\item the \textbf{reasoning}: the court's own analysis --- the statutes it reads, the earlier cases
+      it follows or distinguishes, and the inferences it draws;
+\item the \textbf{order}: the operative disposition. One or two sentences. ``The appeal is
+      allowed.'' ``The special leave petition is dismissed with costs.''
+\end{enumerate}
+
+Item (6) is the outcome. Items (1)--(4) are, roughly, the inputs that existed before the court
+decided. Item (5) is written \emph{afterwards}, by the winner of the internal argument, to justify
+a conclusion already reached. That asymmetry is the whole story of this project.
+
+\subsection{The task}
+
+\textbf{Legal judgment prediction} is the task of reading some portion of a case and predicting its
+outcome. In our formulation the label is binary:
+
+\begin{itemize}
+\item \textbf{WIN} --- the appellant or petitioner succeeded (the appeal was allowed);
+\item \textbf{LOSE} --- they did not (dismissed, rejected).
+\end{itemize}
+
+Cases that were sent back to a lower court (\code{REMAND}), succeeded in part (\code{PARTIAL}), or
+whose disposition our two independent labellers disagreed about (\code{UNRESOLVED}) are held out of
+the binary task rather than forced into a class.
+
+\subsection{Why anyone cares}
+
+Two honest motivations and one dishonest one.
+
+\begin{itemize}
+\item \textbf{Access to justice.} India's courts carry a backlog measured in tens of millions of
+cases. A litigant without money cannot easily learn whether their claim resembles claims that have
+succeeded. A system that could say ``here are the rules and the authorities that apply to facts
+like yours'' would be useful even if it never predicted an outcome.
+\item \textbf{Scientific interest.} If a model can predict outcomes from pre-decision material
+alone, that tells us something real about how much of a legal outcome is determined by the facts.
+If it cannot, that is equally informative.
+\item \textbf{The dishonest one.} ``Our system predicts court decisions with 78\% accuracy'' is a
+headline. It is also, as this project demonstrates, substantially an artifact of what the model is
+allowed to read.
+\end{itemize}
+
+\subsection{What was already published}
+
+The reference point for this project is \textbf{ILDC/CJPE} (Malik et al., \emph{ACL 2021}), which
+built a corpus of 34,816 Indian Supreme Court proceedings and reported a best accuracy of
+\textbf{78\%}, against \textbf{94\%} for human legal experts.
+
+The ILDC authors are careful and explicit about the obvious trap. They state that the ``end
+section(s) directly stating the decision have been deleted from the documents in ILDC since that is
+what we aim to predict.'' So ILDC does \emph{not} leak the operative order, and any claim that it
+does would be wrong. We checked this and confirmed it.
+
+What ILDC \emph{retains} is item (5) above --- the court's reasoning. The authors say so plainly:
+``we consider (along with the facts) the entire case (except the judgment).'' Their best model reads
+the \textbf{last 512 tokens} of the document, chosen empirically and justified on the grounds that
+``the last parts of case proceedings usually contain the main information about the case and the
+rationale behind the judgment.''
+
+That is a legitimate task definition. It is just a different one from the task a litigant faces.
+Measuring the difference is this project's central contribution.
+
+\subsection{The two questions}
+
+\begin{tcolorbox}[plainbox,title={The questions this project actually answers}]
+\textbf{Q1.} How much of reported legal-judgment-prediction accuracy comes from the court's
+reasoning rather than from the facts of the dispute?
+
+\smallskip
+\textbf{Q2.} Does converting facts into structured, symbolic legal objects --- the thing an
+ontology-driven pipeline is \emph{for} --- help or hurt?
+\end{tcolorbox}
+
+The answers, established in Section~\ref{sec:results}, are: \textbf{most of it}, and
+\textbf{it hurts, substantially and measurably}.
+
+%==============================================================================
+\section{The one idea: leakage}\label{sec:leakage}
+
+\subsection{An analogy}
+
+Suppose you want to predict football results. You build a model, feed it match reports, and report
+89\% accuracy. Then someone notices that your match reports include the final score.
+
+Nobody would defend that. But now suppose you carefully delete the score line, and keep everything
+else the report says --- including the paragraph that reads ``Liverpool's defence had collapsed by
+the hour mark and the result was never in doubt thereafter.'' You have removed the score. You have
+not removed the \emph{knowledge} of the score. The report was written by someone who knew how it
+ended, and that knowledge is distributed through every sentence.
+
+A court's reasoning section is that paragraph. It is written after the decision, by the judge who
+made it, for the purpose of justifying it. The phrase ``we are not persuaded by the appellant's
+contention'' is not evidence about the dispute; it is the outcome, restated.
+
+\textbf{Leakage} is the general name for this: information in the model's input that would not be
+available at prediction time in the real use case.
+
+\subsection{What must be removed, and why}
+
+The project's masking rule (specified in \code{PROJECT.md} §5.2, implemented in
+\code{src/data/mask.py}) keeps only material that existed before the court decided:
+
+\begin{center}
+\begin{tabular}{@{}llp{7.6cm}@{}}
+\toprule
+\textbf{Section} & \textbf{Kept?} & \textbf{Why} \\
+\midrule
+Caption, parties, judges  & no  & Judge identity is a real predictor but not a legal one; party
+                                  names let a model memorise repeat litigants. \\
+Facts                     & \textbf{yes} & This is the genuine input. \\
+Procedural history        & isolated & Which lower court decided what is \emph{legitimately} known
+                                  in advance, but it is also a shortcut, so it is placed in its own
+                                  feature group (\code{Q}) and never mixed in silently. \\
+Arguments of counsel      & \textbf{yes} & Written by the parties, before the decision. \\
+Court's reasoning         & no  & Written after, knowing the answer. \\
+Operative order           & no  & This is the label. \\
+Headnote (pre-2000)       & no  & An editorial summary added by the law reporter that states both
+                                  the outcome and the authorities outright. \\
+Page furniture            & no  & ``Indian Kanoon --- \url{http://indiankanoon.org/doc/...}'',
+                                  page numbers, running headers. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+After masking, the average case retains about 2,500 words of the original 5,300.
+
+\subsection{The control that makes everything else interpretable}\label{sec:sensitivity}
+
+Here is the problem with claiming you removed the leakage: how would you know?
+
+The answer is a \textbf{sensitivity control}. We build a deliberately leaky arm --- a model trained
+on \emph{only} the text we deleted, the operative order --- and check that it scores near-perfectly.
+If it does not, our detector of ``where the order is'' is broken, and the masked arm cannot be
+trusted either.
+
+\begin{center}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+\textbf{Input} & \textbf{Accuracy} & \textbf{Macro-F1} & \textbf{AUROC} \\
+\midrule
+Majority class (always predict LOSE)        & 0.528 & 0.345 & 0.500 \\
+Prior court's disposition only              & 0.562 & 0.562 & 0.585 \\
+Masked text (facts + arguments)             & 0.629 & 0.626 & 0.674 \\
+Whole unmasked judgment                     & 0.746 & 0.745 & 0.827 \\
+\textbf{The removed order only} (control)   & \textbf{0.931} & \textbf{0.931} & \textbf{0.981} \\
+\bottomrule
+\end{tabular}
+\captionof{table}{The leakage probe, \code{forum\_heldout} split, $n_{\text{test}}=902$.
+Source: \code{experiments/paper3/leakage\_probe\_forum\_heldout.json}.}
+\end{center}
+
+The last row is the point. At AUROC 0.981 the deleted text is almost perfectly predictive, which
+confirms two things at once: our order-detector finds the right text, and removing it removes
+something that mattered enormously. The gap between 0.827 (whole judgment) and 0.674 (masked) is
+the measure of how much the court's own writing was doing.
+
+A second version of the same check uses a large language model instead of a classifier, and agrees:
+shown the order alone it reaches 95.7\% accuracy; shown the masked text, 62.0\%
+(\code{experiments/paper3/llm\_probe\_forum\_heldout.json}, $n=350$).
+
+\begin{tcolorbox}[plainbox,title={Why this matters more than the headline number}]
+Any paper reporting accuracy on this task should report a sensitivity control. Without one, a
+reader cannot distinguish ``we removed the leakage'' from ``we believe we removed the leakage''.
+This project's masked arm is worth reading precisely because the control next to it is near 1.0.
+\end{tcolorbox}
+
+%==============================================================================
+\section{The data}\label{sec:data}
+
+\subsection{The corpus}
+
+All 26,688 Indian Supreme Court judgment PDFs from 1950 to 2025 are held locally (6.8\,GB). Of
+these, a provided spreadsheet identifies \textbf{6,954} as land or property disputes, and that
+subset is the working corpus for everything reported here.
+
+Resolving spreadsheet rows to PDF files sounds trivial and was not. An earlier approach joined on
+\emph{normalised titles} and quietly achieved a 0.6\% match rate, because judgment filenames carry
+a copy marker after the year (\code{...\_on\_23\_May\_1957\_1}) while titles do not --- so a normaliser
+that strips ``trailing digits'' from both removes the \emph{year} from every title, and every pair
+then mismatches by exactly that year. The current adapter joins on the exact filename supplied by
+the spreadsheet and achieves \textbf{6,954 of 6,954 (100\%)}, with the join rate asserted at
+import time (\code{MIN\_PDF\_JOIN\_RATE = 0.99}) so that a regression stops the pipeline instead of
+producing a smaller, silently biased dataset.
+
+Text extraction: 6,954 of 6,954 succeeded, with zero failures and zero near-empty results.
+
+\subsection{Where the labels come from}
+
+Nobody hand-labelled 6,954 outcomes. Instead two independent labellers were built and made to
+agree:
+
+\begin{enumerate}
+\item \textbf{A deterministic rule engine} (\code{src/data/labels.py}) that finds the operative
+order by regular expression and classifies it. This is harder than it reads. Indian orders routinely
+dispose of several proceedings at once --- ``the appeal is allowed \ldots\ and the writ petition
+stands dismissed'' --- and a naive matcher reads the second clause as the outcome. The fix was to
+rank proceedings into tiers, so that an \emph{appeal} or \emph{special leave petition} outranks a
+consequential \emph{writ petition} or \emph{application}. That change alone reduced
+rules-versus-LLM conflicts from 196 to 107.
+\item \textbf{A language model} shown the same order window and asked for the same decision, which
+must quote the span it relied on.
+\end{enumerate}
+
+\textbf{Agreement: 87.0\%} on the 4,317 cases where both decided and the quote verified. Where they
+conflict, the case is marked \code{UNRESOLVED} and queued for human review rather than resolved by
+coin-flip or by trusting one labeller. There are 562 such cases.
+
+\begin{center}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+\textbf{Label} & \textbf{Cases} & \textbf{Share} \\
+\midrule
+LOSE        & 2,964 & 42.6\% \\
+WIN         & 2,365 & 34.0\% \\
+PARTIAL     &   624 &  9.0\% \\
+UNRESOLVED  &   562 &  8.1\% \\
+UNKNOWN     &   289 &  4.2\% \\
+REMAND      &   116 &  1.7\% \\
+OTHER       &    34 &  0.5\% \\
+\midrule
+\textbf{Total} & \textbf{6,954} & \\
+\bottomrule
+\end{tabular}
+\captionof{table}{Merged outcome labels. The binary task uses WIN and LOSE only: 5,329 cases.}
+\end{center}
+
+\subsection{How the data is split, and why it is not random}
+
+A random train/test split would be wrong here for two separate reasons.
+
+\paragraph{Reason one: groups} The same dispute often generates several judgments --- an appeal,
+a review, a connected matter. If one lands in training and another in test, the model can memorise
+the dispute rather than learn anything. So cases are grouped and a group is never split.
+
+\paragraph{Reason two: time} A model that is trained on 2020 cases and tested on 1970 cases is
+being allowed to use the future to predict the past. Real deployment never has that.
+
+The project uses two splits, deliberately, because each tests something different:
+
+\begin{itemize}
+\item \code{forum\_heldout} --- three forums (courts of origin) are held out entirely. Tests
+generalisation to an unseen procedural context. Train 3,350 / dev 455 / test 902.
+\item \code{temporal\_2004\_2013} --- train on everything up to 2004, develop on 2004--2013, test
+after 2013. Tests generalisation forward in time. Train 3,446 / dev 480 / test 768.
+\end{itemize}
+
+Both splits carry a hash of their contents, which every results file records, so a number can
+always be traced to the exact split that produced it.
+
+Building the temporal split exposed a conflict between the two requirements above, and a unit test
+caught it. Grouping by a case group's \emph{maximum} year put 1970 cases into the ``test after
+2013'' bucket; grouping by the \emph{minimum} year put 2025 cases into ``train up to 2004''. Both
+are time-travel. There is no assignment that satisfies both constraints for a group that straddles
+a boundary, so the 13 straddling groups are dropped and the count is recorded.
+
+%==============================================================================
+\section{What was built}\label{sec:pipeline}
+
+The system is a chain of stages, each writing a file the next one reads. Everything is resumable
+and everything is deterministic given its inputs.
+
+\subsection{Infrastructure: one door to the model}
+
+All language-model calls go through \code{src/llm/client.py}, which talks to ASU's own hosted model
+endpoint (Voyager). Four decisions in that file matter more than they look:
+
+\begin{itemize}
+\item \textbf{A content-addressed cache.} Every call is keyed on
+\code{sha256(model, messages, parameters)} in SQLite. Re-running an experiment costs nothing --- the
+LLM baseline experiment reported later ran at a 100\% cache hit rate over 600 calls. The cache
+currently holds 162,230 entries.
+\item \textbf{``No answer'' is distinct from ``empty answer''.} A result carries
+\code{ok=False} when the call failed, which is \emph{not} the same as a model that replied with
+nothing. Conflating the two is how a network outage becomes a scientific finding, which happened
+twice on this project before the distinction was enforced (Section~\ref{sec:engineering}).
+\item \textbf{A 90-second timeout.} The client library's default is 600 seconds with three
+retries, which froze an early batch for over twenty minutes with no output.
+\item \textbf{Parallelism.} Extraction runs 96 workers, embeddings 24; throughput went from 10.3 to
+38.6 documents per second.
+\end{itemize}
+
+\subsection{Segmentation}
+
+Before anything can be extracted, a judgment must be cut into units. The first implementation split
+on blank lines and returned \emph{one unit} for 57.7\% of cases, because text extracted from these
+PDFs frequently contains no blank lines at all. A third tier --- sliding sentence windows --- was
+added. Median units per case went from 1 to 47, and the share of unusable cases from 57.7\% to
+2.6\%.
+
+\subsection{Fact extraction, with verbatim grounding}
+
+A model reads each unit and proposes \emph{facts}: atomic factual assertions, each of which must
+include a \textbf{verbatim quote} from the source text, plus who asserted it and whether it was
+disputed. The quote is then located in the original by
+\code{src/grounding.py}; a fact whose quote cannot be found is \textbf{discarded, not corrected}.
+
+This is the project's main defence against fabrication. The current \textbf{grounding rate is
+0.92}: 92\% of proposed facts carry a quote that is genuinely present in the judgment.
+
+Getting there required fixing the \emph{verifier}, not the extractor. An early version rejected
+42\% of quotes that were in fact correct, for two reasons: PDF text extraction inserts hyphenation
+artifacts (\code{plain- tiff's}), and a 20-character minimum rejected short true quotes such as
+``Appeal dismissed.'' (15 characters). After repairing hyphenation and lowering the floor, the
+verified rate on a hand-checked set went from 58.3\% to 91.7\% --- with 15 of 16 quotes confirmed
+present by eye.
+
+\paragraph{Choosing the extraction model} Six models were benchmarked on an identical 20-case set:
+
+\begin{center}
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+\textbf{Model} & \textbf{Grounding} & \textbf{Leak} & \textbf{Attribution} & \textbf{Facts/case} & \textbf{s/case} \\
+\midrule
+\code{llama4-scout-17b}            & 0.92 & 0.03 & 0.27 & 18.4 & \textbf{4.2} \\
+\code{llama4-maverick-17b}         & \textbf{0.93} & \textbf{0.01} & \textbf{0.41} & \textbf{23.5} & 28.7 \\
+\code{qwen3-30b-a3b-instruct-2507} & 0.92 & 0.03 & 0.40 & 10.5 & 15.7 \\
+\code{olmo3-32b-instruct}          & \multicolumn{5}{l}{excluded --- {\raise.17ex\hbox{$\scriptstyle\sim$}}50\,s per call} \\
+\code{glm-5-3-flash}               & \multicolumn{5}{l}{excluded --- hangs on long prompts} \\
+\code{glm-5-3}                     & \multicolumn{5}{l}{excluded --- too slow at corpus scale} \\
+\bottomrule
+\end{tabular}
+\captionof{table}{Extractor benchmark, 20 cases stratified 1950--2022.
+Source: \code{experiments/paper1/extractor\_benchmark.json}.}
+\end{center}
+
+\code{maverick} is better on every quality axis and 6.8$\times$ slower. \code{scout} was chosen for
+corpus-scale runs; the benchmark is kept so the trade-off is on the record rather than implicit.
+
+\paragraph{Scale} The current fact layer holds \textbf{96,623 facts across 4,702 cases}, median 17
+per case.
+
+\subsection{Claims, defences, elements}
+
+A second extraction pass identifies what each party is actually \emph{asking for} --- the claim
+(e.g.\ adverse possession, specific performance, an injunction) --- and what is raised against it.
+15,377 claim records exist.
+
+The project's ontology (\code{ontology/ontology\_v1.yaml}, converted from a supplied Word document
+by \code{src/data/ontology\_convert.py}) defines 15 claims, 66 elements, 6 defence families and 4
+remedy tiers. An \emph{element} is a legal requirement a claim must satisfy: adverse possession, for
+instance, requires possession that is open, continuous, hostile and for the statutory period.
+
+\subsection{The canonical vocabulary}
+
+Each extracted fact is then \emph{canonicalised}: mapped from free text to a controlled label drawn
+from a 345-entry vocabulary generated from the ontology's own named fields. ``The plaintiff had been
+cultivating the land since 1962'' becomes something like
+\code{possession.continuous\_since\_date}.
+
+This step is the one Section~\ref{sec:head2} shows to be destructive, so it is worth being precise
+about what it does and why anyone would want it. The appeal of a controlled vocabulary is that it
+makes facts \emph{comparable across cases} --- you can count how often an element is satisfied, mine
+patterns, and reason symbolically. The cost is that two facts mapping to the same label become
+indistinguishable.
+
+\subsection{Claim families and fact patterns}
+
+With facts as symbols, the specification called for grouping claims into families and then mining
+\emph{patterns} --- co-occurring fact sets that predict outcomes within a family. Both were built
+(\code{src/cluster/}, \code{src/patterns/}), using HDBSCAN and agglomerative clustering for
+families and FP-Growth with closed itemsets for patterns, with chi-square significance testing,
+Benjamini--Hochberg correction for multiple comparisons, and bootstrap stability over 20 resamples.
+
+Section~\ref{sec:head2} reports what they found, which is nothing, and why that is itself a result.
+
+\subsection{Grounding facts in law: statutes and precedents}
+
+Two tasks that take facts as input and predict \emph{legal authorities} rather than outcomes.
+
+\paragraph{Statute prediction} Given the facts, predict which statutory provisions apply.
+This required building a citation normaliser (\code{src/authorities/normalize.py}) over a registry
+of 42 Acts, because real Indian citations arrive in three awkward forms: truncated by line breaks
+(the single most frequent ``Act'' in 1,200 sampled judgments is ``Property Act'' with 644 mentions
+--- that is the \emph{Transfer of Property Act} with its head cut off); as generic back-references
+(``the said Act'', 311+ mentions), resolvable only by looking back to the last Act actually named;
+and with implicit Acts (a bare ``Article'' means the Constitution). Coverage over 1,500 judgments:
+58,295 citations, 61.4\% resolved to a canonical code.
+
+\paragraph{Precedent retrieval} Given the facts, retrieve the earlier cases the court will cite.
+Ten systems were compared, including BM25 (keyword), dense embeddings pooled three different ways,
+and reciprocal-rank fusion of both. Every retrieved authority is asserted to pre-date the query
+judgment --- checked per result, not merely filtered for.
+
+\subsection{Outcome models and feature groups}
+
+The final predictor consumes the structured pipeline's output as six explicitly separated feature
+groups, so that any claim about what drives a prediction can be tested by ablation:
+
+\begin{center}
+\begin{tabular}{@{}clr@{}}
+\toprule
+\textbf{Group} & \textbf{Contents} & \textbf{Features} \\
+\midrule
+\code{F} & canonical fact atoms            & 1,313 \\
+\code{P} & mined fact patterns             & 3 \\
+\code{E} & element satisfaction scores     & \textbf{0 (empty --- see B2)} \\
+\code{S} & predicted statutes              & 49 \\
+\code{R} & retrieved precedents            & 6 \\
+\code{C} & case metadata (year, forum, \ldots) & 38 \\
+\code{Q} & prior court's disposition       & 6 \\
+\bottomrule
+\end{tabular}
+\captionof{table}{Feature groups, 1,415 features total. \code{Q} is isolated because it is a
+procedural shortcut rather than a legal signal.}
+\end{center}
+
+\subsection{Traces}
+
+For each prediction the system emits a \emph{trace}: which facts, statutes and precedents it relied
+on. Section~\ref{sec:traces} describes the test that establishes these traces are faithful rather
+than decorative --- which is not the same as establishing they are correct.
+
+%==============================================================================
+\section{Results}\label{sec:results}
+
+\subsection{Headline 1: the court's reasoning carries more signal than the facts}\label{sec:head1}
+
+This is the project's main finding. Six input constructions were run on \textbf{identical cases,
+with an identical split, identical labels and an identical classifier} (TF-IDF features into
+logistic regression). The \emph{only} thing that varies between rows is which part of the judgment
+the model is allowed to read.
+
+\begin{center}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+\textbf{Input construction} & \textbf{Words} & \textbf{Accuracy} & \textbf{Macro-F1} & \textbf{AUROC} \\
+\midrule
+\code{order\_only} \emph{(sensitivity control)} & 427 & 0.921 & 0.920 & 0.976 \\
+\midrule
+\code{full} \emph{(whole judgment, ceiling)}    & 5,302 & 0.720 & 0.718 & 0.788 \\
+\code{ildc\_style} \emph{(all but the order)}   & 5,051 & 0.680 & 0.678 & 0.734 \\
+\code{ildc\_style\_no\_headnote}                & 4,481 & 0.678 & 0.676 & 0.735 \\
+\textbf{\code{last\_512\_tokens}} \emph{(ILDC's best input)} & \textbf{511} & \textbf{0.776} & \textbf{0.775} & \textbf{0.845} \\
+\midrule
+\textbf{\code{masked}} \emph{(facts + arguments only)} & 2,501 & 0.621 & 0.619 & 0.668 \\
+\bottomrule
+\end{tabular}
+\captionof{table}{The reasoning ablation. Same 895 test cases, same 3,324 training cases, same
+classifier throughout. Source:
+\code{experiments/paper1/reasoning\_ablation\_forum\_heldout.json}.}
+\end{center}
+
+Paired bootstrap over the test cases (2,000 resamples), reporting the difference in AUROC with a
+95\% confidence interval:
+
+\begin{center}
+\begin{tabular}{@{}lrrc@{}}
+\toprule
+\textbf{Comparison} & \textbf{$\Delta$AUROC} & \textbf{95\% CI} & \textbf{Significant} \\
+\midrule
+\code{last\_512\_tokens} $-$ \code{masked}        & $+0.1764$ & $[+0.1480, +0.2064]$ & yes \\
+\code{ildc\_style\_no\_headnote} $-$ \code{masked} & $+0.0670$ & $[+0.0535, +0.0820]$ & yes \\
+\code{ildc\_style} $-$ \code{masked}              & $+0.0660$ & $[+0.0539, +0.0789]$ & yes \\
+\code{full} $-$ \code{ildc\_style}                & $+0.0538$ & $[+0.0476, +0.0602]$ & yes \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsubsection*{What this says}
+
+Take the \code{order\_only} arm as the ceiling on what is knowable from this corpus: AUROC 0.976,
+so there is $0.976 - 0.500 = 0.476$ of signal available above chance. Then:
+
+\begin{itemize}
+\item the \textbf{facts and arguments} carry $(0.668-0.5)/0.476 = \mathbf{35\%}$ of it;
+\item \textbf{adding the court's reasoning} brings that to $(0.735-0.5)/0.476 = \mathbf{49\%}$;
+\item \textbf{ILDC's actual best input}, the last 512 tokens, reaches
+      $(0.845-0.5)/0.476 = \mathbf{73\%}$.
+\end{itemize}
+
+So roughly \textbf{half of what the reasoning-inclusive setup achieves is attributable to the
+reasoning, not to the dispute}.
+
+\subsubsection*{Three objections, and what answers each}
+
+This is the kind of result that invites immediate objections. Each was anticipated and tested.
+
+\paragraph{``Your masked arm is worse simply because it has less text''} No --- the evidence runs
+hard the other way. The \emph{best} non-leaky arm, \code{last\_512\_tokens}, reads \textbf{511
+words}; the masked arm reads \textbf{2,501}. The winning construction has roughly one-fifth the text
+and beats the masked arm by 0.176 AUROC. Volume is not the mechanism; \emph{which} text is.
+
+\paragraph{``The last 512 tokens must still contain the order''} This is the one objection with real
+bite, because the last 512 tokens sit exactly where the order used to be. Two things speak against
+it. First, the order-removal detector is independently validated: the \code{order\_only} arm built
+from the removed span reaches AUROC 0.976, so the detector is finding the order, not missing it.
+Second, \code{ildc\_style} and \code{ildc\_style\_no\_headnote} --- which also have the order removed
+but read the whole remaining document --- both beat \code{masked} significantly, and they have no
+positional proximity advantage at all. A complete audit of residual outcome cues in the
+last-512 window is nonetheless an open item (Section~\ref{sec:notestablished}).
+
+\paragraph{``This is just your corpus''} Correct, and this is the single most important
+qualification on the result. Everything above is measured on \emph{our} 6,954 land-dispute cases
+with \emph{our} masking, as a comparable construction of ILDC's task --- not on ILDC itself. The
+replication on ILDC's own released text and labels is written
+(\code{src/eval/ildc\_ablation.py}, four arms including a positional control) and blocked only on
+dataset licence acceptance, which is the user's to give and which this project deliberately did not
+route around.
+
+\subsubsection*{The number that gives the result its force}
+
+The \code{last\_512\_tokens} arm reaches \textbf{accuracy 0.776}. ILDC's published best is
+\textbf{78\%}. A plain TF-IDF model, on a different and much smaller corpus, reproduces a published
+transformer result to within half a percentage point --- once it is allowed to read the same thing
+the published model read. The same model, denied the court's reasoning, falls to 0.621.
+
+That juxtaposition is the paper.
+
+\subsection{Headline 2: turning facts into symbols destroys the signal}\label{sec:head2}
+
+The second question was whether the structured, ontology-driven representation helps. To answer it
+cleanly, the project built a \textbf{representation ladder}: the same classifier, the same split, the
+same labels and the same 881 test cases at every rung, with \emph{only the representation} changing.
+
+\begin{center}
+\begin{tabular}{@{}llrrr@{}}
+\toprule
+\textbf{Rung} & \textbf{Representation} & \textbf{Features} & \textbf{Macro-F1} & \textbf{AUROC} \\
+\midrule
+0 & majority class                 & ---    & 0.346 & --- \\
+1 & masked judgment text           & 50,000 & 0.608 & \textbf{0.657} \\
+2 & extracted fact text            & 41,142 & 0.586 & 0.614 \\
+3 & canonical fact atoms           & 1,313  & 0.505 & \textbf{0.517} \\
+\bottomrule
+\end{tabular}
+\captionof{table}{The representation ladder, \code{forum\_heldout}, $n_{\text{test}}=881$.
+Source: \code{experiments/paper1/representation\_ladder\_forum\_heldout.json}.}
+\end{center}
+
+Read down the AUROC column. Extraction costs \textbf{0.043}. Canonicalisation --- converting those
+extracted facts into the controlled vocabulary --- costs a further \textbf{0.097}, landing at 0.517,
+which is essentially chance. The pipeline's symbolic output carries almost no information about the
+outcome, while the raw text it was derived from carries a measurable amount.
+
+\subsubsection*{Five independent lines of evidence for the same conclusion}
+
+A single ladder could be a bug. Five separate tests were run and all agree.
+
+\begin{enumerate}
+\item \textbf{The ladder itself}: $0.657 \rightarrow 0.614 \rightarrow 0.517$.
+
+\item \textbf{Is it the \emph{ontology's} vocabulary that is bad?} No. An A/B test compared the
+authored ontology vocabulary against a vocabulary \emph{induced} from the corpus at equal
+granularity. Raw text beats both decisively, and the two vocabularies are statistically
+indistinguishable from each other:
+\begin{center}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+\textbf{Comparison} & \textbf{$\Delta$AUROC} & \textbf{95\% CI} & \textbf{$P$} \\
+\midrule
+text $-$ induced   & $+0.1138$ & $[+0.0732, +0.1545]$ & 0.000 \\
+text $-$ ontology  & $+0.0887$ & $[+0.0430, +0.1352]$ & 0.000 \\
+induced $-$ ontology & $-0.0251$ & $[-0.0711, +0.0200]$ & \textbf{0.846} \\
+\bottomrule
+\end{tabular}
+\end{center}
+So the loss is not a defect of \emph{this} vocabulary. It is a property of discretisation.
+
+\item \textbf{Would more labels help?} No. A sweep from 345 to 1,000 vocabulary entries does not
+recover the gap, and a frequency-threshold sweep sits at chance at every threshold.
+
+\item \textbf{Does the loss happen where the vocabulary fails, or where it succeeds?} This is the
+sharpest test (\code{src/eval/vocab\_diagnosis.py}). Facts were divided into those the vocabulary
+\emph{can} name and those it cannot, and the text-versus-atom comparison was run within each group:
+\begin{center}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+\textbf{Group} & \textbf{Text AUROC} & \textbf{Atom AUROC} & \textbf{Cost of naming} \\
+\midrule
+A. facts the vocabulary \emph{can} name    & 0.544 & 0.457 & \textbf{0.087} \\
+B. facts it \emph{cannot} name             & 0.526 & 0.524 & 0.002 \\
+\bottomrule
+\end{tabular}
+\end{center}
+The cost is concentrated \emph{precisely where the vocabulary works}. That rules out the comfortable
+explanation (``coverage is just incomplete; fix the vocabulary'') and supports the uncomfortable one:
+successfully assigning a fact to a legal category is what discards the information. Note the small
+sample ($n_{\text{test}}=143$ and $127$) --- group A's interval spans zero at $P=0.083$, so this
+line is suggestive rather than conclusive on its own.
+
+\item \textbf{A pre-registered prediction.} Before running it, the project predicted that an LLM
+given canonical facts (\code{LLM-CF}) would do \emph{worse} than the same LLM given raw text
+(\code{LLM-0}). It did: macro-F1 0.469 versus 0.491.
+\end{enumerate}
+
+\subsubsection*{The downstream consequence: §8 finds nothing, correctly}
+
+If canonical atoms carry no signal, then pattern mining over canonical atoms must find nothing. It
+does, and the machinery was built well enough to say so rather than to manufacture a result:
+
+\begin{center}
+\begin{tabular}{@{}lr@{}}
+\toprule
+Closed itemsets mined                                   & 498 \\
+Stable across $\geq$80\% of 20 bootstrap resamples      & 311 \\
+Patterns statistically tested                            & 351 \\
+Pass uncorrected $p<0.05$                                & 10 \\
+\emph{Expected to pass by chance alone}                  & \emph{17.6} \\
+\textbf{Survive Benjamini--Hochberg correction}          & \textbf{0} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Ten patterns passed an uncorrected test --- fewer than the 17.6 chance alone predicts. Without the
+multiple-comparisons correction, those ten would have shipped as a ``pattern library''. This is the
+clearest example in the project of a control earning its place.
+
+\paragraph{The claim taxonomy also fails to validate} Clustering 7,441 claims produced six clusters
+with a silhouette score of \textbf{0.0245} and 71.5\% of points classed as outliers by HDBSCAN. A
+silhouette near zero means the clusters are not separated. When the clusters were merged into
+families with a minimum size, one family (\code{PrivateTitlePossession}) absorbed 2,365 cases and
+nearly every other label. The taxonomy is not supported by the data, and is reported as such rather
+than presented as a finding.
+
+\subsection{Where structured facts \emph{do} pay off}\label{sec:positives}
+
+The two results above are negative. They are not the whole story: on the tasks that predict
+\emph{legal authorities} rather than outcomes, facts work well.
+
+\subsubsection*{Statute prediction}
+
+Given only the facts, predict the statutory provisions that apply. 103 labels,
+$n_{\text{test}}=796$.
+
+The first version of this experiment produced micro-F1 0.447 and looked like a strong result. It was
+an artifact, and the thing that caught it was a \textbf{copy control}: a system that does nothing but
+copy provisions already mentioned verbatim in the input text scores \textbf{0.713} --- far higher.
+The ``prediction'' was largely string matching.
+
+The honest version removes from the target set every provision the input text mentions, leaving only
+provisions the model must genuinely infer. 46 labels, $n_{\text{test}}=702$:
+
+\begin{center}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+\textbf{System} & \textbf{Micro-F1} & \textbf{P@1} & \textbf{R@10} \\
+\midrule
+Global top-5 prior                     & 0.069 & 0.134 & 0.418 \\
+Claim-family prior \emph{(strongest baseline)} & 0.093 & 0.173 & 0.503 \\
+Copy from text \emph{(control, now at floor)} & 0.000 & 0.081 & 0.385 \\
+\midrule
+\textbf{Masked text}                   & \textbf{0.173} & \textbf{0.236} & \textbf{0.660} \\
+Extracted fact text                    & 0.159 & 0.206 & 0.581 \\
+Canonical atoms                        & 0.109 & 0.161 & 0.464 \\
+\bottomrule
+\end{tabular}
+\captionof{table}{Statute prediction on \emph{novel} labels only --- provisions not mentioned in the
+input. Source: \code{experiments/paper2/statute\_prediction\_forum\_heldout\_labels\_novel.json}.}
+\end{center}
+
+\textbf{Micro-F1 0.173 against the strongest baseline's 0.093 --- 1.9$\times$}, with the copy control
+driven to zero by construction. This is a real positive result, and the same ordering appears again:
+raw text $>$ extracted facts $>$ canonical atoms.
+
+\subsubsection*{Precedent retrieval}
+
+Given the facts, retrieve the earlier cases the court will actually cite. 150 queries. An important
+honesty constraint applies: only \textbf{1,035 of 2,113} cited authorities (49.0\%) are themselves in
+this corpus, because Supreme Court judgments cite High Courts, the Privy Council and English
+decisions. Recall is reported against the \emph{reachable} set with the raw figure stated beside it.
+
+\begin{center}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+\textbf{System} & \textbf{R@10} & \textbf{R@50} & \textbf{MRR} & \textbf{nDCG@10} \\
+\midrule
+Mention baseline                       & 0.022 & 0.112 & 0.037 & 0.014 \\
+Popularity baseline \emph{(control)}   & 0.032 & 0.103 & 0.072 & 0.032 \\
+Canonical atom overlap                 & 0.021 & 0.058 & 0.046 & 0.021 \\
+Dense, mean-pooled                     & 0.053 & 0.130 & 0.114 & 0.054 \\
+Dense, max-pooled                      & 0.039 & 0.104 & 0.097 & 0.044 \\
+BM25 (keyword)                         & 0.207 & 0.350 & \textbf{0.431} & 0.225 \\
+Dense over masked text                 & 0.229 & 0.390 & 0.380 & 0.221 \\
+\textbf{RRF(BM25 + dense masked text)} & \textbf{0.238} & \textbf{0.453} & 0.428 & \textbf{0.243} \\
+\bottomrule
+\end{tabular}
+\captionof{table}{Precedent retrieval, 150 queries, recall against 1,035 reachable authorities.
+Source: \code{experiments/paper2/precedent\_retrieval\_forum\_heldout.json}.}
+\end{center}
+
+The fused system reaches \textbf{R@10 0.238 and MRR 0.431 against a popularity control of 0.032 and
+0.072} --- roughly \textbf{7.4$\times$} the control on R@10. Because the control is popularity (always
+return the most-cited cases), beating it by that margin establishes the system is responding to the
+facts rather than exploiting citation skew.
+
+Two sub-results worth noting. Canonical atom overlap (0.021) is \emph{below} the popularity control
+--- the symbolic representation fails on this task too. And max-pooling the dense representation made
+it worse (0.039 vs 0.053), which was a prediction this project made and had to retract: the deficit
+is in the facts, not in the pooling.
+
+\subsection{Outcome prediction hits a ceiling, and the ceiling looks real}\label{sec:ceiling}
+
+Twenty-four outcome models were run on 881 test cases across 1,415 features. Selected rows:
+
+\begin{center}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+\textbf{Model} & \textbf{Accuracy} & \textbf{Macro-F1} & \textbf{95\% CI} & \textbf{ECE} \\
+\midrule
+Majority (global)              & 0.530 & 0.346 & $[0.332, 0.360]$ & --- \\
+\textbf{Majority (per decade)} & 0.571 & \textbf{0.557} & $[0.527, 0.589]$ & --- \\
+\midrule
+\code{lr F} (facts only)       & 0.501 & 0.499 & $[0.464, 0.530]$ & 0.270 \\
+\code{lr F+P+E+S+R+C}          & 0.513 & 0.513 & $[0.479, 0.546]$ & 0.285 \\
+\code{lr S only} (statutes)    & 0.599 & 0.599 & $[0.567, 0.629]$ & \textbf{0.041} \\
+\code{lr Q only} (prior court) & 0.525 & 0.509 & $[0.474, 0.540]$ & 0.034 \\
+\midrule
+\code{gbm C only} (metadata)   & 0.583 & 0.582 & $[0.550, 0.613]$ & 0.091 \\
+\textbf{\code{gbm F+P+E+S+R+C}} & \textbf{0.598} & \textbf{0.597} & $[0.566, 0.630]$ & 0.107 \\
+\bottomrule
+\end{tabular}
+\captionof{table}{Outcome models, $n_{\text{test}}=881$. ECE is expected calibration error --- how
+far the model's stated confidence is from its observed accuracy; lower is better.
+Source: \code{experiments/paper3/outcome\_forum\_heldout.json}.}
+\end{center}
+
+Three uncomfortable observations:
+
+\begin{enumerate}
+\item \textbf{Every confidence interval spans about 0.11 and they all overlap.} The best structured
+model (0.597) and a per-decade majority baseline (0.557) are not distinguishable at this sample size.
+Reporting the former as a result without the latter beside it would be misleading.
+\item \textbf{Adding facts to metadata does not help.} \code{gbm C only} --- year and forum, no facts
+at all --- reaches 0.582. Facts alone reach 0.517. McNemar's exact test confirms the
+metadata-and-authority groups genuinely beat the fact group ($P=0.0008$ for logistic regression,
+$P=0.004$ for gradient boosting), which is a real difference in the wrong direction for the
+project's original thesis.
+\item \textbf{Calibration and accuracy come apart.} \code{lr S only} has the best calibration in the
+table (ECE 0.041) at competitive accuracy, while the best-accuracy model is poorly calibrated
+(0.107). For a system meant to tell a litigant how confident it is, the calibrated model may be the
+more useful one.
+\end{enumerate}
+
+\subsubsection*{Large language models do no better}
+
+Five LLM configurations on the same 300-case subset, same labels:
+
+\begin{center}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+\textbf{System} & \textbf{Accuracy} & \textbf{Macro-F1} & \textbf{AUROC} & \textbf{ECE} \\
+\midrule
+\code{LLM-0} (zero-shot)            & 0.577 & 0.491 & 0.579 & 0.265 \\
+\code{LLM-FS} (few-shot, $k=4$)     & 0.543 & 0.522 & 0.522 & 0.117 \\
+\code{LLM-CoT} (chain of thought)   & 0.583 & 0.582 & 0.610 & 0.207 \\
+\code{LLM-CF} (canonical facts)     & 0.560 & 0.469 & 0.545 & 0.062 \\
+\code{LLM-CF+A} (canonical + authorities) & 0.560 & 0.503 & 0.535 & 0.046 \\
+\midrule
+Structured \code{gbm} (same cases)  & 0.603 & 0.599 & 0.628 & 0.109 \\
+TF-IDF on masked text               & 0.597 & 0.593 & \textbf{0.645} & 0.045 \\
+Majority (per decade)               & 0.587 & 0.571 & --- & --- \\
+\bottomrule
+\end{tabular}
+\captionof{table}{Head-to-head, $n=300$, \code{llama4-scout-17b}.
+Sources: \code{experiments/paper3/llm\_baselines\_forum\_heldout.json},
+\code{head2head\_forum\_heldout.json}.}
+\end{center}
+
+Chain-of-thought's apparent advantage over zero-shot is not significant (McNemar $P=0.926$). Nothing
+in the table clears a per-decade majority baseline by a margin the sample size can resolve. The
+ceiling is not an artifact of choosing a weak model family.
+
+\subsubsection*{Error analysis suggests the ceiling is intrinsic}
+
+354 errors on 881 cases were categorised, with a \textbf{base-rate control} that turns out to be
+decisive. For each diagnostic signal, compare the error rate among cases where the signal fires to
+the overall error rate of 0.402. The ratio is the \emph{lift}; a lift of 1.0 means the signal tells
+you nothing.
+
+\begin{center}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+\textbf{Signal} & \textbf{Errors} & \textbf{$P$(error $\mid$ flag)} & \textbf{Lift} \\
+\midrule
+\code{family\_unassigned} & 39  & 0.448 & 1.12 \\
+\code{statute\_mismatch}  & 175 & 0.398 & 0.99 \\
+\code{discretionary}      & 67  & 0.372 & 0.93 \\
+\code{extraction\_thin}   & 25  & 0.352 & 0.88 \\
+\code{atoms\_only\_generic} & 1 & 0.250 & 0.62 \\
+\bottomrule
+\end{tabular}
+\captionof{table}{Error-signal diagnosticity against a base error rate of 0.402.
+Source: \code{experiments/paper3/error\_analysis\_forum\_heldout.json}.}
+\end{center}
+
+\textbf{Every lift is approximately 1.0.} Not one of the pipeline's own quality signals predicts
+where it will fail. Had these been reported as raw counts --- ``175 errors involve a statute
+mismatch'' --- they would have read as a diagnosis and an obvious work plan. Against the base rate
+they are noise.
+
+The second test is stronger. If the model's errors were caused by \emph{pipeline} defects, they
+should differ from the errors of a completely different system. On the 300 shared cases the
+structured model made 119 errors and \code{LLM-CoT} made 125; under independence one expects
+$119 \times 125 / 300 = 49.6$ cases wrong for both. The observed number is \textbf{46}. The two
+systems' errors are statistically independent --- they are not failing on the same cases, and
+therefore not failing for a shared, fixable reason. The remaining difficulty looks intrinsic to
+predicting outcomes from pre-decision facts in this corpus.
+
+\subsection{The explanations are faithful}\label{sec:traces}
+
+A system that outputs a prediction plus a list of ``the facts I relied on'' invites a simple
+question: did it rely on them, or is the list decoration?
+
+The test is a \textbf{deletion test}. Delete the facts the trace cites, re-run the model, and measure
+how much the predicted probability moves. Compare against deleting the same number of random facts,
+and against deleting the facts the trace ranked \emph{least} important.
+
+One design decision matters here. The deletion is applied to the \textbf{facts}, and features are
+recomputed from scratch --- not to the feature vector directly. Deleting features would be circular:
+of course removing a feature the model weighted heavily changes the output. Deleting the underlying
+facts tests whether the trace points at the right \emph{evidence}.
+
+\begin{center}
+\begin{tabular}{@{}lrrc@{}}
+\toprule
+\textbf{Facts deleted} & \textbf{Mean $\Delta$probability} & \textbf{vs cited} & \textbf{95\% CI} \\
+\midrule
+\textbf{Cited by the trace} & \textbf{0.0650} & --- & --- \\
+Random                      & 0.0209 & $+0.0441$ & $[+0.0245, +0.0659]$ \\
+Inverse-ranked              & 0.0180 & $+0.0470$ & $[+0.0291, +0.0666]$ \\
+\bottomrule
+\end{tabular}
+\captionof{table}{Trace faithfulness, 45 cases. Cited facts move the prediction 3.1$\times$ as much
+as random facts, winning on 77.8\% of cases.
+Source: \code{experiments/paper3/trace\_faithfulness\_forum\_heldout\_gbm.json}.}
+\end{center}
+
+\textbf{Verdict: faithful.} The facts the trace names are the facts the model used.
+
+\begin{tcolorbox}[plainbox,title={What faithfulness is not}]
+Faithful does not mean \emph{correct}. This test establishes that the explanation describes the
+model's actual computation. It says nothing about whether that computation is legally sound. Given
+that the same model predicts outcomes near chance (Section~\ref{sec:ceiling}), a faithful
+explanation of a near-chance prediction is an honest account of a weak inference --- which is the
+right thing to produce, but should not be oversold.
+\end{tcolorbox}
+
+%==============================================================================
+\section{What it took: the bugs that mattered}\label{sec:engineering}
+
+A reader evaluating this project should know that most of the effort went not into building the
+pipeline but into establishing that its numbers meant what they appeared to mean. Fifteen defects
+were found and fixed; each would have produced a confident, publishable, wrong answer.
+
+{\small
+\begin{longtable}{@{}p{4.6cm}p{5.2cm}p{4.4cm}@{}}
+\toprule
+\textbf{Defect} & \textbf{What it would have caused} & \textbf{How it was caught} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Defect} & \textbf{What it would have caused} & \textbf{How it was caught} \\
+\midrule
+\endhead
+Segmentation returned one unit for 57.7\% of cases (no blank lines in PDF text)
+ & Extraction silently operating on 2.6\% of its intended input
+ & Median-units sanity check \\
+\addlinespace
+Quote verifier rejected 42\% of \emph{correct} quotes (PDF hyphenation; 20-char floor)
+ & Grounding rate understated; good extractions discarded
+ & Hand audit of 16 quotes \\
+\addlinespace
+Consequential dismissals read as the disposition
+ & 196 cases labelled with the wrong outcome
+ & Auditing rules-vs-LLM conflicts \\
+\addlinespace
+Group-whole and time-respect split constraints in direct conflict
+ & Training on the future to predict the past
+ & \textbf{A unit test} (\code{tests/test\_stage1.py}) \\
+\addlinespace
+Fact attribution read only \code{asserted\_by}, 84\% \code{court\_narrative}
+ & Attribution coverage reported as 17\% instead of 96\%
+ & Inspecting the field distribution \\
+\addlinespace
+Canonicaliser's self-reported ``NEW'' rate of 0.7\%
+ & A vocabulary declared complete while 16.7\% of facts were unnameable
+ & Checking the answers instead of the flag \\
+\addlinespace
+Batching the canonicaliser with a shared label menu
+ & Label fidelity 34\% $\rightarrow$ 22.7\%, uninvestigated
+ & Per-batch-size sweep (4/8/16) \\
+\addlinespace
+\code{canonicalize\_one} silently dead after a prompt-ID change
+ & The \emph{fallback} path returning \code{None} for everything
+ & Reading the validation path \\
+\addlinespace
+Driver ran two pipeline stages concurrently; only the last exit code checked
+ & A failed stage advancing the chain as if it had succeeded
+ & Noticing a 26-minute orphaned process \\
+\addlinespace
+macOS idle sleep mistaken for a hang (stalls of 78, 194, 232 min)
+ & Three runs killed and restarted for no reason
+ & \code{pmset -g log} \\
+\addlinespace
+Burden annotation: 92\% one class, one value never used
+ & Legal metadata that was a constant, read downstream as fact
+ & A degeneracy gate that \emph{refuses} to save \\
+\addlinespace
+Order-window detector swallowed whole short documents (59 cases)
+ & A third of all unusable cases, cause unknown
+ & Unusable-case audit \\
+\addlinespace
+Caption detector ate argument text (\code{For the Appellant}; page footers)
+ & \textbf{545 of 5,255 units} --- {\raise.17ex\hbox{$\scriptstyle\sim$}}1.2M words corpus-wide --- deleted as ``caption''
+ & Reading what was being dropped \\
+\addlinespace
+Loop-variable shadowing in the metrics dump
+ & Metrics overwritten by a loop counter
+ & Implausible output value \\
+\addlinespace
+Per-item LLM loop with no retries (twice)
+ & A network outage reported as ``the corpus does not state these elements''
+ & \code{ok=False} $\neq$ empty answer \\
+\bottomrule
+\end{longtable}
+}
+
+\subsection{Four transferable lessons}
+
+\begin{enumerate}
+\item \textbf{A control is worth more than a method.} The copy control killed a statute result
+(0.447 $\rightarrow$ honest 0.173); the popularity control validated a precedent result; the
+base-rate control dissolved an entire error taxonomy; Benjamini--Hochberg prevented a pattern library
+from shipping. In every case the control changed the conclusion.
+\item \textbf{Distinguish ``no answer'' from ``the answer is nothing''.} This single confusion
+produced two separate false findings on this project. A loop that makes one call per item needs
+retries and must count failures separately from empty results.
+\item \textbf{Assert your joins.} The PDF join and the fact-extraction QA gate both assert their
+success rate and abort below it. A pipeline that silently processes 12\% of its input is worse than
+one that crashes.
+\item \textbf{Elapsed time is not progress, and 0\% CPU is not a hang.} Three runs were killed
+before anyone checked the power log.
+\end{enumerate}
+
+%==============================================================================
+\section{Claims this project held and gave up}\label{sec:retracted}
+
+Research projects usually report what survived. This one kept a record of what did not, because the
+retractions are more informative than the confirmations.
+
+\begin{center}
+\small
+\begin{tabular}{@{}p{5.4cm}p{8.6cm}@{}}
+\toprule
+\textbf{Belief} & \textbf{What the measurement said} \\
+\midrule
+``Extraction preserves the signal in the text.''
+ & At $n=881$ it loses 0.043 AUROC. Canonicalisation loses a further 0.097. \\
+\addlinespace
+``The ontology's vocabulary is the problem; an induced one will do better.''
+ & Indistinguishable: induced $-$ ontology $= -0.025$, $P=0.846$. The loss is discretisation
+   itself. \\
+\addlinespace
+``The procedural shortcut (prior court's disposition) dominates everything.''
+ & Weak. \code{Q only} reaches AUROC 0.498 at $n=881$ --- chance. \\
+\addlinespace
+``Max-pooling will fix the dense retrieval arm.''
+ & Made it worse: R@10 0.039 vs 0.053 mean-pooled. The deficit is in the facts. \\
+\addlinespace
+``ILDC leaks the operative order.''
+ & It does not. The authors explicitly delete it, and we verified the claim. What ILDC retains is
+   the \emph{reasoning}, which is a different and defensible choice. \\
+\addlinespace
+``Recovering the 1.2M words of wrongly-deleted argument text will improve fact attribution.''
+ & Flat: 0.20 $\rightarrow$ 0.19. Absolute attributed facts rose {\raise.17ex\hbox{$\scriptstyle\sim$}}15\% (15,899 $\rightarrow$ 18,358) but the
+   \emph{rate} did not move. The cause of the 20\% attribution ceiling is still unknown. \\
+\addlinespace
+``Swapping in a better grounding model will fix the missing \code{Fact} and \code{Issue} concepts.''
+ & Tested across five models. Rules learned under one model fire on nothing under another, and the
+   recovered rules were single-example artifacts that generalised to zero real sentences. \\
+\addlinespace
+``A bigger model will produce usable element-burden metadata.''
+ & Two models failed the same degeneracy gate; the larger, more instruction-disciplined one failed
+   too. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The last two illustrate a pattern worth naming: on this project, \emph{model capability was almost
+never the binding constraint}. Instruction discipline, evaluation design and data coverage were.
+
+%==============================================================================
+\section{What is \emph{not} established}\label{sec:notestablished}
+
+This section exists so that no reader has to discover these limits for themselves.
+
+\subsection{Open blockers}
+
+\paragraph{B2 --- element burden metadata does not exist} The ontology requires every element to
+record who bears the burden of proof, to what standard, and when it shifts. It supplies this for
+\textbf{0 of 66} elements. Two models were asked and both produced degenerate output (92\% and 87\%
+assigned to a single class; one standard never used at all, including where it unambiguously applies).
+A gate refuses to save such annotations, so feature group \code{E} is \textbf{empty} and every result
+labelled \code{F+P+E+...} contains no \code{E}. The fix is a few hours of expert hand annotation,
+not a larger model.
+
+\paragraph{B3 --- the vocabulary cannot be frozen} Measured over 79,496 canonical facts,
+\textbf{20.3\% are out of vocabulary} against a 5\% threshold for freezing. The seed vocabulary of
+345 subcategories covers roughly three quarters of what real judgments state. Note that
+Section~\ref{sec:head2} shows improving this coverage would not rescue the predictive result --- the
+cost of naming is concentrated where the vocabulary already succeeds.
+
+\paragraph{B4 --- there is no gold annotation set} The specification asks for at least 150 cases
+annotated by a legal reviewer with inter-annotator agreement measured on a 30-case overlap. The
+\textbf{150 cases are prepared} (\code{Data/gold/gold\_tasks.jsonl}) and an annotation tool is built
+(\code{src/annotate/app.py}), but no reviewer has annotated them. Consequently \textbf{extraction
+precision and recall against gold cannot be computed}. Four proxies are in use, and it is worth being
+exact about what each does and does not establish:
+
+\begin{center}
+\begin{tabular}{@{}lp{9.2cm}@{}}
+\toprule
+\textbf{Proxy} & \textbf{What it establishes} \\
+\midrule
+Quote grounding rate (0.92)   & Bounds \emph{fabrication}. Says nothing about recall. \\
+Legal-statement filter        & Bounds one \emph{precision} failure mode. \\
+Rules-vs-LLM agreement (87.0\%) & Estimates \emph{outcome-label} noise, not fact quality. \\
+The representation ladder     & Measures \emph{downstream utility} --- what we actually care about ---
+                                but cannot attribute a loss to any specific extraction error. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+This is the single biggest gap for a reviewer, and it is blocked on human time, not compute.
+
+\subsection{Other open items}
+
+\begin{itemize}
+\item \textbf{The ILDC replication is not done.} Everything in Section~\ref{sec:head1} is measured on
+our corpus as a comparable construction of ILDC's task. The module that runs the same ablation on
+ILDC's own released text and labels is written and tested; the dataset is gated behind a licence whose
+acceptance belongs to the user, and the module refuses to route around the gate. Until it runs, the
+headline is a strong internally-controlled result, not a replication.
+\item \textbf{A residual-leakage audit of the last-512 window.} The arguments in
+Section~\ref{sec:head1} make residual order leakage unlikely but do not exclude it by direct
+measurement. A cue-level audit of that window, and a ``setback'' arm reading tokens
+$[-1024,-512]$, would settle it. Neither has been run.
+\item \textbf{Human verification of outcome labels.} The specification's check of 200 labels is
+outstanding; the 562 \code{UNRESOLVED} conflicts are where it should start.
+\item \textbf{The attribution ceiling.} 19--20\% of facts are attributed to a party. The hypothesis
+that missing argument text caused this was tested and refuted. The real cause is unknown.
+\item \textbf{Every outcome-model confidence interval spans about 0.11.} At $n=881$ the structured
+model and a per-decade majority baseline cannot be separated. Larger $n$ or a different task is
+required to say more.
+\item \textbf{§8 as specified is mis-specified for this corpus.} Pattern mining over canonical atoms
+cannot work when canonical atoms carry no signal. This is reported as a finding rather than quietly
+dropped, but it does mean a specified deliverable is vacuous rather than met.
+\end{itemize}
+
+%==============================================================================
+\section{Status of every number in this document}\label{sec:status}
+
+A fact-layer defect was fixed on 30 September 2026: the caption detector had been deleting argument
+text (row 13 of the table in Section~\ref{sec:engineering}). Fixing it changed the fact layer
+substantially --- 79,496 facts $\rightarrow$ \textbf{96,623}; 4,581 cases $\rightarrow$ 4,702; median
+13 per case $\rightarrow$ 17. Everything downstream of facts is therefore being recomputed, and this
+section says plainly which numbers are current.
+
+\begin{center}
+\begin{tabular}{@{}llp{6.4cm}@{}}
+\toprule
+\textbf{Result} & \textbf{Status} & \textbf{Why} \\
+\midrule
+Leakage probe (§\ref{sec:sensitivity})      & \textbf{current} & TF-IDF over text; independent of the fact layer \\
+Reasoning ablation (§\ref{sec:head1})       & \textbf{current} & Re-run after the fix \\
+Corpus, labels, splits (§\ref{sec:data})    & \textbf{current} & Upstream of facts \\
+Extractor benchmark (§\ref{sec:pipeline})   & \textbf{current} & Fixed 20-case set \\
+Fact counts, grounding (§\ref{sec:pipeline}) & \textbf{current} & Post-fix: 96,623 facts, 0 dropped, QA 4,026/4,026 spans exact \\
+\midrule
+Representation ladder rung 1                & \textbf{current} & Text-based rung \\
+Representation ladder rungs 2--3            & \emph{recomputing} & Derived from facts \\
+Vocabulary A/B and diagnosis                & \emph{recomputing} & Derived from facts \\
+Statute and precedent results               & \emph{recomputing} & Fact-derived arms; text arms unaffected \\
+Outcome models, LLM baselines               & \emph{recomputing} & Feature groups \code{F},\code{P} change \\
+Patterns, claim families                    & \emph{recomputing} & Derived from facts \\
+Trace faithfulness, error analysis          & \emph{recomputing} & Derived from the outcome model \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\paragraph{What the re-run cannot change} The two headline findings do not depend on the fact layer.
+Section~\ref{sec:head1} is TF-IDF over text throughout. Section~\ref{sec:head2}'s \emph{direction} is
+structural --- a 1,313-feature discretisation of a 50,000-feature text signal cannot overtake it by
+gaining 21\% more facts --- though the exact magnitudes will move. The honest expectation is that the
+ladder gaps narrow slightly and the conclusion stands; if it does not, that will be reported.
+
+At the time of writing, canonicalisation of the new fact layer is 77\% complete
+(74,485 of 96,623).
+
+%==============================================================================
+\section{Where the project stands}\label{sec:standing}
+
+\subsection{What exists and works}
+
+\begin{itemize}
+\item A corpus of 6,954 land-dispute judgments, 100\% resolved to source PDFs, fully text-extracted.
+\item Dual-labeller outcome labels at 87.0\% agreement, with conflicts preserved rather than resolved.
+\item A masking implementation with a sensitivity control at AUROC 0.981 --- the apparatus that makes
+every other number interpretable.
+\item Two principled splits, hashed, with group and time constraints enforced and tested.
+\item A fact extraction layer of 96,623 verbatim-grounded facts at a 0.92 grounding rate.
+\item A statute normaliser over 42 Acts handling truncation, back-references and implicit Acts.
+\item Working statute prediction (1.9$\times$ baseline) and precedent retrieval (7.4$\times$ control).
+\item A faithfulness-tested trace mechanism.
+\item A reproducible driver (\code{run\_downstream.sh}) with per-stage abort-on-failure and a QA gate.
+\end{itemize}
+
+\subsection{What the paper would say}
+
+The defensible contribution is not a system that predicts outcomes well --- it does not. It is a
+measurement:
+
+\begin{tcolorbox}[plainbox,title={The contribution}]
+\textbf{1.} On Indian Supreme Court land disputes, roughly \textbf{half} of the achievable
+outcome-prediction signal available to a reasoning-inclusive setup comes from the court's own
+reasoning rather than from the dispute. A plain TF-IDF model reading ILDC's chosen input reproduces
+its published accuracy (0.776 vs 78\%); the same model reading only facts and arguments falls to
+0.621, a gap of $+0.176$ AUROC with a 95\% CI of $[+0.148, +0.206]$.
+
+\smallskip
+\textbf{2.} Projecting facts into a symbolic legal vocabulary \textbf{costs 0.097 AUROC}, which is
+most of the signal that survives extraction. This is a property of discretisation, not of the
+particular vocabulary: an induced vocabulary of equal granularity is statistically indistinguishable
+($P=0.846$), more labels do not help, and the cost is concentrated precisely where the vocabulary
+succeeds in naming a fact.
+
+\smallskip
+\textbf{3.} Facts \emph{are} predictive of \textbf{legal authorities} --- statutes at 1.9$\times$ the
+strongest baseline, precedents at 7.4$\times$ a popularity control --- which is where an
+ontology-driven pipeline should be pointed instead.
+\end{tcolorbox}
+
+Result 3 is what rescues the project from being purely negative, and it is also the professor's
+original framing: facts in, rules and authorities out.
+
+\subsection{What comes next, in priority order}
+
+\begin{enumerate}
+\item \textbf{Replicate on ILDC itself.} The single step that would move this from a
+strong internally-controlled result to a replication. Written and waiting on a licence.
+\item \textbf{Get the 150 gold cases annotated.} Removes the largest reviewer objection: there is
+currently no precision or recall figure for extraction, only proxies.
+\item \textbf{Run the residual-leakage audit on the last-512 window}, including the setback arm.
+Cheap, deterministic, and closes the one objection to Headline 1 that is not yet answered by
+measurement.
+\item \textbf{Refresh all fact-derived results} once the driver chain completes, and update the
+reports.
+\item \textbf{Hand-annotate the 66 element burdens} (B2), which unblocks feature group \code{E} and
+the element-level reasoning the ontology was built for.
+\end{enumerate}
+
+%==============================================================================
+\section{Glossary}\label{sec:glossary}
+
+\begin{description}[leftmargin=0pt,style=nextline,itemsep=3pt]
+\item[AUROC] Area under the receiver-operating-characteristic curve. The probability that the model
+scores a randomly chosen WIN case above a randomly chosen LOSE case. 0.5 is chance; 1.0 is perfect.
+Preferred here over accuracy because it does not depend on where the decision threshold is set.
+\item[Macro-F1] The F1 score computed per class and then averaged, so that doing well on the
+majority class alone cannot carry the number. A model that always predicts LOSE gets 53\% accuracy
+but only 0.346 macro-F1.
+\item[ECE (expected calibration error)] How far a model's stated confidence sits from its observed
+accuracy. A model that says ``70\% confident'' and is right 70\% of the time has ECE near 0.
+\item[Paired bootstrap] To compare two systems, resample the test cases with replacement 2,000
+times, recompute both scores on each resample, and look at the distribution of the \emph{difference}.
+If the 95\% interval excludes zero, the difference is unlikely to be sampling noise. ``Paired'' means
+both systems are scored on the same resample, which removes case difficulty as a confound.
+\item[McNemar's test] An exact test for whether two classifiers differ, which looks only at the cases
+where they disagree. Appropriate here because the two systems are evaluated on the same cases.
+\item[Benjamini--Hochberg correction] When 351 hypotheses are tested at $p<0.05$, roughly 17 will pass
+by chance. This procedure adjusts the threshold to control the proportion of false discoveries among
+those reported. Applying it took this project's pattern library from 10 patterns to zero.
+\item[Lift (base-rate control)] The error rate among flagged cases divided by the overall error rate.
+A lift of 1.0 means the flag carries no information, however large its raw count.
+\item[TF-IDF] Term frequency $\times$ inverse document frequency: a representation of a document as
+weighted word counts, where words common across the whole corpus are down-weighted. Simple, fast,
+and in this project repeatedly competitive with much larger models.
+\item[BM25] A keyword-ranking function used by search engines. On this project's precedent-retrieval
+task it beat dense embeddings on long queries.
+\item[Dense retrieval] Representing documents as vectors from a neural embedding model and retrieving
+by vector similarity --- as opposed to keyword matching.
+\item[RRF (reciprocal rank fusion)] A way of combining two ranked lists by summing the reciprocals of
+each item's rank in each list. Used here to fuse BM25 with dense retrieval, which beat both.
+\item[Closed itemset] In pattern mining, a set of co-occurring items that has no superset occurring
+equally often. Mining only closed itemsets avoids reporting thousands of redundant sub-patterns.
+\item[Leakage] Information in the model's input that would not be available when the prediction is
+actually needed. The organising concern of this entire project; see Section~\ref{sec:leakage}.
+\item[Sensitivity control] A deliberately leaky arm, included to prove the leakage detector works. If
+a model trained on the text you \emph{removed} does not score highly, you did not remove what you
+thought you did.
+\item[Copy control] A baseline that does nothing but copy answers already present verbatim in the
+input. If it beats your system, your system is doing string matching. This one invalidated a statute
+result.
+\item[Popularity control] A baseline that always returns the most frequently cited items. Beating it
+shows a retrieval system is responding to the query rather than exploiting skew in the data.
+\item[Grounding] Requiring a model to quote its source verbatim, then verifying the quote appears in
+the original. An unverifiable quote means the fact is discarded.
+\item[Trace] The list of facts, statutes and precedents a prediction was based on.
+\item[Faithfulness] Whether a trace describes the model's actual computation. Distinct from, and much
+weaker than, correctness.
+\item[IRAC] Issue, Rule, Application, Conclusion --- the standard structure of a legal analysis, and
+the output format the system's reports follow.
+\item[Adverse possession] A legal doctrine by which someone who openly occupies land that is not
+theirs, continuously and against the owner's interest, for a statutory period, may acquire title.
+Prominent in this corpus and used throughout as an example.
+\item[SLP (special leave petition)] The discretionary route by which most cases reach the Indian
+Supreme Court. Its disposition is the outcome label for a large share of this corpus.
+\end{description}
+
+%==============================================================================
+\appendix
+\section{How to reproduce everything}
+
+\begin{enumerate}
+\item \textbf{Environment.} \code{.venv/bin/pip install -r requirements.txt}. Create \code{.env} at
+the project root with \code{VOYAGER\_API\_KEY=<key>}, obtained from
+\code{voyager.rc.asu.edu}~$\rightarrow$~LLM Access~$\rightarrow$~Create Key. No VPN is required; the
+endpoint resolves to public addresses.
+\item \textbf{Run the chain.} \code{./run\_downstream.sh}. It re-executes itself under
+\code{caffeinate -dimsu} so macOS idle sleep cannot stall it, aborts on any stage's non-zero exit,
+and runs a QA gate after extraction. Every stage is resumable.
+\item \textbf{Headline experiments individually:}
+\begin{quote}\footnotesize\ttfamily\raggedright
+python -m src.eval.leakage\_probe --split forum\_heldout\\
+python -m src.eval.reasoning\_ablation --split forum\_heldout\\
+python -m src.eval.representation\_ladder --split forum\_heldout\\
+python -m src.eval.vocab\_ab --split forum\_heldout\\
+python -m src.authorities.statute\_predict --split forum\_heldout\\
+\hspace*{2em}--rebuild-targets\\
+python -m src.authorities.precedent\_retrieve --split forum\_heldout\\
+python -m src.predict.models --split forum\_heldout\\
+python -m src.trace.evaluate --split forum\_heldout --model gbm
+\end{quote}
+\item \textbf{Every number in this document} is read from a file under \code{experiments/}. The
+figure generator (\code{src/report/figures.py}) reads the same files and \emph{raises} rather than
+substituting a default if one is missing, so a stale figure cannot be produced silently.
+\end{enumerate}
+
+\section{Where things live}
+
+\begin{center}
+\small
+\begin{tabular}{@{}lp{9.4cm}@{}}
+\toprule
+\textbf{Path} & \textbf{Contents} \\
+\midrule
+\code{PROJECT.md}       & The specification. Section numbers (§5.2, §6.2, §10.1) refer to it. \\
+\code{WORKLOG.md}       & Chronological record of decisions, dead ends and bugs with reasoning. \\
+\code{reports/}         & Stage acceptance against the specification: \code{M0}--\code{M5},
+                          \code{BLOCKERS.md}, \code{ENV\_NOTES.md}. \\
+\code{src/data/}        & Adapter, labels, masking, segmentation, splits, ontology conversion. \\
+\code{src/extract/}     & Fact and claim extraction, canonicalisation, vocabulary. \\
+\code{src/eval/}        & The experiments: leakage probe, reasoning ablation, representation
+                          ladder, vocabulary A/B and diagnosis, error analysis, ILDC replication. \\
+\code{src/authorities/} & Statute normalisation and prediction, precedent retrieval. \\
+\code{src/predict/}     & Feature construction, outcome models, LLM baselines. \\
+\code{src/trace/}       & Trace construction and the faithfulness deletion test. \\
+\code{src/llm/client.py} & The single door to the model endpoint: cache, timeout, retries. \\
+\code{src/grounding.py} & Verbatim quote location with hyphenation repair. \\
+\code{experiments/}     & Every result file. Nothing in this document is sourced elsewhere. \\
+\code{Data/interim/}    & Derived artifacts. Large ones are gitignored and rebuilt deterministically. \\
+\code{Data/gold/}       & The 150 prepared gold cases and the 66-element burden sheet (B2, B4). \\
+\code{run\_downstream.sh} & The driver. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\vfill
+\begin{center}
+\small\emph{Every figure in this document was read from a results file in \code{experiments/}.
+Where a number is awaiting recomputation, Section~\ref{sec:status} says so.}
+\end{center}
+
+\end{document}
