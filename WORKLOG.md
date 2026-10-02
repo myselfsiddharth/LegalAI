@@ -1139,7 +1139,14 @@ publishers) returned **zero words**. Diagnosing that found two bugs affecting ou
 4,000 characters", which on a short judgment starts at character 0 — so every unit was classified as
 the operative order and dropped. Measured: **59 cases (0.85%) had `order_region_start == 0`, and all
 59 produced unusable masked text** — a third of all unusable cases, silently falling out of
-eligibility. The window is now bounded below by 70% of the document.
+eligibility.
+
+The first fix put a 70% floor inside `find_order_window` and **broke five tests**, correctly: that
+function has two callers wanting opposite things. `labels.py` must be able to *find* a disposition
+that is the entire text, so its window has to be generous; `mask.py` must never *exclude* an entire
+document, so its window has to be bounded. The clamp therefore lives in `mask.py`, and
+`find_order_window` is unchanged. Worth recording as a reminder that a shared helper with two
+consumers is where a fix most easily lands in the wrong place.
 
 **2. `CAPTION_CUE` was eating argument text, which is what §5.2 means to KEEP.** Two patterns:
 

@@ -196,7 +196,16 @@ def mask_case(rec: dict, order_already_removed: bool = False) -> MaskedCase:
     # `order_already_removed` sets the boundary past the end, so no unit is classified as the
     # order. Needed for a corpus whose disposition the publishers already deleted (ILDC); excluding
     # an order region that is not there would discard real reasoning and understate the mask's cost.
-    order_start = n + 1 if order_already_removed else find_order_window(text)[0]
+    if order_already_removed:
+        order_start = n + 1                 # nothing to exclude; the publishers removed it
+    else:
+        order_start = find_order_window(text)[0]
+        # `find_order_window` is generous by design (it must be able to find an order that IS the
+        # whole text). Masking cannot act on that: a window starting at 0 classifies every unit as
+        # the order and discards the judgment. Measured before this clamp, 59 cases (0.85%) had
+        # order_start == 0 and all 59 produced unusable masked text -- a third of every unusable
+        # case. The order region is therefore never allowed to begin before 70% of the document.
+        order_start = max(order_start, int(n * 0.70))
 
     units = segment(text)
     kept: list[tuple[int, int, str]] = []
