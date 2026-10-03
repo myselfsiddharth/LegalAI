@@ -19,8 +19,46 @@ Arms, all on ILDC's own test split with ILDC's own labels:
   `ildc_first_third` a positional control: the opening third of the document. If `ildc_facts_only`
                      scores like this, the masking is just a crude truncation and the result says
                      nothing about reasoning specifically.
+  `ildc_w0..w3`      THE SETBACK ARMS, added 2026-10-03 and the reason this module must not be run
+                     without them. Four windows of exactly 512 words stepping back from the end of
+                     ILDC's released text. See below.
 
-The comparison of interest is `ildc_full` minus `ildc_facts_only`, on identical cases.
+## Why the setback arms are mandatory here
+
+`src/eval/leakage_setback.py` established on our own corpus that deleting the operative order leaves
+roughly **128 words** of outcome-telegraphing text behind -- Indian judgments announce the conclusion
+one sentence BEFORE the operative order ("For the foregoing reasons we find no merit in the appeal.
+The appeal is dismissed with costs."), so a boundary drawn correctly at the second sentence leaves
+the first. On two splits, essentially the whole apparent advantage of a last-512 input was that
+residue: a 512-word window set back past it scored no better than facts-only (+0.013 and +0.012,
+both CIs spanning zero).
+
+ILDC deletes "the end section(s) directly stating the decision" and its best model reads the **last
+512 tokens** -- which is precisely the window our result says is contaminated. So running
+`ildc_full` minus `ildc_facts_only` alone would inherit exactly the artifact this module exists to
+measure. The setback arms are what distinguish "ILDC retains informative reasoning" from "ILDC
+retains the sentence before the order".
+
+The helpers are imported from `leakage_setback` rather than reimplemented, deliberately: this
+project has already been bitten by two detectors in one repository disagreeing by construction
+(see `src/eval/masked_integrity.py`), and one implementation cannot drift from itself.
+
+## One sensitivity the smoke test exposed -- read this before quoting "128 words"
+
+The depth sweep locates the boundary by asking where the window stops beating a facts-only arm, so
+the answer depends on WHICH facts-only arm. Against `masked` (our §5.2 masking of the raw judgment)
+`leakage_setback` put it at 128 words on both splits. Against `ildc_facts_only` (the same masking
+applied to an already-order-removed document, which is what this module must use) the smoke-test
+substitute put it at 512, with offsets 128 and 256 only marginally significant --
+[+0.0118, +0.0646] and [+0.0030, +0.0584].
+
+So **128 words is a lower bound under one baseline, not a constant.** Report the sweep table rather
+than the single number, and say which baseline it is measured against.
+
+## Running it
+
+    python -m src.eval.ildc_ablation --smoke-test     # verify the code path, no gated data needed
+    python -m src.eval.ildc_ablation                  # the real thing, once Data/ildc/ is populated
 
 ## Getting the data
 
@@ -50,6 +88,11 @@ from sklearn.metrics import accuracy_score, f1_score, roc_auc_score
 from src import paths
 from src.data.mask import mask_case
 from src.eval import metrics
+# One implementation of the setback machinery, shared with the measurement that motivated it.
+from src.eval.leakage_setback import CUE_PATTERNS, cues_in, window_at
+
+WINDOW = 512
+N_WINDOWS = 4
 
 SEED = 573
 ILDC_DIR = paths.DATA / "ildc"
@@ -78,6 +121,33 @@ def download() -> None:
         with urllib.request.urlopen(req) as r, dest.open("wb") as out:
             out.write(r.read())
         print(f"  {dest.name}  {dest.stat().st_size/1e6:.1f} MB")
+
+
+def load_substitute() -> list[dict]:
+    """Stand in for the gated release using THIS project's own corpus, for a smoke test only.
+
+    The ILDC licence acceptance is the user's to give, so this module cannot be run end to end
+    until it is. That leaves a real risk: a code path that fails only on the real data, discovered
+    an hour into a run nobody can repeat cheaply. This builds an ILDC-shaped input from our own
+    `ildc_style_text` (order removed, reasoning retained -- the same construction ILDC uses) with
+    our own WIN/LOSE labels, so every path in `main` executes against real judgment text.
+
+    It is NOT a result. `--smoke-test` writes to a `_smoketest` filename and the output says so.
+    """
+    from src.data.label_merge import load_final
+    ylab = {d: (1 if r["outcome"] == "WIN" else 0)
+            for d, r in load_final().items() if r["outcome"] in ("WIN", "LOSE")}
+    split = json.loads((paths.SPLITS / "forum_heldout.json").read_text())
+    where = {c: "train" for c in split["train"]}
+    where.update({c: "test" for c in split["test"]})
+    rows = []
+    for line in open(paths.INTERIM / "masked_text.jsonl"):
+        r = json.loads(line)
+        d = r["doc_id"]
+        if d in ylab and d in where:
+            rows.append({"text": r["ildc_style_text"], "label": ylab[d],
+                         "split": where[d], "name": d})
+    return rows
 
 
 def load_ildc() -> list[dict]:
@@ -126,6 +196,9 @@ def facts_only(text: str) -> str:
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--download", action="store_true")
+    ap.add_argument("--smoke-test", action="store_true",
+                    help="exercise every code path using this project's own corpus as an "
+                         "ILDC-shaped stand-in. Not a result; writes a _smoketest file.")
     ap.add_argument("--max-train", type=int, default=8000,
                     help="cap training rows; the full 32k is unnecessary for a TF-IDF model and "
                          "masking 32k documents is the slow part")
@@ -134,7 +207,12 @@ def main() -> None:
     if args.download:
         download()
 
-    rows = load_ildc()
+    if args.smoke_test:
+        print("=== SMOKE TEST: substituting this project's corpus for the gated release ===")
+        print("=== the numbers below are NOT an ILDC result ===\n")
+        rows = load_substitute()
+    else:
+        rows = load_ildc()
     by_split: dict[str, list[dict]] = {}
     for r in rows:
         if r["label"] in (0, 1) and len(r["text"] or "") > 500:
@@ -162,8 +240,21 @@ def main() -> None:
         "tr": [" ".join(r["text"].split()[: max(1, len(r["text"].split()) // 3)]) for r in tr],
         "te": [" ".join(r["text"].split()[: max(1, len(r["text"].split()) // 3)]) for r in te]}
 
+    # THE SETBACK ARMS. Each is exactly 512 words, so volume cannot explain any difference between
+    # them; only distance from the end of ILDC's released text varies. w0 IS `ildc_last512`, i.e.
+    # the input ILDC's own best model reads.
+    for i in range(N_WINDOWS):
+        arms[f"ildc_w{i}"] = {"tr": [window_at(r["text"], i * WINDOW) for r in tr],
+                              "te": [window_at(r["text"], i * WINDOW) for r in te]}
+    # and the whole document with the suspect tail cut off
+    arms["ildc_minus128"] = {
+        k: [" ".join(r["text"].split()[:-128]) if len(r["text"].split()) > 178 else ""
+            for r in v] for k, v in (("tr", tr), ("te", te))}
+
     results, probs = [], {}
-    for name in ("ildc_full", "ildc_last512", "ildc_first_third", "ildc_facts_only"):
+    scored = ("ildc_full", "ildc_last512", "ildc_first_third", "ildc_facts_only",
+              "ildc_w0", "ildc_w1", "ildc_w2", "ildc_w3", "ildc_minus128")
+    for name in scored:
         a = arms[name]
         keep_tr = [i for i, t in enumerate(a["tr"]) if t.strip()]
         keep_te = [i for i, t in enumerate(a["te"]) if t.strip()]
@@ -210,7 +301,11 @@ def main() -> None:
     print("\n  paired bootstrap:")
     comps = {}
     for a, b in (("ildc_full", "ildc_facts_only"), ("ildc_last512", "ildc_facts_only"),
-                 ("ildc_facts_only", "ildc_first_third")):
+                 ("ildc_facts_only", "ildc_first_third"),
+                 ("ildc_w0", "ildc_facts_only"), ("ildc_w1", "ildc_facts_only"),
+                 ("ildc_w2", "ildc_facts_only"), ("ildc_w3", "ildc_facts_only"),
+                 ("ildc_minus128", "ildc_facts_only"), ("ildc_w0", "ildc_w1"),
+                 ("ildc_full", "ildc_minus128")):
         if a in probs and b in probs:
             m, lo, hi, n = paired(a, b)
             comps[f"{a} - {b}"] = {"mean_diff": round(m, 4),
@@ -218,20 +313,113 @@ def main() -> None:
                                    "ci_excludes_zero": lo > 0, "n": n}
             print(f"    {a + ' - ' + b:40s} {m:+.4f}  95% CI [{lo:+.4f}, {hi:+.4f}]  (n={n})")
 
-    out = paths.EXPERIMENTS / "paper1" / "ildc_ablation.json"
+    # ---- cue audit, against the facts-only arm as the base rate ------------------------------
+    # A raw cue count is uninterpretable: judgment text recites what LOWER courts did, and the
+    # patterns match those too. Only an EXCESS over that base rate is evidence of contamination.
+    # Note this statistic did NOT replicate across our own two splits while the setback curve did,
+    # so it is reported as corroboration, never as the finding.
+    audit = {}
+    base_texts = arms["ildc_facts_only"]["te"]
+    for name in ("ildc_facts_only", "ildc_w0", "ildc_w1", "ildc_w2", "ildc_w3"):
+        t = arms[name]["te"]
+        n_any = sum(1 for x in t if x.strip() and cues_in(x))
+        n_use = sum(1 for x in t if x.strip())
+        audit[name] = {"cases_with_cue": n_any, "n": n_use,
+                       "rate": round(n_any / max(1, n_use), 4)}
+    base = audit["ildc_facts_only"]["rate"]
+    print("\n  cue audit (disposition patterns from src/data/labels.py):")
+    for name in ("ildc_facts_only", "ildc_w0", "ildc_w1", "ildc_w2", "ildc_w3"):
+        a = audit[name]
+        tag = "  <- BASE RATE" if name == "ildc_facts_only" else \
+              f"  excess over base {a['rate'] - base:+.3f}"
+        print(f"    {name:18s} {a['cases_with_cue']:5d}/{a['n']} = {a['rate']:.3f}{tag}")
+
+    # ---- how deep does the contamination reach? ----------------------------------------------
+    sweep, clean_at = [], None
+    if "ildc_facts_only" in probs:
+        print("\n  contamination depth -- a 512-word window set back in fine steps:")
+        for off in (0, 32, 64, 128, 256, 512):
+            ttr = [window_at(r["text"], off) for r in tr]
+            tte = [window_at(r["text"], off) for r in te]
+            ktr = [i for i, x in enumerate(ttr) if x.strip()]
+            kte = [i for i, x in enumerate(tte) if x.strip()]
+            if len(kte) < 100:
+                continue
+            v = TfidfVectorizer(max_features=50_000, ngram_range=(1, 2), min_df=3,
+                                sublinear_tf=True, strip_accents="unicode")
+            m = LogisticRegression(max_iter=3000, C=0.5, class_weight="balanced",
+                                   random_state=SEED).fit(
+                v.fit_transform(ttr[i] for i in ktr), ytr[ktr])
+            pr = m.predict_proba(v.transform(tte[i] for i in kte))[:, 1]
+            au = float(roc_auc_score(yte[kte], pr))
+            cue = sum(1 for i in kte if cues_in(tte[i])) / len(kte)
+            probs[f"off{off}"] = (kte, pr)
+            d, lo, hi, n = paired(f"off{off}", "ildc_facts_only")
+            sweep.append({"offset_words": off, "auroc": round(au, 4), "cue_rate": round(cue, 4),
+                          "vs_facts_only": round(d, 4), "ci95": [round(lo, 4), round(hi, 4)],
+                          "ci_excludes_zero": lo > 0, "n": n})
+            print(f"    offset {off:4d} words  AUROC={au:.3f}  cue_rate={cue:.3f}  "
+                  f"vs facts_only {d:+.4f} [{lo:+.4f}, {hi:+.4f}]"
+                  f"{'  significant' if lo > 0 else ''}")
+        clean_at = next((r["offset_words"] for r in sweep if not r["ci_excludes_zero"]), None)
+        if clean_at is not None:
+            print(f"    -> the advantage is gone once the window is set back {clean_at} words"
+                  f"   (our corpus: 128)")
+
+    # ---- which shape? ------------------------------------------------------------------------
+    by = {r["name"]: r for r in results}
+    verdict_setback = "not computed"
+    if all(f"ildc_w{i}" in by for i in range(N_WINDOWS)) and "ildc_facts_only" in by:
+        w = [by[f"ildc_w{i}"]["auroc"] for i in range(N_WINDOWS)]
+        above = [i for i in range(N_WINDOWS)
+                 if comps.get(f"ildc_w{i} - ildc_facts_only", {}).get("ci_excludes_zero")]
+        verdict_setback = (
+            "RESIDUAL LEAKAGE: only the window adjacent to the deleted decision beats facts-only, "
+            "so ILDC's best input is contaminated the same way ours was"
+            if above == [0] else
+            "REASONING: windows set back from the boundary also beat facts-only, so ILDC retains "
+            "informative reasoning rather than the sentence before the order"
+            if len(above) > 1 else
+            f"INCONCLUSIVE: windows above facts-only = {above}")
+        print(f"\n  setback curve: " + "  ".join(f"w{i}={w[i]:.3f}" for i in range(N_WINDOWS))
+              + f"   (facts_only={by['ildc_facts_only']['auroc']:.3f})")
+        print(f"  windows significantly above facts_only: {above or 'none'}")
+        print(f"  VERDICT: {verdict_setback}")
+        if "ildc_minus128" in by:
+            c = comps.get("ildc_minus128 - ildc_facts_only", {})
+            if c:
+                print(f"\n  whole document minus the suspect tail: {c['mean_diff']:+.4f} "
+                      f"{c['ci95']}"
+                      f"{'  significant -> the reasoning itself adds signal' if c.get('ci_excludes_zero') else '  NOT significant -> the advantage was the tail'}")
+
+    tag = "_smoketest" if args.smoke_test else ""
+    out = paths.EXPERIMENTS / "paper1" / f"ildc_ablation{tag}.json"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps({
-        "dataset": "ILDC (Malik et al., ACL 2021) via Exploration-Lab/IL-TUR",
+        "dataset": ("SUBSTITUTE: this project's own corpus, ILDC-shaped (smoke test)"
+                    if args.smoke_test
+                    else "ILDC (Malik et al., ACL 2021) via Exploration-Lab/IL-TUR"),
         "n_train_used": len(tr), "n_test": len(te),
         "note": "ILDC text already has the disposition deleted by its authors. The facts_only arm "
                 "additionally removes the court's reasoning using this project's §5.2 masking, "
                 "which is the difference between the two papers' task definitions.",
+        "smoke_test": args.smoke_test,
+        "NOT_A_RESULT" if args.smoke_test else "_": (
+            "this ran on THIS PROJECT'S corpus as an ILDC-shaped stand-in, to exercise the code "
+            "path while the real release is gated. It is not an ILDC measurement."
+            if args.smoke_test else None),
+        "cue_audit": audit, "contamination_depth_sweep": sweep,
+        "advantage_gone_at_offset_words": clean_at,
+        "our_corpus_boundary_words": 128,
+        "verdict_setback": verdict_setback,
         "results": results, "paired": comps}, indent=1))
     print(f"\n-> {out}")
     if "ildc_full" in probs and "ildc_facts_only" in probs:
         bf = next(r for r in results if r["name"] == "ildc_full")
         fo = next(r for r in results if r["name"] == "ildc_facts_only")
-        print(f"\n  On ILDC's own data and labels: removing the court's reasoning moves accuracy "
+        src = ("the SUBSTITUTE corpus (smoke test -- NOT an ILDC result)" if args.smoke_test
+               else "ILDC's own data and labels")
+        print(f"\n  On {src}: removing the court's reasoning moves accuracy "
               f"{bf['accuracy']:.3f} -> {fo['accuracy']:.3f} "
               f"and AUROC {bf['auroc']:.3f} -> {fo['auroc']:.3f}.")
 

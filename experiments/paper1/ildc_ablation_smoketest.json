@@ -1,0 +1,996 @@
+{
+ "dataset": "SUBSTITUTE: this project's own corpus, ILDC-shaped (smoke test)",
+ "n_train_used": 3350,
+ "n_test": 902,
+ "note": "ILDC text already has the disposition deleted by its authors. The facts_only arm additionally removes the court's reasoning using this project's \u00a75.2 masking, which is the difference between the two papers' task definitions.",
+ "smoke_test": true,
+ "NOT_A_RESULT": "this ran on THIS PROJECT'S corpus as an ILDC-shaped stand-in, to exercise the code path while the real release is gated. It is not an ILDC measurement.",
+ "cue_audit": {
+  "ildc_facts_only": {
+   "cases_with_cue": 212,
+   "n": 902,
+   "rate": 0.235
+  },
+  "ildc_w0": {
+   "cases_with_cue": 367,
+   "n": 902,
+   "rate": 0.4069
+  },
+  "ildc_w1": {
+   "cases_with_cue": 83,
+   "n": 901,
+   "rate": 0.0921
+  },
+  "ildc_w2": {
+   "cases_with_cue": 71,
+   "n": 884,
+   "rate": 0.0803
+  },
+  "ildc_w3": {
+   "cases_with_cue": 62,
+   "n": 843,
+   "rate": 0.0735
+  }
+ },
+ "contamination_depth_sweep": [
+  {
+   "offset_words": 0,
+   "auroc": 0.8444,
+   "cue_rate": 0.4069,
+   "vs_facts_only": 0.1813,
+   "ci95": [
+    0.1512,
+    0.2088
+   ],
+   "ci_excludes_zero": true,
+   "n": 902
+  },
+  {
+   "offset_words": 32,
+   "auroc": 0.7923,
+   "cue_rate": 0.2849,
+   "vs_facts_only": 0.1293,
+   "ci95": [
+    0.0993,
+    0.1583
+   ],
+   "ci_excludes_zero": true,
+   "n": 902
+  },
+  {
+   "offset_words": 64,
+   "auroc": 0.7361,
+   "cue_rate": 0.2029,
+   "vs_facts_only": 0.0732,
+   "ci95": [
+    0.0446,
+    0.1004
+   ],
+   "ci_excludes_zero": true,
+   "n": 902
+  },
+  {
+   "offset_words": 128,
+   "auroc": 0.7017,
+   "cue_rate": 0.1264,
+   "vs_facts_only": 0.0387,
+   "ci95": [
+    0.0118,
+    0.0646
+   ],
+   "ci_excludes_zero": true,
+   "n": 902
+  },
+  {
+   "offset_words": 256,
+   "auroc": 0.6942,
+   "cue_rate": 0.0987,
+   "vs_facts_only": 0.0315,
+   "ci95": [
+    0.003,
+    0.0584
+   ],
+   "ci_excludes_zero": true,
+   "n": 902
+  },
+  {
+   "offset_words": 512,
+   "auroc": 0.6822,
+   "cue_rate": 0.0921,
+   "vs_facts_only": 0.0194,
+   "ci95": [
+    -0.0075,
+    0.0456
+   ],
+   "ci_excludes_zero": false,
+   "n": 901
+  }
+ ],
+ "advantage_gone_at_offset_words": 512,
+ "our_corpus_boundary_words": 128,
+ "verdict_setback": "RESIDUAL LEAKAGE: only the window adjacent to the deleted decision beats facts-only, so ILDC's best input is contaminated the same way ours was",
+ "results": [
+  {
+   "name": "ildc_full",
+   "n": 902,
+   "accuracy": 0.684,
+   "macro_f1": 0.6823,
+   "test_win_rate": 0.4723,
+   "pred_win_rate": 0.4534,
+   "macro_f1_ci95": [
+    0.65,
+    0.7114
+   ],
+   "auroc": 0.7338,
+   "auroc_ci95": [
+    0.7021,
+    0.7653
+   ],
+   "ece": 0.1002,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 6,
+     "mean_pred": 0.2747,
+     "observed": 0.0,
+     "gap": 0.2747
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 175,
+     "mean_pred": 0.3663,
+     "observed": 0.1886,
+     "gap": 0.1778
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 312,
+     "mean_pred": 0.4511,
+     "observed": 0.3782,
+     "gap": 0.0729
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 253,
+     "mean_pred": 0.5479,
+     "observed": 0.6285,
+     "gap": -0.0806
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 137,
+     "mean_pred": 0.6405,
+     "observed": 0.7226,
+     "gap": -0.0821
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 19,
+     "mean_pred": 0.7217,
+     "observed": 0.8947,
+     "gap": -0.173
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    }
+   ],
+   "mean_words": 5057,
+   "n_usable_test": 902
+  },
+  {
+   "name": "ildc_last512",
+   "n": 902,
+   "accuracy": 0.7816,
+   "macro_f1": 0.7801,
+   "test_win_rate": 0.4723,
+   "pred_win_rate": 0.4446,
+   "macro_f1_ci95": [
+    0.753,
+    0.8087
+   ],
+   "auroc": 0.8444,
+   "auroc_ci95": [
+    0.8182,
+    0.8695
+   ],
+   "ece": 0.1931,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 13,
+     "mean_pred": 0.2791,
+     "observed": 0.0,
+     "gap": 0.2791
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 160,
+     "mean_pred": 0.363,
+     "observed": 0.1062,
+     "gap": 0.2568
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 328,
+     "mean_pred": 0.4486,
+     "observed": 0.2866,
+     "gap": 0.1621
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 244,
+     "mean_pred": 0.5505,
+     "observed": 0.7172,
+     "gap": -0.1667
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 119,
+     "mean_pred": 0.6423,
+     "observed": 0.8739,
+     "gap": -0.2316
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 35,
+     "mean_pred": 0.7276,
+     "observed": 0.9429,
+     "gap": -0.2152
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 3,
+     "mean_pred": 0.8162,
+     "observed": 1.0,
+     "gap": -0.1838
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    }
+   ],
+   "mean_words": 511,
+   "n_usable_test": 902
+  },
+  {
+   "name": "ildc_first_third",
+   "n": 902,
+   "accuracy": 0.6153,
+   "macro_f1": 0.613,
+   "test_win_rate": 0.4723,
+   "pred_win_rate": 0.4512,
+   "macro_f1_ci95": [
+    0.5824,
+    0.6456
+   ],
+   "auroc": 0.6674,
+   "auroc_ci95": [
+    0.6336,
+    0.7022
+   ],
+   "ece": 0.0414,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 4,
+     "mean_pred": 0.2719,
+     "observed": 0.0,
+     "gap": 0.2719
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 153,
+     "mean_pred": 0.3672,
+     "observed": 0.2745,
+     "gap": 0.0926
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 338,
+     "mean_pred": 0.4509,
+     "observed": 0.4172,
+     "gap": 0.0337
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 264,
+     "mean_pred": 0.5461,
+     "observed": 0.572,
+     "gap": -0.0259
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 130,
+     "mean_pred": 0.6391,
+     "observed": 0.6231,
+     "gap": 0.016
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 13,
+     "mean_pred": 0.7105,
+     "observed": 0.8462,
+     "gap": -0.1357
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    }
+   ],
+   "mean_words": 1685,
+   "n_usable_test": 902
+  },
+  {
+   "name": "ildc_facts_only",
+   "n": 902,
+   "accuracy": 0.6131,
+   "macro_f1": 0.6101,
+   "test_win_rate": 0.4723,
+   "pred_win_rate": 0.4401,
+   "macro_f1_ci95": [
+    0.578,
+    0.6423
+   ],
+   "auroc": 0.6628,
+   "auroc_ci95": [
+    0.6271,
+    0.6985
+   ],
+   "ece": 0.0406,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 3,
+     "mean_pred": 0.2874,
+     "observed": 0.0,
+     "gap": 0.2874
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 129,
+     "mean_pred": 0.3684,
+     "observed": 0.2946,
+     "gap": 0.0738
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 373,
+     "mean_pred": 0.4529,
+     "observed": 0.4048,
+     "gap": 0.048
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 272,
+     "mean_pred": 0.5463,
+     "observed": 0.5662,
+     "gap": -0.0199
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 117,
+     "mean_pred": 0.6355,
+     "observed": 0.6496,
+     "gap": -0.0141
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 8,
+     "mean_pred": 0.7137,
+     "observed": 0.875,
+     "gap": -0.1613
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    }
+   ],
+   "mean_words": 2125,
+   "n_usable_test": 902
+  },
+  {
+   "name": "ildc_w0",
+   "n": 902,
+   "accuracy": 0.7816,
+   "macro_f1": 0.7801,
+   "test_win_rate": 0.4723,
+   "pred_win_rate": 0.4446,
+   "macro_f1_ci95": [
+    0.753,
+    0.8087
+   ],
+   "auroc": 0.8444,
+   "auroc_ci95": [
+    0.8182,
+    0.8695
+   ],
+   "ece": 0.1931,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 13,
+     "mean_pred": 0.2791,
+     "observed": 0.0,
+     "gap": 0.2791
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 160,
+     "mean_pred": 0.363,
+     "observed": 0.1062,
+     "gap": 0.2568
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 328,
+     "mean_pred": 0.4486,
+     "observed": 0.2866,
+     "gap": 0.1621
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 244,
+     "mean_pred": 0.5505,
+     "observed": 0.7172,
+     "gap": -0.1667
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 119,
+     "mean_pred": 0.6423,
+     "observed": 0.8739,
+     "gap": -0.2316
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 35,
+     "mean_pred": 0.7276,
+     "observed": 0.9429,
+     "gap": -0.2152
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 3,
+     "mean_pred": 0.8162,
+     "observed": 1.0,
+     "gap": -0.1838
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    }
+   ],
+   "mean_words": 511,
+   "n_usable_test": 902
+  },
+  {
+   "name": "ildc_w1",
+   "n": 901,
+   "accuracy": 0.6426,
+   "macro_f1": 0.6416,
+   "test_win_rate": 0.4717,
+   "pred_win_rate": 0.4761,
+   "macro_f1_ci95": [
+    0.6094,
+    0.6734
+   ],
+   "auroc": 0.6822,
+   "auroc_ci95": [
+    0.6497,
+    0.7164
+   ],
+   "ece": 0.0878,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 1,
+     "mean_pred": 0.2992,
+     "observed": 0.0,
+     "gap": 0.2992
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 57,
+     "mean_pred": 0.3746,
+     "observed": 0.1053,
+     "gap": 0.2693
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 414,
+     "mean_pred": 0.4554,
+     "observed": 0.3696,
+     "gap": 0.0859
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 360,
+     "mean_pred": 0.5405,
+     "observed": 0.5972,
+     "gap": -0.0567
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 69,
+     "mean_pred": 0.631,
+     "observed": 0.7391,
+     "gap": -0.1081
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    }
+   ],
+   "mean_words": 507,
+   "n_usable_test": 901
+  },
+  {
+   "name": "ildc_w2",
+   "n": 884,
+   "accuracy": 0.6075,
+   "macro_f1": 0.6063,
+   "test_win_rate": 0.4706,
+   "pred_win_rate": 0.474,
+   "macro_f1_ci95": [
+    0.5741,
+    0.6369
+   ],
+   "auroc": 0.6533,
+   "auroc_ci95": [
+    0.6149,
+    0.6884
+   ],
+   "ece": 0.0524,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 48,
+     "mean_pred": 0.378,
+     "observed": 0.1875,
+     "gap": 0.1905
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 417,
+     "mean_pred": 0.4572,
+     "observed": 0.3909,
+     "gap": 0.0663
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 343,
+     "mean_pred": 0.5435,
+     "observed": 0.551,
+     "gap": -0.0075
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 73,
+     "mean_pred": 0.6298,
+     "observed": 0.7123,
+     "gap": -0.0826
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 3,
+     "mean_pred": 0.711,
+     "observed": 1.0,
+     "gap": -0.289
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    }
+   ],
+   "mean_words": 501,
+   "n_usable_test": 884
+  },
+  {
+   "name": "ildc_w3",
+   "n": 843,
+   "accuracy": 0.6097,
+   "macro_f1": 0.6079,
+   "test_win_rate": 0.4733,
+   "pred_win_rate": 0.4579,
+   "macro_f1_ci95": [
+    0.5726,
+    0.644
+   ],
+   "auroc": 0.636,
+   "auroc_ci95": [
+    0.5978,
+    0.676
+   ],
+   "ece": 0.0605,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 28,
+     "mean_pred": 0.3783,
+     "observed": 0.1071,
+     "gap": 0.2712
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 429,
+     "mean_pred": 0.4565,
+     "observed": 0.3916,
+     "gap": 0.0649
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 342,
+     "mean_pred": 0.5405,
+     "observed": 0.5585,
+     "gap": -0.018
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 44,
+     "mean_pred": 0.6258,
+     "observed": 0.8409,
+     "gap": -0.2151
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    }
+   ],
+   "mean_words": 494,
+   "n_usable_test": 843
+  },
+  {
+   "name": "ildc_minus128",
+   "n": 902,
+   "accuracy": 0.6585,
+   "macro_f1": 0.6566,
+   "test_win_rate": 0.4723,
+   "pred_win_rate": 0.4523,
+   "macro_f1_ci95": [
+    0.6235,
+    0.6863
+   ],
+   "auroc": 0.7007,
+   "auroc_ci95": [
+    0.6671,
+    0.7348
+   ],
+   "ece": 0.0777,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 5,
+     "mean_pred": 0.2741,
+     "observed": 0.0,
+     "gap": 0.2741
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 156,
+     "mean_pred": 0.3668,
+     "observed": 0.2436,
+     "gap": 0.1232
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 333,
+     "mean_pred": 0.45,
+     "observed": 0.3754,
+     "gap": 0.0746
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 261,
+     "mean_pred": 0.5479,
+     "observed": 0.6169,
+     "gap": -0.069
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 134,
+     "mean_pred": 0.6419,
+     "observed": 0.6716,
+     "gap": -0.0298
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 13,
+     "mean_pred": 0.7221,
+     "observed": 0.9231,
+     "gap": -0.201
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    }
+   ],
+   "mean_words": 4929,
+   "n_usable_test": 902
+  }
+ ],
+ "paired": {
+  "ildc_full - ildc_facts_only": {
+   "mean_diff": 0.0711,
+   "ci95": [
+    0.0561,
+    0.0858
+   ],
+   "ci_excludes_zero": true,
+   "n": 902
+  },
+  "ildc_last512 - ildc_facts_only": {
+   "mean_diff": 0.1813,
+   "ci95": [
+    0.1512,
+    0.2088
+   ],
+   "ci_excludes_zero": true,
+   "n": 902
+  },
+  "ildc_facts_only - ildc_first_third": {
+   "mean_diff": -0.0046,
+   "ci95": [
+    -0.0188,
+    0.0103
+   ],
+   "ci_excludes_zero": false,
+   "n": 902
+  },
+  "ildc_w0 - ildc_facts_only": {
+   "mean_diff": 0.1813,
+   "ci95": [
+    0.1512,
+    0.2088
+   ],
+   "ci_excludes_zero": true,
+   "n": 902
+  },
+  "ildc_w1 - ildc_facts_only": {
+   "mean_diff": 0.0194,
+   "ci95": [
+    -0.0075,
+    0.0456
+   ],
+   "ci_excludes_zero": false,
+   "n": 901
+  },
+  "ildc_w2 - ildc_facts_only": {
+   "mean_diff": -0.0059,
+   "ci95": [
+    -0.0309,
+    0.0201
+   ],
+   "ci_excludes_zero": false,
+   "n": 884
+  },
+  "ildc_w3 - ildc_facts_only": {
+   "mean_diff": -0.0194,
+   "ci95": [
+    -0.0503,
+    0.0094
+   ],
+   "ci_excludes_zero": false,
+   "n": 843
+  },
+  "ildc_minus128 - ildc_facts_only": {
+   "mean_diff": 0.0381,
+   "ci95": [
+    0.0238,
+    0.0515
+   ],
+   "ci_excludes_zero": true,
+   "n": 902
+  },
+  "ildc_w0 - ildc_w1": {
+   "mean_diff": 0.162,
+   "ci95": [
+    0.1304,
+    0.1914
+   ],
+   "ci_excludes_zero": true,
+   "n": 901
+  },
+  "ildc_full - ildc_minus128": {
+   "mean_diff": 0.033,
+   "ci95": [
+    0.0281,
+    0.0384
+   ],
+   "ci_excludes_zero": true,
+   "n": 902
+  }
+ }
+}
