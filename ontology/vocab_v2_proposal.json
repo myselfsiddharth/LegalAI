@@ -1,54 +1,54 @@
 {
  "measured": {
-  "n_facts": 79496,
-  "n_out_of_vocab": 16126,
-  "out_of_vocab_rate": 0.2029,
+  "n_facts": 96623,
+  "n_out_of_vocab": 19007,
+  "out_of_vocab_rate": 0.1967,
   "n_clusters": 2,
-  "n_outliers": 169
+  "n_outliers": 342
  },
  "proposed_additions": [
   {
    "cluster": 0,
-   "n_facts": 15951,
+   "n_facts": 18659,
    "category": "Event",
    "subcategory": "legal_proceedings",
    "key": "Event.legal_proceedings",
-   "definition": "A fact about the initiation or progression of a legal case or proceeding",
+   "definition": "A fact about the initiation or occurrence of a legal proceeding related to the dispute",
    "merge_into": null,
    "merge_into_raw": null,
    "confidence": 0.8,
    "already_in_vocab": false,
    "is_not_a_fact": false,
    "examples": [
-    "The High Court adopted a multiple of 27 for capitalisation.",
-    "The sum prescribed for the purposes of all second appeals to the High Court is Rs 50,000",
-    "The police initiated proceedings under Section 151, 107 and 116 Cr.P.C. on 19.07.2016.",
-    "An application under Section 156(3) Cr.P.C. was filed by Sajjad Quraishi on 29.08.2016."
+    "The High Court struck down the Tamil Nadu Acquisition of Land for Harijan Welfare Schemes Act, 1978, as being ultra vire",
+    "Proceedings under Section 151, 107 and 116 Cr.P.C. were initiated against both parties on 19.07.2016.",
+    "An enquiry was conducted by the Deputy Superintendent of Police",
+    "Police initiated proceedings under Section 151, 107, 115 Cr.P.C."
    ]
   },
   {
    "cluster": 1,
    "n_facts": 6,
    "category": "Evidence",
-   "subcategory": "quantitative_data",
-   "key": "Evidence.quantitative_data",
-   "definition": "A fact stating a measurable quantity related to a case, such as capacity, production, consumption, or demand.",
+   "subcategory": "livestock_data",
+   "key": "Evidence.livestock_data",
+   "definition": "A fact about the number or type of livestock in a Panjrapole at a given time.",
    "merge_into": null,
    "merge_into_raw": null,
    "confidence": 0.9,
    "already_in_vocab": false,
    "is_not_a_fact": false,
    "examples": [
-    "The total capacity of all the 9 distilleries was 203 lacs proof litres.",
-    "The total capacity of all 9 distilleries was 203 lacs proof litres.",
-    "The total production of country liquor in 1981-82 was 129 lacs proof litres.",
-    "The estimated consumption of country liquor was expected to be 482.36 lacs proof litres by 1991."
+    "The Bhiwandi Panjrapole had a total cattle strength of 501 in 1958.",
+    "The Chambur Panjrapole had a total cattle strength of 191 in 1958.",
+    "The total cattle strength of all Panjrapoles in 1958 was 1674.",
+    "The Raita Panjrapole had 181 young animals in 1958."
    ]
   }
  ],
  "proposed_merges": [],
  "rejected_not_a_fact": [],
  "low_confidence_needs_review": [],
- "projected_out_of_vocab_rate": 0.0021,
+ "projected_out_of_vocab_rate": 0.0035,
  "freeze_threshold": 0.05
 }

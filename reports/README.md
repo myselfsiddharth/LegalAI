@@ -12,6 +12,7 @@ bugs, see `../WORKLOG.md`.
 | `M3_report.md` | §7 claim families, §8 fact patterns | full scale — taxonomy unsupported, patterns null |
 | `M5_report.md` | §10 outcome models, ablations, the representation ladder | **full scale, n=881** |
 | `BLOCKERS.md` | open blockers B2–B4 (B1 closed) | current |
+| `SIGNIFICANCE.md` | novelty positioning against verified prior art | **read before writing a paper** |
 
 M4 (§9 statutes and precedents) is not started; assets for it exist in `scripts/`.
 
