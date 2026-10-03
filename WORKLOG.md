@@ -1430,3 +1430,90 @@ The naive version — `masked_minus128`, just deleting the last 128 words — **
 words of anything loses information. Only the volume-matched arms separate "the tail is contaminated"
 from "I deleted some text". **Without them this would have been written up as a leak that is not
 there** — the same error as yesterday's, one step removed.
+
+---
+
+## 2026-10-03 — ILDC is gated indefinitely, so we answered the question without it
+
+The licence request is in a review queue the user expects will never be processed. That removed the
+planned replication. It also turned out not to matter, because **the restriction to land/property
+disputes was ours, not the data's.**
+
+All 26,688 Supreme Court judgments 1950–2025 are already on disk (6.8 GB). ILDC is drawn from the
+same population — Indian Kanoon's Supreme Court judgments — and our land subset was imposed by a
+provided spreadsheet. `src/data/corpus_wide.py` drops it: extract, rules-label and mask every
+judgment in parallel, API-free, **2.8 minutes for all 26,688**, yielding **14,168 usable WIN/LOSE
+cases** (12,067 usable in every arm). That is 2.7x the land corpus and covers criminal, tax,
+constitutional, service and company matters, not one dispute type.
+
+This is a **generalisation test, not a replication**: it reproduces neither ILDC's labels nor ILDC's
+deletion boundary. What it settles is whether the contamination is a property of Indian judicial
+writing or an artifact of land-dispute style at small n.
+
+### The cliff reproduces, at 3x the test-set size, across every case type
+
+| | land `forum` (842) | land `temporal` (722) | corpus `temporal` (2,288) | corpus `random` (2,414) |
+|---|---|---|---|---|
+| `masked` | 0.656 | 0.577 | 0.628 | 0.723 |
+| `w0` (last 512) | 0.838 | 0.716 | 0.739 | 0.862 |
+| `w0` − `masked` | +0.181 | +0.139 | **+0.111** [+0.085, +0.135] | **+0.139** [+0.122, +0.155] |
+| `w1` − `masked` | +0.013 ns | +0.012 ns | **−0.022 ns** | **−0.006 ns** |
+| **advantage gone at** | **128 w** | **128 w** | **128 w** | **128 w** |
+
+**The 128-word boundary now has four independent confirmations.** On the corpus-wide runs `w1`, `w2`
+and `w3` all sit at or *below* `masked` — a 512-word window of the court's reasoning taken from
+anywhere but the final stretch carries no more outcome signal than the facts, and sometimes less.
+
+### It is not a pre-2000 HEADNOTE artifact — it is every decade for 75 years
+
+`w0 − masked` on the random split, by decade of the judgment:
+
+| decade | n | `w0` − `masked` | |
+|---|---|---|---|
+| 1950s | 112 | +0.179 [+0.023, +0.352] | significant |
+| 1960s | 438 | +0.325 [+0.266, +0.379] | significant |
+| 1970s | 377 | +0.186 [+0.128, +0.245] | significant |
+| 1980s | 292 | +0.180 [+0.126, +0.239] | significant |
+| 1990s | 278 | +0.171 [+0.117, +0.226] | significant |
+| 2000s | 338 | +0.163 [+0.106, +0.224] | significant |
+| 2010s | 349 | +0.096 [+0.036, +0.153] | significant |
+| 2020s | 230 | +0.115 [+0.031, +0.194] | significant |
+
+Significant in **all eight decades**. The 1960s peak and the mild decline after 2000 are consistent
+with the pre-2000 HEADNOTE convention adding to it, but the effect is plainly not caused by it.
+
+### The reasoning's small contribution now clears zero
+
+Earlier this was the one claim that failed to replicate (land temporal: +0.0215, CI lower bound
+−0.0002). At larger n it resolves:
+
+| run | `ildc_minus128` − `masked` | |
+|---|---|---|
+| land `forum` (842) | +0.027 [+0.014, +0.039] | significant |
+| land `temporal` (722) | +0.022 [−0.0002, +0.043] | **not** significant |
+| corpus `temporal` (2,288) | +0.023 [+0.010, +0.035] | significant |
+| corpus `random` (2,414) | +0.029 [+0.022, +0.036] | significant |
+
+Four point estimates between +0.022 and +0.029, significant in three of four, and the one failure is
+the smallest test set. **So the court's reasoning does add real signal of about +0.025 AUROC — and
+the apparent effect is four to seven times larger.** The earlier non-replication was a power
+problem, not a contradiction.
+
+### The cue audit has now failed to replicate three times out of four
+
+Excess cue rate in `w0` over the `masked` base rate: +0.150 (land forum), −0.058 (land temporal),
++0.018 (corpus temporal), and the corpus random run likewise near zero. Meanwhile the positional
+curve held in all four.
+
+**This is the methodological point of the whole exercise.** The lexical signal everyone else uses to
+find leakage — cue words, trigrams, human-flagged features — is unstable across case mixes. The
+positional measurement needs no cue detector and is stable. We have four runs showing the contrast
+and one failed lexical arm per run to prove it is not a straw man.
+
+### What ILDC would still add, and what it no longer gates
+
+It would still be worth running: it has gold labels rather than rules labels, and its own deletion
+boundary, so it could show that *their* specific cut leaves residue rather than that a cut *like*
+theirs does. But it is no longer load-bearing. The claim "the last-512 construction is contaminated,
+across 75 years and every case type of Indian Supreme Court judgment, with a ~128-word boundary"
+stands on 26,688 judgments we own.
