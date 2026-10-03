@@ -14,7 +14,26 @@ provenance is versioned, while the confidential Templeton grant document stays i
 
 ## OPEN
 
-### B5 — ILDC replication blocked on licence acceptance (the highest-value open item)
+### B5 — ILDC replication blocked on licence acceptance (DOWNGRADED 2026-10-03: no longer load-bearing)
+
+**The licence request is in a review queue the user expects will not be processed.** This was the
+highest-value open item; it is now optional, because `src/data/corpus_wide.py` +
+`src/eval/corpus_scale_setback.py` answer the same question on all 26,688 Supreme Court judgments
+(same population as ILDC, 14,168 usable cases, every case type). The cliff and the 128-word boundary
+reproduce on four splits and in all eight decades.
+
+**What ILDC would still add:** gold labels instead of rules labels, and *its own* deletion boundary —
+so it could show that their specific cut leaves residue, rather than that a cut like theirs does.
+Worth running if it ever clears. The module is setback-armed and smoke-tested.
+
+**A parallel route the user should know about:** the authors are *not* inactive. Shubham Kumar Nigam
+published PredEx (ACL 2024 Findings), TathyaNyaya/FactLegalLlama (2025) and NyayaRAG (2026);
+Ashutosh Modi (IIT Kanpur) is organising the JUST NLP 2025 workshop at IJCNLP-AACL. A direct email
+to Modi has far better odds than the HuggingFace queue.
+
+---
+
+### B5 (original text)
 
 `src/eval/ildc_ablation.py` is **written, setback-armed and verified end to end** via
 `--smoke-test`, which substitutes this project's own corpus for the gated release so every code

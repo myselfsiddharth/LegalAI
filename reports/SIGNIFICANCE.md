@@ -62,6 +62,27 @@ judgments of leakage and flag features; the ECtHR line masks verdict words. Nobo
 
 **Verdict: a methodological contribution inside an established critique.** Not a new critique.
 
+### Update 2026-10-03: the evidence base is now much stronger, the novelty claim unchanged
+
+The ILDC licence is gated indefinitely, so the question was answered without it — all 26,688 Supreme
+Court judgments 1950–2025, every case type, 14,168 usable cases. See `WORKLOG.md`. This does **not**
+make the critique novel; it makes our version of it well-evidenced:
+
+- the cliff reproduces on **four** independent splits, with the **128-word boundary found four
+  times**;
+- `w0 − masked` is significant in **all eight decades** from the 1950s to the 2020s, so it is not a
+  pre-2000 reporting-style artifact;
+- the reasoning's real contribution settles at **~+0.025 AUROC** (+0.027/+0.022/+0.023/+0.029),
+  against an apparent effect 4–7x larger.
+
+**The strongest novelty argument is now empirical rather than conceptual.** Our cue audit — the
+lexical approach that Watson et al. and the ECtHR line rely on — **failed to replicate in three of
+four runs** (+0.150, −0.058, +0.018, ~0) while the positional curve held in all four. We can
+therefore claim something sharper than "we have a different method": *the method the field uses to
+localise leakage is unstable across case mixes, and here is a cue-free one that is not, demonstrated
+on 26,688 judgments with a failed lexical arm in every run.* That is a reviewable methodological
+contribution, and it is the thing to lead the leakage half of the paper with.
+
 ---
 
 ## 2. The discretisation finding
@@ -148,9 +169,11 @@ induced-vs-authored control isolating discretisation — plus a constructive pos
 a good outcome for a class project. It is not a disruption.
 
 ### What would raise the ceiling, in order
-1. **Run the ILDC replication** *with a setback arm added*, or it inherits the contamination it is
-   meant to measure. This is the one step that converts an internal result into a claim about the
-   benchmark the field actually cites.
+1. ~~**Run the ILDC replication**~~ — **superseded 2026-10-03.** Still worth doing if the licence
+   ever clears (ILDC has gold labels and its own deletion boundary, so it could show that *their*
+   specific cut leaves residue rather than that a cut *like* theirs does), and the module is
+   setback-armed and smoke-tested. But it no longer gates anything: the corpus-wide run covers the
+   same population at comparable scale.
 2. **Lead with the discretisation finding**, not the leakage finding. Less crowded, and we hold the
    control the closest paper states it does not have.
 3. **Cite all three papers above and position against them explicitly.** A reviewer who knows
