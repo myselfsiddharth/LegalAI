@@ -14,6 +14,30 @@ provenance is versioned, while the confidential Templeton grant document stays i
 
 ## OPEN
 
+### B5 — ILDC replication blocked on licence acceptance (the highest-value open item)
+
+`src/eval/ildc_ablation.py` is **written, setback-armed and verified end to end** via
+`--smoke-test`, which substitutes this project's own corpus for the gated release so every code
+path executes. It runs the moment `Data/ildc/` is populated.
+
+**Why it matters.** Everything in the leakage result is measured on our 6,954 land/property cases
+as a *comparable construction* of ILDC's task. ILDC itself is 34,816 cases and is what the field
+cites. Until this runs, the strongest available claim is internal.
+
+**What is needed, and it is not compute.** Accept the terms at
+<https://huggingface.co/datasets/Exploration-Lab/IL-TUR>, then either:
+- `export HF_TOKEN=<read token>` and run `python -m src.eval.ildc_ablation --download`, or
+- drop `ILDC_multi.csv` (columns: text, label, split, name) into `Data/ildc/`.
+
+Either layout is detected automatically. The module **does not route around the gate**: the authors
+moved deliberately from an open 2021 link to a gated release, and going around that would ignore a
+choice they made on purpose.
+
+**Expected runtime** once the data lands: the masking step dominates. `--max-train` caps training
+rows (default 8,000) because a TF-IDF model does not need all 32,305 and masking is the slow part.
+
+
+
 ### B2 — Element burden metadata cannot be produced by an LLM (blocks §8.3, §10.1 group `E`)
 
 The source ontology requires every element to carry `burden_on`, `burden_standard` and
