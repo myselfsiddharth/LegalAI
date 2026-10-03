@@ -56,7 +56,7 @@ def make_model(kind: str):
 # "F", "F+P" and "F+P+E" reporting byte-identical numbers because §8 found zero BH-significant
 # patterns (P empty) and the burden metadata was unfilled (E empty). Reading those as "patterns
 # and elements add nothing" would be right by accident and wrong in reasoning.
-# §10.2 ablation 1, cumulative in the order PROJECT.md specifies:
+# §10.2 ablation 1, cumulative in the order the spec gives:
 #   F -> F+P -> F+P+E -> +S -> +R -> +C, then the shortcut Q last and alone.
 ABLATIONS = [
     ("F", ["F"], None),

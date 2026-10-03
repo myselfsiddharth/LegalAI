@@ -1,7 +1,7 @@
 """Stage 5 (§9.2): predict the statutory provisions a court relies on, from the facts.
 
 This is the task that tells us whether the extracted facts are useful for **anything**. Outcome
-prediction sits near chance on this corpus (see `reports/M5_report.md`), but which statute governs
+prediction sits near chance on this corpus (see writeup/LexGraph_Report.tex, the outcome-models section), but which statute governs
 a dispute should follow from its subject matter far more directly than who wins does — an adverse
 possession case reaches the Limitation Act whatever the result. If the facts cannot predict the
 statute either, the extraction has no demonstrated value; if they can, §6.1's output is worth

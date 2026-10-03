@@ -1,6 +1,6 @@
 """BM25 retrieval with time-respecting filtering (§9.3).
 
-Lifted from `scripts/retrieval_lib.py`, which predates the `src/` layout and lives in a directory
+Lifted from the legacy pre-`src/` pipeline, removed 2026-10-03 (recoverable from git history),
 that is not an importable package. Two parts of it are exactly what §9.3 requires and are kept
 unchanged:
 
@@ -21,7 +21,7 @@ from collections import Counter
 
 from src import paths
 
-# Inlined from scripts/ode_lib.py, which is not importable from here. These two decide what
+# Inlined from the legacy pipeline (removed; see git history). These two decide what
 # counts as a citation-bearing sentence for `scrub_citations`.
 CASE_CONNECTOR = re.compile(r"(?:\bv\.?|\bV\.|\b[Vv][Ss]\.?|\bversus)(?=\s|$)")
 REPORTER = re.compile(

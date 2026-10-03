@@ -311,7 +311,7 @@ def embed(texts: Sequence[str], model: str | None = None, batch_size: int = 32,
     Batches are issued CONCURRENTLY. They used to run one after another, which made embedding the
     bottleneck of canonicalisation: 65,577 texts at 32 per request is ~2,050 sequential round trips,
     measured at 10.3 texts/s and 77 minutes, while the chat path alongside it was sustaining 96
-    concurrent requests. The endpoint queues rather than refuses (see WORKLOG on the concurrency
+    concurrent requests. The endpoint queues rather than refuses (see the report's environment section on the concurrency
     measurement), so the fix is the same here as there.
 
     A row of zeros means that text's embedding was never obtained -- callers must check, not assume.

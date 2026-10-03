@@ -22,7 +22,7 @@ support say one thing, and reporting both inflates every count. We keep closed s
 no superset of equal support.
 
 Base rates are per family, never global: with outcome drift running 39%→64% across the temporal
-split (see WORKLOG), a global base rate would make a pattern look discriminative purely because
+split (see the report's fact-patterns section), a global base rate would make a pattern look discriminative purely because
 its family skews late.
 """
 from __future__ import annotations

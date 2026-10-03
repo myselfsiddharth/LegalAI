@@ -9,7 +9,7 @@ The dataset arrives as three disjoint pieces that nothing joins for us:
 
 The join that matters is (1) -> (2). The spreadsheet names the file directly, so this is
 an EXACT match on a normalised filename -- not the fuzzy title match that
-`scripts/build_doc_id_map.py` needed for the general corpus (and which silently produced a
+the legacy `build_doc_id_map.py` needed for the general corpus (and which silently produced a
 0.6% join rate once). We assert the rate here so a regression cannot pass unnoticed.
 
 Note that citation "precedents" mix real case citations with statute and article

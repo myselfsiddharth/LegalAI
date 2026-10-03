@@ -1,6 +1,6 @@
 """Canonical paths. One place, so no module guesses at layout.
 
-NOTE on case: PROJECT.md §12 writes `data/`, but this repo already has `Data/` and
+NOTE on case: the spec writes `data/`, but this repo already has `Data/` and
 macOS APFS is case-insensitive -- `data/` and `Data/` resolve to the same inode here.
 We standardise on `Data/` so the same code works on a case-SENSITIVE filesystem
 (Linux CI, a teammate on Linux) where the two would be different directories.
@@ -24,12 +24,11 @@ CACHE = DATA / "cache"
 
 ONTOLOGY = ROOT / "ontology"
 PROMPTS = ROOT / "prompts"
-REPORTS = ROOT / "reports"
 EXPERIMENTS = ROOT / "experiments"
 
 # Stage 0 outputs
 CASE_REGISTRY = INTERIM / "case_registry.jsonl"
 CASE_TEXT = INTERIM / "case_text.jsonl"
 
-for _d in (INTERIM, PROCESSED, GOLD, PATTERNS, SPLITS, CACHE, REPORTS):
+for _d in (INTERIM, PROCESSED, GOLD, PATTERNS, SPLITS, CACHE):
     _d.mkdir(parents=True, exist_ok=True)
