@@ -182,13 +182,39 @@ That is the acceptance test for v2 as a whole.
 | # | stage | status |
 |---|---|---|
 | 1 | **S2 soft fact families** | **done** — 0.633 at 345 dims, +0.116 over v1 |
-| 2 | **S4 element layer** + the verbatim-quote gate | next |
+| 2 | **S4 element layer** + the verbatim-quote gate | **running** — gate at 0–1.4% fabrication |
 | 3 | S4 → outcome, against S2 → outcome (the acceptance test) | — |
 | 4 | S5 elements → claims / defences | — |
 | 5 | A2 authorities → element criteria | — |
 | 6 | S3 graph patterns (gSpan) within claim family | — |
 | 7 | A1 signed graph + anco-HITS authority ranking | — |
 | 8 | S6 conclusion, reported last | — |
+
+## 6a. S4 findings so far
+
+**The quote gate works.** 1.44% of proposed verdicts were refused for a quote that is not in the
+facts (40-case pilot), comparable to the legacy pipeline's 3.2%. Fabricated *support* is caught
+without any ground truth. Wrong *reasoning* from a real quote is not caught, and that limit stands.
+
+**The model had to change, and finding out why took three tests.** `llama4-scout-17b` — v1's default
+everywhere, chosen on an extraction benchmark where it matched models 6.8× slower — emits **zero**
+`NOT_SATISFIED` on this task under every condition tried. Refuted in order: prompt over-correction
+(rewriting it to solicit negatives: 0 → 0); defeats living in the reasoning that §5.2 removes
+(showing the model the reasoning: still 0). Confirmed: it is the model.
+`qwen3-235b-a22b-instruct-2507` uses all three verdicts and fabricates *less* (0.0%).
+
+A layer that cannot say `NOT_SATISFIED` cannot express the "or defeat" half of the design, so this
+was blocking, not cosmetic. **Lesson: the model choice validated for extraction is not
+transferable to judgement tasks.**
+
+**The verdicts are legally sensible.** The strongest `NOT_SATISFIED` found so far: *"Sham Lal was a
+tenant of a room in property unit No. B-VI-33"* defeating an adverse-possession element — tenancy is
+permissive possession, so it affirmatively negates hostility. That is the inference the architecture
+exists to make.
+
+**Open on S4:** `UNCLEAR` is still the majority verdict (56 of 87 even on the better model), and
+`MIN_QUOTE = 25` is permissive enough to admit a 44-character fragment as evidence. Both are
+measured and neither is resolved.
 
 ## 7. Running
 

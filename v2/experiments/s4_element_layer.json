@@ -1,0 +1,28 @@
+{
+ "stage": "S4 element layer",
+ "prompt_id": "element_satisfy.v1",
+ "model": "llama4-scout-17b",
+ "n_cases": 40,
+ "top_claims": 2,
+ "n_calls": 80,
+ "verdicts": {
+  "SATISFIED": 48,
+  "NOT_SATISFIED": 0,
+  "UNCLEAR": 294
+ },
+ "refusals": {
+  "refused_quote_absent": 4,
+  "refused_quote_short": 1,
+  "dropped_no_answer": 0,
+  "unparsed": 0
+ },
+ "n_proposed": 347,
+ "fabrication_rate": 0.0144,
+ "attribution_coverage": 0.2474,
+ "min_quote_chars": 25,
+ "caveats": [
+  "burden metadata is 0 of 66 (B2), so elements are unweighted",
+  "`favours` is unreliable at this attribution coverage",
+  "the gate catches fabricated SUPPORT, not wrong reasoning"
+ ]
+}
