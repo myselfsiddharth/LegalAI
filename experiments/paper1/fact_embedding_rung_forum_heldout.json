@@ -1,0 +1,502 @@
+{
+ "split": "forum_heldout",
+ "n_train": 3288,
+ "n_test": 885,
+ "n_facts_with_embeddings": 96623,
+ "embedding_dim": 4096,
+ "k": 345,
+ "question": "the ladder measured discretisation against DISCRETE vocabularies only. Does a continuous fact representation -- what the intended architecture's step 2 actually describes -- preserve the signal that discretisation destroys?",
+ "canonical_atoms_reference": 0.517,
+ "results": [
+  {
+   "name": "masked text",
+   "n": 885,
+   "accuracy": 0.6203,
+   "macro_f1": 0.618,
+   "test_win_rate": 0.4712,
+   "pred_win_rate": 0.4508,
+   "macro_f1_ci95": [
+    0.5851,
+    0.6458
+   ],
+   "auroc": 0.666,
+   "auroc_ci95": [
+    0.6316,
+    0.6997
+   ],
+   "ece": 0.0454,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 2,
+     "mean_pred": 0.2828,
+     "observed": 0.0,
+     "gap": 0.2828
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 140,
+     "mean_pred": 0.3669,
+     "observed": 0.2643,
+     "gap": 0.1026
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 344,
+     "mean_pred": 0.4513,
+     "observed": 0.407,
+     "gap": 0.0443
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 270,
+     "mean_pred": 0.5458,
+     "observed": 0.5667,
+     "gap": -0.0208
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 122,
+     "mean_pred": 0.6365,
+     "observed": 0.6639,
+     "gap": -0.0275
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 7,
+     "mean_pred": 0.7135,
+     "observed": 0.8571,
+     "gap": -0.1437
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    }
+   ],
+   "n_features": 50000
+  },
+  {
+   "name": "extracted fact text",
+   "n": 885,
+   "accuracy": 0.6023,
+   "macro_f1": 0.6002,
+   "test_win_rate": 0.4712,
+   "pred_win_rate": 0.4576,
+   "macro_f1_ci95": [
+    0.566,
+    0.6294
+   ],
+   "auroc": 0.6289,
+   "auroc_ci95": [
+    0.5919,
+    0.6622
+   ],
+   "ece": 0.0491,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 66,
+     "mean_pred": 0.3789,
+     "observed": 0.2424,
+     "gap": 0.1365
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 414,
+     "mean_pred": 0.4553,
+     "observed": 0.401,
+     "gap": 0.0544
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 315,
+     "mean_pred": 0.5405,
+     "observed": 0.5714,
+     "gap": -0.031
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 87,
+     "mean_pred": 0.6325,
+     "observed": 0.6092,
+     "gap": 0.0233
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 3,
+     "mean_pred": 0.7104,
+     "observed": 0.6667,
+     "gap": 0.0437
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    }
+   ],
+   "n_features": 47354
+  },
+  {
+   "name": "fact_emb_mean",
+   "n": 885,
+   "accuracy": 0.5672,
+   "macro_f1": 0.5614,
+   "test_win_rate": 0.4712,
+   "pred_win_rate": 0.4136,
+   "macro_f1_ci95": [
+    0.5276,
+    0.5943
+   ],
+   "auroc": 0.5577,
+   "auroc_ci95": [
+    0.5156,
+    0.5925
+   ],
+   "ece": 0.3436,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 382,
+     "mean_pred": 0.0175,
+     "observed": 0.4188,
+     "gap": -0.4013
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 43,
+     "mean_pred": 0.1422,
+     "observed": 0.4419,
+     "gap": -0.2997
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 33,
+     "mean_pred": 0.2437,
+     "observed": 0.4242,
+     "gap": -0.1806
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 30,
+     "mean_pred": 0.3528,
+     "observed": 0.3667,
+     "gap": -0.0138
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 31,
+     "mean_pred": 0.4466,
+     "observed": 0.4194,
+     "gap": 0.0272
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 24,
+     "mean_pred": 0.5477,
+     "observed": 0.6667,
+     "gap": -0.119
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 35,
+     "mean_pred": 0.6511,
+     "observed": 0.6,
+     "gap": 0.0511
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 31,
+     "mean_pred": 0.7629,
+     "observed": 0.4194,
+     "gap": 0.3436
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 42,
+     "mean_pred": 0.8596,
+     "observed": 0.4524,
+     "gap": 0.4072
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 234,
+     "mean_pred": 0.98,
+     "observed": 0.5598,
+     "gap": 0.4201
+    }
+   ],
+   "n_features": 4096
+  },
+  {
+   "name": "fact_emb_mean_max",
+   "n": 885,
+   "accuracy": 0.5548,
+   "macro_f1": 0.5507,
+   "test_win_rate": 0.4712,
+   "pred_win_rate": 0.4328,
+   "macro_f1_ci95": [
+    0.5141,
+    0.5823
+   ],
+   "auroc": 0.5802,
+   "auroc_ci95": [
+    0.5411,
+    0.6142
+   ],
+   "ece": 0.3504,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 360,
+     "mean_pred": 0.016,
+     "observed": 0.4,
+     "gap": -0.384
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 53,
+     "mean_pred": 0.1493,
+     "observed": 0.5283,
+     "gap": -0.379
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 34,
+     "mean_pred": 0.2452,
+     "observed": 0.4118,
+     "gap": -0.1666
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 31,
+     "mean_pred": 0.3513,
+     "observed": 0.4839,
+     "gap": -0.1325
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 24,
+     "mean_pred": 0.4503,
+     "observed": 0.5417,
+     "gap": -0.0914
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 25,
+     "mean_pred": 0.5626,
+     "observed": 0.48,
+     "gap": 0.0826
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 29,
+     "mean_pred": 0.6454,
+     "observed": 0.5172,
+     "gap": 0.1281
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 31,
+     "mean_pred": 0.7521,
+     "observed": 0.3871,
+     "gap": 0.365
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 46,
+     "mean_pred": 0.856,
+     "observed": 0.5,
+     "gap": 0.356
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 252,
+     "mean_pred": 0.9817,
+     "observed": 0.5595,
+     "gap": 0.4222
+    }
+   ],
+   "n_features": 8192
+  },
+  {
+   "name": "fact_emb_softcluster",
+   "n": 885,
+   "accuracy": 0.5718,
+   "macro_f1": 0.5716,
+   "test_win_rate": 0.4712,
+   "pred_win_rate": 0.5107,
+   "macro_f1_ci95": [
+    0.5398,
+    0.6018
+   ],
+   "auroc": 0.6014,
+   "auroc_ci95": [
+    0.5662,
+    0.6371
+   ],
+   "ece": 0.0768,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 13,
+     "mean_pred": 0.0423,
+     "observed": 0.5385,
+     "gap": -0.4961
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 31,
+     "mean_pred": 0.1591,
+     "observed": 0.2903,
+     "gap": -0.1312
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 85,
+     "mean_pred": 0.2543,
+     "observed": 0.3176,
+     "gap": -0.0633
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 134,
+     "mean_pred": 0.3496,
+     "observed": 0.3582,
+     "gap": -0.0086
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 170,
+     "mean_pred": 0.455,
+     "observed": 0.4765,
+     "gap": -0.0214
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 178,
+     "mean_pred": 0.5486,
+     "observed": 0.4944,
+     "gap": 0.0542
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 151,
+     "mean_pred": 0.6444,
+     "observed": 0.5563,
+     "gap": 0.0881
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 83,
+     "mean_pred": 0.7484,
+     "observed": 0.5422,
+     "gap": 0.2063
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 34,
+     "mean_pred": 0.8469,
+     "observed": 0.6471,
+     "gap": 0.1998
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 6,
+     "mean_pred": 0.9345,
+     "observed": 1.0,
+     "gap": -0.0655
+    }
+   ],
+   "n_features": 345
+  }
+ ],
+ "paired": {
+  "masked text - fact_emb_mean": {
+   "mean_diff": 0.1085,
+   "ci95": [
+    0.0656,
+    0.1529
+   ],
+   "ci_excludes_zero": true
+  },
+  "fact_emb_mean - extracted fact text": {
+   "mean_diff": -0.0714,
+   "ci95": [
+    -0.1151,
+    -0.0287
+   ],
+   "ci_excludes_zero": false
+  },
+  "fact_emb_mean_max - fact_emb_mean": {
+   "mean_diff": 0.0229,
+   "ci95": [
+    -0.0148,
+    0.06
+   ],
+   "ci_excludes_zero": false
+  },
+  "fact_emb_softcluster - fact_emb_mean": {
+   "mean_diff": 0.0443,
+   "ci95": [
+    0.0013,
+    0.0875
+   ],
+   "ci_excludes_zero": true
+  },
+  "masked text - extracted fact text": {
+   "mean_diff": 0.0371,
+   "ci95": [
+    0.0146,
+    0.0605
+   ],
+   "ci_excludes_zero": true
+  }
+ },
+ "best_continuous": "fact_emb_softcluster",
+ "verdict": "FACT SELECTION IS THE BOTTLENECK: continuous facts land between the atoms and the full text, so what is lost is which facts get extracted, not how they are represented"
+}
