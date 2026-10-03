@@ -39,3 +39,6 @@ writeup/*.out
 writeup/*.toc
 writeup/*.xdv
 writeup/*.synctex.gz
+
+# 625MB, rebuilt deterministically in 2.8 min by `python -m src.data.corpus_wide`
+Data/interim/corpus_wide.jsonl

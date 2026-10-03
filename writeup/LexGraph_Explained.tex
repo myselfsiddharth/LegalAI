@@ -51,9 +51,9 @@ The project began as a system that would read a court judgment, pull structured 
 of it, and reason over them. It became something more useful and less flattering: a carefully
 leakage-controlled measurement apparatus which shows that \emph{essentially all of the apparent
 advantage of the published input construction is disposition language surviving the deletion of the
-operative order} --- replicated on two splits, with the court's own reasoning adding only
-$+0.02$--$0.03$ AUROC once that residue is removed, at the edge of what these sample sizes resolve
---- and that
+operative order} --- replicated on four splits over 26,688 judgments and significant in all eight
+decades from the 1950s to the 2020s, with the court's own reasoning adding only about $+0.025$ AUROC
+once that residue is removed --- and that
 \emph{converting facts into a symbolic vocabulary destroys most of the predictive signal they
 carry}. Both claims are supported by controlled experiments with confidence intervals, and both
 contradict what the project originally assumed. Along the way several genuinely positive results
@@ -794,18 +794,114 @@ the edge of what 700--850 cases can resolve --- not that it is established.
 
 \begin{tcolorbox}[plainbox,title={The corrected headline}]
 The input construction used by the published state of the art beats a facts-only input by
-$\mathbf{+0.181}$ AUROC (replicating at $+0.139$ on a second split). \textbf{Essentially all of that
-is an artifact of imperfect order removal.} Deleting the operative order leaves roughly
-\textbf{128 words} of outcome-telegraphing text in place; a 512-word window set back past that
-residue scores no better than the facts on either split ($+0.013$ and $+0.012$, both CIs spanning
-zero).
+$+0.111$ to $+0.181$ AUROC across four splits. \textbf{Essentially all of that is an artifact of
+imperfect order removal.} Deleting the operative order leaves roughly \textbf{128 words} of
+outcome-telegraphing text in place --- a boundary found \textbf{independently four times} --- and a
+512-word window set back past that residue scores no better than the facts on \emph{any} split.
 
 \smallskip
-With the contaminated tail removed, the court's \emph{entire} reasoning adds
-$\mathbf{+0.02}$--$\mathbf{0.03}$ AUROC --- around \textbf{one-seventh} of what it appears to add,
-significant on one split and marginal on the other. The defensible claim is that \textbf{the
-reasoning's contribution is small and hard to distinguish from zero}, not that it is substantial.
+With the contaminated tail removed, the court's \emph{entire} reasoning adds about
+$\mathbf{+0.025}$ AUROC (four runs, $+0.022$ to $+0.029$, significant in three). So the reasoning
+does matter --- but the apparent effect is \textbf{four to seven times} its real size.
+
+\smallskip
+Measured on \textbf{26,688 Supreme Court judgments}, 1950--2025, every case type, and significant in
+\textbf{all eight decades}.
 \end{tcolorbox}
+
+\subsubsection*{Does it hold beyond land disputes, and beyond small samples?}\label{sec:scale}
+
+Two objections survive everything above. The result might be an artifact of \emph{land-dispute}
+writing conventions, and 842 or 722 test cases is not many. The intended answer was a replication on
+ILDC (34,816 cases). That release is gated behind a review queue that may never be processed.
+
+It turned out not to be needed, because \textbf{the restriction to land disputes was ours, not the
+data's}. All \textbf{26,688} Supreme Court judgments, 1950--2025, were already on disk; the land
+subset was imposed by a provided spreadsheet. ILDC is drawn from the same population --- Indian
+Kanoon's Supreme Court judgments. Dropping the restriction took 2.8 minutes of parallel,
+API-free processing and yielded \textbf{14,168 usable cases} across criminal, tax, constitutional,
+service, company and land matters.
+
+This is a \emph{generalisation test}, not a replication: it reproduces neither ILDC's labels nor
+ILDC's deletion boundary. What it settles is whether the contamination belongs to Indian judicial
+writing or to one dispute type at small $n$.
+
+\begin{center}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+ & \multicolumn{2}{c}{\textbf{land only}} & \multicolumn{2}{c}{\textbf{all case types}} \\
+ & \code{forum} & \code{temporal} & \code{temporal} & \code{random} \\
+ & \emph{(842)} & \emph{(722)} & \emph{(2,288)} & \emph{(2,414)} \\
+\midrule
+\code{masked} AUROC & 0.656 & 0.577 & 0.628 & 0.723 \\
+\code{w0} (last 512) AUROC & 0.838 & 0.716 & 0.739 & 0.862 \\
+\midrule
+\code{w0} $-$ \code{masked} & $+0.181$ & $+0.139$ & $+0.111$ & $+0.139$ \\
+\code{w1} $-$ \code{masked} & $+0.013$ & $+0.012$ & $-0.022$ & $-0.006$ \\
+\emph{\quad significant?} & \emph{no} & \emph{no} & \emph{no} & \emph{no} \\
+\midrule
+\textbf{Advantage gone at} & \textbf{128 w} & \textbf{128 w} & \textbf{128 w} & \textbf{128 w} \\
+\bottomrule
+\end{tabular}
+\captionof{table}{The setback result on four independent splits. Sources:
+\code{experiments/paper1/leakage\_setback\_*.json},
+\code{corpus\_scale\_setback\_*.json}.}
+\end{center}
+
+\textbf{The 128-word boundary is found independently four times.} On the two corpus-wide runs
+\code{w1}, \code{w2} and \code{w3} sit \emph{at or below} \code{masked}: 512 words of the court's
+reasoning drawn from anywhere but the final stretch carry no more outcome signal than the facts, and
+sometimes less.
+
+\paragraph{It is not a pre-2000 reporting artifact} The corpus spans 75 years and the pre-2000
+HEADNOTE convention is a plausible alternative explanation. It is not the cause --- the effect is
+significant in \textbf{every decade}:
+
+\begin{center}
+\begin{tabular}{@{}lrrrrrrrr@{}}
+\toprule
+decade & 1950s & 1960s & 1970s & 1980s & 1990s & 2000s & 2010s & 2020s \\
+$n$ & 112 & 438 & 377 & 292 & 278 & 338 & 349 & 230 \\
+\midrule
+\code{w0}$-$\code{masked} & $+0.179$ & $+0.325$ & $+0.186$ & $+0.180$ & $+0.171$ & $+0.163$ & $+0.096$ & $+0.115$ \\
+significant & yes & yes & yes & yes & yes & yes & yes & yes \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The 1960s peak and the mild decline after 2000 are consistent with the HEADNOTE convention
+\emph{adding} to the effect, but the effect plainly does not depend on it.
+
+\paragraph{And the reasoning's contribution now resolves} The one claim that failed to replicate in
+Section~\ref{sec:contamination} was whether the reasoning adds anything at all. At larger $n$ it
+settles:
+
+\begin{center}
+\begin{tabular}{@{}lrc@{}}
+\toprule
+\textbf{Run} & \code{ildc\_minus128} $-$ \code{masked} & \textbf{Sig.} \\
+\midrule
+land \code{forum} (842)      & $+0.027$ $[+0.014, +0.039]$ & yes \\
+land \code{temporal} (722)   & $+0.022$ $[-0.0002, +0.043]$ & \emph{no} \\
+corpus \code{temporal} (2,288) & $+0.023$ $[+0.010, +0.035]$ & yes \\
+corpus \code{random} (2,414)   & $+0.029$ $[+0.022, +0.036]$ & yes \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Four point estimates between $+0.022$ and $+0.029$, significant in three, and the one failure is the
+smallest test set. \textbf{The court's reasoning does carry real signal, of about $+0.025$ AUROC ---
+and the apparent effect is four to seven times larger.} The earlier non-replication was a power
+problem, not a contradiction.
+
+\paragraph{The methodological payoff} Across the four runs the \emph{cue} audit's enrichment
+statistic came out $+0.150$, $-0.058$, $+0.018$ and approximately zero --- it failed to replicate
+three times out of four. The \emph{positional} curve held in all four, with the same boundary each
+time. Since the published methods for localising leakage are lexical (cue words, trigrams,
+human-flagged features; see Section~\ref{sec:prior}), this is the project's strongest
+methodological claim: \textbf{the standard way of finding leakage is unstable across case mixes, and
+a cue-free positional measurement is not} --- demonstrated on 26,688 judgments with a failed lexical
+arm inside every run.
 
 \subsubsection*{Is the baseline itself clean?}\label{sec:baseline}
 
@@ -1302,6 +1398,21 @@ before anyone checked the power log.
 \end{enumerate}
 
 %==============================================================================
+\section{Prior art, and what is actually ours}\label{sec:prior}
+
+Both headline findings independently rediscover active, recently-published work. Three papers were
+located and verified: Nigam \& Deroy (arXiv:2311.13350, Nov 2023) run facts-only prediction on ILDC
+itself and report it worse than the full-document setup; Watson et al. (arXiv:2607.04261, Jul 2026)
+establish shortcut learning on 33,158 UK Employment Tribunal claims, identifying leakage by human
+judgment and lexical feature flagging; and Sadowski \& Chudziak (arXiv:2608.12326, May 2026) measure
+semantic loss when legal text is ontologised.
+
+So neither critique is new. What is ours is narrower: the volume-controlled \emph{positional}
+setback curve and its quantified margin (Section~\ref{sec:scale}), and --- for
+Section~\ref{sec:head2} --- the induced-versus-authored vocabulary control, which Sadowski \&
+Chudziak explicitly state they do not perform, concluding that their loss is \emph{not} from
+discretisation alone. \code{reports/SIGNIFICANCE.md} holds the full positioning.
+
 \section{Claims this project held and gave up}\label{sec:retracted}
 
 Research projects usually report what survived. This one kept a record of what did not, because the
@@ -1407,10 +1518,10 @@ our corpus as a comparable construction of ILDC's task. The module that runs the
 ILDC's own released text and labels is written and tested; the dataset is gated behind a licence whose
 acceptance belongs to the user, and the module refuses to route around the gate. Until it runs, the
 headline is a strong internally-controlled result, not a replication.
-\item \textbf{Whether the court's reasoning adds anything at all.} With the contaminated tail
-removed, the whole-document arm beats facts-only by $+0.027$ on \code{forum\_heldout} (significant)
-and $+0.022$ on \code{temporal\_2004\_2013} (CI lower bound $-0.0002$). The point estimates agree,
-but one interval includes zero, so this is \textbf{not} established at these sample sizes.
+\item \textbf{ILDC's own boundary.} The corpus-scale run (§\ref{sec:scale}) shows a cut
+\emph{like} ILDC's leaves residue across 26,688 judgments. It cannot show that \emph{their} specific
+cut does, because it reproduces neither their labels nor their boundary. That still needs the gated
+release, which is optional rather than load-bearing.
 \item \textbf{What the cue scrub cannot separate.} The residual-leakage audit is done
 (Section~\ref{sec:contamination}) and found contamination reaching about 128 words. But
 \code{w0\_scrubbed} and \code{w0\_cue\_free} both remain above \code{masked}, so some
@@ -1446,6 +1557,7 @@ section says plainly which numbers are current.
 Leakage probe (§\ref{sec:sensitivity})      & \textbf{current} & TF-IDF over text; independent of the fact layer \\
 Reasoning ablation (§\ref{sec:head1})       & \textbf{current} & Re-run after the fix \\
 Setback / contamination (§\ref{sec:contamination}) & \textbf{current} & New, 1--2 Oct 2026; both splits \\
+Corpus-scale setback (§\ref{sec:scale}) & \textbf{current} & New, 3 Oct 2026; 26,688 judgments \\
 Baseline integrity (§\ref{sec:baseline}) & \textbf{current} & New; TF-IDF over text \\
 Corpus, labels, splits (§\ref{sec:data})    & \textbf{current} & Upstream of facts \\
 Extractor benchmark (§\ref{sec:pipeline})   & \textbf{current} & Fixed 20-case set \\
@@ -1611,6 +1723,8 @@ python -m src.eval.leakage\_probe --split forum\_heldout\\
 python -m src.eval.reasoning\_ablation --split forum\_heldout\\
 python -m src.eval.leakage\_setback --split forum\_heldout\\
 python -m src.eval.masked\_integrity --split forum\_heldout\\
+python -m src.data.corpus\_wide\\
+python -m src.eval.corpus\_scale\_setback --split temporal\\
 python -m src.eval.representation\_ladder --split forum\_heldout\\
 python -m src.eval.vocab\_ab --split forum\_heldout\\
 python -m src.authorities.statute\_predict --split forum\_heldout\\
