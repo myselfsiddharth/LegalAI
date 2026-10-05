@@ -1398,6 +1398,152 @@ before anyone checked the power log.
 \end{enumerate}
 
 %==============================================================================
+\section{We then built the intended system properly, and found out why it fails}\label{sec:v2}
+
+Everything so far tests a pipeline that was \emph{designed} one way and \emph{built} another. The
+original plan --- and the one a lawyer would recognise --- goes like this:
+
+\begin{center}
+facts $\rightarrow$ tidy them into standard categories $\rightarrow$ find patterns $\rightarrow$
+check which \textbf{legal requirements} are met $\rightarrow$ decide who wins
+\end{center}
+
+A \textbf{legal requirement}, or \emph{element}, is a box a claim must tick. To win a claim of
+\emph{adverse possession} --- taking ownership of land by occupying it long enough --- you must show
+possession that was open, continuous, hostile to the owner, and lasted the statutory period. Those
+four are the elements. An \textbf{ontology} is the formal dictionary listing them: ours has 15 claim
+types and 66 elements.
+
+Section~\ref{sec:head2} looked like a verdict on that whole design. It was not, because two things
+were built wrongly, and we rebuilt them (the code is in \code{v2/}).
+
+\subsection{Mistake one: we forced every fact into exactly one box}
+
+An \textbf{embedding} turns a sentence into a list of 4,096 numbers so a computer can measure
+meaning-similarity --- sentences about mortgages end up near each other. The design said to group
+facts \emph{using} those numbers. Instead the original code forced each fact into exactly one of 345
+named labels: a hard either/or.
+
+We rebuilt it to stay \emph{soft}, so a fact can be 70\% one thing and 30\% another:
+
+\begin{center}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+\textbf{How the case is represented} & \textbf{AUROC} & \textbf{numbers used} \\
+\midrule
+the raw masked text & 0.666 & 50,000 \\
+\textbf{facts, kept soft} & \textbf{0.633} & \textbf{345} \\
+facts as plain text & 0.629 & 47,354 \\
+facts forced into one box each (the original) & 0.517 & 345 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Done properly, this step loses almost nothing} --- 345 numbers do the work of 47,354. So a
+large part of the apparent failure was our implementation, not the idea.
+
+\paragraph{A correction we owe you} We first reported that the hard either/or was responsible for all
+of that $+0.116$ gain. That was wrong, and wrong in the project's own characteristic way: we compared
+two things that differed in \emph{three} respects and blamed one of them. Isolated properly, the
+either/or accounts for $+0.040$, and that is not statistically reliable. The gain is real; the single
+cause was not.
+
+\subsection{Mistake two: we judged every stage by the hardest question}
+
+Every middle stage was scored on predicting the winner --- which Section~\ref{sec:ceiling} shows is
+near-unlearnable here. In the rebuild each stage is scored on its own job instead.
+
+\subsection{The element checker: good at its job, useless for predicting}
+
+We built the missing stage. For each case it decides, per element, SATISFIED / NOT SATISFIED /
+UNCLEAR, and it \textbf{must quote the fact it relied on}. We then check mechanically that the quote
+really appears. If it does not, the answer is thrown away and counted as a refusal --- which gives us
+a cheating-detector that needs no answer key.
+
+Over 40,078 judgements it invented support only \textbf{0.62\%} of the time, and when we accidentally
+ran the whole thing twice it agreed with itself \textbf{96.9\%} of the time. One answer it produced
+unprompted: \emph{``Sham Lal was a tenant''} defeats an adverse-possession claim --- a tenant occupies
+\emph{with permission}, and the law demands hostile possession. That is genuine legal reasoning.
+
+Then we asked whether those element scores predict the winner better than the plain facts they came
+from. \textbf{They are much worse: 0.521 against 0.633.}
+
+\subsection{Why --- and this explains everything}
+
+We tried three fixes. Two were our own ideas and both failed, which is what made the third answer
+trustworthy.
+
+\begin{enumerate}
+\item Maybe our bookkeeping conflated ``we asked and the facts are silent'' with ``we never asked''.
+      It did. Fixing it was worth $-0.003$.
+\item Maybe we repeated mistake one, one level up, by collapsing a rich judgement into three labels.
+      So we built a soft version. It scored 0.524 --- \textbf{no better}.
+\item Maybe it is the \emph{set of questions} itself.
+\end{enumerate}
+
+To test the third we compared two sets of exactly \textbf{66} categories, same method, same cases:
+
+\begin{center}
+\begin{tabular}{@{}lr@{}}
+\toprule
+\textbf{66 categories, chosen two different ways} & \textbf{AUROC} \\
+\midrule
+groups the \emph{data} suggests & \textbf{0.632} \\
+the 66 elements the \emph{law} prescribes & \textbf{0.524} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Then we named all 66 data-driven groups and sorted them by kind. Legal-substance facts alone scored
+\textbf{0.606}. Court-procedure facts alone, \textbf{0.609}. Dates and amounts alone, \textbf{0.604}.
+
+\begin{tcolorbox}[plainbox,title={The explanation}]
+\textbf{All the same.} Slice the facts any way you like and you get about 0.60.
+
+\smallskip
+\textbf{There is no concentrated signal to find.} It is weak and spread thinly across everything. A
+representation that \emph{covers} the whole space catches the smear ($0.63$). A set of 66 specific
+legal questions --- only about 8 of which get asked per case --- misses it ($0.52$).
+\end{tcolorbox}
+
+So \textbf{no better ontology would fix this}. There is no joint to carve. The data-driven groups are
+not a superior dictionary; they just happen to cover everything.
+
+\subsection{But the groups do say something real}
+
+Sorted by which way they lean, the pattern is striking. Facts about \emph{land reform legislation},
+\emph{proprietary rights vesting in the State}, \emph{princely-state accession} and \emph{religious
+endowments} all point to LOSE. Facts about \emph{document execution} and \emph{contract performance}
+point to WIN.
+
+\textbf{Post-independence land-reform cases against the State lose; private contract and document
+disputes win.} That is a real observation about Indian land law --- about \emph{what kind of fight
+this is}, not about whether a box was ticked. And it is exactly why an element checklist could not
+see it: elements ask ``was the possession hostile?'', while the data says ``is this a 1950s estate
+abolition against the government, or two neighbours arguing over a sale deed?''
+
+\subsection{So can we beat the published 78\%?}
+
+\textbf{Yes, easily, and it would be worthless.} We already reach 77.6\% reading the same contaminated
+final window. Beating 78\% that way just means getting better at reading the answer off the page.
+
+\textbf{On the honest task --- facts only --- our best is 62.1\%}, sixteen points below, and six
+separate lines of evidence say that gap is close to irreducible.
+
+There is one fair criticism of us: \textbf{we never fine-tuned anything.} Everything here is simple
+word-counting plus some off-the-shelf model calls, while the published work trained large models
+properly. That would plausibly buy 4--6 points. Still not sixteen.
+
+\begin{tcolorbox}[plainbox,title={The comparison to refuse}]
+\textbf{Never print our honest number next to their 78\%.} A reader sees 62\% against 78\% and
+concludes we did worse --- when we are measuring something strictly harder. Making that comparison is
+the precise mistake this project exists to expose.
+
+\smallskip
+Report both, with the gap as the finding: \emph{on the published setup we reach 77.6\%, reproducing
+the reported 78\%; on facts alone, the same machinery reaches 62.1\%.}
+\end{tcolorbox}
+
 \section{Prior art, and what is actually ours}\label{sec:prior}
 
 Both headline findings independently rediscover active, recently-published work. Three papers were

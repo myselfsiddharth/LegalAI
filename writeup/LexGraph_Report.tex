@@ -60,6 +60,18 @@ particular ontology: a corpus-induced vocabulary of equal granularity is statist
 indistinguishable from the hand-authored one ($P=0.846$), more labels do not help, and the cost is
 concentrated precisely where the vocabulary \emph{succeeds} in naming a fact.
 
+\textbf{Third}, §\ref{sec:v2} rebuilds the \emph{intended} architecture --- the one this project set
+out to construct --- correctly, and localises where it loses information. Done properly, fact
+families lose nothing (0.633 from 345 dimensions against 0.629 for the 47,354-feature text they
+derive from). The element layer, by contrast, reaches 0.521 and fails its acceptance test, and three
+explanations for that were tested before the right one survived: the cause is the \emph{basis}, not
+the encoding. At matched granularity a data-driven basis scores 0.632 where the 66-element doctrinal
+basis scores 0.524. Naming all 66 induced clusters shows why: legal-substance facts alone, procedural
+facts alone and dates alone all score $\approx 0.605$, so \textbf{the outcome signal is diffuse
+rather than concentrated}, a spanning basis captures it and a selective doctrinal probe cannot, and no
+ontology would unlock it. §\ref{sec:can78} addresses whether the published 78\% can be beaten:
+trivially yes on the leaky task, almost certainly not on the honest one.
+
 Neither critique is new to the literature, and §\ref{sec:prior} positions both against verified
 prior work. What is defensibly ours is methodological, and §\ref{sec:prior} says which parts. Three
 constructive results stand alongside: statute prediction at $1.9\times$ the strongest baseline,
@@ -105,8 +117,9 @@ its original spec number in the heading, and the table maps them.
 \end{center}
 
 \noindent
-Results that are not in the specification at all --- the leakage measurement that became the
-project's main finding --- are in §\ref{sec:leakage}. §\ref{sec:engineering} is the development
+Results that are not in the specification at all are in §\ref{sec:leakage} (the leakage measurement
+that became the project's main finding) and §\ref{sec:v2} (the intended architecture, rebuilt
+correctly and measured, whose code lives in \code{v2/}). §\ref{sec:engineering} is the development
 record: the defects found and what each would have caused. §\ref{sec:retracted} lists claims held
 and withdrawn. §\ref{sec:blockers} is what is \emph{not} established.
 
@@ -818,6 +831,377 @@ LLM given raw text. It did: macro-F1 0.469 vs 0.491.
 The downstream consequence is §\ref{sec:patterns}: 0 of 498 patterns survive correction.
 
 %==============================================================================
+%==============================================================================
+\section{The intended architecture, built properly and measured (v2)}\label{sec:v2}
+
+Everything above measures a pipeline that was \emph{specified} one way and \emph{implemented}
+another. The intended design --- the professor's framing, and the project's original plan --- runs:
+
+\begin{center}
+facts $\rightarrow$ fact families $\rightarrow$ fact patterns by claim family $\rightarrow$
+\textbf{elements} $\rightarrow$ claims and defences $\rightarrow$ issues $\rightarrow$ win/lose
+\end{center}
+
+\noindent
+with a second input stream from \textbf{authorities} (statutes, precedents) supplying the rules that
+define each element. §\ref{sec:discretisation} appeared to condemn that design. It did not, because
+v1 got two things wrong about it, and §\ref{sec:v2} is the rebuild. The code lives in \code{v2/},
+additive and importing from \code{src/} rather than duplicating it; \code{v2/ARCHITECTURE.md} is its
+plan.
+
+\paragraph{Error 1 --- step 2 was built in its lossiest form} The design says \emph{``fact family ---
+classification model run on all embeddings of the facts''}. v1 instead hard-mapped each fact onto one
+of 345 authored labels by \code{argmax}.
+
+\paragraph{Error 2 --- every layer was scored on win/lose} Which §\ref{sec:outcome} shows is near
+unlearnable here. The visible consequence is that v1's model runs with
+\code{features\_per\_group = \{F, S, R, C, Q\}}: groups \code{P} and \code{E}, the two middle stages
+of the intended design, are both \textbf{empty}. In v2 every stage is scored on its own task.
+
+\subsection{S2 --- soft fact families}\label{sec:s2}
+
+Keeping the embeddings and assigning softly, with no \code{argmax}. Same 885 test cases, $k=345$:
+
+\begin{center}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+\textbf{Representation} & \textbf{AUROC} & \textbf{dims} \\
+\midrule
+masked text & 0.666 & 50,000 \\
+\textbf{soft histogram, temperature 0.25--0.5} & \textbf{0.633} & \textbf{345} \\
+extracted fact text & 0.629 & 47,354 \\
+hard \code{argmax}, same centroids & 0.592 & 345 \\
+embedding mean & 0.558 & 4,096 \\
+canonical atoms (v1's choice) & 0.517 & 345 \\
+\bottomrule
+\end{tabular}
+\captionof{table}{\code{v2/experiments/s2\_soft\_families\_forum\_heldout.json}.}
+\end{center}
+
+\textbf{Step 2 done right loses essentially nothing}: 345 dimensions match the 47,354-feature fact
+text they derive from, and $+0.116$ over v1. A uniform blur scores 0.512, confirming the
+representation carries nothing structural by construction, and AUROC declines monotonically as the
+temperature sharpens toward the \code{argmax}.
+
+\paragraph{A correction, recorded rather than quietly fixed} The first write-up of this result claimed
+``the \code{argmax} alone costs $+0.084$ AUROC''. That was an over-attribution of exactly the
+single-cause kind this project kept making: the $+0.084$ compared a soft histogram against v1's
+canonical atoms, which differ in \emph{three} ways at once --- soft versus hard, corpus-induced
+centroids versus authored labels, and histogram versus binary encoding. Controlled properly, with
+identical centroids and encoding and only soft-versus-hard varying, the \code{argmax} costs
+$+0.040$, 95\% CI $[-0.0015, +0.0826]$: \textbf{marginally not significant}. The $+0.116$ is real and
+remains the largest single improvement available, but it is a combination, not one mechanism.
+
+\subsection{S4 --- the element layer}\label{sec:s4}
+
+v1 skipped this entirely because the burden metadata it wanted does not exist for any of the 66
+elements (B2, §\ref{sec:blockers}), leaving the architecture's central claim unmeasured. v2 builds it
+unweighted: one call per (case, claim), a three-way verdict per element, and a \textbf{verbatim quote}
+that is mechanically checked against the facts shown. A verdict whose quote cannot be located is
+discarded and counted as a refusal, which yields a fabrication metric needing \emph{no ground truth}.
+
+Full run: 4,674 cases $\times$ top-2 claims $=$ 9,348 calls, 102 minutes.
+\textbf{40,078 gated verdicts} --- 13,008 SATISFIED (32\%), 1,481 NOT\_SATISFIED (3.7\%), 25,589
+UNCLEAR (64\%). \textbf{Fabrication 0.62\%} (206 quotes absent, 44 too short). Zero never-answered,
+zero schema failures.
+
+\paragraph{The model had to change, and establishing why took three tests} \code{llama4-scout-17b} ---
+v1's default everywhere, chosen on an extraction benchmark where it matched models 6.8$\times$ slower
+--- emits \textbf{zero} NOT\_SATISFIED. A layer that cannot say that cannot express the
+``or defeat'' half of the design, so this was blocking rather than cosmetic.
+
+\begin{center}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+\textbf{Condition} & \textbf{SAT} & \textbf{NOT\_SAT} & \textbf{UNCLEAR} & \textbf{fabricated} \\
+\midrule
+\code{scout} & 15 & \textbf{0} & 150 & 0.6\% \\
+\code{scout}, prompt rewritten to solicit negatives & 23 & \textbf{0} & 151 & 0.6\% \\
+\code{scout}, shown the court's reasoning (leaky diagnostic) & 21 & \textbf{0} & 149 & 2.9\% \\
+\textbf{\code{qwen3-235b-a22b-instruct-2507}} & 27 & \textbf{4} & 56 & \textbf{0.0\%} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Two hypotheses were refuted before the third was confirmed: \emph{prompt over-correction} (rewriting
+it to call the verdict ``common in contested litigation'' with five examples changed nothing), and
+\emph{defeats live in the reasoning that §\ref{sec:masking} removes} (showing the model that text
+still gave zero). It is the model --- and the larger one fabricates \emph{less}.
+\textbf{A model choice validated for extraction does not transfer to judgement tasks.}
+
+\paragraph{The verdicts are legally sensible} The clearest NOT\_SATISFIED produced:
+\emph{``Sham Lal was a tenant of a room in property unit No.\ B-VI-33''}, defeating an
+adverse-possession element --- tenancy is permissive possession, so it negates hostility. That is the
+inference the architecture exists to make, and it arrived unprompted.
+
+\paragraph{An accidental reliability study} Two S4 processes ran concurrently --- a launch wrongly
+believed to have failed, plus its replacement --- and both wrote the same file: 18,696 rows for 9,348
+jobs, exactly 2$\times$ every key. \textbf{This is the ``driver ran two stages at once'' defect of
+§\ref{sec:engineering} recurring}, and the lesson is the same: verify a background job started rather
+than inferring it from absent output. Deduplicated on \code{(case\_id, claim\_id)}, the accident
+bought a free test--retest study at temperature~0:
+
+\begin{center}
+\begin{tabular}{@{}lr@{}}
+\toprule
+element verdicts comparable across both runs & 40,000 \\
+\textbf{agree} & \textbf{38,752 (96.9\%)} \\
+disagree & 1,248 (3.1\%) \\
+\quad SATISFIED $\leftrightarrow$ UNCLEAR & 854 \\
+\quad NOT\_SATISFIED $\leftrightarrow$ UNCLEAR & 237 \\
+\quad \textbf{SATISFIED $\leftrightarrow$ NOT\_SATISFIED} & \textbf{157 (0.4\%) --- sign flips} \\
+identical quote when both agree on a non-UNCLEAR verdict & 92.7\% \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+96.9\% exceeds v1's 87.0\% rules-versus-LLM label agreement. It also establishes that
+\textbf{temperature 0 with a fixed seed is not deterministic on this endpoint}, which matters before
+any result here is described as exactly reproducible.
+
+\subsection{The acceptance test, and why S4 fails it}\label{sec:s4fail}
+
+The architecture's central claim --- that elements are the right intermediate representation --- is
+falsifiable without gold: \emph{do element features predict the outcome better than the S2 soft fact
+representation they are derived from?} S2 is the honest baseline rather than v1's atoms, since both
+come from the same facts, so a gain is attributable to the element abstraction and not to better
+preprocessing.
+
+\begin{center}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+\textbf{Arm} & \textbf{AUROC} & \textbf{features} \\
+\midrule
+S2 soft facts & \textbf{0.633} & 345 \\
+\textbf{S4 elements} & \textbf{0.521} & 70 \\
+S2 + S4 & 0.616 & 415 \\
+\bottomrule
+\end{tabular}
+\quad
+\begin{tabular}{@{}lrc@{}}
+\toprule
+\textbf{Comparison} & \textbf{$\Delta$} & \textbf{95\% CI} \\
+\midrule
+S4 $-$ S2 & $-0.1125$ & $[-0.1625, -0.0639]$ \\
+S2{+}S4 $-$ S2 & $-0.0169$ & $[-0.0345, +0.0011]$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Not a null --- significantly worse.} The element layer destroys most of the signal in the
+facts it derives from, and adding it to S2 does not help.
+
+\paragraph{Three explanations, two of them mine and both refuted} All testable for free, since every
+fact carries a cached embedding. Same matched 730 cases:
+
+\begin{center}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+\textbf{Arm} & \textbf{AUROC} & \textbf{features} \\
+\midrule
+masked text (ceiling) & 0.659 & 50,000 \\
+S2 soft facts & 0.617 & 345 \\
+S4, old $\pm1/0$ encoding & 0.531 & 66 \\
+S4, \emph{H1}: asked-and-unclear separated from never-asked & 0.529 & 264 \\
+S4, \emph{H2}: \textbf{soft} element similarity, no LLM at all & 0.524 & 66 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\emph{H1} --- UNCLEAR and never-asked were both encoded 0, conflating two different facts about the
+world. True, and worth $-0.003$. \emph{H2} --- S4 hard-discretises into three labels, repeating S2's
+own mistake one level up; the analogue of S2's winning move is a continuous 66-dimensional
+element-similarity vector straight from the embeddings. It scores 0.524, \textbf{no better than the
+hard version}. Softening bought $+0.116$ at the fact level and \emph{nothing} at the element level.
+
+\paragraph{The matched-granularity control that settles it} The last confound was dimensionality, 345
+against 66. So S2 was re-run at $k=66$:
+
+\begin{center}
+\begin{tabular}{@{}lr@{}}
+\toprule
+\textbf{66-dimensional basis, soft, same embeddings, same cases} & \textbf{AUROC} \\
+\midrule
+\textbf{induced centroids} (data-driven) & \textbf{0.632} \\
+\textbf{authored legal elements} (doctrine) & \textbf{0.524} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+And induced-66 (0.632) equals induced-345 (0.633), so \textbf{granularity is irrelevant} and the
+confound is dead. S4 fails on neither channel width, nor quantisation, nor encoding, but on the
+\textbf{basis}.
+
+\paragraph{A flaw in the acceptance test, stated} Masked text reaches 0.659 and S2 reaches 0.617, so
+\textbf{any fact-derived layer has at most 0.043 to gain over S2}. ``Beat S2'' was close to
+unwinnable and the test should have said so. It does not excuse 0.524, which is far \emph{below} S2
+rather than merely failing to exceed it, but the bar was badly set.
+
+\subsection{Naming the induced clusters --- the finding that explains all of it}\label{sec:names}
+
+If the data-driven basis beats the doctrinal one, perhaps the clusters \emph{are} a better ontology.
+All 66 were named by \code{qwen3-235b} from their twelve nearest facts, with a \code{kind} field and
+a prompt written to resist the flattering answer --- it states that an honest \code{procedural} label
+is worth more here than a legal-sounding one. 66 of 66 named.
+
+\begin{center}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+\textbf{kind} & \textbf{all 66} & \textbf{top 20 by train-only strength} \\
+\midrule
+legal\_substance & 27 (41\%) & 8 (40\%) \\
+procedural & 19 & 8 \\
+temporal\_quantum & 18 & 4 \\
+party\_entity & 2 & 0 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Kind does not predict predictiveness.} Restricting the 66-dimensional histogram to each kind:
+
+\begin{center}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+\textbf{Basis} & \textbf{AUROC} & \textbf{dims} \\
+\midrule
+all 66 clusters & 0.632 & 66 \\
+procedural only & 0.609 & 19 \\
+legal\_substance only & 0.606 & 27 \\
+temporal\_quantum only & 0.604 & 18 \\
+all \emph{minus} procedural & 0.622 & 47 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{tcolorbox}[plainbox,title={The finding that explains the whole sequence}]
+Every subset lands at 0.604--0.632. Legal substance alone, court machinery alone, and dates and sums
+alone are \emph{indistinguishable}. \textbf{There is no concentrated outcome signal in these facts.
+It is weak and smeared across the entire fact space, so any reasonably complete projection captures
+most of it and no projection captures much.}
+\end{tcolorbox}
+
+That single fact explains everything above: why S2 scores $\approx 0.63$ at both $k=66$ and $k=345$
+(both \emph{span} the space); why the authored elements reach only 0.524 (66 doctrinal elements are a
+\emph{selective probe} --- about 8 asked per case, each a specific legal proposition --- not a
+spanning basis, so they miss a diffuse signal); why softening the element layer bought nothing; and
+why the headroom above S2 is only 0.043.
+
+\textbf{So there is no ontology that unlocks this}, because there is no concentrated structure to
+carve. The induced clusters are not a better ontology waiting to be read off --- they win by
+\emph{covering} the fact space.
+
+\paragraph{What the clusters do say: a dispute-regime regularity} The content is coherent even though
+it is not elemental. The LOSE-direction legal clusters are almost all one thing:
+
+\begin{center}
+\begin{tabular}{@{}llp{6.4cm}@{}}
+\toprule
+\textbf{Cluster} & \textbf{Favours} & \textbf{Example member fact} \\
+\midrule
+\code{land\_reforms\_legislation\_enactment} & LOSE & ``The West Bengal Land Reforms Act, 1955 was introduced'' \\
+\code{vesting\_of\_proprietary\_rights} & LOSE & ``Proprietary rights in sir and khudkashat land \ldots{} vested in the State'' \\
+\code{land\_vesting\_in\_state} & LOSE & \\
+\code{accession\_of\_princely\_states} & LOSE & \\
+\code{religious\_endowment\_and\_institution} & LOSE & \\
+\code{document\_execution\_and\_admission} & \textbf{WIN} & \\
+\code{contract\_performance\_failure} & \textbf{WIN} & \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Post-independence land-reform and state-vesting cases lose; private document and contract
+disputes win.} That is a finding about Indian land jurisprudence --- a \emph{subject-matter regime}
+regularity, not element satisfaction --- and it is precisely why an element ontology could not
+capture it. Elements ask ``is hostility established?''; the data says ``is this a zamindari abolition
+matter against the State, or a private sale-deed dispute?''
+
+\paragraph{A masking defect found on the way} The strongest single cluster,
+\code{dismissal\_of\_appeal\_or\_petition}, has member facts reading literally ``The appeal was
+dismissed''. \code{mask.py}'s \code{OUTCOME\_CUE} matches \code{is|are|stands|shall stand} and
+\textbf{not the past tense}, while \code{PRIOR\_COURT\_DISPOSITION} requires a named forum. So all of
+these escape \emph{both} detectors: ``The appeal was dismissed'', ``The suit was dismissed on the
+ground of limitation'', ``The Munsif dismissed the suit''. It favours \textbf{WIN}, which is the
+signature of a \emph{prior-court} disposition rather than leakage of this court's order --- the party
+lost below, obtained leave, and succeeded here --- so it is group \code{Q}'s procedural shortcut
+reappearing inside the fact stream. The decomposition above bounds the damage at \textbf{0.010}
+AUROC, so it drives no reported result, but \code{OUTCOME\_CUE} should gain past-tense forms and
+\code{PRIOR\_COURT\_DISPOSITION} a wider forum list.
+
+\subsection{Where everything ranks}\label{sec:ranking}
+
+Every non-leaky arm in either version, best first. Case sets differ slightly where noted; the
+\code{masked}-versus-S2 comparison is paired on 730 identical cases at $+0.0429$, CI
+$[+0.0089, +0.0752]$.
+
+\begin{center}
+\begin{tabular}{@{}rlrrl@{}}
+\toprule
+& \textbf{Arm} & \textbf{AUROC} & \textbf{features} & \textbf{Version} \\
+\midrule
+1 & \textbf{masked text, plain TF-IDF} & \textbf{0.666} & 50,000 & v1 \\
+2 & S2 soft fact families & 0.633 & 345 & \textbf{v2} \\
+3 & extracted fact text & 0.629 & 47,354 & v1 \\
+4 & \code{gbm C only} (metadata alone) & 0.612 & 38 & v1 \\
+5 & \code{lr S only} (statutes alone) & 0.611 & 49 & v1 \\
+6 & \code{gbm F+P+E+S+R+C} (full engineered stack) & 0.609 & 1,415 & v1 \\
+7 & canonical atoms & 0.536 & 1,313 & v1 \\
+8 & \textbf{S4 elements} & \textbf{0.521} & 70 & \textbf{v2} \\
+\midrule
+\multicolumn{5}{@{}l}{\emph{per-decade majority baseline: macro-F1 0.554, against S2's 0.612}} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Two readings matter. \textbf{S2 matches v1's entire 1,415-feature engineered pipeline using 345
+dimensions and no side inputs at all} --- no statutes, no precedents, no metadata --- which is a real
+win on parsimony. And \textbf{plain TF-IDF over the text still beats everything}, significantly. After
+both versions, the simplest method in the project is the best non-leaky predictor.
+
+\subsection{Can the published 78\% be beaten?}\label{sec:can78}
+
+The question splits in two and only one half is worth answering.
+
+\textbf{On the published task} --- reasoning included --- we already reach \textbf{77.6\% accuracy}
+with TF-IDF and logistic regression against the reported 78\%, and a fine-tuned transformer reading
+the same window would very likely clear it. \textbf{That result would be worthless}, because
+§\ref{sec:contamination} shows the window is essentially all leftover disposition language. Beating
+78\% that way means getting better at reading the answer off the page.
+
+\textbf{On the honest task} --- facts and arguments only --- the best arm reaches \textbf{62.1\%
+accuracy}, sixteen points below. Six independent lines say that gap is close to irreducible: the
+masked-text ceiling of 0.659--0.666 across four splits and 26,688 judgments; every structured model at
+or below a per-decade majority baseline; five LLM configurations likewise; model and LLM errors
+statistically \emph{independent} (§\ref{sec:outcome}); all kinds of fact scoring $\approx 0.605$
+(§\ref{sec:names}); and only 0.043 of headroom above S2.
+
+\paragraph{The one legitimate gap, and it is ours} \textbf{Nothing in this project was ever
+fine-tuned.} Every model here is TF-IDF with logistic regression, plus zero-shot and few-shot LLM
+calls; ILDC used fine-tuned transformer models with hierarchical encoding. In this literature
+fine-tuning typically buys 2--6 accuracy points over TF-IDF, so an honest estimate is
+$0.62 \rightarrow 0.66$--$0.68$ --- real, worth having, and still ten points short. Three smaller
+legitimate levers: the 14,168 rules-labelled cases of §\ref{sec:scale} (2.7$\times$ more training
+data); cleaner labels, since 87\% labeller agreement mathematically caps measurable accuracy; and
+judge or bench identity, which \emph{is} known before a decision and which §\ref{sec:masking}
+excluded on principle --- though v1's metadata-only arm already reached 0.612 and adding facts to it
+did not help, so it likely saturates near 0.63 too.
+
+\begin{tcolorbox}[plainbox,title={The comparison to refuse}]
+\textbf{Never place this project's honest number beside the published 78\%.} A reader sees 0.68
+against 0.78 and concludes we did worse, when the two measure different things and ours is strictly
+harder. That comparison is the exact error this project exists to expose.
+
+\smallskip
+State both with the gap as the result: \emph{on the published input construction we reach 77.6\%,
+essentially reproducing the reported 78\%; on facts and arguments alone the same apparatus reaches
+62.1\%. The fifteen-point gap is the measurement.}
+\end{tcolorbox}
+
+The experiment still worth running is therefore \textbf{not} a chase for 78\% but a fine-tuned
+transformer on masked text, to make the ceiling claim defensible. A reviewer can currently object
+that only TF-IDF was tried, and that objection is fair. It also cuts both ways: reaching $\approx
+0.68$ strengthens the ceiling considerably, while reaching $\approx 0.75$ would show the ceiling
+claim was wrong --- which is worth discovering before publication rather than after.
+
 \section{Prior art, and what is actually ours}\label{sec:prior}
 
 Both headline findings independently rediscover active, recently-published work. Three papers were
@@ -979,6 +1363,18 @@ Per-item LLM loop with no retries (twice)
 A closing summary hardcoding ``On ILDC's own data''
  & A substitute result labelled as a real one
  & The smoke test \\
+\addlinespace
+Two S4 processes writing one file (the §\ref{sec:engineering} concurrency defect, recurring)
+ & 18,696 rows for 9,348 jobs; every count doubled
+ & Row count against job count \\
+\addlinespace
+\code{OUTCOME\_CUE} matching only present tense
+ & ``The appeal was dismissed'' surviving into the fact stream, worth 0.010 AUROC
+ & Reading a cluster's member facts \\
+\addlinespace
+A model chosen on an extraction benchmark reused for judgement
+ & An element layer structurally unable to say NOT\_SATISFIED
+ & Three tests; two hypotheses refuted \\
 \bottomrule
 \end{longtable}
 }
@@ -1015,6 +1411,25 @@ signal.''
  & \textbf{Wrong, and this project asserted it before testing it.} The advantage vanishes once the
    window is set back 128 words, on all four splits. Essentially all of it is residual disposition
    language; the reasoning's own contribution is about $+0.025$. \\
+\addlinespace
+``The \code{argmax} alone costs $+0.084$ AUROC.'' \emph{(mine, §\ref{sec:s2})}
+ & Over-attributed. Controlled properly --- same centroids, same encoding, only soft versus hard ---
+   it is $+0.040$, CI $[-0.0015, +0.0826]$, not significant. The $+0.116$ gain is a combination of
+   three changes. \\
+\addlinespace
+``S4 loses because UNCLEAR and never-asked are both encoded zero.'' \emph{(mine, H1)}
+ & Worth $-0.003$. \\
+\addlinespace
+``S4 loses because it hard-discretises, repeating S2's mistake one level up.'' \emph{(mine, H2)}
+ & A continuous 66-dimensional element vector scores 0.524, no better than the hard version.
+   Softening bought $+0.116$ at the fact level and nothing at the element level. \\
+\addlinespace
+``The induced clusters will be a better, data-grounded ontology.'' \emph{(mine, stage 3d)}
+ & The premise dissolved. Every kind of fact scores $\approx 0.605$, so the signal is diffuse; the
+   clusters win by \emph{covering} the space, not by carving it better. No ontology unlocks it. \\
+\addlinespace
+``Defeats live in the court's reasoning, which §\ref{sec:masking} removes.'' \emph{(mine)}
+ & Refuted: shown the reasoning, the model still emitted zero NOT\_SATISFIED. It was the model. \\
 \addlinespace
 ``Extraction preserves the signal in the text.''
  & Loses 0.043 AUROC; canonicalisation a further 0.097. \\
@@ -1085,6 +1500,16 @@ What ILDC would still add is gold labels and \emph{its own} deletion boundary, s
 does not route around the gate. Note the authors are \textbf{not} inactive --- Nigam published through
 2026 and Modi is organising the JUST NLP 2025 workshop --- so a direct email beats the queue.
 
+\paragraph{B6 --- S4's \emph{correctness} is unmeasured, and nothing was ever fine-tuned} Two gaps
+opened by §\ref{sec:v2}. First, S4 is reliable (96.9\%) and almost never fabricates (0.62\%), but
+whether its verdicts are \emph{right} needs human labels; \code{v2/gold\_elements.py} builds a
+40-case, 214-judgement set from B4's prepared cases, blind and with clicked rather than typed quotes,
+at a reviewer budget of about 94 minutes. Nothing is annotated yet. Second, and more serious for the
+ceiling claim, \textbf{no model in this project was ever fine-tuned} --- everything is TF-IDF with
+logistic regression plus zero-shot and few-shot LLM calls, while the work we compare against used
+fine-tuned transformers. §\ref{sec:can78} sets out why that experiment is worth running and why it
+cuts both ways.
+
 \paragraph{Other open items}
 \begin{itemize}
 \item \textbf{What the cue scrub cannot separate.} \code{w0\_scrubbed} (0.775) and
@@ -1122,7 +1547,14 @@ python -m src.eval.vocab\_ab --split forum\_heldout\\
 python -m src.authorities.statute\_predict --split forum\_heldout --rebuild-targets\\
 python -m src.authorities.precedent\_retrieve --split forum\_heldout\\
 python -m src.predict.models --split forum\_heldout\\
-python -m src.trace.evaluate --split forum\_heldout --model gbm
+python -m src.trace.evaluate --split forum\_heldout --model gbm\\
+\hspace*{1em}\textit{--- v2 ---}\\
+python -m v2.canon\_soft --split forum\_heldout\\
+python -m v2.element\_layer --workers 64 --resume\\
+python -m v2.s4\_eval --split forum\_heldout\\
+python -m v2.why\_s4\_fails --split forum\_heldout\\
+python -m v2.name\_clusters --split forum\_heldout --k 66\\
+python -m v2.gold\_elements
 \end{quote}
 \item Every number in this report is read from a file under \code{experiments/}.
 \code{src/report/figures.py} reads the same files and \emph{raises} rather than substituting a
@@ -1152,7 +1584,11 @@ default if one is missing, so a stale figure cannot be produced silently.
 \code{src/grounding.py} & Verbatim quote location with hyphenation repair. \\
 \code{prompts/} & Versioned prompt templates, keyed by the IDs the cache records. \\
 \code{ontology/} & \code{ontology\_v1.yaml} and the vocabulary proposals. \\
-\code{experiments/} & Every result file. Nothing in this report is sourced elsewhere. \\
+\code{experiments/} & Every v1 result file. Nothing in this report is sourced elsewhere. \\
+\code{v2/} & The intended architecture, rebuilt (§\ref{sec:v2}): \code{ARCHITECTURE.md} is its plan,
+  with \code{canon\_soft} (S2), \code{element\_catalogue} and \code{element\_layer} (S4),
+  \code{s4\_eval}, \code{why\_s4\_fails}, \code{name\_clusters}, and the gold-element annotation
+  app and scorer. Its own \code{experiments/}. \\
 \code{tests/} & Unit tests, including the split-constraint test that caught a time-travel bug. \\
 \code{Data/interim/} & Derived artifacts; large ones are gitignored and rebuild deterministically. \\
 \code{Data/gold/} & The 150 prepared gold cases and the 66-element burden sheet (B2, B4). \\
