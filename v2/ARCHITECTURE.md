@@ -184,7 +184,8 @@ That is the acceptance test for v2 as a whole.
 | 1 | **S2 soft fact families** | **done** — 0.633 at 345 dims, +0.116 over v1 |
 | 2 | **S4 element layer** + the verbatim-quote gate | **done** — 40,078 verdicts, 0.62% fabricated |
 | 3 | **S4 acceptance test** | **done — FAILED.** 0.521 vs S2's 0.633 |
-| 4 | S5 elements → claims / defences | — |
+| 3b | **S4 correctness: gold element labels** | **built, awaiting a reviewer — 214 items, ~94 min** |
+| 4 | S5 elements → claims / defences | deferred — inherits a 3-value channel |
 | 5 | A2 authorities → element criteria | — |
 | 6 | S3 graph patterns (gSpan) within claim family | — |
 | 7 | A1 signed graph + anco-HITS authority ranking | — |
@@ -307,6 +308,55 @@ study at temperature 0:
 
 Temperature 0 and a fixed seed are **not** sufficient for determinism on this endpoint, which is
 worth knowing before any result is reported as exactly reproducible.
+
+## 6c. Measuring whether S4 is RIGHT (not just useful)
+
+S4 failed the acceptance test as a feature layer, so its only remaining claim is that its verdicts
+are **correct** — and that has never been measured. B4's 150 prepared gold cases were built for
+extraction annotation; they are repurposed here.
+
+`python -m v2.gold_elements` builds the set: **40 cases, 214 element judgements**, from the 110 gold
+cases that overlap S4's output.
+
+| model verdict | n | 95% CI half-width at precision 0.80 |
+|---|---|---|
+| SATISFIED | 95 | ±0.080 |
+| UNCLEAR | 76 | ±0.090 |
+| NOT_SATISFIED | **43 (all of them)** | ±0.120 |
+
+Reviewer budget **~94 minutes**. Four design choices, each bought with reviewer time:
+
+1. **Grouped by case.** Reading a case's facts costs ~60 s; deciding one element costs ~15 s. Nine
+   items from one case means one reading, not nine. The unit of work is a case.
+2. **UNCLEAR is subsampled; the decisive classes are not.** Confirming "the facts don't address
+   this" teaches little. Every NOT_SATISFIED is included — it is 3.7% of the corpus and the whole
+   "or defeat" half of the design rests on it.
+3. **Blind.** The reviewer never sees S4's verdict before giving their own; it is revealed after each
+   case is submitted. Anchoring would turn an agreement measurement into a confirmation exercise.
+4. **Quotes are clicked, not typed.** The reviewer picks a fact *number*, so the quote is exact by
+   construction and the same mechanical gate that scores S4 scores the human. A reviewer who cannot
+   point at a fact has, by this project's own standard, no evidence.
+
+### The number that will interpret the result
+
+`score_gold_elements.py` reports precision and recall **per class** rather than one accuracy, because
+64% UNCLEAR would let an overall figure be carried by the easy class. It also separates *right verdict
+from the wrong fact* from *wrong verdict*, which are different failures.
+
+Then it compares human–model disagreement against **3.1%** — S4's disagreement with *itself* across
+two independent runs at temperature 0. **If disagreement approaches that floor, prompt work cannot
+close the remainder; if it is far above, there is real headroom.** That floor only exists because of
+the accidental double-run, which is the one way that bug paid for itself.
+
+### How to run it
+
+```
+.venv/bin/streamlit run v2/annotate_elements.py     # ~94 min, writes after every case
+.venv/bin/python -m v2.score_gold_elements          # scores whatever exists
+```
+
+The annotation file is append-only and written per case, so **a partial pass still scores** — stop
+whenever and run the scorer. Both paths were smoke-tested end to end with a synthetic record.
 
 ## 7. Running
 
