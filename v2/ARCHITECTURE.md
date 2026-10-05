@@ -185,6 +185,8 @@ That is the acceptance test for v2 as a whole.
 | 2 | **S4 element layer** + the verbatim-quote gate | **done** — 40,078 verdicts, 0.62% fabricated |
 | 3 | **S4 acceptance test** | **done — FAILED.** 0.521 vs S2's 0.633 |
 | 3b | **S4 correctness: gold element labels** | **built, awaiting a reviewer — 214 items, ~94 min** |
+| 3c | **Why S4 fails** | **done** — the doctrinal basis, not the encoding |
+| 3d | Name the induced clusters (candidate data-driven ontology) | **the constructive next step** |
 | 4 | S5 elements → claims / defences | deferred — inherits a 3-value channel |
 | 5 | A2 authorities → element criteria | — |
 | 6 | S3 graph patterns (gSpan) within claim family | — |
@@ -357,6 +359,71 @@ the accidental double-run, which is the one way that bug paid for itself.
 
 The annotation file is append-only and written per case, so **a partial pass still scores** — stop
 whenever and run the scorer. Both paths were smoke-tested end to end with a synthetic record.
+
+## 6d. WHY S4 fails — it is the basis, not the encoding
+
+Three hypotheses, all testable for free because every fact already carries a cached embedding. **Two
+were mine and both were refuted**, which is what made the third clean.
+
+| arm | AUROC | features |
+|---|---|---|
+| masked text (ceiling) | 0.659 | 50,000 |
+| S2 soft facts | 0.617 | 345 |
+| S4, old ±1/0 encoding | 0.531 | 66 |
+| S4, H1: asked/unclear split out | 0.529 | 264 |
+| S4, H2: **soft** element similarity, no LLM | 0.524 | 66 |
+| S2 + soft elements | 0.608 | 411 |
+
+**H1 — "UNCLEAR and never-asked are both encoded 0, which conflates two different facts."** True, and
+it buys **−0.003**. The distinction carries nothing.
+
+**H2 — "we repeated S2's own mistake one level up: S4 hard-discretises into three labels."** The
+analogue of S2's winning move is a continuous 66-dim element-similarity vector straight from the
+embeddings. It scores **0.524 — no better than the hard version (−0.007)**. Softening bought +0.116
+at the fact level and **nothing** at the element level.
+
+### The matched-granularity control that settles it
+
+The remaining confound was dimensionality: 345 for S2 against 66 for elements. So S2 was re-run at
+**k=66**:
+
+| 66-dimensional basis, soft, same embeddings, same cases | AUROC |
+|---|---|
+| **induced centroids** (data-driven) | **0.632** |
+| **authored legal elements** (doctrine) | **0.524** |
+
+And induced-66 (0.632) equals induced-345 (0.633), so **granularity is irrelevant**. The dimensionality
+confound is dead, and what remains is the basis itself.
+
+> **The element layer does not fail because of channel width, hard quantisation, or an encoding bug.
+> It fails because the 66-element doctrinal vocabulary is the wrong basis. The outcome-predictive
+> content of these facts is largely orthogonal to what legal doctrine says should matter.**
+
+Project the same facts onto 66 clusters the corpus suggests → full signal. Project onto 66 elements
+the law prescribes → near chance. Same dimensionality, same encoding, same embeddings, same cases.
+
+### A flaw in the acceptance test, stated
+
+Masked text reaches 0.659 and S2 reaches 0.617, so **any fact-derived layer has at most 0.043 to gain
+over S2.** "Beat S2" was close to unwinnable and §3 should have said so. It does not excuse S4's
+0.524 — that is far *below* S2, not merely failing to exceed it — but the bar was badly set and the
+headroom is now reported alongside every arm.
+
+### What this means for the architecture
+
+The professor's instruction was *"Fact Patterning by Claim Family (**find claims, cluster**)"*. S2
+clusters, and it works. S4 then **replaced those clusters with an authored ontology, and that is the
+step that broke**. The architecture's shape was right; substituting doctrine for data was wrong.
+
+So the element layer should be the **explanation** layer — checkable, 96.9% reliable, 0.62%
+fabrication — and the **prediction** should run on the induced basis. Those are complementary in
+function, not redundant in signal: S2 + soft elements (0.608) does not beat S2 alone (0.617), so the
+elements add no predictive information on top.
+
+**The constructive path, not yet built:** name the induced clusters. If the 66 data-driven centroids
+that carry the signal correspond to something legally nameable — procedural posture, party type,
+remedy sought — that is both a finding and a candidate ontology better than the authored one. v1
+already has a `name_vocab_cluster.v1` prompt for exactly this, written and unused.
 
 ## 7. Running
 
