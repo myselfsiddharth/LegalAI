@@ -186,7 +186,7 @@ That is the acceptance test for v2 as a whole.
 | 3 | **S4 acceptance test** | **done — FAILED.** 0.521 vs S2's 0.633 |
 | 3b | **S4 correctness: gold element labels** | **built, awaiting a reviewer — 214 items, ~94 min** |
 | 3c | **Why S4 fails** | **done** — the doctrinal basis, not the encoding |
-| 3d | Name the induced clusters (candidate data-driven ontology) | **the constructive next step** |
+| 3d | **Name the induced clusters** | **done** — and it dissolves the premise |
 | 4 | S5 elements → claims / defences | deferred — inherits a 3-value channel |
 | 5 | A2 authorities → element criteria | — |
 | 6 | S3 graph patterns (gSpan) within claim family | — |
@@ -424,6 +424,98 @@ elements add no predictive information on top.
 that carry the signal correspond to something legally nameable — procedural posture, party type,
 remedy sought — that is both a finding and a candidate ontology better than the authored one. v1
 already has a `name_vocab_cluster.v1` prompt for exactly this, written and unused.
+
+## 6e. Naming the clusters — and the finding that dissolves the question
+
+Stage 3d was built on the hope that the predictive clusters would be a better, data-grounded
+ontology. All 66 were named by `qwen3-235b` from their twelve nearest facts, with a `kind` field and
+a prompt written to resist the flattering answer (it states that an honest `procedural` label is
+worth more here than a legal-sounding one). 66 of 66 named.
+
+| | all 66 | top 20 by TRAIN univariate strength |
+|---|---|---|
+| legal_substance | 27 (41%) | 8 (40%) |
+| procedural | 19 | 8 |
+| temporal_quantum | 18 | 4 |
+| party_entity | 2 | 0 |
+
+**Kind does not predict predictiveness.** Legal substance is 41% of all clusters and 40% of the most
+predictive ones — neither enriched nor depleted. Mean similarity to the nearest authored element is
+0.496 for the top 20 against 0.533 overall, so the best clusters sit marginally *further* from the
+ontology, but the difference is small.
+
+### The decomposition that explains everything
+
+Restricting S2's 66-dim histogram to each kind:
+
+| basis | AUROC | dims |
+|---|---|---|
+| all 66 clusters | **0.632** | 66 |
+| procedural only | 0.609 | 19 |
+| legal_substance only | 0.606 | 27 |
+| temporal_quantum only | 0.604 | 18 |
+| all **minus** procedural | 0.622 | 47 |
+
+**Every subset lands at 0.604–0.632.** Legal substance alone, court machinery alone, and dates and
+sums alone are *indistinguishable*. Removing all 19 procedural clusters costs 0.010.
+
+> **There is no concentrated outcome signal in these facts. It is weak and smeared across the whole
+> fact space, so any reasonably complete projection captures most of it and no projection captures
+> much.**
+
+That single fact explains the entire sequence of results:
+
+- why S2 scores ~0.63 at k=66 *and* k=345 — both span the space;
+- why the authored elements score 0.524 — 66 doctrinal elements are a *selective probe* (only ~8 asked
+  per case, each a specific legal proposition), not a spanning basis, so they miss a diffuse signal;
+- why softening the element layer bought nothing — you cannot recover a signal the basis never
+  covered;
+- why the headroom above S2 is only 0.043.
+
+**So the premise of stage 3d was wrong.** The induced clusters are not a better ontology waiting to be
+read off. They win because they *cover* the fact space, not because they carve it at better joints.
+There is no ontology that unlocks outcome prediction here, because there is no concentrated structure
+to carve.
+
+### What the clusters DO say — a real subject-matter regularity
+
+The content is coherent even though it is not elemental. The LOSE-direction legal clusters are almost
+all one thing:
+
+| cluster | favours | member facts |
+|---|---|---|
+| `land_reforms_legislation_enactment` | LOSE | *"The West Bengal Land Reforms Act, 1955 was introduced"* |
+| `vesting_of_proprietary_rights` | LOSE | *"Proprietary rights in sir and khudkashat land … vested in the State"* |
+| `land_vesting_in_state` | LOSE | |
+| `accession_of_princely_states` | LOSE | |
+| `religious_endowment_and_institution` | LOSE | |
+| `document_execution_and_admission` | **WIN** | |
+| `contract_performance_failure` | **WIN** | |
+
+**Post-independence land reform and state vesting cases lose; private document and contract disputes
+win.** That is a finding about Indian land jurisprudence — a *dispute-regime* regularity, not element
+satisfaction. It is also exactly why an element ontology could not capture it: elements ask "is
+hostility established?", while the data says "is this a zamindari abolition matter against the State,
+or a private sale-deed dispute?"
+
+### A concrete v1 masking bug found on the way
+
+The single strongest cluster, `dismissal_of_appeal_or_petition`, has member facts that read literally
+*"The appeal was dismissed"*. `mask.py`'s `OUTCOME_CUE` matches `is|are|stands|shall stand` and
+**not the past tense**, and `PRIOR_COURT_DISPOSITION` requires a named forum. So all of these escape
+**both** detectors:
+
+```
+"The appeal was dismissed"                        OUTCOME_CUE ✗   PRIOR ✗
+"The suit was dismissed on the ground of limitation"  ✗           ✗
+"The Munsif dismissed the suit"                       ✗           ✗   (Munsif not in the forum list)
+```
+
+It favours **WIN**, which is the signature of a *prior-court* disposition rather than leakage of this
+court's order — the party lost below, obtained leave, and succeeded here. So it is v1's group-`Q`
+procedural shortcut, which §5.2 intended to isolate, reappearing inside the fact stream. The
+decomposition above bounds the damage at 0.010 AUROC, so it does not drive any result, but
+`OUTCOME_CUE` should gain past-tense forms and `PRIOR_COURT_DISPOSITION` a wider forum list.
 
 ## 7. Running
 
