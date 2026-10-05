@@ -182,8 +182,8 @@ That is the acceptance test for v2 as a whole.
 | # | stage | status |
 |---|---|---|
 | 1 | **S2 soft fact families** | **done** — 0.633 at 345 dims, +0.116 over v1 |
-| 2 | **S4 element layer** + the verbatim-quote gate | **running** — gate at 0–1.4% fabrication |
-| 3 | S4 → outcome, against S2 → outcome (the acceptance test) | — |
+| 2 | **S4 element layer** + the verbatim-quote gate | **done** — 40,078 verdicts, 0.62% fabricated |
+| 3 | **S4 acceptance test** | **done — FAILED.** 0.521 vs S2's 0.633 |
 | 4 | S5 elements → claims / defences | — |
 | 5 | A2 authorities → element criteria | — |
 | 6 | S3 graph patterns (gSpan) within claim family | — |
@@ -215,6 +215,98 @@ exists to make.
 **Open on S4:** `UNCLEAR` is still the majority verdict (56 of 87 even on the better model), and
 `MIN_QUOTE = 25` is permissive enough to admit a 44-character fragment as evidence. Both are
 measured and neither is resolved.
+
+## 6b. The acceptance test result — the element layer FAILED it
+
+Full S4: 4,674 cases × top-2 claims = 9,348 calls, 102 minutes, `qwen3-235b-a22b-instruct-2507`.
+**40,078 gated verdicts** — 13,008 SATISFIED (32%), 1,481 NOT_SATISFIED (3.7%), 25,589 UNCLEAR (64%).
+**Fabrication 0.62%** (206 quotes absent, 44 too short, of 40,328 proposed). Zero never-answered,
+zero schema failures.
+
+Then the acceptance test from §3, on the same 885 test cases:
+
+| arm | AUROC | features |
+|---|---|---|
+| S2 soft facts | **0.633** | 345 |
+| **S4 elements** | **0.521** | 70 |
+| S2 + S4 | 0.616 | 415 |
+
+| comparison | ΔAUROC | 95% CI | |
+|---|---|---|---|
+| S4 − S2 | **−0.1125** | [−0.1625, −0.0639] | significantly WORSE |
+| S2+S4 − S2 | −0.0169 | [−0.0345, +0.0011] | not significant |
+
+**The element layer scores essentially at chance, and adding it to S2 does not help.** This is not a
+null result; it is the same failure mode as v1's hard canonicalisation, one level up the stack.
+
+### Why — the channel is about three values wide
+
+| | |
+|---|---|
+| elements asked per case (median) | **8** of 66 in the catalogue |
+| non-zero slots per case (median) | **3** |
+| cases with no signal at all | **920 = 19.7%** |
+
+S4 compresses a case to ~3 ternary values; S2 gives it 345 continuous dimensions. **The bottleneck is
+channel width, not the choice of symbol.** The architecture discretises twice — facts→atoms and
+facts→elements — and both times the channel is too narrow relative to the text it came from.
+
+A free within-data check confirms the direction but not a rescue. AUROC by number of non-zero slots:
+
+| non-zero slots | n | AUROC |
+|---|---|---|
+| 1–2 | 197 | 0.480 |
+| 3–4 | 293 | 0.540 |
+| 5–20 | 240 | 0.559 |
+
+Monotone, so width genuinely limits it — but even the widest band reaches only 0.559 against S2's
+0.633. Widening the budget (top-5 claims instead of top-2, ~23,000 calls, ~4 h) is worth one run,
+and on this trend it is unlikely to close a 0.11 gap.
+
+### What this does and does not establish
+
+The reading below was written into `s4_eval.py` **before** the result was seen, so it is not a
+post-hoc rationalisation.
+
+**Established:** the element layer, as a *representation*, carries less outcome signal than the facts
+it is derived from. Routing facts→elements→outcome is worse than facts→outcome. For the professor's
+third arrow — facts + authorities → win/lose — the element layer is a liability.
+
+**Not established:** that the layer is legally wrong. Three independent reasons it is still the most
+defensible product in either version of this project:
+
+- **It is reliable.** The two concurrent runs (see below) give **96.9% agreement** across 40,000
+  verdicts, better than v1's 87.0% rules-vs-LLM label agreement.
+- **It almost never fabricates.** 0.62% of verdicts refused by the quote gate.
+- **Its verdicts are legally sensible**, e.g. *"Sham Lal was a tenant of a room in property unit
+  No. B-VI-33"* defeating an adverse-possession element, because tenancy is permissive possession.
+
+*"Here are the elements your facts satisfy, with the verbatim quote for each"* is **checkable**.
+Win/lose never is. The honest conclusion is that the element layer is a good **explanation** layer
+and a bad **feature** layer, and the architecture is wrong to route prediction through it.
+
+### An accidental reliability study, and the bug that produced it
+
+Two S4 processes ran concurrently — a launch I wrongly believed had failed, plus its replacement —
+and both wrote to the same file: 18,696 rows for 9,348 jobs, exactly 2× every key. **This is v1's
+"driver ran two stages at once" bug recurring**, and the lesson is the same: verify a background job
+started rather than inferring it from absent output.
+
+Deduplicated on `(case_id, claim_id)`, keeping the first. The accident bought a free test–retest
+study at temperature 0:
+
+| | |
+|---|---|
+| element verdicts comparable in both runs | 40,000 |
+| **agree** | **38,752 (96.9%)** |
+| disagree | 1,248 (3.1%) |
+| — SATISFIED ↔ UNCLEAR | 854 |
+| — NOT_SATISFIED ↔ UNCLEAR | 237 |
+| — **SATISFIED ↔ NOT_SATISFIED** | **157 (0.4%) — direct sign flips** |
+| identical quote when both agree on a non-UNCLEAR verdict | 92.7% |
+
+Temperature 0 and a fixed seed are **not** sufficient for determinism on this endpoint, which is
+worth knowing before any result is reported as exactly reproducible.
 
 ## 7. Running
 

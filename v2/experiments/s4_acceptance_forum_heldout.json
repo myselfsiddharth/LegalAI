@@ -1,0 +1,313 @@
+{
+ "stage": "S4 acceptance test",
+ "split": "forum_heldout",
+ "n_train": 3288,
+ "n_test": 885,
+ "n_elements": 66,
+ "gated_satisfied": 12993,
+ "gated_not_satisfied": 1481,
+ "gated_unclear": 25599,
+ "not_satisfied_share": 0.037,
+ "results": [
+  {
+   "name": "S2 soft facts",
+   "n": 885,
+   "accuracy": 0.6124,
+   "macro_f1": 0.6124,
+   "test_win_rate": 0.4712,
+   "pred_win_rate": 0.5153,
+   "macro_f1_ci95": [
+    0.5806,
+    0.6463
+   ],
+   "auroc": 0.633,
+   "auroc_ci95": [
+    0.5974,
+    0.67
+   ],
+   "ece": 0.0553,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 5,
+     "mean_pred": 0.0757,
+     "observed": 0.2,
+     "gap": -0.1243
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 17,
+     "mean_pred": 0.1559,
+     "observed": 0.4706,
+     "gap": -0.3147
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 80,
+     "mean_pred": 0.2602,
+     "observed": 0.3,
+     "gap": -0.0398
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 129,
+     "mean_pred": 0.3517,
+     "observed": 0.3178,
+     "gap": 0.0339
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 198,
+     "mean_pred": 0.452,
+     "observed": 0.3939,
+     "gap": 0.0581
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 191,
+     "mean_pred": 0.5512,
+     "observed": 0.5393,
+     "gap": 0.0119
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 168,
+     "mean_pred": 0.6454,
+     "observed": 0.6012,
+     "gap": 0.0442
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 68,
+     "mean_pred": 0.7472,
+     "observed": 0.6618,
+     "gap": 0.0855
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 28,
+     "mean_pred": 0.8308,
+     "observed": 0.5357,
+     "gap": 0.2951
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 1,
+     "mean_pred": 0.9105,
+     "observed": 1.0,
+     "gap": -0.0895
+    }
+   ],
+   "n_features": 345
+  },
+  {
+   "name": "S4 elements",
+   "n": 885,
+   "accuracy": 0.5209,
+   "macro_f1": 0.5151,
+   "test_win_rate": 0.4712,
+   "pred_win_rate": 0.4192,
+   "macro_f1_ci95": [
+    0.4807,
+    0.5453
+   ],
+   "auroc": 0.5211,
+   "auroc_ci95": [
+    0.4849,
+    0.5577
+   ],
+   "ece": 0.0442,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 0,
+     "mean_pred": null,
+     "observed": null
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 4,
+     "mean_pred": 0.1794,
+     "observed": 0.25,
+     "gap": -0.0706
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 19,
+     "mean_pred": 0.2625,
+     "observed": 0.3158,
+     "gap": -0.0533
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 75,
+     "mean_pred": 0.3651,
+     "observed": 0.4267,
+     "gap": -0.0616
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 416,
+     "mean_pred": 0.4701,
+     "observed": 0.4712,
+     "gap": -0.0011
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 271,
+     "mean_pred": 0.5469,
+     "observed": 0.5018,
+     "gap": 0.0451
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 79,
+     "mean_pred": 0.6335,
+     "observed": 0.4051,
+     "gap": 0.2284
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 15,
+     "mean_pred": 0.7417,
+     "observed": 0.7333,
+     "gap": 0.0084
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 4,
+     "mean_pred": 0.8387,
+     "observed": 0.5,
+     "gap": 0.3387
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 2,
+     "mean_pred": 0.9999,
+     "observed": 0.5,
+     "gap": 0.4999
+    }
+   ],
+   "n_features": 70
+  },
+  {
+   "name": "S2 + S4",
+   "n": 885,
+   "accuracy": 0.5944,
+   "macro_f1": 0.5941,
+   "test_win_rate": 0.4712,
+   "pred_win_rate": 0.504,
+   "macro_f1_ci95": [
+    0.5623,
+    0.6282
+   ],
+   "auroc": 0.6162,
+   "auroc_ci95": [
+    0.5826,
+    0.6512
+   ],
+   "ece": 0.0702,
+   "reliability": [
+    {
+     "bin": "(0.0,0.1]",
+     "n": 3,
+     "mean_pred": 0.0644,
+     "observed": 0.3333,
+     "gap": -0.269
+    },
+    {
+     "bin": "(0.1,0.2]",
+     "n": 40,
+     "mean_pred": 0.1574,
+     "observed": 0.35,
+     "gap": -0.1926
+    },
+    {
+     "bin": "(0.2,0.3]",
+     "n": 78,
+     "mean_pred": 0.257,
+     "observed": 0.2949,
+     "gap": -0.0379
+    },
+    {
+     "bin": "(0.3,0.4]",
+     "n": 139,
+     "mean_pred": 0.3539,
+     "observed": 0.3885,
+     "gap": -0.0346
+    },
+    {
+     "bin": "(0.4,0.5]",
+     "n": 179,
+     "mean_pred": 0.453,
+     "observed": 0.4078,
+     "gap": 0.0452
+    },
+    {
+     "bin": "(0.5,0.6]",
+     "n": 178,
+     "mean_pred": 0.5536,
+     "observed": 0.5281,
+     "gap": 0.0255
+    },
+    {
+     "bin": "(0.6,0.7]",
+     "n": 144,
+     "mean_pred": 0.6462,
+     "observed": 0.5972,
+     "gap": 0.049
+    },
+    {
+     "bin": "(0.7,0.8]",
+     "n": 72,
+     "mean_pred": 0.7508,
+     "observed": 0.625,
+     "gap": 0.1258
+    },
+    {
+     "bin": "(0.8,0.9]",
+     "n": 46,
+     "mean_pred": 0.835,
+     "observed": 0.5,
+     "gap": 0.335
+    },
+    {
+     "bin": "(0.9,1.0]",
+     "n": 6,
+     "mean_pred": 0.9459,
+     "observed": 0.6667,
+     "gap": 0.2792
+    }
+   ],
+   "n_features": 415
+  }
+ ],
+ "paired": {
+  "S4 elements - S2 soft facts": {
+   "mean_diff": -0.1125,
+   "ci95": [
+    -0.1625,
+    -0.0639
+   ],
+   "ci_excludes_zero": false
+  },
+  "S2 + S4 - S2 soft facts": {
+   "mean_diff": -0.0169,
+   "ci95": [
+    -0.0345,
+    0.0011
+   ],
+   "ci_excludes_zero": false
+  },
+  "S2 + S4 - S4 elements": {
+   "mean_diff": 0.0956,
+   "ci95": [
+    0.0556,
+    0.1358
+   ],
+   "ci_excludes_zero": true
+  }
+ },
+ "verdict": "LOSSY: the element layer scores BELOW the facts it is derived from, the same failure mode as v1's hard canonicalisation",
+ "caveat": "outcome is a weak yardstick (v1: masked text 0.656-0.723, every structured model at or below a per-decade majority baseline). A null here means the layer adds no OUTCOME signal, not that it is legally wrong."
+}

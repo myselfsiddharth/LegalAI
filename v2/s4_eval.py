@@ -176,8 +176,8 @@ def main() -> None:
     out.write_text(json.dumps({
         "stage": "S4 acceptance test", "split": args.split,
         "n_train": len(tr), "n_test": len(te), "n_elements": n_el,
-        "gated_satisfied": int(sat), "gated_not_satisfied": int(nsat),
-        "not_satisfied_share": round(nsat / max(1, tot), 4),
+        "gated_satisfied": int(sat), "gated_not_satisfied": int(nsat), "gated_unclear": int(tot-sat-nsat),
+        "not_satisfied_share": round(float(nsat) / max(1.0, float(tot)), 4),
         "results": results, "paired": comps, "verdict": verdict,
         "caveat": "outcome is a weak yardstick (v1: masked text 0.656-0.723, every structured model "
                   "at or below a per-decade majority baseline). A null here means the layer adds no "
