@@ -202,7 +202,18 @@ def main() -> None:
                    "extract. The diffuse-signal and 0.043-headroom conclusions must be re-examined.")
         print(f"\n  PRE-REGISTERED VERDICT: {verdict}")
 
-    out = EXP / f"ft_{args.arm}_{args.model.split('/')[-1]}.json"
+    # per-case probabilities, kept OUT of the json but saved, so the fine-tuned arm can be
+    # compared to v1's TF-IDF arm by paired bootstrap on identical cases. The first run omitted
+    # these and no paired comparison was possible without retraining.
+    import numpy as _np
+    tag = f"{args.arm}_{args.model.split('/')[-1]}"
+    for r in runs:
+        cp = r["test_case_probs"]
+        ids = sorted(cp)
+        _np.savez_compressed(EXP / f"probs_{tag}_seed{r['seed']}.npz",
+                             case_ids=_np.array(ids),
+                             probs=_np.array([cp[c] for c in ids], dtype=_np.float32))
+    out = EXP / f"ft_{tag}.json"
     out.write_text(json.dumps({
         "arm": args.arm, "model": args.model, "device": device,
         "epochs": args.epochs, "bs": args.bs, "lr": args.lr, "seeds": args.seeds,

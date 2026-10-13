@@ -1,0 +1,50 @@
+{
+ "arm": "masked",
+ "model": "law-ai/InLegalBERT",
+ "device": "mps",
+ "epochs": 3,
+ "bs": 16,
+ "lr": 2e-05,
+ "seeds": [
+  573
+ ],
+ "is_capability_control": false,
+ "v1_bar": {
+  "auroc": 0.666,
+  "acc": 0.621,
+  "method": "TF-IDF + logistic regression"
+ },
+ "test_case_auroc_mean": 0.701,
+ "test_case_auroc_sd": 0.0,
+ "test_case_acc_mean": 0.6648,
+ "preregistered_verdict": "CEILING SOFTENS: a real but modest gain. Report this as the new ceiling and revise the estimate in report 15.6.",
+ "runs": [
+  {
+   "seed": 573,
+   "dev_best": {
+    "chunk": {
+     "auroc": 0.6322955523931494,
+     "acc": 0.6068714899240172
+    },
+    "case": {
+     "auroc": 0.683842188739096,
+     "acc": 0.6387665198237885,
+     "macro_f1": 0.633185535520741,
+     "n_cases": 454
+    }
+   },
+   "test": {
+    "chunk": {
+     "auroc": 0.6384280761092355,
+     "acc": 0.6045279383429673
+    },
+    "case": {
+     "auroc": 0.701033119130005,
+     "acc": 0.6648168701442841,
+     "macro_f1": 0.6634700056397115,
+     "n_cases": 901
+    }
+   }
+  }
+ ]
+}

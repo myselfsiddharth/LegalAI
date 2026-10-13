@@ -1,0 +1,50 @@
+{
+ "arm": "last512",
+ "model": "law-ai/InLegalBERT",
+ "device": "mps",
+ "epochs": 3,
+ "bs": 16,
+ "lr": 2e-05,
+ "seeds": [
+  573
+ ],
+ "is_capability_control": true,
+ "v1_bar": {
+  "auroc": 0.666,
+  "acc": 0.621,
+  "method": "TF-IDF + logistic regression"
+ },
+ "test_case_auroc_mean": 0.9074,
+ "test_case_auroc_sd": 0.0,
+ "test_case_acc_mean": 0.8592,
+ "preregistered_verdict": null,
+ "runs": [
+  {
+   "seed": 573,
+   "dev_best": {
+    "chunk": {
+     "auroc": 0.8703045384524232,
+     "acc": 0.7857142857142857
+    },
+    "case": {
+     "auroc": 0.9167555397558953,
+     "acc": 0.8527472527472527,
+     "macro_f1": 0.8487464586775424,
+     "n_cases": 455
+    }
+   },
+   "test": {
+    "chunk": {
+     "auroc": 0.8649537370764993,
+     "acc": 0.771491957848031
+    },
+    "case": {
+     "auroc": 0.9073706947567759,
+     "acc": 0.8592017738359202,
+     "macro_f1": 0.8583239648611178,
+     "n_cases": 902
+    }
+   }
+  }
+ ]
+}
