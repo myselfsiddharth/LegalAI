@@ -30,6 +30,27 @@ faithfulness-tested trace mechanism.
 et al. (2026), Sadowski & Chudziak (2026) got there first. What is ours is methodological. Do not
 let anyone write "we broke the benchmark"; `writeup/` says exactly what is defensible.
 
+## Course logistics — I dropped these in a rewrite; do not drop them again
+
+Class project is **60% of the grade**:
+
+| deliverable | weight | when | status |
+|---|---|---|---|
+| proposal | 15% | **due Oct 7, 2026** | **submitted** — `proposal/FA26-Group-Proposal-Group34-Project15.pdf` |
+| presentation | 10% | **Oct 28 – Nov 18** | not started |
+| group demo | 15% | **Nov 23 – Dec 2** | **not started** — no dashboard exists |
+| final report | 20% | **due Dec 9** | `writeup/LexGraph_Report.tex` is most of the content |
+
+**Formatting rule for every written submission**: 1-inch margins, A4, 12pt Times New Roman, single
+column, PDF. Violating it costs 20%. Both documents in `writeup/` already comply.
+
+**The submitted proposal and the findings now diverge.** It is element- and ontology-heavy (15
+mentions of "element", 3 of "leakage") and promises the element-centric pipeline that v2 has since
+shown does not work predictively (0.521 against 0.633). This is not a problem to hide — "we built
+exactly what we proposed, measured it rigorously, and here is what we found" is a stronger research
+narrative than a pipeline that happened to work. But the presentation and final report must handle
+the divergence deliberately rather than pretend the proposal said something else.
+
 ## Layout
 
 ```
