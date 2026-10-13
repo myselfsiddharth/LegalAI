@@ -46,3 +46,5 @@ Data/interim/corpus_wide.jsonl
 .DS_Store
 ~$*
 v2/interim/
+
+ft/cache/
