@@ -73,11 +73,18 @@ def metrics(ranked, tgt):
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--model", default="qwen3-235b-a22b-instruct-2507")
+    ap.add_argument("--lists", default="memo",
+                    help="'memo' (RRF of full-text BM25 + dense), 'memo_all' (+ card retrievers), "
+                         "or 'union' (both top-50s, ordered by memo_all)")
     args = ap.parse_args()
 
     d = json.loads(CANDS.read_text())
     targets = {c: set(v) for c, v in d["targets"].items()}
-    cands = {c: v["memo"] for c, v in d["candidates"].items() if "memo" in v}
+    if args.lists == "union":
+        cands = {c: list(dict.fromkeys(v["memo_all"] + [x for x in v["memo"] if x not in v["memo_all"]]))
+                 for c, v in d["candidates"].items() if "memo_all" in v}
+    else:
+        cands = {c: v[args.lists] for c, v in d["candidates"].items() if args.lists in v}
     memo = {r["case_id"]: r["memo"] for r in map(json.loads, open(MEMOS)) if r["status"] == "ok"}
     nar = {r["case_id"]: r["narrative"] for r in map(json.loads, open(NAR)) if r["status"] == "ok"}
     cards = {r["doc_id"]: r["card"] for r in map(json.loads, open(CARDS)) if r["status"] == "ok"}
@@ -100,7 +107,9 @@ def main() -> None:
     for c, sc in res:
         scores.setdefault(c, {}).update(sc)
 
-    (paths.ROOT / "product" / "data" / "rerank_scores.json").write_text(json.dumps(scores))
+    (paths.ROOT / "product" / "data" / f"rerank_scores_{args.lists}.json").write_text(json.dumps(scores))
+    if args.lists == "memo":
+        (paths.ROOT / "product" / "data" / "rerank_scores.json").write_text(json.dumps(scores))
     base_r10, base_mrr, rr_r10, rr_mrr = [], [], [], []
     unscored = 0
     dist = Counter()
@@ -121,7 +130,10 @@ def main() -> None:
            "r10_gain": round(float(diff.mean()), 4),
            "r10_gain_ci95": [round(float(np.percentile(bs, 2.5)), 4), round(float(np.percentile(bs, 97.5)), 4)],
            "unscored_slots": unscored, "score_distribution": {str(k): v for k, v in dist.items()}}
-    OUT.write_text(json.dumps(out, indent=1))
+    out["lists"] = args.lists
+    OUT.with_name(f"rerank_{args.lists}.json").write_text(json.dumps(out, indent=1))
+    if args.lists == "memo":
+        OUT.write_text(json.dumps(out, indent=1))
     print(json.dumps(out, indent=1))
 
 

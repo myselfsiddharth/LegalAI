@@ -89,6 +89,24 @@ def main() -> None:
                 yield r["doc_id"], years[r["doc_id"]], scrub_citations(r["text"])
     idx_full = BM25Index()
     idx_full.build(full_records, verbose=False)
+    # Case cards (what each judgment DECIDED) as a third representation, when the corpus is carded.
+    cards_path = paths.ROOT / "product" / "data" / "case_cards.jsonl"
+    card_txt = {}
+    if cards_path.exists():
+        from product.case_cards import card_text
+        for line in open(cards_path):
+            r = json.loads(line)
+            if r["status"] == "ok" and r["doc_id"] in years:
+                card_txt[r["doc_id"]] = card_text(r["card"])
+    use_cards = len(card_txt) >= 0.95 * len(pool)
+    print(f"case cards for {len(card_txt):,}/{len(pool):,} pool cases -> card arms "
+          f"{'ON' if use_cards else 'OFF'}")
+    if use_cards:
+        idx_card = BM25Index()
+        idx_card.build(lambda: ((d, years[d], card_txt[d]) for d in pool if d in card_txt), verbose=False)
+        Cm = client.embed([card_txt.get(d, scrubbed[d][:2000]) for d in pool], batch_size=32, workers=24)
+        okc = Cm.any(axis=1)
+        Cm = Cm / (np.linalg.norm(Cm, axis=1, keepdims=True) + 1e-9)
     print("embedding pool (cached where available) and queries...", flush=True)
     P = client.embed([scrubbed[d][:8000] for d in pool], batch_size=32, workers=24)
     okp = P.any(axis=1)
@@ -109,7 +127,8 @@ def main() -> None:
         return [pool[i] for i in np.argsort(-s)[:k]]
 
     per = {f"{inp}_{sysm}": {"r10": [], "r50": [], "mrr": []}
-           for inp in INPUTS for sysm in ("bm25", "dense", "rrf", "bm25full", "rrf_full")}
+           for inp in INPUTS for sysm in ("bm25", "dense", "rrf", "bm25full", "rrf_full",
+                                          "bm25card", "densecard", "rrf_all")}
     cands: dict[str, dict] = {}
     for qi, c in enumerate(qs):
         yq, tgt = years[c], cited[c]
@@ -120,17 +139,28 @@ def main() -> None:
             b = [d for d, _ in idx.search(text, 200, before_year=yq - 1, exclude={c})]
             dn = dense(qv, yq, c)
             bf = [d for d, _ in idx_full.search(text, 200, before_year=yq - 1, exclude={c})]
+            systems = [("bm25", b), ("dense", dn), ("rrf", rrf([b, dn])),
+                       ("bm25full", bf), ("rrf_full", rrf([bf, dn]))]
+            if use_cards:
+                bc = [d for d, _ in idx_card.search(text, 200, before_year=yq - 1, exclude={c})]
+                sc_ = Cm @ qv
+                sc_[(pyear >= yq) | ~okc] = -9
+                sc_[pos[c]] = -9
+                dc = [pool[i] for i in np.argsort(-sc_)[:200]]
+                systems += [("bm25card", bc), ("densecard", dc), ("rrf_all", rrf([bf, dn, bc, dc]))]
             if inp in ("memo", "narrative"):
-                cands.setdefault(c, {})[inp] = rrf([bf, dn])[:50]
-            for sysm, ranked in (("bm25", b), ("dense", dn), ("rrf", rrf([b, dn])),
-                                 ("bm25full", bf), ("rrf_full", rrf([bf, dn]))):
+                sd = dict(systems)
+                cands.setdefault(c, {})[inp] = sd["rrf_full"][:50]
+                if "rrf_all" in sd:
+                    cands[c][inp + "_all"] = sd["rrf_all"][:50]
+            for sysm, ranked in systems:
                 m = per[f"{inp}_{sysm}"]
                 m["r10"].append(recall_at(ranked, tgt, 10))
                 m["r50"].append(recall_at(ranked, tgt, 50))
                 m["mrr"].append(mrr(ranked, tgt))
     (paths.ROOT / "product" / "data" / "candidates_top50.json").write_text(json.dumps(
         {"targets": {c: sorted(cited[c]) for c in qs}, "candidates": cands}))
-    prec = {k: {mk: round(float(np.mean(v)), 4) for mk, v in m.items()} for k, m in per.items()}
+    prec = {k: {mk: round(float(np.mean(v)), 4) for mk, v in m.items()} for k, m in per.items() if m["r10"]}
     print("\n  precedents (recall vs reachable cited precedents):")
     for k, v in prec.items():
         print(f"    {k:18s} R@10 {v['r10']:.3f}  R@50 {v['r50']:.3f}  MRR {v['mrr']:.3f}")
