@@ -66,6 +66,19 @@ def main() -> None:
     el = {e.element_id: e for c in claims.values() for e in c.elements}
 
     gold = {g["case_id"]: g for g in (json.loads(l) for l in open(GOLD))}
+
+    # The reviewer must see EXACTLY the evidence S4 saw. The first version took facts from
+    # gold_tasks.jsonl, an earlier extraction: only 49 of 138 S4 quotes appeared in what the
+    # reviewer was shown, and agreement was 76% where the evidence matched vs 48% where it did
+    # not -- so the set measured the mismatch, not S4. Same loader, same order, same per-fact
+    # annotation as element_layer.build_user.
+    from src.extract.induced_vocab import load_fact_texts
+    s4_facts = collections.defaultdict(list)
+    for f in load_fact_texts()[0]:
+        if f["case_id"] in gold:
+            who = f.get("asserted_by") or "unattributed"
+            st = f.get("disputed_status") or "unknown"
+            s4_facts[f["case_id"]].append(f"{f['text']}   [asserted_by: {who}; status: {st}]")
     s4 = collections.defaultdict(list)
     for line in open(VERDICTS):
         r = json.loads(line)
@@ -82,7 +95,7 @@ def main() -> None:
     tasks, counts = [], collections.Counter()
     for c in picked:
         g = gold[c]
-        facts = [f["text"] if isinstance(f, dict) else str(f) for f in (g.get("facts") or [])]
+        facts = s4_facts.get(c, [])
         if not facts:
             continue
         items = []

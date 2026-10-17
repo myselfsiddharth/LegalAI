@@ -1,0 +1,49 @@
+{
+ "n_facts": 96623,
+ "n_cases": 4674,
+ "classes": {
+  "attributed": 12872,
+  "plain": 81868,
+  "stripped": 1883
+ },
+ "cases_with_stripped": 1086,
+ "by_asserted_by": {
+  "court_narrative": {
+   "attributed": 11566,
+   "plain": 61614,
+   "stripped": 1671
+  },
+  "defendant": {
+   "plain": 7163,
+   "attributed": 504,
+   "stripped": 82
+  },
+  "plaintiff": {
+   "plain": 10390,
+   "attributed": 616,
+   "stripped": 76
+  },
+  "admitted": {
+   "plain": 1149,
+   "attributed": 74,
+   "stripped": 16
+  },
+  "unknown": {
+   "plain": 1552,
+   "attributed": 112,
+   "stripped": 38
+  }
+ },
+ "caveat": "mechanical cue detector; precision from the hand-checked sample is reported separately. Does not catch this court's own reasoning left in masked_text.",
+ "precision_check": {
+  "stripped_class": "hand-checked by claude-opus-5-5 (AI, single coder)",
+  "sample_1": "19/26 after the forum rule (seed 573; 3 false hits removed by that rule)",
+  "sample_2": "19/25 fresh sample (seed 2026)",
+  "pooled": "38/51 = 0.75",
+  "false_hit_types": [
+   "primary event or document embedded in a court's finding sentence",
+   "statutory or notification recital"
+  ],
+  "recall": "not measured; the detector cannot see this court's own reasoning left in masked_text"
+ }
+}

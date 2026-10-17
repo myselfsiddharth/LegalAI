@@ -1,0 +1,1116 @@
+{
+ "what": "type of fact S4 cited for each non-UNCLEAR verdict in the 40-case gold set",
+ "coder": "claude-opus-5-5, single pass, not double-coded",
+ "types": {
+  "primary_fact": "an event or document",
+  "court_finding": "a statement attributed to a court (X held/found/opined)",
+  "conclusion": "a legal conclusion or proposition stated as a bare fact, usually a lower court's holding with its attribution stripped",
+  "party_assertion": "a pleading or contention"
+ },
+ "rows": [
+  {
+   "i": 0,
+   "case_id": "1673730",
+   "element_id": "claim_01_e01",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "The plaintiff did not acquire valid title to the suit property.",
+   "type": "conclusion"
+  },
+  {
+   "i": 1,
+   "case_id": "1673730",
+   "element_id": "claim_01_e02",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "The second defendant had no subsisting title to the suit property when Ex.A-1 was executed.",
+   "type": "conclusion"
+  },
+  {
+   "i": 2,
+   "case_id": "1673730",
+   "element_id": "claim_01_e03",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The first defendant obtained Ex.B-2 document in collusion with the second defendant.",
+   "type": "party_assertion"
+  },
+  {
+   "i": 3,
+   "case_id": "1673730",
+   "element_id": "claim_01_e04",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The plaintiff filed the suit for declaration of his title and recovery of possession.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 4,
+   "case_id": "1673730",
+   "element_id": "claim_12_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The second defendant executed a registered usufructuary mortgage dated 12.9.1966 to one Chellian for Rs.600/-.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 5,
+   "case_id": "1673730",
+   "element_id": "claim_12_e02",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "The first defendant redeemed Ex.B-1 mortgage and discharged the liability of mortgagee, Chellian on 10.5.1967.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 6,
+   "case_id": "1673730",
+   "element_id": "claim_12_e03",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "The first defendant redeemed Ex.B-1 mortgage and discharged the liability of mortgagee, Chellian on 10.5.1967.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 7,
+   "case_id": "1673730",
+   "element_id": "claim_12_e04",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "The second defendant had no subsisting title to the suit property when Ex.A-1 was executed.",
+   "type": "conclusion"
+  },
+  {
+   "i": 8,
+   "case_id": "535729",
+   "element_id": "claim_03_e01",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "The Additional Collector, Meerut, held that the said lands were Sir and Khud kasht of the respondent and that the appellants were not admitted thereto as hereditary tenants.",
+   "type": "court_finding"
+  },
+  {
+   "i": 9,
+   "case_id": "535729",
+   "element_id": "claim_03_e03",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "The Additional Collector, Meerut, held that the said lands were Sir and Khud kasht of the respondent and that the appellants were not admitted thereto as hereditary tenants.",
+   "type": "court_finding"
+  },
+  {
+   "i": 10,
+   "case_id": "535729",
+   "element_id": "claim_03_e04",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The appellants were not hereditary tenants.",
+   "type": "conclusion"
+  },
+  {
+   "i": 11,
+   "case_id": "535729",
+   "element_id": "claim_02_e01",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "The appellants' possession of the lands was illegal from the inception.",
+   "type": "conclusion"
+  },
+  {
+   "i": 12,
+   "case_id": "53832084",
+   "element_id": "claim_03_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The land was allotted to the appellant by the State Government",
+   "type": "primary_fact"
+  },
+  {
+   "i": 13,
+   "case_id": "53832084",
+   "element_id": "claim_03_e03",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "The trial Court opined that the plaintiffs failed to substantiate the case set out in the plaint regarding the actionable nuisance",
+   "type": "court_finding"
+  },
+  {
+   "i": 14,
+   "case_id": "53832084",
+   "element_id": "claim_03_e04",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "The trial Court opined that the plaintiffs failed to substantiate the case set out in the plaint regarding the actionable nuisance",
+   "type": "court_finding"
+  },
+  {
+   "i": 15,
+   "case_id": "53832084",
+   "element_id": "claim_02_e03",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The defendants did not produce any document showing that the Pollution Control Board and Bhujal Survey Officer surveyed the suit property.",
+   "type": "conclusion"
+  },
+  {
+   "i": 16,
+   "case_id": "53832084",
+   "element_id": "claim_02_e04",
+   "model_verdict": "SATISFIED",
+   "model_quote": "Storing solid waste on the suit property will pollute the river water.",
+   "type": "conclusion"
+  },
+  {
+   "i": 17,
+   "case_id": "593296",
+   "element_id": "claim_15_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The land acquisition was for planned development of Delhi.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 18,
+   "case_id": "593296",
+   "element_id": "claim_15_e02",
+   "model_verdict": "SATISFIED",
+   "model_quote": "A notification under Section 4 of the Land Acquisition Act was issued on 17 November 1980.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 19,
+   "case_id": "593296",
+   "element_id": "claim_15_e05",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "no effort was made by the claimants to establish before the Court that there was no upward rise in the price or increase in the price of land in village Gharoli and NOIDA during the period between the issue of notification under Section 4 and date of execution of the Exhibits sought to be relied upon",
+   "type": "conclusion"
+  },
+  {
+   "i": 20,
+   "case_id": "593296",
+   "element_id": "claim_05_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The land acquisition was for planned development of Delhi.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 21,
+   "case_id": "593296",
+   "element_id": "claim_05_e03",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "in the absence of evidence of any transaction or sale of land on the date of issue of notification under Section 4 of the Act which can be taken as a guide for determining the market value of the acquired land and compensation to be awarded to the claimants",
+   "type": "conclusion"
+  },
+  {
+   "i": 22,
+   "case_id": "98087985",
+   "element_id": "claim_15_e02",
+   "model_verdict": "SATISFIED",
+   "model_quote": "A fresh notification was issued on 19 February 1997 to acquire 12 bigha of land for development of Vasant Kunj.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 23,
+   "case_id": "98087985",
+   "element_id": "claim_15_e05",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "The High Court took Exs A7 to A10 as comparable sales for fixation of market value",
+   "type": "court_finding"
+  },
+  {
+   "i": 24,
+   "case_id": "98087985",
+   "element_id": "claim_15_e06",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "The Special Leave Petition (Civil) No.15272/2011 was dismissed by the Order dated 12 May 2011.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 25,
+   "case_id": "33995097",
+   "element_id": "claim_15_e02",
+   "model_verdict": "SATISFIED",
+   "model_quote": "A notification under Section 4(1) of the Land Acquisition Act was published on 30.6.1988.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 26,
+   "case_id": "33995097",
+   "element_id": "claim_15_e03",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "The Lt. Governor directed that the provisions of Section 5A of the Act should not apply.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 27,
+   "case_id": "33995097",
+   "element_id": "claim_15_e06",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "The respondents gave up their challenge in regard to the urgency under Section 17(1)",
+   "type": "primary_fact"
+  },
+  {
+   "i": 28,
+   "case_id": "33995097",
+   "element_id": "claim_05_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The Delhi Administration issued a Section 4(1) notification on 30.6.1988",
+   "type": "primary_fact"
+  },
+  {
+   "i": 29,
+   "case_id": "33995097",
+   "element_id": "claim_05_e02",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The Lt. Governor directed that the provisions of Section 5A of the Act should not apply.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 30,
+   "case_id": "113126923",
+   "element_id": "claim_04_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The NIT Act empowers the abandonment of acquisition under Section 68.",
+   "type": "conclusion"
+  },
+  {
+   "i": 31,
+   "case_id": "113126923",
+   "element_id": "claim_15_e04",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "The land was neither vested in nor acquired by respondent no.2-NIT.",
+   "type": "party_assertion"
+  },
+  {
+   "i": 32,
+   "case_id": "113126923",
+   "element_id": "claim_15_e05",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "The appellant-trust did not receive consideration for transfer of the land in the form of benefits.",
+   "type": "party_assertion"
+  },
+  {
+   "i": 33,
+   "case_id": "113126923",
+   "element_id": "claim_15_e06",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The appellant-trust filed Writ Petition No. 1034 of 1995 challenging the allotment of land in Narayanrao Gawande layout.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 34,
+   "case_id": "379222",
+   "element_id": "claim_15_e02",
+   "model_verdict": "SATISFIED",
+   "model_quote": "A notification under Section 4(1) was issued on 16.5.1980 for acquiring land in Garedepalli village of Nalgonda District.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 35,
+   "case_id": "379222",
+   "element_id": "claim_15_e03",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "The Court held that notice from the Collector under Section 12(2) was also not issued.",
+   "type": "court_finding"
+  },
+  {
+   "i": 36,
+   "case_id": "379222",
+   "element_id": "claim_15_e06",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "The respondents filed an application under Section 28-A of the Act on 27th November, 1989 for enhancement of the compensation.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 37,
+   "case_id": "379222",
+   "element_id": "claim_05_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "A notification under Section 4(1) was issued on 16.5.1980 for acquiring land in Garedepalli village of Nalgonda District.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 38,
+   "case_id": "379222",
+   "element_id": "claim_05_e02",
+   "model_verdict": "SATISFIED",
+   "model_quote": "A notification under Section 4(1) was issued on 16.5.1980 for acquiring land in Garedepalli village of Nalgonda District.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 39,
+   "case_id": "43662",
+   "element_id": "claim_02_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The decree-holder obtained possession over the suit premises with police help on 21.2.1998.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 40,
+   "case_id": "43662",
+   "element_id": "claim_02_e02",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "The decree-holder obtained possession over the suit premises with police help on 21.2.1998.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 41,
+   "case_id": "710899",
+   "element_id": "claim_03_e03",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The executive Council of the University decided to institute eviction proceedings against the tenants for the use of its employees.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 42,
+   "case_id": "710899",
+   "element_id": "claim_03_e04",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The appellants were given three months time to surrender vacant possession of the building.",
+   "type": "court_finding"
+  },
+  {
+   "i": 43,
+   "case_id": "710899",
+   "element_id": "claim_02_e02",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The executive Council of the University decided to institute eviction proceedings against the tenants for the use of its employees.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 44,
+   "case_id": "710899",
+   "element_id": "claim_02_e03",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "Notices terminating the tenancies were served on the tenants.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 45,
+   "case_id": "91819",
+   "element_id": "claim_15_e04",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The possession of the land was taken by the Improvement Board on 9-8-1978.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 46,
+   "case_id": "91819",
+   "element_id": "claim_15_e05",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "The Divisional Commissioner did not approve of the award.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 47,
+   "case_id": "91819",
+   "element_id": "claim_01_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "Shankara Textiles Mills Ltd owned a total land of 49 acres and 38.25 guntas in Davanagere Village.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 48,
+   "case_id": "91819",
+   "element_id": "claim_01_e02",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The respondent, Shankara Textiles Mills Ltd, is a public limited company.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 49,
+   "case_id": "556242",
+   "element_id": "claim_05_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The Corporation of Calcutta fixed the annual valuation of the premises at Rs. 14,093.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 50,
+   "case_id": "556242",
+   "element_id": "claim_05_e02",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The Calcutta Municipal Act, 1923, section 127(a), provides for assessment of annual value of land or building",
+   "type": "conclusion"
+  },
+  {
+   "i": 51,
+   "case_id": "556242",
+   "element_id": "claim_05_e03",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "Notice of the assessment was served on the respondents on June 20, 1950.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 52,
+   "case_id": "556242",
+   "element_id": "claim_05_e04",
+   "model_verdict": "SATISFIED",
+   "model_quote": "Any amount in excess of the standard rent is irrecoverable",
+   "type": "conclusion"
+  },
+  {
+   "i": 53,
+   "case_id": "1314729",
+   "element_id": "claim_10_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The agreement was dated 7th July, 1995.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 54,
+   "case_id": "1314729",
+   "element_id": "claim_10_e02",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The plaintiff paid the earnest money to defendant No.1.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 55,
+   "case_id": "1314729",
+   "element_id": "claim_10_e03",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "The plaintiff failed to discharge its part of the contract within time.",
+   "type": "conclusion"
+  },
+  {
+   "i": 56,
+   "case_id": "65585365",
+   "element_id": "claim_08_e03",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "The Section 34 petition was dismissed by the single judge by order dated 07.02.2023 as being barred by limitation.",
+   "type": "court_finding"
+  },
+  {
+   "i": 57,
+   "case_id": "791501",
+   "element_id": "claim_03_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The lease deed described the boundaries of the plot of land.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 58,
+   "case_id": "791501",
+   "element_id": "claim_03_e03",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "The respondent No. 1 questioned the legality of the licence in a public interest litigation.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 59,
+   "case_id": "791501",
+   "element_id": "claim_03_e04",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The appellant was in possession of 15517 sq. ft.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 60,
+   "case_id": "791501",
+   "element_id": "claim_05_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The Commissioner permitted the appellant to proceed with construction.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 61,
+   "case_id": "55908944",
+   "element_id": "claim_04_e02",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "The Corporation constructed Phase-II building in violation of the prohibition contained in notification dated 16.6.1992",
+   "type": "conclusion"
+  },
+  {
+   "i": 62,
+   "case_id": "55908944",
+   "element_id": "claim_04_e03",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The Corporation constructed Phase-II building in violation of the prohibition contained in notification dated 16.6.1992",
+   "type": "conclusion"
+  },
+  {
+   "i": 63,
+   "case_id": "55908944",
+   "element_id": "claim_06_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The Central Government issued a notification on 15.5.1991 regarding prohibited and regulated areas for mining operations and constructions near protected monuments",
+   "type": "primary_fact"
+  },
+  {
+   "i": 64,
+   "case_id": "55908944",
+   "element_id": "claim_06_e02",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The Ancient Monuments and Archaeological Sites and Remains Act, 1958, was enacted by Parliament.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 65,
+   "case_id": "245101",
+   "element_id": "claim_12_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The mortgage deed was attested by two attestors.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 66,
+   "case_id": "245101",
+   "element_id": "claim_12_e03",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The plaintiff demanded production of the deed and possession on redemption on 1.2.1981.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 67,
+   "case_id": "245101",
+   "element_id": "claim_12_e04",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The defendant did not comply with the plaintiff's demand.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 68,
+   "case_id": "245101",
+   "element_id": "claim_11_e02",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "The defendant pleaded that the mortgage deed was a sham document not intended to be acted upon",
+   "type": "party_assertion"
+  },
+  {
+   "i": 69,
+   "case_id": "1533829",
+   "element_id": "claim_12_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "A mortgage of Rs. 5,500 was discovered on the property.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 70,
+   "case_id": "1533829",
+   "element_id": "claim_12_e02",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "The mortgage debt of Rs. 5,500 had not been paid to the mortgagee.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 71,
+   "case_id": "1533829",
+   "element_id": "claim_12_e04",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The mortgage debt of Rs. 5,500 had not been paid to the mortgagee.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 72,
+   "case_id": "1533829",
+   "element_id": "claim_10_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The appellant was engaged by K.T. Appannah to complete a transaction of sale of a house property in Madras.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 73,
+   "case_id": "525406",
+   "element_id": "claim_08_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "Dundayya Gurushiddaiah Hiremath failed to vacate company quarters",
+   "type": "primary_fact"
+  },
+  {
+   "i": 74,
+   "case_id": "525406",
+   "element_id": "claim_08_e02",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The Judicial Magistrate found that Dundayya Gurushiddaiah Hiremath had no authority to retain possession of the company quarter after retirement",
+   "type": "court_finding"
+  },
+  {
+   "i": 75,
+   "case_id": "525406",
+   "element_id": "claim_08_e03",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "The complaint against Dundayya Gurushiddaiah Hiremath was filed more than six months after retirement",
+   "type": "primary_fact"
+  },
+  {
+   "i": 76,
+   "case_id": "525406",
+   "element_id": "claim_03_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "Gokak Patel Volkart Ltd required Dundayya Gurushiddaiah Hiremath to vacate company quarters",
+   "type": "primary_fact"
+  },
+  {
+   "i": 77,
+   "case_id": "197077609",
+   "element_id": "claim_12_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "Immovable properties were mortgaged by the guarantors and by the borrower to secure the cash credit facility",
+   "type": "primary_fact"
+  },
+  {
+   "i": 78,
+   "case_id": "197077609",
+   "element_id": "claim_12_e02",
+   "model_verdict": "SATISFIED",
+   "model_quote": "Sidha Neelkanth Paper Industries Pvt's account was declared as a Non Performing Asset (NPA)",
+   "type": "primary_fact"
+  },
+  {
+   "i": 79,
+   "case_id": "197077609",
+   "element_id": "claim_12_e03",
+   "model_verdict": "SATISFIED",
+   "model_quote": "Sidha Neelkanth Paper Industries Pvt raised objections to the notice under Section 13(3A) of the SARFAESI Act",
+   "type": "primary_fact"
+  },
+  {
+   "i": 80,
+   "case_id": "197077609",
+   "element_id": "claim_12_e04",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "The mortgaged properties were put to auction",
+   "type": "primary_fact"
+  },
+  {
+   "i": 81,
+   "case_id": "1259540",
+   "element_id": "claim_06_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The Cantonment Board granted permission to the respondents to make additions to their buildings situated in cantonments administered under the Cantonments Act, 1924.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 82,
+   "case_id": "1259540",
+   "element_id": "claim_06_e02",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The Board alone is given a hearing under Section 52(1)(b) of the Act.",
+   "type": "conclusion"
+  },
+  {
+   "i": 83,
+   "case_id": "1259540",
+   "element_id": "claim_06_e03",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The Officer Commanding-in-Chief of the Command can suspend the resolution under Section 52(1)(b) of the Act.",
+   "type": "conclusion"
+  },
+  {
+   "i": 84,
+   "case_id": "1259540",
+   "element_id": "claim_04_e02",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "The High Court viewed that there had been violation of the rules of natural justice.",
+   "type": "court_finding"
+  },
+  {
+   "i": 85,
+   "case_id": "1601894",
+   "element_id": "claim_03_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The respondent granted a lease of premises bearing No 149 Mohalla Bara Bazar, Midnapore to the appellant on a monthly rent of Rs. 70/-.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 86,
+   "case_id": "1601894",
+   "element_id": "claim_03_e03",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The respondent terminated the tenancy by means of a valid notice.",
+   "type": "conclusion"
+  },
+  {
+   "i": 87,
+   "case_id": "1601894",
+   "element_id": "claim_03_e04",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The respondent filed a suit for the eviction of the appellant on two grounds: default in payment of rent from January 1966 onwards and reasonable requirement of the leased premises for the residential needs of the landlord and also for starting a business in a portion of the building.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 88,
+   "case_id": "1601894",
+   "element_id": "claim_02_e03",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "The respondent terminated the tenancy by means of a valid notice.",
+   "type": "conclusion"
+  },
+  {
+   "i": 89,
+   "case_id": "79780222",
+   "element_id": "claim_03_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "Mining rights were leased to South Eastern Coalfields Ltd. by the State Government under the Mines and Minerals (Development and Regulation) Act, 1957.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 90,
+   "case_id": "79780222",
+   "element_id": "claim_03_e02",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The liability of South Eastern Coalfields Ltd. to pay interest to the State is statutory as well as contractual.",
+   "type": "conclusion"
+  },
+  {
+   "i": 91,
+   "case_id": "79780222",
+   "element_id": "claim_03_e03",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "The coalfields did not lay any challenge to the enhancement",
+   "type": "primary_fact"
+  },
+  {
+   "i": 92,
+   "case_id": "79780222",
+   "element_id": "claim_05_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The Union of India enhanced the royalty payable on coal to Rs. 120/- per ton from Rs. 6.50 per ton",
+   "type": "primary_fact"
+  },
+  {
+   "i": 93,
+   "case_id": "208309",
+   "element_id": "claim_15_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "Building of residential quarters for industrial labour is a public purpose",
+   "type": "conclusion"
+  },
+  {
+   "i": 94,
+   "case_id": "208309",
+   "element_id": "claim_15_e02",
+   "model_verdict": "SATISFIED",
+   "model_quote": "A notification under s. 6 of the Land Acquisition Act was issued on May 27, 1955.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 95,
+   "case_id": "208309",
+   "element_id": "claim_15_e04",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The Patwari effected delivery of possession of the lands to the second respondent on August 21, 1955.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 96,
+   "case_id": "208309",
+   "element_id": "claim_15_e06",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "The appellants instituted a suit on August 20, 1955, for a perpetual injunction restraining the second respondent from entering upon or taking possession of the land.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 97,
+   "case_id": "745068",
+   "element_id": "claim_03_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The lease deed was executed in favour of John William Walsh on May 10, 1887.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 98,
+   "case_id": "745068",
+   "element_id": "claim_03_e03",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "The High Court disposed of the writ petition at the admission stage itself by order dated 19.4.1989.",
+   "type": "court_finding"
+  },
+  {
+   "i": 99,
+   "case_id": "745068",
+   "element_id": "claim_15_e02",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The State of U.P. issued a notification under Section 4 of the Land Acquisition Act, 1894 on 28.3.1987.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 100,
+   "case_id": "745068",
+   "element_id": "claim_15_e04",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The land was acquired by the State.",
+   "type": "party_assertion"
+  },
+  {
+   "i": 101,
+   "case_id": "147731345",
+   "element_id": "claim_11_e02",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "The impugned order was obtained by fraud.",
+   "type": "party_assertion"
+  },
+  {
+   "i": 102,
+   "case_id": "1966631",
+   "element_id": "claim_12_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "Veeresalingam executed a mortgage bond in favour of Sitharamayya",
+   "type": "primary_fact"
+  },
+  {
+   "i": 103,
+   "case_id": "1966631",
+   "element_id": "claim_12_e04",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "The judgment-debtors ceased to be the owners of Tedlam village after its sale.",
+   "type": "conclusion"
+  },
+  {
+   "i": 104,
+   "case_id": "1045847",
+   "element_id": "claim_15_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The land was notified for acquisition under Section 4(1) of the Land Acquisition Act for the public purpose of 'establishment of diamond park'.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 105,
+   "case_id": "1045847",
+   "element_id": "claim_15_e02",
+   "model_verdict": "SATISFIED",
+   "model_quote": "A notification under Section 4(1) of the Act was issued on 30th June, 1996.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 106,
+   "case_id": "1045847",
+   "element_id": "claim_15_e03",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "The enquiry under Section 5A was dispensed with.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 107,
+   "case_id": "1045847",
+   "element_id": "claim_06_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The land was notified for acquisition under Section 4(1) of the Land Acquisition Act for the public purpose of 'establishment of diamond park'.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 108,
+   "case_id": "177074256",
+   "element_id": "claim_04_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The West Bengal Housing Board is the current owner of the suit property.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 109,
+   "case_id": "177074256",
+   "element_id": "claim_04_e03",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "The sale deed in favour of the Board is not challenged by the plaintiffs-respondents",
+   "type": "primary_fact"
+  },
+  {
+   "i": 110,
+   "case_id": "1328359",
+   "element_id": "claim_15_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "A declaration under Section 6 of the Land Acquisition Act was issued on 4.1.1969 stating that the said land is required for the public purpose, namely, for the planned development of Delhi.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 111,
+   "case_id": "1328359",
+   "element_id": "claim_15_e02",
+   "model_verdict": "SATISFIED",
+   "model_quote": "A notification under Section 4 of the Land Acquisition Act was issued on 24.10.1961 for the acquisition of land for the planned development of Delhi.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 112,
+   "case_id": "1328359",
+   "element_id": "claim_15_e04",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The Land Acquisition Officer took possession of the land on 27.01.2000",
+   "type": "primary_fact"
+  },
+  {
+   "i": 113,
+   "case_id": "1328359",
+   "element_id": "claim_15_e06",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "Meera Sahni filed a Civil Writ Petition No.1003 of 1983 challenging the legality and validity of the notification and declaration under which her land was proposed to be acquired.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 114,
+   "case_id": "95910470",
+   "element_id": "claim_15_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The object of the Requisitioning Act was to enable the Union to requisition or acquire immovable property for a public purpose.",
+   "type": "conclusion"
+  },
+  {
+   "i": 115,
+   "case_id": "95910470",
+   "element_id": "claim_15_e02",
+   "model_verdict": "NOT_SATISFIED",
+   "model_quote": "Notice of acquisition had not been given",
+   "type": "conclusion"
+  },
+  {
+   "i": 116,
+   "case_id": "95910470",
+   "element_id": "claim_15_e04",
+   "model_verdict": "SATISFIED",
+   "model_quote": "Possession of the acquired land was taken by NGEF.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 117,
+   "case_id": "95910470",
+   "element_id": "claim_15_e05",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The compensation was determined at 6% per annum on the capital value of land",
+   "type": "primary_fact"
+  },
+  {
+   "i": 118,
+   "case_id": "983794",
+   "element_id": "claim_13_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "Kothandarama Ayyar owned considerable properties in the District of Tanjore",
+   "type": "primary_fact"
+  },
+  {
+   "i": 119,
+   "case_id": "983794",
+   "element_id": "claim_13_e02",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The testator had a will that disposed of his properties.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 120,
+   "case_id": "983794",
+   "element_id": "claim_13_e04",
+   "model_verdict": "SATISFIED",
+   "model_quote": "After Nagammal's death, the Kothangudi property was to pass to Gnanambal and her children.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 121,
+   "case_id": "781635",
+   "element_id": "claim_03_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "a portion of the premises was sublet to Shewaran Lachmandas on 9-3-1957",
+   "type": "primary_fact"
+  },
+  {
+   "i": 122,
+   "case_id": "781635",
+   "element_id": "claim_03_e02",
+   "model_verdict": "SATISFIED",
+   "model_quote": "the lease deed of 3-4-1963 contained a provision against subletting",
+   "type": "primary_fact"
+  },
+  {
+   "i": 123,
+   "case_id": "781635",
+   "element_id": "claim_03_e03",
+   "model_verdict": "SATISFIED",
+   "model_quote": "the respondent landlord filed an application under Section 10(2)(ii)(a) of the Act in December 1964",
+   "type": "primary_fact"
+  },
+  {
+   "i": 124,
+   "case_id": "1603779",
+   "element_id": "claim_09_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The two houses are ancestral properties and the plaintiff has one-fifth share in them",
+   "type": "primary_fact"
+  },
+  {
+   "i": 125,
+   "case_id": "1603779",
+   "element_id": "claim_09_e02",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The two houses are ancestral properties and the plaintiff has one-fifth share in them",
+   "type": "primary_fact"
+  },
+  {
+   "i": 126,
+   "case_id": "1778243",
+   "element_id": "claim_09_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The family is a trading family.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 127,
+   "case_id": "1778243",
+   "element_id": "claim_09_e02",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The respondent claimed a 1/2 share in all the family assets.",
+   "type": "party_assertion"
+  },
+  {
+   "i": 128,
+   "case_id": "1778243",
+   "element_id": "claim_09_e03",
+   "model_verdict": "SATISFIED",
+   "model_quote": "On September 6, 1941, the respondent gave notice to appellant 1 calling upon him to effect a partition and to render accounts of his management and the properties of the family.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 129,
+   "case_id": "366892",
+   "element_id": "claim_09_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The respondent/plaintiff pleaded that properties left behind by Chathu devolved upon the plaintiff and defendants equally.",
+   "type": "party_assertion"
+  },
+  {
+   "i": 130,
+   "case_id": "366892",
+   "element_id": "claim_11_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "Shri Chathu executed a gift deed on 26.04.1974 in favour of K Laxmanan for items 4 and 5.",
+   "type": "party_assertion"
+  },
+  {
+   "i": 131,
+   "case_id": "366892",
+   "element_id": "claim_11_e02",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The High Court held that execution of both the Deed of Will and Deed of Gift are shrouded in mystery.",
+   "type": "court_finding"
+  },
+  {
+   "i": 132,
+   "case_id": "606684",
+   "element_id": "claim_03_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The respondent was allotted accommodation in Building No. D/63, Vidya Vihar, ONGC Colony, Chittaranjan Nagar, Bombay vide allotment letter dated December 10, 1982.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 133,
+   "case_id": "606684",
+   "element_id": "claim_03_e02",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The Commission had issued Allotment of Residences Instructions, 1970.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 134,
+   "case_id": "606684",
+   "element_id": "claim_03_e03",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The Commission initiated eviction proceedings against the respondent.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 135,
+   "case_id": "74585509",
+   "element_id": "claim_01_e01",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The grant was a specific endowment for Kalyanotsavam and other purposes incidental thereto.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 136,
+   "case_id": "74585509",
+   "element_id": "claim_01_e02",
+   "model_verdict": "SATISFIED",
+   "model_quote": "N. Buchayya made an inam statement in 1859-60.",
+   "type": "primary_fact"
+  },
+  {
+   "i": 137,
+   "case_id": "74585509",
+   "element_id": "claim_01_e03",
+   "model_verdict": "SATISFIED",
+   "model_quote": "The defence raised was that the inam was a personal grant for driving the car of the deity on the festival days.",
+   "type": "party_assertion"
+  }
+ ]
+}

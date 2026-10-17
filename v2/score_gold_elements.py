@@ -39,6 +39,17 @@ def wilson(k: int, n: int) -> tuple[float, float]:
 
 
 def main() -> None:
+    # --ann / --out exist so a non-human reviewer pass (e.g. an AI second reader) can be scored
+    # without writing into, or being reported as, the human gold result.
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--ann", type=Path, default=ANN)
+    ap.add_argument("--out", type=Path, default=Path("v2/experiments/s4_gold_agreement.json"))
+    args = ap.parse_args()
+    _score(args.ann, args.out)
+
+
+def _score(ANN: Path, out: Path) -> None:
     if not ANN.exists():
         raise SystemExit(f"{ANN} missing — nothing annotated yet.\n"
                          f"Run: .venv/bin/streamlit run v2/annotate_elements.py")
@@ -100,10 +111,9 @@ def main() -> None:
         print(f"    -> {dis/SELF_DISAGREEMENT:.1f}x the floor, so there is real headroom that is")
         print("       not explained by the model's own instability.")
 
-    out = Path("v2/experiments/s4_gold_agreement.json")
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps({
-        "stage": "S4 vs human gold", "annotators": annots, "n_cases": len(latest),
+        "stage": "S4 vs reviewer annotation", "annotators": annots, "n_cases": len(latest),
         "n_judgements": len(js), "overall_agreement": round(agree / len(js), 4),
         "overall_ci95": [round(lo, 4), round(hi, 4)],
         "confusion": {f"{h}|{m}": n for (h, m), n in M.items()},

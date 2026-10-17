@@ -1,0 +1,42 @@
+{
+  "stage": "S4 vs reviewer annotation",
+  "annotators": [
+    "claude-opus-5-5 (AI reviewer, NOT human)"
+  ],
+  "n_cases": 40,
+  "n_judgements": 214,
+  "overall_agreement": 0.715,
+  "overall_ci95": [
+    0.6511,
+    0.7712
+  ],
+  "confusion": {
+    "NOT_SATISFIED|NOT_SATISFIED": 16,
+    "SATISFIED|SATISFIED": 76,
+    "SATISFIED|NOT_SATISFIED": 5,
+    "UNCLEAR|NOT_SATISFIED": 22,
+    "UNCLEAR|UNCLEAR": 61,
+    "UNCLEAR|SATISFIED": 14,
+    "SATISFIED|UNCLEAR": 12,
+    "NOT_SATISFIED|SATISFIED": 5,
+    "NOT_SATISFIED|UNCLEAR": 3
+  },
+  "per_class": {
+    "SATISFIED": {
+      "precision_n": 95,
+      "recall_n": 93,
+      "tp": 76
+    },
+    "NOT_SATISFIED": {
+      "precision_n": 43,
+      "recall_n": 24,
+      "tp": 16
+    },
+    "UNCLEAR": {
+      "precision_n": 76,
+      "recall_n": 97,
+      "tp": 61
+    }
+  },
+  "self_disagreement_reference": 0.031
+}
