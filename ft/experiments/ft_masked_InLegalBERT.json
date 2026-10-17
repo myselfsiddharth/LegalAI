@@ -6,7 +6,7 @@
  "bs": 16,
  "lr": 2e-05,
  "seeds": [
-  573
+  2
  ],
  "is_capability_control": false,
  "v1_bar": {
@@ -14,34 +14,34 @@
   "acc": 0.621,
   "method": "TF-IDF + logistic regression"
  },
- "test_case_auroc_mean": 0.701,
+ "test_case_auroc_mean": 0.691,
  "test_case_auroc_sd": 0.0,
- "test_case_acc_mean": 0.6648,
+ "test_case_acc_mean": 0.6249,
  "preregistered_verdict": "CEILING SOFTENS: a real but modest gain. Report this as the new ceiling and revise the estimate in report 15.6.",
  "runs": [
   {
-   "seed": 573,
+   "seed": 2,
    "dev_best": {
     "chunk": {
-     "auroc": 0.6322955523931494,
-     "acc": 0.6068714899240172
+     "auroc": 0.617832425919033,
+     "acc": 0.5695407994714239
     },
     "case": {
-     "auroc": 0.683842188739096,
-     "acc": 0.6387665198237885,
-     "macro_f1": 0.633185535520741,
+     "auroc": 0.6816415543219668,
+     "acc": 0.6233480176211453,
+     "macro_f1": 0.6231267749217213,
      "n_cases": 454
     }
    },
    "test": {
     "chunk": {
-     "auroc": 0.6384280761092355,
-     "acc": 0.6045279383429673
+     "auroc": 0.6305958132045089,
+     "acc": 0.5907193320488118
     },
     "case": {
-     "auroc": 0.701033119130005,
-     "acc": 0.6648168701442841,
-     "macro_f1": 0.6634700056397115,
+     "auroc": 0.6909787444389521,
+     "acc": 0.6248612652608213,
+     "macro_f1": 0.6242275724551845,
      "n_cases": 901
     }
    }
