@@ -50,3 +50,6 @@ v2/interim/
 ft/cache/
 
 demo/pack/
+
+# ILDC (IL-TUR) release: gated licence, not ours to redistribute
+Data/ildc/
