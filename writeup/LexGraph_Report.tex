@@ -70,7 +70,11 @@ basis scores 0.524. Naming all 66 induced clusters shows why: legal-substance fa
 facts alone and dates alone all score $\approx 0.605$, so \textbf{the outcome signal is diffuse
 rather than concentrated}, a spanning basis captures it and a selective doctrinal probe cannot, and no
 ontology would unlock it. §\ref{sec:can78} addresses whether the published 78\% can be beaten:
-trivially yes on the leaky task, almost certainly not on the honest one.
+trivially yes on the leaky task, almost certainly not on the honest one --- a fine-tuned
+InLegalBERT reaches 0.695 AUROC on facts (three seeds) against 0.907 on the contaminated window,
+the same model and training. §\ref{sec:s4gold} checks the element layer's verdicts against a blind
+AI reviewer: positive verdicts agree 80\% of the time, defeat verdicts under half, and part of that
+weakness traces to court conclusions that extraction recorded as bare facts.
 
 Neither critique is new to the literature, and §\ref{sec:prior} positions both against verified
 prior work. What is defensibly ours is methodological, and §\ref{sec:prior} says which parts. Three
@@ -651,10 +655,8 @@ is exactly why the setback curve is the primary evidence: it never relies on det
 \subsection{Generalisation: 26,688 judgments, every case type}\label{sec:scale}
 
 Two objections survive the above --- it might be a land-dispute artifact, and 842 test cases is not
-many. The intended answer was a replication on ILDC (34,816 cases), whose release is gated behind a
-review queue that may never be processed.
-
-It proved unnecessary, because \textbf{the restriction to land disputes was ours, not the data's}.
+many. The intended answer was a replication on ILDC (34,816 cases), whose release is gated; it was
+eventually run (§\ref{sec:ildc}). The corpus-scale test below came first and stands on its own, because \textbf{the restriction to land disputes was ours, not the data's}.
 All 26,688 judgments were already on disk and ILDC is drawn from the same population (Indian
 Kanoon's Supreme Court judgments). \code{src/data/corpus\_wide.py} extracts, rules-labels and masks
 every one in parallel, API-free: \textbf{2.8 minutes}, yielding \textbf{14,168 usable WIN/LOSE
@@ -725,6 +727,45 @@ corpus \code{random} (2,414) & $+0.029$ $[+0.022, +0.036]$ & yes \\
 
 Four point estimates between $+0.022$ and $+0.029$, significant in three; the one failure is the
 smallest test set, so the earlier non-replication was a power problem, not a contradiction.
+
+\subsection{Replication on ILDC itself}\label{sec:ildc}
+
+Licence access to the IL-TUR release came through, so \code{src/eval/ildc\_ablation.py} ran on
+ILDC's own documents and labels (\code{experiments/paper1/ildc\_ablation.json}): 31,912 training
+documents (capped at 8,000 for TF-IDF), 1,516 test documents, test positive rate 0.503. The
+\code{facts\_only} arm applies this project's §5.2 masking to ILDC text; it yields usable text for
+1,374 of the 1,516 test documents.
+
+\begin{center}
+\begin{tabular}{@{}lrrl@{}}
+\toprule
+\textbf{Arm} & \textbf{AUROC} & \textbf{vs facts\_only} & \\
+\midrule
+\code{facts\_only} (masked) & 0.551 & --- & \\
+\code{w0} = last 512 words (ILDC's best-model input) & 0.607 & $+0.055$ $[+0.024, +0.086]$ & significant \\
+\code{w1} = set back 512 & 0.571 & $+0.018$ $[-0.013, +0.050]$ & not significant \\
+\code{w2} & 0.572 & $+0.014$ $[-0.016, +0.045]$ & not significant \\
+\code{w3} & 0.551 & $-0.005$ $[-0.038, +0.027]$ & not significant \\
+whole document minus its last 128 words & 0.577 & $+0.024$ $[+0.005, +0.042]$ & significant \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{The shape replicates}: only the window adjacent to the deleted decision beats facts-only,
+and \code{w0} beats \code{w1} directly ($+0.038$ $[+0.007, +0.070]$). \textbf{Three things differ.}
+(i) The magnitude is a third of ours: $+0.055$ against $+0.18$. Plain TF-IDF is weak on ILDC ---
+0.55--0.61 AUROC on every arm --- so there is less signal to redistribute; this is a statement about
+the method's reach on this data, not about the leak. (ii) The contamination reaches further: the
+setback advantage is still significant at 256 words and gone only at 512 (ours: 128), so ILDC's
+boundary leaves more residue, or residue of a different kind. (iii) The disposition-cue excess in
+\code{w0} is small ($+0.016$ over the base rate, against $+0.150$ on our corpus), so whatever carries
+the signal is mostly not the cue patterns this project's regexes know. As on our corpus, the
+reasoning with the tail removed still adds a little ($+0.024$).
+
+The defensible claim is therefore \emph{qualitative replication on the benchmark itself}: ILDC's
+best-model input is significantly advantaged by its position next to the deleted decision, and the
+advantage does not survive moving the window back. The magnitude on ILDC should not be quoted from a
+TF-IDF model; the fine-tuning pipeline in \code{ft/} is the instrument that would size it.
 
 \subsection{Is the baseline itself clean?}\label{sec:baseline}
 
@@ -1127,6 +1168,111 @@ reappearing inside the fact stream. The decomposition above bounds the damage at
 AUROC, so it drives no reported result, but \code{OUTCOME\_CUE} should gain past-tense forms and
 \code{PRIOR\_COURT\_DISPOSITION} a wider forum list.
 
+\subsection{Is S4 right? An AI-reviewed gold set, and where the defeat verdicts come from}\label{sec:s4gold}
+
+S4 fails as a feature layer but its verdicts were never checked. No human reviewer is available, so
+the 40-case, 214-judgement set was annotated by an \textbf{AI reviewer} (\code{claude-opus-5-5}),
+\textbf{blind}: S4's verdicts were stripped before any case was read, and the annotations are stored
+under an annotator name that says so (\code{Data/gold/element\_gold\_annotations\_ai.jsonl}). This
+measures agreement between two models, not legal correctness; B6 remains open.
+
+\paragraph{The first set measured a mismatch} The task builder took each case's facts from an
+earlier extraction rather than the facts S4 judged. Only 49 of S4's 138 quotes were visible to the
+reviewer, and agreement was 76\% where the evidence matched against 48\% where it did not. The set
+was rebuilt from S4's own facts (same cases, same items, 138/138 quotes visible) and re-annotated.
+
+\begin{center}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+& \textbf{SATISFIED} P / R & \textbf{NOT\_SATISFIED} P / R & \textbf{overall} \\
+\midrule
+mismatched facts (withdrawn) & 72 / 73\% & 28 / 67\% & 63.6\% \\
+\textbf{S4's own facts} & \textbf{80 / 82\%} & \textbf{37 / 67\%} & \textbf{71.5\%} [65, 77] \\
+\bottomrule
+\end{tabular}
+\captionof{table}{\code{v2/experiments/s4\_ai\_reviewer\_agreement.json}. 214 judgements; S4's
+disagreement with \emph{itself} across two runs is 3.1\%, so the remaining 28.5\% is not instability.}
+\end{center}
+
+\textbf{Positive verdicts are usable; defeat verdicts are not.} The reviewer agreed with 16 of S4's
+43 \code{NOT\_SATISFIED}, and in 22 of the other 27 judged the element \code{UNCLEAR}: S4 reads
+silence, or a nearby procedural fact, as a contradiction.
+
+\paragraph{What the defeat verdicts rest on} Classifying the fact behind each of S4's 138 decisive
+verdicts (single AI coder, \code{s4\_cited\_fact\_types.json}): 92 primary facts, 24 conclusions
+stated as bare facts, 12 court findings, 10 party assertions. Conclusions and findings back
+\textbf{20 of the 43} \code{NOT\_SATISFIED} verdicts, and agreement on finding-backed verdicts is
+3/12. The usual mechanism is extraction dropping the attribution: ``it was concluded that \ldots\ the
+plaintiff did not acquire any good or valid title'' becomes the fact ``The plaintiff did not acquire
+valid title''. Masking cannot catch it --- a prior court's view legitimately belongs in
+\code{masked\_text}; only the label saying whose view it is was lost.
+
+\paragraph{How common, and does removing them help?} \code{v2/attribution\_audit.py} flags facts
+whose source sentence carries a court-attribution cue the fact text dropped: 1,883 of 96,623 (1.9\%),
+in 23\% of cases, hand-checked precision 38/51 = 0.75. Re-running S4 on the 1,126 (case, claim)
+pairs that ever produced a \code{NOT\_SATISFIED}, plus the gold cases, with those facts excluded or
+tagged \code{PRIOR COURT FINDING} under a prompt forbidding their use as evidence:
+
+\begin{center}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+& \textbf{NOT\_SAT} & \textbf{finding-backed survive} & \textbf{evidence-backed survive} & \textbf{gold NOT prec.} \\
+\midrule
+original & 1,481 & --- & --- & 16/43 (37\%) \\
+exclude & 1,279 & 36.6\% & 86.8\% & 14/34 (41\%) \\
+tag & 1,101 & 47.6\% & 72.7\% & 15/32 (47\%) \\
+\bottomrule
+\end{tabular}
+\captionof{table}{\code{v2/experiments/s4\_findings\_rerun.json}. Gold agreement rises 71.5\%
+$\rightarrow$ 73.7\% $\rightarrow$ 75.1\%; intervals overlap at this $n$. The reviewer saw the
+findings, so the comparison slightly favours the original.}
+\end{center}
+
+\textbf{The fix helps, but the cue detector reaches only a slice}: corpus-wide, just 82 of 1,481
+\code{NOT\_SATISFIED} quote a detected finding, against 20/43 in the hand-classified gold set. The
+hand class included conclusions with no attribution cue at all (``the respondent terminated the
+tenancy by means of a valid notice''), and the gold set over-samples defeat-bearing cases. Most weak
+defeat verdicts are not attribution-stripped findings; they are characterisations a cue cannot see.
+
+\paragraph{A classifier instead of a cue: what kind of statement is each fact?}
+\code{v2/fact\_types.py} labels every fact \code{PRIMARY}, \code{PROCEDURAL}, \code{FINDING},
+\code{LAW} or \code{ASSERTION}, reading the fact's \emph{source sentence} rather than its text
+(\code{qwen3-235b}, 15 facts per call, 8,620 calls, 8 skips relabelled). Piloted first on the gold
+cases against the hand labels: finding-or-law recall 30/36, precision 30/41. Over the corpus:
+PRIMARY 51.8\%, FINDING 15.3\%, PROCEDURAL 14.5\%, ASSERTION 10.8\%, LAW 7.6\%.
+
+\textbf{This restores the gold-set estimate at corpus scale.} Of all 1,481 \code{NOT\_SATISFIED}
+verdicts in the full S4 run, \textbf{48.8\% quote a fact labelled \code{FINDING}}, against a 15.3\%
+base rate; \code{SATISFIED} verdicts cite findings at roughly the base rate (16.3\%)
+(\code{v2/experiments/s4\_verdicts\_by\_fact\_type.json}). The cue detector's 82 was its own blind
+spot, not the true rate. S4's defeat half is largely a restatement of courts' conclusions.
+
+Two more arms on the same pairs:
+
+\begin{center}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+& \textbf{NOT\_SAT} & \textbf{of which quote FINDING/LAW} & \textbf{gold agreement} & \textbf{gold NOT prec.} \\
+\midrule
+original & 1,481 & 766 (52\%) & 71.5\% & 16/43 \\
+\code{typed}: FINDING/LAW tagged, prompt v4 forbids quoting them & 1,094 & 589 (54\%) & 74.2\% & 17/39 \\
+\code{exclude\_typed}: FINDING/LAW removed & 590 & 0 & 68.7\% & 8/19 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{The model does not obey the tag for defeat verdicts}: under a prompt that forbids it, 54\% of
+its \code{NOT\_SATISFIED} still quote a tagged finding, against 16\% of its \code{SATISFIED}.
+Labelling is not a control on this model. \textbf{Removing the findings halves the defeat verdicts}
+(1,481 $\rightarrow$ 590): roughly 60\% of S4's defeats exist only because a court's conclusion was
+in the fact list. Gold agreement \emph{falls} under removal, but that comparison cannot adjudicate:
+the AI reviewer treated findings as evidence too, so the reference rewards verdicts built on them,
+and the classifier's 73\% precision means some genuine primary facts were removed with them. What
+the evidence-only defeat layer is worth needs a reference built on primary facts alone.
+
+For the demo and any presentation, the \code{tag} arm is used: best agreement with the reviewer
+(75.1\%), no extra cost, and defeat verdicts marked low-confidence.
+
 \subsection{Where everything ranks}\label{sec:ranking}
 
 Every non-leaky arm in either version, best first. Case sets differ slightly where noted; the
@@ -1138,6 +1284,7 @@ $[+0.0089, +0.0752]$.
 \toprule
 & \textbf{Arm} & \textbf{AUROC} & \textbf{features} & \textbf{Version} \\
 \midrule
+0 & \textbf{masked text, fine-tuned InLegalBERT (3 seeds)} & \textbf{0.695} & --- & ft \\
 1 & \textbf{masked text, plain TF-IDF} & \textbf{0.666} & 50,000 & v1 \\
 2 & S2 soft fact families & 0.633 & 345 & \textbf{v2} \\
 3 & extracted fact text & 0.629 & 47,354 & v1 \\
@@ -1154,8 +1301,10 @@ $[+0.0089, +0.0752]$.
 
 Two readings matter. \textbf{S2 matches v1's entire 1,415-feature engineered pipeline using 345
 dimensions and no side inputs at all} --- no statutes, no precedents, no metadata --- which is a real
-win on parsimony. And \textbf{plain TF-IDF over the text still beats everything}, significantly. After
-both versions, the simplest method in the project is the best non-leaky predictor.
+win on parsimony. And \textbf{reading the raw text still beats every structured representation}: plain TF-IDF
+significantly, and a fine-tuned transformer by a further, smaller margin (§\ref{sec:can78}). After
+both versions, no intermediate representation in the architecture predicts better than the text it
+was derived from.
 
 \subsection{Can the published 78\% be beaten?}\label{sec:can78}
 
@@ -1174,16 +1323,37 @@ or below a per-decade majority baseline; five LLM configurations likewise; model
 statistically \emph{independent} (§\ref{sec:outcome}); all kinds of fact scoring $\approx 0.605$
 (§\ref{sec:names}); and only 0.043 of headroom above S2.
 
-\paragraph{The one legitimate gap, and it is ours} \textbf{Nothing in this project was ever
-fine-tuned.} Every model here is TF-IDF with logistic regression, plus zero-shot and few-shot LLM
-calls; ILDC used fine-tuned transformer models with hierarchical encoding. In this literature
-fine-tuning typically buys 2--6 accuracy points over TF-IDF, so an honest estimate is
-$0.62 \rightarrow 0.66$--$0.68$ --- real, worth having, and still ten points short. Three smaller
-legitimate levers: the 14,168 rules-labelled cases of §\ref{sec:scale} (2.7$\times$ more training
-data); cleaner labels, since 87\% labeller agreement mathematically caps measurable accuracy; and
-judge or bench identity, which \emph{is} known before a decision and which §\ref{sec:masking}
-excluded on principle --- though v1's metadata-only arm already reached 0.612 and adding facts to it
-did not help, so it likely saturates near 0.63 too.
+\paragraph{The one legitimate gap, closed: fine-tuning} The objection that only TF-IDF was tried
+is now answered. \code{ft/} fine-tunes InLegalBERT (pretrained on Indian legal text) on the masked
+arm, case-level by averaging 512-token chunks, on the same 901 \code{forum\_heldout} test cases, with
+the experiment and its decision bands pre-registered in \code{ft/PLAN.md} before any run.
+
+\begin{center}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+\textbf{Arm} & \textbf{AUROC} & \textbf{Accuracy} \\
+\midrule
+TF-IDF, refit on the identical case set & 0.667 & 62.2\% \\
+InLegalBERT, seed 0 / 1 / 2 & 0.701 / 0.693 / 0.691 & 66.5 / 64.9 / 62.5\% \\
+\textbf{InLegalBERT, mean of three seeds} & \textbf{0.695} (sd 0.005) & \textbf{64.6\%} (sd 2.0) \\
+\midrule
+\emph{capability control: same model on the contaminated last-512 window} & \emph{0.907} & \emph{85.9\%} \\
+\bottomrule
+\end{tabular}
+\captionof{table}{\code{ft/experiments/ft\_masked\_summary.json}. Paired bootstrap on the same
+cases: seed 1 $-$ TF-IDF $+0.026$ $[-0.002, +0.056]$; seed 2 $+0.024$ $[-0.005, +0.053]$; the
+average of seeds 1 and 2 $+0.031$ $[+0.003, +0.059]$. Seed 0's per-case probabilities were not saved.}
+\end{center}
+
+Three readings. \textbf{The gain is small and only marginally established}: no single seed is
+significantly better than word counts, and the two-seed average is. The mean sits 0.005 above the
+pre-registered 0.69 boundary, so the band is ``ceiling softens'' --- narrowly. \textbf{The ceiling
+moves from about 0.67 to about 0.70, not to 0.75}, which is inside the 2--6 points predicted above
+and strengthens rather than weakens the ceiling claim. And \textbf{the capability control reproduces
+the leakage result with a strong model}: the same network, training and cases reach 0.907 on the
+contaminated window against 0.695 on facts, a gap of $+0.21$, larger than TF-IDF's $+0.18$. The
+leakage finding is not an artifact of a weak model. Accuracy is too noisy across seeds (62.5--66.5\%)
+to claim anything from.
 
 \begin{tcolorbox}[plainbox,title={The comparison to refuse}]
 \textbf{Never place this project's honest number beside the published 78\%.} A reader sees 0.68
@@ -1196,11 +1366,8 @@ essentially reproducing the reported 78\%; on facts and arguments alone the same
 62.1\%. The fifteen-point gap is the measurement.}
 \end{tcolorbox}
 
-The experiment still worth running is therefore \textbf{not} a chase for 78\% but a fine-tuned
-transformer on masked text, to make the ceiling claim defensible. A reviewer can currently object
-that only TF-IDF was tried, and that objection is fair. It also cuts both ways: reaching $\approx
-0.68$ strengthens the ceiling considerably, while reaching $\approx 0.75$ would show the ceiling
-claim was wrong --- which is worth discovering before publication rather than after.
+That experiment is the one above: a fine-tuned transformer on masked text reached 0.695, not
+0.75, so the ceiling claim survives the objection it was most exposed to.
 
 \section{Prior art, and what is actually ours}\label{sec:prior}
 
@@ -1491,24 +1658,20 @@ noise, not fact quality; the representation ladder measures downstream utility b
 loss to a specific extraction error. \textbf{This is the single biggest gap for a reviewer, and it is
 blocked on human time, not compute.}
 
-\paragraph{B5 --- the ILDC replication (optional)} The licence request sits in a review queue
-expected not to be processed. \code{src/eval/ildc\_ablation.py} is written, setback-armed and
-verified end to end via \code{--smoke-test}, and runs the moment \code{Data/ildc/} is populated. It
-is \textbf{no longer load-bearing}: §\ref{sec:scale} covers the same population at comparable scale.
-What ILDC would still add is gold labels and \emph{its own} deletion boundary, so it could show that
-\emph{their} specific cut leaves residue rather than that a cut \emph{like} theirs does. The module
-does not route around the gate. Note the authors are \textbf{not} inactive --- Nigam published through
-2026 and Modi is organising the JUST NLP 2025 workshop --- so a direct email beats the queue.
+\paragraph{B5 --- the ILDC replication: run (closed)} Access was granted and the replication ran
+(§\ref{sec:ildc}); it reproduces the shape at a third of the magnitude with TF-IDF. The files sit in
+\code{Data/ildc/}, gitignored --- they are the authors' release under their licence, not ours to
+redistribute. Open: sizing the effect with a fine-tuned model.
 
-\paragraph{B6 --- S4's \emph{correctness} is unmeasured, and nothing was ever fine-tuned} Two gaps
+\paragraph{B6 --- S4's \emph{correctness} has no human measurement} Two gaps
 opened by §\ref{sec:v2}. First, S4 is reliable (96.9\%) and almost never fabricates (0.62\%), but
 whether its verdicts are \emph{right} needs human labels; \code{v2/gold\_elements.py} builds a
 40-case, 214-judgement set from B4's prepared cases, blind and with clicked rather than typed quotes,
-at a reviewer budget of about 94 minutes. Nothing is annotated yet. Second, and more serious for the
-ceiling claim, \textbf{no model in this project was ever fine-tuned} --- everything is TF-IDF with
-logistic regression plus zero-shot and few-shot LLM calls, while the work we compare against used
-fine-tuned transformers. §\ref{sec:can78} sets out why that experiment is worth running and why it
-cuts both ways.
+at a reviewer budget of about 94 minutes. \textbf{No human reviewer is available}; the set has been
+annotated by a blind AI reviewer instead (§\ref{sec:s4gold}), which measures model--model agreement
+and is reported as such. A human pass remains the one thing that would turn S4's correctness from
+plausible into measured. The second gap this paragraph used to record --- that nothing was
+fine-tuned --- is closed (§\ref{sec:can78}).
 
 \paragraph{Other open items}
 \begin{itemize}
@@ -1522,7 +1685,8 @@ outstanding; the 562 \code{UNRESOLVED} conflicts are the highest-information pla
 \item \textbf{Statistical power.} Every outcome-model CI spans about 0.11; the structured model and a
 per-decade majority baseline cannot be separated at $n=881$.
 \item \textbf{§8 is mis-specified for this corpus}, not merely unmet.
-\item \textbf{Not started}: the demo dashboard; the team roster and the official proposal template.
+\item \textbf{Demo}: built (\code{demo/}), reads only precomputed results; shows element verdicts
+from the tagged re-run and marks defeat verdicts low-confidence.
 \end{itemize}
 
 %==============================================================================

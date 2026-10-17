@@ -34,7 +34,9 @@ from v2.element_catalogue import load_claims
 BASE = paths.INTERIM / "element_verdicts_element_satisfy_v2_facts.jsonl"
 GOLD = paths.ROOT.parent / "Data" / "gold" / "element_gold_tasks.jsonl"
 TAGS = paths.INTERIM / "prior_court_findings.json"
-ARMS = {"exclude": "element_satisfy.v2", "tag": "element_satisfy.v3"}
+ARMS = {"exclude": "element_satisfy.v2", "tag": "element_satisfy.v3",
+        "typed": "element_satisfy.v4", "exclude_typed": "element_satisfy.v2"}
+FACT_TYPES = paths.INTERIM / "fact_types.jsonl"
 
 
 def out_path(arm: str):
@@ -43,7 +45,9 @@ def out_path(arm: str):
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--arms", nargs="+", default=list(ARMS))
+    ap.add_argument("--arms", nargs="+", default=["exclude", "tag"],
+                    help="'typed' needs fact_types.jsonl (v2/fact_types.py) and tags every fact the "
+                         "classifier labels FINDING or LAW, not just the cue-detected ones")
     ap.add_argument("--workers", type=int, default=48)
     ap.add_argument("--model", default="qwen3-235b-a22b-instruct-2507")
     args = ap.parse_args()
@@ -69,6 +73,15 @@ def main() -> None:
     claims = {c.claim_id: c for c in load_claims()}
     print(f"pairs to re-run: {len(pairs):,} (NOT_SATISFIED-bearing or in the 40 gold cases)")
 
+    ftype = {}
+    if {"typed", "exclude_typed"} & set(args.arms):
+        for line in open(FACT_TYPES):
+            r = json.loads(line)
+            if r.get("type"):
+                ftype[r["fact_id"]] = r["type"]
+        print(f"fact types loaded for {len(ftype):,} facts; "
+              f"{sum(1 for t in ftype.values() if t in ('FINDING', 'LAW')):,} tagged FINDING/LAW")
+
     for arm in args.arms:
         S4.PROMPT_ID = ARMS[arm]
         out = out_path(arm)
@@ -87,6 +100,10 @@ def main() -> None:
             fs = by_case[c]
             if arm == "exclude":
                 fs = [f for f in fs if f["fact_id"] not in flagged]
+            elif arm == "exclude_typed":
+                fs = [f for f in fs if ftype.get(f["fact_id"]) not in ("FINDING", "LAW")]
+            elif arm == "typed":
+                fs = [dict(f, fact_type_tag=ftype.get(f["fact_id"])) for f in fs]
             else:
                 fs = [dict(f, prior_court_finding=f["fact_id"] in flagged) for f in fs]
             jobs.append((c, fs, claims[cl]))

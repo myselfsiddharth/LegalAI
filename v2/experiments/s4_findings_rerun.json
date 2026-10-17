@@ -3,53 +3,93 @@
  "n_flagged_facts": 1883,
  "verdicts": {
   "base": {
+   "SATISFIED": 1738,
    "NOT_SATISFIED": 1481,
    "UNCLEAR": 1984,
    "refused": 24,
    "dropped": 0,
    "not_from_finding": 82,
-   "quotes_finding": 116,
-   "SATISFIED": 1738
+   "quotes_finding": 116
   },
   "exclude": {
+   "SATISFIED": 1823,
    "NOT_SATISFIED": 1279,
    "UNCLEAR": 2093,
    "refused": 32,
-   "dropped": 0,
-   "SATISFIED": 1823
+   "dropped": 0
   },
   "tag": {
-   "NOT_SATISFIED": 1101,
+   "SATISFIED": 1910,
    "UNCLEAR": 2191,
+   "NOT_SATISFIED": 1101,
    "refused": 25,
    "dropped": 0,
-   "SATISFIED": 1910,
-   "quotes_finding": 58,
-   "not_from_finding": 38
+   "not_from_finding": 38,
+   "quotes_finding": 58
+  },
+  "typed": {
+   "UNCLEAR": 2326,
+   "NOT_SATISFIED": 1094,
+   "SATISFIED": 1773,
+   "refused": 34,
+   "dropped": 0,
+   "not_from_finding": 62,
+   "quotes_finding": 91
+  },
+  "exclude_typed": {
+   "SATISFIED": 1840,
+   "UNCLEAR": 2775,
+   "NOT_SATISFIED": 590,
+   "refused": 22,
+   "dropped": 0,
+   "quotes_finding": 4
   }
  },
  "survival": {
   "exclude": {
    "evidence_n": 1399,
    "evidence_NOT_SATISFIED": 1214,
+   "evidence_UNCLEAR": 99,
    "finding_n": 82,
    "finding_UNCLEAR": 45,
    "finding_NOT_SATISFIED": 30,
-   "evidence_UNCLEAR": 99,
+   "evidence_MISSING": 7,
    "evidence_SATISFIED": 79,
-   "finding_SATISFIED": 7,
-   "evidence_MISSING": 7
+   "finding_SATISFIED": 7
   },
   "tag": {
    "evidence_n": 1399,
-   "evidence_NOT_SATISFIED": 1017,
    "evidence_UNCLEAR": 237,
+   "evidence_NOT_SATISFIED": 1017,
+   "evidence_SATISFIED": 141,
    "finding_n": 82,
    "finding_UNCLEAR": 36,
    "finding_NOT_SATISFIED": 39,
-   "evidence_SATISFIED": 141,
-   "finding_SATISFIED": 7,
-   "evidence_MISSING": 4
+   "evidence_MISSING": 4,
+   "finding_SATISFIED": 7
+  },
+  "typed": {
+   "evidence_n": 1399,
+   "evidence_NOT_SATISFIED": 980,
+   "evidence_UNCLEAR": 302,
+   "evidence_SATISFIED": 111,
+   "finding_n": 82,
+   "finding_UNCLEAR": 15,
+   "finding_NOT_SATISFIED": 57,
+   "finding_SATISFIED": 10,
+   "evidence_MISSING": 6
+  },
+  "exclude_typed": {
+   "evidence_n": 1399,
+   "evidence_UNCLEAR": 593,
+   "evidence_NOT_SATISFIED": 533,
+   "evidence_SATISFIED": 264,
+   "finding_n": 82,
+   "finding_UNCLEAR": 57,
+   "finding_NOT_SATISFIED": 15,
+   "evidence_MISSING": 9,
+   "finding_SATISFIED": 9,
+   "finding_MISSING": 1
   }
  },
  "gold_vs_ai_reviewer": {
@@ -87,6 +127,30 @@
    "sat_prec": [
     78,
     97
+   ]
+  },
+  "typed": {
+   "n": 213,
+   "agree": 158,
+   "not_prec": [
+    17,
+    39
+   ],
+   "sat_prec": [
+    77,
+    96
+   ]
+  },
+  "exclude_typed": {
+   "n": 214,
+   "agree": 147,
+   "not_prec": [
+    8,
+    19
+   ],
+   "sat_prec": [
+    67,
+    90
    ]
   }
  },

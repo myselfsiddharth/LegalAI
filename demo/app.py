@@ -110,9 +110,18 @@ with t1:
     if fm and fl:
         cc = st.columns(3)
         cc[0].metric("Fine-tuned · facts only", f"{fm['acc']:.1%}",
-                     help="InLegalBERT, pretrained on Indian legal text")
+                     help=f"InLegalBERT, pretrained on Indian legal text; mean of "
+                          f"{len(fm.get('seeds', []))} seeds")
         cc[1].metric("Fine-tuned · contaminated window", f"{fl['acc']:.1%}")
         cc[2].metric("Published state of the art", "78%")
+        if fm.get("paired"):
+            pm = fm["paired"]["mean_of_seeds_1_2"]
+            st.caption(
+                f"Facts-only AUROC {fm['auroc']:.3f} (sd {fm['sd']:.3f} over seeds) against "
+                f"{fm['bar']['auroc']:.3f} for word counts on the same cases. The gain is small: "
+                f"no single seed is significantly better (paired bootstrap), the average of two "
+                f"seeds is ({pm['diff']:+.3f}, 95% CI [{pm['ci95'][0]:+.3f}, {pm['ci95'][1]:+.3f}]). "
+                f"Facts alone top out near 0.70, whatever reads them.")
         st.warning(
             f"The **same model, same training, same cases**: {fl['acc']:.1%} reading the "
             f"contaminated window, {fm['acc']:.1%} reading the facts. The published 78% sits with "
@@ -139,10 +148,17 @@ with t2:
     left, right = st.columns([1, 1])
     with left:
         st.subheader("Facts")
+        TYPE_NOTE = {"FINDING": "⚖️ a court's conclusion, not evidence",
+                     "LAW": "📘 a legal proposition, not a fact of this case",
+                     "ASSERTION": "🗣️ a party's claim", "PROCEDURAL": "🏛️ a step in the litigation"}
         for n, f in enumerate(case["facts"][:18], 1):
             who = f.get("asserted_by") or "unattributed"
             st.markdown(f"**{n}.** {f['text']}")
-            st.caption(f"asserted by: {who} · {f.get('disputed_status') or 'unknown'}")
+            note = TYPE_NOTE.get(f.get("type") or "")
+            if not note and f.get("prior_court_finding"):
+                note = TYPE_NOTE["FINDING"]
+            st.caption(f"asserted by: {who} · {f.get('disputed_status') or 'unknown'}"
+                       + (f" · **{note}**" if note else ""))
         if len(case["facts"]) > 18:
             st.caption(f"… and {len(case['facts'])-18} more")
 
@@ -156,11 +172,16 @@ with t2:
             if e["verdict"] == "UNCLEAR" or not e.get("gated"):
                 continue
             meta = ELS.get(e["element_id"], {})
-            icon = "✅" if e["verdict"] == "SATISFIED" else "❌"
+            sat = e["verdict"] == "SATISFIED"
+            icon = "✅" if sat else "❌"
             with st.container(border=True):
                 st.markdown(f"{icon} **{meta.get('name', e['element_id'])}** — "
-                            f"{e['verdict'].replace('_',' ').lower()}")
-                st.caption(f"{meta.get('claim','')} · favours {e.get('favours')}")
+                            f"{e['verdict'].replace('_',' ').lower()}"
+                            + ("" if sat else "  ·  ⚠️ *low confidence*"))
+                st.caption(f"{meta.get('claim','')} · favours {e.get('favours')}"
+                           + (" · ~80% agreement with an independent reviewer" if sat else
+                              " · 'not satisfied' verdicts agreed with an independent reviewer "
+                              "under half the time"))
                 if e["quote"]:
                     st.markdown(f"> {e['quote'][:300]}")
             shown += 1
@@ -273,6 +294,17 @@ with t4:
         m[0].metric("Verdicts produced", f"{sum(sl['verdicts'].values()):,}")
         m[1].metric("Invented support", f"{sl['fabrication']:.2%}")
         m[2].metric("Agreement with itself", "96.9%")
+        eq = F.get("element_quality")
+        if eq:
+            g = eq["gold_by_arm"]["tag"]
+            q = st.columns(3)
+            q[0].metric("Agreement with a blind reviewer", f"{g['agree']/g['n']:.0%}",
+                        help=eq["reviewer"])
+            q[1].metric("'Satisfied' precision", f"{g['sat_prec'][0]/max(1,g['sat_prec'][1]):.0%}")
+            q[2].metric("'Not satisfied' precision", f"{g['not_prec'][0]/max(1,g['not_prec'][1]):.0%}")
+            st.caption(f"{eq['n']} judgements on 40 cases, scored against {eq['reviewer']}. "
+                       "Positive verdicts are usable; defeat verdicts are not yet — about half rest "
+                       "on a court's conclusion or a procedural fact read as a contradiction.")
         st.caption("Useless for predicting the winner, but it must quote its evidence and the "
                    "quote is checked. “Here are the requirements your facts satisfy, with the "
                    "quote for each” is **checkable**. A win/lose prediction never is.")

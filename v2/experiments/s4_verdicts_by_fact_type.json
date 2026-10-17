@@ -1,0 +1,28 @@
+{
+ "base_rate": {
+  "PROCEDURAL": 13965,
+  "FINDING": 14795,
+  "PRIMARY": 50080,
+  "LAW": 7321,
+  "ASSERTION": 10462
+ },
+ "cited_by_verdict": {
+  "SATISFIED": {
+   "PRIMARY": 7738,
+   "PROCEDURAL": 1477,
+   "FINDING": 2115,
+   "ASSERTION": 1117,
+   "LAW": 545,
+   "unmatched": 1
+  },
+  "NOT_SATISFIED": {
+   "FINDING": 722,
+   "PROCEDURAL": 125,
+   "PRIMARY": 468,
+   "ASSERTION": 121,
+   "LAW": 44,
+   "unmatched": 1
+  }
+ },
+ "source": "full S4 run (element_satisfy.v2), quotes matched to typed facts"
+}

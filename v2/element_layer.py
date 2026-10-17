@@ -121,6 +121,8 @@ def build_user(facts: list[dict], claim: Claim, raw: str | None = None) -> str:
             who = f.get("asserted_by") or "unattributed"
             st = f.get("disputed_status") or "unknown"
             tag = "; PRIOR COURT FINDING" if f.get("prior_court_finding") else ""
+            tag = {"FINDING": "; COURT FINDING", "LAW": "; LEGAL PROPOSITION"}.get(
+                f.get("fact_type_tag") or "", tag)
             lines.append(f"{i}. {f['text']}   [asserted_by: {who}; status: {st}{tag}]")
     lines += ["", f"## CLAIM — {claim.name}", "", claim.issue, "", "## ELEMENTS", ""]
     for e in claim.elements:

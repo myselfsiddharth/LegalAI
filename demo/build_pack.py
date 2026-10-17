@@ -93,8 +93,28 @@ def build_findings() -> dict:
     if el:
         out["s4_layer"] = {"verdicts": el["verdicts"], "fabrication": el["fabrication_rate"],
                            "n_proposed": el["n_proposed"]}
+    # three-seed summary first: ft_masked_InLegalBERT.json is overwritten per seed and holds
+    # only the last one, so reading it would silently report a single run
+    fs = g("ft/experiments/ft_masked_summary.json")
+    if fs:
+        out["ft_masked"] = {"auroc": fs["finetuned_mean"]["auroc"],
+                            "acc": fs["finetuned_mean"]["acc"],
+                            "sd": fs["finetuned_mean"]["auroc_sd"],
+                            "seeds": sorted(fs["finetuned_runs"]), "control": False,
+                            "bar": {"auroc": fs["tfidf_refit_same_cases"]["auroc"],
+                                    "acc": fs["tfidf_refit_same_cases"]["acc"]},
+                            "paired": fs["paired_vs_tfidf"]}
+    ea = g("v2/experiments/s4_ai_reviewer_agreement.json")
+    fr = g("v2/experiments/s4_findings_rerun.json")
+    if ea and fr:
+        out["element_quality"] = {
+            "reviewer": "AI reviewer (claude-opus-5-5), blind; not a human",
+            "n": ea["n_judgements"], "agreement_base": ea["overall_agreement"],
+            "gold_by_arm": fr["gold_vs_ai_reviewer"]}
     for nm, p in (("ft_masked", "ft/experiments/ft_masked_InLegalBERT.json"),
                   ("ft_last512", "ft/experiments/ft_last512_InLegalBERT.json")):
+        if nm in out:
+            continue
         d = g(p)
         if d:
             out[nm] = {"auroc": d["test_case_auroc_mean"], "acc": d["test_case_acc_mean"],
@@ -131,11 +151,25 @@ def main() -> None:
     for r in jl(v1.INTERIM / "facts.jsonl"):
         facts[r["case_id"]].append(r)
 
+    # Element verdicts: the TAGGED re-run (prior-court findings marked, prompt v3) wherever it
+    # exists -- it is the better arm on the gold set -- and the original full run elsewhere.
+    vdir = v1.ROOT / "v2" / "interim"
+    pair = {}
+    for name, src in (("element_verdicts_element_satisfy_v2_facts.jsonl", "full run"),
+                      ("element_verdicts_findings_tag.jsonl", "tagged re-run")):
+        if (vdir / name).exists():
+            for r in jl(vdir / name):
+                pair[(r["case_id"], r["claim_id"])] = dict(r, source=src)
     verd = defaultdict(list)
-    vp = v1.ROOT / "v2" / "interim" / "element_verdicts_element_satisfy_v2_facts.jsonl"
-    if vp.exists():
-        for r in jl(vp):
-            verd[r["case_id"]].append(r)
+    for (c, _), r in pair.items():
+        verd[c].append(r)
+    pcf = vdir / "prior_court_findings.json"
+    flagged = set(json.loads(pcf.read_text())) if pcf.exists() else set()
+    ftypes = {}
+    if (vdir / "fact_types.jsonl").exists():
+        for r in jl(vdir / "fact_types.jsonl"):
+            if r.get("type"):
+                ftypes[r["fact_id"]] = r["type"]
 
     from v2.element_catalogue import all_elements, load_claims
     els = {e.element_id: {"name": e.name, "definition": e.definition,
@@ -166,7 +200,9 @@ def main() -> None:
             "doc_id": c, "title": reg[c]["title"], "year": reg[c]["year"],
             "url": reg[c].get("url"), "outcome": lab.get("outcome"),
             "facts": [{"text": f["text"], "asserted_by": f.get("asserted_by"),
-                       "disputed_status": f.get("disputed_status")} for f in facts[c][:40]],
+                       "disputed_status": f.get("disputed_status"),
+                       "prior_court_finding": f["fact_id"] in flagged,
+                       "type": ftypes.get(f["fact_id"])} for f in facts[c][:40]],
             "statutes": sorted(stat[c].items(), key=lambda kv: -kv[1])[:10],
             "precedents": [{"doc_id": h["doc_id"], "score": h["score"],
                             "title": (reg.get(h["doc_id"]) or {}).get("title"),
@@ -174,7 +210,7 @@ def main() -> None:
                            for h in prec[c][:10]],
             "elements": [{"element_id": d["element_id"], "verdict": d["verdict"],
                           "quote": d.get("quote", ""), "favours": d.get("favours"),
-                          "gated": d.get("gated", False)}
+                          "gated": d.get("gated", False), "source": r.get("source")}
                          for r in verd[c] for d in r["verdicts"]]})
     (PACK / "cases.json").write_text(json.dumps(cases, indent=1))
     print(f"  {len(cases)} curated cases across "

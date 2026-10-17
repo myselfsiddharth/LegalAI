@@ -20,7 +20,8 @@ from src.extract.induced_vocab import load_fact_texts
 from v2 import paths
 
 BASE = paths.INTERIM / "element_verdicts_element_satisfy_v2_facts.jsonl"
-ARMS = ("exclude", "tag")
+ARMS = tuple(a for a in ("exclude", "tag", "typed", "exclude_typed")
+             if (paths.INTERIM / f"element_verdicts_findings_{a}.jsonl").exists())
 ANN = paths.ROOT.parent / "Data" / "gold" / "element_gold_annotations_ai.jsonl"
 
 

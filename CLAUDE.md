@@ -1,6 +1,6 @@
 # LexGraph — CSE 573 Legal AI Project
 
-Last rewritten 2026-10-03, when the repository was consolidated. **Read
+Last rewritten 2026-10-03, when the repository was consolidated; updated 2026-10-16. **Read
 `writeup/LexGraph_Report.tex` before touching anything** — it is the single authoritative
 document and replaces the former `PROJECT.md`, `WORKLOG.md` and `reports/*.md` (all removed;
 recoverable from git history). `writeup/LexGraph_Explained.tex` is the plain-language companion.
@@ -26,6 +26,26 @@ land/property judgments, 1950–2025, inside a corpus of all 26,688 SC judgments
 Plus three positives: statutes at 1.9× baseline, precedents at 7.4× a popularity control, and a
 faithfulness-tested trace mechanism.
 
+**Since then (Oct 4–16):**
+- **v2** (`v2/`, plan in `v2/ARCHITECTURE.md`) rebuilt the intended pipeline properly. Soft fact
+  families (S2) recover the fact signal (0.633 vs 0.629 for the text); the element layer (S4)
+  fails as a predictor (0.521) because the doctrinal basis is wrong, not the encoding — the outcome
+  signal is diffuse across the fact space.
+- **Fine-tuning** (`ft/`): InLegalBERT on facts = **0.695 AUROC** (3 seeds, sd 0.005) vs TF-IDF
+  0.667 on the same cases. No single seed is significantly better; the two-seed average is
+  (+0.031 [+0.003, +0.059]). Same model on the leaky window = 0.907. Ceiling ≈0.70, not 0.75.
+- **S4 correctness**: no human reviewer exists, so the 40-case gold set was annotated by a *blind
+  AI reviewer*, stored and reported as such. SATISFIED P/R 80/82%; NOT_SATISFIED precision 37%.
+  Tagging prior-court findings (`attribution_audit.py`, `s4_findings_rerun.py`) lifts it to 47%.
+- **Fact types** (`v2/fact_types.py`): every fact labelled PRIMARY / PROCEDURAL / FINDING / LAW /
+  ASSERTION by reading its source sentence; pilot recall 30/36, precision 30/41 against hand labels.
+  Corpus: 15.3% FINDING, 7.6% LAW. **48.8% of S4's NOT_SATISFIED quote a FINDING** (16% of
+  SATISFIED). Tagging them does not work — the model still quotes tagged findings in 54% of defeat
+  verdicts; removing them halves the defeat verdicts (1,481 → 590). Demo uses the `tag` arm.
+- **ILDC replication run** (`experiments/paper1/ildc_ablation.json`): shape holds on the benchmark
+  itself (only w0 beats facts-only, +0.055 AUROC), a third of our magnitude with TF-IDF.
+- Demo built (`demo/`), shows tagged S4 verdicts with defeat verdicts marked low-confidence.
+
 **Neither critique is novel.** See the report's prior-art section — Nigam & Deroy (2023), Watson
 et al. (2026), Sadowski & Chudziak (2026) got there first. What is ours is methodological. Do not
 let anyone write "we broke the benchmark"; `writeup/` says exactly what is defensible.
@@ -38,7 +58,7 @@ Class project is **60% of the grade**:
 |---|---|---|---|
 | proposal | 15% | **due Oct 7, 2026** | **submitted** — `proposal/FA26-Group-Proposal-Group34-Project15.pdf` |
 | presentation | 10% | **Oct 28 – Nov 18** | not started |
-| group demo | 15% | **Nov 23 – Dec 2** | **not started** — no dashboard exists |
+| group demo | 15% | **Nov 23 – Dec 2** | **built** — `demo/` (Streamlit, reads only `demo/pack/`) |
 | final report | 20% | **due Dec 9** | `writeup/LexGraph_Report.tex` is most of the content |
 
 **Formatting rule for every written submission**: 1-inch margins, A4, 12pt Times New Roman, single
@@ -54,7 +74,10 @@ the divergence deliberately rather than pretend the proposal said something else
 ## Layout
 
 ```
-writeup/          LexGraph_Report.tex + .pdf   <- the one document
+writeup/          LexGraph_Report.tex + .pdf   <- the one document (build: tectonic)
+v2/               element-centric rebuild: soft families, S4, gold set, attribution audit, fact types
+ft/               fine-tuning (InLegalBERT); ft_masked_summary.json is the 3-seed record
+demo/             build_pack.py precomputes demo/pack/; app.py is the Streamlit demo
                   LexGraph_Explained.tex + .pdf <- plain-language version
 src/data/         adapter, labels, mask, segment, splits, corpus_wide, ontology_convert
 src/extract/      facts, claims, canonicalize, vocab
@@ -119,15 +142,22 @@ targets. The report's reproduction section lists the headline experiments.
 10. **Model capability was almost never the binding constraint.** Instruction discipline,
     evaluation design and data coverage were. Two model swaps and five grounding models all
     failed to fix things that looked like capability problems.
+11. **A gold set must show the reviewer exactly the evidence the model saw.** The first element
+    gold set drew facts from a different extraction; only 49/138 model quotes were visible and
+    agreement measured the mismatch (76% vs 48%). Check quote visibility before annotating.
+12. **An AI annotation is not gold.** Store it under an annotator name that says so, write it to a
+    separate file, and score it with `--ann/--out` so it can never be reported as the human result.
 
 ## Open blockers (all human time, not compute)
 
+- **B6** — no human reviewer for S4's verdicts; only the blind AI pass exists.
 - **B4** — 150 gold cases prepared, no reviewer. Blocks the *only* precision/recall figure for
   extraction; the biggest gap for a reviewer.
 - **B2** — 66 element burdens unannotated, so feature group `E` is empty. Two models failed a
   degeneracy gate; a bigger model is not the fix.
 - **B3** — vocabulary 20.3% out of vocabulary vs a 5% freeze threshold.
-- **B5** — ILDC licence gated indefinitely. **Optional**: `corpus_scale_setback` covers the same
-  population. `src/eval/ildc_ablation.py` is setback-armed and smoke-tested; do not route around
-  the gate. The authors are *not* inactive — email Modi rather than waiting on HuggingFace.
-- Not started: demo dashboard; team roster; official proposal template.
+- **B5 closed (2026-10-16)** — ILDC access granted (`HF_TOKEN` in `.env`), files in `Data/ildc/`
+  (gitignored: the authors' licensed release, never commit it). Replication run: shape holds
+  (only w0 beats facts-only, +0.055), a third of our magnitude with TF-IDF, contamination reaches
+  ~256 words not 128. Open: size it with a fine-tuned model.
+- Not started: team roster; presentation.
