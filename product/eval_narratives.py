@@ -80,6 +80,15 @@ def main() -> None:
     # ---------------- precedents
     idx = BM25Index()
     idx.build(lambda: ((d, years[d], scrubbed[d]) for d in pool), verbose=False)
+    # Candidates are EARLIER, already-decided cases, so a product may read their whole judgment --
+    # holdings included. Only the query side must be pre-decision. Index the full text too.
+    def full_records():
+        for line in open(paths.INTERIM / "case_text.jsonl"):
+            r = json.loads(line)
+            if r["doc_id"] in years:
+                yield r["doc_id"], years[r["doc_id"]], scrub_citations(r["text"])
+    idx_full = BM25Index()
+    idx_full.build(full_records, verbose=False)
     print("embedding pool (cached where available) and queries...", flush=True)
     P = client.embed([scrubbed[d][:8000] for d in pool], batch_size=32, workers=24)
     okp = P.any(axis=1)
@@ -100,7 +109,8 @@ def main() -> None:
         return [pool[i] for i in np.argsort(-s)[:k]]
 
     per = {f"{inp}_{sysm}": {"r10": [], "r50": [], "mrr": []}
-           for inp in INPUTS for sysm in ("bm25", "dense", "rrf")}
+           for inp in INPUTS for sysm in ("bm25", "dense", "rrf", "bm25full", "rrf_full")}
+    cands: dict[str, dict] = {}
     for qi, c in enumerate(qs):
         yq, tgt = years[c], cited[c]
         arms = [("narrative", nar[c], Qn[qi]), ("masked", scrubbed[c], P[pos[c]])]
@@ -109,11 +119,17 @@ def main() -> None:
         for inp, text, qv in arms:
             b = [d for d, _ in idx.search(text, 200, before_year=yq - 1, exclude={c})]
             dn = dense(qv, yq, c)
-            for sysm, ranked in (("bm25", b), ("dense", dn), ("rrf", rrf([b, dn]))):
+            bf = [d for d, _ in idx_full.search(text, 200, before_year=yq - 1, exclude={c})]
+            if inp in ("memo", "narrative"):
+                cands.setdefault(c, {})[inp] = rrf([bf, dn])[:50]
+            for sysm, ranked in (("bm25", b), ("dense", dn), ("rrf", rrf([b, dn])),
+                                 ("bm25full", bf), ("rrf_full", rrf([bf, dn]))):
                 m = per[f"{inp}_{sysm}"]
                 m["r10"].append(recall_at(ranked, tgt, 10))
                 m["r50"].append(recall_at(ranked, tgt, 50))
                 m["mrr"].append(mrr(ranked, tgt))
+    (paths.ROOT / "product" / "data" / "candidates_top50.json").write_text(json.dumps(
+        {"targets": {c: sorted(cited[c]) for c in qs}, "candidates": cands}))
     prec = {k: {mk: round(float(np.mean(v)), 4) for mk, v in m.items()} for k, m in per.items()}
     print("\n  precedents (recall vs reachable cited precedents):")
     for k, v in prec.items():
