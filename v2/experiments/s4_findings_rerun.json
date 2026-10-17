@@ -1,0 +1,98 @@
+{
+ "n_pairs": 1126,
+ "n_flagged_facts": 1883,
+ "verdicts": {
+  "base": {
+   "NOT_SATISFIED": 1481,
+   "UNCLEAR": 1984,
+   "refused": 24,
+   "dropped": 0,
+   "not_from_finding": 82,
+   "quotes_finding": 116,
+   "SATISFIED": 1738
+  },
+  "exclude": {
+   "NOT_SATISFIED": 1279,
+   "UNCLEAR": 2093,
+   "refused": 32,
+   "dropped": 0,
+   "SATISFIED": 1823
+  },
+  "tag": {
+   "NOT_SATISFIED": 1101,
+   "UNCLEAR": 2191,
+   "refused": 25,
+   "dropped": 0,
+   "SATISFIED": 1910,
+   "quotes_finding": 58,
+   "not_from_finding": 38
+  }
+ },
+ "survival": {
+  "exclude": {
+   "evidence_n": 1399,
+   "evidence_NOT_SATISFIED": 1214,
+   "finding_n": 82,
+   "finding_UNCLEAR": 45,
+   "finding_NOT_SATISFIED": 30,
+   "evidence_UNCLEAR": 99,
+   "evidence_SATISFIED": 79,
+   "finding_SATISFIED": 7,
+   "evidence_MISSING": 7
+  },
+  "tag": {
+   "evidence_n": 1399,
+   "evidence_NOT_SATISFIED": 1017,
+   "evidence_UNCLEAR": 237,
+   "finding_n": 82,
+   "finding_UNCLEAR": 36,
+   "finding_NOT_SATISFIED": 39,
+   "evidence_SATISFIED": 141,
+   "finding_SATISFIED": 7,
+   "evidence_MISSING": 4
+  }
+ },
+ "gold_vs_ai_reviewer": {
+  "base": {
+   "n": 214,
+   "agree": 153,
+   "not_prec": [
+    16,
+    43
+   ],
+   "sat_prec": [
+    76,
+    95
+   ]
+  },
+  "exclude": {
+   "n": 213,
+   "agree": 157,
+   "not_prec": [
+    14,
+    34
+   ],
+   "sat_prec": [
+    77,
+    94
+   ]
+  },
+  "tag": {
+   "n": 213,
+   "agree": 160,
+   "not_prec": [
+    15,
+    32
+   ],
+   "sat_prec": [
+    78,
+    97
+   ]
+  }
+ },
+ "caveats": [
+  "flag detector precision ~0.75, recall unmeasured",
+  "gold reference is an AI reviewer that saw the findings",
+  "pairs are selected for having a base NOT_SATISFIED, so base's NOT count is inflated relative to the corpus by construction"
+ ]
+}
