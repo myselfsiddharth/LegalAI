@@ -109,6 +109,11 @@ def main() -> None:
         r = json.loads(line)
         if r["doc_id"] in need:
             other[r["doc_id"]] = r.get("ildc_style_text") or ""
+    extra = paths.ROOT / "product" / "data" / "extra_text.jsonl"   # extract_missing.py
+    if extra.exists():
+        for line in open(extra):
+            r = json.loads(line)
+            other.setdefault(r["doc_id"], r["text"])
     jobs, st = [], Counter()
     for e in edges:
         text = full.get(e["citing"]) or other.get(e["citing"]) or ""

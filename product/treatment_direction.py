@@ -40,6 +40,12 @@ def main() -> None:
             r = json.loads(line)
             if r["doc_id"] in need and r["doc_id"] not in texts:
                 texts[r["doc_id"]] = r.get(key) or ""
+    extra = paths.ROOT / "product" / "data" / "extra_text.jsonl"
+    if extra.exists():
+        for line in open(extra):
+            r = json.loads(line)
+            if r["doc_id"] in need:
+                texts.setdefault(r["doc_id"], r["text"])
     todo = [i for i, r in enumerate(rows) if r.get("treatment") in ("OVERRULED", "DOUBTED")]
 
     def ask(i):

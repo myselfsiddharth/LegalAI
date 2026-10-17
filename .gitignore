@@ -53,3 +53,9 @@ demo/pack/
 
 # ILDC (IL-TUR) release: gated licence, not ours to redistribute
 Data/ildc/
+
+# product: regenerable bulk data
+product/data/extra_text.jsonl
+product/index/
+product/data/*_pre_normfix.*
+product/data/treatments_v1.jsonl

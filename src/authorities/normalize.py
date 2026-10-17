@@ -128,6 +128,25 @@ PROVISION = re.compile(
 
 ART_ONLY = re.compile(r"\b[Aa]rt(?:icle)?s?\.?\s*(\d+[A-Za-z]?(?:\(\d+\))*)")
 
+# "Order XXI Rule 90", "Order 21, Rule 97", "O. 39 R. 1" -- CPC orders are usually ROMAN, which
+# PROVISION's digit-only number cannot see. Before this, "Order XXI Rule 90" matched only "Rule 90"
+# and became CPC:90, colliding with Section 90; and "Order 21 Rule 97" became CPC:21 + CPC:97,
+# colliding with Sections 21 and 97. Orders and rules now carry their own prefix (O21, O21R97).
+ROMAN = r"(?:[IVXLC]+)"
+ORDER_RULE = re.compile(
+    rf"\b(?:[Oo]rder|O\.)\s*(?P<o>{ROMAN}|\d+)\b(?:\s*,?\s*(?:[Rr]ules?|[Rr]r?\.)\s*(?P<r>\d+[A-Za-z]?))?")
+_RV = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100}
+
+
+def _roman(s: str) -> int:
+    if s.isdigit():
+        return int(s)
+    total, prev = 0, 0
+    for ch in reversed(s.upper()):
+        v = _RV.get(ch, 0)
+        total, prev = (total - v, prev) if v < prev else (total + v, v)
+    return total
+
 
 @dataclass
 class StatuteCite:
@@ -200,10 +219,65 @@ def extract(text: str, context_window: int = 4000) -> list[StatuteCite]:
                 best = code
         return best
 
-    for m in PROVISION.finditer(text):
+    # CPC orders and rules first, then mask them so PROVISION cannot re-read their numbers.
+    order_ends: list[tuple[int, int]] = []       # (end position, order number)
+    for m in ORDER_RULE.finditer(text):
+        o = _roman(m.group("o"))
+        if not 1 <= o <= 51:                 # the CPC has 51 Orders; anything else is not one
+            continue
+        order_ends.append((m.end(), o))
+        tail = text[m.end(): m.end() + 80]
+        act = re.match(r"\s*(?:of|under|in)\s+(?:the\s+)?([^.;:\n]{0,70}?(?:Act|Code))\b", tail)
+        code, how = resolve_act(act.group(1)) if act else (None, "unresolved")
+        if code is None:
+            code, how = "CPC", ("named" if act else "kind_default")
+        rules = [m.group("r")] if m.group("r") else [None]
+        more = re.match(r"(?:\s*(?:,|and|&)\s*(\d+[A-Za-z]?))+", tail)
+        if m.group("r") and more:
+            rules += re.findall(r"\d+[A-Za-z]?", more.group(0))
+        for rr in rules:
+            prov = f"O{o}" + (f"R{rr}" if rr else "")
+            out.append(StatuteCite(code=code, provision=prov, label=f"{code}:{prov}",
+                                   kind="order", raw=m.group(0)[:120],
+                                   act_text=act.group(1) if act else None, resolved_by=how))
+    masked = ORDER_RULE.sub(lambda mm: " " * len(mm.group(0))
+                            if 1 <= _roman(mm.group("o")) <= 51 else mm.group(0), text)
+
+    def named_just_before(pos: int) -> str | None:
+        """An Act named immediately BEFORE the provision -- "Limitation Act, 1963, Article 65",
+        "Transfer of Property Act, Section 53A". Only the last 90 characters, so this cannot reach
+        back across a sentence the way context resolution does."""
+        seg = text[max(0, pos - 90): pos]
+        seg = seg[max(seg.rfind("."), seg.rfind(";")) + 1:]
+        best = None
+        for code, rx in _ALIASES:
+            for mm in rx.finditer(seg):
+                if best is None or mm.end() > best[0]:
+                    best = (mm.end(), code)
+        return best[1] if best else None
+
+    for m in PROVISION.finditer(masked):
         kind = _kind_of(m.group("kind"))
+        if kind in ("order",):
+            continue                          # handled above
+        act0 = m.group("act")
+        if kind == "rule" and (not act0 or GENERIC_ACT_SPAN.match(act0.strip())
+                               or resolve_act(act0)[0] == "CPC"):
+            # "Order XXII Rule 3 and Rule 4": a rule shortly after an Order belongs to that Order
+            near = [o for e, o in order_ends if 0 <= m.start() - e <= 60]
+            if near:
+                nums = [m.group("num")] + re.findall(r"\d+[A-Za-z]?", m.group("tail") or "")
+                for num in nums:
+                    prov = f"O{near[-1]}R{_norm_provision(num)}"
+                    out.append(StatuteCite(code="CPC", provision=prov, label=f"CPC:{prov}",
+                                           kind="order", raw=m.group(0)[:120], resolved_by="context"))
+                continue
         act_text = m.group("act")
         code, how = resolve_act(act_text)
+        if code is None and not act_text:
+            nb = named_just_before(m.start())
+            if nb and not (kind == "section" and nb == "CONST"):
+                code, how = nb, "named_before"
 
         if code is None:
             # An explicitly NAMED Act that the registry does not know stays UNRESOLVED. It must
@@ -217,8 +291,11 @@ def extract(text: str, context_window: int = 4000) -> list[StatuteCite]:
                 pass                                    # stays UNRESOLVED
             elif kind == "article":
                 code, how = "CONST", "kind_default"     # an Article is the Constitution
-            elif kind in ("order", "rule"):
-                code, how = "CPC", "kind_default"       # an Order/Rule is the CPC
+            elif kind == "rule":
+                # A bare "Rule N" is as often a rule of some statutory scheme ("Rule 3 will have to
+                # be read in the light of...", a tax schedule) as a CPC rule; with no Order and no
+                # named Code it is left UNRESOLVED rather than guessed into CPC.
+                pass
             else:
                 # No Act named at all, or a generic back-reference ("the said Act"): look back.
                 # A SECTION is never attributed to the Constitution, which is cited by Article.
@@ -231,7 +308,7 @@ def extract(text: str, context_window: int = 4000) -> list[StatuteCite]:
         for num in nums:
             prov = _norm_provision(num)
             c = code or "UNRESOLVED"
-            pre = "Art" if kind == "article" else ""
+            pre = {"article": "Art", "rule": "R"}.get(kind, "")
             out.append(StatuteCite(
                 code=c, provision=prov, label=f"{c}:{pre}{prov}", kind=kind,
                 raw=m.group(0)[:120], act_text=act_text, resolved_by=how if code else "unresolved"))
