@@ -50,6 +50,28 @@ faithfulness-tested trace mechanism.
 et al. (2026), Sadowski & Chudziak (2026) got there first. What is ours is methodological. Do not
 let anyone write "we broke the benchmark"; `writeup/` says exactly what is defensible.
 
+## The product (from 2026-10-16): a research-brief tool for litigators
+
+Direction set by the user: a world-class legal AI for **lawyers**, not class deliverables. Code in
+`product/`; run `.venv/bin/streamlit run product/app.py` (first load ~100 s, then ~60 s per story).
+`product/pipeline.py` is the single entry point: `LexGraph().analyse(story)`.
+
+Evaluated on 93 held-out cases retold as **client narratives** (no court history, statute numbers or
+case names; leakage-gated) -- never on judgment text, which no real user has:
+
+| step | metric | value |
+|---|---|---|
+| statutes (kNN vote) | R@10 of court's provisions | 0.380 (prior 0.197) |
+| precedents (full-text BM25 + dense, LLM rerank over case cards) | R@10 / MRR | **0.215** / 0.368 (judgment-text ref 0.290; popularity ~0.03) |
+| good law (`treatment.py` + direction check) | OVERRULED precision (hand) | ~85-92%; 7,751 citations located |
+| brief, grounded | authorities certified | 613/613; 15.5% were cited by the court |
+| brief, closed-book | cited cases matching no SC judgment | 45.6% (upper bound on fabrication) |
+
+Rules learned building it: **cards rerank, they must not retrieve** (card retrievers + card reranker =
+correlated errors, 0.215 -> 0.192); memo-named provisions are right only 21% -- never show them
+unverified; LLM treatment labels invert "X was overruled in Y" ~half the time without a second
+yes/no direction check; read every name-matcher's matches (two matcher bugs found that way).
+
 ## Course logistics — I dropped these in a rewrite; do not drop them again
 
 Class project is **60% of the grade**:
