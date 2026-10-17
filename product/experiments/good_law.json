@@ -1,0 +1,35 @@
+{
+ "n": 93,
+ "top10_coverage": {
+  "GOOD": 330,
+  "any_treatment": 330,
+  "followed_at_least_once": 153,
+  "UNKNOWN": 600
+ },
+ "r10": {
+  "reranked": {
+   "mean": 0.215,
+   "vs_reranked": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "rerank_then_followed": {
+   "mean": 0.2078,
+   "vs_reranked": -0.0072,
+   "ci95": [
+    -0.0228,
+    0.0058
+   ]
+  },
+  "rerank_demote_overruled": {
+   "mean": 0.215,
+   "vs_reranked": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  }
+ }
+}

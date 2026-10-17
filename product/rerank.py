@@ -100,6 +100,7 @@ def main() -> None:
     for c, sc in res:
         scores.setdefault(c, {}).update(sc)
 
+    (paths.ROOT / "product" / "data" / "rerank_scores.json").write_text(json.dumps(scores))
     base_r10, base_mrr, rr_r10, rr_mrr = [], [], [], []
     unscored = 0
     dist = Counter()

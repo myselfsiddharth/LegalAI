@@ -1,0 +1,31 @@
+{
+ "n_narratives": 93,
+ "narrative": {
+  "SATISFIED": 364,
+  "NOT_SATISFIED": 36,
+  "UNCLEAR": 394,
+  "refused": 17,
+  "fabrication": 0.021
+ },
+ "judgment_facts_same_cases": {
+  "SATISFIED": 306,
+  "NOT_SATISFIED": 43,
+  "UNCLEAR": 453,
+  "refused": 4,
+  "fabrication": 0.005
+ },
+ "pairs_asked_in_both": 446,
+ "agreement": 0.6547,
+ "confusion_rows_judgment_cols_narrative": {
+  "SATISFIED|SATISFIED": 142,
+  "UNCLEAR|SATISFIED": 67,
+  "UNCLEAR|UNCLEAR": 143,
+  "UNCLEAR|NOT_SATISFIED": 15,
+  "NOT_SATISFIED|SATISFIED": 17,
+  "SATISFIED|UNCLEAR": 34,
+  "NOT_SATISFIED|NOT_SATISFIED": 7,
+  "SATISFIED|NOT_SATISFIED": 12,
+  "NOT_SATISFIED|UNCLEAR": 9
+ },
+ "claims_overlap": 0.5538
+}
