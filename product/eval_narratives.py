@@ -162,7 +162,7 @@ def main() -> None:
     prior = [l for l, _ in df.most_common() if l in li]
     Qs = client.embed([nar[c] for c in sq], batch_size=32, workers=24)
     Qs = Qs / (np.linalg.norm(Qs, axis=1, keepdims=True) + 1e-9)
-    stat, sper = {}, {}
+    stat, sper, saved_stat = {}, {}, {}
     qarms = [("narrative", Qs), ("masked", np.stack([P[pos[c]] for c in sq]))]
     named = {}
     if nm:
@@ -184,6 +184,8 @@ def main() -> None:
                     if l in li:
                         votes[l] += float(row[j])
             rk = [l for l, _ in votes.most_common()] + [l for l in prior if l not in votes]
+            if inp == "memo":
+                saved_stat[sq[len(p5)]] = rk[:20]
             if inp == "memo_named_then_knn":
                 first = [l for l in named[sq[len(p5)]] if l in li]
                 rk = first + [l for l in rk if l not in first]
@@ -191,6 +193,8 @@ def main() -> None:
             r10.append(len(set(rk[:10]) & t) / len(t))
         stat[inp] = {"p@5": round(float(np.mean(p5)), 4), "r@10": round(float(np.mean(r10)), 4)}
         sper[inp] = r10
+    if saved_stat:
+        (paths.ROOT / "product" / "data" / "statute_predictions.json").write_text(json.dumps(saved_stat))
     if named:
         # how trustworthy is a memo-named provision on its own? judged against EVERY provision the
         # court relied on, not just the trainable label space

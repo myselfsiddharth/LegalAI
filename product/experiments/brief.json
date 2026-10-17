@@ -1,0 +1,38 @@
+{
+ "grounded": {
+  "briefs": 92,
+  "failed": 0,
+  "issues": 367,
+  "both_sides": 367,
+  "precedents_proposed": 613,
+  "certified": 613,
+  "refused_or_unresolved": 0,
+  "ambiguous": 0,
+  "certified_rate": 1.0,
+  "facts_ok": 378,
+  "facts_refused": 10,
+  "provisions_ok": 513,
+  "provisions_refused": 33,
+  "unique_certified_precedents": 464,
+  "of_which_court_cited": 72,
+  "court_cited_share": 0.1552
+ },
+ "closed": {
+  "briefs": 92,
+  "failed": 0,
+  "issues": 365,
+  "both_sides": 365,
+  "precedents_proposed": 750,
+  "certified": 77,
+  "refused_or_unresolved": 482,
+  "ambiguous": 191,
+  "certified_rate": 0.1027,
+  "facts_ok": 350,
+  "facts_refused": 15,
+  "provisions_ok": 0,
+  "provisions_refused": 0,
+  "unique_certified_precedents": 75,
+  "of_which_court_cited": 6,
+  "court_cited_share": 0.08
+ }
+}
