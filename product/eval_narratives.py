@@ -26,7 +26,9 @@ import numpy as np
 from src import paths
 from src.authorities.precedent_retrieve import rrf
 from src.authorities.retrieval import BM25Index, scrub_citations
+from src.authorities import normalize as N
 from src.llm import client
+from product.issue_memo import OUT as MEMOS, memo_text
 
 NAR = paths.ROOT / "product" / "data" / "client_narratives.jsonl"
 OUT = paths.ROOT / "product" / "experiments" / "narrative_vs_masked.json"
@@ -55,6 +57,12 @@ def boot(a, b, n=2000):
 
 def main() -> None:
     nar = {r["case_id"]: r["narrative"] for r in map(json.loads, open(NAR)) if r["status"] == "ok"}
+    memo = {}
+    if MEMOS.exists():
+        memo = {r["case_id"]: r["memo"] for r in map(json.loads, open(MEMOS)) if r["status"] == "ok"}
+    # narrative + the lawyer's issue memo, the input the product would actually retrieve with
+    nm = {c: nar[c] + "\n\n" + memo_text(memo[c]) for c in nar if c in memo}
+    INPUTS = ("narrative", "memo", "masked") if nm else ("narrative", "masked")
     reg = {r["doc_id"]: r for r in map(json.loads, open(paths.CASE_REGISTRY))}
     masked = {r["doc_id"]: r["masked_text"] for r in map(json.loads, open(paths.INTERIM / "masked_text.jsonl"))}
     years = {d: reg[d]["year"] for d in masked if masked[d] and reg.get(d, {}).get("year")}
@@ -79,6 +87,10 @@ def main() -> None:
     pyear = np.array([years[d] for d in pool])
     Qn = client.embed([nar[c] for c in qs], batch_size=32, workers=24)
     Qn = Qn / (np.linalg.norm(Qn, axis=1, keepdims=True) + 1e-9)
+    Qm = None
+    if nm:
+        Qm = client.embed([nm[c] for c in qs], batch_size=32, workers=24)
+        Qm = Qm / (np.linalg.norm(Qm, axis=1, keepdims=True) + 1e-9)
     pos = {d: i for i, d in enumerate(pool)}
 
     def dense(qvec, yq, self_id, k=200):
@@ -88,11 +100,13 @@ def main() -> None:
         return [pool[i] for i in np.argsort(-s)[:k]]
 
     per = {f"{inp}_{sysm}": {"r10": [], "r50": [], "mrr": []}
-           for inp in ("narrative", "masked") for sysm in ("bm25", "dense", "rrf")}
+           for inp in INPUTS for sysm in ("bm25", "dense", "rrf")}
     for qi, c in enumerate(qs):
         yq, tgt = years[c], cited[c]
-        for inp, text, qv in (("narrative", nar[c], Qn[qi]),
-                              ("masked", scrubbed[c], P[pos[c]])):
+        arms = [("narrative", nar[c], Qn[qi]), ("masked", scrubbed[c], P[pos[c]])]
+        if nm:
+            arms.append(("memo", nm[c], Qm[qi]))
+        for inp, text, qv in arms:
             b = [d for d, _ in idx.search(text, 200, before_year=yq - 1, exclude={c})]
             dn = dense(qv, yq, c)
             for sysm, ranked in (("bm25", b), ("dense", dn), ("rrf", rrf([b, dn]))):
@@ -107,6 +121,10 @@ def main() -> None:
     pgap = {s: {"r10_diff": round(prec[f'narrative_{s}']['r10'] - prec[f'masked_{s}']['r10'], 4),
                 "r10_ci95": boot(per[f"narrative_{s}"]["r10"], per[f"masked_{s}"]["r10"])}
             for s in ("bm25", "dense", "rrf")}
+    if nm:
+        for s in ("bm25", "dense", "rrf"):
+            pgap[s]["memo_minus_narrative_r10"] = round(prec[f"memo_{s}"]["r10"] - prec[f"narrative_{s}"]["r10"], 4)
+            pgap[s]["memo_minus_narrative_ci95"] = boot(per[f"memo_{s}"]["r10"], per[f"narrative_{s}"]["r10"])
 
     # ---------------- statutes
     split = json.loads((paths.SPLITS / "forum_heldout.json").read_text())
@@ -129,7 +147,17 @@ def main() -> None:
     Qs = client.embed([nar[c] for c in sq], batch_size=32, workers=24)
     Qs = Qs / (np.linalg.norm(Qs, axis=1, keepdims=True) + 1e-9)
     stat, sper = {}, {}
-    for inp, Q in (("narrative", Qs), ("masked", np.stack([P[pos[c]] for c in sq]))):
+    qarms = [("narrative", Qs), ("masked", np.stack([P[pos[c]] for c in sq]))]
+    named = {}
+    if nm:
+        Qms = client.embed([nm[c] for c in sq], batch_size=32, workers=24)
+        Qms = Qms / (np.linalg.norm(Qms, axis=1, keepdims=True) + 1e-9)
+        qarms.append(("memo", Qms))
+        # provisions the memo NAMES, normalised the same way the court's targets were
+        named = {c: list(dict.fromkeys(x.label for x in N.extract(" ; ".join(memo[c]["provisions"]))))
+                 for c in sq}
+        qarms.append(("memo_named_then_knn", Qms))
+    for inp, Q in qarms:
         sims = Q @ T.T
         ranked, p5, r10 = [], [], []
         for row, t in zip(sims, true):
@@ -140,10 +168,23 @@ def main() -> None:
                     if l in li:
                         votes[l] += float(row[j])
             rk = [l for l, _ in votes.most_common()] + [l for l in prior if l not in votes]
+            if inp == "memo_named_then_knn":
+                first = [l for l in named[sq[len(p5)]] if l in li]
+                rk = first + [l for l in rk if l not in first]
             p5.append(len(set(rk[:5]) & t) / 5)
             r10.append(len(set(rk[:10]) & t) / len(t))
         stat[inp] = {"p@5": round(float(np.mean(p5)), 4), "r@10": round(float(np.mean(r10)), 4)}
         sper[inp] = r10
+    if named:
+        # how trustworthy is a memo-named provision on its own? judged against EVERY provision the
+        # court relied on, not just the trainable label space
+        hit = tot = 0
+        for c in sq:
+            for l in named[c]:
+                tot += 1
+                hit += l in set(tg[c])
+        stat["memo_named_precision"] = {"correct": hit, "named": tot,
+                                        "precision": round(hit / max(1, tot), 4)}
     pr10 = [len(set(prior[:10]) & t) / len(t) for t in true]
     stat["prior_top10"] = {"r@10": round(float(np.mean(pr10)), 4)}
     print(f"\n  statutes ({len(sq)} cases, {len(labels)} provisions with >= {MIN_TRAIN} train cases):")
